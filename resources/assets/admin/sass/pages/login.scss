@@ -1,0 +1,123 @@
+.login-box {
+  background-color: transparent;
+  border-radius: 4px;
+  color: $white;
+  left: 50%;
+  margin: 0 auto;
+  margin-bottom: 45px;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -60%);
+  width: 400px;
+
+
+  .form-control {
+    margin-top: 20px;
+  }
+
+  .other-actions {
+    margin-bottom: 10px;
+    margin-top:20px;
+  }
+
+  .page-copyright {
+    font-size: 14px;
+    margin-top: 50px;
+    text-align: center;
+    p{
+      margin-bottom: 10px;
+    }
+  }
+
+  a {
+    color: $ls-color-primary;
+
+    &:hover {
+      color: darken($ls-color-primary,5%);
+    }
+  }
+
+  .btn-login {
+    background-color: $ls-color-primary;
+    color: $ls-color-secondary;
+
+    &:hover {
+      background-color: darken($ls-color-primary,5%);
+    }
+  }
+
+}
+
+.login-box .c-input {
+  color: #fff;
+  padding-left: 1.5rem;
+
+  .c-indicator{
+    top:2px;
+  }
+}
+
+.login-wrapper .c-input {
+
+
+  > input {
+
+    &:checked ~ .c-indicator {
+      background-color: #333;
+      @include box-shadow(none);
+    }
+
+    &:focus ~ .c-indicator {
+      // the mixin is not used here to make sure there is feedback
+      box-shadow: 0 0 0 .075rem #fff, 0 0 0 .2rem darken(#333,5%);;
+    }
+
+    &:active ~ .c-indicator {
+      background-color: darken(#333,5%);
+      @include box-shadow(none);
+    }
+  }
+
+
+}
+
+.login-wrapper {
+  height: 100vh;
+  padding-top: 0;
+  position: relative;
+
+  &::before {
+    background-image: url('../img/skynight.jpg');
+    background-position: center top;
+    background-size: cover;
+    content: '';
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
+
+  &::after {
+    background-color: $ls-login-bg-color-overlay;
+    content: '';
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
+}
+
+.login-page .brand-main {
+  margin-bottom: 50px;
+  text-align: center;
+
+  img {
+    height: auto;
+    width: 300px;
+  }
+}

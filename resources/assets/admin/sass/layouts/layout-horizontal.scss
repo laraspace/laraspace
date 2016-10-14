@@ -1,0 +1,132 @@
+.layout-horizontal .main-content {
+  padding: 138px 30px 10px;
+}
+
+.layout-horizontal .site-footer {
+  padding: 10px 30px;
+}
+
+.header-bottom {
+  background-color: $ls-color-secondary;
+  top: 60px;
+  z-index: 70;
+  position: fixed;
+  width: 100%;
+  left: 0;
+}
+
+.header-nav {
+  list-style: none;
+  padding: 0 15px;
+  margin: 0;
+
+  li {
+    display: inline-block;
+    position: relative;
+    margin-right: -5px;
+
+    .dropdown-menu a {
+      font-size: 15px;
+      padding: 10px 20px;
+    }
+
+    i {
+      width: 25px;
+    }
+
+    &.active > a {
+      color: $ls-color-primary;
+
+      &:hover {
+        color: $ls-color-primary;
+      }
+    }
+
+    a {
+      display: inline-block;
+      padding: 12px 20px;
+      color: $white;
+      font-size: 14px;
+    }
+
+    &.has-child > a {
+      padding: 12px 40px 12px 20px;
+    }
+
+    a:hover {
+      background-color: $sidemenu-item-bg-color--hover;
+      color: #fff;
+    }
+
+    &.has-child > a::before {
+      border-color: $sidemenu-arrow-color transparent transparent;
+      border-style: solid;
+      border-width: 5px 4px 0;
+      content: '';
+      display: block;
+      height: 0;
+      margin-top: -4px;
+      position: absolute;
+      right: 20px;
+      top: 25px;
+      transition: all .2s ease-in-out;
+      width: 0;
+    }
+
+
+  }
+
+}
+
+@include media-breakpoint-down(sm) {
+
+  .header-bottom {
+    left: -375px;
+    transition: left .3s ease;
+    width: 240px;
+    height: 100%;
+  }
+
+  &.has-child > a::before {
+    transform: rotate(-90deg);
+  }
+
+  &.has-child.open > a::before {
+    transform: rotate(0deg);
+  }
+
+  .sidebar-open .header-bottom {
+    left: 0;
+  }
+
+  .header-nav {
+    padding: 0;
+
+    li {
+      display: block;
+      position: relative;
+      margin-right: 0;
+
+      .dropdown-menu {
+        border: 0 !important;
+        position: relative;
+        margin: 0;
+        padding : 0;
+        width: 100%;
+        background-color: $sidemenu-submenu-bg;
+      }
+
+      a {
+        display: block;
+      }
+    }
+
+    li::after {
+      display: table;
+      clear: both;
+      content: "";
+    }
+
+  }
+
+}

@@ -1,0 +1,94 @@
+// demo.scss - Styles for Preview pages
+
+.buttons-demo{
+  .btn{
+    margin-bottom: 10px;
+  }
+
+  .btn-group-vertical .btn{
+    margin-bottom: 0;
+  }
+}
+
+.btn-group-vertical{
+  margin-right: 20px;
+}
+
+.source-link{
+  font-size: 0.9rem;
+  color: $ls-color-gray--very-dark;
+}
+
+// SKINS DEMO
+.skin-tools{
+  position: fixed;
+  top: 96px;
+  right: -400px;
+  z-index: 900;
+  width: 400px;
+  transition: all .3s;
+
+  .skin-tools-action{
+    position: absolute;
+    top: 1px;
+    left: -48px;
+    padding: 8px 16px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: $white;
+    color: $ls-color-black;
+    box-shadow: -2px 0px 2px rgba(0, 0, 0, 0.15);
+    border-left: 1px solid rgba(222,227,231,0.56);
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+  }
+
+  .skin-tools-content{
+    height: 100%;
+    min-height: 100px;
+    padding: 5px 20px 20px;
+    background-color: $white;
+    color: $ls-color-black;
+    border: 1px solid rgba(0,0,0,.08);
+    border-radius: 0 3px 3px;
+  }
+
+  h5{
+    margin-bottom: 10px;
+    color : $ls-color-black;
+  }
+
+  .skin-radio.active::after{
+    background-image: url('../img/skins/tick.png');
+    background-size: 100% auto;
+    width: 20px;
+    height: 20px;
+    content: '';
+    position: absolute;
+    top: -6px;
+    right: 6px;
+    z-index: 10;
+  }
+
+  .skin-radio.active img{
+    opacity: 1;
+  }
+
+  .skin-radio img{
+    opacity: 0.5;
+  }
+
+  &.is-open {
+    right: 0;
+  }
+
+
+}
+
+@include media-breakpoint-down(sm) {
+
+  .skin-tools{
+    right: -250px;
+    width: 250px;
+  }
+}

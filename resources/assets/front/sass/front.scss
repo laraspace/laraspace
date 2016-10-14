@@ -1,0 +1,227 @@
+@import '../../plugins/bootstrap/scss/bootstrap';
+@import '../../plugins/fontawesome/font-awesome';
+
+
+/*
+|--------------------------------------------------------------------------
+| Base
+|--------------------------------------------------------------------------
+*/
+
+body {
+  font-family: 'Roboto',sans-serif;
+  color: lighten(#444,15%);
+}
+
+h1,h2,h3,h4,h5,h6{
+  color: #444;
+  font-weight: normal;
+}
+
+.btn-cta{
+  padding: 6px 60px;
+  border-radius: 20px;
+}
+
+
+.btn-action{
+  background-color: #FFDE00;
+  color: #444;
+
+  &:hover {
+    background-color: darken(#FFDE00,5%);
+  }
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| Layout
+|--------------------------------------------------------------------------
+*/
+
+.site-header {
+  background-color: #FFDE00;
+  height: 60px;
+  left: 0;
+  padding: 12px 15px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 80;
+}
+
+.brand-main {
+  img {
+    height: 25px;
+    padding-top: 6px;
+  }
+}
+
+.logo-main{
+  width: 300px;
+}
+
+.nav-list {
+  float: right;
+  list-style: none;
+  margin: 0;
+
+  li {
+    display: inline-block;
+    position: relative;
+
+    a {
+      background-color: #444;
+      border-radius: 2px;
+      color: #fff;
+      display: inline-block;
+      font-size: 14px;
+      line-height: 14px;
+      padding: 11px;
+      text-decoration: none;
+    }
+
+    a:hover {
+      background-color: lighten(#444, 10%);
+      color: #fff;
+    }
+
+  }
+
+}
+
+/*
+|--------------------------------------------------------------------------
+| Sections
+|--------------------------------------------------------------------------
+*/
+
+
+.section {
+  padding: 80px 0;
+}
+
+.section-head{
+  margin-bottom: 40px;
+  border-bottom: 2px solid #FFDE00;
+  display: inline-block;
+  line-height: 50px;
+  padding: 0 20px;
+}
+
+.section-hero-area h2{
+  color : #fff;
+  text-transform: uppercase;
+  margin-top: 40px;
+}
+
+.section-hero-area {
+  position: relative;
+  color: #fff;
+
+  &::before {
+    background-image: url('../img/sky-night.jpeg');
+    background-position: center top;
+    background-size: cover;
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
+
+  &::after {
+    background-color: rgba(38 ,50 ,56,.6);
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
+}
+
+.section-dashboards{
+  background-color: #F8F8F8;
+}
+
+.layout-box{
+
+  position: relative;
+  margin-bottom: 20px;
+  padding: 20px;
+
+  .preview-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(51,51,51,0.9);
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    vertical-align: center;
+    opacity: 0;
+    transition: 0.3s all ease-in-out;
+  }
+
+  .preview-content h4{
+    text-align: center;
+    margin-top: -20px;
+    position: relative;
+    font-size: 1.2rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-weight: 400;
+    z-index: 10;
+    top: 50%;
+    width: 100%;
+    color : #FFF;
+    transform: translateY(-50%);
+    transition: all 0.2s ease-out;
+  }
+
+  &:hover .preview-content{
+    opacity:1;
+
+    h4{
+      margin-top: 0px;
+    }
+  }
+}
+
+div.icon-box{
+
+  margin-bottom: 30px;
+
+  h3{
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+
+  i{
+    font-size: 1.5rem;
+    display: block;
+    margin-bottom: 1rem;
+    color: #FFDE00;
+  }
+  p{
+    font-size: 0.9rem;
+  }
+}
+
+
+footer{
+  background-color: #444;
+  padding: 40px 0;
+  color: #fff;
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1200px;
+  }
+}

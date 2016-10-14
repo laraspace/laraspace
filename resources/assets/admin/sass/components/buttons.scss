@@ -1,0 +1,75 @@
+.btn {
+  &.btn-pressable:active{
+    transform: translate(0px, 3px);
+    -webkit-transform: translate(0px, 3px);
+  }
+
+}
+
+
+// Disable Outline on focus
+.btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus{
+  outline: none;
+}
+
+.btn-default{
+  border:1px solid $ls-color-gray--dark;
+  background-color :$white;
+
+  &:hover,&:active,&:focus {
+    background-color: $ls-color-gray--light;
+  }
+}
+
+.btn-default-outline{
+  border:1px solid $ls-color-gray--dark;
+  background-color :$white;
+
+  &:hover,&:active,&:focus {
+    background-color: $ls-color-gray--light;
+  }
+}
+
+.btn-theme {
+  @include button-variant($ls-color-secondary, $ls-color-primary, $ls-color-primary);
+}
+
+.btn-theme-outline {
+  @include button-outline-variant($ls-color-primary);
+}
+
+// Rounded Button
+.btn-rounded {
+  border-radius: 20px;
+}
+
+.btn i{
+  width: 1.2em;
+  text-align: left;
+}
+
+.btn-icon {
+  padding: 0.6rem;
+  line-height: 1em;
+  i{
+    text-align: center;
+  }
+}
+// Sizes
+.btn-xs {
+  font-size: 12px;
+  padding: 3px 10px;
+}
+
+.btn-full {
+  width: 100%;
+}
+
+
+// Extra
+
+
+
+.ladda-button{
+  overflow: visible !important;
+}

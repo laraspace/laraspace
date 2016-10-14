@@ -1,0 +1,85 @@
+.avatar-container{
+  padding: 10px;
+  border: 1px solid $ls-color-gray--dark;
+}
+
+.detail-row i{
+  width: 30px;
+  text-align: center;
+  margin-left: -7px;
+}
+
+.activity-list .media{
+  padding-right: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid $ls-color-gray--dark;
+}
+
+.activity-list .media-left{
+  padding-right: 20px;
+}
+
+.activity-list .media-object{
+  width: 50px;
+}
+
+.activity-list .media-body{
+  small{
+    color: #a3afb7;
+  }
+  p{
+    margin-bottom: 0;
+  }
+}
+
+.activity-list .media-heading{
+  font-size: 1.2rem;
+  margin-bottom: 0;
+
+  span{
+    color: $base-font-color;
+    font-size: 1rem;
+  }
+}
+
+.friends-list .media {
+  width: 30%;
+  display: inline-block;
+  border: 1px solid $ls-color-gray--dark;
+  margin-right: 3%;
+}
+
+
+.friends-list .media-left {
+  padding-right: 20px;
+}
+
+.friends-list .media-object{
+  width: 90px;
+}
+
+.friends-list .media-body{
+  padding-top: 30px;
+}
+
+.friends-list .media-heading{
+  font-size: 1.1rem;
+  margin-bottom: 0;
+}
+
+@include media-breakpoint-down(md) {
+
+  .friends-list .media {
+    width: 45%;
+  }
+
+}
+
+@include media-breakpoint-down(sm) {
+
+  .friends-list .media {
+    width: 100%;
+
+  }
+
+}
