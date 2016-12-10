@@ -73,6 +73,8 @@ Route::group(['middleware' => 'guest'], function () {
         'as' => 'login.post', 'uses' => 'AuthController@postLogin'
     ]);
 
+    Route::get('auth/{provider}', 'AuthController@redirectToProvider');
+    Route::get('auth/{provider}/callback', 'AuthController@handleProviderCallback');
 });
 
 Route::get('logout', [

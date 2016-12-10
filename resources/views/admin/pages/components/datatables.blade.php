@@ -18,7 +18,13 @@
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-header">
-                        <h3>Default</h3>
+                        <div class="caption">
+                            <h6>Default</h6>
+                        </div>
+                        <div class="actions">
+                            <button class="btn btn-primary btn-sm"> <i class="fa fa-plus"></i> Add New</button>
+                            <button class="btn btn-danger btn-sm"> <i class="fa fa-trash"></i> Delete</button>
+                        </div>
                     </div>
                     <div class="card-block">
                         <table id="default-datatable" class="table table-striped table-bordered" cellspacing="0" width="100%">
@@ -505,7 +511,7 @@
                 </div>
                 <div class="card">
                     <div class="card-header">
-                        <h3>Responsive</h3>
+                        <h6>Responsive</h6>
                     </div>
                     <div class="card-block">
                         <table id="responsive-datatable" class="table table-striped table-bordered" cellspacing="0" width="100%">

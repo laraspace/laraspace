@@ -102,8 +102,8 @@
                 </div>
                 <div class="col-md-4">
                     <div class="layout-box">
-                        <a href="#" target="_blank">
-                            <img src="/assets/front/img/dashboard-coming.png" alt="" class="img-fluid">
+                        <a href="/admin/dashboard/finance" target="_blank">
+                            <img src="/assets/front/img/dashboard-finance.png" alt="" class="img-fluid">
                             <div class="preview-content">
                                 <h4>Finance</h4>
                             </div>

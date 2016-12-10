@@ -10,7 +10,7 @@
             <h3 class="page-title">User Profile</h3>
             <ol class="breadcrumb">
                 <li><a href="{{route('admin.dashboard')}}">Home</a></li>
-                <li><a href="{{route('admin.users.index')}}">Users</a></li>
+                <li><a href="{{route('users.index')}}">Users</a></li>
                 <li class="active">Jane Doe</li>
             </ol>
         </div>

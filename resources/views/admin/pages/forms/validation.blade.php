@@ -18,7 +18,7 @@
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-header">
-                        <h3>Jquery Validate <a class="source-link" href="https://jqueryvalidation.org/" target="_blank">source</a></h3>
+                        <h6>Jquery Validate <a class="source-link" href="https://jqueryvalidation.org/" target="_blank">source</a></h6>
                     </div>
                     <div class="card-block">
                         <form id="validateForm">

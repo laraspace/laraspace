@@ -18,7 +18,7 @@
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-header">
-                        <h3>Chartjs</h3>
+                        <h6>Chartjs</h6>
                     </div>
                     <div class="card-block">
                         <div class="m-b-2">

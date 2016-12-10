@@ -9,7 +9,7 @@
     @include('admin.layouts.partials.favicons')
     @yield('styles')
 </head>
-<body id="app" class="layout-horizontal skin-targaryen">
+<body id="app" class="layout-horizontal skin-default">
     @include('admin.layouts.partials.laraspace-notifs')
     @include('admin.layouts.partials.header')
     <div class="mobile-menu-overlay"></div>

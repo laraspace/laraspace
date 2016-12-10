@@ -14,7 +14,7 @@
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-header">
-                        <h3>Basic Inputs</h3>
+                        <h6>Basic Inputs</h6>
                     </div>
                     <div class="card-block">
                         <h5 class="section-semi-title">Horizontal</h5>
@@ -140,7 +140,7 @@
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-header">
-                        <h3>Checkbox & Radios</h3>
+                        <h6>Checkbox & Radios</h6>
                     </div>
                     <div class="card-block">
                         <div class="row">

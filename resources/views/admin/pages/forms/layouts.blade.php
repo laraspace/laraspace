@@ -14,7 +14,7 @@
             <div class="col-sm-6">
                 <div class="card">
                     <div class="card-header">
-                        <h3>Basic Form</h3>
+                        <h6>Basic Form</h6>
                     </div>
                     <div class="card-block">
                         <form>
@@ -64,7 +64,7 @@
             <div class="col-sm-6">
                 <div class="card">
                     <div class="card-header">
-                        <h3>Horizontal Form</h3>
+                        <h6>Horizontal Form</h6>
                     </div>
                     <div class="card-block">
                         <form>
@@ -102,7 +102,7 @@
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-header">
-                        <h3>Inline Form</h3>
+                        <h6>Inline Form</h6>
                     </div>
                     <div class="card-block">
                         <form class="form-inline">

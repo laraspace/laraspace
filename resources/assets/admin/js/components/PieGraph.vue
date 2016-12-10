@@ -11,7 +11,9 @@
 
         props: [
             'labels',
-            'values'
+            'values',
+            'bgColors',
+            'hoverBgColors'
         ],
 
         mounted: function () {
@@ -21,28 +23,20 @@
             var options = {
                 responsive: true,
                 maintainAspectRatio: false,
-                legend: {
-                    display: false
-                },
             };
 
             var data = {
                 labels: this.labels,
                 datasets: [
                     {
-                        label: "My First dataset",
-                        backgroundColor: "rgba(79, 196, 127,0.2)",
-                        borderColor: "rgba(79, 196, 127,1)",
-                        borderWidth: 1,
-                        hoverBackgroundColor: "rgba(79, 196, 127,0.4)",
-                        hoverBorderColor: "rgba(79, 196, 127,1)",
                         data: this.values,
-                    }
-                ]
+                        backgroundColor: this.bgColors,
+                        hoverBackgroundColor: this.hoverBgColors
+                    }]
             };
 
-            var myBarChart = new Chart(context, {
-                type: 'bar',
+            var myPieChart = new Chart(context,{
+                type: 'pie',
                 data: data,
                 options: options
             });

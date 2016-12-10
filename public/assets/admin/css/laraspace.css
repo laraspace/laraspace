@@ -2151,7 +2151,7 @@ input[type="button"].btn-block {
   clear: both;
   font-weight: normal;
   line-height: 1.5;
-  color: #373a3c;
+  color: #fff;
   text-align: inherit;
   white-space: nowrap;
   background: none;
@@ -13238,6 +13238,8 @@ span.CodeMirror-selectedtext {
   .skin-tyrell .dropdown-menu .dropdown-header {
     border-bottom: 1px solid #bababa;
     color: #4fc47f; }
+  .skin-tyrell .dropdown-menu .dropdown-item {
+    color: #333; }
   .skin-tyrell .dropdown-menu a:hover {
     background-color: #f2f2f2;
     color: #333; }
@@ -13478,6 +13480,8 @@ span.CodeMirror-selectedtext {
   .skin-arryn .dropdown-menu .dropdown-header {
     border-bottom: 1px solid #bababa;
     color: #007dcc; }
+  .skin-arryn .dropdown-menu .dropdown-item {
+    color: #333; }
   .skin-arryn .dropdown-menu a:hover {
     background-color: #f2f2f2;
     color: #333; }
@@ -13718,6 +13722,8 @@ span.CodeMirror-selectedtext {
   .skin-targaryen .dropdown-menu .dropdown-header {
     border-bottom: 1px solid #bababa;
     color: #fff; }
+  .skin-targaryen .dropdown-menu .dropdown-item {
+    color: #333; }
   .skin-targaryen .dropdown-menu a:hover {
     background-color: #485071;
     color: #fff; }
@@ -14291,6 +14297,9 @@ code, .code {
 :active, :focus, :hover {
   outline: 0; }
 
+.text-default {
+  color: #333 !important; }
+
 .site-header {
   background-color: #ffde00;
   height: 60px;
@@ -14835,45 +14844,70 @@ code, .code {
   overflow: visible !important; }
 
 .card {
-  margin-bottom: 1.5rem;
-  overflow: hidden; }
-  .card .card-header i {
-    width: 1.3em; }
-  .card .card-header h4 {
-    font-size: 1rem;
-    font-weight: normal;
-    margin: 0; }
-  .card .card-header h3 {
-    font-weight: normal;
-    margin: 0;
-    font-size: 1.25rem; }
-  .card .card-header h5 {
-    margin: 0;
-    font-weight: normal; }
-  .card .card-header.bg-dark {
-    background-color: #333;
-    color: #fff; }
+  margin-bottom: 1.5rem; }
+  .card .card-header {
+    position: relative; }
+    .card .card-header::after {
+      content: "";
+      display: table;
+      clear: both; }
+    .card .card-header i {
+      width: 1.3em; }
+    .card .card-header h6 {
+      font-size: 1rem;
+      font-weight: normal;
+      margin: 0; }
+    .card .card-header h3 {
+      font-weight: normal;
+      margin: 0;
+      font-size: 1.25rem; }
+    .card .card-header h5 {
+      margin: 0;
+      font-weight: normal; }
+    .card .card-header.bg-dark {
+      background-color: #333;
+      color: #fff; }
+    .card .card-header .caption {
+      display: inline-block;
+      padding: 8px 0; }
+    .card .card-header .actions {
+      float: right;
+      margin: auto; }
   .card .section-semi-title {
     font-size: 1.1rem;
     text-transform: uppercase;
     font-weight: 400; }
   .card .card-footer {
     background-color: #fff; }
-  .card.with-tabs .card-block {
-    padding-top: 10px !important; }
-  .card .bg-primary h3, .card .bg-primary h5,
+  .card.with-tabs .card-header {
+    padding: 0; }
+    .card.with-tabs .card-header .caption {
+      padding: 20px; }
+    .card.with-tabs .card-header .actions {
+      padding-right: 20px; }
+    .card.with-tabs .card-header .nav-tabs {
+      border-bottom: none; }
+    .card.with-tabs .card-header .nav-link {
+      padding: 1em 1.5em; }
+  .card .bg-primary h3, .card .bg-primary h5, .card .bg-primary h6,
   .card .bg-info h3,
   .card .bg-info h5,
+  .card .bg-info h6,
   .card .bg-primary h3,
   .card .bg-primary h5,
+  .card .bg-primary h6,
   .card .bg-dark h3,
   .card .bg-dark h5,
+  .card .bg-dark h6,
   .card .bg-success h3,
   .card .bg-success h5,
+  .card .bg-success h6,
   .card .bg-danger h3,
   .card .bg-danger h5,
+  .card .bg-danger h6,
   .card .bg-warning h3,
-  .card .bg-warning h5 {
+  .card .bg-warning h5,
+  .card .bg-warning h6 {
     color: #fff; }
 
 .tabs .tab-content {
@@ -15124,7 +15158,7 @@ code, .code {
     font-weight: bold; }
   .dashbox .desc {
     color: #bababa;
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase; }
@@ -15249,6 +15283,17 @@ code, .code {
   .login-page .brand-main img {
     height: auto;
     width: 300px; }
+
+.other-options {
+  border-top: 1px solid #fff;
+  padding: 1rem 0;
+  margin-top: 2rem; }
+  .other-options h6 {
+    color: #c7cbd1;
+    font-size: 15px;
+    margin-top: 12px; }
+  .other-options a, .other-options a:hover {
+    color: #fff; }
 
 .avatar-container {
   padding: 10px;

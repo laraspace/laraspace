@@ -12,7 +12,7 @@
         </div>
         <div class="card">
             <div class="card-header">
-                <h5>Tabs Default</h5>
+                <h6>Tabs Default</h6>
             </div>
             <div class="card-block">
                 <div class="row">
@@ -159,7 +159,7 @@
         </div>
         <div class="card">
             <div class="card-header">
-                <h5>Tabs Simple</h5>
+                <h6>Tabs Simple</h6>
             </div>
             <div class="card-block">
                 <div class="row">

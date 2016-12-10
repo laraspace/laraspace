@@ -11,7 +11,7 @@
         </div>
         <div class="card">
             <div class="card-header">
-                <h3>Easy Site Settings API</h3>
+                <h6>Easy Site Settings API</h6>
             </div>
             <div class="card-block">
                 <p>Laraspace provides easy way to store and retrieve your Site Settings</p>
@@ -23,7 +23,7 @@
             <div class="col-sm-8">
                 <div class="card">
                     <div class="card-header">
-                        <h3>Example Social Settings</h3>
+                        <h6>Example Social Settings</h6>
                     </div>
                     <div class="card-block">
                         <form action="{{route('admin.settings.social')}}" method="post">

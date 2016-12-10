@@ -21,9 +21,11 @@
             var options = {
                 responsive: true,
                 maintainAspectRatio: false,
+                legend: {
+                    display: false
+                },
             };
 
-            Chart.defaults.global.legend.display = false;
 
             var data = {
                 labels: this.labels,

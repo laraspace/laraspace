@@ -14,7 +14,7 @@
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-header">
-                        <h3>Headings</h3>
+                        <h6>Headings</h6>
                     </div>
                     <div class="card-block buttons-demo">
                         <div class="row">
@@ -47,7 +47,7 @@
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-header">
-                        <h3>Other</h3>
+                        <h6>Other</h6>
                     </div>
                     <div class="card-block">
                         <div class="row">

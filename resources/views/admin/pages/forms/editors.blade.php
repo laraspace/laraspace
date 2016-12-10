@@ -12,7 +12,7 @@
         </div>
         <div class="card">
             <div class="card-header">
-                <h3>Summernote</h3>
+                <h6>Summernote</h6>
             </div>
             <div class="card-block">
                 <div class="ls-summernote">
@@ -22,7 +22,7 @@
         </div>
         <div class="card">
             <div class="card-header">
-                <h3>Simple MDE</h3>
+                <h6>Simple MDE</h6>
             </div>
             <div class="card-block">
                 <textarea class="ls-simplemde">

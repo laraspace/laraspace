@@ -67,21 +67,20 @@ class LaraspaceClean extends Command
             }
         }
 
-        $this->info('Project has been converted to Starer Kit!');
-
         //Replace Routes & Menu Files.
-
         $this->files->copy(
             base_path('app/Space/Core/Files/demo_menu.php'),
             base_path('config/menu.php'));
 
         $this->files->copy(
             base_path('app/Space/Core/Files/demo_routes.php'),
-            base_path('app/Http/routes.php'));
+            base_path('routes/web.php'));
 
         $this->files->copy(
             base_path('app/Space/Core/Files/DashboardController.php'),
             base_path('app/Http/Controllers/DashboardController.php'));
+
+        $this->info('Project has been converted to Starer Kit!');
 
     }
 }

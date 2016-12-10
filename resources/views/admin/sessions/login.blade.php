@@ -28,7 +28,17 @@
       </div>
     </div>
     <button class="btn btn-theme btn-full">Login</button>
-    <a href="/auth/facebook" class="btn btn-theme btn-full"><i class="fa fa-facebook"></i> Login with Facebook</a>
-    <a href="/auth/twitter" class="btn btn-theme btn-full"><i class="fa fa-twitter"></i> Login with Twitter</a>
+    <div class="form-group other-options">
+      <div class="social-caption pull-left">
+        <h6>
+          Or Login With
+        </h6>
+      </div>
+      <div class="social-icons pull-right">
+        <a href="/auth/facebook" class="btn btn-default text-primary btn-icon"><i class="fa fa-facebook"></i></a>
+        <a href="/auth/google" class="btn btn-default text-danger btn-icon"><i class="fa fa-google"></i></a>
+        <a href="/auth/github" class="btn btn-default btn-icon text-default"><i class="fa fa-github"></i></a>
+      </div>
+    </div>
   </form>
 @stop

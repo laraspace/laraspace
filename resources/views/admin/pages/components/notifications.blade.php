@@ -18,7 +18,7 @@
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-header">
-                        <h3>Toastr</h3>
+                        <h6>Toastr</h6>
                     </div>
                     <div class="card-block buttons-demo">
                         <div class="row">
@@ -45,7 +45,7 @@
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-header">
-                        <h3>Notie.js</h3>
+                        <h6>Notie.js</h6>
                     </div>
                     <div class="card-block">
                         <div class="row">
@@ -81,7 +81,7 @@
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-header">
-                        <h3>Easy Flash Notifications</h3>
+                        <h6>Easy Flash Notifications</h6>
                     </div>
                     <div class="card-block">
                         <div class="row">

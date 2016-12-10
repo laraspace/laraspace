@@ -31,6 +31,8 @@ class AuthController extends Controller
     public function logOut()
     {
         Auth::logout();
+
+        return redirect()->to('/login');
     }
 
     public function register()
@@ -72,12 +74,17 @@ class AuthController extends Controller
         ->orWhere('email',$provider_user->email)
         ->first();
 
+
         if(!$user){
             $user =  User::create([
                 'name' => $provider_user->name,
                 'email' => $provider_user->email,
                 $provider . '_id' => $provider_user->token
             ]);
+        }else{
+            // Update the token on each login request
+            $user[$provider . '_id'] = $provider_user->token;
+            $user->save();
         }
 
         return $user;

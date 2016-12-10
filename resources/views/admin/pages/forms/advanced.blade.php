@@ -12,7 +12,7 @@
         </div>
         <div class="card">
             <div class="card-header">
-                <h3>Select 2 <a class="source-link" href="https://select2.github.io/" target="_blank">source</a></h3>
+                <h6>Select 2 <a class="source-link" href="https://select2.github.io/" target="_blank">source</a></h6>
             </div>
             <div class="card-block">
                 <div class="row">
@@ -117,7 +117,7 @@
         </div>
         <div class="card">
             <div class="card-header">
-                <h3>Bootstrap Select <a class="source-link" href="http://silviomoreto.github.io/bootstrap-select/" target="_blank">source</a></h3>
+                <h6>Bootstrap Select <a class="source-link" href="http://silviomoreto.github.io/bootstrap-select/" target="_blank">source</a></h6>
             </div>
             <div class="card-block">
                 <div class="row">
@@ -202,7 +202,7 @@
         </div>
         <div class="card">
             <div class="card-header">
-                <h3>Multiple Select <a class="source-link" href="http://loudev.com/" target="_blank">source</a></h3>
+                <h6>Multiple Select <a class="source-link" href="http://loudev.com/" target="_blank">source</a></h6>
             </div>
             <div class="card-block">
                 <div class="row">
@@ -307,7 +307,7 @@
         </div>
         <div class="card">
             <div class="card-header">
-                <h3>Switch Toggles <a class="source-link" href="http://abpetkov.github.io/switchery/" target="_blank">source</a></h3>
+                <h6>Switch Toggles <a class="source-link" href="http://abpetkov.github.io/switchery/" target="_blank">source</a></h6>
             </div>
             <div class="card-block">
                 <div class="row">
@@ -344,7 +344,7 @@
         </div>
         <div class="card">
             <div class="card-header">
-                <h3>Clock Time Picker <a class="source-link" href="http://weareoutman.github.io/clockpicker/" target="_blank">source</a></h3>
+                <h6>Clock Time Picker <a class="source-link" href="http://weareoutman.github.io/clockpicker/" target="_blank">source</a></h6>
             </div>
             <div class="card-block">
                 <div class="row">
@@ -377,7 +377,7 @@
         </div>
         <div class="card">
             <div class="card-header">
-                <h3>Date Picker <a class="source-link" href="https://github.com/eternicode/bootstrap-datepicker" target="_blank">source</a></h3>
+                <h6>Date Picker <a class="source-link" href="https://github.com/eternicode/bootstrap-datepicker" target="_blank">source</a></h6>
             </div>
             <div class="card-block">
                 <div class="row">
@@ -419,7 +419,7 @@
         </div>
         <div class="card">
             <div class="card-header">
-                <h3>Time Picker <a class="source-link" href="http://jonthornton.github.io/jquery-timepicker/" target="_blank">source</a></h3>
+                <h6>Time Picker <a class="source-link" href="http://jonthornton.github.io/jquery-timepicker/" target="_blank">source</a></h6>
             </div>
             <div class="card-block">
                 <div class="row">

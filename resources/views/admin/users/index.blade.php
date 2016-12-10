@@ -23,7 +23,11 @@
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-header">
-                        <h3>All Users</h3>
+                        <h6>All Users</h6>
+
+                        <div class="card-actions">
+
+                        </div>
                     </div>
                     <div class="card-block">
                         <table id="users-datatable" class="table table-striped table-bordered" cellspacing="0" width="100%">
