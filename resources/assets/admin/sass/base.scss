@@ -1,0 +1,44 @@
+// base.scss - Basic Style Rules..
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: $ls-color-gray--light;
+    font-family: $base-font-family;
+    color: $base-font-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $heading-font-color;
+    font-weight: normal;
+}
+
+a {
+    color: $ls-color-black--light;
+
+    &:hover, &:focus {
+        color: lighten($ls-color-black--light, 10%);
+        text-decoration: none;
+        outline: none;
+    }
+
+}
+
+mark, .mark {
+    background-color: $ls-color-primary;
+}
+
+code, .code {
+    background-color: $code-bg;
+    color: $ls-color-primary;
+}
+
+:active, :focus, :hover {
+    outline: 0;
+}
+
+.text-default {
+    color: $ls-color-black !important;
+}

@@ -1,0 +1,206 @@
+/*
+|--------------------------------------------------------------------------
+| Form Layout
+|--------------------------------------------------------------------------
+*/
+
+.form-control-label {
+    padding: 0.375rem 0.9375rem;
+}
+
+.form-inline .form-group {
+    margin-right: 1rem;
+}
+
+.form-inline .control-label,
+.form-inline .form-control-label {
+    margin-right: 0.5rem;
+}
+
+.input-icon {
+    position: relative;
+}
+
+.input-icon i {
+    position: absolute;
+    left: 0;
+    margin: 11px 2px 4px 10px;
+    z-index: 3;
+    width: 16px;
+}
+
+.input-icon input {
+    padding-left: 40px;
+}
+
+.checkbox-full label {
+    display: block;
+}
+
+.note-popover {
+    display: none;
+    margin-top: 5px;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Form Validation
+|--------------------------------------------------------------------------
+*/
+
+.help-block {
+    padding: 0.3rem 0;
+    color: #333;
+    font-size: 14px;
+}
+
+.help-block-error {
+    color: $brand-danger;
+}
+
+.has-success .form-control-label,
+.has-danger .form-control-label,
+.has-warning .form-control-label {
+    padding-left: 0;
+}
+
+.form-control {
+    border: 1px solid $ls-color-gray--dark;
+
+    &:focus {
+        border: 1px solid $ls-color-primary;
+    }
+}
+
+/*
+|--------------------------------------------------------------------------
+| Select 2 Custom Styles
+|--------------------------------------------------------------------------
+*/
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 24px;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+}
+
+.select2-container--default .select2-selection--single,
+.select2-container--default .select2-selection--multiple {
+    height: auto;
+    border: 1px solid $ls-color-gray--dark;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 35px;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color: $ls-color-primary;
+    color: $ls-color-secondary;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    background-color: $ls-color-primary;
+    border: none;
+}
+
+.select2-container--default .select2-results__option[aria-selected=true] {
+    border: 1px solid $ls-color-gray--dark;
+}
+
+.select2-container--default .select2-results__option[aria-selected=true] {
+    background-color: $ls-color-gray--light;
+    border: none;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+    color: $ls-color-secondary;
+}
+
+.select2-container--default .select2-dropdown {
+    border: solid $ls-color-primary 1px;
+}
+
+.select2-container--default .select2-dropdown--below {
+    border-top-color: transparent;
+}
+
+.select2-container--default .select2-dropdown--above {
+    border-bottom-color: transparent;
+}
+
+.select2-container--default.select2-container--open .select2-selection--multiple {
+    border: none;
+}
+
+.select2-container--default.select2-container--open.select2-container--below .select2-selection {
+    border: 1px solid $ls-color-primary;
+    border-bottom-color: transparent;
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field {
+    border: 1px solid $ls-color-gray--dark;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+    border: solid $ls-color-gray--dark 1px;
+    outline: 0;
+}
+
+.select2-container--default:focus {
+    outline: none;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Multiple Select
+|--------------------------------------------------------------------------
+*/
+
+.ms-container {
+    width: 100%;
+}
+
+.ms-selectable {
+    width: 49%;
+}
+
+.ms-optgroup-label {
+    font-size: 15px;
+}
+
+.bootstrap-select .dropdown-menu a {
+    display: block;
+    padding: 5px 1rem;
+    color: $header-font-color;
+    position: static;
+    border: none;
+    font-size: 1rem;
+    font-weight: 400;
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: $header-buttons-bg-color--hover;
+    }
+}
+
+.bootstrap-select .hidden {
+    display: none !important;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Datepicker
+|--------------------------------------------------------------------------
+*/
+
+.datepicker-dropdown {
+    color: $body-color;
+    background-color: $white;
+    border: 1px solid rgba(0, 0, 0, .15);
+}

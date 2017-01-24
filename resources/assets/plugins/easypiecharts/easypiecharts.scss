@@ -1,0 +1,28 @@
+//Easy Pie Charts
+.easy-pie-chart {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+
+    .percent {
+        display: inline-block;
+        line-height: 80px;
+        z-index: 2;
+        font-size: 18px;
+    }
+
+    .percent:after {
+        content: '%';
+        margin-left: 0.1em;
+        font-size: .8em;
+    }
+
+    canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+}
