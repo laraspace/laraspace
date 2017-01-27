@@ -30,8 +30,8 @@
       <li>
         <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="avatar"><img src="/assets/admin/img/avatars/avatar.png" alt="Avatar"></a>
         <div class="dropdown-menu dropdown-menu-right notification-dropdown">
-          <a class="dropdown-item" href="#"><i class="fa fa-cogs"></i> Settings</a>
-          <a class="dropdown-item" href="#"><i class="fa fa-sign-out"></i> Logout</a>
+          <a class="dropdown-item" href="/settings"><i class="fa fa-cogs"></i> Settings</a>
+          <a class="dropdown-item" href="/logout"><i class="fa fa-sign-out"></i> Logout</a>
         </div>
       </li>
     </ul>

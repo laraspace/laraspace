@@ -30,6 +30,7 @@ h1,h2,h3,h4,h5,h6{
 
   &:hover {
     background-color: darken(#FFDE00,5%);
+    color: #444;
   }
 }
 
@@ -48,6 +49,7 @@ h1,h2,h3,h4,h5,h6{
   position: fixed;
   top: 0;
   width: 100%;
+  text-align: left;
   z-index: 80;
 }
 
@@ -62,19 +64,23 @@ h1,h2,h3,h4,h5,h6{
   width: 300px;
 }
 
-.nav-list {
+.action-list {
   float: right;
   list-style: none;
   margin: 0;
 
   li {
-    display: inline-block;
+    display: block;
+    float: left;
     position: relative;
+    height: 36px;
+    margin: 0;
+    padding: 0 4px;
 
     a {
-      background-color: #444;
+      background-color: #333333;
       border-radius: 2px;
-      color: #fff;
+      color: #FFFFFF;
       display: inline-block;
       font-size: 14px;
       line-height: 14px;
@@ -83,12 +89,11 @@ h1,h2,h3,h4,h5,h6{
     }
 
     a:hover {
-      background-color: lighten(#444, 10%);
-      color: #fff;
+      background-color: lighten(#333333,5%);
+      color: #FFFFFF;
     }
 
   }
-
 }
 
 /*
@@ -119,6 +124,7 @@ h1,h2,h3,h4,h5,h6{
 .section-hero-area {
   position: relative;
   color: #fff;
+  padding-top: 100px;
 
   &::before {
     background-image: url('../img/sky-night.jpeg');
@@ -145,12 +151,12 @@ h1,h2,h3,h4,h5,h6{
   }
 }
 
+
 .section-dashboards{
   background-color: #F8F8F8;
 }
 
 .layout-box{
-
   position: relative;
   margin-bottom: 20px;
   padding: 20px;
@@ -166,31 +172,34 @@ h1,h2,h3,h4,h5,h6{
     vertical-align: center;
     opacity: 0;
     transition: 0.3s all ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
-  .preview-content h4{
-    text-align: center;
-    margin-top: -20px;
-    position: relative;
-    font-size: 1.2rem;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    font-weight: 400;
-    z-index: 10;
-    top: 50%;
-    width: 100%;
-    color : #FFF;
-    transform: translateY(-50%);
-    transition: all 0.2s ease-out;
+  .preview-content a{
+    margin : 5px;
+    border-radius: 20px;
   }
 
   &:hover .preview-content{
-    opacity:1;
-
-    h4{
-      margin-top: 0px;
-    }
+    opacity: 1;
   }
+
+
+  h4{
+    text-align: center;
+    letter-spacing: 1.5px;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    width: 100%;
+    margin-top: 15px;
+  }
+}
+
+.btn-theme {
+  @include button-variant(#444 , #FFDE00, #FFDE00);
 }
 
 div.icon-box{

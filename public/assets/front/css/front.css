@@ -6802,7 +6802,8 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #FFDE00;
   color: #444; }
   .btn-action:hover {
-    background-color: #e6c800; }
+    background-color: #e6c800;
+    color: #444; }
 
 /*
 |--------------------------------------------------------------------------
@@ -6817,6 +6818,7 @@ h1, h2, h3, h4, h5, h6 {
   position: fixed;
   top: 0;
   width: 100%;
+  text-align: left;
   z-index: 80; }
 
 .brand-main img {
@@ -6826,25 +6828,29 @@ h1, h2, h3, h4, h5, h6 {
 .logo-main {
   width: 300px; }
 
-.nav-list {
+.action-list {
   float: right;
   list-style: none;
   margin: 0; }
-  .nav-list li {
-    display: inline-block;
-    position: relative; }
-    .nav-list li a {
-      background-color: #444;
+  .action-list li {
+    display: block;
+    float: left;
+    position: relative;
+    height: 36px;
+    margin: 0;
+    padding: 0 4px; }
+    .action-list li a {
+      background-color: #333333;
       border-radius: 2px;
-      color: #fff;
+      color: #FFFFFF;
       display: inline-block;
       font-size: 14px;
       line-height: 14px;
       padding: 11px;
       text-decoration: none; }
-    .nav-list li a:hover {
-      background-color: #5e5e5e;
-      color: #fff; }
+    .action-list li a:hover {
+      background-color: #404040;
+      color: #FFFFFF; }
 
 /*
 |--------------------------------------------------------------------------
@@ -6868,7 +6874,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .section-hero-area {
   position: relative;
-  color: #fff; }
+  color: #fff;
+  padding-top: 100px; }
   .section-hero-area::before {
     background-image: url("../img/sky-night.jpeg");
     background-position: center top;
@@ -6908,27 +6915,58 @@ h1, h2, h3, h4, h5, h6 {
     vertical-align: center;
     opacity: 0;
     -webkit-transition: 0.3s all ease-in-out;
-    transition: 0.3s all ease-in-out; }
-  .layout-box .preview-content h4 {
-    text-align: center;
-    margin-top: -20px;
-    position: relative;
-    font-size: 1.2rem;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    font-weight: 400;
-    z-index: 10;
-    top: 50%;
-    width: 100%;
-    color: #FFF;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    -webkit-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out; }
+    transition: 0.3s all ease-in-out;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center; }
+  .layout-box .preview-content a {
+    margin: 5px;
+    border-radius: 20px; }
   .layout-box:hover .preview-content {
     opacity: 1; }
-    .layout-box:hover .preview-content h4 {
-      margin-top: 0px; }
+  .layout-box h4 {
+    text-align: center;
+    letter-spacing: 1.5px;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    width: 100%;
+    margin-top: 15px; }
+
+.btn-theme {
+  color: #444;
+  background-color: #FFDE00;
+  border-color: #FFDE00; }
+  .btn-theme:hover {
+    color: #444;
+    background-color: #ccb200;
+    border-color: #c2a900; }
+  .btn-theme:focus, .btn-theme.focus {
+    color: #444;
+    background-color: #ccb200;
+    border-color: #c2a900; }
+  .btn-theme:active, .btn-theme.active,
+  .open > .btn-theme.dropdown-toggle {
+    color: #444;
+    background-color: #ccb200;
+    border-color: #c2a900;
+    background-image: none; }
+    .btn-theme:active:hover, .btn-theme:active:focus, .btn-theme:active.focus, .btn-theme.active:hover, .btn-theme.active:focus, .btn-theme.active.focus,
+    .open > .btn-theme.dropdown-toggle:hover,
+    .open > .btn-theme.dropdown-toggle:focus,
+    .open > .btn-theme.dropdown-toggle.focus {
+      color: #444;
+      background-color: #a89300;
+      border-color: #806f00; }
+  .btn-theme.disabled:focus, .btn-theme.disabled.focus, .btn-theme:disabled:focus, .btn-theme:disabled.focus {
+    background-color: #FFDE00;
+    border-color: #FFDE00; }
+  .btn-theme.disabled:hover, .btn-theme:disabled:hover {
+    background-color: #FFDE00;
+    border-color: #FFDE00; }
 
 div.icon-box {
   margin-bottom: 30px; }

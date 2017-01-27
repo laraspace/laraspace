@@ -23,7 +23,7 @@ Route::get('/', [
 
 Route::group([
     'prefix' => 'admin',
-//    'middleware' => 'admin'
+    'middleware' => 'admin'
 ], function () {
 
     //Main Dashboard

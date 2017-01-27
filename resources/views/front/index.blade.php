@@ -26,8 +26,19 @@
     <meta name="theme-color" content="#333333">
 </head>
 <body>
-
 <div class="site-content text-xs-center">
+    <header class="site-header">
+        <a href="#" class="brand-main">
+            <img src="/assets/admin/img/logo-desk.png" id="logo-desk" alt="Laraspace Logo" class="hidden-sm-down">
+        </a>
+
+        <ul class="action-list">
+            <li>
+                <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Documentation</a>
+            </li>
+        </ul>
+    </header>
+
     <section class="section section-hero-area">
         <div class="container">
             <img src="/assets/admin/img/logo-large.png" alt="" class="logo-main">
@@ -43,32 +54,32 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="layout-box">
-                        <a href="/admin/layouts/sidebar" target="_blank">
-                            <img src="/assets/front/img/mockup-basic.png" alt="" class="img-fluid">
-                            <div class="preview-content">
-                                <h4>Sidebar</h4>
-                            </div>
-                        </a>
+                        <img src="/assets/front/img/mockup-basic.png" alt="" class="img-fluid">
+                        <div class="preview-content">
+                            <a href="#" class="btn btn-theme">Default</a>
+                            <a href="#" class="btn btn-theme">Vue</a>
+                        </div>
+                        <h4>Sidebar</h4>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="layout-box">
-                        <a href="/admin/layouts/icon-sidebar" target="_blank">
-                            <img src="/assets/front/img/mockup-icon.png" alt="" class="img-fluid">
-                            <div class="preview-content">
-                               <h4>Icon Sidebar</h4>
-                            </div>
-                        </a>
+                        <img src="/assets/front/img/mockup-icon.png" alt="" class="img-fluid">
+                        <div class="preview-content">
+                            <a href="#" class="btn btn-theme">Default</a>
+                            <a href="#" class="btn btn-theme">Vue</a>
+                        </div>
+                        <h4>Icon Sidebar</h4>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="layout-box">
-                        <a href="/admin/layouts/horizontal-menu" target="_blank">
-                            <img src="/assets/front/img/mockup-horizontal.png" alt="" class="img-fluid">
-                            <div class="preview-content">
-                                <h4>Horizontal Menu</h4>
-                            </div>
-                        </a>
+                        <img src="/assets/front/img/mockup-horizontal.png" alt="" class="img-fluid">
+                        <div class="preview-content">
+                            <a href="#" class="btn btn-theme">Default</a>
+                            <a href="#" class="btn btn-theme">Vue</a>
+                        </div>
+                        <h4>Horizontal Menu</h4>
                     </div>
                 </div>
             </div>
@@ -82,32 +93,32 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="layout-box">
-                        <a href="/admin/dashboard/basic" target="_blank">
-                            <img src="/assets/front/img/dashboard-basic.png" alt="" class="img-fluid">
-                            <div class="preview-content">
-                                <h4>Basic</h4>
-                            </div>
-                        </a>
+                        <img src="/assets/front/img/dashboard-basic.png" alt="" class="img-fluid">
+                        <div class="preview-content">
+                            <a href="#" class="btn btn-theme">Default</a>
+                            <a href="#" class="btn btn-theme">Vue</a>
+                        </div>
+                        <h4>Basic</h4>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="layout-box">
-                        <a href="/admin/dashboard/ecommerce" target="_blank">
-                            <img src="/assets/front/img/dashboard-ecommerce.png" alt="" class="img-fluid">
-                            <div class="preview-content">
-                                <h4>Ecommerce</h4>
-                            </div>
-                        </a>
+                        <img src="/assets/front/img/dashboard-ecommerce.png" alt="" class="img-fluid">
+                        <div class="preview-content">
+                            <a href="#" class="btn btn-theme">Default</a>
+                            <a href="#" class="btn btn-theme">Vue</a>
+                        </div>
+                        <h4>Ecommerce</h4>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="layout-box">
-                        <a href="/admin/dashboard/finance" target="_blank">
-                            <img src="/assets/front/img/dashboard-finance.png" alt="" class="img-fluid">
-                            <div class="preview-content">
-                                <h4>Finance</h4>
-                            </div>
-                        </a>
+                        <img src="/assets/front/img/dashboard-finance.png" alt="" class="img-fluid">
+                        <div class="preview-content">
+                            <a href="#" class="btn btn-theme">Default</a>
+                            <a href="#" class="btn btn-theme">Vue</a>
+                        </div>
+                        <h4>Finance</h4>
                     </div>
                 </div>
             </div>
