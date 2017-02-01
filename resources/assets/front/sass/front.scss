@@ -1,6 +1,8 @@
+// Plugins
 @import '../../plugins/bootstrap/scss/bootstrap';
-@import '../../plugins/fontawesome/font-awesome';
-
+//@import '../../plugins/fontawesome/font-awesome';
+@import '../../plugins/toastr/toastr.scss';
+@import '../../plugins/notie/notie.scss';
 
 /*
 |--------------------------------------------------------------------------
@@ -115,122 +117,12 @@ h1,h2,h3,h4,h5,h6{
   padding: 0 20px;
 }
 
-.section-hero-area h2{
-  color : #fff;
-  text-transform: uppercase;
-  margin-top: 40px;
+.section-hero-area h1{
+  margin-bottom: 30px;
 }
 
 .section-hero-area {
   position: relative;
-  color: #fff;
   padding-top: 100px;
-
-  &::before {
-    background-image: url('../img/sky-night.jpeg');
-    background-position: center top;
-    background-size: cover;
-    content: '';
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: -1;
-  }
-
-  &::after {
-    background-color: rgba(38 ,50 ,56,.6);
-    content: '';
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: -1;
-  }
 }
 
-
-.section-dashboards{
-  background-color: #F8F8F8;
-}
-
-.layout-box{
-  position: relative;
-  margin-bottom: 20px;
-  padding: 20px;
-
-  .preview-content{
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(51,51,51,0.9);
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    vertical-align: center;
-    opacity: 0;
-    transition: 0.3s all ease-in-out;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .preview-content a{
-    margin : 5px;
-    border-radius: 20px;
-  }
-
-  &:hover .preview-content{
-    opacity: 1;
-  }
-
-
-  h4{
-    text-align: center;
-    letter-spacing: 1.5px;
-    font-size: 1.3rem;
-    text-transform: uppercase;
-    font-weight: 400;
-    width: 100%;
-    margin-top: 15px;
-  }
-}
-
-.btn-theme {
-  @include button-variant(#444 , #FFDE00, #FFDE00);
-}
-
-div.icon-box{
-
-  margin-bottom: 30px;
-
-  h3{
-    font-size: 1.3rem;
-    margin-bottom: 1rem;
-  }
-
-  i{
-    font-size: 1.5rem;
-    display: block;
-    margin-bottom: 1rem;
-    color: #FFDE00;
-  }
-  p{
-    font-size: 0.9rem;
-  }
-}
-
-
-footer{
-  background-color: #444;
-  padding: 40px 0;
-  color: #fff;
-}
-
-@media (min-width: 1400px) {
-  .container {
-    max-width: 1200px;
-  }
-}

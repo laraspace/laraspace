@@ -53,7 +53,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-12 col-xl-6 m-t-2">
+            <div class="col-lg-12 col-xl-6 mt-2">
                 <div class="card">
                     <div class="card-header">
                         <h6><i class="fa fa-line-chart text-warning"></i> Traffic Stats</h6>
@@ -63,7 +63,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-12 col-xl-6 m-t-2">
+            <div class="col-lg-12 col-xl-6 mt-2">
                 <div class="card">
                     <div class="card-header">
                         <h6><i class="fa fa-bar-chart text-success"></i> Sales Chart</h6>
@@ -75,7 +75,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-12 col-xl-6 m-t-2">
+            <div class="col-lg-12 col-xl-6 mt-2">
                 <div class="card">
                     <div class="card-header">
                         <h6><i class="fa fa-shopping-cart text-danger"></i> Recent Orders</h6>
@@ -108,7 +108,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-12 col-xl-6 m-t-2">
+            <div class="col-lg-12 col-xl-6 mt-2">
                 <div class="card">
                     <div class="card-header">
                         <h6><i class="fa fa-users text-info"></i> New Customers</h6>

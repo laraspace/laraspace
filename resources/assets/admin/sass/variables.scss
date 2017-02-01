@@ -92,6 +92,7 @@ $code-color : $ls-color-primary;
 $base-font-family : 'Roboto',sans-serif;
 $base-font-color : lighten($ls-color-black,15%);
 $heading-font-color : $ls-color-black;
+$font-family-base : $base-font-family;
 
 // -- Sizes
 $font-size-base:  1rem;

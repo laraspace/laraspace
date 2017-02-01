@@ -1,0 +1,19 @@
+.ls-example{
+    background: #fafafa;
+    padding: 1.5rem;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    border-width: .2rem;
+    border: solid #f7f7f9;
+
+    .modal {
+        position: relative;
+        top: auto;
+        right: auto;
+        bottom: auto;
+        left: auto;
+        z-index: 1;
+        display: block;
+    }
+}

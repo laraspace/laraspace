@@ -4,7 +4,7 @@
     <title>Laraspace - Laravel Admin</title>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
     <script src="/assets/admin/js/core/pace.js"></script>
-    <link href="/assets/admin/css/laraspace.css" rel="stylesheet" type="text/css">
+    <link href="{{ mix('/assets/admin/css/laraspace.css') }}" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     @include('admin.layouts.partials.favicons')
     @yield('styles')

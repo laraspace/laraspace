@@ -1,8 +1,7 @@
 <template>
-    <div class="row">
-        <div class="todo-container col-lg-6 col-lg-offset-3">
+        <div class="todo-container col-lg-6 offset-lg-3">
             <h5 class="todo-title">TODOS APP</h5>
-            <p class="text-xs-center">This Demo showcases a simple workflow with VueJS , Vue Resource and Laravel. </p>
+            <p class="text-sm-center">This Demo showcases a simple workflow with VueJS , Vue Resource and Laravel. </p>
             <input type="text" class="form-control todo-field" v-model="newTodo.title" placeholder="New Todo" v-on:keyup.enter="addTodo">
             <div class="todo-block scroll-pane">
                 <ul class="todo-list" v-show="todos.length">
@@ -14,7 +13,6 @@
                 </ul>
             </div>
         </div>
-    </div>
 </template>
 
 <script>
@@ -42,7 +40,11 @@
             addTodo : function(){
                 var vm = this,url = '/admin/todos';
 
-                this.$http.post(url, vm.newTodo).then(function(request){
+                if(vm.newTodo.title == ''){
+                    return;
+                }
+
+                axios.post(url, vm.newTodo).then(function(request){
                     //toastr['success'](request.data, "Success");
 
                     vm.todos.push({
@@ -66,7 +68,7 @@
 
                 var url = '/admin/todos/'+ todo.id,vm = this;
 
-                vm.$http.post(url, {_method : 'DELETE'}).then(function(request){
+                axios.post(url, {_method : 'DELETE'}).then(function(request){
                     var index = vm.todos.indexOf(todo)
                     vm.todos.splice(index, 1)
                 }.bind(this), function(error){
@@ -78,7 +80,7 @@
 
                 var url = '/admin/todos/toggleTodo/' + todo.id , vm = this;
 
-                vm.$http.post(url, {completed : todo.completed}).then(function(request){
+                axios.post(url, {completed : todo.completed}).then(function(request){
                     console.log(request);
                 }.bind(this), function(error){
                     console.log(error);
@@ -92,8 +94,8 @@
 <style>
     .todo-container{
         background-color: #FFDE00;
-        padding:40px;
-        min-height: 400px;
+        padding:50px;
+        min-height: 500px;
     }
 
     .todo-field:focus{

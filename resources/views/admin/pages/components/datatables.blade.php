@@ -9,25 +9,20 @@
         <div class="page-header">
             <h3 class="page-title">Datatables</h3>
             <ol class="breadcrumb">
-                <li><a href="{{route('admin.dashboard')}}">Home</a></li>
-                <li><a href="{{route('admin.components.datatables')}}">Components</a></li>
-                <li class="active">Datatables</li>
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Components</a></li>
+                <li class="breadcrumb-item active">Datatables</li>
             </ol>
         </div>
         <div class="row">
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-header">
-                        <div class="caption">
-                            <h6>Default</h6>
-                        </div>
-                        <div class="actions">
-                            <button class="btn btn-primary btn-sm"> <i class="fa fa-plus"></i> Add New</button>
-                            <button class="btn btn-danger btn-sm"> <i class="fa fa-trash"></i> Delete</button>
-                        </div>
+                        <h6>Default</h6>
                     </div>
                     <div class="card-block">
-                        <table id="default-datatable" class="table table-striped table-bordered" cellspacing="0" width="100%">
+                        <table id="default-datatable" class="table table-striped table-bordered" cellspacing="0"
+                               width="100%">
                             <thead>
                             <tr>
                                 <th>Name</th>

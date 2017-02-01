@@ -1,5 +1,6 @@
 .layout-icon-sidebar .sidebar-left {
     width: 200px;
+
     .side-nav {
         li {
             text-align: center;
@@ -16,6 +17,13 @@
             font-size: 30px;
         }
 
+    }
+
+    .metismenu .arrow{
+        position: absolute;
+        right: 21px;
+        top: 50%;
+        margin-top: -8px;
     }
 }
 

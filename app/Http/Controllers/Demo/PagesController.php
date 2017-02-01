@@ -52,6 +52,11 @@ class PagesController extends Controller
         return view('admin.pages.basic.tables');
     }
 
+    public function modals()
+    {
+        return view('admin.pages.basic.modals');
+    }
+
     //Components
 
     public function notifications()

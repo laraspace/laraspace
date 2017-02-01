@@ -1,9 +1,9 @@
-<ul class="side-nav">
+<ul class="side-nav metismenu" id="menu">
     @foreach(config('menu.sidebar') as $menu)
-        <li class="{{set_active($menu['active'],'active open')}} @if(isset($menu['children'])) has-child @endif">
-            <a href="{{$menu['link']}}"><i class="{{$menu['icon']}}"></i> {{$menu['title']}}</a>
+        <li class="{{set_active($menu['active'],'active')}}">
+            <a href="{{$menu['link']}}"><i class="{{$menu['icon']}}"></i> {{$menu['title']}} @if(isset($menu['children'])) <span class="fa arrow fa-fw"></span> @endif</a>
             @if(isset($menu['children']))
-                <ul class="sub-menu collapse">
+                <ul aria-expanded="true" class="collapse">
                     @foreach($menu['children'] as $child)
                         <li class="{{set_active($child['active'])}}"><a href="{{$child['link']}}">{{$child['title']}}</a></li>
                     @endforeach

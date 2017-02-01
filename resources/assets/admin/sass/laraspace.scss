@@ -23,6 +23,7 @@
 @import "../../plugins/pace/pace.scss";
 @import "../../plugins/alertify/alertify.scss";
 @import "../../plugins/easypiecharts/easypiecharts.scss";
+@import "../../plugins/metisMenu/metisMenu.scss";
 
 // Option Skin.
 @import 'skins/skin-tyrell';
@@ -50,8 +51,9 @@
 @import 'components/cards';
 @import 'components/tabs';
 @import 'components/tables';
-@import 'components/datatables';
+@import "components/modals";
 @import 'components/hamburgers';
+@import "components/transitions";
 
 //Pages
 @import 'pages/dashboard';
@@ -60,5 +62,4 @@
 @import 'pages/404';
 
 @import "demo";
-
 

@@ -92,7 +92,12 @@ return [
                     'title' => 'Tables',
                     'link'  => '/admin/basic-ui/tables',
                     'active' => 'admin/basic-ui/tables',
-                ]
+                ],
+                [
+                    'title' => 'Modals',
+                    'link'  => '/admin/basic-ui/modals',
+                    'active' => 'admin/basic-ui/modals',
+                ],
             ]
         ],
         [
@@ -226,11 +231,11 @@ return [
                     'link'  => '/admin/dashboard/ecommerce',
                     'active' => 'admin/dashboard/ecommerce',
                 ],
-//                [
-//                    'title' => 'Finance',
-//                    'link'  => '#',
-//                    'active' => '#',
-//                ]
+                [
+                    'title' => 'Finance',
+                    'link'  => '/admin/dashboard/finance',
+                    'active' => 'admin/dashboard/finance',
+                ]
             ]
         ],
         [

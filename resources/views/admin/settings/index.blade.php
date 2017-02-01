@@ -5,8 +5,8 @@
         <div class="page-header">
             <h3 class="page-title">Settings</h3>
             <ol class="breadcrumb">
-                <li><a href="{{route('admin.dashboard')}}">Home</a></li>
-                <li><a href="{{route('admin.settings.index')}}">Settings</a></li>
+                <li class="breadcrumb-item"><a href="{{route('admin.dashboard')}}">Home</a></li>
+                <li class="breadcrumb-item active"><a href="{{route('admin.settings.index')}}">Settings</a></li>
             </ol>
         </div>
         <div class="card">

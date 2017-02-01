@@ -22,7 +22,7 @@ class AdminMiddleware
             if ($request->ajax() || $request->wantsJson()) {
                 return response('Unauthorized.', 401);
             } else {
-                return redirect()->guest('/');
+                return redirect()->guest('/login');
             }
         }
 

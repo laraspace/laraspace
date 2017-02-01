@@ -34,6 +34,16 @@
             width: 25px;
         }
 
+        .dropdown-item.active, .dropdown-item.active:focus, .dropdown-item.active:hover{
+            color: $ls-color-primary;
+
+            background-color: transparent;
+
+            &:hover {
+                background-color: $sidemenu-item-bg-color--hover;
+            }
+        }
+
         &.active > a {
             color: $ls-color-primary;
 

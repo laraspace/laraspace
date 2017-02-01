@@ -5,9 +5,9 @@
         <div class="page-header">
             <h3 class="page-title">Form Layouts</h3>
             <ol class="breadcrumb">
-                <li><a href="{{route('admin.dashboard')}}">Home</a></li>
-                <li><a href="#">Forms</a></li>
-                <li class="active">Form Layouts</li>
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Forms</a></li>
+                <li class="breadcrumb-item active">Form Layouts</li>
             </ol>
         </div>
         <div class="row">
@@ -31,7 +31,7 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label >Email address</label>
+                                <label>Email address</label>
                                 <input type="email" class="form-control"
                                        placeholder="Email">
                             </div>
@@ -42,6 +42,7 @@
                             </div>
                             <div class="form-group">
                                 <label>Gender</label>
+
                                 <div>
                                     <label class="radio-inline">
                                         <input type="radio" name="gender" value="male" checked> Male
@@ -70,24 +71,28 @@
                         <form>
                             <div class="form-group row">
                                 <label class="col-sm-2 form-control-label">First Name</label>
+
                                 <div class="col-sm-10">
                                     <input type="text" class="form-control" placeholder="First Name">
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label class="col-sm-2 form-control-label">Last Name</label>
+
                                 <div class="col-sm-10">
                                     <input type="text" class="form-control" placeholder="Last Name">
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label class="col-sm-2 form-control-label">Email</label>
+
                                 <div class="col-sm-10">
                                     <input type="email" class="form-control" placeholder="Email">
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label class="col-sm-2 form-control-label">Password</label>
+
                                 <div class="col-sm-10">
                                     <input type="password" class="form-control" placeholder="Password">
                                 </div>

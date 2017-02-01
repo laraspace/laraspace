@@ -5,9 +5,9 @@
         <div class="page-header">
             <h3 class="page-title">General Elements</h3>
             <ol class="breadcrumb">
-                <li><a href="{{route('admin.dashboard')}}">Home</a></li>
-                <li><a href="#">Forms</a></li>
-                <li class="active">General Elements</li>
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Forms</a></li>
+                <li class="breadcrumb-item active">General Elements</li>
             </ol>
         </div>
         <div class="row">
@@ -18,22 +18,26 @@
                     </div>
                     <div class="card-block">
                         <h5 class="section-semi-title">Horizontal</h5>
+
                         <form>
                             <div class="form-group row">
                                 <label for="inputEmail3" class="col-sm-2 form-control-label">Email</label>
+
                                 <div class="col-sm-10">
                                     <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label for="inputPassword3" class="col-sm-2 form-control-label">Password</label>
+
                                 <div class="col-sm-10">
                                     <input type="password" class="form-control" id="inputPassword3"
                                            placeholder="Password">
                                 </div>
                             </div>
                         </form>
-                        <h5 class="section-semi-title m-t-3">Vertical</h5>
+                        <h5 class="section-semi-title mt-4">Vertical</h5>
+
                         <form>
                             <fieldset class="form-group">
                                 <label for="exampleInputEmail1">Email address</label>
@@ -78,9 +82,10 @@
                                 </small>
                             </fieldset>
                         </form>
-                        <h5 class="section-semi-title m-t-3">
+                        <h5 class="section-semi-title mt-4">
                             Validation States
                         </h5>
+
                         <form>
                             <div class="form-group has-success">
                                 <label class="form-control-label" for="inputSuccess1">Input with success</label>
@@ -115,18 +120,21 @@
                             </div>
                         </form>
 
-                        <h5 class="section-semi-title m-t-3">
+                        <h5 class="section-semi-title mt-4">
                             Static Controls
                         </h5>
+
                         <form>
                             <div class="form-group row">
                                 <label class="col-sm-2 form-control-label">Email</label>
+
                                 <div class="col-sm-10">
                                     <p class="form-control-static">mohit@laraspace.in</p>
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label class="col-sm-2 form-control-label">username</label>
+
                                 <div class="col-sm-10">
                                     <p class="form-control-static">laraspace</p>
                                 </div>
@@ -148,6 +156,7 @@
                                 <h5 class="section-semi-title">
                                     Checkbox
                                 </h5>
+
                                 <form>
                                     <div class="checkbox">
                                         <label>
@@ -165,6 +174,7 @@
                             </div>
                             <div class="col-sm-6">
                                 <h5 class="section-semi-title">Inline Checkbox</h5>
+
                                 <form>
                                     <label class="checkbox-inline">
                                         <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
@@ -180,13 +190,15 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-6">
-                                <h5 class="section-semi-title m-t-3">
+                                <h5 class="section-semi-title mt-4">
                                     Radio
                                 </h5>
+
                                 <form>
                                     <div class="radio">
                                         <label>
-                                            <input type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                            <input type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
+                                                   checked>
                                             Option one is this and that&mdash;be sure to include why it's great
                                         </label>
                                     </div>
@@ -198,14 +210,15 @@
                                     </div>
                                     <div class="radio disabled">
                                         <label>
-                                            <input type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
+                                            <input type="radio" name="exampleRadios" id="exampleRadios3" value="option3"
+                                                   disabled>
                                             Option three is disabled
                                         </label>
                                     </div>
                                 </form>
                             </div>
                             <div class="col-sm-6">
-                                <h5 class="section-semi-title m-t-3">Inline Radio</h5>
+                                <h5 class="section-semi-title mt-4">Inline Radio</h5>
                                 <form>
                                     <label class="radio-inline">
                                         <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1

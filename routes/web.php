@@ -86,6 +86,10 @@ Route::group([
             'as' => 'admin.ui.tables', 'uses' => 'Demo\PagesController@tables'
         ]);
 
+        Route::get('modals', [
+            'as' => 'admin.ui.modals', 'uses' => 'Demo\PagesController@modals'
+        ]);
+
     });
 
     //Component Routes

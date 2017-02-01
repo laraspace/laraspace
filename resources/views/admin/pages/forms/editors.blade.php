@@ -5,9 +5,9 @@
         <div class="page-header">
             <h3 class="page-title">Editors</h3>
             <ol class="breadcrumb">
-                <li><a href="{{route('admin.dashboard')}}">Home</a></li>
-                <li><a href="#">Forms</a></li>
-                <li class="active">Editors</li>
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Forms</a></li>
+                <li class="breadcrumb-item active">Editors</li>
             </ol>
         </div>
         <div class="card">
@@ -47,5 +47,5 @@ Unordered lists can be started using the toolbar or by typing `* `, `- `, or `+ 
                 </textarea>
             </div>
         </div>
-        </div>
+    </div>
 @stop

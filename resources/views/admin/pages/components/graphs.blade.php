@@ -9,9 +9,9 @@
         <div class="page-header">
             <h3 class="page-title">Graphs</h3>
             <ol class="breadcrumb">
-                <li><a href="{{route('admin.dashboard')}}">Home</a></li>
-                <li><a href="{{route('admin.components.graphs')}}">Components</a></li>
-                <li class="active">Graphs</li>
+                <li class="breadcrumb-item"><a href="{{route('admin.dashboard')}}">Home</a></li>
+                <li class="breadcrumb-item"><a href="{{route('admin.components.graphs')}}">Components</a></li>
+                <li class="breadcrumb-item active">Graphs</li>
             </ol>
         </div>
         <div class="row">

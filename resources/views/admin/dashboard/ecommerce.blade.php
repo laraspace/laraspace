@@ -16,7 +16,10 @@
                     <span class="title text-primary">
                       35
                     </span>
-                    <progress class="progress" value="20" max="100">20%</progress>
+
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
                 </a>
             </div>
             <div class="col-md-12 col-lg-6 col-xl-3">
@@ -28,7 +31,9 @@
                     <span class="title text-success">
                       2000
                     </span>
-                    <progress class="progress progress-success" value="50" max="100">50%</progress>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
                 </a>
             </div>
             <div class="col-md-12 col-lg-6 col-xl-3">
@@ -40,7 +45,9 @@
                     <span class="title text-danger">
                       100
                     </span>
-                    <progress class="progress progress-danger" value="70" max="100">70%</progress>
+                    <div class="progress">
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
                 </a>
             </div>
             <div class="col-md-12 col-lg-6 col-xl-3">
@@ -52,12 +59,14 @@
                     <span class="title text-info">
                       59
                     </span>
-                    <progress class="progress progress-info" value="80" max="100">80%</progress>
+                    <div class="progress">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
                 </a>
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-12 m-t-2">
+            <div class="col-lg-12 mt-2">
                 <div class="card">
                     <div class="card-header">
                         <h6><i class="fa fa-line-chart text-primary"></i> Monthly Sales</h6>
@@ -69,7 +78,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-12 col-xl-6 m-t-2">
+            <div class="col-lg-12 col-xl-6 mt-2">
                 <div class="card">
                     <div class="card-header">
                         <h6><i class="fa fa-shopping-cart text-danger"></i> Pending Orders</h6>
@@ -102,7 +111,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-12 col-xl-6 m-t-2">
+            <div class="col-lg-12 col-xl-6 mt-2">
                 <div class="card">
                     <div class="card-header">
                         <h6><i class="fa fa-users text-info"></i> New Customers</h6>

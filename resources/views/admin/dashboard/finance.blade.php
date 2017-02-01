@@ -61,7 +61,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-12 col-xl-12 m-t-2">
+            <div class="col-lg-12 col-xl-12 mt-2">
                 <div class="card with-tabs">
                     <div class="card-header">
                         <div class="caption">
@@ -106,7 +106,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-12 col-xl-6 m-t-2">
+            <div class="col-lg-12 col-xl-6 mt-2">
                 <div class="card">
                     <div class="card-header">
                         <div class="caption">
@@ -114,7 +114,7 @@
                         </div>
                         <div class="actions">
                             <div class="btn-group" role="group">
-                                <button id="summaryFilterDrop" type="button" class="btn btn-sm btn-primary-outline dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <button id="summaryFilterDrop" type="button" class="btn btn-sm btn-outline-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                                     Filters
                                 </button>
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="summaryFilterDrop">
@@ -134,7 +134,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-12 col-xl-6 m-t-2">
+            <div class="col-lg-12 col-xl-6 mt-2">
                 <div class="card">
                     <div class="card-header">
                         <div class="caption">
@@ -142,7 +142,7 @@
                         </div>
                         <div class="actions">
                             <button class="btn btn-danger btn-sm"> Today</button>
-                            <button class="btn btn-danger-outline btn-sm"> Past Month</button>
+                            <button class="btn btn-outline-danger btn-sm"> Past Month</button>
                         </div>
                     </div>
                     <div class="card-block">

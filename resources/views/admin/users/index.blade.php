@@ -10,9 +10,9 @@
         <div class="page-header">
             <h3 class="page-title">Users</h3>
             <ol class="breadcrumb">
-                <li><a href="{{route('admin.dashboard')}}">Home</a></li>
-                <li><a href="{{route('users.index')}}">Users</a></li>
-                <li class="active">Users</li>
+                <li class="breadcrumb-item"><a href="{{route('admin.dashboard')}}">Home</a></li>
+                <li class="breadcrumb-item"><a href="{{route('users.index')}}">Users</a></li>
+                <li class="breadcrumb-item active">Users</li>
             </ol>
             <div class="page-actions">
                 <a href="#" class="btn btn-primary"><i class="fa fa-plus"></i> New User</a>
