@@ -1,6 +1,6 @@
 // Plugins
 @import '../../plugins/bootstrap/scss/bootstrap';
-//@import '../../plugins/fontawesome/font-awesome';
+@import '../../plugins/fontawesome/font-awesome';
 @import '../../plugins/toastr/toastr.scss';
 @import '../../plugins/notie/notie.scss';
 
@@ -96,6 +96,28 @@ h1,h2,h3,h4,h5,h6{
     }
 
   }
+
+  .avatar {
+    padding: 0;
+    background-color: transparent;
+  }
+
+  .avatar img {
+    width: 36px;
+    border-radius: 2px;
+  }
+
+  .dropdown-menu {
+    background-color: #333333;
+
+    i {
+      width: 25px;
+      text-align: center;
+      margin-left: -5px;
+    }
+
+  }
+
 }
 
 /*

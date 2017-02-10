@@ -1,7 +1,7 @@
 @extends('admin.layouts.layout-basic')
 
 @section('scripts')
-    <script src="/assets/admin/js/dashboard/dashboard.js"></script>
+    <script src="{{mix('/assets/admin/js/pages/dashboard.js')}}"></script>
 @stop
 
 @section('content')

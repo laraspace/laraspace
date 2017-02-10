@@ -3,7 +3,7 @@
 <head>
     <title>Laraspace - Laravel Admin</title>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
-    <script src="/assets/admin/js/core/pace.js"></script>
+    <script src="{{asset('/assets/admin/js/core/pace.js')}}"></script>
     <link href="{{ mix('/assets/admin/css/laraspace.css') }}" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     @include('admin.layouts.partials.favicons')
@@ -21,8 +21,8 @@
     @if(config('laraspace.skintools'))
         @include('admin.layouts.partials.skintools')
     @endif
-    <script src="/assets/admin/js/core/plugins.js"></script>
-    <script src="/assets/admin/js/demo/skintools.js"></script>
+    <script src="{{mix('/assets/admin/js/core/plugins.js')}}"></script>
+    <script src="{{asset('/assets/admin/js/demo/skintools.js')}}"></script>
     @yield('scripts')
 </body>
 </html>

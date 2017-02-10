@@ -1,7 +1,7 @@
 @extends('admin.layouts.layout-basic')
 
 @section('scripts')
-    <script src="/assets/admin/js/pages/todos.js"></script>
+    <script src="{{mix('/assets/admin/js/pages/todos.js')}}"></script>
 @stop
 
 @section('content')
@@ -19,7 +19,6 @@
             </div>
             {{csrf_field()}}
         </div>
-
     </div>
 @stop
 

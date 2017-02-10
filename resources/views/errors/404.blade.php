@@ -2,16 +2,16 @@
 <html>
 <head>
     <title>Laraspace - Laravel Admin</title>
-    <script src="/assets/admin/js/core/pace.js"></script>
-    <link href="/assets/admin/css/laraspace.css" rel="stylesheet" type="text/css">
+    <script src="{{asset('/assets/admin/js/core/pace.js')}}"></script>
+    <link href="{{ mix('/assets/admin/css/laraspace.css') }}" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     @include('admin.layouts.partials.favicons')
 </head>
 <body id="app" class="page-error-404">
         <header class="site-header">
             <a href="#" class="brand-main">
-                <img src="/assets/admin/img/logo-desk.png" alt="Laraspace Logo" class="hidden-sm-down">
-                <img src="/assets/admin/img/logo-mobile.png" alt="Laraspace Logo" class="hidden-md-up">
+                <img src="{{asset('/assets/admin/img/logo-desk.png')}}" id="logo-desk" alt="Laraspace Logo" class="hidden-sm-down">
+                <img src="{{asset('/assets/admin/img/logo-mobile.png')}}" id="logo-mobile" alt="Laraspace Logo" class="hidden-md-up">
             </a>
             <a href="#" class="nav-toggle">
                 <div class="hamburger hamburger--htla">
@@ -28,7 +28,7 @@
                 </div>
             </div>
         </div>
-<script src="/assets/admin/js/core/plugins.js"></script>
+        <script src="{{mix('/assets/admin/js/core/plugins.js')}}"></script>
 @yield('scripts')
 </body>
 </html>

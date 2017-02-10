@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Laraspace - Laravel Admin</title>
-    <link href="/assets/admin/css/laraspace.css" rel="stylesheet" type="text/css">
+    <link href="{{ mix('/assets/admin/css/laraspace.css') }}" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     @include('admin.layouts.partials.favicons')
 </head>
@@ -11,7 +11,7 @@
     <div class="login-box">
         @include('admin.layouts.partials.laraspace-notifs')
         <div class="brand-main">
-            <a href="/admin"><img src="/assets/admin/img/logo-large.png" alt="Laraspace Logo"></a>
+            <a href="/"><img src="/assets/admin/img/logo-large.png" alt="Laraspace Logo"></a>
         </div>
         @yield('content')
         <div class="page-copyright">
@@ -20,7 +20,7 @@
         </div>
     </div>
 </div>
-<script src="/assets/admin/js/core/plugins.js"></script>
+<script src="{{mix('/assets/admin/js/core/plugins.js')}}"></script>
 @yield('scripts')
 </body>
 </html>

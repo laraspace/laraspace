@@ -17,7 +17,7 @@
 
 @include('front.layouts.partials.footer')
 
-<script src="/assets/front/js/plugins.js"></script>
+<script src="{{mix('/assets/front/js/plugins.js')}}"></script>
 @yield('scripts')
 </body>
 </html>

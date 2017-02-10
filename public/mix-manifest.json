@@ -1,6 +1,8 @@
 {
-  "/assets/admin/js/pages/dashboard.js": "/assets/admin/js/pages/dashboard.js",
-  "/assets/admin/css/laraspace.css": "/assets/admin/css/laraspace.css",
-  "/assets/front/css/front.css": "/assets/front/css/front.css",
-  "/assets/admin/js/pages/todos.js": "/assets/admin/js/pages/todos.js"
+  "/assets/admin/js/pages/dashboard.js": "/assets/admin/js/pages/dashboard.1238b2421c8882ee891e.js",
+  "/assets/admin/css/laraspace.css": "/assets/admin/css/laraspace.ddf80968ef7dc37ac1dc.css",
+  "/assets/front/css/front.css": "/assets/front/css/front.ddf80968ef7dc37ac1dc.css",
+  "/assets/admin/js/pages/todos.js": "/assets/admin/js/pages/todos.31b82a70d42a51873dd5.js",
+  "/assets/admin/js/core/plugins.js": "/assets/admin/js/core/plugins.js",
+  "/assets/front/js/plugins.js": "/assets/front/js/plugins.js"
 }

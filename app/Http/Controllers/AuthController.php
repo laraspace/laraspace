@@ -21,10 +21,17 @@ class AuthController extends Controller
         if(User::login($request))
         {
             flash()->success('Welcome to Laraspace.');
-            return redirect()->to('/admin');
+
+            if(Auth::user()->isAdmin()){
+                return redirect()->to('/admin');
+            }else{
+                return redirect()->to('/');
+            }
+
         }
 
         flash()->error('Invalid Login Credentials');
+
         return redirect()->back();
     }
 

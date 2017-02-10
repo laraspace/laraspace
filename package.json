@@ -7,7 +7,7 @@
     "production": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "devDependencies": {
-    "laravel-mix": "0.5.1"
+    "laravel-mix": "0.6.3"
   },
   "dependencies": {
     "jquery": "^3.1.0",

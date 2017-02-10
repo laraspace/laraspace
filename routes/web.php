@@ -27,7 +27,6 @@ Route::group([
 ], function () {
 
     //Main Dashboard
-
     Route::get('/', [
         'as' => 'admin.dashboard', 'uses' => 'DashboardController@index'
     ]);
