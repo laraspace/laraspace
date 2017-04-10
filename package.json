@@ -8,7 +8,7 @@
     "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
   "devDependencies": {
-    "laravel-mix": "0.8.8"
+    "laravel-mix": "0.10.0"
   },
   "dependencies": {
     "jquery": "^3.1.0",
@@ -16,6 +16,6 @@
     "chart.js": "^2.1.2",
     "lodash": "^4.16.2",
     "vee-validate": "^2.0.0-beta.18",
-    "vue": "^2.2.4"
+    "vue": "^2.2.6"
   }
 }

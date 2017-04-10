@@ -35,21 +35,45 @@ var LaraspaceNotifs = function () {
     };
 
     var notieAlert = function(type,message){
+
+        //Change timeout value here.
+        let timeout = 5;
+
         switch(type) {
             case 'success':
-                notie.alert(1, message); // Never hides unless clicked, or escape or enter is pressed
+                notie.alert({
+                    type : 1,
+                    text : message,
+                    time : timeout
+                })
                 break;
             case 'warning':
-                notie.alert(2, message);
+                notie.alert({
+                    type : 2,
+                    text : message,
+                    time : timeout
+                })
                 break;
             case 'info':
-                notie.alert(4, message);
+                notie.alert({
+                    type : 3,
+                    text : message,
+                    time : timeout
+                })
                 break;
             case 'error':
-                notie.alert(3, message);
+                notie.alert({
+                    type : 4,
+                    text : message,
+                    time : timeout
+                })
                 break;
             default:
-                notie.alert(1, message);
+                notie.alert({
+                    type : 1,
+                    text : message,
+                    time : timeout
+                })
 
         }
     };
