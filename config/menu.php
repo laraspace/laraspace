@@ -126,6 +126,11 @@ return [
                     'link'=>'/admin/components/nestable_list',
                     'active'=>'admin/components/nestable_list',
                 ],
+                [
+                    'title'=>'Nestable Tree',
+                    'link'=>'/admin/components/nestable_tree',
+                    'active'=>'admin/component/nestable_tree',
+                ],
             ]
         ],
         [

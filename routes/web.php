@@ -110,6 +110,10 @@ Route::group([
             'as'=>'admin.components.nestable_list','uses'=>'Demo\PagesController@nestable_list'
         ]);
 
+        Route::get('nestable_tree',[
+            'as'=>'admin.components.nestable_tree' , 'uses'=>'Demo\PagesController@nestable_tree'
+        ]);
+
     });
 
 

@@ -104,4 +104,8 @@ class PagesController extends Controller
     public function nestable_list(){
         return view('admin.pages.components.nestable_list');
     }
+
+    public function nestable_tree(){
+        return view('admin.pages.components.nestable_tree');
+    }
 }
