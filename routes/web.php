@@ -106,6 +106,9 @@ Route::group([
         Route::get('datatables', [
             'as' => 'admin.components.datatables', 'uses' => 'Demo\PagesController@datatables'
         ]);
+        Route::get('nestable_list',[
+            'as'=>'admin.components.nestable_list','uses'=>'Demo\PagesController@nestable_list'
+        ]);
 
     });
 

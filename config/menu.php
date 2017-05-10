@@ -120,7 +120,12 @@ return [
                     'title' => 'Graphs',
                     'link'  => '/admin/components/graphs',
                     'active' => 'admin/components/graphs',
-                ]
+                ],
+                [
+                    'title'=>' Nestable List',
+                    'link'=>'/admin/components/nestable_list',
+                    'active'=>'admin/components/nestable_list',
+                ],
             ]
         ],
         [

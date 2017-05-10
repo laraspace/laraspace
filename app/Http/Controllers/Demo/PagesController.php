@@ -100,4 +100,8 @@ class PagesController extends Controller
     {
         return view('admin.pages.forms.editors');
     }
+
+    public function nestable_list(){
+        return view('admin.pages.components.nestable_list');
+    }
 }
