@@ -22,7 +22,7 @@
 // SKINS DEMO
 .skin-tools {
     position: fixed;
-    top: 96px;
+    top: 200px;
     right: -400px;
     z-index: 900;
     width: 400px;
@@ -87,7 +87,30 @@
 @include media-breakpoint-down(sm) {
 
     .skin-tools {
+        top: 100px;
         right: -250px;
         width: 250px;
+
+        .skin-item {
+            margin-bottom: .5rem;
+        }
     }
+}
+
+@media (max-width: $small-breakpoint){
+
+    .skin-tools {
+        top: 100px;
+        right: -250px;
+        width: 250px;
+
+        .skin-item {
+            margin-bottom: 1rem;
+        }
+
+        .skin-item:last-child {
+            margin-bottom: 0;
+        }
+    }
+
 }

@@ -23,7 +23,7 @@ Route::get('/', [
 
 Route::group([
     'prefix' => 'admin',
-    'middleware' => 'admin'
+//    'middleware' => 'admin'
 ], function () {
 
     //Main Dashboard
@@ -135,6 +135,12 @@ Route::group([
         ]);
 
     });
+
+    //Login Options
+
+    Route::get('login-simple', [
+        'as' => 'admin.login.simple', 'uses' => 'Demo\PagesController@loginSimple'
+    ]);
 
     //Todos
 

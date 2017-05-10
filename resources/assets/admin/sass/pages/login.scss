@@ -1,15 +1,42 @@
+.login-wrapper {
+    height: 100%;
+    padding-top: 0;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .bg-fullscreen-image &::before {
+        background-image: url('/assets/admin/img/skynight.jpg');
+        background-position: center top;
+        background-size: cover;
+        content: '';
+        height: 100%;
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: -1;
+    }
+
+    .bg-fullscreen-image &::after {
+        background-color: $ls-login-bg-color-overlay;
+        content: '';
+        height: 100%;
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: -1;
+    }
+}
+
 .login-box {
-    background-color: transparent;
-    border-radius: 4px;
     color: $white;
-    left: 50%;
-    margin: 0 auto;
-    margin-bottom: 45px;
     padding: 20px;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -60%);
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
 
     .form-control {
         margin-top: 20px;
@@ -78,43 +105,19 @@
 
 }
 
-.login-wrapper {
-    height: 100vh;
-    padding-top: 0;
-    position: relative;
-
-    &::before {
-        background-image: url('/assets/admin/img/skynight.jpg');
-        background-position: center top;
-        background-size: cover;
-        content: '';
-        height: 100%;
-        left: 0;
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: -1;
-    }
-
-    &::after {
-        background-color: $ls-login-bg-color-overlay;
-        content: '';
-        height: 100%;
-        left: 0;
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: -1;
-    }
-}
-
-.login-page .brand-main {
-    margin-bottom: 50px;
+.login-page .logo-main {
+    margin-bottom: 40px;
     text-align: center;
+
 
     img {
         height: auto;
         width: 300px;
+    }
+
+    img {
+        height: auto;
+        max-width: 100%;
     }
 }
 
@@ -132,4 +135,20 @@
     a, a:hover {
         color: $white;
     }
+}
+
+
+@media (max-width: $small-breakpoint){
+
+    .other-actions{
+        font-size: 14px;
+    }
+
+    .login-page .logo-main {
+        img {
+            height: auto;
+            max-width: 100%;
+        }
+    }
+
 }

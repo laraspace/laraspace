@@ -10,8 +10,8 @@
 <div class="login-wrapper">
     <div class="login-box">
         @include('admin.layouts.partials.laraspace-notifs')
-        <div class="brand-main">
-            <a href="/"><img src="/assets/admin/img/logo-large.png" alt="Laraspace Logo"></a>
+        <div class="logo-main">
+            <a href="/"><img src="/assets/admin/img/logo-desk.png" alt="Laraspace Logo"></a>
         </div>
         @yield('content')
         <div class="page-copyright">

@@ -1,4 +1,4 @@
-@extends('admin.layouts.layout-login')
+@extends('admin.layouts.layout-login-bg-image')
 
 @section('scripts')
   <script src="/assets/admin/js/sessions/login.js"></script>
@@ -11,10 +11,10 @@
       <input type="email" class="form-control form-control-danger" placeholder="Enter email" name="email">
     </div>
     <div class="form-group">
-      <input type="password" class="form-control form-control-danger" placeholder="Enter Password" name="password">
+    <input type="password" class="form-control form-control-danger" placeholder="Enter Password" name="password">
     </div>
     <div class="other-actions row">
-      <div class="col-sm-6">
+      <div class="col-6">
         <div class="checkbox">
           <label class="c-input c-checkbox">
             <input type="checkbox" name="remember">
@@ -23,7 +23,7 @@
           </label>
         </div>
       </div>
-      <div class="col-sm-6 text-sm-right">
+      <div class="col-6 text-right">
         <a href="#" class="forgot-link">Forgot Password?</a>
       </div>
     </div>
