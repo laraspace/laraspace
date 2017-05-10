@@ -106,16 +106,16 @@ Route::group([
         Route::get('datatables', [
             'as' => 'admin.components.datatables', 'uses' => 'Demo\PagesController@datatables'
         ]);
-        Route::get('nestable_list',[
-            'as'=>'admin.components.nestable_list','uses'=>'Demo\PagesController@nestable_list'
+
+        Route::get('nestable-list',[
+            'as'=>'admin.components.nestableList', 'uses'=>'Demo\PagesController@nestableList'
         ]);
 
-        Route::get('nestable_tree',[
-            'as'=>'admin.components.nestable_tree' , 'uses'=>'Demo\PagesController@nestable_tree'
+        Route::get('nestable-tree',[
+            'as'=>'admin.components.nestableTree', 'uses'=>'Demo\PagesController@nestableTree'
         ]);
 
     });
-
 
     //Forms Routes
 

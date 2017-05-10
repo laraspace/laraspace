@@ -123,13 +123,13 @@ return [
                 ],
                 [
                     'title'=>' Nestable List',
-                    'link'=>'/admin/components/nestable_list',
-                    'active'=>'admin/components/nestable_list',
+                    'link'=>'/admin/components/nestable-list',
+                    'active'=>'admin/components/nestable-list',
                 ],
                 [
                     'title'=>'Nestable Tree',
-                    'link'=>'/admin/components/nestable_tree',
-                    'active'=>'admin/component/nestable_tree',
+                    'link'=>'/admin/components/nestable-tree',
+                    'active'=>'admin/components/nestable-tree',
                 ],
             ]
         ],

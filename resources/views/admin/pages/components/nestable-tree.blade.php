@@ -34,13 +34,14 @@
         });
     </script>
 @stop
+
 @section('content')
     <div class="main-content">
         <div class="page-header">
             <h3 class="page-title">Nestable Tree</h3>
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="{{route('admin.dashboard')}}">Home</a></li>
-                <li class="breadcrumb-item"><a href="{{route('admin.components.nestable_tree') }}">Components</a></li>
+                <li class="breadcrumb-item"><a href="{{route('admin.components.nestableTree') }}">Components</a></li>
                 <li class="breadcrumb-item active">Nestable Tree</li>
             </ol>
         </div>
