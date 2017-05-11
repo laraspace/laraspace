@@ -47,7 +47,7 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="dd" id="nestable">
-                            <h5 class="section-semi-title">List Style 1</h5>
+                            <h5 class="section-semi-title">List Default</h5>
                             <ol class="dd-list">
                                 <li class="dd-item" data-id="1">
                                     <div class="dd-handle">Item 1</div>
@@ -93,8 +93,8 @@
                         </div>
                     </div>
                     <div class="col-sm-6">
-                        <div class="dd" id="nestable2">
-                            <h5 class="section-semi-title">List Style 2</h5>
+                        <div class="dd nestable-light" id="nestable2">
+                            <h5 class="section-semi-title">List Light</h5>
                             <ol class="dd-list">
                                 <li class="dd-item" data-id="13">
                                     <div class="dd-handle">Item 13</div>
