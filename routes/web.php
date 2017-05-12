@@ -44,7 +44,6 @@ Route::group([
     ]);
 
     // Layouts
-
     Route::group(['prefix' => 'layouts'], function () {
 
         Route::get('sidebar', [
@@ -107,8 +106,15 @@ Route::group([
             'as' => 'admin.components.datatables', 'uses' => 'Demo\PagesController@datatables'
         ]);
 
-    });
+        Route::get('nestable-list',[
+            'as'=>'admin.components.nestableList', 'uses'=>'Demo\PagesController@nestableList'
+        ]);
 
+        Route::get('nestable-tree',[
+            'as'=>'admin.components.nestableTree', 'uses'=>'Demo\PagesController@nestableTree'
+        ]);
+
+    });
 
     //Forms Routes
 

@@ -24,7 +24,7 @@ class PagesController extends Controller
     {
         return view('admin.pages.layouts.horizontal-menu');
     }
-    
+
 
     //Basic UI
     public function buttons()
@@ -100,10 +100,20 @@ class PagesController extends Controller
     {
         return view('admin.pages.forms.editors');
     }
-    
+
     // Login
     public function loginSimple()
     {
         return view('admin.sessions.login-simple');
+    }
+
+    public function nestableList()
+    {
+        return view('admin.pages.components.nestable-list');
+    }
+
+    public function nestableTree()
+    {
+        return view('admin.pages.components.nestable-tree');
     }
 }

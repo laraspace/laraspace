@@ -1,8 +1,12 @@
-// Laraspace.scss - Bootstraps all the sass files into one
+// Variables
+//----------------------------------
 
 @import 'variables';
 
+
 // Plugins
+//----------------------------------
+
 @import '../../plugins/bootstrap/scss/bootstrap';
 @import '../../plugins/fontawesome/font-awesome';
 @import '../../plugins/ladda/ladda.scss';
@@ -24,28 +28,44 @@
 @import "../../plugins/alertify/alertify.scss";
 @import "../../plugins/easypiecharts/easypiecharts.scss";
 @import "../../plugins/metisMenu/metisMenu.scss";
+@import "../../plugins/nestable/nestable.scss";
+@import "../../plugins/jstree/jstree.min.scss";
 
-// Option Skin.
+
+// Skins
+//----------------------------------
 @import 'skins/skin-tyrell';
 @import 'skins/skin-arryn';
 @import 'skins/skin-targaryen';
 @import 'skins/skin-lannister';
 @import 'skins/skin-stark';
 
-// Content Styles
+
+// Site Base
+//----------------------------------
+
 @import 'base';
 
+
 // Layouts
+//----------------------------------
+
 @import 'layouts/layout';
 @import "layouts/layout-icon-sidebar";
 @import "layouts/layout-horizontal";
 
-//Partials
+
+// Partials
+//----------------------------------
+
 @import 'partials/header';
 @import 'partials/sidebar';
 @import 'partials/footer';
 
+
 // Components
+//----------------------------------
+
 @import 'components/forms';
 @import 'components/buttons';
 @import 'components/cards';
@@ -55,9 +75,13 @@
 @import 'components/hamburgers';
 @import "components/transitions";
 
-//Pages
+
+// Pages
+//----------------------------------
+
 @import 'pages/dashboard';
 @import 'pages/login';
+@import 'pages/login-simple';
 @import 'pages/user-profile';
 @import 'pages/404';
 

@@ -1,0 +1,48 @@
+
+.login-simple {
+
+    .login-box {
+        color: #333;
+        background: #fff;
+        border: 1px solid #ddd;
+        padding: 40px 40px 20px 40px;
+    }
+
+    .c-input {
+        color: #555;
+    }
+
+    .login-box a {
+        color: #333;
+
+        &:hover {
+            color : lighten(#333, 10%);
+        }
+    }
+
+    .other-options h6 {
+        color: #555;
+    }
+
+    .other-actions {
+        margin-top: 30px;
+    }
+
+    .page-copyright {
+        margin-top: 0;
+        padding-top: 60px;
+    }
+
+    .page-copyright a {
+        color: $ls-color-primary;
+
+        &:hover {
+            color : darken($ls-color-primary, 10%);
+        }
+    }
+
+    .logo-main img{
+        width: 200px;
+    }
+
+}

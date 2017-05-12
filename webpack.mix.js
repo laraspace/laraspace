@@ -37,6 +37,8 @@ mix.combine([
     pluginPath + 'alertify/alertify.js',
     pluginPath + 'easypiecharts/jquery.easypiechart.js',
     pluginPath + 'metisMenu/metisMenu.js',
+    pluginPath + 'nestable/nestable.js',
+    pluginPath + 'jstree/jstree.js',
 
     // ** Laraspace Inits **
     pluginPath + 'laraspace/laraspace-layout.js',

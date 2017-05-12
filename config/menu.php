@@ -120,7 +120,17 @@ return [
                     'title' => 'Graphs',
                     'link'  => '/admin/components/graphs',
                     'active' => 'admin/components/graphs',
-                ]
+                ],
+                [
+                    'title'=>' Nestable List',
+                    'link'=>'/admin/components/nestable-list',
+                    'active'=>'admin/components/nestable-list',
+                ],
+                [
+                    'title'=>'Nestable Tree',
+                    'link'=>'/admin/components/nestable-tree',
+                    'active'=>'admin/components/nestable-tree',
+                ],
             ]
         ],
         [
@@ -164,9 +174,14 @@ return [
             'icon'  => 'fa fa-file',
             'children' => [
                 [
-                    'title' => 'Login',
+                    'title' => 'Login with BG Image',
                     'link'  => '/login',
                     'active' => 'login',
+                ],
+                [
+                    'title' => 'Login Simple',
+                    'link'  => '/admin/login-simple',
+                    'active' => 'admin/login-simple',
                 ],
                 [
                     'title' => 'Register',
