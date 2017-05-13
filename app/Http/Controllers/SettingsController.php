@@ -38,4 +38,39 @@ class SettingsController extends Controller
 
         return redirect()->back();
     }
+    public function mailIndex()
+    {
+        return view('admin.settings.mail.index');
+    }
+
+    public function mailCreate(Requests\MailerRequest $request)
+    {
+
+        $sets = [ 'host','port','from_user','from','username', 'password' ];
+
+        foreach ($sets as $key) {
+            Setting::setSetting($key, $request->input($key));
+        }
+
+        flash()->success('Settings Saved');
+
+        return redirect()->back();
+    }
+    public function notification()
+    {
+        return view('admin.settings.notification.index');
+    }
+
+    public function notificationCreate(Request $request)
+    {
+        $sets = ['to_mail'];
+
+        foreach ($sets as $key) {
+            Setting::setSetting($key, $request->input($key));
+        }
+
+        flash()->success('Settings Saved');
+
+        return redirect()->back();
+    }
 }

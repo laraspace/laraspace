@@ -206,9 +206,28 @@ return [
         ],
         [
             'title' => 'Settings',
-            'link'  => '/admin/settings',
+            'link'  => '#',
             'active' => 'admin/settings*',
             'icon'  => 'fa fa-cogs',
+            'children' => [
+                [
+                    'title' => 'Social',
+                    'link'  => '/admin/settings/social',
+                    'active' => 'admin/settings/social',
+                ],
+                [
+                    'title' => 'Mail',
+                    'link' => 'admin/settings/mail',
+                    'active' => 'admin/settings/mail*',
+                    'icon' => 'fa fa-mail',
+                ],
+                [
+                    'title' => 'Notification',
+                    'link' => 'admin/settings/notification',
+                    'active' => 'admin/settings/notification*',
+                    'icon' => 'fa fa-mail',
+                ],
+            ]
         ],
     ],
 

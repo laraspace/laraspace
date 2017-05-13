@@ -4,6 +4,7 @@ namespace Laraspace\Http;
 
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 use Laraspace\Http\Middleware\AdminMiddleware;
+use Laraspace\Http\Middleware\SettingsMiddleware;
 
 class Kernel extends HttpKernel
 {
@@ -56,6 +57,7 @@ class Kernel extends HttpKernel
         'can' => \Illuminate\Auth\Middleware\Authorize::class,
         'guest' => \Laraspace\Http\Middleware\RedirectIfAuthenticated::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
-        'admin' => AdminMiddleware::class
+        'admin' => AdminMiddleware::class,
+        'setting' => SettingsMiddleware::class,
     ];
 }
