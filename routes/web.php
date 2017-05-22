@@ -155,6 +155,7 @@ Route::group([
     //Settings
     Route::group(['prefix' => 'settings'], function () {
 
+        //social
         Route::get('/social', [
             'as' => 'admin.settings.index', 'uses' => 'SettingsController@index'
         ]);
@@ -174,12 +175,29 @@ Route::group([
             ]);
 
         });
+
+        //Ace Editor
+        Route::group(['prefix' => 'env'], function () {
+
+            Route::get('/', [
+                'as' => 'admin.setting.environment', 'uses' => 'SettingsController@envShow'
+            ]);
+
+            Route::post('/create', [
+                'as' => 'admin.environment.create', 'uses' => 'SettingsController@envCreate'
+            ]);
+
+        });
+
+        //notification
         Route::get('/notification', [
             'as' => 'admin.notification.index', 'uses' => 'SettingsController@notification'
         ]);
         Route::post('notification/create', [
             'as' => 'admin.notification.create', 'uses' => 'SettingsController@notificationCreate'
         ]);
+
+        //
 
     });
 
