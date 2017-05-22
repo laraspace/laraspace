@@ -184,7 +184,7 @@ Route::group([
             ]);
 
             Route::post('/create', [
-                'as' => 'admin.environment.create', 'uses' => 'SettingsController@envCreate'
+                'as' => 'admin.setting.environment.create', 'uses' => 'SettingsController@envCreate'
             ]);
 
         });

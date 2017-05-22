@@ -1,6 +1,5 @@
 @extends('admin.layouts.layout-basic')
 @section('styles')
-    <link href="{{asset('assets/admin/twilight.css')}}" rel="stylesheet" type="text/css">
     <style>
         #editor {
             width: 100%;
@@ -9,42 +8,6 @@
         }
     </style>
 @stop
-@section('scripts')
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.3/vue.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.16.1/axios.min.js"></script>
-    <script type="text/javascript" src="{{asset('assets\admin\ace.js')}}"></script>
-    <script>
-        new Vue({
-            el: "#root",
-
-            mounted: function () {
-                var editor = ace.edit("editor");
-
-                editor.commands.addCommand({
-                    name: 'saveFile',
-                    bindKey: {
-                        win: 'Ctrl-S',
-                        mac: 'Command-S',
-                        sender: 'editor|cli'
-                    },
-                    exec: function () {
-                        var envd = editor.getSession().getValue();
-
-                        axios.post('env/create', {env: envd})
-                            .then(function (response) {
-                                location.reload();
-                            });
-                    }
-                });
-                editor.getSession().setTabSize(4);
-                editor.setHighlightActiveLine(true);
-                editor.resize();
-            },
-        });
-
-    </script>
-@stop
-
 @section('content')
     <div class="main-content">
 
@@ -63,11 +26,43 @@
                         Environment File
                     </div>
                     <div class="card-block">
-                        <pre id="editor">{{$env}}</pre>
+                            <pre id="editor">{{$env}}</pre>
+                            <input type="hidden" name="env_file">
+                            <button class="btn btn-theme btn-large" @click="saveEnvFile"><i class="fa fa-save"></i>Save
+                                Env
+                                File settings
+                            </button>
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
 @stop
+@section('scripts')
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.3/vue.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.16.1/axios.min.js"></script>
+    <script>
+        new Vue({
+            el: "#root",
 
+            data: {
+                editor: '',
+            },
+            mounted: function () {
+                this.editor = ace.edit("editor");
+            },
+            methods: {
+                saveEnvFile:function(){
+                    var env = this.editor.getSession().getValue();
+
+                    axios.post('env/create', {env:env})
+                        .then(function (response) {
+                            location.reload();
+                        });
+                },
+            }
+        });
+
+    </script>
+@stop

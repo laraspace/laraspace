@@ -85,7 +85,7 @@ class SettingsController extends Controller
     public function envCreate(Request $request)
     {
 
-        \Storage::put('.env',$request->env);
+       \Storage::put('.env',$request->env);
 
         return back();
     }
