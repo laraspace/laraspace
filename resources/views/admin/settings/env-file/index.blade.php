@@ -16,7 +16,7 @@
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="{{route('admin.dashboard')}}">Home</a></li>
                 <li class="breadcrumb-item"><a href="#">Settings</a></li>
-                <li class="breadcrumb-item"><a href="{{route('admin.setting.environment')}}">Ace Editor</a></li>
+                <li class="breadcrumb-item"><a href="{{route('admin.setting.environment')}}">Environment</a></li>
             </ol>
         </div>
         <div class="row" id="root">
@@ -26,13 +26,10 @@
                         Environment File
                     </div>
                     <div class="card-block">
-                            <pre id="editor">{{$env}}</pre>
-                            <input type="hidden" name="env_file">
-                            <button class="btn btn-theme btn-large" @click="saveEnvFile"><i class="fa fa-save"></i>Save
-                                Env
-                                File settings
-                            </button>
-
+                        <pre id="editor">{{$env}}</pre>
+                        <button class="btn btn-theme btn-large" @click="saveEnvFile">
+                            <i class="fa fa-save"></i>Save Env File Settings 
+                        </button>
                     </div>
                 </div>
             </div>
@@ -53,10 +50,9 @@
                 this.editor = ace.edit("editor");
             },
             methods: {
-                saveEnvFile:function(){
+                saveEnvFile: function () {
                     var env = this.editor.getSession().getValue();
-
-                    axios.post('env/create', {env:env})
+                    axios.post('env/create', {env: env})
                         .then(function (response) {
                             location.reload();
                         });
