@@ -22,13 +22,10 @@
         <div class="row" id="root">
             <div class="col-sm-12">
                 <div class="card">
-                    <div class="card-header">
-                        Environment File
-                    </div>
                     <div class="card-block">
                         <pre id="editor">{{$env}}</pre>
                         <button class="btn btn-theme btn-large" @click="saveEnvFile">
-                            <i class="fa fa-save"></i>Save Env File Settings 
+                            <i class="fa fa-save"></i>Save
                         </button>
                     </div>
                 </div>
@@ -37,8 +34,6 @@
     </div>
 @stop
 @section('scripts')
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.3/vue.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.16.1/axios.min.js"></script>
     <script>
         new Vue({
             el: "#root",

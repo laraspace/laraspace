@@ -152,6 +152,15 @@ Route::group([
 
     Route::resource('users','UsersController');
 
+    //icons
+    Route::group(['prefix' => 'icons'], function () {
+
+        Route::get('/icomoon', [
+            'as' => 'admin.icons.ico-moon', 'uses' => 'Demo\PagesController@iconMoon'
+        ]);
+
+    });
+
     //Settings
     Route::group(['prefix' => 'settings'], function () {
 

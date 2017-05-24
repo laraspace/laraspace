@@ -124,6 +124,19 @@ return [
             ]
         ],
         [
+            'title' => 'Icons',
+            'link'  => '#',
+            'active' => 'admin/icons*',
+            'icon'  => 'fa fa-eye',
+            'children' => [
+                [
+                    'title' => 'Ico Moon',
+                    'link'  => '/admin/icons/icomoon',
+                    'active' => 'admin/icons/icomoon',
+                ],
+            ]
+        ],
+        [
             'title' => 'Forms',
             'link'  => '#',
             'active' => 'admin/forms*',

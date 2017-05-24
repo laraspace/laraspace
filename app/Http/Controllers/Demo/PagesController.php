@@ -106,4 +106,9 @@ class PagesController extends Controller
     {
         return view('admin.sessions.login-simple');
     }
+
+    public function iconMoon()
+    {
+        return view('admin.pages.icons.ico-moon');
+    }
 }

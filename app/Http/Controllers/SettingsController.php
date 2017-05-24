@@ -44,13 +44,33 @@ class SettingsController extends Controller
         return view('admin.settings.mail.index');
     }
 
-    public function mailCreate(Requests\MailerRequest $request)
+    public function mailCreate(Request $request)
     {
+        if($request->mailer == 'mailgun')
+        {
+            $sets = ['m_user', 'm_from', 'm_domain', 'm_secret'];
 
-        $sets = ['host', 'port', 'from_user', 'from', 'username', 'password'];
+            foreach ($sets as $key) {
+                Setting::setSetting($key, $request->input($key));
+            }
 
-        foreach ($sets as $key) {
-            Setting::setSetting($key, $request->input($key));
+        }
+        else if($request->mailer == 'sendgrid')
+        {
+            $sets = ['sg_host','sg_username', 'sg_password','sg_user' ,'sg_from'];
+
+            foreach ($sets as $key) {
+                Setting::setSetting($key, $request->input($key));
+            }
+
+        }
+        else{
+            $sets = ['sp_user', 'sp_from', 'sp_secret'];
+
+            foreach ($sets as $key) {
+                Setting::setSetting($key, $request->input($key));
+            }
+
         }
 
         flash()->success('Settings Saved');
