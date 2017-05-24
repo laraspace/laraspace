@@ -130,9 +130,14 @@ return [
             'icon'  => 'fa fa-eye',
             'children' => [
                 [
-                    'title' => 'Ico Moon',
+                    'title' => 'IcoMoons',
                     'link'  => '/admin/icons/icomoon',
                     'active' => 'admin/icons/icomoon',
+                ],
+                [
+                    'title' => 'Evil Icons',
+                    'link'  => '/admin/icons/evil-icons',
+                    'active' => 'admin/icons/evil-icons',
                 ],
             ]
         ],

@@ -38,6 +38,7 @@ mix.combine([
     pluginPath + 'easypiecharts/jquery.easypiechart.js',
     pluginPath + 'metisMenu/metisMenu.js',
     pluginPath + 'ace-editor/ace.js',
+    pluginPath + 'icons/evil-icons.js',
     pluginPath + 'ace-editor/twilight.js',
 
     // ** Laraspace Inits **

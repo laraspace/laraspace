@@ -8,7 +8,7 @@
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="{{route('admin.dashboard')}}">Home</a></li>
                 <li class="breadcrumb-item"><a href="#">Settings</a></li>
-                <li class="breadcrumb-item"><a href="{{route('admin.icons.ico-moon')}}">IcoMoon</a></li>
+                <li class="breadcrumb-item"><a href="{{route('admin.icons.icomoon')}}">IcoMoon</a></li>
             </ol>
         </div>
         <div class="row">
@@ -656,7 +656,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e945</span>
-                                    <span class="unit1">envelop, mail</span>
+                                    <span class="unit">envelop, mail</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">

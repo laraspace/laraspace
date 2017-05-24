@@ -156,7 +156,11 @@ Route::group([
     Route::group(['prefix' => 'icons'], function () {
 
         Route::get('/icomoon', [
-            'as' => 'admin.icons.ico-moon', 'uses' => 'Demo\PagesController@iconMoon'
+            'as' => 'admin.icons.icomoon', 'uses' => 'Demo\PagesController@icoMoons'
+        ]);
+
+        Route::get('/evil-icons', [
+            'as' => 'admin.icons.evilicon', 'uses' => 'Demo\PagesController@evilIcons'
         ]);
 
     });

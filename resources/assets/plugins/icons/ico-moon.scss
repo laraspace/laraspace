@@ -25,6 +25,7 @@ small {
 }
 .glyph .icon {
   font-size: 32px;
+  display: inline;
 }
 .liga {
   width: 80%;
@@ -177,11 +178,9 @@ p {
   background-color: #FFEB3B
 }
 .unit1{
-  padding-top: 25px;
   font-style: italic;
 }
 .unit{
-  position: absolute;
   font-weight: bold;
   text-transform: capitalize;
 }
