@@ -139,6 +139,16 @@ return [
                     'link'  => '/admin/icons/evil-icons',
                     'active' => 'admin/icons/evil-icons',
                 ],
+                [
+                    'title' => 'Meteocons Icons',
+                    'link'  => '/admin/icons/meteocons',
+                    'active' => 'admin/icons/meteocons',
+                ],
+                [
+                    'title' => 'Linecons Icons',
+                    'link'  => '/admin/icons/linecons',
+                    'active' => 'admin/icons/linecons',
+                ],
             ]
         ],
         [

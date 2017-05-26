@@ -37,22 +37,22 @@
         <div>
             <div class="form-group">
                 <label>Mailgun Domain</label>
-                <input type="text" name="m_domain" value="{{ get_setting('m_domain') }}"
+                <input type="text" name="mail_mailgun_domain" value="{{ get_setting('mail_mailgun_domain') }}"
                        class="form-control">
             </div>
             <div class="form-group">
                 <label>Mailgun Secret</label>
-                <input type="text" name="m_secret" value="{{ get_setting('m_secret') }}"
+                <input type="text" name="mail_mailgun_secret" value="{{ get_setting('mail_mailgun_secret') }}"
                        class="form-control">
             </div>
             <div class="form-group">
                 <label>Mail Username</label>
-                <input type="text" name="m_user" value="{{ get_setting('m_user') }}"
+                <input type="text" name="mail_mailgun_user" value="{{ get_setting('mail_mailgun_user') }}"
                        class="form-control">
             </div>
             <div class="form-group">
                 <label>Mail From</label>
-                <input type="text" name="m_from" value="{{ get_setting('m_from') }}"
+                <input type="text" name="mail_mailgun_from" value="{{ get_setting('mail_mailgun_from') }}"
                        class="form-control">
             </div>
         </div>
@@ -61,27 +61,27 @@
         <div>
             <div class="form-group">
                 <label>SendGrid Host</label>
-                <input type="text" name="sg_host" value="{{ get_setting('sg_host') }}"
+                <input type="text" name="mail_sendgrid_host" value="{{ get_setting('mail_sendgrid_host') }}"
                        class="form-control">
             </div>
             <div class="form-group">
                 <label>SendGrid Username</label>
-                <input type="text" name="sg_username" value="{{ get_setting('sg_username') }}"
+                <input type="text" name="mail_sendgrid_username" value="{{ get_setting('mail_sendgrid_username') }}"
                        class="form-control">
             </div>
             <div class="form-group">
                 <label>SendGrid Password</label>
-                <input type="text" name="sg_password" value="{{ get_setting('sg_password') }}"
+                <input type="text" name="mail_sendgrid_password" value="{{ get_setting('mail_sendgrid_password') }}"
                        class="form-control">
             </div>
             <div class="form-group">
                 <label>Mail Username</label>
-                <input type="text" name="sg_user" value="{{ get_setting('sg_user') }}"
+                <input type="text" name="mail_sendgrid_user" value="{{ get_setting('mail_sendgrid_user') }}"
                        class="form-control">
             </div>
             <div class="form-group">
                 <label>Mail From</label>
-                <input type="text" name="sg_from" value="{{ get_setting('sg_from') }}"
+                <input type="text" name="mail_sendgrid_from" value="{{ get_setting('mail_sendgrid_from') }}"
                        class="form-control">
             </div>
         </div>
@@ -90,17 +90,17 @@
         <div>
             <div class="form-group">
                 <label>SparkPost Secret</label>
-                <input type="text" name="sp_secret" value="{{ get_setting('sp_secret') }}"
+                <input type="text" name="mail_sparkpost_secret" value="{{ get_setting('mail_sparkpost_secret') }}"
                        class="form-control">
             </div>
             <div class="form-group">
                 <label>Mail Username</label>
-                <input type="text" name="sp_user" value="{{ get_setting('sp_user') }}"
+                <input type="text" name="mail_sparkpost_user" value="{{ get_setting('mail_sparkpost_user') }}"
                        class="form-control">
             </div>
             <div class="form-group">
                 <label>Mail From</label>
-                <input type="text" name="sp_from" value="{{ get_setting('sp_from') }}"
+                <input type="text" name="mail_sparkpost_from" value="{{ get_setting('mail_sparkpost_from') }}"
                        class="form-control">
             </div>
         </div>

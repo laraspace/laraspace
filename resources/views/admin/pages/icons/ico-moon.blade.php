@@ -4,19 +4,16 @@
 @section('content')
     <div class="main-content">
         <div class="page-header">
-            <h3 class="page-title">Icons</h3>
+            <h3 class="page-title">IcoMoon Icons</h3>
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="{{route('admin.dashboard')}}">Home</a></li>
-                <li class="breadcrumb-item"><a href="#">Settings</a></li>
+                <li class="breadcrumb-item"><a href="#">Icons</a></li>
                 <li class="breadcrumb-item"><a href="{{route('admin.icons.icomoon')}}">IcoMoon</a></li>
             </ol>
         </div>
         <div class="row">
             <div class="col-md-11">
                 <div class="card">
-                    <div class="card-header">
-                        IcoMoon Icons
-                    </div>
                     <div class="card-block">
                         <div class="clearfix mhl ptl">
 
@@ -26,8 +23,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e900</span>
-
-                                    <span class="unit">home, house</span>
+                                    <span class="unit">icon-home, icon-house</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -36,9 +32,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e901</span>
-
-
-                                    <span class="unit">home2, house2</span>
+                                    <span class="unit">icon-home2, icon-house2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -47,7 +41,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e902</span>
-                                    <span class="unit">home3, house3</span>
+                                    <span class="unit">icon-home3, icon-house3</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -57,7 +51,7 @@
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e903</span>
 
-                                    <span class="unit">office, buildings</span>
+                                    <span class="unit">icon-office, icon-buildings</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -66,7 +60,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e904</span>
-                                    <span class="unit">newspaper, news</span>
+                                    <span class="unit">icon-newspaper, icon-news</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -75,7 +69,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e905</span>
-                                    <span class="unit">pencil, write</span>
+                                    <span class="unit">icon-pencil, icon-write</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -84,7 +78,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e906</span>
-                                    <span class="unit">pencil2, write2</span>
+                                    <span class="unit">icon-pencil2, icon-write2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -93,7 +87,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e907</span>
-                                    <span class="unit">quill, feather</span>
+                                    <span class="unit">icon-quill, icon-feather</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -102,7 +96,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e908</span>
-                                    <span class="unit">pen, write3</span>
+                                    <span class="unit">icon-pen, icon-write3</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -111,7 +105,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e909</span>
-                                    <span class="unit">blog, pen2</span>
+                                    <span class="unit">icon-blog, icon-pen2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -120,7 +114,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e90a</span>
-                                    <span class="unit">eyedropper, color</span>
+                                    <span class="unit">icon-eyedropper, icon-color</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -129,7 +123,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e90b</span>
-                                    </span><span class="unit">droplet, color2</span>
+                                    </span><span class="unit">icon-droplet, icon-color2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -138,7 +132,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e90c</span>
-                                    </span><span class="unit">paint-format, format</span>
+                                    </span><span class="unit">icon-paint-format, icon-format</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -147,7 +141,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e90d</span>
-                                    </span><span class="unit">image, picture</span>
+                                    </span><span class="unit">icon-image, icon-picture</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -156,7 +150,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e90e</span>
-                                    </span><span class="unit">images, pictures</span>
+                                    </span><span class="unit">icon-images, icon-pictures</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -165,7 +159,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e90f</span>
-                                    </span><span class="unit">camera, photo</span>
+                                    </span><span class="unit">icon-camera, icon-photo</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -174,7 +168,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e910</span>
-                                    <span class="unit">headphones, headset</span>
+                                    <span class="unit">icon-headphones, icon-headset</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -184,7 +178,7 @@
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e911</span>
                                     </span><span
-                                            class="unit">music, song</span>
+                                            class="unit">icon-music, icon-song</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -193,7 +187,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e912</span>
-                                    <span class="unit">play, video</span>
+                                    <span class="unit">icon-play, icon-video</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -202,7 +196,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e913</span>
-                                    <span class="unit">film, video2</span>
+                                    <span class="unit">icon-film, icon-video2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -211,7 +205,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e914</span>
-                                    <span class="unit">video-camera, video3</span>
+                                    <span class="unit">icon-video-camera, icon-video3</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -220,7 +214,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e915</span>
-                                    <span class="unit">dice, game</span>
+                                    <span class="unit">icon-dice, icon-game</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -229,7 +223,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e916</span>
-                                    <span class="unit">pacman, game2</span>
+                                    <span class="unit">icon-pacman, icon-game2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -238,7 +232,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e917</span>
-                                    </span><span class="unit">spades, cards</span>
+                                    </span><span class="unit">icon-spades, icon-cards</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -247,7 +241,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e918</span>
-                                    <span class="unit">clubs, cards2</span>
+                                    <span class="unit">icon-clubs, icon-cards2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -256,7 +250,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e919</span>
-                                    <span class="unit">diamonds, cards3</span>
+                                    <span class="unit">icon-diamonds, icon-cards3</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -265,7 +259,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e91a</span>
-                                    </span><span class="unit">bullhorn, megaphone</span>
+                                    <span class="unit">icon-bullhorn, icon-megaphone</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -274,7 +268,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e91b</span>
-                                    </span><span class="unit">connection, wifi</span>
+                                    <span class="unit">icon-connection, icon-wifi</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -283,7 +277,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e91c</span>
-                                    </span><span class="unit">podcast, broadcast</span>
+                                   <span class="unit">icon-podcast, icon-broadcast</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -292,8 +286,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e91d</span>
-                                    </span><span
-                                            class="unit">feed, wave</span>
+                                    <span class="unit">icon-feed, icon-wave</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -302,7 +295,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e91e</span>
-                                    </span><span class="unit">mic, microphone</span>
+                                    <span class="unit">icon-mic, icon-microphone</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -311,8 +304,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e91f</span>
-                                    </span><span
-                                            class="unit">book, read</span>
+                                    <span class="unit">icon-book, icon-read</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -321,7 +313,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e920</span>
-                                    <span class="unit">books, library</span>
+                                    <span class="unit">icon-books, icon-library</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -330,7 +322,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e921</span>
-                                    <span class="unit">library2, bank</span>
+                                    <span class="unit">icon-library2, icon-bank</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -339,7 +331,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e922</span>
-                                    <span class="unit">file-text, file</span>
+                                    <span class="unit">icon-file-text, icon-file</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -348,7 +340,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e923</span>
-                                    <span class="unit">profile, file2</span>
+                                    <span class="unit">icon-profile, icon-file2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -357,7 +349,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e924</span>
-                                    <span class="unit">file-empty, file3</span>
+                                    <span class="unit">icon-file-empty, icon-file3</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -366,7 +358,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e925</span>
-                                    <span class="unit">files-empty, files</span>
+                                    <span class="unit">icon-files-empty, icon-files</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -375,7 +367,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e926</span>
-                                    <span class="unit">file-text2, file4</span>
+                                    <span class="unit1">icon-file-text2, icon-file4</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -384,7 +376,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e927</span>
-                                    <span class="unit">file-picture, file5</span>
+                                    <span class="unit">icon-file-picture, icon-file5</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -393,7 +385,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e928</span>
-                                    <span class="unit">file-music, file6</span>
+                                    <span class="unit">icon-file-music, icon-file6</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -402,7 +394,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e929</span>
-                                    <span class="unit">file-play, file7</span>
+                                    <span class="unit">icon-file-play, icon-file7</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -411,7 +403,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e92a</span>
-                                    <span class="unit">file-video, file8</span>
+                                    <span class="unit">icon-file-video, icon-file8</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -420,7 +412,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e92b</span>
-                                    <span class="unit">file-zip, file9</span>
+                                    <span class="unit">icon-file-zip, icon-file9</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -429,7 +421,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e92c</span>
-                                    <span class="unit">copy, duplicate</span>
+                                    <span class="unit">icon-copy, icon-duplicate</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -438,7 +430,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e92d</span>
-                                    <span class="unit">paste, clipboard-file</span>
+                                    <span class="unit">icon-paste, icon-clipboard-file</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -447,7 +439,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e92e</span>
-                                    <span class="unit">stack, layers</span>
+                                    <span class="unit">icon-stack, icon-layers</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -456,7 +448,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e92f</span>
-                                    <span class="unit">folder, directory</span>
+                                    <span class="unit">icon-folder, icon-directory</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -465,7 +457,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e930</span>
-                                    <span class="unit">folder-open, directory2</span>
+                                    <span class="unit">icon-folder-open, icon-directory2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -474,7 +466,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e931</span>
-                                    <span class="unit">folder-plus, directory3</span>
+                                    <span class="unit">icon-folder-plus, icon-directory3</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -483,7 +475,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e932</span>
-                                    <span class="unit">folder-minus, directory4</span>
+                                    <span class="unit">icon-folder-minus, icon-directory4</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -492,7 +484,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e933</span>
-                                    <span class="unit">folder-download, directory5</span>
+                                    <span class="unit">icon-folder-download, icon-directory5</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -501,7 +493,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e934</span>
-                                    <span class="unit">folder-upload, directory6</span>
+                                    <span class="unit">icon-folder-upload, icon-directory6</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -510,7 +502,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e935</span>
-                                    <span class="unit">price-tag</span>
+                                    <span class="unit">icon-price-tag</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -519,7 +511,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e936</span>
-                                    <span class="unit">price-tags</span>
+                                    <span class="unit">icon-price-tags</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -530,7 +522,7 @@
                                     <span class="unit1">e937</span>
 
 
-                                    <span class="unit">barcode</span>
+                                    <span class="unit">icon-barcode</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -539,7 +531,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e938</span>
-                                    <span class="unit">qrcode</span>
+                                    <span class="unit">icon-qrcode</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -548,7 +540,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e939</span>
-                                    <span class="unit">ticket, theater</span>
+                                    <span class="unit">icon-ticket, icon-theater</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -557,7 +549,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e93a</span>
-                                    </span><span class="unit">cart, purchase</span>
+                                    </span><span class="unit">icon-cart, icon-purchase</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -566,7 +558,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e93b</span>
-                                    </span><span class="unit">coin-dollar, money</span>
+                                    </span><span class="unit">icon-coin-dollar, icon-money</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -575,7 +567,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e93c</span>
-                                    </span><span class="unit">coin-euro, money2</span>
+                                    </span><span class="unit">icon-coin-euro, icon-money2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -584,7 +576,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e93d</span>
-                                    </span><span class="unit">coin-pound, money3</span>
+                                    </span><span class="unit">icon-coin-pound, icon-money3</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -593,7 +585,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e93e</span>
-                                    </span><span class="unit">coin-yen, money4</span>
+                                    </span><span class="unit">icon-coin-yen, icon-money4</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -602,7 +594,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e93f</span>
-                                    </span><span class="unit">credit-card, money5</span>
+                                    </span><span class="unit">icon-credit-card, icon-money5</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -611,7 +603,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e940</span>
-                                    <span class="unit">calculator, compute</span>
+                                    <span class="unit">icon-calculator, icon-compute</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -620,7 +612,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e941</span>
-                                    <span class="unit">lifebuoy, support</span>
+                                    <span class="unit">icon-lifebuoy, icon-support</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -629,7 +621,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e942</span>
-                                    <span class="unit">phone, telephone</span>
+                                    <span class="unit">icon-phone, icon-telephone</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -638,7 +630,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e943</span>
-                                    <span class="unit">phone-hang-up, telephone2</span>
+                                    <span class="unit">icon-phone-hang-up, icon-telephone2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -647,7 +639,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e944</span>
-                                    <span class="unit">address-book, contact</span>
+                                    <span class="unit">icon-address-book, icon-contact</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -656,7 +648,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e945</span>
-                                    <span class="unit">envelop, mail</span>
+                                    <span class="unit">icon-envelop, icon-mail</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -665,7 +657,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e946</span>
-                                    <span class="unit">pushpin, pin</span>
+                                    <span class="unit">icon-pushpin, icon-pin</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -674,7 +666,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e947</span>
-                                    <span class="unit">location, map-marker</span>
+                                    <span class="unit">icon-location, icon-map-marker</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -683,7 +675,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e948</span>
-                                    <span class="unit">location2, map-marker2</span>
+                                    <span class="unit">icon-location2, icon-map-marker2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -692,7 +684,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e949</span>
-                                    <span class="unit">compass, direction</span>
+                                    <span class="unit">icon-compass, icon-direction</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -701,7 +693,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e94a</span>
-                                    </span><span class="unit">compass2, direction2</span>
+                                    </span><span class="unit">icon-compass2, icon-direction2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -711,7 +703,7 @@
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e94b</span>
                                     </span><span
-                                            class="unit">map, guide</span>
+                                            class="unit">icon-map, icon-guide</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -720,7 +712,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e94c</span>
-                                    </span><span class="unit">map2, guide2</span>
+                                    </span><span class="unit">icon-map2, icon-guide2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -729,7 +721,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e94d</span>
-                                    </span><span class="unit">history, time</span>
+                                    </span><span class="unit">icon-history, icon-time</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -738,7 +730,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e94e</span>
-                                    </span><span class="unit">clock, time2</span>
+                                    </span><span class="unit">icon-clock, icon-time2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -747,7 +739,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e94f</span>
-                                    </span><span class="unit">clock2, time3</span>
+                                    </span><span class="unit">icon-clock2, icon-time3</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -756,7 +748,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e950</span>
-                                    <span class="unit">alarm, time4</span>
+                                    <span class="unit">icon-alarm, icon-time4</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -765,7 +757,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e951</span>
-                                    <span class="unit">bell, alarm2</span>
+                                    <span class="unit">icon-bell, icon-alarm2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -774,7 +766,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e952</span>
-                                    <span class="unit">stopwatch, time5</span>
+                                    <span class="unit">icon-stopwatch, icon-time5</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -783,7 +775,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e953</span>
-                                    <span class="unit">calendar, date</span>
+                                    <span class="unit">icon-calendar, icon-date</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -792,7 +784,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e954</span>
-                                    <span class="unit">printer, print</span>
+                                    <span class="unit">icon-printer, icon-print</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -801,7 +793,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e955</span>
-                                    <span class="unit">keyboard, typing</span>
+                                    <span class="unit">icon-keyboard, icon-typing</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -810,7 +802,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e956</span>
-                                    <span class="unit">display, screen</span>
+                                    <span class="unit">icon-display, icon-screen</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -819,7 +811,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e957</span>
-                                    <span class="unit">laptop, computer</span>
+                                    <span class="unit">icon-laptop, icon-computer</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -828,7 +820,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e958</span>
-                                    <span class="unit">mobile, cell-phone</span>
+                                    <span class="unit">icon-mobile, icon-cell-phone</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -837,7 +829,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e959</span>
-                                    <span class="unit">mobile2, cell-phone2</span>
+                                    <span class="unit">icon-mobile2, icon-cell-phone2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -846,7 +838,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e95a</span>
-                                    </span><span class="unit">tablet, mobile3</span>
+                                    </span><span class="unit">icon-tablet, icon-mobile3</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -856,7 +848,7 @@
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e95b</span>
                                     <span type="text" maxlength="1" readonly value="&#xe95b;"
-                                          class="unitRight talign-right"></span><span class="unit">tv, television</span>
+                                          class="unitRight talign-right"></span><span class="unit">icon-tv, icon-television</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -866,7 +858,7 @@
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e95c</span>
                                     </span><span
-                                            class="unit">drawer, box</span>
+                                            class="unit">icon-drawer, icon-box</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -875,7 +867,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e95d</span>
-                                    </span><span class="unit">drawer2, box2</span>
+                                    </span><span class="unit">icon-drawer2, icon-box2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -884,7 +876,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e95e</span>
-                                    </span><span class="unit">box-add, box3</span>
+                                    </span><span class="unit">icon-box-add, icon-box3</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -893,7 +885,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e95f</span>
-                                    </span><span class="unit">box-remove, box4</span>
+                                    </span><span class="unit">icon-box-remove, icon-box4</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -902,7 +894,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e960</span>
-                                    <span class="unit">download, save</span>
+                                    <span class="unit">icon-download, icon-save</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -911,7 +903,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e961</span>
-                                    <span class="unit">upload, load</span>
+                                    <span class="unit">icon-upload, icon-load</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -920,7 +912,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e962</span>
-                                    <span class="unit">floppy-disk, save2</span>
+                                    <span class="unit">icon-floppy-disk, icon-save2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -929,7 +921,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e963</span>
-                                    <span class="unit">drive, save3</span>
+                                    <span class="unit">icon-drive, icon-save3</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -938,7 +930,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e964</span>
-                                    <span class="unit">database, db</span>
+                                    <span class="unit">icon-database, icon-db</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -947,7 +939,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e965</span>
-                                    <span class="unit">undo, ccw</span>
+                                    <span class="unit">icon-undo, icon-ccw</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -956,7 +948,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e966</span>
-                                    <span class="unit">redo, cw</span>
+                                    <span class="unit">icon-redo, icon-cw</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -965,7 +957,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e967</span>
-                                    <span class="unit">undo2, left</span>
+                                    <span class="unit">icon-undo2, icon-left</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -975,7 +967,7 @@
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e968</span>
                                     <span type="text" maxlength="1" readonly value="&#xe968;"
-                                          class="unitRight talign-right"></span><span class="unit">redo2, right</span>
+                                          class="unitRight talign-right"></span><span class="unit">icon-redo2, icon-right</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -984,7 +976,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e969</span>
-                                    <span class="unit">forward, right2</span>
+                                    <span class="unit">icon-forward, icon-right2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -993,7 +985,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e96a</span>
-                                    </span><span class="unit">reply, left2</span>
+                                    </span><span class="unit">icon-reply, icon-left2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1002,7 +994,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e96b</span>
-                                    </span><span class="unit">bubble, comment</span>
+                                    </span><span class="unit">icon-bubble, icon-comment</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1011,7 +1003,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e96c</span>
-                                    </span><span class="unit">bubbles, comments</span>
+                                    </span><span class="unit">icon-bubbles, icon-comments</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1020,7 +1012,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e96d</span>
-                                    </span><span class="unit">bubbles2, comments2</span>
+                                    </span><span class="unit">icon-bubbles2, icon-comments2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1029,7 +1021,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e96e</span>
-                                    </span><span class="unit">bubble2, comment2</span>
+                                    </span><span class="unit">icon-bubble2, icon-comment2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1038,7 +1030,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e96f</span>
-                                    </span><span class="unit">bubbles3, comments3</span>
+                                    </span><span class="unit">icon-bubbles3, icon-comments3</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1047,7 +1039,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e970</span>
-                                    <span class="unit">bubbles4, comments4</span>
+                                    <span class="unit">icon-bubbles4, icon-comments4</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1056,7 +1048,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e971</span>
-                                    <span class="unit">user, profile2</span>
+                                    <span class="unit">icon-user, icon-profile2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1065,7 +1057,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e972</span>
-                                    <span class="unit">users, group</span>
+                                    <span class="unit">icon-users, icon-group</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1074,7 +1066,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e973</span>
-                                    <span class="unit">user-plus, user2</span>
+                                    <span class="unit">icon-user-plus, icon-user2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1083,7 +1075,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e974</span>
-                                    <span class="unit">user-minus, user3</span>
+                                    <span class="unit">icon-user-minus, icon-user3</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1092,7 +1084,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e975</span>
-                                    <span class="unit">user-check, user4</span>
+                                    <span class="unit">icon-user-check, icon-user4</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1101,7 +1093,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e976</span>
-                                    <span class="unit">user-tie, user5</span>
+                                    <span class="unit">icon-user-tie, icon-user5</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1110,7 +1102,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e977</span>
-                                    <span class="unit">quotes-left, ldquo</span>
+                                    <span class="unit">icon-quotes-left, icon-ldquo</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1119,7 +1111,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e978</span>
-                                    <span class="unit">quotes-right, rdquo</span>
+                                    <span class="unit">icon-quotes-right, icon-rdquo</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1128,7 +1120,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e979</span>
-                                    <span class="unit">hour-glass, loading</span>
+                                    <span class="unit">icon-hour-glass, icon-loading</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1137,7 +1129,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e97a</span>
-                                    </span><span class="unit">spinner, loading2</span>
+                                    </span><span class="unit">icon-spinner, icon-loading2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1146,7 +1138,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e97b</span>
-                                    </span><span class="unit">spinner2, loading3</span>
+                                    </span><span class="unit">icon-spinner2, icon-loading3</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1155,7 +1147,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e97c</span>
-                                    </span><span class="unit">spinner3, loading4</span>
+                                    </span><span class="unit">icon-spinner3, icon-loading4</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1164,7 +1156,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e97d</span>
-                                    </span><span class="unit">spinner4, loading5</span>
+                                    </span><span class="unit">icon-spinner4, icon-loading5</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1173,7 +1165,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e97e</span>
-                                    </span><span class="unit">spinner5, loading6</span>
+                                    </span><span class="unit">icon-spinner5, icon-loading6</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1182,7 +1174,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e97f</span>
-                                    </span><span class="unit">spinner6, loading7</span>
+                                    </span><span class="unit">icon-spinner6, icon-loading7</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1191,7 +1183,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e980</span>
-                                    <span class="unit">spinner7, loading8</span>
+                                    <span class="unit">icon-spinner7, icon-loading8</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1200,7 +1192,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e981</span>
-                                    <span class="unit">spinner8, loading9</span>
+                                    <span class="unit">icon-spinner8, icon-loading9</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1209,7 +1201,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e982</span>
-                                    <span class="unit">spinner9, loading10</span>
+                                    <span class="unit">icon-spinner9, icon-loading10</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1218,7 +1210,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e983</span>
-                                    <span class="unit">spinner10, loading11</span>
+                                    <span class="unit">icon-spinner10, icon-loading11</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1227,7 +1219,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e984</span>
-                                    <span class="unit">spinner11, loading12</span>
+                                    <span class="unit">icon-spinner11, icon-loading12</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1236,7 +1228,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e985</span>
-                                    <span class="unit">binoculars, lookup</span>
+                                    <span class="unit">icon-binoculars, icon-lookup</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1245,7 +1237,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e986</span>
-                                    <span class="unit">search, magnifier</span>
+                                    <span class="unit">icon-search, icon-magnifier</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1254,7 +1246,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e987</span>
-                                    <span class="unit">zoom-in, magnifier2</span>
+                                    <span class="unit">icon-zoom-in, icon-magnifier2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1263,7 +1255,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e988</span>
-                                    <span class="unit">zoom-out, magnifier3</span>
+                                    <span class="unit">icon-zoom-out, icon-magnifier3</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1272,7 +1264,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e989</span>
-                                    <span class="unit">enlarge, expand</span>
+                                    <span class="unit">icon-enlarge, icon-expand</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1281,7 +1273,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e98a</span>
-                                    <span class="unit">shrink, collapse</span>
+                                    <span class="unit">icon-shrink, icon-collapse</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1290,7 +1282,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e98b</span>
-                                    <span class="unit">enlarge2, expand2</span>
+                                    <span class="unit">icon-enlarge2, icon-expand2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1299,7 +1291,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e98c</span>
-                                    <span class="unit">shrink2, collapse2</span>
+                                    <span class="unit">icon-shrink2, icon-collapse2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1308,7 +1300,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e98d</span>
-                                    <span class="unit">key, password</span>
+                                    <span class="unit">icon-key, icon-password</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1317,7 +1309,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e98e</span>
-                                    <span class="unit">key2, password2</span>
+                                    <span class="unit">icon-key2, icon-password2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1326,7 +1318,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e98f</span>
-                                    <span class="unit">lock, secure</span>
+                                    <span class="unit">icon-lock, icon-secure</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1335,7 +1327,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e990</span>
-                                    <span class="unit">unlocked, lock-open</span>
+                                    <span class="unit">icon-unlocked, icon-lock-open</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1344,7 +1336,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e991</span>
-                                    <span class="unit">wrench, tool</span>
+                                    <span class="unit">icon-wrench, icon-tool</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1353,7 +1345,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e992</span>
-                                    <span class="unit">equalizer, sliders</span>
+                                    <span class="unit">icon-equalizer, icon-sliders</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1362,7 +1354,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e993</span>
-                                    <span class="unit">equalizer2, sliders2</span>
+                                    <span class="unit">icon-equalizer2, icon-sliders2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1371,7 +1363,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e994</span>
-                                    <span class="unit">cog, gear</span>
+                                    <span class="unit">icon-cog, icon-gear</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1380,7 +1372,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e995</span>
-                                    <span class="unit">cogs, gears</span>
+                                    <span class="unit">icon-cogs, icon-gears</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1389,7 +1381,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e996</span>
-                                    <span class="unit">hammer, tool2</span>
+                                    <span class="unit">icon-hammer, icon-tool2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1398,7 +1390,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e997</span>
-                                    <span class="unit">magic-wand, wizard</span>
+                                    <span class="unit">icon-magic-wand, icon-wizard</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1407,7 +1399,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e998</span>
-                                    <span class="unit">aid-kit, health</span>
+                                    <span class="unit">icon-aid-kit, icon-health</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1416,7 +1408,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e999</span>
-                                    <span class="unit">bug, virus</span>
+                                    <span class="unit">icon-bug, icon-virus</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1425,7 +1417,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e99a</span>
-                                    <span class="unit">pie-chart, stats</span>
+                                    <span class="unit">icon-pie-chart, icon-stats</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1434,7 +1426,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e99b</span>
-                                    <span class="unit">stats-dots, stats2</span>
+                                    <span class="unit">icon-stats-dots, icon-stats2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1443,7 +1435,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e99c</span>
-                                    <span class="unit">stats-bars, stats3</span>
+                                    <span class="unit">icon-stats-bars, icon-stats3</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1452,7 +1444,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e99d</span>
-                                    <span class="unit">stats-bars2, stats4</span>
+                                    <span class="unit">icon-stats-bars2, icon-stats4</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1461,7 +1453,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e99e</span>
-                                    <span class="unit">trophy, cup</span>
+                                    <span class="unit">icon-trophy, icon-cup</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1470,7 +1462,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e99f</span>
-                                    <span class="unit">gift, present</span>
+                                    <span class="unit">icon-gift, icon-present</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1479,7 +1471,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9a0</span>
-                                    <span class="unit">glass, drink</span>
+                                    <span class="unit">icon-glass, icon-drink</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1488,7 +1480,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9a1</span>
-                                    <span class="unit">glass2, drink2</span>
+                                    <span class="unit">icon-glass2, icon-drink2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1498,7 +1490,7 @@
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9a2</span>
                                     </span><span
-                                            class="unit">mug, drink3</span>
+                                            class="unit">icon-mug, icon-drink3</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1507,7 +1499,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9a3</span>
-                                    <span class="unit">spoon-knife, food</span>
+                                    <span class="unit">icon-spoon-knife, icon-food</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1516,7 +1508,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9a4</span>
-                                    </span><span class="unit">leaf, nature</span>
+                                    </span><span class="unit">icon-leaf, icon-nature</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1526,7 +1518,7 @@
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9a5</span>
                                     </span><span
-                                            class="unit">rocket, jet</span>
+                                            class="unit">icon-rocket, icon-jet</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1535,7 +1527,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9a6</span>
-                                    </span><span class="unit">meter, gauge</span>
+                                    </span><span class="unit">icon-meter, icon-gauge</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1544,7 +1536,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9a7</span>
-                                    </span><span class="unit">meter2, gauge2</span>
+                                    </span><span class="unit">icon-meter2, icon-gauge2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1553,7 +1545,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9a8</span>
-                                    </span><span class="unit">hammer2, gavel</span>
+                                    </span><span class="unit">icon-hammer2, icon-gavel</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1562,7 +1554,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9a9</span>
-                                    <span class="unit">fire, flame</span>
+                                    <span class="unit">icon-fire, icon-flame</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1571,7 +1563,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9aa</span>
-                                    <span class="unit">lab, beta</span>
+                                    <span class="unit">icon-lab, icon-beta</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1580,7 +1572,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9ab</span>
-                                    <span class="unit">magnet, attract</span>
+                                    <span class="unit">icon-magnet, icon-attract</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1589,7 +1581,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9ac</span>
-                                    <span class="unit">bin, trashcan</span>
+                                    <span class="unit">icon-bin, icon-trashcan</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1598,7 +1590,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9ad</span>
-                                    <span class="unit">bin2, trashcan2</span>
+                                    <span class="unit">icon-bin2, icon-trashcan2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1607,7 +1599,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9ae</span>
-                                    <span class="unit">briefcase, portfolio</span>
+                                    <span class="unit">icon-briefcase, icon-portfolio</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1616,7 +1608,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9af</span>
-                                    <span class="unit">airplane, travel</span>
+                                    <span class="unit">icon-airplane, icon-travel</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1625,7 +1617,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9b0</span>
-                                    <span class="unit">truck, transit</span>
+                                    <span class="unit">icon-truck, icon-transit</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1634,7 +1626,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9b1</span>
-                                    <span class="unit">road, asphalt</span>
+                                    <span class="unit">icon-road, icon-asphalt</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1643,7 +1635,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9b2</span>
-                                    <span class="unit">accessibility</span>
+                                    <span class="unit">icon-accessibility</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1652,7 +1644,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9b3</span>
-                                    <span class="unit">target, goal</span>
+                                    <span class="unit">icon-target, icon-goal</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1661,7 +1653,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9b4</span>
-                                    <span class="unit">shield, security</span>
+                                    <span class="unit">icon-shield, icon-security</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1670,7 +1662,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9b5</span>
-                                    <span class="unit">power, lightning</span>
+                                    <span class="unit">icon-power, icon-lightning</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1679,7 +1671,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9b6</span>
-                                    <span class="unit">switch</span>
+                                    <span class="unit">icon-switch</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1688,7 +1680,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9b7</span>
-                                    <span class="unit">power-cord, plugin</span>
+                                    <span class="unit">icon-power-cord, icon-plugin</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1697,7 +1689,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9b8</span>
-                                    <span class="unit">clipboard, board</span>
+                                    <span class="unit">icon-clipboard, icon-board</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1706,7 +1698,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9b9</span>
-                                    <span class="unit">list-numbered, options</span>
+                                    <span class="unit">icon-list-numbered, icon-options</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1715,7 +1707,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9ba</span>
-                                    <span class="unit">list, todo</span>
+                                    <span class="unit">icon-list, icon-todo</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1724,7 +1716,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9bb</span>
-                                    <span class="unit">list2, todo2</span>
+                                    <span class="unit">icon-list2, icon-todo2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1733,7 +1725,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9bc</span>
-                                    <span class="unit">tree, branches</span>
+                                    <span class="unit">icon-tree, icon-branches</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1742,7 +1734,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9bd</span>
-                                    <span class="unit">menu, list3</span>
+                                    <span class="unit">icon-menu, icon-list3</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1751,7 +1743,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9be</span>
-                                    <span class="unit">menu2, options2</span>
+                                    <span class="unit">icon-menu2, icon-options2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1760,7 +1752,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9bf</span>
-                                    <span class="unit">menu3, options3</span>
+                                    <span class="unit">icon-menu3, icon-options3</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1769,7 +1761,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9c0</span>
-                                    <span class="unit">menu4, options4</span>
+                                    <span class="unit">icon-menu4, icon-options4</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1778,7 +1770,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9c1</span>
-                                    <span class="unit">cloud, weather</span>
+                                    <span class="unit">icon-cloud, icon-weather</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1787,7 +1779,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9c2</span>
-                                    <span class="unit">cloud-download, cloud2</span>
+                                    <span class="unit">icon-cloud-download, icon-cloud2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1796,7 +1788,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9c3</span>
-                                    <span class="unit">cloud-upload, cloud3</span>
+                                    <span class="unit">icon-cloud-upload, icon-cloud3</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1805,7 +1797,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9c4</span>
-                                    <span class="unit">cloud-check, cloud4</span>
+                                    <span class="unit">icon-cloud-check, icon-cloud4</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1814,7 +1806,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9c5</span>
-                                    <span class="unit">download2, save4</span>
+                                    <span class="unit">icon-download2, icon-save4</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1823,7 +1815,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9c6</span>
-                                    <span class="unit">upload2, load2</span>
+                                    <span class="unit">icon-upload2, icon-load2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1832,7 +1824,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9c7</span>
-                                    <span class="unit">download3, save5</span>
+                                    <span class="unit">icon-download3, icon-save5</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1841,7 +1833,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9c8</span>
-                                    <span class="unit">upload3, load3</span>
+                                    <span class="unit">icon-upload3, icon-load3</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1850,7 +1842,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9c9</span>
-                                    <span class="unit">sphere, globe</span>
+                                    <span class="unit">icon-sphere, icon-globe</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1859,7 +1851,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9ca</span>
-                                    <span class="unit">earth, globe2</span>
+                                    <span class="unit">icon-earth, icon-globe2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1868,7 +1860,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9cb</span>
-                                    <span class="unit">link, chain</span>
+                                    <span class="unit">icon-link, icon-chain</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1877,7 +1869,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9cc</span>
-                                    <span class="unit">flag, report</span>
+                                    <span class="unit">icon-flag, icon-report</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1886,7 +1878,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9cd</span>
-                                    <span class="unit">attachment, paperclip</span>
+                                    <span class="unit">icon-attachment, icon-paperclip</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1895,7 +1887,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9ce</span>
-                                    <span class="unit">eye, views</span>
+                                    <span class="unit">icon-eye, icon-views</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1904,7 +1896,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9cf</span>
-                                    <span class="unit">eye-plus, views2</span>
+                                    <span class="unit">icon-eye-plus, icon-views2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1913,7 +1905,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9d0</span>
-                                    <span class="unit">eye-minus, views3</span>
+                                    <span class="unit">icon-eye-minus, icon-views3</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1922,7 +1914,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9d1</span>
-                                    <span class="unit">eye-blocked, views4</span>
+                                    <span class="unit">icon-eye-blocked, icon-views4</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1931,7 +1923,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9d2</span>
-                                    <span class="unit">bookmark, ribbon</span>
+                                    <span class="unit">icon-bookmark, icon-ribbon</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1940,7 +1932,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9d3</span>
-                                    <span class="unit">bookmarks, ribbons</span>
+                                    <span class="unit">icon-bookmarks, icon-ribbons</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1949,7 +1941,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9d4</span>
-                                    <span class="unit">sun, weather2</span>
+                                    <span class="unit">icon-sun, icon-weather2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1958,7 +1950,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9d5</span>
-                                    <span class="unit">contrast</span>
+                                    <span class="unit">icon-contrast</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1967,7 +1959,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9d6</span>
-                                    <span class="unit">brightness-contrast</span>
+                                    <span class="unit">icon-brightness-contrast</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1976,7 +1968,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9d7</span>
-                                    <span class="unit">star-empty, rate</span>
+                                    <span class="unit">icon-star-empty, icon-rate</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1985,7 +1977,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9d8</span>
-                                    <span class="unit">star-half, rate2</span>
+                                    <span class="unit">icon-star-half, icon-rate2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -1994,7 +1986,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9d9</span>
-                                    <span class="unit">star-full, rate3</span>
+                                    <span class="unit">icon-star-full, icon-rate3</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2003,7 +1995,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9da</span>
-                                    <span class="unit">heart, like</span>
+                                    <span class="unit">icon-heart, icon-like</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2012,7 +2004,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9db</span>
-                                    <span class="unit">heart-broken, heart2</span>
+                                    <span class="unit">icon-heart-broken, icon-heart2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2021,7 +2013,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9dc</span>
-                                    <span class="unit">man, male</span>
+                                    <span class="unit">icon-man, icon-male</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2030,7 +2022,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9dd</span>
-                                    <span class="unit">woman, female</span>
+                                    <span class="unit">icon-woman, icon-female</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2039,7 +2031,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9de</span>
-                                    <span class="unit">man-woman, toilet</span>
+                                    <span class="unit">icon-man-woman, icon-toilet</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2048,7 +2040,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9df</span>
-                                    <span class="unit">happy, emoticon</span>
+                                    <span class="unit">icon-happy, icon-emoticon</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2057,7 +2049,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9e0</span>
-                                    <span class="unit">happy2, emoticon2</span>
+                                    <span class="unit">icon-happy2, icon-emoticon2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2066,7 +2058,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9e1</span>
-                                    <span class="unit">smile, emoticon3</span>
+                                    <span class="unit">icon-smile, icon-emoticon3</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2075,7 +2067,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9e2</span>
-                                    <span class="unit">smile2, emoticon4</span>
+                                    <span class="unit">icon-smile2, icon-emoticon4</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2084,7 +2076,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9e3</span>
-                                    <span class="unit">tongue, emoticon5</span>
+                                    <span class="unit">icon-tongue, icon-emoticon5</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2093,7 +2085,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9e4</span>
-                                    <span class="unit">tongue2, emoticon6</span>
+                                    <span class="unit">icon-tongue2, icon-emoticon6</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2102,7 +2094,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9e5</span>
-                                    <span class="unit">sad, emoticon7</span>
+                                    <span class="unit">icon-sad, icon-emoticon7</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2111,7 +2103,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9e6</span>
-                                    <span class="unit">sad2, emoticon8</span>
+                                    <span class="unit">icon-sad2, icon-emoticon8</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2120,7 +2112,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9e7</span>
-                                    <span class="unit">wink, emoticon9</span>
+                                    <span class="unit">icon-wink, icon-emoticon9</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2129,7 +2121,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9e8</span>
-                                    <span class="unit">wink2, emoticon10</span>
+                                    <span class="unit">icon-wink2, icon-emoticon10</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2138,7 +2130,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9e9</span>
-                                    <span class="unit">grin, emoticon11</span>
+                                    <span class="unit">icon-grin, icon-emoticon11</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2147,7 +2139,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9ea</span>
-                                    <span class="unit">grin2, emoticon12</span>
+                                    <span class="unit">icon-grin2, icon-emoticon12</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2156,7 +2148,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9eb</span>
-                                    <span class="unit">cool, emoticon13</span>
+                                    <span class="unit">icon-cool, icon-emoticon13</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2165,7 +2157,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9ec</span>
-                                    <span class="unit">cool2, emoticon14</span>
+                                    <span class="unit">icon-cool2, icon-emoticon14</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2174,7 +2166,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9ed</span>
-                                    <span class="unit">angry, emoticon15</span>
+                                    <span class="unit">icon-angry, icon-emoticon15</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2183,7 +2175,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9ee</span>
-                                    <span class="unit">angry2, emoticon16</span>
+                                    <span class="unit">icon-angry2, icon-emoticon16</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2192,7 +2184,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9ef</span>
-                                    <span class="unit">evil, emoticon17</span>
+                                    <span class="unit">icon-evil, icon-emoticon17</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2201,7 +2193,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9f0</span>
-                                    <span class="unit">evil2, emoticon18</span>
+                                    <span class="unit">icon-evil2, icon-emoticon18</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2210,7 +2202,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9f1</span>
-                                    <span class="unit">shocked, emoticon19</span>
+                                    <span class="unit">icon-shocked, icon-emoticon19</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2219,7 +2211,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9f2</span>
-                                    <span class="unit">shocked2, emoticon20</span>
+                                    <span class="unit">icon-shocked2, icon-emoticon20</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2228,7 +2220,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9f3</span>
-                                    <span class="unit">baffled, emoticon21</span>
+                                    <span class="unit">icon-baffled, icon-emoticon21</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2237,7 +2229,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9f4</span>
-                                    <span class="unit">baffled2, emoticon22</span>
+                                    <span class="unit">icon-baffled2, icon-emoticon22</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2246,7 +2238,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9f5</span>
-                                    <span class="unit">confused, emoticon23</span>
+                                    <span class="unit">icon-confused, icon-emoticon23</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2255,7 +2247,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9f6</span>
-                                    <span class="unit">confused2, emoticon24</span>
+                                    <span class="unit">icon-confused2, icon-emoticon24</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2264,7 +2256,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9f7</span>
-                                    <span class="unit">neutral, emoticon25</span>
+                                    <span class="unit">icon-neutral, icon-emoticon25</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2273,7 +2265,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9f8</span>
-                                    <span class="unit">neutral2, emoticon26</span>
+                                    <span class="unit">icon-neutral2, icon-emoticon26</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2282,7 +2274,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9f9</span>
-                                    <span class="unit">hipster, emoticon27</span>
+                                    <span class="unit">icon-hipster, icon-emoticon27</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2291,7 +2283,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9fa</span>
-                                    <span class="unit">hipster2, emoticon28</span>
+                                    <span class="unit">icon-hipster2, icon-emoticon28</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2300,7 +2292,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9fb</span>
-                                    <span class="unit">wondering, emoticon29</span>
+                                    <span class="unit">icon-wondering, icon-emoticon29</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2309,7 +2301,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9fc</span>
-                                    <span class="unit">wondering2, emoticon30</span>
+                                    <span class="unit">icon-wondering2, icon-emoticon30</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2318,7 +2310,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9fd</span>
-                                    <span class="unit">sleepy, emoticon31</span>
+                                    <span class="unit">icon-sleepy, icon-emoticon31</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2327,7 +2319,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9fe</span>
-                                    <span class="unit">sleepy2, emoticon32</span>
+                                    <span class="unit">icon-sleepy2, icon-emoticon32</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2336,7 +2328,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">e9ff</span>
-                                    <span class="unit">frustrated, emoticon33</span>
+                                    <span class="unit">icon-frustrated, icon-emoticon33</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2345,7 +2337,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea00</span>
-                                    <span class="unit">frustrated2, emoticon34</span>
+                                    <span class="unit">icon-frustrated2, icon-emoticon34</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2354,7 +2346,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea01</span>
-                                    <span class="unit">crying, emoticon35</span>
+                                    <span class="unit">icon-crying, icon-emoticon35</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2363,7 +2355,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea02</span>
-                                    <span class="unit">crying2, emoticon36</span>
+                                    <span class="unit">icon-crying2, icon-emoticon36</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2372,7 +2364,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea03</span>
-                                    <span class="unit">point-up, finger</span>
+                                    <span class="unit">icon-point-up, icon-finger</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2381,7 +2373,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea04</span>
-                                    <span class="unit">point-right, finger2</span>
+                                    <span class="unit">icon-point-right, icon-finger2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2390,7 +2382,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea05</span>
-                                    <span class="unit">point-down, finger3</span>
+                                    <span class="unit">icon-point-down, icon-finger3</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2399,7 +2391,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea06</span>
-                                    <span class="unit">point-left, finger4</span>
+                                    <span class="unit">icon-point-left, icon-finger4</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2408,7 +2400,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea07</span>
-                                    <span class="unit">warning, sign</span>
+                                    <span class="unit">icon-warning, icon-sign</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2417,7 +2409,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea08</span>
-                                    <span class="unit">notification, warning2</span>
+                                    <span class="unit">icon-notification, icon-warning2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2426,7 +2418,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea09</span>
-                                    <span class="unit">question, help</span>
+                                    <span class="unit">icon-question, icon-help</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2435,7 +2427,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea0a</span>
-                                    <span class="unit">plus, add</span>
+                                    <span class="unit">icon-plus, icon-add</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2444,7 +2436,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea0b</span>
-                                    <span class="unit">minus, subtract</span>
+                                    <span class="unit">icon-minus, icon-subtract</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2453,7 +2445,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea0c</span>
-                                    <span class="unit">info, information</span>
+                                    <span class="unit">icon-info, icon-information</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2462,7 +2454,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea0d</span>
-                                    <span class="unit">cancel-circle, close</span>
+                                    <span class="unit">icon-cancel-circle, icon-close</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2471,7 +2463,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea0e</span>
-                                    <span class="unit">blocked, forbidden</span>
+                                    <span class="unit">icon-blocked, icon-forbidden</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2480,7 +2472,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea0f</span>
-                                    <span class="unit">cross, cancel</span>
+                                    <span class="unit">icon-cross, icon-cancel</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2489,7 +2481,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea10</span>
-                                    <span class="unit">checkmark, tick</span>
+                                    <span class="unit">icon-checkmark, icon-tick</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2498,7 +2490,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea11</span>
-                                    <span class="unit">checkmark2, tick2</span>
+                                    <span class="unit">icon-checkmark2, icon-tick2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2507,7 +2499,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea12</span>
-                                    <span class="unit">spell-check, spelling</span>
+                                    <span class="unit">icon-spell-check, icon-spelling</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2516,7 +2508,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea13</span>
-                                    <span class="unit">enter, signin</span>
+                                    <span class="unit">icon-enter, icon-signin</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2525,7 +2517,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea14</span>
-                                    <span class="unit">exit, signout</span>
+                                    <span class="unit">icon-exit, icon-signout</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2534,7 +2526,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea15</span>
-                                    <span class="unit">play2, player</span>
+                                    <span class="unit">icon-play2, icon-player</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2543,7 +2535,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea16</span>
-                                    <span class="unit">pause, player2</span>
+                                    <span class="unit">icon-pause, icon-player2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2552,7 +2544,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea17</span>
-                                    <span class="unit">stop, player3</span>
+                                    <span class="unit">icon-stop, icon-player3</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2561,7 +2553,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea18</span>
-                                    <span class="unit">previous, player4</span>
+                                    <span class="unit">icon-previous, icon-player4</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2570,7 +2562,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea19</span>
-                                    <span class="unit">next, player5</span>
+                                    <span class="unit">icon-next, icon-player5</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2579,7 +2571,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea1a</span>
-                                    <span class="unit">backward, player6</span>
+                                    <span class="unit">icon-backward, icon-player6</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2588,7 +2580,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea1b</span>
-                                    <span class="unit">forward2, player7</span>
+                                    <span class="unit">icon-forward2, icon-player7</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2597,7 +2589,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea1c</span>
-                                    <span class="unit">play3, player8</span>
+                                    <span class="unit">icon-play3, icon-player8</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2606,7 +2598,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea1d</span>
-                                    <span class="unit">pause2, player9</span>
+                                    <span class="unit">icon-pause2, icon-player9</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2615,7 +2607,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea1e</span>
-                                    <span class="unit">stop2, player10</span>
+                                    <span class="unit">icon-stop2, icon-player10</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2624,7 +2616,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea1f</span>
-                                    <span class="unit">backward2, player11</span>
+                                    <span class="unit">icon-backward2, icon-player11</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2633,7 +2625,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea20</span>
-                                    <span class="unit">forward3, player12</span>
+                                    <span class="unit">icon-forward3, icon-player12</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2642,7 +2634,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea21</span>
-                                    <span class="unit">first, player13</span>
+                                    <span class="unit">icon-first, icon-player13</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2651,7 +2643,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea22</span>
-                                    <span class="unit">last, player14</span>
+                                    <span class="unit">icon-last, icon-player14</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2660,7 +2652,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea23</span>
-                                    <span class="unit">previous2, player15</span>
+                                    <span class="unit">icon-previous2, icon-player15</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2669,7 +2661,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea24</span>
-                                    <span class="unit">next2, player16</span>
+                                    <span class="unit">icon-next2, icon-player16</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2678,7 +2670,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea25</span>
-                                    <span class="unit">eject, player17</span>
+                                    <span class="unit">icon-eject, icon-player17</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2687,7 +2679,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea26</span>
-                                    <span class="unit">volume-high, volume</span>
+                                    <span class="unit">icon-volume-high, icon-volume</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2696,7 +2688,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea27</span>
-                                    <span class="unit">volume-medium, volume2</span>
+                                    <span class="unit">icon-volume-medium, icon-volume2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2705,7 +2697,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea28</span>
-                                    <span class="unit">volume-low, volume3</span>
+                                    <span class="unit">icon-volume-low, icon-volume3</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2714,7 +2706,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea29</span>
-                                    <span class="unit">volume-mute, volume4</span>
+                                    <span class="unit">icon-volume-mute, icon-volume4</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2723,7 +2715,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea2a</span>
-                                    <span class="unit">volume-mute2, volume5</span>
+                                    <span class="unit">icon-volume-mute2, icon-volume5</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2732,7 +2724,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea2b</span>
-                                    <span class="unit">volume-increase, volume6</span>
+                                    <span class="unit">icon-volume-increase, icon-volume6</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2741,7 +2733,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea2c</span>
-                                    <span class="unit">volume-decrease, volume7</span>
+                                    <span class="unit">icon-volume-decrease, icon-volume7</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2750,7 +2742,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea2d</span>
-                                    <span class="unit">loop, repeat</span>
+                                    <span class="unit">icon-loop, icon-repeat</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2759,7 +2751,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea2e</span>
-                                    <span class="unit">loop2, repeat2</span>
+                                    <span class="unit">icon-loop2, icon-repeat2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2768,7 +2760,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea2f</span>
-                                    <span class="unit">infinite</span>
+                                    <span class="unit">icon-infinite</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2777,7 +2769,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea30</span>
-                                    <span class="unit">shuffle, random</span>
+                                    <span class="unit">icon-shuffle, icon-random</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2786,7 +2778,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea31</span>
-                                    <span class="unit">arrow-up-left, up-left</span>
+                                    <span class="unit">icon-arrow-up-left, icon-up-left</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2795,7 +2787,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea32</span>
-                                    <span class="unit">arrow-up, up</span>
+                                    <span class="unit">icon-arrow-up, icon-up</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2804,7 +2796,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea33</span>
-                                    <span class="unit">arrow-up-right, up-right</span>
+                                    <span class="unit">icon-arrow-up-right, icon-up-right</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2813,7 +2805,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea34</span>
-                                    <span class="unit">arrow-right, right3</span>
+                                    <span class="unit">icon-arrow-right, icon-right3</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2822,7 +2814,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea35</span>
-                                    <span class="unit">arrow-down-right, down-right</span>
+                                    <span class="unit">icon-arrow-down-right, icon-down-right</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2831,7 +2823,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea36</span>
-                                    <span class="unit">arrow-down, down</span>
+                                    <span class="unit">icon-arrow-down, icon-down</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2840,7 +2832,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea37</span>
-                                    <span class="unit">arrow-down-left, down-left</span>
+                                    <span class="unit">icon-arrow-down-left, icon-down-left</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2849,7 +2841,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea38</span>
-                                    <span class="unit">arrow-left, left3</span>
+                                    <span class="unit">icon-arrow-left, icon-left3</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2858,7 +2850,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea39</span>
-                                    <span class="unit">arrow-up-left2, up-left2</span>
+                                    <span class="unit">icon-arrow-up-left2, icon-up-left2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2867,7 +2859,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea3a</span>
-                                    <span class="unit">arrow-up2, up2</span>
+                                    <span class="unit">icon-arrow-up2, icon-up2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2876,7 +2868,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea3b</span>
-                                    <span class="unit">arrow-up-right2, up-right2</span>
+                                    <span class="unit">icon-arrow-up-right2, icon-up-right2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2885,7 +2877,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea3c</span>
-                                    <span class="unit">arrow-right2, right4</span>
+                                    <span class="unit">icon-arrow-right2, icon-right4</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2894,7 +2886,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea3d</span>
-                                    <span class="unit">arrow-down-right2, down-right2</span>
+                                    <span class="unit">icon-arrow-down-right2, icon-down-right2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2903,7 +2895,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea3e</span>
-                                    <span class="unit">arrow-down2, down2</span>
+                                    <span class="unit">icon-arrow-down2, icon-down2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2912,7 +2904,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea3f</span>
-                                    <span class="unit">arrow-down-left2, down-left2</span>
+                                    <span class="unit">icon-arrow-down-left2, icon-down-left2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2921,7 +2913,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea40</span>
-                                    <span class="unit">arrow-left2, left4</span>
+                                    <span class="unit">icon-arrow-left2, icon-left4</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2930,7 +2922,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea41</span>
-                                    <span class="unit">circle-up, up3</span>
+                                    <span class="unit">icon-circle-up, icon-up3</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2939,7 +2931,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea42</span>
-                                    <span class="unit">circle-right, right5</span>
+                                    <span class="unit">icon-circle-right, icon-right5</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2948,7 +2940,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea43</span>
-                                    <span class="unit">circle-down, down3</span>
+                                    <span class="unit">icon-circle-down, icon-down3</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2957,7 +2949,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea44</span>
-                                    <span class="unit">circle-left, left5</span>
+                                    <span class="unit">icon-circle-left, icon-left5</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2966,7 +2958,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea45</span>
-                                    <span class="unit">tab, arrows</span>
+                                    <span class="unit">icon-tab, icon-arrows</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2975,7 +2967,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea46</span>
-                                    <span class="unit">move-up, sort</span>
+                                    <span class="unit">icon-move-up, icon-sort</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2984,7 +2976,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea47</span>
-                                    <span class="unit">move-down, sort2</span>
+                                    <span class="unit">icon-move-down, icon-sort2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -2993,7 +2985,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea48</span>
-                                    <span class="unit">sort-alpha-asc, arrange</span>
+                                    <span class="unit">icon-sort-alpha-asc, icon-arrange</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3002,7 +2994,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea49</span>
-                                    <span class="unit">sort-alpha-desc, arrange2</span>
+                                    <span class="unit">icon-sort-alpha-desc, icon-arrange2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3011,7 +3003,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea4a</span>
-                                    <span class="unit">sort-numeric-asc, arrange3</span>
+                                    <span class="unit">icon-sort-numeric-asc, icon-arrange3</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3020,7 +3012,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea4b</span>
-                                    <span class="unit">sort-numberic-desc, arrange4</span>
+                                    <span class="unit">icon-sort-numberic-desc, icon-arrange4</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3029,7 +3021,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea4c</span>
-                                    <span class="unit">sort-amount-asc, arrange5</span>
+                                    <span class="unit">icon-sort-amount-asc, icon-arrange5</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3038,7 +3030,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea4d</span>
-                                    <span class="unit">sort-amount-desc, arrange6</span>
+                                    <span class="unit">icon-sort-amount-desc, icon-arrange6</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3047,7 +3039,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea4e</span>
-                                    <span class="unit">command, cmd</span>
+                                    <span class="unit">icon-command, icon-cmd</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3056,7 +3048,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea4f</span>
-                                    <span class="unit">shift</span>
+                                    <span class="unit">icon-shift</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3065,7 +3057,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea50</span>
-                                    <span class="unit">ctrl, control</span>
+                                    <span class="unit">icon-ctrl, icon-control</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3074,7 +3066,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea51</span>
-                                    <span class="unit">opt, option</span>
+                                    <span class="unit">icon-opt, icon-option</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3083,7 +3075,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea52</span>
-                                    <span class="unit">checkbox-checked, checkbox</span>
+                                    <span class="unit">icon-checkbox-checked, icon-checkbox</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3092,7 +3084,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea53</span>
-                                    <span class="unit">checkbox-unchecked, checkbox2</span>
+                                    <span class="unit">icon-checkbox-unchecked, icon-checkbox2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3101,7 +3093,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea54</span>
-                                    <span class="unit">radio-checked, radio-button</span>
+                                    <span class="unit">icon-radio-checked, icon-radio-button</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3110,7 +3102,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea55</span>
-                                    <span class="unit">radio-checked2, radio-button2</span>
+                                    <span class="unit">icon-radio-checked2, icon-radio-button2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3119,7 +3111,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea56</span>
-                                    <span class="unit">radio-unchecked, radio-button3</span>
+                                    <span class="unit">icon-radio-unchecked, icon-radio-button3</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3128,7 +3120,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea57</span>
-                                    <span class="unit">crop, resize</span>
+                                    <span class="unit">icon-crop, icon-resize</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3137,7 +3129,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea58</span>
-                                    <span class="unit">make-group</span>
+                                    <span class="unit">icon-make-group</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3146,7 +3138,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea59</span>
-                                    <span class="unit">ungroup</span>
+                                    <span class="unit">icon-ungroup</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3155,7 +3147,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea5a</span>
-                                    <span class="unit">scissors, cut</span>
+                                    <span class="unit">icon-scissors, icon-cut</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3164,7 +3156,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea5b</span>
-                                    <span class="unit">filter, funnel</span>
+                                    <span class="unit">icon-filter, icon-funnel</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3173,7 +3165,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea5c</span>
-                                    <span class="unit">font, typeface</span>
+                                    <span class="unit">icon-font, icon-typeface</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3182,7 +3174,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea5d</span>
-                                    <span class="unit">ligature, typography</span>
+                                    <span class="unit">icon-ligature, icon-typography</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3191,7 +3183,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea5e</span>
-                                    <span class="unit">ligature2, typography2</span>
+                                    <span class="unit">icon-ligature2, icon-typography2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3200,7 +3192,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea5f</span>
-                                    <span class="unit">text-height, wysiwyg</span>
+                                    <span class="unit">icon-text-height, icon-wysiwyg</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3209,7 +3201,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea60</span>
-                                    <span class="unit">text-width, wysiwyg2</span>
+                                    <span class="unit">icon-text-width, icon-wysiwyg2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3218,7 +3210,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea61</span>
-                                    <span class="unit">font-size, wysiwyg3</span>
+                                    <span class="unit">icon-font-size, icon-wysiwyg3</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3227,7 +3219,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea62</span>
-                                    <span class="unit">bold, wysiwyg4</span>
+                                    <span class="unit">icon-bold, icon-wysiwyg4</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3236,7 +3228,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea63</span>
-                                    <span class="unit">underline, wysiwyg5</span>
+                                    <span class="unit">icon-underline, icon-wysiwyg5</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3245,7 +3237,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea64</span>
-                                    <span class="unit">italic, wysiwyg6</span>
+                                    <span class="unit">icon-italic, icon-wysiwyg6</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3254,7 +3246,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea65</span>
-                                    <span class="unit">strikethrough, wysiwyg7</span>
+                                    <span class="unit">icon-strikethrough, icon-wysiwyg7</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3263,7 +3255,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea66</span>
-                                    <span class="unit">omega, wysiwyg8</span>
+                                    <span class="unit">icon-omega, icon-wysiwyg8</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3272,7 +3264,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea67</span>
-                                    <span class="unit">sigma, wysiwyg9</span>
+                                    <span class="unit">icon-sigma, icon-wysiwyg9</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3281,7 +3273,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea68</span>
-                                    <span class="unit">page-break, wysiwyg10</span>
+                                    <span class="unit">icon-page-break, icon-wysiwyg10</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3290,7 +3282,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea69</span>
-                                    <span class="unit">superscript, wysiwyg11</span>
+                                    <span class="unit">icon-superscript, icon-wysiwyg11</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3299,7 +3291,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea6a</span>
-                                    <span class="unit">subscript, wysiwyg12</span>
+                                    <span class="unit">icon-subscript, icon-wysiwyg12</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3308,7 +3300,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea6b</span>
-                                    <span class="unit">superscript2, wysiwyg13</span>
+                                    <span class="unit">icon-superscript2, icon-wysiwyg13</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3317,7 +3309,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea6c</span>
-                                    <span class="unit">subscript2, wysiwyg14</span>
+                                    <span class="unit">icon-subscript2, icon-wysiwyg14</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3326,7 +3318,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea6d</span>
-                                    <span class="unit">text-color, wysiwyg15</span>
+                                    <span class="unit">icon-text-color, icon-wysiwyg15</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3335,7 +3327,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea6e</span>
-                                    <span class="unit">pagebreak, wysiwyg16</span>
+                                    <span class="unit">icon-pagebreak, icon-wysiwyg16</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3344,7 +3336,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea6f</span>
-                                    <span class="unit">clear-formatting, wysiwyg17</span>
+                                    <span class="unit">icon-clear-formatting, icon-wysiwyg17</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3353,7 +3345,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea70</span>
-                                    <span class="unit">table, wysiwyg18</span>
+                                    <span class="unit">icon-table, icon-wysiwyg18</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3362,7 +3354,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea71</span>
-                                    <span class="unit">table2, wysiwyg19</span>
+                                    <span class="unit">icon-table2, icon-wysiwyg19</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3371,7 +3363,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea72</span>
-                                    <span class="unit">insert-template, wysiwyg20</span>
+                                    <span class="unit">icon-insert-template, icon-wysiwyg20</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3380,7 +3372,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea73</span>
-                                    <span class="unit">pilcrow, wysiwyg21</span>
+                                    <span class="unit">icon-pilcrow, icon-wysiwyg21</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3389,7 +3381,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea74</span>
-                                    <span class="unit">ltr, wysiwyg22</span>
+                                    <span class="unit">icon-ltr, icon-wysiwyg22</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3398,7 +3390,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea75</span>
-                                    <span class="unit">rtl, wysiwyg23</span>
+                                    <span class="unit">icon-rtl, icon-wysiwyg23</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3407,7 +3399,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea76</span>
-                                    <span class="unit">section, wysiwyg24</span>
+                                    <span class="unit">icon-section, icon-wysiwyg24</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3416,7 +3408,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea77</span>
-                                    <span class="unit">paragraph-left, wysiwyg25</span>
+                                    <span class="unit">icon-paragraph-left, icon-wysiwyg25</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3425,7 +3417,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea78</span>
-                                    <span class="unit">paragraph-center, wysiwyg26</span>
+                                    <span class="unit">icon-paragraph-center, icon-wysiwyg26</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3434,7 +3426,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea79</span>
-                                    <span class="unit">paragraph-right, wysiwyg27</span>
+                                    <span class="unit">icon-paragraph-right, icon-wysiwyg27</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3443,7 +3435,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea7a</span>
-                                    <span class="unit">paragraph-justify, wysiwyg28</span>
+                                    <span class="unit">icon-paragraph-justify, icon-wysiwyg28</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3452,7 +3444,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea7b</span>
-                                    <span class="unit">indent-increase, wysiwyg29</span>
+                                    <span class="unit">icon-indent-increase, icon-wysiwyg29</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3461,7 +3453,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea7c</span>
-                                    <span class="unit">indent-decrease, wysiwyg30</span>
+                                    <span class="unit">icon-indent-decrease, icon-wysiwyg30</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3470,7 +3462,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea7d</span>
-                                    <span class="unit">share, out</span>
+                                    <span class="unit">icon-share, icon-out</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3479,7 +3471,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea7e</span>
-                                    <span class="unit">new-tab, out2</span>
+                                    <span class="unit">icon-new-tab, icon-out2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3488,7 +3480,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea7f</span>
-                                    <span class="unit">embed, code</span>
+                                    <span class="unit">icon-embed, icon-code</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3497,7 +3489,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea80</span>
-                                    <span class="unit">embed2, code2</span>
+                                    <span class="unit">icon-embed2, icon-code2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3506,7 +3498,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea81</span>
-                                    <span class="unit">terminal, console</span>
+                                    <span class="unit">icon-terminal, icon-console</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3515,7 +3507,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea82</span>
-                                    <span class="unit">share2, social</span>
+                                    <span class="unit">icon-share2, icon-social</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3524,7 +3516,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea83</span>
-                                    <span class="unit">mail2, contact2</span>
+                                    <span class="unit">icon-mail2, icon-contact2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3533,7 +3525,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea84</span>
-                                    <span class="unit">mail3, contact3</span>
+                                    <span class="unit">icon-mail3, icon-contact3</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3542,7 +3534,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea85</span>
-                                    <span class="unit">mail4, contact4</span>
+                                    <span class="unit">icon-mail4, icon-contact4</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3551,7 +3543,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea86</span>
-                                    <span class="unit">mail5, contact5</span>
+                                    <span class="unit">icon-mail5, icon-contact5</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3560,7 +3552,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea87</span>
-                                    <span class="unit">amazon, brand</span>
+                                    <span class="unit">icon-amazon, icon-brand</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3569,7 +3561,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea88</span>
-                                    <span class="unit">google, brand2</span>
+                                    <span class="unit">icon-google, icon-brand2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3578,7 +3570,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea89</span>
-                                    <span class="unit">google2, brand3</span>
+                                    <span class="unit">icon-google2, icon-brand3</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3587,7 +3579,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea8a</span>
-                                    <span class="unit">google3, brand4</span>
+                                    <span class="unit">icon-google3, icon-brand4</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3596,7 +3588,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea8b</span>
-                                    <span class="unit">google-plus, brand5</span>
+                                    <span class="unit">icon-google-plus, icon-brand5</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3605,7 +3597,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea8c</span>
-                                    <span class="unit">google-plus2, brand6</span>
+                                    <span class="unit">icon-google-plus2, icon-brand6</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3614,7 +3606,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea8d</span>
-                                    <span class="unit">google-plus3, brand7</span>
+                                    <span class="unit">icon-google-plus3, icon-brand7</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3623,7 +3615,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea8e</span>
-                                    <span class="unit">hangouts, brand8</span>
+                                    <span class="unit">icon-hangouts, icon-brand8</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3632,7 +3624,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea8f</span>
-                                    <span class="unit">google-drive, brand9</span>
+                                    <span class="unit">icon-google-drive, icon-brand9</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3641,7 +3633,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea90</span>
-                                    <span class="unit">facebook, brand10</span>
+                                    <span class="unit">icon-facebook, icon-brand10</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3650,7 +3642,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea91</span>
-                                    <span class="unit">facebook2, brand11</span>
+                                    <span class="unit">icon-facebook2, icon-brand11</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3659,7 +3651,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea92</span>
-                                    <span class="unit">instagram, brand12</span>
+                                    <span class="unit">icon-instagram, icon-brand12</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3668,7 +3660,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea93</span>
-                                    <span class="unit">whatsapp, brand13</span>
+                                    <span class="unit">icon-whatsapp, icon-brand13</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3677,7 +3669,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea94</span>
-                                    <span class="unit">spotify, brand14</span>
+                                    <span class="unit">icon-spotify, icon-brand14</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3686,7 +3678,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea95</span>
-                                    <span class="unit">telegram, brand15</span>
+                                    <span class="unit">icon-telegram, icon-brand15</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3695,7 +3687,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea96</span>
-                                    <span class="unit">twitter, brand16</span>
+                                    <span class="unit">icon-twitter, icon-brand16</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3704,7 +3696,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea97</span>
-                                    <span class="unit">vine, brand17</span>
+                                    <span class="unit">icon-vine, icon-brand17</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3713,7 +3705,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea98</span>
-                                    <span class="unit">vk, brand18</span>
+                                    <span class="unit">icon-vk, icon-brand18</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3722,7 +3714,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea99</span>
-                                    <span class="unit">renren, brand19</span>
+                                    <span class="unit">icon-renren, icon-brand19</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3731,7 +3723,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea9a</span>
-                                    <span class="unit">sina-weibo, brand20</span>
+                                    <span class="unit">icon-sina-weibo, icon-brand20</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3740,7 +3732,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea9b</span>
-                                    <span class="unit">feed2, rss</span>
+                                    <span class="unit">icon-feed2, icon-rss</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3749,7 +3741,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea9c</span>
-                                    <span class="unit">feed3, rss2</span>
+                                    <span class="unit">icon-feed3, icon-rss2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3758,7 +3750,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea9d</span>
-                                    <span class="unit">youtube, brand21</span>
+                                    <span class="unit">icon-youtube, icon-brand21</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3767,7 +3759,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea9e</span>
-                                    <span class="unit">youtube2, brand22</span>
+                                    <span class="unit">icon-youtube2, icon-brand22</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3776,7 +3768,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ea9f</span>
-                                    <span class="unit">twitch, brand23</span>
+                                    <span class="unit">icon-twitch, icon-brand23</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3785,7 +3777,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eaa0</span>
-                                    <span class="unit">vimeo, brand24</span>
+                                    <span class="unit">icon-vimeo, icon-brand24</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3794,7 +3786,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eaa1</span>
-                                    </span><span class="unit">vimeo2, brand25</span>
+                                    </span><span class="unit">icon-vimeo2, icon-brand25</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3803,7 +3795,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eaa2</span>
-                                    <span class="unit">lanyrd, brand26</span>
+                                    <span class="unit">icon-lanyrd, icon-brand26</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3812,7 +3804,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eaa3</span>
-                                    <span class="unit">flickr, brand27</span>
+                                    <span class="unit">icon-flickr, icon-brand27</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3821,7 +3813,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eaa4</span>
-                                    <span class="unit">flickr2, brand28</span>
+                                    <span class="unit">icon-flickr2, icon-brand28</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3830,7 +3822,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eaa5</span>
-                                    <span class="unit">flickr3, brand29</span>
+                                    <span class="unit">icon-flickr3, icon-brand29</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3839,7 +3831,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eaa6</span>
-                                    <span class="unit">flickr4, brand30</span>
+                                    <span class="unit">icon-flickr4, icon-brand30</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3848,7 +3840,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eaa7</span>
-                                    <span class="unit">dribbble, brand31</span>
+                                    <span class="unit">icon-dribbble, icon-brand31</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3857,7 +3849,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eaa8</span>
-                                    <span class="unit">behance, brand32</span>
+                                    <span class="unit">icon-behance, icon-brand32</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3866,7 +3858,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eaa9</span>
-                                    <span class="unit">behance2, brand33</span>
+                                    <span class="unit">icon-behance2, icon-brand33</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3875,7 +3867,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eaaa</span>
-                                    <span class="unit">deviantart, brand34</span>
+                                    <span class="unit">icon-deviantart, icon-brand34</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3884,7 +3876,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eaab</span>
-                                    <span class="unit">500px, brand35</span>
+                                    <span class="unit">icon-500px, icon-brand35</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3893,7 +3885,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eaac</span>
-                                    <span class="unit">steam, brand36</span>
+                                    <span class="unit">icon-steam, icon-brand36</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3902,7 +3894,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eaad</span>
-                                    <span class="unit">steam2, brand37</span>
+                                    <span class="unit">icon-steam2, icon-brand37</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3911,7 +3903,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eaae</span>
-                                    <span class="unit">dropbox, brand38</span>
+                                    <span class="unit">icon-dropbox, icon-brand38</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3920,7 +3912,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eaaf</span>
-                                    <span class="unit">onedrive, brand39</span>
+                                    <span class="unit">icon-onedrive, icon-brand39</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3929,7 +3921,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eab0</span>
-                                    <span class="unit">github, brand40</span>
+                                    <span class="unit">icon-github, icon-brand40</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3938,7 +3930,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eab1</span>
-                                    <span class="unit">npm, brand41</span>
+                                    <span class="unit">icon-npm, icon-brand41</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3947,7 +3939,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eab2</span>
-                                    <span class="unit">basecamp, brand42</span>
+                                    <span class="unit">icon-basecamp, icon-brand42</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3956,7 +3948,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eab3</span>
-                                    <span class="unit">trello, brand43</span>
+                                    <span class="unit">icon-trello, icon-brand43</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3965,7 +3957,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eab4</span>
-                                    <span class="unit">wordpress, brand44</span>
+                                    <span class="unit">icon-wordpress, icon-brand44</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3974,7 +3966,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eab5</span>
-                                    <span class="unit">joomla, brand45</span>
+                                    <span class="unit">icon-joomla, icon-brand45</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3983,7 +3975,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eab6</span>
-                                    <span class="unit">ello, brand46</span>
+                                    <span class="unit">icon-ello, icon-brand46</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -3992,7 +3984,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eab7</span>
-                                    <span class="unit">blogger, brand47</span>
+                                    <span class="unit">icon-blogger, icon-brand47</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -4001,7 +3993,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eab8</span>
-                                    <span class="unit">blogger2, brand48</span>
+                                    <span class="unit">icon-blogger2, icon-brand48</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -4010,7 +4002,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eab9</span>
-                                    <span class="unit">tumblr, brand49</span>
+                                    <span class="unit">icon-tumblr, icon-brand49</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -4019,7 +4011,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eaba</span>
-                                    <span class="unit">tumblr2, brand50</span>
+                                    <span class="unit">icon-tumblr2, icon-brand50</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -4028,7 +4020,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eabb</span>
-                                    <span class="unit">yahoo, brand51</span>
+                                    <span class="unit">icon-yahoo, icon-brand51</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -4037,7 +4029,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eabc</span>
-                                    <span class="unit">yahoo2</span>
+                                    <span class="unit">icon-yahoo2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -4046,7 +4038,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eabd</span>
-                                    <span class="unit">tux, brand52</span>
+                                    <span class="unit">icon-tux, icon-brand52</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -4055,7 +4047,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eabe</span>
-                                    <span class="unit">apple, brand53</span>
+                                    <span class="unit">icon-apple, icon-brand53</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -4064,7 +4056,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eabf</span>
-                                    <span class="unit">finder, brand54</span>
+                                    <span class="unit">icon-finder, icon-brand54</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -4073,7 +4065,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eac0</span>
-                                    <span class="unit">android, brand55</span>
+                                    <span class="unit">icon-android, icon-brand55</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -4082,7 +4074,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eac1</span>
-                                    <span class="unit">windows, brand56</span>
+                                    <span class="unit">icon-windows, icon-brand56</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -4091,7 +4083,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eac2</span>
-                                    <span class="unit">windows8, brand57</span>
+                                    <span class="unit">icon-windows8, icon-brand57</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -4100,7 +4092,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eac3</span>
-                                    <span class="unit">soundcloud, brand58</span>
+                                    <span class="unit">icon-soundcloud, icon-brand58</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -4109,7 +4101,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eac4</span>
-                                    <span class="unit">soundcloud2, brand59</span>
+                                    <span class="unit">icon-soundcloud2, icon-brand59</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -4118,7 +4110,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eac5</span>
-                                    <span class="unit">skype, brand60</span>
+                                    <span class="unit">icon-skype, icon-brand60</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -4127,7 +4119,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eac6</span>
-                                    <span class="unit">reddit, brand61</span>
+                                    <span class="unit">icon-reddit, icon-brand61</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -4136,7 +4128,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eac7</span>
-                                    <span class="unit">hackernews, brand62</span>
+                                    <span class="unit">icon-hackernews, icon-brand62</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -4145,7 +4137,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eac8</span>
-                                    <span class="unit">wikipedia, brand63</span>
+                                    <span class="unit">icon-wikipedia, icon-brand63</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -4154,7 +4146,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eac9</span>
-                                    <span class="unit">linkedin, brand64</span>
+                                    <span class="unit">icon-linkedin, icon-brand64</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -4163,7 +4155,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eaca</span>
-                                    <span class="unit">linkedin2, brand65</span>
+                                    <span class="unit">icon-linkedin2, icon-brand65</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -4172,7 +4164,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eacb</span>
-                                    <span class="unit">lastfm, brand66</span>
+                                    <span class="unit">icon-lastfm, icon-brand66</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -4181,7 +4173,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eacc</span>
-                                    <span class="unit">lastfm2, brand67</span>
+                                    <span class="unit">icon-lastfm2, icon-brand67</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -4190,7 +4182,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eacd</span>
-                                    <span class="unit">delicious, brand68</span>
+                                    <span class="unit">icon-delicious, icon-brand68</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -4199,7 +4191,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eace</span>
-                                    <span class="unit">stumbleupon, brand69</span>
+                                    <span class="unit">icon-stumbleupon, icon-brand69</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -4208,7 +4200,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eacf</span>
-                                    <span class="unit">stumbleupon2, brand70</span>
+                                    <span class="unit">icon-stumbleupon2, icon-brand70</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -4217,7 +4209,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ead0</span>
-                                    <span class="unit">stackoverflow, brand71</span>
+                                    <span class="unit">icon-stackoverflow, icon-brand71</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -4226,7 +4218,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ead1</span>
-                                    <span class="unit">pinterest, brand72</span>
+                                    <span class="unit">icon-pinterest, icon-brand72</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -4235,7 +4227,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ead2</span>
-                                    <span class="unit">pinterest2, brand73</span>
+                                    <span class="unit">icon-pinterest2, icon-brand73</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -4244,7 +4236,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ead3</span>
-                                    <span class="unit">xing, brand74</span>
+                                    <span class="unit">icon-xing, icon-brand74</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -4253,7 +4245,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ead4</span>
-                                    <span class="unit">xing2, brand75</span>
+                                    <span class="unit">icon-xing2, icon-brand75</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -4262,7 +4254,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ead5</span>
-                                    <span class="unit">flattr, brand76</span>
+                                    <span class="unit">icon-flattr, icon-brand76</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -4271,7 +4263,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ead6</span>
-                                    <span class="unit">foursquare, brand77</span>
+                                    <span class="unit">icon-foursquare, icon-brand77</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -4280,7 +4272,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ead7</span>
-                                    <span class="unit">yelp, brand78</span>
+                                    <span class="unit">icon-yelp, icon-brand78</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -4289,7 +4281,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ead8</span>
-                                    <span class="unit">paypal, brand79</span>
+                                    <span class="unit">icon-paypal, icon-brand79</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -4298,7 +4290,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">ead9</span>
-                                    <span class="unit">chrome, browser</span>
+                                    <span class="unit">icon-chrome, icon-browser</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -4307,7 +4299,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eada</span>
-                                    <span class="unit">firefox, browser2</span>
+                                    <span class="unit">icon-firefox, icon-browser2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -4316,7 +4308,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eadb</span>
-                                    <span class="unit">IE, browser3</span>
+                                    <span class="unit">icon-IE, icon-browser3</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -4325,7 +4317,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eadc</span>
-                                    <span class="unit">edge, browser4</span>
+                                    <span class="unit">icon-edge, icon-browser4</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -4334,7 +4326,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eadd</span>
-                                    <span class="unit">safari, browser5</span>
+                                    <span class="unit">icon-safari, icon-browser5</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -4343,7 +4335,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eade</span>
-                                    <span class="unit">opera, browser6</span>
+                                    <span class="unit">icon-opera, icon-browser6</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -4352,7 +4344,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eadf</span>
-                                    <span class="unit">file-pdf, file10</span>
+                                    <span class="unit">icon-file-pdf, icon-file10</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -4361,7 +4353,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eae0</span>
-                                    <span class="unit">file-openoffice, file11</span>
+                                    <span class="unit">icon-file-openoffice, icon-file11</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -4370,7 +4362,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eae1</span>
-                                    <span class="unit">file-word, file12</span>
+                                    <span class="unit">icon-file-word, icon-file12</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -4379,7 +4371,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eae2</span>
-                                    <span class="unit">file-excel, file13</span>
+                                    <span class="unit">icon-file-excel, icon-file13</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -4388,7 +4380,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eae3</span>
-                                    <span class="unit">libreoffice, file14</span>
+                                    <span class="unit">icon-libreoffice, icon-file14</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -4397,7 +4389,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eae4</span>
-                                    <span class="unit">html-five, w3c</span>
+                                    <span class="unit">icon-html-five, icon-w3c</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -4406,7 +4398,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eae5</span>
-                                    <span class="unit">html-five2, w3c2</span>
+                                    <span class="unit">icon-html-five2, icon-w3c2</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -4415,7 +4407,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eae6</span>
-                                    <span class="unit">css3, w3c3</span>
+                                    <span class="unit">icon-css3, icon-w3c3</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -4424,7 +4416,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eae7</span>
-                                    <span class="unit">git, brand80</span>
+                                    <span class="unit">icon-git, icon-brand80</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -4433,7 +4425,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eae8</span>
-                                    <span class="unit">codepen, brand81</span>
+                                    <span class="unit">icon-codepen, icon-brand81</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -4442,7 +4434,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eae9</span>
-                                    <span class="unit">svg</span>
+                                    <span class="unit">icon-svg</span>
                                 </div>
                             </div>
                             <div class="glyph fs1">
@@ -4451,7 +4443,7 @@
                                 </div>
                                 <div class="fs0 size1of1 clearfix hidden-false">
                                     <span class="unit1">eaea</span>
-                                    <span class="unit">IcoMoon, icomoon</span>
+                                    <span class="unit">icon-IcoMoon, icon-icomoon</span>
                                 </div>
                             </div>
                         </div>

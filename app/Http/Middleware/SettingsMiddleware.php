@@ -9,20 +9,41 @@ class SettingsMiddleware
     /**
      * Handle an incoming request.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \Closure  $next
+     * @param  \Illuminate\Http\Request $request
+     * @param  \Closure $next
      * @return mixed
      */
     public function handle($request, Closure $next)
     {
-        \Config::set([
-            'mail.host' => get_setting('host'),
-            'mail.port' => get_setting('port'),
-            'mail.username' => get_setting('username'),
-            'mail.password' => get_setting('password'),
-            'mail.from.name' => get_setting('from_user'),
-            'mail.from.address'=> get_setting('from'),
-        ]);
+
+        if( get_setting('mailer') == 'mailgun')
+        {
+            \Config::set([
+                'mail.from.name' => get_setting('mail_mailgun_user'),
+                'mail.from.address' => get_setting('mail_mailgun_from'),
+                'services.mailgun.domain' => get_setting('mail_mailgun_domain'),
+                'services.mailgun.secret' => get_setting('mail_mailgun_secret')
+            ]);
+        }
+        else if(get_setting('mailer') == 'sendgrid')
+        {
+            \Config::set([
+                'mail.host' => get_setting('\'mail_sendgrid_host\''),
+                'mail.username' => get_setting('mail_sendgrid_username'),
+                'mail.password' => get_setting('mail_sendgrid_password'),
+                'mail.from.name' => get_setting('mail_sendgrid_user'),
+                'mail.from.address' => get_setting('mail_sendgrid_from'),
+            ]);
+        }
+        else{
+            \Config::set([
+                'mail.from.name' => get_setting('mail_sparkpost_user'),
+                'mail.from.address' => get_setting('mail_sparkpost_from'),
+                'services.sparkpost.secret' => get_setting('mail_sparkpost_secret')
+            ]);
+        }
+
+
 
         return $next($request);
     }

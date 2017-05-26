@@ -163,6 +163,14 @@ Route::group([
             'as' => 'admin.icons.evilicon', 'uses' => 'Demo\PagesController@evilIcons'
         ]);
 
+        Route::get('/meteocons', [
+            'as' => 'admin.icons.meteocons', 'uses' => 'Demo\PagesController@meteoconsIcons'
+        ]);
+
+        Route::get('/linecons', [
+            'as' => 'admin.icons.linecons', 'uses' => 'Demo\PagesController@lineconsIcons'
+        ]);
+
     });
 
     //Settings

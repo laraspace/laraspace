@@ -24,8 +24,8 @@
                             {{csrf_field()}}
                             <div class="form-group">
                                 <label>To Mail</label>
-                                <input type="text" name="to_mail" class="form-control"
-                                       value="{{ get_setting('to_mail') }}">
+                                <input type="text" name="notify_mail" class="form-control"
+                                       value="{{ get_setting('notify_mail') }}">
                             </div>
                             <button class="btn btn-theme btn-large"><i class="fa fa-save"></i>Save Notification Mail
                             </button>
