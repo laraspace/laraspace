@@ -149,6 +149,11 @@ return [
                     'link'  => '/admin/icons/linecons',
                     'active' => 'admin/icons/linecons',
                 ],
+                [
+                    'title' => 'FPS Line Icons',
+                    'link'  => '/admin/icons/fps-line-icons',
+                    'active' => 'admin/icons/fps-line-icons',
+                ],
             ]
         ],
         [

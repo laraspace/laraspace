@@ -15,7 +15,6 @@ class SettingsMiddleware
      */
     public function handle($request, Closure $next)
     {
-
         if( get_setting('mailer') == 'mailgun')
         {
             \Config::set([

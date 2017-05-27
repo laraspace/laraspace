@@ -124,4 +124,8 @@ class PagesController extends Controller
     {
         return view('admin.pages.icons.linecons');
     }
+    public function fpsLineIcons()
+    {
+        return view('admin.pages.icons.fps-line-icon');
+    }
 }

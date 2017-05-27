@@ -171,6 +171,10 @@ Route::group([
             'as' => 'admin.icons.linecons', 'uses' => 'Demo\PagesController@lineconsIcons'
         ]);
 
+        Route::get('/fps-line-icons', [
+            'as' => 'admin.icons.fpslineicons', 'uses' => 'Demo\PagesController@fpsLineIcons'
+        ]);
+
     });
 
     //Settings
