@@ -1,4 +1,7 @@
-@extends('admin.layouts.layout-basic')@section('content')
+@extends('admin.layouts.layout-basic')
+
+
+@section('content')
     <div class="main-content">
         <div class="page-header">
             <h3 class="page-title">Linecons Icons</h3>
@@ -13,16 +16,13 @@
                 <div class="card">
                     <div class="card-block">
                         <div class="meteocons-icons">
-
                             <div title="Code: 0xe800" class="the-icons">
                                 <i class="mt-i icon--m icon-ln-music">&#xe800;</i>
                                 <span class="i-name">icon-ln-music</span>
-
                             </div>
                             <div title="Code: 0xe801" class="the-icons">
                                 <i class="mt-i icon--m icon-ln-search">&#xe801;</i>
                                 <span class="i-name">icon-ln-search</span>
-
                             </div>
                             <div title="Code: 0xe802" class="the-icons">
                                 <i class="mt-i icon--m icon-ln-mail">&#xe802;</i>
@@ -209,7 +209,6 @@
                                 <span class="i-name">icon-ln-wallet</span>
                             </div>
                         </div>
-                        <div class="the-icons"></div>
                     </div>
                 </div>
             </div>

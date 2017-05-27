@@ -15,7 +15,7 @@
                 <div class="card">
                     <div class="card-block">
                         <div class="meteocons-icons">
-                            <div title="Code: 0xe81f" class="the-icons">
+                            <div title="Code: 0xe830" class="the-icons">
                                 <i class="mt-i icon--m icon-mt-compass">&#xe830;</i>
                                 <span class="i-name">icon-mt-compass</span>
                             </div>
