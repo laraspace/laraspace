@@ -14,291 +14,571 @@
             <div class="col-md-11">
                 <div class="card">
                     <div class="card-block">
-                        <article class="icons">
-                            <figure class="icons__plate">
-                                <span data-icon="ei-archive" class="icon icon--m"></span>
-                                <span class="normal">ei-archive-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-arrow-down" class="icon icon--m"></span>
-                                <span class="normal">ei-arrow-down-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-arrow-left" class="icon icon--m"></span>
-                                <span class="normal">ei-arrow-left-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-arrow-right" class="icon icon--m"></span>
-                                <span class="normal">ei-arrow-right-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-arrow-up" class="icon icon--m"></span>
-                                <span class="normal">ei-arrow-up-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-bell" class="icon icon--m"></span>
-                                <span class="normal">ei-bell-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-calendar" class="icon icon--m"></span>
-                                <span class="normal">ei-calendar-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-camera" class="icon icon--m"></span>
-                                <span class="normal">ei-camera-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-cart" class="icon icon--m"></span>
-                                <span class="normal">ei-cart-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-chart" class="icon icon--m"></span>
-                                <span class="normal">ei-chart-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-check" class="icon icon--m"></span>
-                                <span class="normal">ei-check-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-chevron-down" class="icon icon--m"></span>
-                                <span class="normal">ei-chevron-down-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-chevron-left" class="icon icon--m"></span>
-                                <span class="normal">ei-chevron-left-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-chevron-right" class="icon icon--m"></span>
-                                <span class="normal">ei-chevron-right-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-chevron-up" class="icon icon--m"></span>
-                                <span class="normal">ei-chevron-up-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-clock" class="icon icon--m"></span>
-                                <span class="normal">ei-clock-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-close-o" class="icon icon--m"></span>
-                                <span class="normal">ei-close-o-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-close" class="icon icon--m"></span>
-                                <span class="normal">ei-close-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-comment" class="icon icon--m"></span>
-                                <span class="normal">ei-comment-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-credit-card" class="icon icon--m"></span>
-                                <span class="normal">ei-credit-card-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-envelope" class="icon icon--m"></span>
-                                <span class="normal">ei-envelope-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-exclamation" class="icon icon--m"></span>
-                                <span class="normal">ei-exclamation-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-external-link" class="icon icon--m"></span>
-                                <span class="normal">ei-external-link-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-eye" class="icon icon--m"></span>
-                                <span class="normal">ei-eye-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-gear" class="icon icon--m"></span>
-                                <span class="normal">ei-gear-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-heart" class="icon icon--m"></span>
-                                <span class="normal">ei-heart-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-image" class="icon icon--m"></span>
-                                <span class="normal">ei-image-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-like" class="icon icon--m"></span>
-                                <span class="normal">ei-like-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-link" class="icon icon--m"></span>
-                                <span class="normal">ei-link-icon</span>
+                        <div class="icon-container">
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-archive" class="icon"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-archive-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-arrow-down" class="icon"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-arrow-down-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-arrow-left" class="icon"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-arrow-left-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-arrow-right" class="icon"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-arrow-right-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-arrow-up" class="icon"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-arrow-up-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-bell" class="icon"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-bell-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-calendar" class="icon"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-calendar-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-camera" class="icon"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-camera-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-cart" class="icon"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-cart-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-chart" class="icon"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-chart-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-check" class="icon"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-check-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-chevron-down"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-chevron-down-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-chevron-left"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-chevron-left-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-chevron-right"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-chevron-right-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-chevron-up"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-chevron-up-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-clock"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-clock-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-close-o"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-close-o-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-close"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-close-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-comment"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-comment-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-credit-card"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-credit-card-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-envelope"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-envelope-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-exclamation"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-exclamation-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-external-link"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-external-link-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-eye"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-eye-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-gear"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-gear-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-heart"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-heart-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-image"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-image-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-like"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-like-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-link"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-link-icon</span>
+                                </div>
 
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-location" class="icon icon--m"></span>
-                                <span class="normal">ei-location-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-lock" class="icon icon--m"></span>
-                                <span class="normal">ei-lock-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-minus" class="icon icon--m"></span>
-                                <span class="normal">ei-minus-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-navicon" class="icon icon--m"></span>
-                                <span class="normal">ei-navicon-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-paperclip" class="icon icon--m"></span>
-                                <span class="normal">ei-paperclip-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-pencil" class="icon icon--m"></span>
-                                <span class="normal">ei-pencil-icon</span>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-location"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-location-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-lock"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-lock-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-minus"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-minus-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-navicon"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-navicon-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-paperclip"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-paperclip-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-pencil"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-pencil-icon</span>
+                                </div>
 
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-play" class="icon icon--m"></span>
-                                <span class="normal">ei-play-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-plus" class="icon icon--m"></span>
-                                <span class="normal">ei-plus-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-pointer" class="icon icon--m"></span>
-                                <span class="normal">ei-pointer-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-question" class="icon icon--m"></span>
-                                <span class="normal">ei-question-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-redo" class="icon icon--m"></span>
-                                <span class="normal">ei-redo-icon</span>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-play"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-play-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-plus"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-plus-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-pointer"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-pointer-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-question"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-question-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-redo"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-redo-icon</span>
+                                </div>
 
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-refresh" class="icon icon--m"></span>
-                                <span class="normal">ei-refresh-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-retweet" class="icon icon--m"></span>
-                                <span class="normal">ei-retweet-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-sc-facebook" class="icon icon--m"></span>
-                                <span class="normal">ei-sc-facebook-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-sc-github" class="icon icon--m"></span>
-                                <span class="normal">ei-sc-github-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-sc-google-plus" class="icon icon--m"></span>
-                                <span class="normal">ei-sc-google-plus-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-sc-instagram" class="icon icon--m"></span>
-                                <span class="normal">ei-sc-instagram-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-sc-linkedin" class="icon icon--m"></span>
-                                <span class="normal">ei-sc-linkedin-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-sc-odnoklassniki" class="icon icon--m"></span>
-                                <span class="normal">ei-sc-odnoklassniki-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-sc-pinterest" class="icon icon--m"></span>
-                                <span class="normal">ei-sc-pinterest-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-sc-skype" class="icon icon--m"></span>
-                                <span class="normal">ei-sc-skype-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-sc-soundcloud" class="icon icon--m"></span>
-                                <span class="normal">ei-sc-soundcloud-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-sc-telegram" class="icon icon--m"></span>
-                                <span class="normal">ei-sc-telegram-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-sc-tumblr" class="icon icon--m"></span>
-                                <span class="normal">ei-sc-tumblr-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-sc-twitter" class="icon icon--m"></span>
-                                <span class="normal">ei-sc-twitter-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-sc-vimeo" class="icon icon--m"></span>
-                                <span class="normal">ei-sc-vimeo-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-sc-vk" class="icon icon--m"></span>
-                                <span class="normal">ei-sc-vk-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-sc-youtube" class="icon icon--m"></span>
-                                <span class="normal">ei-sc-youtube-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-search" class="icon icon--m"></span>
-                                <span class="normal">ei-search-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-share-apple" class="icon icon--m"></span>
-                                <span class="normal">ei-share-apple-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-share-google" class="icon icon--m"></span>
-                                <span class="normal">ei-share-google-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-spinner-2" class="icon icon--m"></span>
-                                <span class="normal">ei-spinner-2-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-spinner-3" class="icon icon--m"></span>
-                                <span class="normal">ei-spinner-3-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-spinner" class="icon icon--m"></span>
-                                <span class="normal">ei-spinner-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-star" class="icon icon--m"></span>
-                                <span class="normal">ei-star-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-tag" class="icon icon--m"></span>
-                                <span class="normal">ei-tag-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-trash" class="icon icon--m"></span>
-                                <span class="normal">ei-trash-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-trophy" class="icon icon--m"></span>
-                                <span class="normal">ei-trophy-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-undo" class="icon icon--m"></span>
-                                <span class="normal">ei-undo-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-unlock" class="icon icon--m"></span>
-                                <span class="normal">ei-unlock-icon</span>
-                            </figure>
-                            <figure class="icons__plate">
-                                <span data-icon="ei-user" class="icon icon--m"></span>
-                                <span class="normal">ei-user-icon</span>
-                            </figure>
-                        </article>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-refresh"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-refresh-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-retweet"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-retweet-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-sc-facebook"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-sc-facebook-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-sc-github"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-sc-github-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-sc-google-plus"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-sc-google-plus-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-sc-instagram"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-sc-instagram-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-sc-linkedin"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-sc-linkedin-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-sc-odnoklassniki"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-sc-odnoklassniki-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-sc-pinterest"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-sc-pinterest-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-sc-skype"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-sc-skype-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-sc-soundcloud"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-sc-soundcloud-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-sc-telegram"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-sc-telegram-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-sc-tumblr"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-sc-tumblr-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-sc-twitter"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-sc-twitter-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-sc-vimeo"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-sc-vimeo-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-sc-vk"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-sc-vk-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-sc-youtube"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-sc-youtube-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-search"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-search-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-share-apple"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-share-apple-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-share-google"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-share-google-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-spinner-2"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-spinner-2-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-spinner-3"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-spinner-3-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-spinner"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-spinner-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-star"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-star-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-tag"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-tag-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-trash"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-trash-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-trophy"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-trophy-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-undo"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-undo-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-unlock"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-unlock-icon</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i data-icon="icon-ei-user"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ei-user-icon</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

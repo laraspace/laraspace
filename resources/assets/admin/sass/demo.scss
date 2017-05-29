@@ -19,6 +19,35 @@
     color: $ls-color-gray--very-dark;
 }
 
+// ICON DEMO
+.icon-container{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.icon-container .demo-icon{
+    flex:1;
+    display: flex;
+    flex-direction: row;
+    min-width:300px;
+    margin-bottom: 20px;
+}
+.icon-container .demo-icon .icon-classname{
+    padding-top: 15px;
+    margin-left: 20px;
+}
+.icon-container .demo-icon .icon-box{
+    height: 50px;
+    padding: 10px;
+    border: 2px solid #FFEB3B;
+    border-radius: 3px;
+    font-size:20px;
+    text-align: center;
+}
+.icon-container .demo-icon .icon-box:hover{
+    background-color: #FFEB3B;
+}
+
 // SKINS DEMO
 .skin-tools {
     position: fixed;
