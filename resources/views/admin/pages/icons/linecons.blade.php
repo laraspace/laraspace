@@ -280,7 +280,7 @@
                                     <span>icon-ln-globe</span>
                                 </div>
                             </div>
-                            <div class="demo-icon">5
+                            <div class="demo-icon">
                                 <div class="icon-box">
                                     <i class="icon-ln-cloud"></i>
                                 </div>

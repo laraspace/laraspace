@@ -128,4 +128,8 @@ class PagesController extends Controller
     {
         return view('admin.pages.icons.fps-line-icon');
     }
+    public function fontawesomeIcons()
+    {
+        return view('admin.pages.icons.fontawesome-icon');
+    }
 }

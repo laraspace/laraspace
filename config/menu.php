@@ -154,6 +154,11 @@ return [
                     'link'  => '/admin/icons/fps-line-icons',
                     'active' => 'admin/icons/fps-line-icons',
                 ],
+                [
+                    'title' => 'Fontawesome Icons',
+                    'link'  => '/admin/icons/fontawesome-icons',
+                    'active' => 'admin/icons/fontawesome-icons',
+                ],
             ]
         ],
         [

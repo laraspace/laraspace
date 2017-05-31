@@ -175,6 +175,10 @@ Route::group([
             'as' => 'admin.icons.fpslineicons', 'uses' => 'Demo\PagesController@fpsLineIcons'
         ]);
 
+        Route::get('/fontawesome-icons', [
+            'as' => 'admin.icons.fontawesomeicons', 'uses' => 'Demo\PagesController@fontawesomeIcons'
+        ]);
+
     });
 
     //Settings
