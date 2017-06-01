@@ -120,6 +120,11 @@ return [
                     'title' => 'Graphs',
                     'link'  => '/admin/components/graphs',
                     'active' => 'admin/components/graphs',
+                ],
+                [
+                    'title' => 'Image Cropper',
+                    'link'  => '/admin/components/image-cropper',
+                    'active' => 'admin/components/image-cropper',
                 ]
             ]
         ],

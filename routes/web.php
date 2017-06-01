@@ -107,6 +107,10 @@ Route::group([
             'as' => 'admin.components.datatables', 'uses' => 'Demo\PagesController@datatables'
         ]);
 
+        Route::get('image-cropper', [
+            'as' => 'admin.components.imagecropper', 'uses' => 'Demo\PagesController@imageCropper'
+        ]);
+
     });
 
 

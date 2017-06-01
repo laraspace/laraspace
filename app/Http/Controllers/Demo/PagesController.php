@@ -73,7 +73,10 @@ class PagesController extends Controller
     {
         return view('admin.pages.components.datatables');
     }
-
+    public function imageCropper()
+    {
+        return view('admin.pages.components.imagecropper');
+    }
     // Forms
 
     public function general()
@@ -132,4 +135,5 @@ class PagesController extends Controller
     {
         return view('admin.pages.icons.fontawesome-icon');
     }
+
 }
