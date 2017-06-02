@@ -110,9 +110,7 @@ Route::group([
         Route::get('image-cropper', [
             'as' => 'admin.components.imagecropper', 'uses' => 'Demo\PagesController@imageCropper'
         ]);
-
     });
-
 
     //Forms Routes
 

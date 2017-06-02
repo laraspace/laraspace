@@ -73,6 +73,7 @@ $(function () {
     $download.addClass('disabled');
   }
 
+
   // Options
   $('.docs-toggles').on('change', 'input', function () {
     var $this = $(this);
@@ -169,6 +170,7 @@ $(function () {
     }
   });
 
+
   // Keyboard
   $(document.body).on('keydown', function (e) {
 
@@ -197,6 +199,7 @@ $(function () {
         $image.cropper('move', 0, 1);
         break;
     }
+
   });
 
 
@@ -213,6 +216,7 @@ $(function () {
       if (!$image.data('cropper')) {
         return;
       }
+
       if (files && files.length) {
         file = files[0];
 
