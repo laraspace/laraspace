@@ -57,6 +57,16 @@ class PagesController extends Controller
         return view('admin.pages.basic.modals');
     }
 
+    public function progressBars()
+    {
+        return view('admin.pages.basic.progress-bars');
+    }
+
+    public function calendar()
+    {
+        return view('admin.pages.basic.calendar');
+    }
+
     //Components
 
     public function notifications()

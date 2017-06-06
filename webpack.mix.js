@@ -37,11 +37,12 @@ mix.combine([
     pluginPath + 'alertify/alertify.js',
     pluginPath + 'easypiecharts/jquery.easypiechart.js',
     pluginPath + 'metisMenu/metisMenu.js',
+    pluginPath + 'calendar/moment.js',
+    pluginPath + 'calendar/fullcalendar.js',
     pluginPath + 'imageCropper/cropper.js',
     pluginPath + 'ace-editor/ace.js',
     pluginPath + 'icons/evil-icons.js',
     pluginPath + 'ace-editor/twilight.js',
-
 
     // ** Laraspace Inits **
     pluginPath + 'laraspace/laraspace-layout.js',

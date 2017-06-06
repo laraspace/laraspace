@@ -89,6 +89,15 @@ Route::group([
             'as' => 'admin.ui.modals', 'uses' => 'Demo\PagesController@modals'
         ]);
 
+        Route::get('progress-bars', [
+            'as' => 'admin.ui.progress-bars', 'uses' => 'Demo\PagesController@progressBars'
+        ]);
+
+        Route::get('calendar', [
+            'as' => 'admin.ui.calendar', 'uses' => 'Demo\PagesController@calendar'
+        ]);
+
+
     });
 
     //Component Routes
@@ -208,7 +217,7 @@ Route::group([
         });
 
         //Ace Editor
-        Route::group(['prefix' => 'env'], function () {
+        Route::group(['prefix' => 'env'], function() {
 
             Route::get('/', [
                 'as' => 'admin.setting.environment', 'uses' => 'SettingsController@envShow'

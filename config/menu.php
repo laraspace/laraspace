@@ -98,6 +98,16 @@ return [
                     'link'  => '/admin/basic-ui/modals',
                     'active' => 'admin/basic-ui/modals',
                 ],
+                [
+                    'title' => 'progress Bar',
+                    'link'  => '/admin/basic-ui/progress-bars',
+                    'active' => 'admin/basic-ui/progress-bars',
+                ],
+                [
+                    'title' => 'calendar',
+                    'link'  => '/admin/basic-ui/calendar',
+                    'active' => 'admin/basic-ui/calendar',
+                ],
             ]
         ],
         [
