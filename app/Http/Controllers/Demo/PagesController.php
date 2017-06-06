@@ -62,11 +62,6 @@ class PagesController extends Controller
         return view('admin.pages.basic.progress-bars');
     }
 
-    public function calendar()
-    {
-        return view('admin.pages.basic.calendar');
-    }
-
     //Components
 
     public function notifications()
@@ -83,9 +78,15 @@ class PagesController extends Controller
     {
         return view('admin.pages.components.datatables');
     }
+
     public function imageCropper()
     {
         return view('admin.pages.components.imagecropper');
+    }
+
+    public function calendar()
+    {
+        return view('admin.pages.components.calendar');
     }
     // Forms
 

@@ -62,7 +62,6 @@ Route::group([
     });
 
     //Ui Elements
-
     Route::group(['prefix' => 'basic-ui'], function () {
 
         Route::get('buttons', [
@@ -93,11 +92,6 @@ Route::group([
             'as' => 'admin.ui.progress-bars', 'uses' => 'Demo\PagesController@progressBars'
         ]);
 
-        Route::get('calendar', [
-            'as' => 'admin.ui.calendar', 'uses' => 'Demo\PagesController@calendar'
-        ]);
-
-
     });
 
     //Component Routes
@@ -119,11 +113,15 @@ Route::group([
         Route::get('image-cropper', [
             'as' => 'admin.components.imagecropper', 'uses' => 'Demo\PagesController@imageCropper'
         ]);
+
+        Route::get('calendar', [
+            'as' => 'admin.components.calendar', 'uses' => 'Demo\PagesController@calendar'
+        ]);
     });
 
     //Forms Routes
 
-    Route::group(['prefix' => 'forms'], function () {
+    Route::group(['prefix' => 'forms'], function() {
 
         Route::get('general', [
             'as' => 'admin.forms.general', 'uses' => 'Demo\PagesController@general'

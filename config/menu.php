@@ -103,11 +103,6 @@ return [
                     'link'  => '/admin/basic-ui/progress-bars',
                     'active' => 'admin/basic-ui/progress-bars',
                 ],
-                [
-                    'title' => 'calendar',
-                    'link'  => '/admin/basic-ui/calendar',
-                    'active' => 'admin/basic-ui/calendar',
-                ],
             ]
         ],
         [
@@ -135,7 +130,12 @@ return [
                     'title' => 'Image Cropper',
                     'link'  => '/admin/components/image-cropper',
                     'active' => 'admin/components/image-cropper',
-                ]
+                ],
+                [
+                    'title' => 'calendar',
+                    'link'  => '/admin/components/calendar',
+                    'active' => 'admin/components/calendar',
+                ],
             ]
         ],
         [
