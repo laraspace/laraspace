@@ -3,7 +3,7 @@
     <style>
 
     </style>
-    @stop
+@stop
 @section('scripts')
     <script src="{{asset('assets/admin/js/pages/calendar.js')}}"></script>
 @stop
@@ -30,7 +30,7 @@
                 <div class="card">
                     <div class="card-block">
                         <h5>Events</h5>
-                        <ol class="breadcrumb">
+                        <ol class="fc-event-list">
                             <li><span class="fc-event-dot"></span> &nbsp; Default</li>
                             <li><span class="fc-event-dot" style="background-color:#007dcc"></span> &nbsp; Primary</li>
                             <li><span class="fc-event-dot" style="background-color:#4fc47f"></span> &nbsp; Success</li>

@@ -548,7 +548,9 @@ temporary rendered events).
 .fc-event-dot {
 	background-color: #acb7bf; /* default BACKGROUND color */
 }
-
+.fc-event-list{
+	list-style-type: none;
+}
 /* overpower some of bootstrap's and jqui's styles on <a> tags */
 .fc-event,
 .fc-event:hover,

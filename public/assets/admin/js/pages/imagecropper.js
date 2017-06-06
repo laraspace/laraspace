@@ -71,6 +71,36 @@ $(function () {
     $download.addClass('disabled');
   }
 
+    
+  // Options
+  $('.docs-toggles').on('change', 'input', function () {
+    var $this = $(this);
+    var name = $this.attr('name');
+    var type = $this.prop('type');
+    var cropBoxData;
+    var canvasData;
+
+    if (!$image.data('cropper')) {
+      return;
+    }
+
+    if (type === 'checkbox') {
+      options[name] = $this.prop('checked');
+      cropBoxData = $image.cropper('getCropBoxData');
+      canvasData = $image.cropper('getCanvasData');
+
+      options.built = function () {
+        $image.cropper('setCropBoxData', cropBoxData);
+        $image.cropper('setCanvasData', canvasData);
+      };
+    } else if (type === 'radio') {
+      options[name] = $this.val();
+    }
+
+    $image.cropper('destroy').cropper(options);
+  });
+
+
   // Methods
   $('.docs-buttons').on('click', '[data-method]', function () {
     var $this = $(this);
