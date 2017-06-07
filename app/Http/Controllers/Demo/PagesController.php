@@ -128,23 +128,23 @@ class PagesController extends Controller
     }
     public function evilIcons()
     {
-        return view('admin.pages.icons.evil-icon');
+        return view('admin.pages.icons.evil');
     }
-    public function meteoconsIcons()
+    public function meteoIcons()
     {
-        return view('admin.pages.icons.meteocons');
+        return view('admin.pages.icons.meteo');
     }
-    public function lineconsIcons()
+    public function lineIcons()
     {
-        return view('admin.pages.icons.linecons');
+        return view('admin.pages.icons.line');
     }
     public function fpsLineIcons()
     {
-        return view('admin.pages.icons.fps-line-icon');
+        return view('admin.pages.icons.fps-line');
     }
     public function fontawesomeIcons()
     {
-        return view('admin.pages.icons.fontawesome-icon');
+        return view('admin.pages.icons.fontawesome');
     }
 
 }

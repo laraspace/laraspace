@@ -59,7 +59,7 @@
                         <div class="docs-set">
                             <div class="row">
                                 <div class="col-md-4 docs-buttons">
-                                    <!-- <h3>Toolbar:</h3> -->
+                                    <h5>Modes:</h5>
                                     <div class="btn-group">
                                         <button type="button" class="btn btn-primary" data-method="setDragMode"
                                                 data-option="move" title="Move">
@@ -76,7 +76,6 @@
                                             </span>
                                         </button>
                                     </div>
-
                                     <div class="btn-group">
                                         <button type="button" class="btn btn-primary" data-method="zoom"
                                                 data-option="0.1" title="Zoom In">
@@ -93,6 +92,20 @@
                                             </span>
                                         </button>
                                     </div>
+                                    <div class="btn-group">
+                                        <label class="btn btn-primary btn-upload" for="inputImage"
+                                               title="Upload image file">
+                                            <input type="file" class="sr-only" id="inputImage" name="file"
+                                                   accept=".jpg,.jpeg,.png,.gif,.bmp,.tiff">
+                                            <span class="docs-tooltip" data-toggle="tooltip"
+                                                  title="Import image with Blob URLs">
+                                                    <span class="fa fa-upload"></span>
+                                                </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 docs-buttons">
+                                    <h5>Transform:</h5>
                                     <div class="btn-group">
                                         <button type="button" class="btn btn-primary" data-method="move"
                                                 data-option="-10" data-second-option="0" title="Move Left">
@@ -123,8 +136,6 @@
                                             </span>
                                         </button>
                                     </div>
-                                </div>
-                                <div class="col-md-4 docs-buttons">
                                     <div class="btn-group">
                                         <button type="button" class="btn btn-primary" data-method="rotate"
                                                 data-option="-45" title="Rotate Left">
@@ -141,7 +152,6 @@
                                             </span>
                                         </button>
                                     </div>
-
                                     <div class="btn-group">
                                         <button type="button" class="btn btn-primary" data-method="scaleX"
                                                 data-option="-1" title="Flip Horizontal">
@@ -158,7 +168,9 @@
                                             </span>
                                         </button>
                                     </div>
-
+                                </div>
+                                <div class="col-md-4 docs-buttons">
+                                    <h4>Reset Plugins:</h4>
                                     <div class="btn-group">
                                         <button type="button" class="btn btn-primary" data-method="crop" title="Crop">
                                             <span class="docs-tooltip" data-toggle="tooltip"
@@ -173,8 +185,6 @@
                                             </span>
                                         </button>
                                     </div>
-                                </div>
-                                <div class="col-md-4 docs-buttons">
                                     <div class="btn-group">
                                         <button type="button" class="btn btn-primary" data-method="disable"
                                                 title="Disable">
@@ -191,7 +201,6 @@
                                         </span>
                                         </button>
                                     </div>
-
                                     <div class="btn-group">
                                         <button type="button" class="btn btn-primary" data-method="reset" title="Reset">
                                             <span class="docs-tooltip" data-toggle="tooltip"
@@ -199,15 +208,6 @@
                                                 <span class="fa fa-refresh"></span>
                                             </span>
                                         </button>
-                                        <label class="btn btn-primary btn-upload" for="inputImage"
-                                               title="Upload image file">
-                                            <input type="file" class="sr-only" id="inputImage" name="file"
-                                                   accept=".jpg,.jpeg,.png,.gif,.bmp,.tiff">
-                                            <span class="docs-tooltip" data-toggle="tooltip"
-                                                  title="Import image with Blob URLs">
-                                                <span class="fa fa-upload"></span>
-                                            </span>
-                                        </label>
                                         <button type="button" class="btn btn-primary" data-method="destroy"
                                                 title="Destroy">
                                             <span class="docs-tooltip" data-toggle="tooltip"
@@ -216,30 +216,16 @@
                                             </span>
                                         </button>
                                     </div>
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-primary" data-method="zoomTo"
-                                                data-option="1">
-                                            <span class="docs-tooltip" data-toggle="tooltip" title="cropper.zoomTo(1)">
-                                                100%
-                                            </span>
-                                        </button>
-                                        <button type="button" class="btn btn-primary" data-method="rotateTo"
-                                                data-option="180">
-                                            <span class="docs-tooltip" data-toggle="tooltip"
-                                                  title="cropper.rotateTo(180)">
-                                                180°
-                                            </span>
-                                        </button>
-                                    </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-4 docs-buttons">
+                                    <h5>Get Canvas:</h5>
                                     <div class="btn-group btn-group-crop">
                                         <button type="button" class="btn btn-primary" data-method="getCroppedCanvas">
                                             <span class="docs-tooltip" data-toggle="tooltip"
                                                   title="$().cropper(&quot;getCroppedCanvas&quot;)">
-                                                Get Cropped Canvas
+                                                  Get Cropped Canvas
                                             </span>
                                         </button>
                                         <button type="button" class="btn btn-primary" data-method="getCroppedCanvas"
@@ -261,6 +247,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-4 docs-toggles">
+                                    <h5>Aspect Ratio:</h5>
                                     <div class="btn-group btn-group-justified" data-toggle="buttons">
                                         <label class="btn btn-primary active">
                                             <input type="radio" class="sr-only" id="aspectRatio0" name="aspectRatio"
@@ -301,6 +288,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-4 docs-toggles">
+                                    <h5>View Modes:</h5>
                                     <div class="btn-group btn-group-justified" data-toggle="buttons">
                                         <label class="btn btn-primary active">
                                             <input type="radio" class="sr-only" id="viewMode0" name="viewMode" value="0"
@@ -339,10 +327,10 @@
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
+                                            <h4 class="modal-title" id="getCroppedCanvasTitle">Cropped</h4>
                                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
                                                 &times;
                                             </button>
-                                            <h4 class="modal-title" id="getCroppedCanvasTitle">Cropped</h4>
                                         </div>
                                         <div class="modal-body"></div>
                                         <div class="modal-footer">
@@ -354,9 +342,17 @@
                                     </div>
                                 </div>
                             </div><!-- /.modal -->
+                            <h5>Get Data:</h5>
                             <div class="row">
                                 <div class="col-md-4 docs-buttons">
                                     <div class="input-group input-group-sm">
+                                        <button type="button" class="btn btn-primary input-group-addon"
+                                                data-method="setData" data-target="#putData1">
+                                              <span class="docs-tooltip" data-toggle="tooltip"
+                                                    title="$().cropper(&quot;setData&quot;, data)">
+                                                Set Data
+                                              </span>
+                                        </button>
                                         <button type="button" class="btn btn-primary input-group-addon"
                                                 data-method="getData" data-option data-target="#putData1">
                                             <span class="docs-tooltip" data-toggle="tooltip"
@@ -369,7 +365,7 @@
                                 </div>
                                 <div class="col-md-4 docs-buttons">
                                     <div class="input-group input-group-sm">
-                                        <button type="button" class="btn btn-primary input-group-addon "
+                                        <button type="button" class="btn btn-primary input-group-addon"
                                                 data-method="getImageData" data-option data-target="#putData2">
                                              <span class="docs-tooltip" data-toggle="tooltip"
                                                    title="$().cropper(&quot;getImageData&quot;)">
@@ -381,8 +377,8 @@
                                 </div>
                                 <div class="col-md-4 docs-buttons">
                                     <div class="input-group input-group-sm">
-                                        <button type="button" class="btn btn-primary  input-group-addon "
-                                                data-method="getContainerData " data-option data-target="#putData3">
+                                        <button type="button" class="btn btn-primary input-group-addon"
+                                                data-method="getContainerData" data-option data-target="#putData3">
                                             <span class="docs-tooltip" data-toggle="tooltip"
                                                   title="$().cropper(&quot;getContainerData&quot;)">
                                                 Get Container Data

@@ -90,13 +90,13 @@ $(function () {
       canvasData = $image.cropper('getCanvasData');
 
       options.built = function () {
-        $image.cropper('setCropBoxData', cropBoxData);
-        $image.cropper('setCanvasData', canvasData);
+            $image.cropper('setCropBoxData', cropBoxData);
+            $image.cropper('setCanvasData', canvasData);
       };
+
     } else if (type === 'radio') {
       options[name] = $this.val();
     }
-
     $image.cropper('destroy').cropper(options);
   });
 
@@ -153,13 +153,11 @@ $(function () {
               $download.attr('href', result.toDataURL('image/jpeg'));
             }
           }
-
           break;
       }
 
       if ($.isPlainObject(result) && $target) {
         try {
-
           $target.val(JSON.stringify(result));
         } catch (e) {
           console.log(e.message);

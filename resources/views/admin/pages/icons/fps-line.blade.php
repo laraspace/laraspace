@@ -8,7 +8,7 @@
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="{{route('admin.dashboard')}}">Home</a></li>
                 <li class="breadcrumb-item"><a href="#">Icons</a></li>
-                <li class="breadcrumb-item"><a href="{{route('admin.icons.fpslineicons')}}">FPS Line Icons</a></li>
+                <li class="breadcrumb-item"><a href="{{route('admin.icons.fpsline')}}">FPS Line Icons</a></li>
             </ol>
         </div>
         <div class="row">

@@ -168,24 +168,24 @@ Route::group([
             'as' => 'admin.icons.icomoon', 'uses' => 'Demo\PagesController@icoMoons'
         ]);
 
-        Route::get('/evil-icons', [
-            'as' => 'admin.icons.evilicon', 'uses' => 'Demo\PagesController@evilIcons'
+        Route::get('/evil', [
+            'as' => 'admin.icons.evil', 'uses' => 'Demo\PagesController@evilIcons'
         ]);
 
-        Route::get('/meteocons', [
-            'as' => 'admin.icons.meteocons', 'uses' => 'Demo\PagesController@meteoconsIcons'
+        Route::get('/meteo', [
+            'as' => 'admin.icons.meteo', 'uses' => 'Demo\PagesController@meteoIcons'
         ]);
 
-        Route::get('/linecons', [
-            'as' => 'admin.icons.linecons', 'uses' => 'Demo\PagesController@lineconsIcons'
+        Route::get('/line', [
+            'as' => 'admin.icons.line', 'uses' => 'Demo\PagesController@lineIcons'
         ]);
 
-        Route::get('/fps-line-icons', [
-            'as' => 'admin.icons.fpslineicons', 'uses' => 'Demo\PagesController@fpsLineIcons'
+        Route::get('/fps-line', [
+            'as' => 'admin.icons.fpsline', 'uses' => 'Demo\PagesController@fpsLineIcons'
         ]);
 
-        Route::get('/fontawesome-icons', [
-            'as' => 'admin.icons.fontawesomeicons', 'uses' => 'Demo\PagesController@fontawesomeIcons'
+        Route::get('/fontawesome', [
+            'as' => 'admin.icons.fontawesome', 'uses' => 'Demo\PagesController@fontawesomeIcons'
         ]);
 
     });

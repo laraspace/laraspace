@@ -19,24 +19,26 @@
             </ol>
         </div>
         <div class="row">
+            <div class="col-md-2">
+                <div class="card">
+                    <div class="card-header">
+                        Events
+                    </div>
+                    <div class="card-block">
+                        <ol class="fc-event-list">
+                            <li><span class="fc-event-dot"></span>  Default </li>
+                            <li><span class="fc-event-dot" style="background-color:#007dcc"></span>  Primary </li>
+                            <li><span class="fc-event-dot" style="background-color:#4fc47f"></span>  Success </li>
+                            <li><span class="fc-event-dot" style="background-color:#f35a3d"></span>  Danger  </li>
+                            <li><span class="fc-event-dot" style="background-color:#ffde00"></span>  Warning </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
             <div class="col-md-10">
                 <div class="card">
                     <div class="card-block">
                         <div id='calendar'></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-2">
-                <div class="card">
-                    <div class="card-block">
-                        <h5>Events</h5>
-                        <ol class="fc-event-list">
-                            <li><span class="fc-event-dot"></span> &nbsp; Default</li>
-                            <li><span class="fc-event-dot" style="background-color:#007dcc"></span> &nbsp; Primary</li>
-                            <li><span class="fc-event-dot" style="background-color:#4fc47f"></span> &nbsp; Success</li>
-                            <li><span class="fc-event-dot" style="background-color:#007dcc"></span> &nbsp; Danger</li>
-                            <li><span class="fc-event-dot" style="background-color:#ffde00"></span> &nbsp; Warning</li>
-                        </ol>
                     </div>
                 </div>
             </div>

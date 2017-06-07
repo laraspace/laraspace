@@ -7,7 +7,7 @@
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="{{route('admin.dashboard')}}">Home</a></li>
                 <li class="breadcrumb-item"><a href="#">Icons</a></li>
-                <li class="breadcrumb-item"><a href="{{route('admin.icons.evilicon')}}">Evil Icons</a></li>
+                <li class="breadcrumb-item"><a href="{{route('admin.icons.evil')}}">Evil Icons</a></li>
             </ol>
         </div>
         <div class="row">
@@ -17,7 +17,7 @@
                         <div class="icon-container">
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-archive" ></i>
+                                    <i data-icon="icon-ei-archive"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-ei-archive</span>

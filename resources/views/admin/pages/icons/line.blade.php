@@ -1,13 +1,14 @@
 @extends('admin.layouts.layout-basic')
 
+
 @section('content')
     <div class="main-content">
         <div class="page-header">
-            <h3 class="page-title">Meteocons Icons</h3>
+            <h3 class="page-title">Linecons Icons</h3>
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="{{route('admin.dashboard')}}">Home</a></li>
                 <li class="breadcrumb-item"><a href="#">Icons</a></li>
-                <li class="breadcrumb-item"><a href="{{route('admin.icons.meteocons')}}">Meteocons Icons</a></li>
+                <li class="breadcrumb-item"><a href="{{route('admin.icons.line')}}">Linecons Icons</a></li>
             </ol>
         </div>
         <div class="row">
@@ -17,381 +18,388 @@
                         <div class="icon-container">
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="icon-mt-compass"></i>
+                                    <i class="icon-ln-music"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-mt-compass</span>
+                                    <span>icon-ln-music</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="icon-mt-na"></i>
+                                    <i class="icon-ln-search"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-mt-na</span>
+                                    <span>icon-ln-search</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="icon-mt-celcius"></i>
+                                    <i class="icon-ln-mail"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-mt-celcius</span>
+                                    <span>icon-ln-mail</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="icon-mt-fahrenheit"></i>
+                                    <i class="icon-ln-heart"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-mt-fahrenheit</span>
+                                    <span>icon-ln-heart</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="icon-mt-clouds-flash-alt"></i>
+                                    <i class="icon-ln-star"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-mt-clouds-flash-alt</span>
+                                    <span>icon-ln-star</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="icon-mt-sun-inv"></i>
+                                    <i class="icon-ln-user"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-mt-sun-inv</span>
+                                    <span>icon-ln-user</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="icon-mt-moon-inv"></i>
+                                    <i class="icon-ln-videocam"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-mt-moon-inv</span>
+                                    <span>icon-ln-videocam</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="icon-mt-snowflake"></i>
+                                    <i class="icon-ln-camera"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-mt-snowflake</span>
+                                    <span>icon-ln-camera</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="icon-mt-cloud-sun"></i>
+                                    <i class="icon-ln-photo"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-mt-cloud-sun</span>
+                                    <span>icon-ln-photo</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="icon-mt-cloud-moon"></i>
+                                    <i class="icon-ln-attach"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-mt-cloud-moon</span>
+                                    <span>icon-ln-attach</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="icon-mt-fog-sun"></i>
+                                    <i class="icon-ln-lock"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-mt-fog-sun</span>
+                                    <span>icon-ln-lock</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="icon-mt-fog-moon"></i>
+                                    <i class="icon-ln-eye"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-mt-fog-moon</span>
+                                    <span>icon-ln-eye</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="icon-mt-fog-cloud"></i>
+                                    <i class="icon-ln-tag"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-mt-fog-cloud</span>
-                                </div>
-                            </div>
-                            <div class="demo-icon">
-                                <div class="icon-box"><i
-                                            class="icon-mt-fog"></i>
-                                </div>
-                                <div class="icon-classname">
-                                    <span>icon-mt-fog</span>
+                                    <span>icon-ln-tag</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="icon-mt-windy-rain"></i>
+                                    <i class="icon-ln-thumbs-up"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-mt-windy-rain</span>
-                                </div>
-                            </div>
-                            <div class="demo-icon">
-                                <div class="icon-box"><i
-                                            class="icon-mt-snow"></i>
-                                </div>
-                                <div class="icon-classname">
-                                    <span>icon-mt-snow</span>
+                                    <span>icon-ln-thumbs-up</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="icon-mt-snow-alt"></i>
+                                    <i class="icon-ln-pencil"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-mt-snow-alt</span>
+                                    <span>icon-ln-pencil</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="icon-mt-snow-heavy"></i>
+                                    <i class="icon-ln-comment"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-mt-snow-heavy</span>
+                                    <span>icon-ln-comment</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="icon-mt-hail"></i>
+                                    <i class="icon-ln-location"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-mt-hail</span>
+                                    <span>icon-ln-location</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="icon-mt-clouds"></i>
+                                    <i class="icon-ln-cup"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-mt-clouds</span>
+                                    <span>icon-ln-cup</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="icon-mt-clouds-flash"></i>
+                                    <i class="icon-ln-trash"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-mt-clouds-flash</span>
+                                    <span>icon-ln-trash</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="icon-mt-cloud-sun-inv"></i>
+                                    <i class="icon-ln-doc"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-mt-cloud-sun-inv</span>
+                                    <span>icon-ln-doc</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="icon-mt-cloud-moon-inv"></i>
+                                    <i class="icon-ln-note"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-mt-cloud-moon-inv</span>
+                                    <span>icon-ln-note</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="icon-mt-cloud-inv"></i>
+                                    <i class="icon-ln-cog"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-mt-cloud-inv</span>
+                                    <span>icon-ln-cog</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="icon-mt-cloud-flash-inv"></i>
+                                    <i class="icon-ln-params"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-mt-cloud-flash-inv</span>
+                                    <span>icon-ln-params</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="icon-mt-drizzle-inv"></i>
+                                    <i class="icon-ln-calendar"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-mt-drizzle-inv</span>
+                                    <span>icon-ln-calendar</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="icon-mt-rain-inv"></i>
+                                    <i class="icon-ln-sound"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-mt-rain-inv</span>
+                                    <span>icon-ln-sound</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="icon-mt-cloud-1"></i>
+                                    <i class="icon-ln-clock"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-mt-cloud-1</span>
+                                    <span>icon-ln-clock</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="icon-mt-cloud-flash"></i>
+                                    <i class="icon-ln-lightbulb"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-mt-cloud-flash</span>
+                                    <span>icon-ln-lightbulb</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="icon-mt-cloud-flash-alt"></i>
+                                    <i class="icon-ln-tv"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-mt-cloud-flash-alt</span>
+                                    <span>icon-ln-tv</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="icon-mt-drizzle"></i>
+                                    <i class="icon-ln-desktop"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-mt-drizzle</span>
+                                    <span>icon-ln-desktop</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="icon-mt-rain"></i>
+                                    <i class="icon-ln-mobile"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-mt-rain</span>
+                                    <span>icon-ln-mobile</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="icon-mt-windy"></i>
+                                    <i class="icon-ln-cd"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-mt-windy</span>
+                                    <span>icon-ln-cd</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="icon-mt-windy-rain-inv"></i>
+                                    <i class="icon-ln-inbox"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-mt-windy-rain-inv</span>
+                                    <span>icon-ln-inbox</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="icon-mt-snow-inv"></i>
+                                    <i class="icon-ln-globe"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-mt-snow-inv</span>
+                                    <span>icon-ln-globe</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="icon-mt-snow-heavy-inv"></i>
+                                    <i class="icon-ln-cloud"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-mt-snow-heavy-inv</span>
+                                    <span>icon-ln-cloud</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="icon-mt-hail-inv"></i>
+                                    <i class="icon-ln-paper-plane"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-mt-hail-inv</span>
+                                    <span>icon-ln-paper-plane</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="icon-mt-clouds-inv"></i>
+                                    <i class="icon-ln-fire"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-mt-clouds-inv</span>
+                                    <span>icon-ln-fire</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="icon-mt-clouds-flash-inv"></i>
+                                    <i class="icon-ln-graduation-cap"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-mt-clouds-flash-inv</span>
+                                    <span>icon-ln-graduation-cap</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="icon-mt-temperature"></i>
+                                    <i class="icon-ln-megaphone"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-mt-temperature</span>
+                                    <span>icon-ln-megaphone</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="icon-mt-windy-inv"></i>
+                                    <i class="icon-ln-database"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-mt-windy-inv</span>
+                                    <span>icon-ln-database</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="icon-mt-sunrise"></i>
+                                    <i class="icon-ln-key"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-mt-sunrise</span>
+                                    <span>icon-ln-key</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="icon-mt-sun-1"></i>
+                                    <i class="icon-ln-beaker"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-mt-sun-1</span>
+                                    <span>icon-ln-beaker</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="icon-mt-moon-2"></i>
+                                    <i class="icon-ln-truck"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-mt-moon-2</span>
+                                    <span>icon-ln-truck</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="icon-mt-eclipse"></i>
+                                    <i class="icon-ln-money"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-mt-eclipse</span>
+                                    <span>icon-ln-money</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="icon-mt-mist"></i>
+                                    <i class="icon-ln-food"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-mt-mist</span>
+                                    <span>icon-ln-food</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="icon-mt-wind"></i>
+                                    <i class="icon-ln-shop"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-mt-wind</span>
+                                    <span>icon-ln-shop</span>
                                 </div>
                             </div>
-                            <div class="demo-icon"></div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i class="icon-ln-diamond"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ln-diamond</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i class="icon-ln-t-shirt"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ln-t-shirt</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i class="icon-ln-wallet"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-ln-wallet</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
