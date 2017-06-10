@@ -1,5 +1,8 @@
-@extends('admin.layouts.layout-basic')
-
+@extends('admin.layouts.layout-basic'
+)
+@section('scripts')
+    <script src="{{asset('assets/admin/js/pages/imagecropper.js')}}"></script>
+@stop
 @section('content')
     <div class="main-content">
         <div class="page-header">
@@ -59,7 +62,7 @@
                         <div class="docs-set">
                             <div class="row">
                                 <div class="col-md-4 docs-buttons">
-                                    <h5>Modes:</h5>
+                                    <h5 class="section-semi-title">Modes:</h5>
                                     <div class="btn-group">
                                         <button type="button" class="btn btn-primary" data-method="setDragMode"
                                                 data-option="move" title="Move">
@@ -105,7 +108,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-4 docs-buttons">
-                                    <h5>Transform:</h5>
+                                    <h5 class="section-semi-title">Transform:</h5>
                                     <div class="btn-group">
                                         <button type="button" class="btn btn-primary" data-method="move"
                                                 data-option="-10" data-second-option="0" title="Move Left">
@@ -170,7 +173,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-4 docs-buttons">
-                                    <h4>Reset Plugins:</h4>
+                                    <h5 class="section-semi-title">Reset Plugins:</h5>
                                     <div class="btn-group">
                                         <button type="button" class="btn btn-primary" data-method="crop" title="Crop">
                                             <span class="docs-tooltip" data-toggle="tooltip"
@@ -220,7 +223,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-4 docs-buttons">
-                                    <h5>Get Canvas:</h5>
+                                    <h5 class="section-semi-title">Get Canvas:</h5>
                                     <div class="btn-group btn-group-crop">
                                         <button type="button" class="btn btn-primary" data-method="getCroppedCanvas">
                                             <span class="docs-tooltip" data-toggle="tooltip"
@@ -247,7 +250,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-4 docs-toggles">
-                                    <h5>Aspect Ratio:</h5>
+                                    <h5 class="section-semi-title">Aspect Ratio:</h5>
                                     <div class="btn-group btn-group-justified" data-toggle="buttons">
                                         <label class="btn btn-primary active">
                                             <input type="radio" class="sr-only" id="aspectRatio0" name="aspectRatio"
@@ -288,7 +291,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-4 docs-toggles">
-                                    <h5>View Modes:</h5>
+                                    <h5 class="section-semi-title">View Modes:</h5>
                                     <div class="btn-group btn-group-justified" data-toggle="buttons">
                                         <label class="btn btn-primary active">
                                             <input type="radio" class="sr-only" id="viewMode0" name="viewMode" value="0"
@@ -342,7 +345,7 @@
                                     </div>
                                 </div>
                             </div><!-- /.modal -->
-                            <h5>Get Data:</h5>
+                            <h5 class="section-semi-title">Get Data:</h5>
                             <div class="row">
                                 <div class="col-md-4 docs-buttons">
                                     <div class="input-group input-group-sm">
@@ -420,7 +423,4 @@
             </div>
         </div>
     </div>
-@stop
-@section('scripts')
-    <script src="{{asset('assets/admin/js/pages/imagecropper.js')}}"></script>
 @stop

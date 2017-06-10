@@ -1,9 +1,5 @@
 @extends('admin.layouts.layout-basic')
-@section('styles')
-    <style>
 
-    </style>
-@stop
 @section('scripts')
     <script src="{{asset('assets/admin/js/pages/calendar.js')}}"></script>
 @stop
@@ -19,26 +15,26 @@
             </ol>
         </div>
         <div class="row">
-            <div class="col-md-2">
-                <div class="card">
-                    <div class="card-header">
-                        Events
-                    </div>
-                    <div class="card-block">
-                        <ol class="fc-event-list">
-                            <li><span class="fc-event-dot"></span>  Default </li>
-                            <li><span class="fc-event-dot" style="background-color:#007dcc"></span>  Primary </li>
-                            <li><span class="fc-event-dot" style="background-color:#4fc47f"></span>  Success </li>
-                            <li><span class="fc-event-dot" style="background-color:#f35a3d"></span>  Danger  </li>
-                            <li><span class="fc-event-dot" style="background-color:#ffde00"></span>  Warning </li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
             <div class="col-md-10">
                 <div class="card">
                     <div class="card-block">
                         <div id='calendar'></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Events</h3>
+                    </div>
+                    <div class="card-block">
+                        <ol class="fc-event-list">
+                            <li><span class="fc-event-dot"></span> Default</li>
+                            <li><span class="fc-event-dot" style="background-color:#007dcc"></span> Primary</li>
+                            <li><span class="fc-event-dot" style="background-color:#4fc47f"></span> Success</li>
+                            <li><span class="fc-event-dot" style="background-color:#f35a3d"></span> Danger</li>
+                            <li><span class="fc-event-dot" style="background-color:#ffde00"></span> Warning</li>
+                        </ol>
                     </div>
                 </div>
             </div>

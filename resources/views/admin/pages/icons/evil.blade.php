@@ -17,565 +17,565 @@
                         <div class="icon-container">
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-archive"></i>
+                                    <i data-icon="icon-el-archive"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-archive</span>
+                                    <span>icon-el-archive</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-arrow-down" ></i>
+                                    <i data-icon="icon-el-arrow-down" ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-arrow-down</span>
+                                    <span>icon-el-arrow-down</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-arrow-left" ></i>
+                                    <i data-icon="icon-el-arrow-left" ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-arrow-left</span>
+                                    <span>icon-el-arrow-left</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-arrow-right" ></i>
+                                    <i data-icon="icon-el-arrow-right" ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-arrow-right</span>
+                                    <span>icon-el-arrow-right</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-arrow-up"></i>
+                                    <i data-icon="icon-el-arrow-up"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-arrow-up</span>
+                                    <span>icon-el-arrow-up</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-bell" ></i>
+                                    <i data-icon="icon-el-bell" ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-bell</span>
+                                    <span>icon-el-bell</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-calendar" ></i>
+                                    <i data-icon="icon-el-calendar" ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-calendar</span>
+                                    <span>icon-el-calendar</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-camera" ></i>
+                                    <i data-icon="icon-el-camera" ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-camera</span>
+                                    <span>icon-el-camera</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-cart" ></i>
+                                    <i data-icon="icon-el-cart" ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-cart</span>
+                                    <span>icon-el-cart</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-chart" ></i>
+                                    <i data-icon="icon-el-chart" ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-chart</span>
+                                    <span>icon-el-chart</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-check" ></i>
+                                    <i data-icon="icon-el-check" ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-check</span>
+                                    <span>icon-el-check</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-chevron-down"></i>
+                                    <i data-icon="icon-el-chevron-down"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-chevron-down</span>
+                                    <span>icon-el-chevron-down</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-chevron-left"></i>
+                                    <i data-icon="icon-el-chevron-left"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-chevron-left</span>
+                                    <span>icon-el-chevron-left</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-chevron-right"></i>
+                                    <i data-icon="icon-el-chevron-right"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-chevron-right</span>
+                                    <span>icon-el-chevron-right</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-chevron-up"></i>
+                                    <i data-icon="icon-el-chevron-up"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-chevron-up</span>
+                                    <span>icon-el-chevron-up</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-clock"></i>
+                                    <i data-icon="icon-el-clock"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-clock</span>
+                                    <span>icon-el-clock</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-close-o"></i>
+                                    <i data-icon="icon-el-close-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-close-o</span>
+                                    <span>icon-el-close-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-close"></i>
+                                    <i data-icon="icon-el-close"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-close</span>
+                                    <span>icon-el-close</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-comment"></i>
+                                    <i data-icon="icon-el-comment"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-comment</span>
+                                    <span>icon-el-comment</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-credit-card"></i>
+                                    <i data-icon="icon-el-credit-card"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-credit-card</span>
+                                    <span>icon-el-credit-card</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-envelope"></i>
+                                    <i data-icon="icon-el-envelope"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-envelope</span>
+                                    <span>icon-el-envelope</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-exclamation"></i>
+                                    <i data-icon="icon-el-exclamation"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-exclamation</span>
+                                    <span>icon-el-exclamation</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-external-link"></i>
+                                    <i data-icon="icon-el-external-link"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-external-link</span>
+                                    <span>icon-el-external-link</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-eye"></i>
+                                    <i data-icon="icon-el-eye"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-eye</span>
+                                    <span>icon-el-eye</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-gear"></i>
+                                    <i data-icon="icon-el-gear"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-gear</span>
+                                    <span>icon-el-gear</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-heart"></i>
+                                    <i data-icon="icon-el-heart"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-heart</span>
+                                    <span>icon-el-heart</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-image"></i>
+                                    <i data-icon="icon-el-image"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-image</span>
+                                    <span>icon-el-image</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-like"></i>
+                                    <i data-icon="icon-el-like"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-like</span>
+                                    <span>icon-el-like</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-link"></i>
+                                    <i data-icon="icon-el-link"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-link</span>
+                                    <span>icon-el-link</span>
                                 </div>
 
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-location"></i>
+                                    <i data-icon="icon-el-location"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-location</span>
+                                    <span>icon-el-location</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-lock"></i>
+                                    <i data-icon="icon-el-lock"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-lock</span>
+                                    <span>icon-el-lock</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-minus"></i>
+                                    <i data-icon="icon-el-minus"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-minus</span>
+                                    <span>icon-el-minus</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-navicon"></i>
+                                    <i data-icon="icon-el-navicon"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-navicon</span>
+                                    <span>icon-el-navicon</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-paperclip"></i>
+                                    <i data-icon="icon-el-paperclip"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-paperclip</span>
+                                    <span>icon-el-paperclip</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-pencil"></i>
+                                    <i data-icon="icon-el-pencil"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-pencil</span>
+                                    <span>icon-el-pencil</span>
                                 </div>
 
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-play"></i>
+                                    <i data-icon="icon-el-play"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-play</span>
+                                    <span>icon-el-play</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-plus"></i>
+                                    <i data-icon="icon-el-plus"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-plus</span>
+                                    <span>icon-el-plus</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-pointer"></i>
+                                    <i data-icon="icon-el-pointer"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-pointer</span>
+                                    <span>icon-el-pointer</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-question"></i>
+                                    <i data-icon="icon-el-question"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-question</span>
+                                    <span>icon-el-question</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-redo"></i>
+                                    <i data-icon="icon-el-redo"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-redo</span>
+                                    <span>icon-el-redo</span>
                                 </div>
 
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-refresh"></i>
+                                    <i data-icon="icon-el-refresh"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-refresh</span>
+                                    <span>icon-el-refresh</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-retweet"></i>
+                                    <i data-icon="icon-el-retweet"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-retweet</span>
+                                    <span>icon-el-retweet</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-sc-facebook"></i>
+                                    <i data-icon="icon-el-sc-facebook"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-sc-facebook</span>
+                                    <span>icon-el-sc-facebook</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-sc-github"></i>
+                                    <i data-icon="icon-el-sc-github"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-sc-github</span>
+                                    <span>icon-el-sc-github</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-sc-google-plus"></i>
+                                    <i data-icon="icon-el-sc-google-plus"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-sc-google-plus</span>
+                                    <span>icon-el-sc-google-plus</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-sc-instagram"></i>
+                                    <i data-icon="icon-el-sc-instagram"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-sc-instagram</span>
+                                    <span>icon-el-sc-instagram</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-sc-linkedin"></i>
+                                    <i data-icon="icon-el-sc-linkedin"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-sc-linkedin</span>
+                                    <span>icon-el-sc-linkedin</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-sc-odnoklassniki"></i>
+                                    <i data-icon="icon-el-sc-odnoklassniki"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-sc-odnoklassniki</span>
+                                    <span>icon-el-sc-odnoklassniki</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-sc-pinterest"></i>
+                                    <i data-icon="icon-el-sc-pinterest"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-sc-pinterest</span>
+                                    <span>icon-el-sc-pinterest</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-sc-skype"></i>
+                                    <i data-icon="icon-el-sc-skype"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-sc-skype</span>
+                                    <span>icon-el-sc-skype</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-sc-soundcloud"></i>
+                                    <i data-icon="icon-el-sc-soundcloud"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-sc-soundcloud</span>
+                                    <span>icon-el-sc-soundcloud</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-sc-telegram"></i>
+                                    <i data-icon="icon-el-sc-telegram"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-sc-telegram</span>
+                                    <span>icon-el-sc-telegram</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-sc-tumblr"></i>
+                                    <i data-icon="icon-el-sc-tumblr"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-sc-tumblr</span>
+                                    <span>icon-el-sc-tumblr</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-sc-twitter"></i>
+                                    <i data-icon="icon-el-sc-twitter"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-sc-twitter</span>
+                                    <span>icon-el-sc-twitter</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-sc-vimeo"></i>
+                                    <i data-icon="icon-el-sc-vimeo"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-sc-vimeo</span>
+                                    <span>icon-el-sc-vimeo</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-sc-vk"></i>
+                                    <i data-icon="icon-el-sc-vk"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-sc-vk</span>
+                                    <span>icon-el-sc-vk</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-sc-youtube"></i>
+                                    <i data-icon="icon-el-sc-youtube"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-sc-youtube</span>
+                                    <span>icon-el-sc-youtube</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-search"></i>
+                                    <i data-icon="icon-el-search"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-search</span>
+                                    <span>icon-el-search</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-share-apple"></i>
+                                    <i data-icon="icon-el-share-apple"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-share-apple</span>
+                                    <span>icon-el-share-apple</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-share-google"></i>
+                                    <i data-icon="icon-el-share-google"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-share-google</span>
+                                    <span>icon-el-share-google</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-spinner-2"></i>
+                                    <i data-icon="icon-el-spinner-2"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-spinner-2</span>
+                                    <span>icon-el-spinner-2</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-spinner-3"></i>
+                                    <i data-icon="icon-el-spinner-3"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-spinner-3</span>
+                                    <span>icon-el-spinner-3</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-spinner"></i>
+                                    <i data-icon="icon-el-spinner"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-spinner</span>
+                                    <span>icon-el-spinner</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-star"></i>
+                                    <i data-icon="icon-el-star"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-star</span>
+                                    <span>icon-el-star</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-tag"></i>
+                                    <i data-icon="icon-el-tag"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-tag</span>
+                                    <span>icon-el-tag</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-trash"></i>
+                                    <i data-icon="icon-el-trash"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-trash</span>
+                                    <span>icon-el-trash</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-trophy"></i>
+                                    <i data-icon="icon-el-trophy"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-trophy</span>
+                                    <span>icon-el-trophy</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-undo"></i>
+                                    <i data-icon="icon-el-undo"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-undo</span>
+                                    <span>icon-el-undo</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-unlock"></i>
+                                    <i data-icon="icon-el-unlock"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-unlock</span>
+                                    <span>icon-el-unlock</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-ei-user"></i>
+                                    <i data-icon="icon-el-user"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-ei-user</span>
+                                    <span>icon-el-user</span>
                                 </div>
                             </div>
                         </div>

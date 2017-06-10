@@ -114,6 +114,11 @@ class PagesController extends Controller
     {
         return view('admin.pages.forms.editors');
     }
+
+    public function wizards()
+    {
+        return view('admin.pages.forms.wizards');
+    }
     
     // Login
     public function loginSimple()

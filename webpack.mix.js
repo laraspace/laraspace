@@ -23,6 +23,7 @@ mix.combine([
     pluginPath + 'jquery-validate/jquery.validate.js',
     pluginPath + 'jquery-validate/additional-methods.js',
     pluginPath + 'clockpicker/bootstrap-clockpicker.js',
+    pluginPath + 'form-wizard/jquery.steps.js',
     pluginPath + 'switchery/switchery.js',
     pluginPath + 'select2/select2.js',
     pluginPath + 'datatables/dataTables.min.js',
@@ -37,11 +38,12 @@ mix.combine([
     pluginPath + 'alertify/alertify.js',
     pluginPath + 'easypiecharts/jquery.easypiechart.js',
     pluginPath + 'metisMenu/metisMenu.js',
+
     pluginPath + 'calendar/moment.js',
     pluginPath + 'calendar/fullcalendar.js',
     pluginPath + 'imageCropper/cropper.js',
     pluginPath + 'ace-editor/ace.js',
-    pluginPath + 'icons/evil-icons.js',
+    pluginPath + 'icons/evil.js',
     pluginPath + 'ace-editor/twilight.js',
 
     // ** Laraspace Inits **
@@ -57,7 +59,6 @@ mix.combine([
 .sass('resources/assets/admin/sass/laraspace.scss', 'public/assets/admin/css/')
 
 .version();
-
 
 /*
  |--------------------------------------------------------------------------

@@ -22513,6 +22513,2048 @@ $.validator.addMethod( "ziprange", function( value, element ) {
 	};
 }());
 
+/*! 
+ * jQuery Steps v1.1.0 - 09/04/2014
+ * Copyright (c) 2014 Rafael Staib (http://www.jquery-steps.com)
+ * Licensed under MIT http://www.opensource.org/licenses/MIT
+ */
+;(function ($, undefined)
+{
+$.fn.extend({
+    _aria: function (name, value)
+    {
+        return this.attr("aria-" + name, value);
+    },
+
+    _removeAria: function (name)
+    {
+        return this.removeAttr("aria-" + name);
+    },
+
+    _enableAria: function (enable)
+    {
+        return (enable == null || enable) ? 
+            this.removeClass("disabled")._aria("disabled", "false") : 
+            this.addClass("disabled")._aria("disabled", "true");
+    },
+
+    _showAria: function (show)
+    {
+        return (show == null || show) ? 
+            this.show()._aria("hidden", "false") : 
+            this.hide()._aria("hidden", "true");
+    },
+
+    _selectAria: function (select)
+    {
+        return (select == null || select) ? 
+            this.addClass("current")._aria("selected", "true") : 
+            this.removeClass("current")._aria("selected", "false");
+    },
+
+    _id: function (id)
+    {
+        return (id) ? this.attr("id", id) : this.attr("id");
+    }
+});
+
+if (!String.prototype.format)
+{
+    String.prototype.format = function()
+    {
+        var args = (arguments.length === 1 && $.isArray(arguments[0])) ? arguments[0] : arguments;
+        var formattedString = this;
+        for (var i = 0; i < args.length; i++)
+        {
+            var pattern = new RegExp("\\{" + i + "\\}", "gm");
+            formattedString = formattedString.replace(pattern, args[i]);
+        }
+        return formattedString;
+    };
+}
+
+/**
+ * A global unique id count.
+ *
+ * @static
+ * @private
+ * @property _uniqueId
+ * @type Integer
+ **/
+var _uniqueId = 0;
+
+/**
+ * The plugin prefix for cookies.
+ *
+ * @final
+ * @private
+ * @property _cookiePrefix
+ * @type String
+ **/
+var _cookiePrefix = "jQu3ry_5teps_St@te_";
+
+/**
+ * Suffix for the unique tab id.
+ *
+ * @final
+ * @private
+ * @property _tabSuffix
+ * @type String
+ * @since 0.9.7
+ **/
+var _tabSuffix = "-t-";
+
+/**
+ * Suffix for the unique tabpanel id.
+ *
+ * @final
+ * @private
+ * @property _tabpanelSuffix
+ * @type String
+ * @since 0.9.7
+ **/
+var _tabpanelSuffix = "-p-";
+
+/**
+ * Suffix for the unique title id.
+ *
+ * @final
+ * @private
+ * @property _titleSuffix
+ * @type String
+ * @since 0.9.7
+ **/
+var _titleSuffix = "-h-";
+
+/**
+ * An error message for an "index out of range" error.
+ *
+ * @final
+ * @private
+ * @property _indexOutOfRangeErrorMessage
+ * @type String
+ **/
+var _indexOutOfRangeErrorMessage = "Index out of range.";
+
+/**
+ * An error message for an "missing corresponding element" error.
+ *
+ * @final
+ * @private
+ * @property _missingCorrespondingElementErrorMessage
+ * @type String
+ **/
+var _missingCorrespondingElementErrorMessage = "One or more corresponding step {0} are missing.";
+
+/**
+ * Adds a step to the cache.
+ *
+ * @static
+ * @private
+ * @method addStepToCache
+ * @param wizard {Object} A jQuery wizard object
+ * @param step {Object} The step object to add
+ **/
+function addStepToCache(wizard, step)
+{
+    getSteps(wizard).push(step);
+}
+
+function analyzeData(wizard, options, state)
+{
+    var stepTitles = wizard.children(options.headerTag),
+        stepContents = wizard.children(options.bodyTag);
+
+    // Validate content
+    if (stepTitles.length > stepContents.length)
+    {
+        throwError(_missingCorrespondingElementErrorMessage, "contents");
+    }
+    else if (stepTitles.length < stepContents.length)
+    {
+        throwError(_missingCorrespondingElementErrorMessage, "titles");
+    }
+        
+    var startIndex = options.startIndex;
+
+    state.stepCount = stepTitles.length;
+
+    // Tries to load the saved state (step position)
+    if (options.saveState && $.cookie)
+    {
+        var savedState = $.cookie(_cookiePrefix + getUniqueId(wizard));
+        // Sets the saved position to the start index if not undefined or out of range 
+        var savedIndex = parseInt(savedState, 0);
+        if (!isNaN(savedIndex) && savedIndex < state.stepCount)
+        {
+            startIndex = savedIndex;
+        }
+    }
+
+    state.currentIndex = startIndex;
+
+    stepTitles.each(function (index)
+    {
+        var item = $(this), // item == header
+            content = stepContents.eq(index),
+            modeData = content.data("mode"),
+            mode = (modeData == null) ? contentMode.html : getValidEnumValue(contentMode,
+                (/^\s*$/.test(modeData) || isNaN(modeData)) ? modeData : parseInt(modeData, 0)),
+            contentUrl = (mode === contentMode.html || content.data("url") === undefined) ?
+                "" : content.data("url"),
+            contentLoaded = (mode !== contentMode.html && content.data("loaded") === "1"),
+            step = $.extend({}, stepModel, {
+                title: item.html(),
+                content: (mode === contentMode.html) ? content.html() : "",
+                contentUrl: contentUrl,
+                contentMode: mode,
+                contentLoaded: contentLoaded
+            });
+
+        addStepToCache(wizard, step);
+    });
+}
+
+/**
+ * Triggers the onCanceled event.
+ *
+ * @static
+ * @private
+ * @method cancel
+ * @param wizard {Object} The jQuery wizard object
+ **/
+function cancel(wizard)
+{
+    wizard.triggerHandler("canceled");
+}
+
+function decreaseCurrentIndexBy(state, decreaseBy)
+{
+    return state.currentIndex - decreaseBy;
+}
+
+/**
+ * Removes the control functionality completely and transforms the current state to the initial HTML structure.
+ *
+ * @static
+ * @private
+ * @method destroy
+ * @param wizard {Object} A jQuery wizard object
+ **/
+function destroy(wizard, options)
+{
+    var eventNamespace = getEventNamespace(wizard);
+
+    // Remove virtual data objects from the wizard
+    wizard.unbind(eventNamespace).removeData("uid").removeData("options")
+        .removeData("state").removeData("steps").removeData("eventNamespace")
+        .find(".actions a").unbind(eventNamespace);
+
+    // Remove attributes and CSS classes from the wizard
+    wizard.removeClass(options.clearFixCssClass + " vertical");
+
+    var contents = wizard.find(".content > *");
+
+    // Remove virtual data objects from panels and their titles
+    contents.removeData("loaded").removeData("mode").removeData("url");
+
+    // Remove attributes, CSS classes and reset inline styles on all panels and their titles
+    contents.removeAttr("id").removeAttr("role").removeAttr("tabindex")
+        .removeAttr("class").removeAttr("style")._removeAria("labelledby")
+        ._removeAria("hidden");
+
+    // Empty panels if the mode is set to 'async' or 'iframe'
+    wizard.find(".content > [data-mode='async'],.content > [data-mode='iframe']").empty();
+
+    var wizardSubstitute = $("<{0} class=\"{1}\"></{0}>".format(wizard.get(0).tagName, wizard.attr("class")));
+
+    var wizardId = wizard._id();
+    if (wizardId != null && wizardId !== "")
+    {
+        wizardSubstitute._id(wizardId);
+    }
+
+    wizardSubstitute.html(wizard.find(".content").html());
+    wizard.after(wizardSubstitute);
+    wizard.remove();
+
+    return wizardSubstitute;
+}
+
+/**
+ * Triggers the onFinishing and onFinished event.
+ *
+ * @static
+ * @private
+ * @method finishStep
+ * @param wizard {Object} The jQuery wizard object
+ * @param state {Object} The state container of the current wizard
+ **/
+function finishStep(wizard, state)
+{
+    var currentStep = wizard.find(".steps li").eq(state.currentIndex);
+
+    if (wizard.triggerHandler("finishing", [state.currentIndex]))
+    {
+        currentStep.addClass("done").removeClass("error");
+        wizard.triggerHandler("finished", [state.currentIndex]);
+    }
+    else
+    {
+        currentStep.addClass("error");
+    }
+}
+
+/**
+ * Gets or creates if not exist an unique event namespace for the given wizard instance.
+ *
+ * @static
+ * @private
+ * @method getEventNamespace
+ * @param wizard {Object} A jQuery wizard object
+ * @return {String} Returns the unique event namespace for the given wizard
+ */
+function getEventNamespace(wizard)
+{
+    var eventNamespace = wizard.data("eventNamespace");
+
+    if (eventNamespace == null)
+    {
+        eventNamespace = "." + getUniqueId(wizard);
+        wizard.data("eventNamespace", eventNamespace);
+    }
+
+    return eventNamespace;
+}
+
+function getStepAnchor(wizard, index)
+{
+    var uniqueId = getUniqueId(wizard);
+
+    return wizard.find("#" + uniqueId + _tabSuffix + index);
+}
+
+function getStepPanel(wizard, index)
+{
+    var uniqueId = getUniqueId(wizard);
+
+    return wizard.find("#" + uniqueId + _tabpanelSuffix + index);
+}
+
+function getStepTitle(wizard, index)
+{
+    var uniqueId = getUniqueId(wizard);
+
+    return wizard.find("#" + uniqueId + _titleSuffix + index);
+}
+
+function getOptions(wizard)
+{
+    return wizard.data("options");
+}
+
+function getState(wizard)
+{
+    return wizard.data("state");
+}
+
+function getSteps(wizard)
+{
+    return wizard.data("steps");
+}
+
+/**
+ * Gets a specific step object by index.
+ *
+ * @static
+ * @private
+ * @method getStep
+ * @param index {Integer} An integer that belongs to the position of a step
+ * @return {Object} A specific step object
+ **/
+function getStep(wizard, index)
+{
+    var steps = getSteps(wizard);
+
+    if (index < 0 || index >= steps.length)
+    {
+        throwError(_indexOutOfRangeErrorMessage);
+    }
+
+    return steps[index];
+}
+
+/**
+ * Gets or creates if not exist an unique id from the given wizard instance.
+ *
+ * @static
+ * @private
+ * @method getUniqueId
+ * @param wizard {Object} A jQuery wizard object
+ * @return {String} Returns the unique id for the given wizard
+ */
+function getUniqueId(wizard)
+{
+    var uniqueId = wizard.data("uid");
+
+    if (uniqueId == null)
+    {
+        uniqueId = wizard._id();
+        if (uniqueId == null)
+        {
+            uniqueId = "steps-uid-".concat(_uniqueId);
+            wizard._id(uniqueId);
+        }
+
+        _uniqueId++;
+        wizard.data("uid", uniqueId);
+    }
+
+    return uniqueId;
+}
+
+/**
+ * Gets a valid enum value by checking a specific enum key or value.
+ * 
+ * @static
+ * @private
+ * @method getValidEnumValue
+ * @param enumType {Object} Type of enum
+ * @param keyOrValue {Object} Key as `String` or value as `Integer` to check for
+ */
+function getValidEnumValue(enumType, keyOrValue)
+{
+    validateArgument("enumType", enumType);
+    validateArgument("keyOrValue", keyOrValue);
+
+    // Is key
+    if (typeof keyOrValue === "string")
+    {
+        var value = enumType[keyOrValue];
+        if (value === undefined)
+        {
+            throwError("The enum key '{0}' does not exist.", keyOrValue);
+        }
+
+        return value;
+    }
+    // Is value
+    else if (typeof keyOrValue === "number")
+    {
+        for (var key in enumType)
+        {
+            if (enumType[key] === keyOrValue)
+            {
+                return keyOrValue;
+            }
+        }
+
+        throwError("Invalid enum value '{0}'.", keyOrValue);
+    }
+    // Type is not supported
+    else
+    {
+        throwError("Invalid key or value type.");
+    }
+}
+
+/**
+ * Routes to the next step.
+ *
+ * @static
+ * @private
+ * @method goToNextStep
+ * @param wizard {Object} The jQuery wizard object
+ * @param options {Object} Settings of the current wizard
+ * @param state {Object} The state container of the current wizard
+ * @return {Boolean} Indicates whether the action executed
+ **/
+function goToNextStep(wizard, options, state)
+{
+    return paginationClick(wizard, options, state, increaseCurrentIndexBy(state, 1));
+}
+
+/**
+ * Routes to the previous step.
+ *
+ * @static
+ * @private
+ * @method goToPreviousStep
+ * @param wizard {Object} The jQuery wizard object
+ * @param options {Object} Settings of the current wizard
+ * @param state {Object} The state container of the current wizard
+ * @return {Boolean} Indicates whether the action executed
+ **/
+function goToPreviousStep(wizard, options, state)
+{
+    return paginationClick(wizard, options, state, decreaseCurrentIndexBy(state, 1));
+}
+
+/**
+ * Routes to a specific step by a given index.
+ *
+ * @static
+ * @private
+ * @method goToStep
+ * @param wizard {Object} The jQuery wizard object
+ * @param options {Object} Settings of the current wizard
+ * @param state {Object} The state container of the current wizard
+ * @param index {Integer} The position (zero-based) to route to
+ * @return {Boolean} Indicates whether the action succeeded or failed
+ **/
+function goToStep(wizard, options, state, index)
+{
+    if (index < 0 || index >= state.stepCount)
+    {
+        throwError(_indexOutOfRangeErrorMessage);
+    }
+
+    if (options.forceMoveForward && index < state.currentIndex)
+    {
+        return;
+    }
+
+    var oldIndex = state.currentIndex;
+    if (wizard.triggerHandler("stepChanging", [state.currentIndex, index]))
+    {
+        // Save new state
+        state.currentIndex = index;
+        saveCurrentStateToCookie(wizard, options, state);
+
+        // Change visualisation
+        refreshStepNavigation(wizard, options, state, oldIndex);
+        refreshPagination(wizard, options, state);
+        loadAsyncContent(wizard, options, state);
+        startTransitionEffect(wizard, options, state, index, oldIndex, function()
+        {
+            wizard.triggerHandler("stepChanged", [index, oldIndex]);
+        });
+    }
+    else
+    {
+        wizard.find(".steps li").eq(oldIndex).addClass("error");
+    }
+
+    return true;
+}
+
+function increaseCurrentIndexBy(state, increaseBy)
+{
+    return state.currentIndex + increaseBy;
+}
+
+/**
+ * Initializes the component.
+ *
+ * @static
+ * @private
+ * @method initialize
+ * @param options {Object} The component settings
+ **/
+function initialize(options)
+{
+    /*jshint -W040 */
+    var opts = $.extend(true, {}, defaults, options);
+
+    return this.each(function ()
+    {
+        var wizard = $(this);
+        var state = {
+            currentIndex: opts.startIndex,
+            currentStep: null,
+            stepCount: 0,
+            transitionElement: null
+        };
+
+        // Create data container
+        wizard.data("options", opts);
+        wizard.data("state", state);
+        wizard.data("steps", []);
+
+        analyzeData(wizard, opts, state);
+        render(wizard, opts, state);
+        registerEvents(wizard, opts);
+
+        // Trigger focus
+        if (opts.autoFocus && _uniqueId === 0)
+        {
+            getStepAnchor(wizard, opts.startIndex).focus();
+        }
+
+        wizard.triggerHandler("init", [opts.startIndex]);
+    });
+}
+
+/**
+ * Inserts a new step to a specific position.
+ *
+ * @static
+ * @private
+ * @method insertStep
+ * @param wizard {Object} The jQuery wizard object
+ * @param options {Object} Settings of the current wizard
+ * @param state {Object} The state container of the current wizard
+ * @param index {Integer} The position (zero-based) to add
+ * @param step {Object} The step object to add
+ * @example
+ *     $("#wizard").steps().insert(0, {
+ *         title: "Title",
+ *         content: "", // optional
+ *         contentMode: "async", // optional
+ *         contentUrl: "/Content/Step/1" // optional
+ *     });
+ * @chainable
+ **/
+function insertStep(wizard, options, state, index, step)
+{
+    if (index < 0 || index > state.stepCount)
+    {
+        throwError(_indexOutOfRangeErrorMessage);
+    }
+
+    // TODO: Validate step object
+
+    // Change data
+    step = $.extend({}, stepModel, step);
+    insertStepToCache(wizard, index, step);
+    if (state.currentIndex !== state.stepCount && state.currentIndex >= index)
+    {
+        state.currentIndex++;
+        saveCurrentStateToCookie(wizard, options, state);
+    }
+    state.stepCount++;
+
+    var contentContainer = wizard.find(".content"),
+        header = $("<{0}>{1}</{0}>".format(options.headerTag, step.title)),
+        body = $("<{0}></{0}>".format(options.bodyTag));
+
+    if (step.contentMode == null || step.contentMode === contentMode.html)
+    {
+        body.html(step.content);
+    }
+
+    if (index === 0)
+    {
+        contentContainer.prepend(body).prepend(header);
+    }
+    else
+    {
+        getStepPanel(wizard, (index - 1)).after(body).after(header);
+    }
+
+    renderBody(wizard, state, body, index);
+    renderTitle(wizard, options, state, header, index);
+    refreshSteps(wizard, options, state, index);
+    if (index === state.currentIndex)
+    {
+        refreshStepNavigation(wizard, options, state);
+    }
+    refreshPagination(wizard, options, state);
+
+    return wizard;
+}
+
+/**
+ * Inserts a step object to the cache at a specific position.
+ *
+ * @static
+ * @private
+ * @method insertStepToCache
+ * @param wizard {Object} A jQuery wizard object
+ * @param index {Integer} The position (zero-based) to add
+ * @param step {Object} The step object to add
+ **/
+function insertStepToCache(wizard, index, step)
+{
+    getSteps(wizard).splice(index, 0, step);
+}
+
+/**
+ * Handles the keyup DOM event for pagination.
+ *
+ * @static
+ * @private
+ * @event keyup
+ * @param event {Object} An event object
+ */
+function keyUpHandler(event)
+{
+    var wizard = $(this),
+        options = getOptions(wizard),
+        state = getState(wizard);
+
+    if (options.suppressPaginationOnFocus && wizard.find(":focus").is(":input"))
+    {
+        event.preventDefault();
+        return false;
+    }
+
+    var keyCodes = { left: 37, right: 39 };
+    if (event.keyCode === keyCodes.left)
+    {
+        event.preventDefault();
+        goToPreviousStep(wizard, options, state);
+    }
+    else if (event.keyCode === keyCodes.right)
+    {
+        event.preventDefault();
+        goToNextStep(wizard, options, state);
+    }
+}
+
+/**
+ * Loads and includes async content.
+ *
+ * @static
+ * @private
+ * @method loadAsyncContent
+ * @param wizard {Object} A jQuery wizard object
+ * @param options {Object} Settings of the current wizard
+ * @param state {Object} The state container of the current wizard
+ */
+function loadAsyncContent(wizard, options, state)
+{
+    if (state.stepCount > 0)
+    {
+        var currentIndex = state.currentIndex,
+            currentStep = getStep(wizard, currentIndex);
+
+        if (!options.enableContentCache || !currentStep.contentLoaded)
+        {
+            switch (getValidEnumValue(contentMode, currentStep.contentMode))
+            {
+                case contentMode.iframe:
+                    wizard.find(".content > .body").eq(state.currentIndex).empty()
+                        .html("<iframe src=\"" + currentStep.contentUrl + "\" frameborder=\"0\" scrolling=\"no\" />")
+                        .data("loaded", "1");
+                    break;
+
+                case contentMode.async:
+                    var currentStepContent = getStepPanel(wizard, currentIndex)._aria("busy", "true")
+                        .empty().append(renderTemplate(options.loadingTemplate, { text: options.labels.loading }));
+
+                    $.ajax({ url: currentStep.contentUrl, cache: false }).done(function (data)
+                    {
+                        currentStepContent.empty().html(data)._aria("busy", "false").data("loaded", "1");
+                        wizard.triggerHandler("contentLoaded", [currentIndex]);
+                    });
+                    break;
+            }
+        }
+    }
+}
+
+/**
+ * Fires the action next or previous click event.
+ *
+ * @static
+ * @private
+ * @method paginationClick
+ * @param wizard {Object} The jQuery wizard object
+ * @param options {Object} Settings of the current wizard
+ * @param state {Object} The state container of the current wizard
+ * @param index {Integer} The position (zero-based) to route to
+ * @return {Boolean} Indicates whether the event fired successfully or not
+ **/
+function paginationClick(wizard, options, state, index)
+{
+    var oldIndex = state.currentIndex;
+
+    if (index >= 0 && index < state.stepCount && !(options.forceMoveForward && index < state.currentIndex))
+    {
+        var anchor = getStepAnchor(wizard, index),
+            parent = anchor.parent(),
+            isDisabled = parent.hasClass("disabled");
+
+        // Enable the step to make the anchor clickable!
+        parent._enableAria();
+        anchor.click();
+
+        // An error occured
+        if (oldIndex === state.currentIndex && isDisabled)
+        {
+            // Disable the step again if current index has not changed; prevents click action.
+            parent._enableAria(false);
+            return false;
+        }
+
+        return true;
+    }
+
+    return false;
+}
+
+/**
+ * Fires when a pagination click happens.
+ *
+ * @static
+ * @private
+ * @event click
+ * @param event {Object} An event object
+ */
+function paginationClickHandler(event)
+{
+    event.preventDefault();
+
+    var anchor = $(this),
+        wizard = anchor.parent().parent().parent().parent(),
+        options = getOptions(wizard),
+        state = getState(wizard),
+        href = anchor.attr("href");
+
+    switch (href.substring(href.lastIndexOf("#") + 1))
+    {
+        case "cancel":
+            cancel(wizard);
+            break;
+
+        case "finish":
+            finishStep(wizard, state);
+            break;
+
+        case "next":
+            goToNextStep(wizard, options, state);
+            break;
+
+        case "previous":
+            goToPreviousStep(wizard, options, state);
+            break;
+    }
+}
+
+/**
+ * Refreshs the visualization state for the entire pagination.
+ *
+ * @static
+ * @private
+ * @method refreshPagination
+ * @param wizard {Object} A jQuery wizard object
+ * @param options {Object} Settings of the current wizard
+ * @param state {Object} The state container of the current wizard
+ */
+function refreshPagination(wizard, options, state)
+{
+    if (options.enablePagination)
+    {
+        var finish = wizard.find(".actions a[href$='#finish']").parent(),
+            next = wizard.find(".actions a[href$='#next']").parent();
+
+        if (!options.forceMoveForward)
+        {
+            var previous = wizard.find(".actions a[href$='#previous']").parent();
+            previous._enableAria(state.currentIndex > 0);
+        }
+
+        if (options.enableFinishButton && options.showFinishButtonAlways)
+        {
+            finish._enableAria(state.stepCount > 0);
+            next._enableAria(state.stepCount > 1 && state.stepCount > (state.currentIndex + 1));
+        }
+        else
+        {
+            finish._showAria(options.enableFinishButton && state.stepCount === (state.currentIndex + 1));
+            next._showAria(state.stepCount === 0 || state.stepCount > (state.currentIndex + 1)).
+                _enableAria(state.stepCount > (state.currentIndex + 1) || !options.enableFinishButton);
+        }
+    }
+}
+
+/**
+ * Refreshs the visualization state for the step navigation (tabs).
+ *
+ * @static
+ * @private
+ * @method refreshStepNavigation
+ * @param wizard {Object} A jQuery wizard object
+ * @param options {Object} Settings of the current wizard
+ * @param state {Object} The state container of the current wizard
+ * @param [oldIndex] {Integer} The index of the prior step
+ */
+function refreshStepNavigation(wizard, options, state, oldIndex)
+{
+    var currentOrNewStepAnchor = getStepAnchor(wizard, state.currentIndex),
+        currentInfo = $("<span class=\"current-info audible\">" + options.labels.current + " </span>"),
+        stepTitles = wizard.find(".content > .title");
+
+    if (oldIndex != null)
+    {
+        var oldStepAnchor = getStepAnchor(wizard, oldIndex);
+        oldStepAnchor.parent().addClass("done").removeClass("error")._selectAria(false);
+        stepTitles.eq(oldIndex).removeClass("current").next(".body").removeClass("current");
+        currentInfo = oldStepAnchor.find(".current-info");
+        currentOrNewStepAnchor.focus();
+    }
+
+    currentOrNewStepAnchor.prepend(currentInfo).parent()._selectAria().removeClass("done")._enableAria();
+    stepTitles.eq(state.currentIndex).addClass("current").next(".body").addClass("current");
+}
+
+/**
+ * Refreshes step buttons and their related titles beyond a certain position.
+ *
+ * @static
+ * @private
+ * @method refreshSteps
+ * @param wizard {Object} A jQuery wizard object
+ * @param options {Object} Settings of the current wizard
+ * @param state {Object} The state container of the current wizard
+ * @param index {Integer} The start point for refreshing ids
+ */
+function refreshSteps(wizard, options, state, index)
+{
+    var uniqueId = getUniqueId(wizard);
+
+    for (var i = index; i < state.stepCount; i++)
+    {
+        var uniqueStepId = uniqueId + _tabSuffix + i,
+            uniqueBodyId = uniqueId + _tabpanelSuffix + i,
+            uniqueHeaderId = uniqueId + _titleSuffix + i,
+            title = wizard.find(".title").eq(i)._id(uniqueHeaderId);
+
+        wizard.find(".steps a").eq(i)._id(uniqueStepId)
+            ._aria("controls", uniqueBodyId).attr("href", "#" + uniqueHeaderId)
+            .html(renderTemplate(options.titleTemplate, { index: i + 1, title: title.html() }));
+        wizard.find(".body").eq(i)._id(uniqueBodyId)
+            ._aria("labelledby", uniqueHeaderId);
+    }
+}
+
+function registerEvents(wizard, options)
+{
+    var eventNamespace = getEventNamespace(wizard);
+
+    wizard.bind("canceled" + eventNamespace, options.onCanceled);
+    wizard.bind("contentLoaded" + eventNamespace, options.onContentLoaded);
+    wizard.bind("finishing" + eventNamespace, options.onFinishing);
+    wizard.bind("finished" + eventNamespace, options.onFinished);
+    wizard.bind("init" + eventNamespace, options.onInit);
+    wizard.bind("stepChanging" + eventNamespace, options.onStepChanging);
+    wizard.bind("stepChanged" + eventNamespace, options.onStepChanged);
+
+    if (options.enableKeyNavigation)
+    {
+        wizard.bind("keyup" + eventNamespace, keyUpHandler);
+    }
+
+    wizard.find(".actions a").bind("click" + eventNamespace, paginationClickHandler);
+}
+
+/**
+ * Removes a specific step by an given index.
+ *
+ * @static
+ * @private
+ * @method removeStep
+ * @param wizard {Object} A jQuery wizard object
+ * @param options {Object} Settings of the current wizard
+ * @param state {Object} The state container of the current wizard
+ * @param index {Integer} The position (zero-based) of the step to remove
+ * @return Indecates whether the item is removed.
+ **/
+function removeStep(wizard, options, state, index)
+{
+    // Index out of range and try deleting current item will return false.
+    if (index < 0 || index >= state.stepCount || state.currentIndex === index)
+    {
+        return false;
+    }
+
+    // Change data
+    removeStepFromCache(wizard, index);
+    if (state.currentIndex > index)
+    {
+        state.currentIndex--;
+        saveCurrentStateToCookie(wizard, options, state);
+    }
+    state.stepCount--;
+
+    getStepTitle(wizard, index).remove();
+    getStepPanel(wizard, index).remove();
+    getStepAnchor(wizard, index).parent().remove();
+
+    // Set the "first" class to the new first step button 
+    if (index === 0)
+    {
+        wizard.find(".steps li").first().addClass("first");
+    }
+
+    // Set the "last" class to the new last step button 
+    if (index === state.stepCount)
+    {
+        wizard.find(".steps li").eq(index).addClass("last");
+    }
+
+    refreshSteps(wizard, options, state, index);
+    refreshPagination(wizard, options, state);
+
+    return true;
+}
+
+function removeStepFromCache(wizard, index)
+{
+    getSteps(wizard).splice(index, 1);
+}
+
+/**
+ * Transforms the base html structure to a more sensible html structure.
+ *
+ * @static
+ * @private
+ * @method render
+ * @param wizard {Object} A jQuery wizard object
+ * @param options {Object} Settings of the current wizard
+ * @param state {Object} The state container of the current wizard
+ **/
+function render(wizard, options, state)
+{
+    // Create a content wrapper and copy HTML from the intial wizard structure
+    var wrapperTemplate = "<{0} class=\"{1}\">{2}</{0}>",
+        orientation = getValidEnumValue(stepsOrientation, options.stepsOrientation),
+        verticalCssClass = (orientation === stepsOrientation.vertical) ? " vertical" : "",
+        contentWrapper = $(wrapperTemplate.format(options.contentContainerTag, "content " + options.clearFixCssClass, wizard.html())),
+        stepsWrapper = $(wrapperTemplate.format(options.stepsContainerTag, "steps " + options.clearFixCssClass, "<ul role=\"tablist\"></ul>")),
+        stepTitles = contentWrapper.children(options.headerTag),
+        stepContents = contentWrapper.children(options.bodyTag);
+
+    // Transform the wizard wrapper and remove the inner HTML
+    wizard.attr("role", "application").empty().append(stepsWrapper).append(contentWrapper)
+        .addClass(options.cssClass + " " + options.clearFixCssClass + verticalCssClass);
+
+    // Add WIA-ARIA support
+    stepContents.each(function (index)
+    {
+        renderBody(wizard, state, $(this), index);
+    });
+
+    stepTitles.each(function (index)
+    {
+        renderTitle(wizard, options, state, $(this), index);
+    });
+
+    refreshStepNavigation(wizard, options, state);
+    renderPagination(wizard, options, state);
+}
+
+/**
+ * Transforms the body to a proper tabpanel.
+ *
+ * @static
+ * @private
+ * @method renderBody
+ * @param wizard {Object} A jQuery wizard object
+ * @param body {Object} A jQuery body object
+ * @param index {Integer} The position of the body
+ */
+function renderBody(wizard, state, body, index)
+{
+    var uniqueId = getUniqueId(wizard),
+        uniqueBodyId = uniqueId + _tabpanelSuffix + index,
+        uniqueHeaderId = uniqueId + _titleSuffix + index;
+
+    body._id(uniqueBodyId).attr("role", "tabpanel")._aria("labelledby", uniqueHeaderId)
+        .addClass("body")._showAria(state.currentIndex === index);
+}
+
+/**
+ * Renders a pagination if enabled.
+ *
+ * @static
+ * @private
+ * @method renderPagination
+ * @param wizard {Object} A jQuery wizard object
+ * @param options {Object} Settings of the current wizard
+ * @param state {Object} The state container of the current wizard
+ */
+function renderPagination(wizard, options, state)
+{
+    if (options.enablePagination)
+    {
+        var pagination = "<{0} class=\"actions {1}\"><ul role=\"menu\" aria-label=\"{2}\">{3}</ul></{0}>",
+            buttonTemplate = "<li><a href=\"#{0}\" role=\"menuitem\">{1}</a></li>",
+            buttons = "";
+
+        if (!options.forceMoveForward)
+        {
+            buttons += buttonTemplate.format("previous", options.labels.previous);
+        }
+
+        buttons += buttonTemplate.format("next", options.labels.next);
+
+        if (options.enableFinishButton)
+        {
+            buttons += buttonTemplate.format("finish", options.labels.finish);
+        }
+
+        if (options.enableCancelButton)
+        {
+            buttons += buttonTemplate.format("cancel", options.labels.cancel);
+        }
+
+        wizard.append(pagination.format(options.actionContainerTag, options.clearFixCssClass,
+            options.labels.pagination, buttons));
+
+        refreshPagination(wizard, options, state);
+        loadAsyncContent(wizard, options, state);
+    }
+}
+
+/**
+ * Renders a template and replaces all placeholder.
+ *
+ * @static
+ * @private
+ * @method renderTemplate
+ * @param template {String} A template
+ * @param substitutes {Object} A list of substitute
+ * @return {String} The rendered template
+ */
+function renderTemplate(template, substitutes)
+{
+    var matches = template.match(/#([a-z]*)#/gi);
+
+    for (var i = 0; i < matches.length; i++)
+    {
+        var match = matches[i], 
+            key = match.substring(1, match.length - 1);
+
+        if (substitutes[key] === undefined)
+        {
+            throwError("The key '{0}' does not exist in the substitute collection!", key);
+        }
+
+        template = template.replace(match, substitutes[key]);
+    }
+
+    return template;
+}
+
+/**
+ * Transforms the title to a step item button.
+ *
+ * @static
+ * @private
+ * @method renderTitle
+ * @param wizard {Object} A jQuery wizard object
+ * @param options {Object} Settings of the current wizard
+ * @param state {Object} The state container of the current wizard
+ * @param header {Object} A jQuery header object
+ * @param index {Integer} The position of the header
+ */
+function renderTitle(wizard, options, state, header, index)
+{
+    var uniqueId = getUniqueId(wizard),
+        uniqueStepId = uniqueId + _tabSuffix + index,
+        uniqueBodyId = uniqueId + _tabpanelSuffix + index,
+        uniqueHeaderId = uniqueId + _titleSuffix + index,
+        stepCollection = wizard.find(".steps > ul"),
+        title = renderTemplate(options.titleTemplate, {
+            index: index + 1,
+            title: header.html()
+        }),
+        stepItem = $("<li role=\"tab\"><a id=\"" + uniqueStepId + "\" href=\"#" + uniqueHeaderId + 
+            "\" aria-controls=\"" + uniqueBodyId + "\">" + title + "</a></li>");
+        
+    stepItem._enableAria(options.enableAllSteps || state.currentIndex > index);
+
+    if (state.currentIndex > index)
+    {
+        stepItem.addClass("done");
+    }
+
+    header._id(uniqueHeaderId).attr("tabindex", "-1").addClass("title");
+
+    if (index === 0)
+    {
+        stepCollection.prepend(stepItem);
+    }
+    else
+    {
+        stepCollection.find("li").eq(index - 1).after(stepItem);
+    }
+
+    // Set the "first" class to the new first step button
+    if (index === 0)
+    {
+        stepCollection.find("li").removeClass("first").eq(index).addClass("first");
+    }
+
+    // Set the "last" class to the new last step button
+    if (index === (state.stepCount - 1))
+    {
+        stepCollection.find("li").removeClass("last").eq(index).addClass("last");
+    }
+
+    // Register click event
+    stepItem.children("a").bind("click" + getEventNamespace(wizard), stepClickHandler);
+}
+
+/**
+ * Saves the current state to a cookie.
+ *
+ * @static
+ * @private
+ * @method saveCurrentStateToCookie
+ * @param wizard {Object} A jQuery wizard object
+ * @param options {Object} Settings of the current wizard
+ * @param state {Object} The state container of the current wizard
+ */
+function saveCurrentStateToCookie(wizard, options, state)
+{
+    if (options.saveState && $.cookie)
+    {
+        $.cookie(_cookiePrefix + getUniqueId(wizard), state.currentIndex);
+    }
+}
+
+function startTransitionEffect(wizard, options, state, index, oldIndex, doneCallback)
+{
+    var stepContents = wizard.find(".content > .body"),
+        effect = getValidEnumValue(transitionEffect, options.transitionEffect),
+        effectSpeed = options.transitionEffectSpeed,
+        newStep = stepContents.eq(index),
+        currentStep = stepContents.eq(oldIndex);
+
+    switch (effect)
+    {
+        case transitionEffect.fade:
+        case transitionEffect.slide:
+            var hide = (effect === transitionEffect.fade) ? "fadeOut" : "slideUp",
+                show = (effect === transitionEffect.fade) ? "fadeIn" : "slideDown";
+
+            state.transitionElement = newStep;
+            currentStep[hide](effectSpeed, function ()
+            {
+                var wizard = $(this)._showAria(false).parent().parent(),
+                    state = getState(wizard);
+
+                if (state.transitionElement)
+                {
+                    state.transitionElement[show](effectSpeed, function ()
+                    {
+                        $(this)._showAria();
+                    }).promise().done(doneCallback);
+                    state.transitionElement = null;
+                }
+            });
+            break;
+
+        case transitionEffect.slideLeft:
+            var outerWidth = currentStep.outerWidth(true),
+                posFadeOut = (index > oldIndex) ? -(outerWidth) : outerWidth,
+                posFadeIn = (index > oldIndex) ? outerWidth : -(outerWidth);
+
+            $.when(currentStep.animate({ left: posFadeOut }, effectSpeed, 
+                    function () { $(this)._showAria(false); }),
+                newStep.css("left", posFadeIn + "px")._showAria()
+                    .animate({ left: 0 }, effectSpeed)).done(doneCallback);
+            break;
+
+        default:
+            $.when(currentStep._showAria(false), newStep._showAria())
+                .done(doneCallback);
+            break;
+    }
+}
+
+/**
+ * Fires when a step click happens.
+ *
+ * @static
+ * @private
+ * @event click
+ * @param event {Object} An event object
+ */
+function stepClickHandler(event)
+{
+    event.preventDefault();
+
+    var anchor = $(this),
+        wizard = anchor.parent().parent().parent().parent(),
+        options = getOptions(wizard),
+        state = getState(wizard),
+        oldIndex = state.currentIndex;
+
+    if (anchor.parent().is(":not(.disabled):not(.current)"))
+    {
+        var href = anchor.attr("href"),
+            position = parseInt(href.substring(href.lastIndexOf("-") + 1), 0);
+
+        goToStep(wizard, options, state, position);
+    }
+
+    // If nothing has changed
+    if (oldIndex === state.currentIndex)
+    {
+        getStepAnchor(wizard, oldIndex).focus();
+        return false;
+    }
+}
+
+function throwError(message)
+{
+    if (arguments.length > 1)
+    {
+        message = message.format(Array.prototype.slice.call(arguments, 1));
+    }
+
+    throw new Error(message);
+}
+
+/**
+ * Checks an argument for null or undefined and throws an error if one check applies.
+ *
+ * @static
+ * @private
+ * @method validateArgument
+ * @param argumentName {String} The name of the given argument
+ * @param argumentValue {Object} The argument itself
+ */
+function validateArgument(argumentName, argumentValue)
+{
+    if (argumentValue == null)
+    {
+        throwError("The argument '{0}' is null or undefined.", argumentName);
+    }
+}
+
+/**
+ * Represents a jQuery wizard plugin.
+ *
+ * @class steps
+ * @constructor
+ * @param [method={}] The name of the method as `String` or an JSON object for initialization
+ * @param [params=]* {Array} Additional arguments for a method call
+ * @chainable
+ **/
+$.fn.steps = function (method)
+{
+    if ($.fn.steps[method])
+    {
+        return $.fn.steps[method].apply(this, Array.prototype.slice.call(arguments, 1));
+    }
+    else if (typeof method === "object" || !method)
+    {
+        return initialize.apply(this, arguments);
+    }
+    else
+    {
+        $.error("Method " + method + " does not exist on jQuery.steps");
+    }
+};
+
+/**
+ * Adds a new step.
+ *
+ * @method add
+ * @param step {Object} The step object to add
+ * @chainable
+ **/
+$.fn.steps.add = function (step)
+{
+    var state = getState(this);
+    return insertStep(this, getOptions(this), state, state.stepCount, step);
+};
+
+/**
+ * Removes the control functionality completely and transforms the current state to the initial HTML structure.
+ *
+ * @method destroy
+ * @chainable
+ **/
+$.fn.steps.destroy = function ()
+{
+    return destroy(this, getOptions(this));
+};
+
+/**
+ * Triggers the onFinishing and onFinished event.
+ *
+ * @method finish
+ **/
+$.fn.steps.finish = function ()
+{
+    finishStep(this, getState(this));
+};
+
+/**
+ * Gets the current step index.
+ *
+ * @method getCurrentIndex
+ * @return {Integer} The actual step index (zero-based)
+ * @for steps
+ **/
+$.fn.steps.getCurrentIndex = function ()
+{
+    return getState(this).currentIndex;
+};
+
+/**
+ * Gets the current step object.
+ *
+ * @method getCurrentStep
+ * @return {Object} The actual step object
+ **/
+$.fn.steps.getCurrentStep = function ()
+{
+    return getStep(this, getState(this).currentIndex);
+};
+
+/**
+ * Gets a specific step object by index.
+ *
+ * @method getStep
+ * @param index {Integer} An integer that belongs to the position of a step
+ * @return {Object} A specific step object
+ **/
+$.fn.steps.getStep = function (index)
+{
+    return getStep(this, index);
+};
+
+/**
+ * Inserts a new step to a specific position.
+ *
+ * @method insert
+ * @param index {Integer} The position (zero-based) to add
+ * @param step {Object} The step object to add
+ * @example
+ *     $("#wizard").steps().insert(0, {
+ *         title: "Title",
+ *         content: "", // optional
+ *         contentMode: "async", // optional
+ *         contentUrl: "/Content/Step/1" // optional
+ *     });
+ * @chainable
+ **/
+$.fn.steps.insert = function (index, step)
+{
+    return insertStep(this, getOptions(this), getState(this), index, step);
+};
+
+/**
+ * Routes to the next step.
+ *
+ * @method next
+ * @return {Boolean} Indicates whether the action executed
+ **/
+$.fn.steps.next = function ()
+{
+    return goToNextStep(this, getOptions(this), getState(this));
+};
+
+/**
+ * Routes to the previous step.
+ *
+ * @method previous
+ * @return {Boolean} Indicates whether the action executed
+ **/
+$.fn.steps.previous = function ()
+{
+    return goToPreviousStep(this, getOptions(this), getState(this));
+};
+
+/**
+ * Removes a specific step by an given index.
+ *
+ * @method remove
+ * @param index {Integer} The position (zero-based) of the step to remove
+ * @return Indecates whether the item is removed.
+ **/
+$.fn.steps.remove = function (index)
+{
+    return removeStep(this, getOptions(this), getState(this), index);
+};
+
+/**
+ * Sets a specific step object by index.
+ *
+ * @method setStep
+ * @param index {Integer} An integer that belongs to the position of a step
+ * @param step {Object} The step object to change
+ **/
+$.fn.steps.setStep = function (index, step)
+{
+    throw new Error("Not yet implemented!");
+};
+
+/**
+ * Skips an certain amount of steps.
+ *
+ * @method skip
+ * @param count {Integer} The amount of steps that should be skipped
+ * @return {Boolean} Indicates whether the action executed
+ **/
+$.fn.steps.skip = function (count)
+{
+    throw new Error("Not yet implemented!");
+};
+
+/**
+ * An enum represents the different content types of a step and their loading mechanisms.
+ *
+ * @class contentMode
+ * @for steps
+ **/
+var contentMode = $.fn.steps.contentMode = {
+    /**
+     * HTML embedded content
+     *
+     * @readOnly
+     * @property html
+     * @type Integer
+     * @for contentMode
+     **/
+    html: 0,
+
+    /**
+     * IFrame embedded content
+     *
+     * @readOnly
+     * @property iframe
+     * @type Integer
+     * @for contentMode
+     **/
+    iframe: 1,
+
+    /**
+     * Async embedded content
+     *
+     * @readOnly
+     * @property async
+     * @type Integer
+     * @for contentMode
+     **/
+    async: 2
+};
+
+/**
+ * An enum represents the orientation of the steps navigation.
+ *
+ * @class stepsOrientation
+ * @for steps
+ **/
+var stepsOrientation = $.fn.steps.stepsOrientation = {
+    /**
+     * Horizontal orientation
+     *
+     * @readOnly
+     * @property horizontal
+     * @type Integer
+     * @for stepsOrientation
+     **/
+    horizontal: 0,
+
+    /**
+     * Vertical orientation
+     *
+     * @readOnly
+     * @property vertical
+     * @type Integer
+     * @for stepsOrientation
+     **/
+    vertical: 1
+};
+
+/**
+ * An enum that represents the various transition animations.
+ *
+ * @class transitionEffect
+ * @for steps
+ **/
+var transitionEffect = $.fn.steps.transitionEffect = {
+    /**
+     * No transition animation
+     *
+     * @readOnly
+     * @property none
+     * @type Integer
+     * @for transitionEffect
+     **/
+    none: 0,
+
+    /**
+     * Fade in transition
+     *
+     * @readOnly
+     * @property fade
+     * @type Integer
+     * @for transitionEffect
+     **/
+    fade: 1,
+
+    /**
+     * Slide up transition
+     *
+     * @readOnly
+     * @property slide
+     * @type Integer
+     * @for transitionEffect
+     **/
+    slide: 2,
+
+    /**
+     * Slide left transition
+     *
+     * @readOnly
+     * @property slideLeft
+     * @type Integer
+     * @for transitionEffect
+     **/
+    slideLeft: 3
+};
+
+var stepModel = $.fn.steps.stepModel = {
+    title: "",
+    content: "",
+    contentUrl: "",
+    contentMode: contentMode.html,
+    contentLoaded: false
+};
+
+/**
+ * An object that represents the default settings.
+ * There are two possibities to override the sub-properties.
+ * Either by doing it generally (global) or on initialization.
+ *
+ * @static
+ * @class defaults
+ * @for steps
+ * @example
+ *   // Global approach
+ *   $.steps.defaults.headerTag = "h3";
+ * @example
+ *   // Initialization approach
+ *   $("#wizard").steps({ headerTag: "h3" });
+ **/
+var defaults = $.fn.steps.defaults = {
+    /**
+     * The header tag is used to find the step button text within the declared wizard area.
+     *
+     * @property headerTag
+     * @type String
+     * @default "h1"
+     * @for defaults
+     **/
+    headerTag: "h1",
+
+    /**
+     * The body tag is used to find the step content within the declared wizard area.
+     *
+     * @property bodyTag
+     * @type String
+     * @default "div"
+     * @for defaults
+     **/
+    bodyTag: "div",
+
+    /**
+     * The content container tag which will be used to wrap all step contents.
+     *
+     * @property contentContainerTag
+     * @type String
+     * @default "div"
+     * @for defaults
+     **/
+    contentContainerTag: "div",
+
+    /**
+     * The action container tag which will be used to wrap the pagination navigation.
+     *
+     * @property actionContainerTag
+     * @type String
+     * @default "div"
+     * @for defaults
+     **/
+    actionContainerTag: "div",
+
+    /**
+     * The steps container tag which will be used to wrap the steps navigation.
+     *
+     * @property stepsContainerTag
+     * @type String
+     * @default "div"
+     * @for defaults
+     **/
+    stepsContainerTag: "div",
+
+    /**
+     * The css class which will be added to the outer component wrapper.
+     *
+     * @property cssClass
+     * @type String
+     * @default "wizard"
+     * @for defaults
+     * @example
+     *     <div class="wizard">
+     *         ...
+     *     </div>
+     **/
+    cssClass: "wizard",
+
+    /**
+     * The css class which will be used for floating scenarios.
+     *
+     * @property clearFixCssClass
+     * @type String
+     * @default "clearfix"
+     * @for defaults
+     **/
+    clearFixCssClass: "clearfix",
+
+    /**
+     * Determines whether the steps are vertically or horizontally oriented.
+     *
+     * @property stepsOrientation
+     * @type stepsOrientation
+     * @default horizontal
+     * @for defaults
+     * @since 1.0.0
+     **/
+    stepsOrientation: stepsOrientation.horizontal,
+
+    /*
+     * Tempplates
+     */
+
+    /**
+     * The title template which will be used to create a step button.
+     *
+     * @property titleTemplate
+     * @type String
+     * @default "<span class=\"number\">#index#.</span> #title#"
+     * @for defaults
+     **/
+    titleTemplate: "<span class=\"number\">#index#</span> #title#",
+
+    /**
+     * The loading template which will be used to create the loading animation.
+     *
+     * @property loadingTemplate
+     * @type String
+     * @default "<span class=\"spinner\"></span> #text#"
+     * @for defaults
+     **/
+    loadingTemplate: "<span class=\"spinner\"></span> #text#",
+
+    /*
+     * Behaviour
+     */
+
+    /**
+     * Sets the focus to the first wizard instance in order to enable the key navigation from the begining if `true`. 
+     *
+     * @property autoFocus
+     * @type Boolean
+     * @default false
+     * @for defaults
+     * @since 0.9.4
+     **/
+    autoFocus: false,
+
+    /**
+     * Enables all steps from the begining if `true` (all steps are clickable).
+     *
+     * @property enableAllSteps
+     * @type Boolean
+     * @default false
+     * @for defaults
+     **/
+    enableAllSteps: false,
+
+    /**
+     * Enables keyboard navigation if `true` (arrow left and arrow right).
+     *
+     * @property enableKeyNavigation
+     * @type Boolean
+     * @default true
+     * @for defaults
+     **/
+    enableKeyNavigation: true,
+
+    /**
+     * Enables pagination if `true`.
+     *
+     * @property enablePagination
+     * @type Boolean
+     * @default true
+     * @for defaults
+     **/
+    enablePagination: true,
+
+    /**
+     * Suppresses pagination if a form field is focused.
+     *
+     * @property suppressPaginationOnFocus
+     * @type Boolean
+     * @default true
+     * @for defaults
+     **/
+    suppressPaginationOnFocus: true,
+
+    /**
+     * Enables cache for async loaded or iframe embedded content.
+     *
+     * @property enableContentCache
+     * @type Boolean
+     * @default true
+     * @for defaults
+     **/
+    enableContentCache: true,
+
+    /**
+     * Shows the cancel button if enabled.
+     *
+     * @property enableCancelButton
+     * @type Boolean
+     * @default false
+     * @for defaults
+     **/
+    enableCancelButton: false,
+
+    /**
+     * Shows the finish button if enabled.
+     *
+     * @property enableFinishButton
+     * @type Boolean
+     * @default true
+     * @for defaults
+     **/
+    enableFinishButton: true,
+
+    /**
+     * Not yet implemented.
+     *
+     * @property preloadContent
+     * @type Boolean
+     * @default false
+     * @for defaults
+     **/
+    preloadContent: false,
+
+    /**
+     * Shows the finish button always (on each step; right beside the next button) if `true`. 
+     * Otherwise the next button will be replaced by the finish button if the last step becomes active.
+     *
+     * @property showFinishButtonAlways
+     * @type Boolean
+     * @default false
+     * @for defaults
+     **/
+    showFinishButtonAlways: false,
+
+    /**
+     * Prevents jumping to a previous step.
+     *
+     * @property forceMoveForward
+     * @type Boolean
+     * @default false
+     * @for defaults
+     **/
+    forceMoveForward: false,
+
+    /**
+     * Saves the current state (step position) to a cookie.
+     * By coming next time the last active step becomes activated.
+     *
+     * @property saveState
+     * @type Boolean
+     * @default false
+     * @for defaults
+     **/
+    saveState: false,
+
+    /**
+     * The position to start on (zero-based).
+     *
+     * @property startIndex
+     * @type Integer
+     * @default 0
+     * @for defaults
+     **/
+    startIndex: 0,
+
+    /*
+     * Animation Effect Configuration
+     */
+
+    /**
+     * The animation effect which will be used for step transitions.
+     *
+     * @property transitionEffect
+     * @type transitionEffect
+     * @default none
+     * @for defaults
+     **/
+    transitionEffect: transitionEffect.none,
+
+    /**
+     * Animation speed for step transitions (in milliseconds).
+     *
+     * @property transitionEffectSpeed
+     * @type Integer
+     * @default 200
+     * @for defaults
+     **/
+    transitionEffectSpeed: 200,
+
+    /*
+     * Events
+     */
+
+    /**
+     * Fires before the step changes and can be used to prevent step changing by returning `false`. 
+     * Very useful for form validation. 
+     *
+     * @property onStepChanging
+     * @type Event
+     * @default function (event, currentIndex, newIndex) { return true; }
+     * @for defaults
+     **/
+    onStepChanging: function (event, currentIndex, newIndex) { return true; },
+
+    /**
+     * Fires after the step has change. 
+     *
+     * @property onStepChanged
+     * @type Event
+     * @default function (event, currentIndex, priorIndex) { }
+     * @for defaults
+     **/
+    onStepChanged: function (event, currentIndex, priorIndex) { },
+
+    /**
+     * Fires after cancelation. 
+     *
+     * @property onCanceled
+     * @type Event
+     * @default function (event) { }
+     * @for defaults
+     **/
+    onCanceled: function (event) { },
+
+    /**
+     * Fires before finishing and can be used to prevent completion by returning `false`. 
+     * Very useful for form validation. 
+     *
+     * @property onFinishing
+     * @type Event
+     * @default function (event, currentIndex) { return true; }
+     * @for defaults
+     **/
+    onFinishing: function (event, currentIndex) { return true; },
+
+    /**
+     * Fires after completion. 
+     *
+     * @property onFinished
+     * @type Event
+     * @default function (event, currentIndex) { }
+     * @for defaults
+     **/
+    onFinished: function (event, currentIndex) { },
+
+    /**
+     * Fires after async content is loaded. 
+     *
+     * @property onContentLoaded
+     * @type Event
+     * @default function (event, index) { }
+     * @for defaults
+     **/
+    onContentLoaded: function (event, currentIndex) { },
+
+    /**
+     * Fires when the wizard is initialized. 
+     *
+     * @property onInit
+     * @type Event
+     * @default function (event) { }
+     * @for defaults
+     **/
+    onInit: function (event, currentIndex) { },
+
+    /**
+     * Contains all labels. 
+     *
+     * @property labels
+     * @type Object
+     * @for defaults
+     **/
+    labels: {
+        /**
+         * Label for the cancel button.
+         *
+         * @property cancel
+         * @type String
+         * @default "Cancel"
+         * @for defaults
+         **/
+        cancel: "Cancel",
+
+        /**
+         * This label is important for accessability reasons.
+         * Indicates which step is activated.
+         *
+         * @property current
+         * @type String
+         * @default "current step:"
+         * @for defaults
+         **/
+        current: "current step:",
+
+        /**
+         * This label is important for accessability reasons and describes the kind of navigation.
+         *
+         * @property pagination
+         * @type String
+         * @default "Pagination"
+         * @for defaults
+         * @since 0.9.7
+         **/
+        pagination: "Pagination",
+
+        /**
+         * Label for the finish button.
+         *
+         * @property finish
+         * @type String
+         * @default "Finish"
+         * @for defaults
+         **/
+        finish: "Finish",
+
+        /**
+         * Label for the next button.
+         *
+         * @property next
+         * @type String
+         * @default "Next"
+         * @for defaults
+         **/
+        next: "Next",
+
+        /**
+         * Label for the previous button.
+         *
+         * @property previous
+         * @type String
+         * @default "Previous"
+         * @for defaults
+         **/
+        previous: "Previous",
+
+        /**
+         * Label for the loading animation.
+         *
+         * @property loading
+         * @type String
+         * @default "Loading ..."
+         * @for defaults
+         **/
+        loading: "Loading ..."
+    }
+};
+})(jQuery);
 
 ;(function(){
 
@@ -87438,13 +89480,13 @@ return FC; // export for Node/CommonJS
     "use strict";
 
     function renderSprite() {
-        var sprite = "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" id=\"icon-ei-sprite\" style=\"display:none\"><symbol id='icon-ei-archive-icon' viewBox='0 0 50 50'><path d=\"M42 20h-2v-5c0-.6-.4-1-1-1H11c-.6 0-1 .4-1 1v5H8v-5c0-1.7 1.3-3 3-3h28c1.7 0 3 1.3 3 3v5z\"></path><path d=\"M37 40H13c-1.7 0-3-1.3-3-3V20h2v17c0 .6.4 1 1 1h24c.6 0 1-.4 1-1V20h2v17c0 1.7-1.3 3-3 3z\"></path><path d=\"M29 26h-8c-.6 0-1-.4-1-1s.4-1 1-1h8c.6 0 1 .4 1 1s-.4 1-1 1z\"></path><path d=\"M8 18h34v2H8z\"></path></symbol><symbol id='icon-ei-arrow-down-icon' viewBox='0 0 50 50'><path d=\"M25 42c-9.4 0-17-7.6-17-17S15.6 8 25 8s17 7.6 17 17-7.6 17-17 17zm0-32c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 15-15-6.7-15-15-15z\"></path><path d=\"M25 34.4l-9.7-9.7 1.4-1.4 8.3 8.3 8.3-8.3 1.4 1.4z\"></path><path d=\"M24 16h2v17h-2z\"></path></symbol><symbol id='icon-ei-arrow-left-icon' viewBox='0 0 50 50'><path d=\"M25 42c-9.4 0-17-7.6-17-17S15.6 8 25 8s17 7.6 17 17-7.6 17-17 17zm0-32c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 15-15-6.7-15-15-15z\"></path><path d=\"M25.3 34.7L15.6 25l9.7-9.7 1.4 1.4-8.3 8.3 8.3 8.3z\"></path><path d=\"M17 24h17v2H17z\"></path></symbol><symbol id='icon-ei-arrow-right-icon' viewBox='0 0 50 50'><path d=\"M25 42c-9.4 0-17-7.6-17-17S15.6 8 25 8s17 7.6 17 17-7.6 17-17 17zm0-32c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 15-15-6.7-15-15-15z\"></path><path d=\"M24.7 34.7l-1.4-1.4 8.3-8.3-8.3-8.3 1.4-1.4 9.7 9.7z\"></path><path d=\"M16 24h17v2H16z\"></path></symbol><symbol id='icon-ei-arrow-up-icon' viewBox='0 0 50 50'><path d=\"M25 42c-9.4 0-17-7.6-17-17S15.6 8 25 8s17 7.6 17 17-7.6 17-17 17zm0-32c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 15-15-6.7-15-15-15z\"></path><path d=\"M33.3 26.7L25 18.4l-8.3 8.3-1.4-1.4 9.7-9.7 9.7 9.7z\"></path><path d=\"M24 17h2v17h-2z\"></path></symbol><symbol id='icon-ei-bell-icon' viewBox='0 0 50 50'><path d=\"M42 36c-6.5 0-7.4-6.3-8.2-11.9C32.9 17.9 32.1 12 25 12s-7.9 5.9-8.8 12.1C15.4 29.7 14.5 36 8 36v-2c4.6 0 5.3-3.9 6.2-10.1.9-6.2 2-13.9 10.8-13.9s9.9 7.7 10.8 13.9C36.7 30.1 37.4 34 42 34v2z\"></path><path d=\"M25 40c-2.8 0-5-2.2-5-5h2c0 1.7 1.3 3 3 3s3-1.3 3-3h2c0 2.8-2.2 5-5 5z\"></path><path d=\"M8 34h34v2H8z\"></path><path d=\"M27 10c0 1.1-.9 1.5-2 1.5s-2-.4-2-1.5.9-2 2-2 2 .9 2 2z\"></path></symbol><symbol id='icon-ei-calendar-icon' viewBox='0 0 50 50'><path d=\"M37 38H13c-1.7 0-3-1.3-3-3V13c0-1.7 1.1-3 2.5-3H14v2h-1.5c-.2 0-.5.4-.5 1v22c0 .6.4 1 1 1h24c.6 0 1-.4 1-1V13c0-.6-.3-1-.5-1H36v-2h1.5c1.4 0 2.5 1.3 2.5 3v22c0 1.7-1.3 3-3 3z\"></path><path d=\"M17 14c-.6 0-1-.4-1-1V9c0-.6.4-1 1-1s1 .4 1 1v4c0 .6-.4 1-1 1z\"></path><path d=\"M33 14c-.6 0-1-.4-1-1V9c0-.6.4-1 1-1s1 .4 1 1v4c0 .6-.4 1-1 1z\"></path><path d=\"M20 10h10v2H20z\"></path><path d=\"M12 16h26v2H12z\"></path><path d=\"M34 20h2v2h-2z\"></path><path d=\"M30 20h2v2h-2z\"></path><path d=\"M26 20h2v2h-2z\"></path><path d=\"M22 20h2v2h-2z\"></path><path d=\"M18 20h2v2h-2z\"></path><path d=\"M34 24h2v2h-2z\"></path><path d=\"M30 24h2v2h-2z\"></path><path d=\"M26 24h2v2h-2z\"></path><path d=\"M22 24h2v2h-2z\"></path><path d=\"M18 24h2v2h-2z\"></path><path d=\"M14 24h2v2h-2z\"></path><path d=\"M34 28h2v2h-2z\"></path><path d=\"M30 28h2v2h-2z\"></path><path d=\"M26 28h2v2h-2z\"></path><path d=\"M22 28h2v2h-2z\"></path><path d=\"M18 28h2v2h-2z\"></path><path d=\"M14 28h2v2h-2z\"></path><path d=\"M30 32h2v2h-2z\"></path><path d=\"M26 32h2v2h-2z\"></path><path d=\"M22 32h2v2h-2z\"></path><path d=\"M18 32h2v2h-2z\"></path><path d=\"M14 32h2v2h-2z\"></path></symbol><symbol id='icon-ei-camera-icon' viewBox='0 0 50 50'><path d=\"M39 38H11c-1.7 0-3-1.3-3-3V17c0-1.7 1.3-3 3-3h6c.2 0 .5-.2.6-.3l1.1-2.2c.4-.8 1.4-1.4 2.3-1.4h8c.9 0 1.9.6 2.3 1.4l1.1 2.2c.1.2.4.3.6.3h6c1.7 0 3 1.3 3 3v18c0 1.7-1.3 3-3 3zM11 16c-.6 0-1 .4-1 1v18c0 .6.4 1 1 1h28c.6 0 1-.4 1-1V17c0-.6-.4-1-1-1h-6c-.9 0-1.9-.6-2.3-1.4l-1.1-2.2c-.1-.2-.4-.4-.6-.4h-8c-.2 0-.5.2-.6.3l-1.1 2.2c-.4.9-1.4 1.5-2.3 1.5h-6z\"></path><path d=\"M25 34c-5 0-9-4-9-9s4-9 9-9 9 4 9 9-4 9-9 9zm0-16c-3.9 0-7 3.1-7 7s3.1 7 7 7 7-3.1 7-7-3.1-7-7-7z\"></path><circle cx=\"35\" cy=\"18\" r=\"1\"></circle><path d=\"M12 12h4v1h-4z\"></path><path d=\"M25 21v-1c-2.8 0-5 2.2-5 5h1c0-2.2 1.8-4 4-4z\"></path></symbol><symbol id='icon-ei-cart-icon' viewBox='0 0 50 50'><path d=\"M35 34H13c-.3 0-.6-.2-.8-.4s-.2-.6-.1-.9l1.9-4.8L12.1 10H6V8h7c.5 0 .9.4 1 .9l2 19c0 .2 0 .3-.1.5L14.5 32H36l-1 2z\"></path><path d=\"M15.2 29l-.4-2L38 22.2V14H14v-2h25c.6 0 1 .4 1 1v10c0 .5-.3.9-.8 1l-24 5z\"></path><path d=\"M36 40c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4zm0-6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z\"></path><path d=\"M12 40c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4zm0-6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z\"></path></symbol><symbol id='icon-ei-chart-icon' viewBox='0 0 50 50'><path d=\"M18 36h-2V26h-4v10h-2V24h8z\"></path><path d=\"M28 36h-2V20h-4v16h-2V18h8z\"></path><path d=\"M38 36h-2V14h-4v22h-2V12h8z\"></path><path d=\"M8 36h32v2H8z\"></path></symbol><symbol id='icon-ei-check-icon' viewBox='0 0 50 50'><path d=\"M25 42c-9.4 0-17-7.6-17-17S15.6 8 25 8s17 7.6 17 17-7.6 17-17 17zm0-32c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 15-15-6.7-15-15-15z\"></path><path d=\"M23 32.4l-8.7-8.7 1.4-1.4 7.3 7.3 11.3-11.3 1.4 1.4z\"></path></symbol><symbol id='icon-ei-chevron-down-icon' viewBox='0 0 50 50'><path d=\"M25 32.4l-9.7-9.7 1.4-1.4 8.3 8.3 8.3-8.3 1.4 1.4z\"></path></symbol><symbol id='icon-ei-chevron-left-icon' viewBox='0 0 50 50'><path d=\"M27.3 34.7L17.6 25l9.7-9.7 1.4 1.4-8.3 8.3 8.3 8.3z\"></path></symbol><symbol id='icon-ei-chevron-right-icon' viewBox='0 0 50 50'><path d=\"M22.7 34.7l-1.4-1.4 8.3-8.3-8.3-8.3 1.4-1.4 9.7 9.7z\"></path></symbol><symbol id='icon-ei-chevron-up-icon' viewBox='0 0 50 50'><path d=\"M33.3 28.7L25 20.4l-8.3 8.3-1.4-1.4 9.7-9.7 9.7 9.7z\"></path></symbol><symbol id='icon-ei-clock-icon' viewBox='0 0 50 50'><path d=\"M25 42c-9.4 0-17-7.6-17-17S15.6 8 25 8s17 7.6 17 17-7.6 17-17 17zm0-32c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 15-15-6.7-15-15-15z\"></path><path d=\"M30.3 33.7L24 27.4V16h2v10.6l5.7 5.7z\"></path></symbol><symbol id='icon-ei-close-o-icon' viewBox='0 0 50 50'><path d=\"M25 42c-9.4 0-17-7.6-17-17S15.6 8 25 8s17 7.6 17 17-7.6 17-17 17zm0-32c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 15-15-6.7-15-15-15z\"></path><path d=\"M32.283 16.302l1.414 1.415-15.98 15.98-1.414-1.414z\"></path><path d=\"M17.717 16.302l15.98 15.98-1.414 1.415-15.98-15.98z\"></path></symbol><symbol id='icon-ei-close-icon' viewBox='0 0 50 50'><path d=\"M37.304 11.282l1.414 1.414-26.022 26.02-1.414-1.413z\"></path><path d=\"M12.696 11.282l26.022 26.02-1.414 1.415-26.022-26.02z\"></path></symbol><symbol id='icon-ei-comment-icon' viewBox='0 0 50 50'><path d=\"M15 42h-2l1.2-1.6c.8-1.1 1.3-2.5 1.6-4.2C10.8 33.9 8 29.6 8 24c0-8.6 6.5-14 17-14s17 5.4 17 14c0 8.8-6.4 14-17 14h-.7c-1.6 1.9-4.4 4-9.3 4zm10-30c-9.4 0-15 4.5-15 12 0 6.4 3.9 9.4 7.2 10.7l.7.3-.1.8c-.2 1.6-.5 3-1.1 4.2 3.3-.4 5.2-2.1 6.3-3.5l.3-.4H25c13.5 0 15-8.4 15-12C40 16.5 34.4 12 25 12z\"></path></symbol><symbol id='icon-ei-credit-card-icon' viewBox='0 0 50 50'><path d=\"M39 38H11c-1.7 0-3-1.3-3-3V15c0-1.7 1.3-3 3-3h28c1.7 0 3 1.3 3 3v20c0 1.7-1.3 3-3 3zM11 14c-.6 0-1 .4-1 1v20c0 .6.4 1 1 1h28c.6 0 1-.4 1-1V15c0-.6-.4-1-1-1H11z\"></path><path d=\"M9 16h32v6H9z\"></path><path d=\"M12 26h1v2h-1z\"></path><path d=\"M14 26h1v2h-1z\"></path><path d=\"M16 26h1v2h-1z\"></path><path d=\"M19 26h1v2h-1z\"></path><path d=\"M21 26h1v2h-1z\"></path><path d=\"M23 26h1v2h-1z\"></path><path d=\"M26 26h1v2h-1z\"></path><path d=\"M28 26h1v2h-1z\"></path><path d=\"M30 26h1v2h-1z\"></path><path d=\"M33 26h1v2h-1z\"></path><path d=\"M35 26h1v2h-1z\"></path><path d=\"M37 26h1v2h-1z\"></path></symbol><symbol id='icon-ei-envelope-icon' viewBox='0 0 50 50'><path opacity=\".9\" d=\"M31.796 24.244l9.97 9.97-1.415 1.414-9.97-9.97z\"></path><path opacity=\".9\" d=\"M18.278 24.287l1.414 1.414-9.9 9.9-1.414-1.41z\"></path><path d=\"M25 29.9c-1.5 0-3.1-.6-4.2-1.8L8.3 15.7l1.4-1.4 12.5 12.5c1.6 1.6 4.1 1.6 5.7 0l12.5-12.5 1.4 1.4-12.6 12.5c-1.1 1.1-2.7 1.7-4.2 1.7z\"></path><path d=\"M39 38H11c-1.7 0-3-1.3-3-3V15c0-1.7 1.3-3 3-3h28c1.7 0 3 1.3 3 3v20c0 1.7-1.3 3-3 3zM11 14c-.6 0-1 .4-1 1v20c0 .6.4 1 1 1h28c.6 0 1-.4 1-1V15c0-.6-.4-1-1-1H11z\"></path></symbol><symbol id='icon-ei-exclamation-icon' viewBox='0 0 50 50'><path d=\"M25 42c-9.4 0-17-7.6-17-17S15.6 8 25 8s17 7.6 17 17-7.6 17-17 17zm0-32c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 15-15-6.7-15-15-15z\"></path><path d=\"M24 32h2v2h-2z\"></path><path d=\"M25.6 30h-1.2l-.4-8v-6h2v6z\"></path></symbol><symbol id='icon-ei-external-link-icon' viewBox='0 0 50 50'><path d=\"M38.288 10.297l1.414 1.415-14.99 14.99-1.414-1.414z\"></path><path d=\"M40 20h-2v-8h-8v-2h10z\"></path><path d=\"M35 38H15c-1.7 0-3-1.3-3-3V15c0-1.7 1.3-3 3-3h11v2H15c-.6 0-1 .4-1 1v20c0 .6.4 1 1 1h20c.6 0 1-.4 1-1V24h2v11c0 1.7-1.3 3-3 3z\"></path></symbol><symbol id='icon-ei-eye-icon' viewBox='0 0 50 50'><path d=\"M25 36C13.5 36 8.3 25.9 8.1 25.4c-.1-.3-.1-.6 0-.9C8.3 24.1 13.5 14 25 14s16.7 10.1 16.9 10.6c.1.3.1.6 0 .9-.2.4-5.4 10.5-16.9 10.5zM10.1 25c1.1 1.9 5.9 9 14.9 9s13.7-7.1 14.9-9c-1.1-1.9-5.9-9-14.9-9s-13.7 7.1-14.9 9z\"></path><path d=\"M25 34c-5 0-9-4-9-9s4-9 9-9 9 4 9 9-4 9-9 9zm0-16c-3.9 0-7 3.1-7 7s3.1 7 7 7 7-3.1 7-7-3.1-7-7-7z\"></path><path d=\"M25 30c-2.8 0-5-2.2-5-5 0-.6.4-1 1-1s1 .4 1 1c0 1.7 1.3 3 3 3s3-1.3 3-3-1.3-3-3-3c-.6 0-1-.4-1-1s.4-1 1-1c2.8 0 5 2.2 5 5s-2.2 5-5 5z\"></path></symbol><symbol id='icon-ei-gear-icon' viewBox='0 0 50 50'><path d=\"M25 34c-5 0-9-4-9-9s4-9 9-9 9 4 9 9-4 9-9 9zm0-16c-3.9 0-7 3.1-7 7s3.1 7 7 7 7-3.1 7-7-3.1-7-7-7z\"></path><path d=\"M27.7 44h-5.4l-1.5-4.6c-1-.3-2-.7-2.9-1.2l-4.4 2.2-3.8-3.8 2.2-4.4c-.5-.9-.9-1.9-1.2-2.9L6 27.7v-5.4l4.6-1.5c.3-1 .7-2 1.2-2.9l-2.2-4.4 3.8-3.8 4.4 2.2c.9-.5 1.9-.9 2.9-1.2L22.3 6h5.4l1.5 4.6c1 .3 2 .7 2.9 1.2l4.4-2.2 3.8 3.8-2.2 4.4c.5.9.9 1.9 1.2 2.9l4.6 1.5v5.4l-4.6 1.5c-.3 1-.7 2-1.2 2.9l2.2 4.4-3.8 3.8-4.4-2.2c-.9.5-1.9.9-2.9 1.2L27.7 44zm-4-2h2.6l1.4-4.3.5-.1c1.2-.3 2.3-.8 3.4-1.4l.5-.3 4 2 1.8-1.8-2-4 .3-.5c.6-1 1.1-2.2 1.4-3.4l.1-.5 4.3-1.4v-2.6l-4.3-1.4-.1-.5c-.3-1.2-.8-2.3-1.4-3.4l-.3-.5 2-4-1.8-1.8-4 2-.5-.3c-1.1-.6-2.2-1.1-3.4-1.4l-.5-.1L26.3 8h-2.6l-1.4 4.3-.5.1c-1.2.3-2.3.8-3.4 1.4l-.5.3-4-2-1.8 1.8 2 4-.3.5c-.6 1-1.1 2.2-1.4 3.4l-.1.5L8 23.7v2.6l4.3 1.4.1.5c.3 1.2.8 2.3 1.4 3.4l.3.5-2 4 1.8 1.8 4-2 .5.3c1.1.6 2.2 1.1 3.4 1.4l.5.1 1.4 4.3z\"></path></symbol><symbol id='icon-ei-heart-icon' viewBox='0 0 50 50'><path d=\"M25 39.7l-.6-.5C11.5 28.7 8 25 8 19c0-5 4-9 9-9 4.1 0 6.4 2.3 8 4.1 1.6-1.8 3.9-4.1 8-4.1 5 0 9 4 9 9 0 6-3.5 9.7-16.4 20.2l-.6.5zM17 12c-3.9 0-7 3.1-7 7 0 5.1 3.2 8.5 15 18.1 11.8-9.6 15-13 15-18.1 0-3.9-3.1-7-7-7-3.5 0-5.4 2.1-6.9 3.8L25 17.1l-1.1-1.3C22.4 14.1 20.5 12 17 12z\"></path></symbol><symbol id='icon-ei-image-icon' viewBox='0 0 50 50'><path d=\"M39 38H11c-1.7 0-3-1.3-3-3V15c0-1.7 1.3-3 3-3h28c1.7 0 3 1.3 3 3v20c0 1.7-1.3 3-3 3zM11 14c-.6 0-1 .4-1 1v20c0 .6.4 1 1 1h28c.6 0 1-.4 1-1V15c0-.6-.4-1-1-1H11z\"></path><path d=\"M30 24c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4zm0-6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z\"></path><path d=\"M35.3 37.7L19 22.4 9.7 31l-1.4-1.4 10.7-10 17.7 16.7z\"></path><path d=\"M40.4 32.7L35 28.3 30.5 32l-1.3-1.6 5.8-4.7 6.6 5.4z\"></path></symbol><symbol id='icon-ei-like-icon' viewBox='0 0 50 50'><path d=\"M40 23.2c0-2.1-1.7-3.2-4-3.2h-6.7c.5-1.8.7-3.5.7-5 0-5.8-1.6-7-3-7-.9 0-1.6.1-2.5.6-.3.2-.4.4-.5.7l-1 5.4c-1.1 2.8-3.8 5.3-6 7V36c.8 0 1.6.4 2.6.9 1.1.5 2.2 1.1 3.4 1.1h9.5c2 0 3.5-1.6 3.5-3 0-.3 0-.5-.1-.7 1.2-.5 2.1-1.5 2.1-2.8 0-.6-.1-1.1-.3-1.6.8-.5 1.5-1.4 1.5-2.4 0-.6-.3-1.2-.6-1.7.8-.6 1.4-1.6 1.4-2.6zm-2.1 0c0 1.3-1.3 1.4-1.5 2-.2.7.8.9.8 2.1 0 1.2-1.5 1.2-1.7 1.9-.2.8.5 1 .5 2.2v.2c-.2 1-1.7 1.1-2 1.5-.3.5 0 .7 0 1.8 0 .6-.7 1-1.5 1H23c-.8 0-1.6-.4-2.6-.9-.8-.4-1.6-.8-2.4-1V23.5c2.5-1.9 5.7-4.7 6.9-8.2v-.2l.9-5c.4-.1.7-.1 1.2-.1.2 0 1 1.2 1 5 0 1.5-.3 3.1-.8 5H27c-.6 0-1 .4-1 1s.4 1 1 1h9c1 0 1.9.5 1.9 1.2z\"></path><path d=\"M16 38h-6c-1.1 0-2-.9-2-2V22c0-1.1.9-2 2-2h6c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2zm-6-16v14h6V22h-6z\"></path></symbol><symbol id='icon-ei-link-icon' viewBox='0 0 50 50'><path d=\"M24 30.2c0 .2.1.5.1.8 0 1.4-.5 2.6-1.5 3.6l-2 2c-1 1-2.2 1.5-3.6 1.5-2.8 0-5.1-2.3-5.1-5.1 0-1.4.5-2.6 1.5-3.6l2-2c1-1 2.2-1.5 3.6-1.5.3 0 .5 0 .8.1l1.5-1.5c-.7-.3-1.5-.4-2.3-.4-1.9 0-3.6.7-4.9 2l-2 2c-1.3 1.3-2 3-2 4.9 0 3.8 3.1 6.9 6.9 6.9 1.9 0 3.6-.7 4.9-2l2-2c1.3-1.3 2-3 2-4.9 0-.8-.1-1.6-.4-2.3L24 30.2z\"></path><path d=\"M33 10.1c-1.9 0-3.6.7-4.9 2l-2 2c-1.3 1.3-2 3-2 4.9 0 .8.1 1.6.4 2.3l1.5-1.5c0-.2-.1-.5-.1-.8 0-1.4.5-2.6 1.5-3.6l2-2c1-1 2.2-1.5 3.6-1.5 2.8 0 5.1 2.3 5.1 5.1 0 1.4-.5 2.6-1.5 3.6l-2 2c-1 1-2.2 1.5-3.6 1.5-.3 0-.5 0-.8-.1l-1.5 1.5c.7.3 1.5.4 2.3.4 1.9 0 3.6-.7 4.9-2l2-2c1.3-1.3 2-3 2-4.9 0-3.8-3.1-6.9-6.9-6.9z\"></path><path d=\"M20 31c-.3 0-.5-.1-.7-.3-.4-.4-.4-1 0-1.4l10-10c.4-.4 1-.4 1.4 0s.4 1 0 1.4l-10 10c-.2.2-.4.3-.7.3z\"></path></symbol><symbol id='icon-ei-location-icon' viewBox='0 0 50 50'><path d=\"M25 42.5l-.8-.9C23.7 41.1 12 27.3 12 19c0-7.2 5.8-13 13-13s13 5.8 13 13c0 8.3-11.7 22.1-12.2 22.7l-.8.8zM25 8c-6.1 0-11 4.9-11 11 0 6.4 8.4 17.2 11 20.4 2.6-3.2 11-14 11-20.4 0-6.1-4.9-11-11-11z\"></path><path d=\"M25 24c-2.8 0-5-2.2-5-5s2.2-5 5-5 5 2.2 5 5-2.2 5-5 5zm0-8c-1.7 0-3 1.3-3 3s1.3 3 3 3 3-1.3 3-3-1.3-3-3-3z\"></path></symbol><symbol id='icon-ei-lock-icon' viewBox='0 0 50 50'><path d=\"M34 23h-2v-4c0-3.9-3.1-7-7-7s-7 3.1-7 7v4h-2v-4c0-5 4-9 9-9s9 4 9 9v4z\"></path><path d=\"M33 40H17c-1.7 0-3-1.3-3-3V25c0-1.7 1.3-3 3-3h16c1.7 0 3 1.3 3 3v12c0 1.7-1.3 3-3 3zM17 24c-.6 0-1 .4-1 1v12c0 .6.4 1 1 1h16c.6 0 1-.4 1-1V25c0-.6-.4-1-1-1H17z\"></path><circle cx=\"25\" cy=\"28\" r=\"2\"></circle><path d=\"M25.5 28h-1l-1 6h3z\"></path></symbol><symbol id='icon-ei-minus-icon' viewBox='0 0 50 50'><path d=\"M25 42c-9.4 0-17-7.6-17-17S15.6 8 25 8s17 7.6 17 17-7.6 17-17 17zm0-32c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 15-15-6.7-15-15-15z\"></path><path d=\"M16 24h18v2H16z\"></path></symbol><symbol id='icon-ei-navicon-icon' viewBox='0 0 50 50'><path d=\"M10 12h30v4H10z\"></path><path d=\"M10 22h30v4H10z\"></path><path d=\"M10 32h30v4H10z\"></path></symbol><symbol id='icon-ei-paperclip-icon' viewBox='0 0 50 50'><path d=\"M13.8 39.6c-1.5 0-3.1-.6-4.2-1.8-2.3-2.3-2.3-6.1 0-8.5l17-17c3.1-3.1 8.2-3.1 11.3 0 3.1 3.1 3.1 8.2 0 11.3L25.1 36.4 23.7 35l12.7-12.7c2.3-2.3 2.3-6.1 0-8.5-2.3-2.3-6.1-2.3-8.5 0l-17 17c-.8.8-1.2 1.8-1.2 2.8 0 1.1.4 2.1 1.2 2.8 1.6 1.6 4.1 1.6 5.7 0l12.7-12.7c.8-.8.8-2 0-2.8-.8-.8-2-.8-2.8 0L18 29.3l-1.4-1.4 8.5-8.5c1.6-1.6 4.1-1.6 5.7 0 1.6 1.6 1.6 4.1 0 5.7L18 37.8c-1.1 1.2-2.7 1.8-4.2 1.8z\"></path></symbol><symbol id='icon-ei-pencil-icon' viewBox='0 0 50 50'><path d=\"M9.6 40.4l2.5-9.9L27 15.6l7.4 7.4-14.9 14.9-9.9 2.5zm4.3-8.9l-1.5 6.1 6.1-1.5L31.6 23 27 18.4 13.9 31.5z\"></path><path d=\"M17.8 37.3c-.6-2.5-2.6-4.5-5.1-5.1l.5-1.9c3.2.8 5.7 3.3 6.5 6.5l-1.9.5z\"></path><path d=\"M29.298 19.287l1.414 1.414-13.01 13.02-1.414-1.41z\"></path><path d=\"M11 39l2.9-.7c-.3-1.1-1.1-1.9-2.2-2.2L11 39z\"></path><path d=\"M35 22.4L27.6 15l3-3 .5.1c3.6.5 6.4 3.3 6.9 6.9l.1.5-3.1 2.9zM30.4 15l4.6 4.6.9-.9c-.5-2.3-2.3-4.1-4.6-4.6l-.9.9z\"></path></symbol><symbol id='icon-ei-play-icon' viewBox='0 0 50 50'><path d=\"M25 42c-9.4 0-17-7.6-17-17S15.6 8 25 8s17 7.6 17 17-7.6 17-17 17zm0-32c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 15-15-6.7-15-15-15z\"></path><path d=\"M20 33.7V16.3L35 25l-15 8.7zm2-14v10.5l9-5.3-9-5.2z\"></path></symbol><symbol id='icon-ei-plus-icon' viewBox='0 0 50 50'><path d=\"M25 42c-9.4 0-17-7.6-17-17S15.6 8 25 8s17 7.6 17 17-7.6 17-17 17zm0-32c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 15-15-6.7-15-15-15z\"></path><path d=\"M16 24h18v2H16z\"></path><path d=\"M24 16h2v18h-2z\"></path></symbol><symbol id='icon-ei-pointer-icon' viewBox='0 0 50 50'><path d=\"M33 38H21c-.6 0-1-.4-1-1 0-1.5-.7-2.4-1.8-3.8-.6-.7-1.3-1.6-2-2.7-1.9-3-3.6-6.6-4-7.9-.4-1.3-.1-2.2.3-2.7.4-.6 1.2-.9 2.1-.9 1.2 0 2.4 1 3.5 2.3V11c0-1.7 1.3-3 3-3s3 1.3 3 3v4.2c.3-.1.6-.2 1-.2 1.1 0 2 .6 2.5 1.4.4-.3.9-.4 1.4-.4 1.4 0 2.5.9 2.9 2.2.3-.1.7-.2 1.1-.2 1.7 0 3 1.3 3 3v3c0 2.6-.5 4.7-1 6.7s-1 3.9-1 6.3c0 .6-.4 1-1 1zm-11.1-2H32c.1-2.2.6-4 1-5.8.5-2 1-3.9 1-6.2v-3c0-.6-.4-1-1-1s-1 .4-1 1v1c0 .6-.4 1-1 1s-1-.4-1-1v-3c0-.6-.4-1-1-1s-1 .4-1 1v2c0 .6-.4 1-1 1s-1-.4-1-1v-3c0-.6-.4-1-1-1s-1 .4-1 1v2c0 .6-.4 1-1 1s-1-.4-1-1v-9c0-.6-.4-1-1-1s-1 .4-1 1v15c0 .6-.4 1-1 1s-1-.4-1-1v-.8c-.9-2.3-2.8-4.2-3.5-4.2-.2 0-.4 0-.5.1-.1.1-.1.4 0 .9.3 1.1 1.8 4.3 3.8 7.5.6 1 1.2 1.7 1.8 2.5 1.1 1.2 2.1 2.3 2.3 4z\"></path></symbol><symbol id='icon-ei-question-icon' viewBox='0 0 50 50'><path d=\"M25 42c-9.4 0-17-7.6-17-17S15.6 8 25 8s17 7.6 17 17-7.6 17-17 17zm0-32c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 15-15-6.7-15-15-15z\"></path><path d=\"M19.8 19.6c.3-.8.6-1.4 1.2-1.9.5-.5 1.1-.9 1.9-1.2s1.6-.4 2.5-.4c.7 0 1.4.1 2 .3.6.2 1.2.5 1.7.9s.9.9 1.1 1.5c.3.6.4 1.3.4 2 0 1-.2 1.8-.6 2.5s-1 1.3-1.6 2l-1.3 1.3c-.3.3-.6.6-.7.9-.2.3-.3.7-.3 1.1-.1.4-.1.7-.1 1.5h-1.6c0-.8 0-1.1.1-1.7.1-.5.3-1 .5-1.5.2-.4.5-.8.9-1.2.4-.4.9-.8 1.4-1.4.5-.5.9-1 1.2-1.5s.5-1.2.5-1.8c0-.5-.1-1-.3-1.4-.2-.4-.5-.8-.8-1.1-.3-.3-.7-.5-1.2-.7-.5-.2-.9-.3-1.4-.3-.7 0-1.3.1-1.8.4-.5.2-1 .6-1.3 1-.3.4-.6.9-.8 1.5s-.4.9-.4 1.6h-1.6c0-.9.1-1.6.4-2.4zM26 32v2h-2v-2h2z\"></path></symbol><symbol id='icon-ei-redo-icon' viewBox='0 0 50 50'><path d=\"M25 38c-7.2 0-13-5.8-13-13s5.8-13 13-13c5.4 0 10.1 3.4 11.9 8.7l-1.9.7c-1.5-4.6-5.4-7.4-10-7.4-6.1 0-11 4.9-11 11s4.9 11 11 11c4.3 0 8.2-2.5 10-6.4l1.8.8C34.7 35 30.1 38 25 38z\"></path><path d=\"M38 22h-8v-2h6v-6h2z\"></path></symbol><symbol id='icon-ei-refresh-icon' viewBox='0 0 50 50'><path d=\"M25 38c-7.2 0-13-5.8-13-13 0-3.2 1.2-6.2 3.3-8.6l1.5 1.3C15 19.7 14 22.3 14 25c0 6.1 4.9 11 11 11 1.6 0 3.1-.3 4.6-1l.8 1.8c-1.7.8-3.5 1.2-5.4 1.2z\"></path><path d=\"M34.7 33.7l-1.5-1.3c1.8-2 2.8-4.6 2.8-7.3 0-6.1-4.9-11-11-11-1.6 0-3.1.3-4.6 1l-.8-1.8c1.7-.8 3.5-1.2 5.4-1.2 7.2 0 13 5.8 13 13 0 3.1-1.2 6.2-3.3 8.6z\"></path><path d=\"M18 24h-2v-6h-6v-2h8z\"></path><path d=\"M40 34h-8v-8h2v6h6z\"></path></symbol><symbol id='icon-ei-retweet-icon' viewBox='0 0 50 50'><path d=\"M38 35h-2V17c0-.6-.4-1-1-1H18v-2h17c1.7 0 3 1.3 3 3v18z\"></path><path d=\"M37 36.5l-6.8-7.8 1.6-1.4 5.2 6.2 5.2-6.2 1.6 1.4z\"></path><path d=\"M32 36H15c-1.7 0-3-1.3-3-3V15h2v18c0 .6.4 1 1 1h17v2z\"></path><path d=\"M18.2 22.7L13 16.5l-5.2 6.2-1.6-1.4 6.8-7.8 6.8 7.8z\"></path></symbol><symbol id='icon-ei-sc-facebook-icon' viewBox='0 0 50 50'><path d=\"M26 20v-3c0-1.3.3-2 2.4-2H31v-5h-4c-5 0-7 3.3-7 7v3h-4v5h4v15h6V25h4.4l.6-5h-5z\"></path></symbol><symbol id='icon-ei-sc-github-icon' viewBox='0 0 50 50'><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M25 10c-8.3 0-15 6.7-15 15 0 6.6 4.3 12.2 10.3 14.2.8.1 1-.3 1-.7v-2.6c-4.2.9-5.1-2-5.1-2-.7-1.7-1.7-2.2-1.7-2.2-1.4-.9.1-.9.1-.9 1.5.1 2.3 1.5 2.3 1.5 1.3 2.3 3.5 1.6 4.4 1.2.1-1 .5-1.6 1-2-3.3-.4-6.8-1.7-6.8-7.4 0-1.6.6-3 1.5-4-.2-.4-.7-1.9.1-4 0 0 1.3-.4 4.1 1.5 1.2-.3 2.5-.5 3.8-.5 1.3 0 2.6.2 3.8.5 2.9-1.9 4.1-1.5 4.1-1.5.8 2.1.3 3.6.1 4 1 1 1.5 2.4 1.5 4 0 5.8-3.5 7-6.8 7.4.5.5 1 1.4 1 2.8v4.1c0 .4.3.9 1 .7 6-2 10.2-7.6 10.2-14.2C40 16.7 33.3 10 25 10z\"></path></symbol><symbol id='icon-ei-sc-google-plus-icon' viewBox='0 0 50 50'><path d=\"M18 23v4.8h7.9c-.3 2.1-2.4 6-7.9 6-4.8 0-8.7-4-8.7-8.8s3.9-8.8 8.7-8.8c2.7 0 4.5 1.2 5.6 2.2l3.8-3.7C24.9 12.4 21.8 11 18 11c-7.7 0-14 6.3-14 14s6.3 14 14 14c8.1 0 13.4-5.7 13.4-13.7 0-.9-.1-1.6-.2-2.3H18z\"></path><path d=\"M48 23h-4v-4h-4v4h-4v4h4v4h4v-4h4z\"></path></symbol><symbol id='icon-ei-sc-instagram-icon' viewBox='0 0 50 50'><path d=\"M25 12c-3.53 0-3.973.015-5.36.078-1.384.063-2.329.283-3.156.604a6.372 6.372 0 0 0-2.302 1.5 6.372 6.372 0 0 0-1.5 2.303c-.321.826-.54 1.771-.604 3.155C12.015 21.027 12 21.47 12 25c0 3.53.015 3.973.078 5.36.063 1.384.283 2.329.604 3.155.333.855.777 1.58 1.5 2.303a6.372 6.372 0 0 0 2.302 1.5c.827.32 1.772.54 3.156.604 1.387.063 1.83.078 5.36.078 3.53 0 3.973-.015 5.36-.078 1.384-.063 2.329-.283 3.155-.604a6.371 6.371 0 0 0 2.303-1.5 6.372 6.372 0 0 0 1.5-2.303c.32-.826.54-1.771.604-3.155.063-1.387.078-1.83.078-5.36 0-3.53-.015-3.973-.078-5.36-.063-1.384-.283-2.329-.605-3.155a6.372 6.372 0 0 0-1.499-2.303 6.371 6.371 0 0 0-2.303-1.5c-.826-.32-1.771-.54-3.155-.604C28.973 12.015 28.53 12 25 12m0 2.342c3.471 0 3.882.014 5.253.076 1.267.058 1.956.27 2.414.448.607.236 1.04.517 1.495.972.455.455.736.888.972 1.495.178.458.39 1.146.448 2.414.062 1.37.076 1.782.076 5.253s-.014 3.882-.076 5.253c-.058 1.268-.27 1.956-.448 2.414a4.028 4.028 0 0 1-.972 1.495 4.027 4.027 0 0 1-1.495.972c-.458.178-1.147.39-2.414.448-1.37.062-1.782.076-5.253.076s-3.883-.014-5.253-.076c-1.268-.058-1.956-.27-2.414-.448a4.027 4.027 0 0 1-1.495-.972 4.03 4.03 0 0 1-.972-1.495c-.178-.458-.39-1.146-.448-2.414-.062-1.37-.076-1.782-.076-5.253s.014-3.882.076-5.253c.058-1.268.27-1.956.448-2.414.236-.607.517-1.04.972-1.495a4.028 4.028 0 0 1 1.495-.972c.458-.178 1.146-.39 2.414-.448 1.37-.062 1.782-.076 5.253-.076\"></path><path d=\"M25 18a7 7 0 1 0 0 14 7 7 0 0 0 0-14m0 11.5a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9m8.7-11.4a1.6 1.6 0 1 1-3.2 0 1.6 1.6 0 0 1 3.2 0\"></path></symbol><symbol id='icon-ei-sc-linkedin-icon' viewBox='0 0 50 50'><path d=\"M36.1 12H13.9c-1.1 0-1.9.8-1.9 1.9v22.2c0 1 .9 1.9 1.9 1.9h22.2c1.1 0 1.9-.8 1.9-1.9V13.9c0-1.1-.9-1.9-1.9-1.9zM20 34h-4V22h4v12zm-2-13.6c-1.3 0-2.4-1.1-2.4-2.4 0-1.3 1.1-2.4 2.4-2.4 1.3 0 2.4 1.1 2.4 2.4 0 1.3-1.1 2.4-2.4 2.4zM34 34h-4v-6c0-1.6-.4-3.2-2-3.2s-2 1.6-2 3.2v6h-4V22h4v1.4h.2c.5-1 1.8-1.8 3.3-1.8 3.7 0 4.5 2.4 4.5 5.4v7z\"></path></symbol><symbol id='icon-ei-sc-odnoklassniki-icon' viewBox='0 0 50 50'><path d=\"M25 26c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8zm0-12.2c-2.3 0-4.2 1.9-4.2 4.2s1.9 4.2 4.2 4.2 4.2-1.9 4.2-4.2-1.9-4.2-4.2-4.2z\"></path><path d=\"M33.6 26.8c-.7-.9-1.9-1-2.8-.4 0 0-2.2 1.6-5.8 1.6-3.6 0-5.8-1.6-5.8-1.6-.9-.7-2.1-.5-2.8.4-.7.9-.5 2.1.4 2.8.1.1 2.2 1.7 5.7 2.2l-5.3 5.4c-.8.8-.8 2.1 0 2.8.4.4.9.6 1.4.6.5 0 1-.2 1.4-.6l5-5.1 5 5.1c.4.4.9.6 1.4.6.5 0 1-.2 1.4-.6.8-.8.8-2 0-2.8l-5.3-5.4c3.5-.6 5.6-2.2 5.7-2.2.9-.7 1.1-2 .4-2.8z\"></path></symbol><symbol id='icon-ei-sc-pinterest-icon' viewBox='0 0 50 50'><path d=\"M25 10c-8.3 0-15 6.7-15 15 0 6.4 4 11.8 9.5 14-.1-1.2-.2-3 .1-4.3.3-1.2 1.8-7.5 1.8-7.5s-.4-.9-.4-2.2c0-2.1 1.2-3.6 2.7-3.6 1.3 0 1.9 1 1.9 2.1 0 1.3-.8 3.2-1.2 5-.4 1.5.7 2.7 2.2 2.7 2.7 0 4.7-2.8 4.7-6.9 0-3.6-2.6-6.1-6.3-6.1-4.3 0-6.8 3.2-6.8 6.5 0 1.3.5 2.7 1.1 3.4.1.1.1.3.1.4-.1.5-.4 1.5-.4 1.7-.1.3-.2.3-.5.2-1.9-.9-3-3.6-3-5.8 0-4.7 3.4-9.1 9.9-9.1 5.2 0 9.2 3.7 9.2 8.7 0 5.2-3.3 9.3-7.8 9.3-1.5 0-2.9-.8-3.4-1.7 0 0-.8 2.9-.9 3.6-.3 1.3-1.3 2.9-1.9 3.9 1.4.5 2.9.7 4.4.7 8.3 0 15-6.7 15-15s-6.7-15-15-15z\"></path></symbol><symbol id='icon-ei-sc-skype-icon' viewBox='0 0 50 50'><path d=\"M38 27.3c.1-.8.2-1.6.2-2.4 0-1.8-.3-3.5-1-5.1-.7-1.6-1.6-3-2.8-4.2-1.2-1.2-2.6-2.2-4.2-2.8-1.6-.7-3.4-1-5.1-1-.8 0-1.7.1-2.5.2-1.1-.6-2.4-.9-3.7-.9-2.1 0-4.1.8-5.5 2.3-1.5 1.5-2.3 3.4-2.3 5.5 0 1.3.3 2.6 1 3.8-.1.7-.2 1.5-.2 2.3 0 1.8.3 3.5 1 5.1.7 1.6 1.6 3 2.8 4.2 1.2 1.2 2.6 2.2 4.2 2.8 1.6.7 3.4 1 5.1 1 .8 0 1.6-.1 2.3-.2 1.2.7 2.5 1 3.9 1 2.1 0 4.1-.8 5.5-2.3 1.5-1.5 2.3-3.4 2.3-5.5 0-1.3-.3-2.6-1-3.8zM25.1 33c-4.7 0-6.8-2.3-6.8-4 0-.9.7-1.5 1.6-1.5 2 0 1.5 2.9 5.2 2.9 1.9 0 3-1 3-2.1 0-.6-.3-1.4-1.6-1.7l-4.2-1c-3.4-.8-4-2.7-4-4.4 0-3.6 3.3-4.9 6.5-4.9 2.9 0 6.3 1.6 6.3 3.7 0 .9-.8 1.4-1.7 1.4-1.7 0-1.4-2.4-4.9-2.4-1.7 0-2.7.8-2.7 1.9 0 1.1 1.4 1.5 2.5 1.7l3.1.7c3.4.8 4.2 2.7 4.2 4.6.1 2.9-2.1 5.1-6.5 5.1z\"></path></symbol><symbol id='icon-ei-sc-soundcloud-icon' viewBox='0 0 50 50'><path d=\"M40 24h-.2c-.9-4.6-5-8-9.8-8-3.1 0-5.9 1.4-7.7 3.7-.2.3-.3.6-.3 1.2l-.4 9.1.4 5.5c0 .3.3.5.5.5H40c3.3 0 6-2.7 6-6s-2.7-6-6-6z\"></path><path d=\"M18.9 20c-.3 0-.5.2-.5.5l-.8 9v1l.8 5c0 .3.3.5.6.5h.2c.3 0 .5-.2.6-.5l.8-5c0-.3.1-.7 0-1l-.8-9c0-.3-.3-.5-.5-.5h-.4z\"></path><path d=\"M14.9 21c-.3 0-.5.2-.5.5l-.8 8v1l.8 5c0 .3.3.5.6.5h.2c.3 0 .5-.2.6-.5l.8-5c0-.3.1-.7 0-1l-.8-8c0-.3-.3-.5-.5-.5h-.4z\"></path><path d=\"M11 24c-.3 0-.5.2-.6.5l-.8 5v1l.8 5c0 .3.3.5.6.5s.5-.2.6-.5l.8-5v-1l-.8-5c-.1-.3-.3-.5-.6-.5z\"></path><path d=\"M7 23c-.3 0-.5.2-.6.5l-.9 6v1l.8 5c.2.3.4.5.7.5.3 0 .5-.2.6-.5l.8-5c0-.3.1-.7 0-1l-.9-6c0-.3-.2-.5-.5-.5z\"></path><path d=\"M3.3 26c-.3 0-.5.2-.6.5l-.6 3c-.1.3-.1.7 0 1l.6 4c.1.3.3.5.6.5s.5-.2.6-.5l.6-4v-1l-.6-3c-.1-.3-.3-.5-.6-.5z\"></path></symbol><symbol id='icon-ei-sc-telegram-icon' viewBox='0 0 50 50'><path d=\"M37.1 13L9.4 24c-.9.3-.8 1.6.1 1.9l7 2.2 2.8 8.8c.2.7 1.1.9 1.6.4l4.1-3.8 7.8 5.7c.6.4 1.4.1 1.6-.6l5.4-23.2c.3-1.7-1.2-3-2.7-2.4zM20.9 29.8L20 35l-2-7.2L37.5 15 20.9 29.8z\"></path></symbol><symbol id='icon-ei-sc-tumblr-icon' viewBox='0 0 50 50'><path d=\"M30.9 32.4c-.5.2-1.5.5-2.3.5-2.2.1-2.7-1.6-2.7-2.8v-8.7h5.6v-4.2H26V10h-4.1c-.1 0-.2.1-.2.2-.2 2.2-1.3 6-5.5 7.5v3.6H19v9.1c0 3.1 2.3 7.6 8.4 7.5 2.1 0 4.3-.9 4.8-1.6l-1.3-3.9z\"></path></symbol><symbol id='icon-ei-sc-twitter-icon' viewBox='0 0 50 50'><path d=\"M39.2 16.8c-1.1.5-2.2.8-3.5 1 1.2-.8 2.2-1.9 2.7-3.3-1.2.7-2.5 1.2-3.8 1.5-1.1-1.2-2.7-1.9-4.4-1.9-3.3 0-6.1 2.7-6.1 6.1 0 .5.1.9.2 1.4-5-.2-9.5-2.7-12.5-6.3-.5.7-.8 1.7-.8 2.8 0 2.1 1.1 4 2.7 5-1 0-1.9-.3-2.7-.8v.1c0 2.9 2.1 5.4 4.9 5.9-.5.1-1 .2-1.6.2-.4 0-.8 0-1.1-.1.8 2.4 3 4.2 5.7 4.2-2.1 1.6-4.7 2.6-7.5 2.6-.5 0-1 0-1.4-.1 2.4 1.9 5.6 2.9 9 2.9 11.1 0 17.2-9.2 17.2-17.2V20c1.2-.9 2.2-1.9 3-3.2z\"></path></symbol><symbol id='icon-ei-sc-vimeo-icon' viewBox='0 0 50 50'><path d=\"M38 19.6c-.1 2.7-2 6.4-5.6 11.1-3.8 4.9-7 7.4-9.6 7.4-1.6 0-3-1.5-4.1-4.5-.7-2.7-1.5-5.5-2.2-8.2-.8-3-1.7-4.5-2.7-4.5-.2 0-.9.4-2.2 1.3l-1.3-1.7c1.4-1.2 2.7-2.4 4-3.6 1.8-1.6 3.2-2.4 4.1-2.5 2.2-.2 3.5 1.3 4 4.4.5 3.4.9 5.5 1.1 6.4.6 2.8 1.3 4.2 2.1 4.2.6 0 1.5-.9 2.6-2.8 1.2-1.8 1.8-3.2 1.9-4.2.2-1.6-.5-2.4-1.9-2.4-.7 0-1.3.2-2 .5 1.4-4.5 4-6.6 7.8-6.5 2.8.1 4.2 1.9 4 5.6z\"></path></symbol><symbol id='icon-ei-sc-vk-icon' viewBox='0 0 50 50'><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M25.1 35.9h2s.6-.1.9-.4c.3-.3.3-.9.3-.9s0-2.6 1.2-3c1.2-.4 2.8 2.6 4.4 3.7 1.2.9 2.1.7 2.1.7l4.4-.1s2.3-.1 1.2-2c-.1-.1-.6-1.3-3.3-3.8-2.8-2.6-2.4-2.1.9-6.6 2-2.7 2.8-4.3 2.6-5.1-.2-.7-1.7-.5-1.7-.5h-5s-.4-.1-.6.1c-.3.2-.4.5-.4.5s-.8 2.1-1.8 3.9c-2.2 3.7-3.1 3.9-3.4 3.7-.8-.5-.6-2.2-.6-3.3 0-3.6.6-5.1-1.1-5.5-.5-.1-.9-.2-2.3-.2-1.8 0-3.3 0-4.1.4-.6.3-1 .9-.7.9.3 0 1.1.2 1.5.7.4.9.4 2.4.4 2.4s.3 4.3-.7 4.8c-.7.4-1.6-.4-3.6-3.8-1-1.7-1.8-3.7-1.8-3.7s-.1-.4-.4-.6c-.3-.2-.8-.3-.8-.3H10s-.7 0-1 .3c-.2.3 0 .8 0 .8s3.7 8.6 7.9 13c3.9 4.2 8.2 3.9 8.2 3.9z\"></path></symbol><symbol id='icon-ei-sc-youtube-icon' viewBox='0 0 50 50'><path d=\"M39.7 18.6s-.3-2.1-1.2-3c-1.1-1.2-2.4-1.2-3-1.3C31.3 14 25 14 25 14s-6.3 0-10.5.3c-.6.1-1.9.1-3 1.3-.9.9-1.2 3-1.2 3S10 21 10 23.4v2.2c0 2.4.3 4.9.3 4.9s.3 2.1 1.2 3c1.1 1.2 2.6 1.2 3.3 1.3 2.4.1 10.2.2 10.2.2s6.3 0 10.5-.3c.6-.1 1.9-.1 3-1.3.9-.9 1.2-3 1.2-3s.3-2.4.3-4.8v-2.2c0-2.4-.3-4.8-.3-4.8zm-17.8 9.8V20l8.1 4.2-8.1 4.2z\"></path></symbol><symbol id='icon-ei-search-icon' viewBox='0 0 50 50'><path d=\"M23 36c-7.2 0-13-5.8-13-13s5.8-13 13-13 13 5.8 13 13-5.8 13-13 13zm0-24c-6.1 0-11 4.9-11 11s4.9 11 11 11 11-4.9 11-11-4.9-11-11-11z\"></path><path d=\"M32.682 31.267l8.98 8.98-1.414 1.414-8.98-8.98z\"></path></symbol><symbol id='icon-ei-share-apple-icon' viewBox='0 0 50 50'><path d=\"M30.3 13.7L25 8.4l-5.3 5.3-1.4-1.4L25 5.6l6.7 6.7z\"></path><path d=\"M24 7h2v21h-2z\"></path><path d=\"M35 40H15c-1.7 0-3-1.3-3-3V19c0-1.7 1.3-3 3-3h7v2h-7c-.6 0-1 .4-1 1v18c0 .6.4 1 1 1h20c.6 0 1-.4 1-1V19c0-.6-.4-1-1-1h-7v-2h7c1.7 0 3 1.3 3 3v18c0 1.7-1.3 3-3 3z\"></path></symbol><symbol id='icon-ei-share-google-icon' viewBox='0 0 50 50'><path d=\"M15 30c-2.8 0-5-2.2-5-5s2.2-5 5-5 5 2.2 5 5-2.2 5-5 5zm0-8c-1.7 0-3 1.3-3 3s1.3 3 3 3 3-1.3 3-3-1.3-3-3-3z\"></path><path d=\"M35 20c-2.8 0-5-2.2-5-5s2.2-5 5-5 5 2.2 5 5-2.2 5-5 5zm0-8c-1.7 0-3 1.3-3 3s1.3 3 3 3 3-1.3 3-3-1.3-3-3-3z\"></path><path d=\"M35 40c-2.8 0-5-2.2-5-5s2.2-5 5-5 5 2.2 5 5-2.2 5-5 5zm0-8c-1.7 0-3 1.3-3 3s1.3 3 3 3 3-1.3 3-3-1.3-3-3-3z\"></path><path d=\"M19.007 25.885l12.88 6.44-.895 1.788-12.88-6.44z\"></path><path d=\"M30.993 15.885l.894 1.79-12.88 6.438-.894-1.79z\"></path></symbol><symbol id='icon-ei-spinner-2-icon' viewBox='0 0 50 50'><circle cx=\"25\" cy=\"10\" r=\"2\"></circle><circle opacity=\".3\" cx=\"25\" cy=\"40\" r=\"2\"></circle><circle opacity=\".3\" cx=\"32.5\" cy=\"12\" r=\"2\"></circle><circle opacity=\".3\" cx=\"17.5\" cy=\"38\" r=\"2\"></circle><circle opacity=\".93\" cx=\"17.5\" cy=\"12\" r=\"2\"></circle><circle opacity=\".3\" cx=\"32.5\" cy=\"38\" r=\"2\"></circle><circle opacity=\".65\" cx=\"10\" cy=\"25\" r=\"2\"></circle><circle opacity=\".3\" cx=\"40\" cy=\"25\" r=\"2\"></circle><circle opacity=\".86\" cx=\"12\" cy=\"17.5\" r=\"2\"></circle><circle opacity=\".3\" cx=\"38\" cy=\"32.5\" r=\"2\"></circle><circle opacity=\".44\" cx=\"12\" cy=\"32.5\" r=\"2\"></circle><circle opacity=\".3\" cx=\"38\" cy=\"17.5\" r=\"2\"></circle></symbol><symbol id='icon-ei-spinner-3-icon' viewBox='0 0 50 50'><path d=\"M41.9 23.9c-.3-6.1-4-11.8-9.5-14.4-6-2.7-13.3-1.6-18.3 2.6-4.8 4-7 10.5-5.6 16.6 1.3 6 6 10.9 11.9 12.5 7.1 2 13.6-1.4 17.6-7.2-3.6 4.8-9.1 8-15.2 6.9-6.1-1.1-11.1-5.7-12.5-11.7-1.5-6.4 1.5-13.1 7.2-16.4 5.9-3.4 14.2-2.1 18.1 3.7 1 1.4 1.7 3.1 2 4.8.3 1.4.2 2.9.4 4.3.2 1.3 1.3 3 2.8 2.1 1.3-.8 1.2-2.5 1.1-3.8 0-.4.1.7 0 0z\"></path></symbol><symbol id='icon-ei-spinner-icon' viewBox='0 0 50 50'><path d=\"M25 18c-.6 0-1-.4-1-1V9c0-.6.4-1 1-1s1 .4 1 1v8c0 .6-.4 1-1 1z\"></path><path opacity=\".3\" d=\"M25 42c-.6 0-1-.4-1-1v-8c0-.6.4-1 1-1s1 .4 1 1v8c0 .6-.4 1-1 1z\"></path><path opacity=\".3\" d=\"M29 19c-.2 0-.3 0-.5-.1-.4-.3-.6-.8-.3-1.3l4-6.9c.3-.4.8-.6 1.3-.3.4.3.6.8.3 1.3l-4 6.9c-.2.2-.5.4-.8.4z\"></path><path opacity=\".3\" d=\"M17 39.8c-.2 0-.3 0-.5-.1-.4-.3-.6-.8-.3-1.3l4-6.9c.3-.4.8-.6 1.3-.3.4.3.6.8.3 1.3l-4 6.9c-.2.2-.5.4-.8.4z\"></path><path opacity=\".93\" d=\"M21 19c-.3 0-.6-.2-.8-.5l-4-6.9c-.3-.4-.1-1 .3-1.3.4-.3 1-.1 1.3.3l4 6.9c.3.4.1 1-.3 1.3-.2.2-.3.2-.5.2z\"></path><path opacity=\".3\" d=\"M33 39.8c-.3 0-.6-.2-.8-.5l-4-6.9c-.3-.4-.1-1 .3-1.3.4-.3 1-.1 1.3.3l4 6.9c.3.4.1 1-.3 1.3-.2.1-.3.2-.5.2z\"></path><path opacity=\".65\" d=\"M17 26H9c-.6 0-1-.4-1-1s.4-1 1-1h8c.6 0 1 .4 1 1s-.4 1-1 1z\"></path><path opacity=\".3\" d=\"M41 26h-8c-.6 0-1-.4-1-1s.4-1 1-1h8c.6 0 1 .4 1 1s-.4 1-1 1z\"></path><path opacity=\".86\" d=\"M18.1 21.9c-.2 0-.3 0-.5-.1l-6.9-4c-.4-.3-.6-.8-.3-1.3.3-.4.8-.6 1.3-.3l6.9 4c.4.3.6.8.3 1.3-.2.3-.5.4-.8.4z\"></path><path opacity=\".3\" d=\"M38.9 33.9c-.2 0-.3 0-.5-.1l-6.9-4c-.4-.3-.6-.8-.3-1.3.3-.4.8-.6 1.3-.3l6.9 4c.4.3.6.8.3 1.3-.2.3-.5.4-.8.4z\"></path><path opacity=\".44\" d=\"M11.1 33.9c-.3 0-.6-.2-.8-.5-.3-.4-.1-1 .3-1.3l6.9-4c.4-.3 1-.1 1.3.3.3.4.1 1-.3 1.3l-6.9 4c-.1.2-.3.2-.5.2z\"></path><path opacity=\".3\" d=\"M31.9 21.9c-.3 0-.6-.2-.8-.5-.3-.4-.1-1 .3-1.3l6.9-4c.4-.3 1-.1 1.3.3.3.4.1 1-.3 1.3l-6.9 4c-.2.2-.3.2-.5.2z\"></path></symbol><symbol id='icon-ei-star-icon' viewBox='0 0 50 50'><path d=\"M15.2 40.6c-.2 0-.4-.1-.6-.2-.4-.3-.5-.7-.4-1.1l3.9-12-10.2-7.5c-.4-.3-.5-.7-.4-1.1s.5-.7 1-.7h12.7L25 5.9c.1-.4.5-.7 1-.7s.8.3 1 .7L30.9 18h12.7c.4 0 .8.2 1 .6s0 .9-.4 1.1L34 27.1l3.9 12c.1.4 0 .9-.4 1.1s-.8.3-1.2 0L26 33l-10.2 7.4c-.2.1-.4.2-.6.2zM26 30.7c.2 0 .4.1.6.2l8.3 6.1-3.2-9.8c-.1-.4 0-.9.4-1.1l8.3-6.1H30.1c-.4 0-.8-.3-1-.7L26 9.5l-3.2 9.8c-.1.4-.5.7-1 .7H11.5l8.3 6.1c.4.3.5.7.4 1.1L17.1 37l8.3-6.1c.2-.1.4-.2.6-.2z\"></path></symbol><symbol id='icon-ei-tag-icon' viewBox='0 0 50 50'><path d=\"M22 40.1c-.9 0-1.7-.3-2.3-.9l-8.9-8.9c-1.2-1.2-1.2-3.3 0-4.5l11.9-11.9c1-1 3-1.8 4.5-1.8h7.6c1.8 0 3.2 1.4 3.2 3.2v7.6c0 1.5-.8 3.4-1.8 4.5L24.3 39.2c-.6.6-1.4.9-2.3.9zM27.2 14c-1 0-2.4.6-3 1.3L12.3 27.2c-.5.5-.5 1.2 0 1.7l8.9 8.9c.5.4 1.2.4 1.7 0l11.9-11.9c.7-.7 1.3-2.1 1.3-3v-7.6c0-.7-.5-1.2-1.2-1.2h-7.7z\"></path><path d=\"M30 24c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4zm0-6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z\"></path></symbol><symbol id='icon-ei-trash-icon' viewBox='0 0 50 50'><path d=\"M20 18h2v16h-2z\"></path><path d=\"M24 18h2v16h-2z\"></path><path d=\"M28 18h2v16h-2z\"></path><path d=\"M12 12h26v2H12z\"></path><path d=\"M30 12h-2v-1c0-.6-.4-1-1-1h-4c-.6 0-1 .4-1 1v1h-2v-1c0-1.7 1.3-3 3-3h4c1.7 0 3 1.3 3 3v1z\"></path><path d=\"M31 40H19c-1.6 0-3-1.3-3.2-2.9l-1.8-24 2-.2 1.8 24c0 .6.6 1.1 1.2 1.1h12c.6 0 1.1-.5 1.2-1.1l1.8-24 2 .2-1.8 24C34 38.7 32.6 40 31 40z\"></path></symbol><symbol id='icon-ei-trophy-icon' viewBox='0 0 50 50'><path d=\"M28.6 29.4c3-2.3 7.4-5.7 7.4-18.4v-1H14v1c0 12.7 4.5 16.1 7.4 18.4 1.7 1.3 2.6 2 2.6 3.6v3c-1.6.2-3.2.8-3.8 2H18c-1.1 0-2 .9-2 2h18c0-1.1-.9-2-2-2h-2.2c-.6-1.2-2.1-1.8-3.8-2v-3c0-1.6.8-2.3 2.6-3.6zm-3.6.5c-.6-.8-1.5-1.5-2.3-2.1-2.7-2.1-6.4-4.9-6.6-15.8h18c-.2 10.8-3.9 13.7-6.6 15.8-1 .7-1.9 1.3-2.5 2.1z\"></path><path d=\"M18.8 27C18.7 27 8 24.7 8 13v-1h7v2h-5c.6 9.2 9.1 11 9.2 11l-.4 2z\"></path><path d=\"M31.2 27l-.4-2c.4-.1 8.6-1.9 9.2-11h-5v-2h7v1c0 11.7-10.7 14-10.8 14z\"></path></symbol><symbol id='icon-ei-undo-icon' viewBox='0 0 50 50'><path d=\"M25 38c-5.1 0-9.7-3-11.8-7.6l1.8-.8c1.8 3.9 5.7 6.4 10 6.4 6.1 0 11-4.9 11-11s-4.9-11-11-11c-4.6 0-8.5 2.8-10.1 7.3l-1.9-.7c1.9-5.2 6.6-8.6 12-8.6 7.2 0 13 5.8 13 13s-5.8 13-13 13z\"></path><path d=\"M20 22h-8v-8h2v6h6z\"></path></symbol><symbol id='icon-ei-unlock-icon' viewBox='0 0 50 50'><path d=\"M18 23h-2v-4c0-5 4-9 9-9 4.5 0 8.4 3.4 8.9 7.9l-2 .2c-.4-3.5-3.4-6.1-6.9-6.1-3.9 0-7 3.1-7 7v4z\"></path><path d=\"M33 40H17c-1.7 0-3-1.3-3-3V25c0-1.7 1.3-3 3-3h16c1.7 0 3 1.3 3 3v12c0 1.7-1.3 3-3 3zM17 24c-.6 0-1 .4-1 1v12c0 .6.4 1 1 1h16c.6 0 1-.4 1-1V25c0-.6-.4-1-1-1H17z\"></path><circle cx=\"25\" cy=\"28\" r=\"2\"></circle><path d=\"M25.5 28h-1l-1 6h3z\"></path></symbol><symbol id='icon-ei-user-icon' viewBox='0 0 50 50'><path d=\"M25.1 42c-9.4 0-17-7.6-17-17s7.6-17 17-17 17 7.6 17 17-7.7 17-17 17zm0-32c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 15-15-6.8-15-15-15z\"></path><path d=\"M15.3 37.3l-1.8-.8c.5-1.2 2.1-1.9 3.8-2.7 1.7-.8 3.8-1.7 3.8-2.8v-1.5c-.6-.5-1.6-1.6-1.8-3.2-.5-.5-1.3-1.4-1.3-2.6 0-.7.3-1.3.5-1.7-.2-.8-.4-2.3-.4-3.5 0-3.9 2.7-6.5 7-6.5 1.2 0 2.7.3 3.5 1.2 1.9.4 3.5 2.6 3.5 5.3 0 1.7-.3 3.1-.5 3.8.2.3.4.8.4 1.4 0 1.3-.7 2.2-1.3 2.6-.2 1.6-1.1 2.6-1.7 3.1V31c0 .9 1.8 1.6 3.4 2.2 1.9.7 3.9 1.5 4.6 3.1l-1.9.7c-.3-.8-1.9-1.4-3.4-1.9-2.2-.8-4.7-1.7-4.7-4v-2.6l.5-.3s1.2-.8 1.2-2.4v-.7l.6-.3c.1 0 .6-.3.6-1.1 0-.2-.2-.5-.3-.6l-.4-.4.2-.5s.5-1.6.5-3.6c0-1.9-1.1-3.3-2-3.3h-.6l-.3-.5c0-.4-.7-.8-1.9-.8-3.1 0-5 1.7-5 4.5 0 1.3.5 3.5.5 3.5l.1.5-.4.5c-.1 0-.3.3-.3.7 0 .5.6 1.1.9 1.3l.4.3v.5c0 1.5 1.3 2.3 1.3 2.4l.5.3v2.6c0 2.4-2.6 3.6-5 4.6-1.1.4-2.6 1.1-2.8 1.6z\"></path></symbol></svg>";
+        var sprite = "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" id=\"icon-el-sprite\" style=\"display:none\"><symbol id='icon-el-archive-icon' viewBox='0 0 50 50'><path d=\"M42 20h-2v-5c0-.6-.4-1-1-1H11c-.6 0-1 .4-1 1v5H8v-5c0-1.7 1.3-3 3-3h28c1.7 0 3 1.3 3 3v5z\"></path><path d=\"M37 40H13c-1.7 0-3-1.3-3-3V20h2v17c0 .6.4 1 1 1h24c.6 0 1-.4 1-1V20h2v17c0 1.7-1.3 3-3 3z\"></path><path d=\"M29 26h-8c-.6 0-1-.4-1-1s.4-1 1-1h8c.6 0 1 .4 1 1s-.4 1-1 1z\"></path><path d=\"M8 18h34v2H8z\"></path></symbol><symbol id='icon-el-arrow-down-icon' viewBox='0 0 50 50'><path d=\"M25 42c-9.4 0-17-7.6-17-17S15.6 8 25 8s17 7.6 17 17-7.6 17-17 17zm0-32c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 15-15-6.7-15-15-15z\"></path><path d=\"M25 34.4l-9.7-9.7 1.4-1.4 8.3 8.3 8.3-8.3 1.4 1.4z\"></path><path d=\"M24 16h2v17h-2z\"></path></symbol><symbol id='icon-el-arrow-left-icon' viewBox='0 0 50 50'><path d=\"M25 42c-9.4 0-17-7.6-17-17S15.6 8 25 8s17 7.6 17 17-7.6 17-17 17zm0-32c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 15-15-6.7-15-15-15z\"></path><path d=\"M25.3 34.7L15.6 25l9.7-9.7 1.4 1.4-8.3 8.3 8.3 8.3z\"></path><path d=\"M17 24h17v2H17z\"></path></symbol><symbol id='icon-el-arrow-right-icon' viewBox='0 0 50 50'><path d=\"M25 42c-9.4 0-17-7.6-17-17S15.6 8 25 8s17 7.6 17 17-7.6 17-17 17zm0-32c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 15-15-6.7-15-15-15z\"></path><path d=\"M24.7 34.7l-1.4-1.4 8.3-8.3-8.3-8.3 1.4-1.4 9.7 9.7z\"></path><path d=\"M16 24h17v2H16z\"></path></symbol><symbol id='icon-el-arrow-up-icon' viewBox='0 0 50 50'><path d=\"M25 42c-9.4 0-17-7.6-17-17S15.6 8 25 8s17 7.6 17 17-7.6 17-17 17zm0-32c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 15-15-6.7-15-15-15z\"></path><path d=\"M33.3 26.7L25 18.4l-8.3 8.3-1.4-1.4 9.7-9.7 9.7 9.7z\"></path><path d=\"M24 17h2v17h-2z\"></path></symbol><symbol id='icon-el-bell-icon' viewBox='0 0 50 50'><path d=\"M42 36c-6.5 0-7.4-6.3-8.2-11.9C32.9 17.9 32.1 12 25 12s-7.9 5.9-8.8 12.1C15.4 29.7 14.5 36 8 36v-2c4.6 0 5.3-3.9 6.2-10.1.9-6.2 2-13.9 10.8-13.9s9.9 7.7 10.8 13.9C36.7 30.1 37.4 34 42 34v2z\"></path><path d=\"M25 40c-2.8 0-5-2.2-5-5h2c0 1.7 1.3 3 3 3s3-1.3 3-3h2c0 2.8-2.2 5-5 5z\"></path><path d=\"M8 34h34v2H8z\"></path><path d=\"M27 10c0 1.1-.9 1.5-2 1.5s-2-.4-2-1.5.9-2 2-2 2 .9 2 2z\"></path></symbol><symbol id='icon-el-calendar-icon' viewBox='0 0 50 50'><path d=\"M37 38H13c-1.7 0-3-1.3-3-3V13c0-1.7 1.1-3 2.5-3H14v2h-1.5c-.2 0-.5.4-.5 1v22c0 .6.4 1 1 1h24c.6 0 1-.4 1-1V13c0-.6-.3-1-.5-1H36v-2h1.5c1.4 0 2.5 1.3 2.5 3v22c0 1.7-1.3 3-3 3z\"></path><path d=\"M17 14c-.6 0-1-.4-1-1V9c0-.6.4-1 1-1s1 .4 1 1v4c0 .6-.4 1-1 1z\"></path><path d=\"M33 14c-.6 0-1-.4-1-1V9c0-.6.4-1 1-1s1 .4 1 1v4c0 .6-.4 1-1 1z\"></path><path d=\"M20 10h10v2H20z\"></path><path d=\"M12 16h26v2H12z\"></path><path d=\"M34 20h2v2h-2z\"></path><path d=\"M30 20h2v2h-2z\"></path><path d=\"M26 20h2v2h-2z\"></path><path d=\"M22 20h2v2h-2z\"></path><path d=\"M18 20h2v2h-2z\"></path><path d=\"M34 24h2v2h-2z\"></path><path d=\"M30 24h2v2h-2z\"></path><path d=\"M26 24h2v2h-2z\"></path><path d=\"M22 24h2v2h-2z\"></path><path d=\"M18 24h2v2h-2z\"></path><path d=\"M14 24h2v2h-2z\"></path><path d=\"M34 28h2v2h-2z\"></path><path d=\"M30 28h2v2h-2z\"></path><path d=\"M26 28h2v2h-2z\"></path><path d=\"M22 28h2v2h-2z\"></path><path d=\"M18 28h2v2h-2z\"></path><path d=\"M14 28h2v2h-2z\"></path><path d=\"M30 32h2v2h-2z\"></path><path d=\"M26 32h2v2h-2z\"></path><path d=\"M22 32h2v2h-2z\"></path><path d=\"M18 32h2v2h-2z\"></path><path d=\"M14 32h2v2h-2z\"></path></symbol><symbol id='icon-el-camera-icon' viewBox='0 0 50 50'><path d=\"M39 38H11c-1.7 0-3-1.3-3-3V17c0-1.7 1.3-3 3-3h6c.2 0 .5-.2.6-.3l1.1-2.2c.4-.8 1.4-1.4 2.3-1.4h8c.9 0 1.9.6 2.3 1.4l1.1 2.2c.1.2.4.3.6.3h6c1.7 0 3 1.3 3 3v18c0 1.7-1.3 3-3 3zM11 16c-.6 0-1 .4-1 1v18c0 .6.4 1 1 1h28c.6 0 1-.4 1-1V17c0-.6-.4-1-1-1h-6c-.9 0-1.9-.6-2.3-1.4l-1.1-2.2c-.1-.2-.4-.4-.6-.4h-8c-.2 0-.5.2-.6.3l-1.1 2.2c-.4.9-1.4 1.5-2.3 1.5h-6z\"></path><path d=\"M25 34c-5 0-9-4-9-9s4-9 9-9 9 4 9 9-4 9-9 9zm0-16c-3.9 0-7 3.1-7 7s3.1 7 7 7 7-3.1 7-7-3.1-7-7-7z\"></path><circle cx=\"35\" cy=\"18\" r=\"1\"></circle><path d=\"M12 12h4v1h-4z\"></path><path d=\"M25 21v-1c-2.8 0-5 2.2-5 5h1c0-2.2 1.8-4 4-4z\"></path></symbol><symbol id='icon-el-cart-icon' viewBox='0 0 50 50'><path d=\"M35 34H13c-.3 0-.6-.2-.8-.4s-.2-.6-.1-.9l1.9-4.8L12.1 10H6V8h7c.5 0 .9.4 1 .9l2 19c0 .2 0 .3-.1.5L14.5 32H36l-1 2z\"></path><path d=\"M15.2 29l-.4-2L38 22.2V14H14v-2h25c.6 0 1 .4 1 1v10c0 .5-.3.9-.8 1l-24 5z\"></path><path d=\"M36 40c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4zm0-6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z\"></path><path d=\"M12 40c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4zm0-6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z\"></path></symbol><symbol id='icon-el-chart-icon' viewBox='0 0 50 50'><path d=\"M18 36h-2V26h-4v10h-2V24h8z\"></path><path d=\"M28 36h-2V20h-4v16h-2V18h8z\"></path><path d=\"M38 36h-2V14h-4v22h-2V12h8z\"></path><path d=\"M8 36h32v2H8z\"></path></symbol><symbol id='icon-el-check-icon' viewBox='0 0 50 50'><path d=\"M25 42c-9.4 0-17-7.6-17-17S15.6 8 25 8s17 7.6 17 17-7.6 17-17 17zm0-32c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 15-15-6.7-15-15-15z\"></path><path d=\"M23 32.4l-8.7-8.7 1.4-1.4 7.3 7.3 11.3-11.3 1.4 1.4z\"></path></symbol><symbol id='icon-el-chevron-down-icon' viewBox='0 0 50 50'><path d=\"M25 32.4l-9.7-9.7 1.4-1.4 8.3 8.3 8.3-8.3 1.4 1.4z\"></path></symbol><symbol id='icon-el-chevron-left-icon' viewBox='0 0 50 50'><path d=\"M27.3 34.7L17.6 25l9.7-9.7 1.4 1.4-8.3 8.3 8.3 8.3z\"></path></symbol><symbol id='icon-el-chevron-right-icon' viewBox='0 0 50 50'><path d=\"M22.7 34.7l-1.4-1.4 8.3-8.3-8.3-8.3 1.4-1.4 9.7 9.7z\"></path></symbol><symbol id='icon-el-chevron-up-icon' viewBox='0 0 50 50'><path d=\"M33.3 28.7L25 20.4l-8.3 8.3-1.4-1.4 9.7-9.7 9.7 9.7z\"></path></symbol><symbol id='icon-el-clock-icon' viewBox='0 0 50 50'><path d=\"M25 42c-9.4 0-17-7.6-17-17S15.6 8 25 8s17 7.6 17 17-7.6 17-17 17zm0-32c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 15-15-6.7-15-15-15z\"></path><path d=\"M30.3 33.7L24 27.4V16h2v10.6l5.7 5.7z\"></path></symbol><symbol id='icon-el-close-o-icon' viewBox='0 0 50 50'><path d=\"M25 42c-9.4 0-17-7.6-17-17S15.6 8 25 8s17 7.6 17 17-7.6 17-17 17zm0-32c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 15-15-6.7-15-15-15z\"></path><path d=\"M32.283 16.302l1.414 1.415-15.98 15.98-1.414-1.414z\"></path><path d=\"M17.717 16.302l15.98 15.98-1.414 1.415-15.98-15.98z\"></path></symbol><symbol id='icon-el-close-icon' viewBox='0 0 50 50'><path d=\"M37.304 11.282l1.414 1.414-26.022 26.02-1.414-1.413z\"></path><path d=\"M12.696 11.282l26.022 26.02-1.414 1.415-26.022-26.02z\"></path></symbol><symbol id='icon-el-comment-icon' viewBox='0 0 50 50'><path d=\"M15 42h-2l1.2-1.6c.8-1.1 1.3-2.5 1.6-4.2C10.8 33.9 8 29.6 8 24c0-8.6 6.5-14 17-14s17 5.4 17 14c0 8.8-6.4 14-17 14h-.7c-1.6 1.9-4.4 4-9.3 4zm10-30c-9.4 0-15 4.5-15 12 0 6.4 3.9 9.4 7.2 10.7l.7.3-.1.8c-.2 1.6-.5 3-1.1 4.2 3.3-.4 5.2-2.1 6.3-3.5l.3-.4H25c13.5 0 15-8.4 15-12C40 16.5 34.4 12 25 12z\"></path></symbol><symbol id='icon-el-credit-card-icon' viewBox='0 0 50 50'><path d=\"M39 38H11c-1.7 0-3-1.3-3-3V15c0-1.7 1.3-3 3-3h28c1.7 0 3 1.3 3 3v20c0 1.7-1.3 3-3 3zM11 14c-.6 0-1 .4-1 1v20c0 .6.4 1 1 1h28c.6 0 1-.4 1-1V15c0-.6-.4-1-1-1H11z\"></path><path d=\"M9 16h32v6H9z\"></path><path d=\"M12 26h1v2h-1z\"></path><path d=\"M14 26h1v2h-1z\"></path><path d=\"M16 26h1v2h-1z\"></path><path d=\"M19 26h1v2h-1z\"></path><path d=\"M21 26h1v2h-1z\"></path><path d=\"M23 26h1v2h-1z\"></path><path d=\"M26 26h1v2h-1z\"></path><path d=\"M28 26h1v2h-1z\"></path><path d=\"M30 26h1v2h-1z\"></path><path d=\"M33 26h1v2h-1z\"></path><path d=\"M35 26h1v2h-1z\"></path><path d=\"M37 26h1v2h-1z\"></path></symbol><symbol id='icon-el-envelope-icon' viewBox='0 0 50 50'><path opacity=\".9\" d=\"M31.796 24.244l9.97 9.97-1.415 1.414-9.97-9.97z\"></path><path opacity=\".9\" d=\"M18.278 24.287l1.414 1.414-9.9 9.9-1.414-1.41z\"></path><path d=\"M25 29.9c-1.5 0-3.1-.6-4.2-1.8L8.3 15.7l1.4-1.4 12.5 12.5c1.6 1.6 4.1 1.6 5.7 0l12.5-12.5 1.4 1.4-12.6 12.5c-1.1 1.1-2.7 1.7-4.2 1.7z\"></path><path d=\"M39 38H11c-1.7 0-3-1.3-3-3V15c0-1.7 1.3-3 3-3h28c1.7 0 3 1.3 3 3v20c0 1.7-1.3 3-3 3zM11 14c-.6 0-1 .4-1 1v20c0 .6.4 1 1 1h28c.6 0 1-.4 1-1V15c0-.6-.4-1-1-1H11z\"></path></symbol><symbol id='icon-el-exclamation-icon' viewBox='0 0 50 50'><path d=\"M25 42c-9.4 0-17-7.6-17-17S15.6 8 25 8s17 7.6 17 17-7.6 17-17 17zm0-32c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 15-15-6.7-15-15-15z\"></path><path d=\"M24 32h2v2h-2z\"></path><path d=\"M25.6 30h-1.2l-.4-8v-6h2v6z\"></path></symbol><symbol id='icon-el-external-link-icon' viewBox='0 0 50 50'><path d=\"M38.288 10.297l1.414 1.415-14.99 14.99-1.414-1.414z\"></path><path d=\"M40 20h-2v-8h-8v-2h10z\"></path><path d=\"M35 38H15c-1.7 0-3-1.3-3-3V15c0-1.7 1.3-3 3-3h11v2H15c-.6 0-1 .4-1 1v20c0 .6.4 1 1 1h20c.6 0 1-.4 1-1V24h2v11c0 1.7-1.3 3-3 3z\"></path></symbol><symbol id='icon-el-eye-icon' viewBox='0 0 50 50'><path d=\"M25 36C13.5 36 8.3 25.9 8.1 25.4c-.1-.3-.1-.6 0-.9C8.3 24.1 13.5 14 25 14s16.7 10.1 16.9 10.6c.1.3.1.6 0 .9-.2.4-5.4 10.5-16.9 10.5zM10.1 25c1.1 1.9 5.9 9 14.9 9s13.7-7.1 14.9-9c-1.1-1.9-5.9-9-14.9-9s-13.7 7.1-14.9 9z\"></path><path d=\"M25 34c-5 0-9-4-9-9s4-9 9-9 9 4 9 9-4 9-9 9zm0-16c-3.9 0-7 3.1-7 7s3.1 7 7 7 7-3.1 7-7-3.1-7-7-7z\"></path><path d=\"M25 30c-2.8 0-5-2.2-5-5 0-.6.4-1 1-1s1 .4 1 1c0 1.7 1.3 3 3 3s3-1.3 3-3-1.3-3-3-3c-.6 0-1-.4-1-1s.4-1 1-1c2.8 0 5 2.2 5 5s-2.2 5-5 5z\"></path></symbol><symbol id='icon-el-gear-icon' viewBox='0 0 50 50'><path d=\"M25 34c-5 0-9-4-9-9s4-9 9-9 9 4 9 9-4 9-9 9zm0-16c-3.9 0-7 3.1-7 7s3.1 7 7 7 7-3.1 7-7-3.1-7-7-7z\"></path><path d=\"M27.7 44h-5.4l-1.5-4.6c-1-.3-2-.7-2.9-1.2l-4.4 2.2-3.8-3.8 2.2-4.4c-.5-.9-.9-1.9-1.2-2.9L6 27.7v-5.4l4.6-1.5c.3-1 .7-2 1.2-2.9l-2.2-4.4 3.8-3.8 4.4 2.2c.9-.5 1.9-.9 2.9-1.2L22.3 6h5.4l1.5 4.6c1 .3 2 .7 2.9 1.2l4.4-2.2 3.8 3.8-2.2 4.4c.5.9.9 1.9 1.2 2.9l4.6 1.5v5.4l-4.6 1.5c-.3 1-.7 2-1.2 2.9l2.2 4.4-3.8 3.8-4.4-2.2c-.9.5-1.9.9-2.9 1.2L27.7 44zm-4-2h2.6l1.4-4.3.5-.1c1.2-.3 2.3-.8 3.4-1.4l.5-.3 4 2 1.8-1.8-2-4 .3-.5c.6-1 1.1-2.2 1.4-3.4l.1-.5 4.3-1.4v-2.6l-4.3-1.4-.1-.5c-.3-1.2-.8-2.3-1.4-3.4l-.3-.5 2-4-1.8-1.8-4 2-.5-.3c-1.1-.6-2.2-1.1-3.4-1.4l-.5-.1L26.3 8h-2.6l-1.4 4.3-.5.1c-1.2.3-2.3.8-3.4 1.4l-.5.3-4-2-1.8 1.8 2 4-.3.5c-.6 1-1.1 2.2-1.4 3.4l-.1.5L8 23.7v2.6l4.3 1.4.1.5c.3 1.2.8 2.3 1.4 3.4l.3.5-2 4 1.8 1.8 4-2 .5.3c1.1.6 2.2 1.1 3.4 1.4l.5.1 1.4 4.3z\"></path></symbol><symbol id='icon-el-heart-icon' viewBox='0 0 50 50'><path d=\"M25 39.7l-.6-.5C11.5 28.7 8 25 8 19c0-5 4-9 9-9 4.1 0 6.4 2.3 8 4.1 1.6-1.8 3.9-4.1 8-4.1 5 0 9 4 9 9 0 6-3.5 9.7-16.4 20.2l-.6.5zM17 12c-3.9 0-7 3.1-7 7 0 5.1 3.2 8.5 15 18.1 11.8-9.6 15-13 15-18.1 0-3.9-3.1-7-7-7-3.5 0-5.4 2.1-6.9 3.8L25 17.1l-1.1-1.3C22.4 14.1 20.5 12 17 12z\"></path></symbol><symbol id='icon-el-image-icon' viewBox='0 0 50 50'><path d=\"M39 38H11c-1.7 0-3-1.3-3-3V15c0-1.7 1.3-3 3-3h28c1.7 0 3 1.3 3 3v20c0 1.7-1.3 3-3 3zM11 14c-.6 0-1 .4-1 1v20c0 .6.4 1 1 1h28c.6 0 1-.4 1-1V15c0-.6-.4-1-1-1H11z\"></path><path d=\"M30 24c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4zm0-6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z\"></path><path d=\"M35.3 37.7L19 22.4 9.7 31l-1.4-1.4 10.7-10 17.7 16.7z\"></path><path d=\"M40.4 32.7L35 28.3 30.5 32l-1.3-1.6 5.8-4.7 6.6 5.4z\"></path></symbol><symbol id='icon-el-like-icon' viewBox='0 0 50 50'><path d=\"M40 23.2c0-2.1-1.7-3.2-4-3.2h-6.7c.5-1.8.7-3.5.7-5 0-5.8-1.6-7-3-7-.9 0-1.6.1-2.5.6-.3.2-.4.4-.5.7l-1 5.4c-1.1 2.8-3.8 5.3-6 7V36c.8 0 1.6.4 2.6.9 1.1.5 2.2 1.1 3.4 1.1h9.5c2 0 3.5-1.6 3.5-3 0-.3 0-.5-.1-.7 1.2-.5 2.1-1.5 2.1-2.8 0-.6-.1-1.1-.3-1.6.8-.5 1.5-1.4 1.5-2.4 0-.6-.3-1.2-.6-1.7.8-.6 1.4-1.6 1.4-2.6zm-2.1 0c0 1.3-1.3 1.4-1.5 2-.2.7.8.9.8 2.1 0 1.2-1.5 1.2-1.7 1.9-.2.8.5 1 .5 2.2v.2c-.2 1-1.7 1.1-2 1.5-.3.5 0 .7 0 1.8 0 .6-.7 1-1.5 1H23c-.8 0-1.6-.4-2.6-.9-.8-.4-1.6-.8-2.4-1V23.5c2.5-1.9 5.7-4.7 6.9-8.2v-.2l.9-5c.4-.1.7-.1 1.2-.1.2 0 1 1.2 1 5 0 1.5-.3 3.1-.8 5H27c-.6 0-1 .4-1 1s.4 1 1 1h9c1 0 1.9.5 1.9 1.2z\"></path><path d=\"M16 38h-6c-1.1 0-2-.9-2-2V22c0-1.1.9-2 2-2h6c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2zm-6-16v14h6V22h-6z\"></path></symbol><symbol id='icon-el-link-icon' viewBox='0 0 50 50'><path d=\"M24 30.2c0 .2.1.5.1.8 0 1.4-.5 2.6-1.5 3.6l-2 2c-1 1-2.2 1.5-3.6 1.5-2.8 0-5.1-2.3-5.1-5.1 0-1.4.5-2.6 1.5-3.6l2-2c1-1 2.2-1.5 3.6-1.5.3 0 .5 0 .8.1l1.5-1.5c-.7-.3-1.5-.4-2.3-.4-1.9 0-3.6.7-4.9 2l-2 2c-1.3 1.3-2 3-2 4.9 0 3.8 3.1 6.9 6.9 6.9 1.9 0 3.6-.7 4.9-2l2-2c1.3-1.3 2-3 2-4.9 0-.8-.1-1.6-.4-2.3L24 30.2z\"></path><path d=\"M33 10.1c-1.9 0-3.6.7-4.9 2l-2 2c-1.3 1.3-2 3-2 4.9 0 .8.1 1.6.4 2.3l1.5-1.5c0-.2-.1-.5-.1-.8 0-1.4.5-2.6 1.5-3.6l2-2c1-1 2.2-1.5 3.6-1.5 2.8 0 5.1 2.3 5.1 5.1 0 1.4-.5 2.6-1.5 3.6l-2 2c-1 1-2.2 1.5-3.6 1.5-.3 0-.5 0-.8-.1l-1.5 1.5c.7.3 1.5.4 2.3.4 1.9 0 3.6-.7 4.9-2l2-2c1.3-1.3 2-3 2-4.9 0-3.8-3.1-6.9-6.9-6.9z\"></path><path d=\"M20 31c-.3 0-.5-.1-.7-.3-.4-.4-.4-1 0-1.4l10-10c.4-.4 1-.4 1.4 0s.4 1 0 1.4l-10 10c-.2.2-.4.3-.7.3z\"></path></symbol><symbol id='icon-el-location-icon' viewBox='0 0 50 50'><path d=\"M25 42.5l-.8-.9C23.7 41.1 12 27.3 12 19c0-7.2 5.8-13 13-13s13 5.8 13 13c0 8.3-11.7 22.1-12.2 22.7l-.8.8zM25 8c-6.1 0-11 4.9-11 11 0 6.4 8.4 17.2 11 20.4 2.6-3.2 11-14 11-20.4 0-6.1-4.9-11-11-11z\"></path><path d=\"M25 24c-2.8 0-5-2.2-5-5s2.2-5 5-5 5 2.2 5 5-2.2 5-5 5zm0-8c-1.7 0-3 1.3-3 3s1.3 3 3 3 3-1.3 3-3-1.3-3-3-3z\"></path></symbol><symbol id='icon-el-lock-icon' viewBox='0 0 50 50'><path d=\"M34 23h-2v-4c0-3.9-3.1-7-7-7s-7 3.1-7 7v4h-2v-4c0-5 4-9 9-9s9 4 9 9v4z\"></path><path d=\"M33 40H17c-1.7 0-3-1.3-3-3V25c0-1.7 1.3-3 3-3h16c1.7 0 3 1.3 3 3v12c0 1.7-1.3 3-3 3zM17 24c-.6 0-1 .4-1 1v12c0 .6.4 1 1 1h16c.6 0 1-.4 1-1V25c0-.6-.4-1-1-1H17z\"></path><circle cx=\"25\" cy=\"28\" r=\"2\"></circle><path d=\"M25.5 28h-1l-1 6h3z\"></path></symbol><symbol id='icon-el-minus-icon' viewBox='0 0 50 50'><path d=\"M25 42c-9.4 0-17-7.6-17-17S15.6 8 25 8s17 7.6 17 17-7.6 17-17 17zm0-32c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 15-15-6.7-15-15-15z\"></path><path d=\"M16 24h18v2H16z\"></path></symbol><symbol id='icon-el-navicon-icon' viewBox='0 0 50 50'><path d=\"M10 12h30v4H10z\"></path><path d=\"M10 22h30v4H10z\"></path><path d=\"M10 32h30v4H10z\"></path></symbol><symbol id='icon-el-paperclip-icon' viewBox='0 0 50 50'><path d=\"M13.8 39.6c-1.5 0-3.1-.6-4.2-1.8-2.3-2.3-2.3-6.1 0-8.5l17-17c3.1-3.1 8.2-3.1 11.3 0 3.1 3.1 3.1 8.2 0 11.3L25.1 36.4 23.7 35l12.7-12.7c2.3-2.3 2.3-6.1 0-8.5-2.3-2.3-6.1-2.3-8.5 0l-17 17c-.8.8-1.2 1.8-1.2 2.8 0 1.1.4 2.1 1.2 2.8 1.6 1.6 4.1 1.6 5.7 0l12.7-12.7c.8-.8.8-2 0-2.8-.8-.8-2-.8-2.8 0L18 29.3l-1.4-1.4 8.5-8.5c1.6-1.6 4.1-1.6 5.7 0 1.6 1.6 1.6 4.1 0 5.7L18 37.8c-1.1 1.2-2.7 1.8-4.2 1.8z\"></path></symbol><symbol id='icon-el-pencil-icon' viewBox='0 0 50 50'><path d=\"M9.6 40.4l2.5-9.9L27 15.6l7.4 7.4-14.9 14.9-9.9 2.5zm4.3-8.9l-1.5 6.1 6.1-1.5L31.6 23 27 18.4 13.9 31.5z\"></path><path d=\"M17.8 37.3c-.6-2.5-2.6-4.5-5.1-5.1l.5-1.9c3.2.8 5.7 3.3 6.5 6.5l-1.9.5z\"></path><path d=\"M29.298 19.287l1.414 1.414-13.01 13.02-1.414-1.41z\"></path><path d=\"M11 39l2.9-.7c-.3-1.1-1.1-1.9-2.2-2.2L11 39z\"></path><path d=\"M35 22.4L27.6 15l3-3 .5.1c3.6.5 6.4 3.3 6.9 6.9l.1.5-3.1 2.9zM30.4 15l4.6 4.6.9-.9c-.5-2.3-2.3-4.1-4.6-4.6l-.9.9z\"></path></symbol><symbol id='icon-el-play-icon' viewBox='0 0 50 50'><path d=\"M25 42c-9.4 0-17-7.6-17-17S15.6 8 25 8s17 7.6 17 17-7.6 17-17 17zm0-32c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 15-15-6.7-15-15-15z\"></path><path d=\"M20 33.7V16.3L35 25l-15 8.7zm2-14v10.5l9-5.3-9-5.2z\"></path></symbol><symbol id='icon-el-plus-icon' viewBox='0 0 50 50'><path d=\"M25 42c-9.4 0-17-7.6-17-17S15.6 8 25 8s17 7.6 17 17-7.6 17-17 17zm0-32c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 15-15-6.7-15-15-15z\"></path><path d=\"M16 24h18v2H16z\"></path><path d=\"M24 16h2v18h-2z\"></path></symbol><symbol id='icon-el-pointer-icon' viewBox='0 0 50 50'><path d=\"M33 38H21c-.6 0-1-.4-1-1 0-1.5-.7-2.4-1.8-3.8-.6-.7-1.3-1.6-2-2.7-1.9-3-3.6-6.6-4-7.9-.4-1.3-.1-2.2.3-2.7.4-.6 1.2-.9 2.1-.9 1.2 0 2.4 1 3.5 2.3V11c0-1.7 1.3-3 3-3s3 1.3 3 3v4.2c.3-.1.6-.2 1-.2 1.1 0 2 .6 2.5 1.4.4-.3.9-.4 1.4-.4 1.4 0 2.5.9 2.9 2.2.3-.1.7-.2 1.1-.2 1.7 0 3 1.3 3 3v3c0 2.6-.5 4.7-1 6.7s-1 3.9-1 6.3c0 .6-.4 1-1 1zm-11.1-2H32c.1-2.2.6-4 1-5.8.5-2 1-3.9 1-6.2v-3c0-.6-.4-1-1-1s-1 .4-1 1v1c0 .6-.4 1-1 1s-1-.4-1-1v-3c0-.6-.4-1-1-1s-1 .4-1 1v2c0 .6-.4 1-1 1s-1-.4-1-1v-3c0-.6-.4-1-1-1s-1 .4-1 1v2c0 .6-.4 1-1 1s-1-.4-1-1v-9c0-.6-.4-1-1-1s-1 .4-1 1v15c0 .6-.4 1-1 1s-1-.4-1-1v-.8c-.9-2.3-2.8-4.2-3.5-4.2-.2 0-.4 0-.5.1-.1.1-.1.4 0 .9.3 1.1 1.8 4.3 3.8 7.5.6 1 1.2 1.7 1.8 2.5 1.1 1.2 2.1 2.3 2.3 4z\"></path></symbol><symbol id='icon-el-question-icon' viewBox='0 0 50 50'><path d=\"M25 42c-9.4 0-17-7.6-17-17S15.6 8 25 8s17 7.6 17 17-7.6 17-17 17zm0-32c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 15-15-6.7-15-15-15z\"></path><path d=\"M19.8 19.6c.3-.8.6-1.4 1.2-1.9.5-.5 1.1-.9 1.9-1.2s1.6-.4 2.5-.4c.7 0 1.4.1 2 .3.6.2 1.2.5 1.7.9s.9.9 1.1 1.5c.3.6.4 1.3.4 2 0 1-.2 1.8-.6 2.5s-1 1.3-1.6 2l-1.3 1.3c-.3.3-.6.6-.7.9-.2.3-.3.7-.3 1.1-.1.4-.1.7-.1 1.5h-1.6c0-.8 0-1.1.1-1.7.1-.5.3-1 .5-1.5.2-.4.5-.8.9-1.2.4-.4.9-.8 1.4-1.4.5-.5.9-1 1.2-1.5s.5-1.2.5-1.8c0-.5-.1-1-.3-1.4-.2-.4-.5-.8-.8-1.1-.3-.3-.7-.5-1.2-.7-.5-.2-.9-.3-1.4-.3-.7 0-1.3.1-1.8.4-.5.2-1 .6-1.3 1-.3.4-.6.9-.8 1.5s-.4.9-.4 1.6h-1.6c0-.9.1-1.6.4-2.4zM26 32v2h-2v-2h2z\"></path></symbol><symbol id='icon-el-redo-icon' viewBox='0 0 50 50'><path d=\"M25 38c-7.2 0-13-5.8-13-13s5.8-13 13-13c5.4 0 10.1 3.4 11.9 8.7l-1.9.7c-1.5-4.6-5.4-7.4-10-7.4-6.1 0-11 4.9-11 11s4.9 11 11 11c4.3 0 8.2-2.5 10-6.4l1.8.8C34.7 35 30.1 38 25 38z\"></path><path d=\"M38 22h-8v-2h6v-6h2z\"></path></symbol><symbol id='icon-el-refresh-icon' viewBox='0 0 50 50'><path d=\"M25 38c-7.2 0-13-5.8-13-13 0-3.2 1.2-6.2 3.3-8.6l1.5 1.3C15 19.7 14 22.3 14 25c0 6.1 4.9 11 11 11 1.6 0 3.1-.3 4.6-1l.8 1.8c-1.7.8-3.5 1.2-5.4 1.2z\"></path><path d=\"M34.7 33.7l-1.5-1.3c1.8-2 2.8-4.6 2.8-7.3 0-6.1-4.9-11-11-11-1.6 0-3.1.3-4.6 1l-.8-1.8c1.7-.8 3.5-1.2 5.4-1.2 7.2 0 13 5.8 13 13 0 3.1-1.2 6.2-3.3 8.6z\"></path><path d=\"M18 24h-2v-6h-6v-2h8z\"></path><path d=\"M40 34h-8v-8h2v6h6z\"></path></symbol><symbol id='icon-el-retweet-icon' viewBox='0 0 50 50'><path d=\"M38 35h-2V17c0-.6-.4-1-1-1H18v-2h17c1.7 0 3 1.3 3 3v18z\"></path><path d=\"M37 36.5l-6.8-7.8 1.6-1.4 5.2 6.2 5.2-6.2 1.6 1.4z\"></path><path d=\"M32 36H15c-1.7 0-3-1.3-3-3V15h2v18c0 .6.4 1 1 1h17v2z\"></path><path d=\"M18.2 22.7L13 16.5l-5.2 6.2-1.6-1.4 6.8-7.8 6.8 7.8z\"></path></symbol><symbol id='icon-el-sc-facebook-icon' viewBox='0 0 50 50'><path d=\"M26 20v-3c0-1.3.3-2 2.4-2H31v-5h-4c-5 0-7 3.3-7 7v3h-4v5h4v15h6V25h4.4l.6-5h-5z\"></path></symbol><symbol id='icon-el-sc-github-icon' viewBox='0 0 50 50'><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M25 10c-8.3 0-15 6.7-15 15 0 6.6 4.3 12.2 10.3 14.2.8.1 1-.3 1-.7v-2.6c-4.2.9-5.1-2-5.1-2-.7-1.7-1.7-2.2-1.7-2.2-1.4-.9.1-.9.1-.9 1.5.1 2.3 1.5 2.3 1.5 1.3 2.3 3.5 1.6 4.4 1.2.1-1 .5-1.6 1-2-3.3-.4-6.8-1.7-6.8-7.4 0-1.6.6-3 1.5-4-.2-.4-.7-1.9.1-4 0 0 1.3-.4 4.1 1.5 1.2-.3 2.5-.5 3.8-.5 1.3 0 2.6.2 3.8.5 2.9-1.9 4.1-1.5 4.1-1.5.8 2.1.3 3.6.1 4 1 1 1.5 2.4 1.5 4 0 5.8-3.5 7-6.8 7.4.5.5 1 1.4 1 2.8v4.1c0 .4.3.9 1 .7 6-2 10.2-7.6 10.2-14.2C40 16.7 33.3 10 25 10z\"></path></symbol><symbol id='icon-el-sc-google-plus-icon' viewBox='0 0 50 50'><path d=\"M18 23v4.8h7.9c-.3 2.1-2.4 6-7.9 6-4.8 0-8.7-4-8.7-8.8s3.9-8.8 8.7-8.8c2.7 0 4.5 1.2 5.6 2.2l3.8-3.7C24.9 12.4 21.8 11 18 11c-7.7 0-14 6.3-14 14s6.3 14 14 14c8.1 0 13.4-5.7 13.4-13.7 0-.9-.1-1.6-.2-2.3H18z\"></path><path d=\"M48 23h-4v-4h-4v4h-4v4h4v4h4v-4h4z\"></path></symbol><symbol id='icon-el-sc-instagram-icon' viewBox='0 0 50 50'><path d=\"M25 12c-3.53 0-3.973.015-5.36.078-1.384.063-2.329.283-3.156.604a6.372 6.372 0 0 0-2.302 1.5 6.372 6.372 0 0 0-1.5 2.303c-.321.826-.54 1.771-.604 3.155C12.015 21.027 12 21.47 12 25c0 3.53.015 3.973.078 5.36.063 1.384.283 2.329.604 3.155.333.855.777 1.58 1.5 2.303a6.372 6.372 0 0 0 2.302 1.5c.827.32 1.772.54 3.156.604 1.387.063 1.83.078 5.36.078 3.53 0 3.973-.015 5.36-.078 1.384-.063 2.329-.283 3.155-.604a6.371 6.371 0 0 0 2.303-1.5 6.372 6.372 0 0 0 1.5-2.303c.32-.826.54-1.771.604-3.155.063-1.387.078-1.83.078-5.36 0-3.53-.015-3.973-.078-5.36-.063-1.384-.283-2.329-.605-3.155a6.372 6.372 0 0 0-1.499-2.303 6.371 6.371 0 0 0-2.303-1.5c-.826-.32-1.771-.54-3.155-.604C28.973 12.015 28.53 12 25 12m0 2.342c3.471 0 3.882.014 5.253.076 1.267.058 1.956.27 2.414.448.607.236 1.04.517 1.495.972.455.455.736.888.972 1.495.178.458.39 1.146.448 2.414.062 1.37.076 1.782.076 5.253s-.014 3.882-.076 5.253c-.058 1.268-.27 1.956-.448 2.414a4.028 4.028 0 0 1-.972 1.495 4.027 4.027 0 0 1-1.495.972c-.458.178-1.147.39-2.414.448-1.37.062-1.782.076-5.253.076s-3.883-.014-5.253-.076c-1.268-.058-1.956-.27-2.414-.448a4.027 4.027 0 0 1-1.495-.972 4.03 4.03 0 0 1-.972-1.495c-.178-.458-.39-1.146-.448-2.414-.062-1.37-.076-1.782-.076-5.253s.014-3.882.076-5.253c.058-1.268.27-1.956.448-2.414.236-.607.517-1.04.972-1.495a4.028 4.028 0 0 1 1.495-.972c.458-.178 1.146-.39 2.414-.448 1.37-.062 1.782-.076 5.253-.076\"></path><path d=\"M25 18a7 7 0 1 0 0 14 7 7 0 0 0 0-14m0 11.5a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9m8.7-11.4a1.6 1.6 0 1 1-3.2 0 1.6 1.6 0 0 1 3.2 0\"></path></symbol><symbol id='icon-el-sc-linkedin-icon' viewBox='0 0 50 50'><path d=\"M36.1 12H13.9c-1.1 0-1.9.8-1.9 1.9v22.2c0 1 .9 1.9 1.9 1.9h22.2c1.1 0 1.9-.8 1.9-1.9V13.9c0-1.1-.9-1.9-1.9-1.9zM20 34h-4V22h4v12zm-2-13.6c-1.3 0-2.4-1.1-2.4-2.4 0-1.3 1.1-2.4 2.4-2.4 1.3 0 2.4 1.1 2.4 2.4 0 1.3-1.1 2.4-2.4 2.4zM34 34h-4v-6c0-1.6-.4-3.2-2-3.2s-2 1.6-2 3.2v6h-4V22h4v1.4h.2c.5-1 1.8-1.8 3.3-1.8 3.7 0 4.5 2.4 4.5 5.4v7z\"></path></symbol><symbol id='icon-el-sc-odnoklassniki-icon' viewBox='0 0 50 50'><path d=\"M25 26c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8zm0-12.2c-2.3 0-4.2 1.9-4.2 4.2s1.9 4.2 4.2 4.2 4.2-1.9 4.2-4.2-1.9-4.2-4.2-4.2z\"></path><path d=\"M33.6 26.8c-.7-.9-1.9-1-2.8-.4 0 0-2.2 1.6-5.8 1.6-3.6 0-5.8-1.6-5.8-1.6-.9-.7-2.1-.5-2.8.4-.7.9-.5 2.1.4 2.8.1.1 2.2 1.7 5.7 2.2l-5.3 5.4c-.8.8-.8 2.1 0 2.8.4.4.9.6 1.4.6.5 0 1-.2 1.4-.6l5-5.1 5 5.1c.4.4.9.6 1.4.6.5 0 1-.2 1.4-.6.8-.8.8-2 0-2.8l-5.3-5.4c3.5-.6 5.6-2.2 5.7-2.2.9-.7 1.1-2 .4-2.8z\"></path></symbol><symbol id='icon-el-sc-pinterest-icon' viewBox='0 0 50 50'><path d=\"M25 10c-8.3 0-15 6.7-15 15 0 6.4 4 11.8 9.5 14-.1-1.2-.2-3 .1-4.3.3-1.2 1.8-7.5 1.8-7.5s-.4-.9-.4-2.2c0-2.1 1.2-3.6 2.7-3.6 1.3 0 1.9 1 1.9 2.1 0 1.3-.8 3.2-1.2 5-.4 1.5.7 2.7 2.2 2.7 2.7 0 4.7-2.8 4.7-6.9 0-3.6-2.6-6.1-6.3-6.1-4.3 0-6.8 3.2-6.8 6.5 0 1.3.5 2.7 1.1 3.4.1.1.1.3.1.4-.1.5-.4 1.5-.4 1.7-.1.3-.2.3-.5.2-1.9-.9-3-3.6-3-5.8 0-4.7 3.4-9.1 9.9-9.1 5.2 0 9.2 3.7 9.2 8.7 0 5.2-3.3 9.3-7.8 9.3-1.5 0-2.9-.8-3.4-1.7 0 0-.8 2.9-.9 3.6-.3 1.3-1.3 2.9-1.9 3.9 1.4.5 2.9.7 4.4.7 8.3 0 15-6.7 15-15s-6.7-15-15-15z\"></path></symbol><symbol id='icon-el-sc-skype-icon' viewBox='0 0 50 50'><path d=\"M38 27.3c.1-.8.2-1.6.2-2.4 0-1.8-.3-3.5-1-5.1-.7-1.6-1.6-3-2.8-4.2-1.2-1.2-2.6-2.2-4.2-2.8-1.6-.7-3.4-1-5.1-1-.8 0-1.7.1-2.5.2-1.1-.6-2.4-.9-3.7-.9-2.1 0-4.1.8-5.5 2.3-1.5 1.5-2.3 3.4-2.3 5.5 0 1.3.3 2.6 1 3.8-.1.7-.2 1.5-.2 2.3 0 1.8.3 3.5 1 5.1.7 1.6 1.6 3 2.8 4.2 1.2 1.2 2.6 2.2 4.2 2.8 1.6.7 3.4 1 5.1 1 .8 0 1.6-.1 2.3-.2 1.2.7 2.5 1 3.9 1 2.1 0 4.1-.8 5.5-2.3 1.5-1.5 2.3-3.4 2.3-5.5 0-1.3-.3-2.6-1-3.8zM25.1 33c-4.7 0-6.8-2.3-6.8-4 0-.9.7-1.5 1.6-1.5 2 0 1.5 2.9 5.2 2.9 1.9 0 3-1 3-2.1 0-.6-.3-1.4-1.6-1.7l-4.2-1c-3.4-.8-4-2.7-4-4.4 0-3.6 3.3-4.9 6.5-4.9 2.9 0 6.3 1.6 6.3 3.7 0 .9-.8 1.4-1.7 1.4-1.7 0-1.4-2.4-4.9-2.4-1.7 0-2.7.8-2.7 1.9 0 1.1 1.4 1.5 2.5 1.7l3.1.7c3.4.8 4.2 2.7 4.2 4.6.1 2.9-2.1 5.1-6.5 5.1z\"></path></symbol><symbol id='icon-el-sc-soundcloud-icon' viewBox='0 0 50 50'><path d=\"M40 24h-.2c-.9-4.6-5-8-9.8-8-3.1 0-5.9 1.4-7.7 3.7-.2.3-.3.6-.3 1.2l-.4 9.1.4 5.5c0 .3.3.5.5.5H40c3.3 0 6-2.7 6-6s-2.7-6-6-6z\"></path><path d=\"M18.9 20c-.3 0-.5.2-.5.5l-.8 9v1l.8 5c0 .3.3.5.6.5h.2c.3 0 .5-.2.6-.5l.8-5c0-.3.1-.7 0-1l-.8-9c0-.3-.3-.5-.5-.5h-.4z\"></path><path d=\"M14.9 21c-.3 0-.5.2-.5.5l-.8 8v1l.8 5c0 .3.3.5.6.5h.2c.3 0 .5-.2.6-.5l.8-5c0-.3.1-.7 0-1l-.8-8c0-.3-.3-.5-.5-.5h-.4z\"></path><path d=\"M11 24c-.3 0-.5.2-.6.5l-.8 5v1l.8 5c0 .3.3.5.6.5s.5-.2.6-.5l.8-5v-1l-.8-5c-.1-.3-.3-.5-.6-.5z\"></path><path d=\"M7 23c-.3 0-.5.2-.6.5l-.9 6v1l.8 5c.2.3.4.5.7.5.3 0 .5-.2.6-.5l.8-5c0-.3.1-.7 0-1l-.9-6c0-.3-.2-.5-.5-.5z\"></path><path d=\"M3.3 26c-.3 0-.5.2-.6.5l-.6 3c-.1.3-.1.7 0 1l.6 4c.1.3.3.5.6.5s.5-.2.6-.5l.6-4v-1l-.6-3c-.1-.3-.3-.5-.6-.5z\"></path></symbol><symbol id='icon-el-sc-telegram-icon' viewBox='0 0 50 50'><path d=\"M37.1 13L9.4 24c-.9.3-.8 1.6.1 1.9l7 2.2 2.8 8.8c.2.7 1.1.9 1.6.4l4.1-3.8 7.8 5.7c.6.4 1.4.1 1.6-.6l5.4-23.2c.3-1.7-1.2-3-2.7-2.4zM20.9 29.8L20 35l-2-7.2L37.5 15 20.9 29.8z\"></path></symbol><symbol id='icon-el-sc-tumblr-icon' viewBox='0 0 50 50'><path d=\"M30.9 32.4c-.5.2-1.5.5-2.3.5-2.2.1-2.7-1.6-2.7-2.8v-8.7h5.6v-4.2H26V10h-4.1c-.1 0-.2.1-.2.2-.2 2.2-1.3 6-5.5 7.5v3.6H19v9.1c0 3.1 2.3 7.6 8.4 7.5 2.1 0 4.3-.9 4.8-1.6l-1.3-3.9z\"></path></symbol><symbol id='icon-el-sc-twitter-icon' viewBox='0 0 50 50'><path d=\"M39.2 16.8c-1.1.5-2.2.8-3.5 1 1.2-.8 2.2-1.9 2.7-3.3-1.2.7-2.5 1.2-3.8 1.5-1.1-1.2-2.7-1.9-4.4-1.9-3.3 0-6.1 2.7-6.1 6.1 0 .5.1.9.2 1.4-5-.2-9.5-2.7-12.5-6.3-.5.7-.8 1.7-.8 2.8 0 2.1 1.1 4 2.7 5-1 0-1.9-.3-2.7-.8v.1c0 2.9 2.1 5.4 4.9 5.9-.5.1-1 .2-1.6.2-.4 0-.8 0-1.1-.1.8 2.4 3 4.2 5.7 4.2-2.1 1.6-4.7 2.6-7.5 2.6-.5 0-1 0-1.4-.1 2.4 1.9 5.6 2.9 9 2.9 11.1 0 17.2-9.2 17.2-17.2V20c1.2-.9 2.2-1.9 3-3.2z\"></path></symbol><symbol id='icon-el-sc-vimeo-icon' viewBox='0 0 50 50'><path d=\"M38 19.6c-.1 2.7-2 6.4-5.6 11.1-3.8 4.9-7 7.4-9.6 7.4-1.6 0-3-1.5-4.1-4.5-.7-2.7-1.5-5.5-2.2-8.2-.8-3-1.7-4.5-2.7-4.5-.2 0-.9.4-2.2 1.3l-1.3-1.7c1.4-1.2 2.7-2.4 4-3.6 1.8-1.6 3.2-2.4 4.1-2.5 2.2-.2 3.5 1.3 4 4.4.5 3.4.9 5.5 1.1 6.4.6 2.8 1.3 4.2 2.1 4.2.6 0 1.5-.9 2.6-2.8 1.2-1.8 1.8-3.2 1.9-4.2.2-1.6-.5-2.4-1.9-2.4-.7 0-1.3.2-2 .5 1.4-4.5 4-6.6 7.8-6.5 2.8.1 4.2 1.9 4 5.6z\"></path></symbol><symbol id='icon-el-sc-vk-icon' viewBox='0 0 50 50'><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M25.1 35.9h2s.6-.1.9-.4c.3-.3.3-.9.3-.9s0-2.6 1.2-3c1.2-.4 2.8 2.6 4.4 3.7 1.2.9 2.1.7 2.1.7l4.4-.1s2.3-.1 1.2-2c-.1-.1-.6-1.3-3.3-3.8-2.8-2.6-2.4-2.1.9-6.6 2-2.7 2.8-4.3 2.6-5.1-.2-.7-1.7-.5-1.7-.5h-5s-.4-.1-.6.1c-.3.2-.4.5-.4.5s-.8 2.1-1.8 3.9c-2.2 3.7-3.1 3.9-3.4 3.7-.8-.5-.6-2.2-.6-3.3 0-3.6.6-5.1-1.1-5.5-.5-.1-.9-.2-2.3-.2-1.8 0-3.3 0-4.1.4-.6.3-1 .9-.7.9.3 0 1.1.2 1.5.7.4.9.4 2.4.4 2.4s.3 4.3-.7 4.8c-.7.4-1.6-.4-3.6-3.8-1-1.7-1.8-3.7-1.8-3.7s-.1-.4-.4-.6c-.3-.2-.8-.3-.8-.3H10s-.7 0-1 .3c-.2.3 0 .8 0 .8s3.7 8.6 7.9 13c3.9 4.2 8.2 3.9 8.2 3.9z\"></path></symbol><symbol id='icon-el-sc-youtube-icon' viewBox='0 0 50 50'><path d=\"M39.7 18.6s-.3-2.1-1.2-3c-1.1-1.2-2.4-1.2-3-1.3C31.3 14 25 14 25 14s-6.3 0-10.5.3c-.6.1-1.9.1-3 1.3-.9.9-1.2 3-1.2 3S10 21 10 23.4v2.2c0 2.4.3 4.9.3 4.9s.3 2.1 1.2 3c1.1 1.2 2.6 1.2 3.3 1.3 2.4.1 10.2.2 10.2.2s6.3 0 10.5-.3c.6-.1 1.9-.1 3-1.3.9-.9 1.2-3 1.2-3s.3-2.4.3-4.8v-2.2c0-2.4-.3-4.8-.3-4.8zm-17.8 9.8V20l8.1 4.2-8.1 4.2z\"></path></symbol><symbol id='icon-el-search-icon' viewBox='0 0 50 50'><path d=\"M23 36c-7.2 0-13-5.8-13-13s5.8-13 13-13 13 5.8 13 13-5.8 13-13 13zm0-24c-6.1 0-11 4.9-11 11s4.9 11 11 11 11-4.9 11-11-4.9-11-11-11z\"></path><path d=\"M32.682 31.267l8.98 8.98-1.414 1.414-8.98-8.98z\"></path></symbol><symbol id='icon-el-share-apple-icon' viewBox='0 0 50 50'><path d=\"M30.3 13.7L25 8.4l-5.3 5.3-1.4-1.4L25 5.6l6.7 6.7z\"></path><path d=\"M24 7h2v21h-2z\"></path><path d=\"M35 40H15c-1.7 0-3-1.3-3-3V19c0-1.7 1.3-3 3-3h7v2h-7c-.6 0-1 .4-1 1v18c0 .6.4 1 1 1h20c.6 0 1-.4 1-1V19c0-.6-.4-1-1-1h-7v-2h7c1.7 0 3 1.3 3 3v18c0 1.7-1.3 3-3 3z\"></path></symbol><symbol id='icon-el-share-google-icon' viewBox='0 0 50 50'><path d=\"M15 30c-2.8 0-5-2.2-5-5s2.2-5 5-5 5 2.2 5 5-2.2 5-5 5zm0-8c-1.7 0-3 1.3-3 3s1.3 3 3 3 3-1.3 3-3-1.3-3-3-3z\"></path><path d=\"M35 20c-2.8 0-5-2.2-5-5s2.2-5 5-5 5 2.2 5 5-2.2 5-5 5zm0-8c-1.7 0-3 1.3-3 3s1.3 3 3 3 3-1.3 3-3-1.3-3-3-3z\"></path><path d=\"M35 40c-2.8 0-5-2.2-5-5s2.2-5 5-5 5 2.2 5 5-2.2 5-5 5zm0-8c-1.7 0-3 1.3-3 3s1.3 3 3 3 3-1.3 3-3-1.3-3-3-3z\"></path><path d=\"M19.007 25.885l12.88 6.44-.895 1.788-12.88-6.44z\"></path><path d=\"M30.993 15.885l.894 1.79-12.88 6.438-.894-1.79z\"></path></symbol><symbol id='icon-el-spinner-2-icon' viewBox='0 0 50 50'><circle cx=\"25\" cy=\"10\" r=\"2\"></circle><circle opacity=\".3\" cx=\"25\" cy=\"40\" r=\"2\"></circle><circle opacity=\".3\" cx=\"32.5\" cy=\"12\" r=\"2\"></circle><circle opacity=\".3\" cx=\"17.5\" cy=\"38\" r=\"2\"></circle><circle opacity=\".93\" cx=\"17.5\" cy=\"12\" r=\"2\"></circle><circle opacity=\".3\" cx=\"32.5\" cy=\"38\" r=\"2\"></circle><circle opacity=\".65\" cx=\"10\" cy=\"25\" r=\"2\"></circle><circle opacity=\".3\" cx=\"40\" cy=\"25\" r=\"2\"></circle><circle opacity=\".86\" cx=\"12\" cy=\"17.5\" r=\"2\"></circle><circle opacity=\".3\" cx=\"38\" cy=\"32.5\" r=\"2\"></circle><circle opacity=\".44\" cx=\"12\" cy=\"32.5\" r=\"2\"></circle><circle opacity=\".3\" cx=\"38\" cy=\"17.5\" r=\"2\"></circle></symbol><symbol id='icon-el-spinner-3-icon' viewBox='0 0 50 50'><path d=\"M41.9 23.9c-.3-6.1-4-11.8-9.5-14.4-6-2.7-13.3-1.6-18.3 2.6-4.8 4-7 10.5-5.6 16.6 1.3 6 6 10.9 11.9 12.5 7.1 2 13.6-1.4 17.6-7.2-3.6 4.8-9.1 8-15.2 6.9-6.1-1.1-11.1-5.7-12.5-11.7-1.5-6.4 1.5-13.1 7.2-16.4 5.9-3.4 14.2-2.1 18.1 3.7 1 1.4 1.7 3.1 2 4.8.3 1.4.2 2.9.4 4.3.2 1.3 1.3 3 2.8 2.1 1.3-.8 1.2-2.5 1.1-3.8 0-.4.1.7 0 0z\"></path></symbol><symbol id='icon-el-spinner-icon' viewBox='0 0 50 50'><path d=\"M25 18c-.6 0-1-.4-1-1V9c0-.6.4-1 1-1s1 .4 1 1v8c0 .6-.4 1-1 1z\"></path><path opacity=\".3\" d=\"M25 42c-.6 0-1-.4-1-1v-8c0-.6.4-1 1-1s1 .4 1 1v8c0 .6-.4 1-1 1z\"></path><path opacity=\".3\" d=\"M29 19c-.2 0-.3 0-.5-.1-.4-.3-.6-.8-.3-1.3l4-6.9c.3-.4.8-.6 1.3-.3.4.3.6.8.3 1.3l-4 6.9c-.2.2-.5.4-.8.4z\"></path><path opacity=\".3\" d=\"M17 39.8c-.2 0-.3 0-.5-.1-.4-.3-.6-.8-.3-1.3l4-6.9c.3-.4.8-.6 1.3-.3.4.3.6.8.3 1.3l-4 6.9c-.2.2-.5.4-.8.4z\"></path><path opacity=\".93\" d=\"M21 19c-.3 0-.6-.2-.8-.5l-4-6.9c-.3-.4-.1-1 .3-1.3.4-.3 1-.1 1.3.3l4 6.9c.3.4.1 1-.3 1.3-.2.2-.3.2-.5.2z\"></path><path opacity=\".3\" d=\"M33 39.8c-.3 0-.6-.2-.8-.5l-4-6.9c-.3-.4-.1-1 .3-1.3.4-.3 1-.1 1.3.3l4 6.9c.3.4.1 1-.3 1.3-.2.1-.3.2-.5.2z\"></path><path opacity=\".65\" d=\"M17 26H9c-.6 0-1-.4-1-1s.4-1 1-1h8c.6 0 1 .4 1 1s-.4 1-1 1z\"></path><path opacity=\".3\" d=\"M41 26h-8c-.6 0-1-.4-1-1s.4-1 1-1h8c.6 0 1 .4 1 1s-.4 1-1 1z\"></path><path opacity=\".86\" d=\"M18.1 21.9c-.2 0-.3 0-.5-.1l-6.9-4c-.4-.3-.6-.8-.3-1.3.3-.4.8-.6 1.3-.3l6.9 4c.4.3.6.8.3 1.3-.2.3-.5.4-.8.4z\"></path><path opacity=\".3\" d=\"M38.9 33.9c-.2 0-.3 0-.5-.1l-6.9-4c-.4-.3-.6-.8-.3-1.3.3-.4.8-.6 1.3-.3l6.9 4c.4.3.6.8.3 1.3-.2.3-.5.4-.8.4z\"></path><path opacity=\".44\" d=\"M11.1 33.9c-.3 0-.6-.2-.8-.5-.3-.4-.1-1 .3-1.3l6.9-4c.4-.3 1-.1 1.3.3.3.4.1 1-.3 1.3l-6.9 4c-.1.2-.3.2-.5.2z\"></path><path opacity=\".3\" d=\"M31.9 21.9c-.3 0-.6-.2-.8-.5-.3-.4-.1-1 .3-1.3l6.9-4c.4-.3 1-.1 1.3.3.3.4.1 1-.3 1.3l-6.9 4c-.2.2-.3.2-.5.2z\"></path></symbol><symbol id='icon-el-star-icon' viewBox='0 0 50 50'><path d=\"M15.2 40.6c-.2 0-.4-.1-.6-.2-.4-.3-.5-.7-.4-1.1l3.9-12-10.2-7.5c-.4-.3-.5-.7-.4-1.1s.5-.7 1-.7h12.7L25 5.9c.1-.4.5-.7 1-.7s.8.3 1 .7L30.9 18h12.7c.4 0 .8.2 1 .6s0 .9-.4 1.1L34 27.1l3.9 12c.1.4 0 .9-.4 1.1s-.8.3-1.2 0L26 33l-10.2 7.4c-.2.1-.4.2-.6.2zM26 30.7c.2 0 .4.1.6.2l8.3 6.1-3.2-9.8c-.1-.4 0-.9.4-1.1l8.3-6.1H30.1c-.4 0-.8-.3-1-.7L26 9.5l-3.2 9.8c-.1.4-.5.7-1 .7H11.5l8.3 6.1c.4.3.5.7.4 1.1L17.1 37l8.3-6.1c.2-.1.4-.2.6-.2z\"></path></symbol><symbol id='icon-el-tag-icon' viewBox='0 0 50 50'><path d=\"M22 40.1c-.9 0-1.7-.3-2.3-.9l-8.9-8.9c-1.2-1.2-1.2-3.3 0-4.5l11.9-11.9c1-1 3-1.8 4.5-1.8h7.6c1.8 0 3.2 1.4 3.2 3.2v7.6c0 1.5-.8 3.4-1.8 4.5L24.3 39.2c-.6.6-1.4.9-2.3.9zM27.2 14c-1 0-2.4.6-3 1.3L12.3 27.2c-.5.5-.5 1.2 0 1.7l8.9 8.9c.5.4 1.2.4 1.7 0l11.9-11.9c.7-.7 1.3-2.1 1.3-3v-7.6c0-.7-.5-1.2-1.2-1.2h-7.7z\"></path><path d=\"M30 24c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4zm0-6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z\"></path></symbol><symbol id='icon-el-trash-icon' viewBox='0 0 50 50'><path d=\"M20 18h2v16h-2z\"></path><path d=\"M24 18h2v16h-2z\"></path><path d=\"M28 18h2v16h-2z\"></path><path d=\"M12 12h26v2H12z\"></path><path d=\"M30 12h-2v-1c0-.6-.4-1-1-1h-4c-.6 0-1 .4-1 1v1h-2v-1c0-1.7 1.3-3 3-3h4c1.7 0 3 1.3 3 3v1z\"></path><path d=\"M31 40H19c-1.6 0-3-1.3-3.2-2.9l-1.8-24 2-.2 1.8 24c0 .6.6 1.1 1.2 1.1h12c.6 0 1.1-.5 1.2-1.1l1.8-24 2 .2-1.8 24C34 38.7 32.6 40 31 40z\"></path></symbol><symbol id='icon-el-trophy-icon' viewBox='0 0 50 50'><path d=\"M28.6 29.4c3-2.3 7.4-5.7 7.4-18.4v-1H14v1c0 12.7 4.5 16.1 7.4 18.4 1.7 1.3 2.6 2 2.6 3.6v3c-1.6.2-3.2.8-3.8 2H18c-1.1 0-2 .9-2 2h18c0-1.1-.9-2-2-2h-2.2c-.6-1.2-2.1-1.8-3.8-2v-3c0-1.6.8-2.3 2.6-3.6zm-3.6.5c-.6-.8-1.5-1.5-2.3-2.1-2.7-2.1-6.4-4.9-6.6-15.8h18c-.2 10.8-3.9 13.7-6.6 15.8-1 .7-1.9 1.3-2.5 2.1z\"></path><path d=\"M18.8 27C18.7 27 8 24.7 8 13v-1h7v2h-5c.6 9.2 9.1 11 9.2 11l-.4 2z\"></path><path d=\"M31.2 27l-.4-2c.4-.1 8.6-1.9 9.2-11h-5v-2h7v1c0 11.7-10.7 14-10.8 14z\"></path></symbol><symbol id='icon-el-undo-icon' viewBox='0 0 50 50'><path d=\"M25 38c-5.1 0-9.7-3-11.8-7.6l1.8-.8c1.8 3.9 5.7 6.4 10 6.4 6.1 0 11-4.9 11-11s-4.9-11-11-11c-4.6 0-8.5 2.8-10.1 7.3l-1.9-.7c1.9-5.2 6.6-8.6 12-8.6 7.2 0 13 5.8 13 13s-5.8 13-13 13z\"></path><path d=\"M20 22h-8v-8h2v6h6z\"></path></symbol><symbol id='icon-el-unlock-icon' viewBox='0 0 50 50'><path d=\"M18 23h-2v-4c0-5 4-9 9-9 4.5 0 8.4 3.4 8.9 7.9l-2 .2c-.4-3.5-3.4-6.1-6.9-6.1-3.9 0-7 3.1-7 7v4z\"></path><path d=\"M33 40H17c-1.7 0-3-1.3-3-3V25c0-1.7 1.3-3 3-3h16c1.7 0 3 1.3 3 3v12c0 1.7-1.3 3-3 3zM17 24c-.6 0-1 .4-1 1v12c0 .6.4 1 1 1h16c.6 0 1-.4 1-1V25c0-.6-.4-1-1-1H17z\"></path><circle cx=\"25\" cy=\"28\" r=\"2\"></circle><path d=\"M25.5 28h-1l-1 6h3z\"></path></symbol><symbol id='icon-el-user-icon' viewBox='0 0 50 50'><path d=\"M25.1 42c-9.4 0-17-7.6-17-17s7.6-17 17-17 17 7.6 17 17-7.7 17-17 17zm0-32c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 15-15-6.8-15-15-15z\"></path><path d=\"M15.3 37.3l-1.8-.8c.5-1.2 2.1-1.9 3.8-2.7 1.7-.8 3.8-1.7 3.8-2.8v-1.5c-.6-.5-1.6-1.6-1.8-3.2-.5-.5-1.3-1.4-1.3-2.6 0-.7.3-1.3.5-1.7-.2-.8-.4-2.3-.4-3.5 0-3.9 2.7-6.5 7-6.5 1.2 0 2.7.3 3.5 1.2 1.9.4 3.5 2.6 3.5 5.3 0 1.7-.3 3.1-.5 3.8.2.3.4.8.4 1.4 0 1.3-.7 2.2-1.3 2.6-.2 1.6-1.1 2.6-1.7 3.1V31c0 .9 1.8 1.6 3.4 2.2 1.9.7 3.9 1.5 4.6 3.1l-1.9.7c-.3-.8-1.9-1.4-3.4-1.9-2.2-.8-4.7-1.7-4.7-4v-2.6l.5-.3s1.2-.8 1.2-2.4v-.7l.6-.3c.1 0 .6-.3.6-1.1 0-.2-.2-.5-.3-.6l-.4-.4.2-.5s.5-1.6.5-3.6c0-1.9-1.1-3.3-2-3.3h-.6l-.3-.5c0-.4-.7-.8-1.9-.8-3.1 0-5 1.7-5 4.5 0 1.3.5 3.5.5 3.5l.1.5-.4.5c-.1 0-.3.3-.3.7 0 .5.6 1.1.9 1.3l.4.3v.5c0 1.5 1.3 2.3 1.3 2.4l.5.3v2.6c0 2.4-2.6 3.6-5 4.6-1.1.4-2.6 1.1-2.8 1.6z\"></path></symbol></svg>";
         document.querySelector("body").insertAdjacentHTML("afterbegin", sprite);
     }
 
     function icon(name, options) {
         var options = options || {};
-        var size    = options.size ? "icon--" + options.size : "";
+        var size    = options.size ? "icon-" + options.size : "";
         var klass   = "icon icon--" + name + " " + size + " " + (options.class || "");
 
 
@@ -87455,7 +89497,6 @@ return FC; // export for Node/CommonJS
         var html =  "<div class='" + klass + "'>" +
             wrapSpinner(icon, klass) +
             "</div>";
-
         return html;
     }
 

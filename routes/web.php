@@ -143,6 +143,10 @@ Route::group([
             'as' => 'admin.forms.editors', 'uses' => 'Demo\PagesController@editors'
         ]);
 
+        Route::get('wizards', [
+            'as' => 'admin.forms.wizards', 'uses' => 'Demo\PagesController@wizards'
+        ]);
+
     });
 
     //Login Options

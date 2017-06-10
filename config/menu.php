@@ -207,6 +207,11 @@ return [
                     'title' => 'Editors',
                     'link'  => '/admin/forms/editors',
                     'active' => 'admin/forms/editors',
+                ],
+                [
+                    'title' => 'Form Wizard',
+                    'link'  => '/admin/forms/wizards',
+                    'active' => 'admin/forms/wizards',
                 ]
             ]
         ],
