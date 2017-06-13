@@ -6,7 +6,7 @@ let mix = require('laravel-mix');
  |--------------------------------------------------------------------------
  */
 
-var pluginPath =  'resources/assets/plugins/';
+var pluginPath = 'resources/assets/plugins/';
 
 mix.combine([
     // ** Required Plugins **
@@ -38,6 +38,10 @@ mix.combine([
     pluginPath + 'alertify/alertify.js',
     pluginPath + 'easypiecharts/jquery.easypiechart.js',
     pluginPath + 'metisMenu/metisMenu.js',
+    pluginPath + 'gallery/image/photoswipe.js',
+    pluginPath + 'gallery/image/photoswipe-ui-default.js',
+    pluginPath + 'gallery/image/mp.mansory.js',
+    pluginPath + 'gallery/video/videobox.js',
 
     pluginPath + 'calendar/moment.js',
     pluginPath + 'calendar/fullcalendar.js',
@@ -51,14 +55,14 @@ mix.combine([
     pluginPath + 'laraspace/laraspace-notifs.js',
     pluginPath + 'laraspace/laraspace-forms.js'
 
-],'public/assets/admin/js/core/plugins.js')
+], 'public/assets/admin/js/core/plugins.js')
 
-.js('resources/assets/admin/js/pages/dashboard.js', 'public/assets/admin/js/pages/')
-.js('resources/assets/admin/js/pages/todos.js', 'public/assets/admin/js/pages/')
+    .js('resources/assets/admin/js/pages/dashboard.js', 'public/assets/admin/js/pages/')
+    .js('resources/assets/admin/js/pages/todos.js', 'public/assets/admin/js/pages/')
 
-.sass('resources/assets/admin/sass/laraspace.scss', 'public/assets/admin/css/')
+    .sass('resources/assets/admin/sass/laraspace.scss', 'public/assets/admin/css/')
 
-.version();
+    .version();
 
 /*
  |--------------------------------------------------------------------------
@@ -76,8 +80,8 @@ mix.combine([
 
     //Notifs
     pluginPath + 'laraspace/laraspace-notifs.js'
-],'public/assets/front/js/plugins.js')
+], 'public/assets/front/js/plugins.js')
 
-.sass('resources/assets/front/sass/front.scss', 'public/assets/front/css/')
+    .sass('resources/assets/front/sass/front.scss', 'public/assets/front/css/')
 
-.version();
+    .version();

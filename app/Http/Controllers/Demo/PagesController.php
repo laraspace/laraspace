@@ -119,7 +119,17 @@ class PagesController extends Controller
     {
         return view('admin.pages.forms.wizards');
     }
-    
+
+    //Gallery
+    public function galleryGrid()
+    {
+        return view('admin.pages.gallery.grid');
+    }
+    public function galleryMasonryGrid()
+    {
+        return view('admin.pages.gallery.masonry-grid');
+    }
+
     // Login
     public function loginSimple()
     {

@@ -149,6 +149,18 @@ Route::group([
 
     });
 
+    //Gallery
+    Route::group(['prefix' => 'gallery'], function() {
+
+        Route::get('grid', [
+            'as' => 'admin.gallery.grid', 'uses' => 'Demo\PagesController@galleryGrid'
+        ]);
+
+        Route::get('masonry-grid', [
+            'as' => 'admin.gallery.masonry-grid', 'uses' => 'Demo\PagesController@galleryMasonryGrid'
+        ]);
+    });
+
     //Login Options
 
     Route::get('login-simple', [

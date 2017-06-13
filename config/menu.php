@@ -216,6 +216,24 @@ return [
             ]
         ],
         [
+            'title' => 'Gallery',
+            'link'  => '#',
+            'active' => 'admin/gallery*',
+            'icon'  => 'fa fa-image',
+            'children' => [
+                [
+                    'title' => 'Gallery Grid',
+                    'link'  => '/admin/gallery/grid',
+                    'active' => 'admin/gallery/grid',
+                ],
+                [
+                    'title' => 'Gallery Masonry Grid',
+                    'link'  => '/admin/gallery/masonry-grid',
+                    'active' => 'admin/gallery/masonry-grid',
+                ]
+            ]
+        ],
+        [
             'title' => 'Pages',
             'link'  => '#',
             'active' => 'admin/pages*',
