@@ -59,9 +59,7 @@
   /*********Gallery************/
 
 .my-gallery img {
-  max-width: 360px;
   border: 5px solid #eee;
-  height: auto;
 }
 .my-gallery figcaption {
   display: none;
@@ -77,13 +75,11 @@
 .my-gallery-container .item:hover {
   opacity: 0.8;
 }
-.my-gallery-container .item img{
-  max-width: 100%;
-}
 .youtube-video-gallery .demo,.vimeo-video-gallery .demo iframe{
   border: 5px solid #eee;
-  max-width: 360px;
-  height: 200px;
+}
+.embed-responsive{
+  margin-bottom: 15px;
 }
 
 //COMPONENTS

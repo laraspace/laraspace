@@ -2,6 +2,7 @@
 
 @section('scripts')
     <script src="{{asset('assets/admin/js/demo/gallery.js')}}"></script>
+    <script></script>
 @stop
 
 @section('content')
@@ -22,102 +23,102 @@
                 <div class="my-gallery" itemscope>
                     <div class="row">
                         <figure class="col-lg-3 col-md-6 col-xs-12" itemprop="associatedMedia" itemscope>
-                            <a href="{{asset('assets/admin/img/gallery/11.jpg')}}" itemprop="contentUrl"
-                               data-size="1024x1024">
+                            <a href="{{asset('assets/admin/img/gallery/1.jpg')}}" itemprop="contentUrl"
+                               data-size="480x360">
                                 <img src="{{asset('assets/admin/img/gallery/1.jpg')}}"
-                                     itemprop="thumbnail" alt="Image description"/>
+                                     itemprop="thumbnail" class="img-fluid" alt="Image description"/>
                             </a>
                             <figcaption itemprop="caption description">Image caption 1</figcaption>
                         </figure>
                         <figure class="col-lg-3 col-md-6 col-xs-12" itemprop="associatedMedia" itemscope>
-                            <a href="{{asset('assets/admin/img/gallery/22.jpg')}}" itemprop="contentUrl"
-                               data-size="1024x1024">
+                            <a href="{{asset('assets/admin/img/gallery/2.jpg')}}" itemprop="contentUrl"
+                               data-size="480x360">
                                 <img src="{{asset('assets/admin/img/gallery/2.jpg')}}"
-                                     itemprop="thumbnail" alt="Image description"/>
+                                     itemprop="thumbnail" class="img-fluid" alt="Image description"/>
                             </a>
                             <figcaption itemprop="caption description">Image caption 2</figcaption>
                         </figure>
                         <figure class="col-lg-3 col-md-6 col-xs-12" itemprop="associatedMedia" itemscope>
-                            <a href="{{asset('assets/admin/img/gallery/33.jpg')}}" itemprop="contentUrl"
-                               data-size="1024x1024">
+                            <a href="{{asset('assets/admin/img/gallery/3.jpg')}}" itemprop="contentUrl"
+                               data-size="480x360">
                                 <img src="{{asset('assets/admin/img/gallery/3.jpg')}}"
-                                     itemprop="thumbnail" alt="Image description"/>
+                                     itemprop="thumbnail" class="img-fluid" alt="Image description"/>
                             </a>
                             <figcaption itemprop="caption description">Image caption 3</figcaption>
                         </figure>
                         <figure class="col-lg-3 col-md-6 col-xs-12" itemprop="associatedMedia" itemscope>
-                            <a href="{{asset('assets/admin/img/gallery/44.jpg')}}" itemprop="contentUrl"
-                               data-size="1024x768">
+                            <a href="{{asset('assets/admin/img/gallery/4.jpg')}}" itemprop="contentUrl"
+                               data-size="480x360">
                                 <img src="{{asset('assets/admin/img/gallery/4.jpg')}}"
-                                     itemprop="thumbnail" alt="Image description"/>
+                                     itemprop="thumbnail" class="img-fluid" alt="Image description"/>
                             </a>
                             <figcaption itemprop="caption description">Image caption 4</figcaption>
                         </figure>
                     </div>
                     <div class="row">
                         <figure class="col-lg-3 col-md-6 col-xs-12" itemprop="associatedMedia" itemscope>
-                            <a href="{{asset('assets/admin/img/gallery/55.jpg')}}" itemprop="contentUrl"
-                               data-size="1024x1024">
+                            <a href="{{asset('assets/admin/img/gallery/5.jpg')}}" itemprop="contentUrl"
+                               data-size="480x360">
                                 <img src="{{asset('assets/admin/img/gallery/5.jpg')}}"
-                                     itemprop="thumbnail" alt="Image description"/>
+                                     itemprop="thumbnail" class="img-fluid" alt="Image description"/>
                             </a>
                             <figcaption itemprop="caption description">Image caption 1</figcaption>
                         </figure>
                         <figure class="col-lg-3 col-md-6 col-xs-12" itemprop="associatedMedia" itemscope>
-                            <a href="{{asset('assets/admin/img/gallery/66.jpg')}}" itemprop="contentUrl"
-                               data-size="1024x1024">
+                            <a href="{{asset('assets/admin/img/gallery/6.jpg')}}" itemprop="contentUrl"
+                               data-size="480x360">
                                 <img src="{{asset('assets/admin/img/gallery/6.jpg')}}"
-                                     itemprop="thumbnail" alt="Image description"/>
+                                     itemprop="thumbnail" class="img-fluid" alt="Image description"/>
                             </a>
                             <figcaption itemprop="caption description">Image caption 2</figcaption>
                         </figure>
                         <figure class="col-lg-3 col-md-6 col-xs-12" itemprop="associatedMedia" itemscope>
-                            <a href="{{asset('assets/admin/img/gallery/77.jpg')}}" itemprop="contentUrl"
-                               data-size="1024x1024">
+                            <a href="{{asset('assets/admin/img/gallery/7.jpg')}}" itemprop="contentUrl"
+                               data-size="480x360">
                                 <img src="{{asset('assets/admin/img/gallery/7.jpg')}}"
-                                     itemprop="thumbnail" alt="Image description"/>
+                                     itemprop="thumbnail" class="img-fluid" alt="Image description"/>
                             </a>
                             <figcaption itemprop="caption description">Image caption 3</figcaption>
                         </figure>
                         <figure class="col-lg-3 col-md-6 col-xs-12" itemprop="associatedMedia" itemscope>
-                            <a href="{{asset('assets/admin/img/gallery/88.jpg')}}" itemprop="contentUrl"
-                               data-size="1024x768">
+                            <a href="{{asset('assets/admin/img/gallery/8.jpg')}}" itemprop="contentUrl"
+                               data-size="480x360">
                                 <img src="{{asset('assets/admin/img/gallery/8.jpg')}}"
-                                     itemprop="thumbnail" alt="Image description"/>
+                                     itemprop="thumbnail" class="img-fluid" alt="Image description"/>
                             </a>
                             <figcaption itemprop="caption description">Image caption 4</figcaption>
                         </figure>
                     </div>
                     <div class="row">
                         <figure class="col-lg-3 col-md-6 col-xs-12" itemprop="associatedMedia" itemscope>
-                            <a href="{{asset('assets/admin/img/gallery/99.jpg')}}" itemprop="contentUrl"
-                               data-size="1024x1024">
+                            <a href="{{asset('assets/admin/img/gallery/9.jpg')}}" itemprop="contentUrl"
+                               data-size="480x360">
                                 <img src="{{asset('assets/admin/img/gallery/9.jpg')}}"
-                                     itemprop="thumbnail" alt="Image description"/>
+                                     itemprop="thumbnail" class="img-fluid" alt="Image description"/>
                             </a>
                             <figcaption itemprop="caption description">Image caption 1</figcaption>
                         </figure>
                         <figure class="col-lg-3 col-md-6 col-xs-12" itemprop="associatedMedia" itemscope>
-                            <a href="{{asset('assets/admin/img/gallery/1010.jpg')}}" itemprop="contentUrl"
-                               data-size="1024x1024">
+                            <a href="{{asset('assets/admin/img/gallery/10.jpg')}}" itemprop="contentUrl"
+                               data-size="480x360">
                                 <img src="{{asset('assets/admin/img/gallery/10.jpg')}}"
-                                     itemprop="thumbnail" alt="Image description"/>
+                                     itemprop="thumbnail" class="img-fluid" alt="Image description"/>
                             </a>
                             <figcaption itemprop="caption description">Image caption 2</figcaption>
                         </figure>
                         <figure class="col-lg-3 col-md-6 col-xs-12" itemprop="associatedMedia" itemscope>
-                            <a href="{{asset('assets/admin/img/gallery/1111.jpg')}}" itemprop="contentUrl"
-                               data-size="1024x1024">
-                                <img src="{{asset('assets/admin/img/gallery/111.jpg')}}"
-                                     itemprop="thumbnail" alt="Image description"/>
+                            <a href="{{asset('assets/admin/img/gallery/11.jpg')}}" itemprop="contentUrl"
+                               data-size="480x360">
+                                <img src="{{asset('assets/admin/img/gallery/11.jpg')}}"
+                                     itemprop="thumbnail" class="img-fluid" alt="Image description"/>
                             </a>
                             <figcaption itemprop="caption description">Image caption 3</figcaption>
                         </figure>
                         <figure class="col-lg-3 col-md-6 col-xs-12" itemprop="associatedMedia" itemscope>
-                            <a href="{{asset('assets/admin/img/gallery/1212.jpg')}}" itemprop="contentUrl"
-                               data-size="1024x768">
-                                <img src="{{asset('assets/admin/img/gallery/121.jpg')}}"
-                                     itemprop="thumbnail" alt="Image description"/>
+                            <a href="{{asset('assets/admin/img/gallery/12.jpg')}}" itemprop="contentUrl"
+                               data-size="480x360">
+                                <img src="{{asset('assets/admin/img/gallery/12.jpg')}}"
+                                     itemprop="thumbnail" class="img-fluid" alt="Image description"/>
                             </a>
                             <figcaption itemprop="caption description">Image caption 4</figcaption>
                         </figure>
@@ -195,30 +196,54 @@
                 <div class="youtube-video-gallery">
                     <div class="row">
                         <div class="col-lg-3 col-md-6 ">
-                            <div class="demo" data-youtube="https://www.youtube.com/watch?v=3pn2SI4KGJc"></div>
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <div class="demo embed-responsive-item"
+                                     data-youtube="https://www.youtube.com/watch?v=3pn2SI4KGJc"></div>
+                            </div>
                         </div>
                         <div class="col-lg-3 col-md-6 ">
-                            <div class="demo" data-youtube="https://www.youtube.com/watch?v=6v2L2UGZJAM"></div>
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <div class="demo embed-responsive-item"
+                                     data-youtube="https://www.youtube.com/watch?v=6v2L2UGZJAM"></div>
+                            </div>
                         </div>
                         <div class="col-lg-3 col-md-6 ">
-                            <div class="demo" data-youtube="https://www.youtube.com/watch?v=ZN2SwwfeCRc"></div>
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <div class="demo embed-responsive-item"
+                                     data-youtube="https://www.youtube.com/watch?v=ZN2SwwfeCRc"></div>
+                            </div>
                         </div>
                         <div class="col-lg-3 col-md-6 ">
-                            <div class="demo" data-youtube="https://www.youtube.com/watch?v=DjxEhLTRtPY"></div>
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <div class="demo embed-responsive-item"
+                                     data-youtube="https://www.youtube.com/watch?v=DjxEhLTRtPY"></div>
+                            </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-lg-3 col-md-6 ">
-                            <div class="demo" data-youtube="https://www.youtube.com/watch?v=Ce4tYw6IE70"></div>
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <div class="demo embed-responsive-item"
+                                     data-youtube="https://www.youtube.com/watch?v=Ce4tYw6IE70"></div>
+                            </div>
                         </div>
                         <div class="col-lg-3 col-md-6 ">
-                            <div class="demo" data-youtube="https://www.youtube.com/watch?v=3rHXrA80NH4"></div>
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <div class="demo embed-responsive-item"
+                                     data-youtube="https://www.youtube.com/watch?v=3rHXrA80NH4"></div>
+                            </div>
                         </div>
                         <div class="col-lg-3 col-md-6 ">
-                            <div class="demo" data-youtube="https://www.youtube.com/watch?v=ftEJIZA7z-I"></div>
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <div class="demo embed-responsive-item"
+                                     data-youtube="https://www.youtube.com/watch?v=ftEJIZA7z-I"></div>
+                            </div>
                         </div>
                         <div class="col-lg-3 col-md-6 ">
-                            <div class="demo" data-youtube="https://www.youtube.com/watch?v=k_GM1JA608Y"></div>
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <div class="demo embed-responsive-item"
+                                     data-youtube="https://www.youtube.com/watch?v=k_GM1JA608Y"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -232,30 +257,54 @@
                 <div class="vimeo-video-gallery">
                     <div class="row">
                         <div class="col-lg-3 col-md-6">
-                            <div class="demo" data-vimeo="https://vimeo.com/102787065"></div>
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <div class="demo embed-responsive-item"
+                                     data-vimeo="https://vimeo.com/102787065"></div>
+                            </div>
                         </div>
                         <div class="col-lg-3 col-md-6">
-                            <div class="demo" data-vimeo="https://vimeo.com/18554749"></div>
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <div class="demo embed-responsive-item"
+                                     data-vimeo="https://vimeo.com/18554749"></div>
+                            </div>
                         </div>
                         <div class="col-lg-3 col-md-6">
-                            <div class="demo" data-vimeo="https://vimeo.com/79142264"></div>
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <div class="demo embed-responsive-item"
+                                     data-vimeo="https://vimeo.com/79142264"></div>
+                            </div>
                         </div>
                         <div class="col-lg-3 col-md-6">
-                            <div class="demo" data-vimeo="https://vimeo.com/49614043"></div>
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <div class="demo embed-responsive-item"
+                                     data-vimeo="https://vimeo.com/49614043"></div>
+                            </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-lg-3 col-md-6">
-                            <div class="demo" data-vimeo="https://vimeo.com/102514372"></div>
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <div class="demo embed-responsive-item"
+                                     data-vimeo="https://vimeo.com/102514372"></div>
+                            </div>
                         </div>
                         <div class="col-lg-3 col-md-6">
-                            <div class="demo" data-vimeo="https://vimeo.com/113404928"></div>
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <div class="demo embed-responsive-item"
+                                     data-vimeo="https://vimeo.com/113404928"></div>
+                            </div>
                         </div>
                         <div class="col-lg-3 col-md-6">
-                            <div class="demo" data-vimeo="https://vimeo.com/143709971"></div>
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <div class="demo embed-responsive-item"
+                                     data-vimeo="https://vimeo.com/143709971"></div>
+                            </div>
                         </div>
                         <div class="col-lg-3 col-md-6">
-                            <div class="demo" data-vimeo="https://vimeo.com/204895750"></div>
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <div class="demo embed-responsive-item"
+                                     data-vimeo="https://vimeo.com/204895750"></div>
+                            </div>
                         </div>
                     </div>
                 </div>

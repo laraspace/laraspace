@@ -29,110 +29,109 @@
                     <div class="my-gallery-container">
                         <div class="item" data-order="0">
                             <figure itemprop="associatedMedia" itemscope>
-                                <a href="{{asset('assets/admin/img/gallery/11.jpg')}}"
-                                   itemprop="contentUrl"
-                                   data-size="1024x1024">
+                                <a href="{{asset('assets/admin/img/gallery/1.jpg')}}"
+                                   itemprop="contentUrl" data-size="480x360">
                                     <img src="{{asset('assets/admin/img/gallery/1.jpg')}}" itemprop="thumbnail"
-                                         alt="Image description"/>
+                                         class="img-fluid" alt="Image description"/>
                                 </a>
                             </figure>
                         </div>
                         <div class="item" data-order="1">
                             <figure itemprop="associatedMedia" itemscope>
-                                <a href="{{asset('assets/admin/img/gallery/22.jpg')}}" itemprop="contentUrl"
-                                   data-size="1024x1024">
-                                    <img src="{{asset('assets/admin/img/gallery/22.jpg')}}"
-                                         itemprop="thumbnail" alt="Image description"/>
+                                <a href="{{asset('assets/admin/img/gallery/14.jpg')}}" itemprop="contentUrl"
+                                   data-size="480x757">
+                                    <img src="{{asset('assets/admin/img/gallery/14.jpg')}}"
+                                         itemprop="thumbnail" class="img-fluid" alt="Image description"/>
                                 </a>
                             </figure>
                         </div>
                         <div class="item" data-order="2">
                             <figure itemprop="associatedMedia" itemscope>
-                                <a href="{{asset('assets/admin/img/gallery/33.jpg')}}" itemprop="contentUrl"
-                                   data-size="1024x1024">
-                                    <img src="{{asset('assets/admin/img/gallery/3.jpg')}}"
-                                         itemprop="thumbnail" alt="Image description"/>
+                                <a href="{{asset('assets/admin/img/gallery/2.jpg')}}" itemprop="contentUrl"
+                                   data-size="480x360">
+                                    <img src="{{asset('assets/admin/img/gallery/2.jpg')}}"
+                                         itemprop="thumbnail" class="img-fluid" alt="Image description"/>
                                 </a>
                             </figure>
                         </div>
                         <div class="item" data-order="3">
                             <figure itemprop="associatedMedia" itemscope>
-                                <a href="{{asset('assets/admin/img/gallery/44.jpg')}}" itemprop="contentUrl"
-                                   data-size="1024x768">
-                                    <img src="{{asset('assets/admin/img/gallery/44.jpg')}}"
-                                         itemprop="thumbnail" alt="Image description"/>
+                                <a href="{{asset('assets/admin/img/gallery/17.jpg')}}" itemprop="contentUrl"
+                                   data-size="480x720">
+                                    <img src="{{asset('assets/admin/img/gallery/17.jpg')}}"
+                                         itemprop="thumbnail" class="img-fluid" alt="Image description"/>
                                 </a>
                             </figure>
                         </div>
                         <div class="item" data-order="4">
                             <figure itemprop="associatedMedia" itemscope>
-                                <a href="{{asset('assets/admin/img/gallery/55.jpg')}}" itemprop="contentUrl"
-                                   data-size="1024x1024">
-                                    <img src="{{asset('assets/admin/img/gallery/55.jpg')}}"
-                                         itemprop="thumbnail" alt="Image description"/>
+                                <a href="{{asset('assets/admin/img/gallery/15.jpg')}}" itemprop="contentUrl"
+                                   data-size="480x720">
+                                    <img src="{{asset('assets/admin/img/gallery/15.jpg')}}"
+                                         itemprop="thumbnail" class="img-fluid" alt="Image description"/>
                                 </a>
                             </figure>
                         </div>
                         <div class="item" data-order="5">
                             <figure itemprop="associatedMedia" itemscope>
-                                <a href="{{asset('assets/admin/img/gallery/66.jpg')}}" itemprop="contentUrl"
-                                   data-size="1024x1024">
-                                    <img src="{{asset('assets/admin/img/gallery/66.jpg')}}"
-                                         itemprop="thumbnail" alt="Image description"/>
+                                <a href="{{asset('assets/admin/img/gallery/6.jpg')}}" itemprop="contentUrl"
+                                   data-size="480x360">
+                                    <img src="{{asset('assets/admin/img/gallery/6.jpg')}}"
+                                         itemprop="thumbnail" class="img-fluid" alt="Image description"/>
                                 </a>
                             </figure>
                         </div>
                         <div class="item" data-order="6">
                             <figure itemprop="associatedMedia" itemscope>
-                                <a href="{{asset('assets/admin/img/gallery/77.jpg')}}" itemprop="contentUrl"
-                                   data-size="1024x1024">
-                                    <img src="{{asset('assets/admin/img/gallery/7.jpg')}}"
-                                         itemprop="thumbnail" alt="Image description"/>
+                                <a href="{{asset('assets/admin/img/gallery/16.jpg')}}" itemprop="contentUrl"
+                                   data-size="480x720">
+                                    <img src="{{asset('assets/admin/img/gallery/16.jpg')}}"
+                                         itemprop="thumbnail" class="img-fluid" alt="Image description"/>
                                 </a>
                             </figure>
                         </div>
                         <div class="item" data-order="7">
                             <figure itemprop="associatedMedia" itemscope>
-                                <a href="{{asset('assets/admin/img/gallery/88.jpg')}}" itemprop="contentUrl"
-                                   data-size="1024x768">
-                                    <img src="{{asset('assets/admin/img/gallery/88.jpg')}}"
-                                         itemprop="thumbnail" alt="Image description"/>
+                                <a href="{{asset('assets/admin/img/gallery/18.jpg')}}" itemprop="contentUrl"
+                                   data-size="480x270">
+                                    <img src="{{asset('assets/admin/img/gallery/18.jpg')}}"
+                                         itemprop="thumbnail" class="img-fluid" alt="Image description"/>
                                 </a>
                             </figure>
                         </div>
                         <div class="item" data-order="8">
                             <figure itemprop="associatedMedia" itemscope>
-                                <a href="{{asset('assets/admin/img/gallery/99.jpg')}}" itemprop="contentUrl"
-                                   data-size="1024x1024">
-                                    <img src="{{asset('assets/admin/img/gallery/99.jpg')}}"
-                                         itemprop="thumbnail" alt="Image description"/>
+                                <a href="{{asset('assets/admin/img/gallery/9.jpg')}}" itemprop="contentUrl"
+                                   data-size="480x360">
+                                    <img src="{{asset('assets/admin/img/gallery/9.jpg')}}"
+                                         itemprop="thumbnail" class="img-fluid" alt="Image description"/>
                                 </a>
                             </figure>
                         </div>
                         <div class="item" data-order="9">
                             <figure itemprop="associatedMedia" itemscope>
-                                <a href="{{asset('assets/admin/img/gallery/1010.jpg')}}" itemprop="contentUrl"
-                                   data-size="1024x1024">
-                                    <img src="{{asset('assets/admin/img/gallery/10.jpg')}}"
-                                         itemprop="thumbnail" alt="Image description"/>
+                                <a href="{{asset('assets/admin/img/gallery/13.jpg')}}" itemprop="contentUrl"
+                                   data-size="480x720">
+                                    <img src="{{asset('assets/admin/img/gallery/13.jpg')}}"
+                                         itemprop="thumbnail" class="img-fluid" alt="Image description"/>
                                 </a>
                             </figure>
                         </div>
                         <div class="item" data-order="10">
                             <figure itemprop="associatedMedia" itemscope>
-                                <a href="{{asset('assets/admin/img/gallery/1111.jpg')}}" itemprop="contentUrl"
-                                   data-size="1024x1024">
-                                    <img src="{{asset('assets/admin/img/gallery/1111.jpg')}}"
-                                         itemprop="thumbnail" alt="Image description"/>
+                                <a href="{{asset('assets/admin/img/gallery/10.jpg')}}" itemprop="contentUrl"
+                                   data-size="480x360">
+                                    <img src="{{asset('assets/admin/img/gallery/10.jpg')}}"
+                                         itemprop="thumbnail" class="img-fluid" alt="Image description"/>
                                 </a>
                             </figure>
                         </div>
                         <div class="item" data-order="11">
                             <figure itemprop="associatedMedia" itemscope>
-                                <a href="{{asset('assets/admin/img/gallery/1212.jpg')}}" itemprop="contentUrl"
-                                   data-size="1024x768">
-                                    <img src="{{asset('assets/admin/img/gallery/121.jpg')}}"
-                                         itemprop="thumbnail" alt="Image description"/>
+                                <a href="{{asset('assets/admin/img/gallery/12.jpg')}}" itemprop="contentUrl"
+                                   data-size="480x360">
+                                    <img src="{{asset('assets/admin/img/gallery/12.jpg')}}"
+                                         itemprop="thumbnail" class="img-fluid" alt="Image description"/>
                                 </a>
                             </figure>
                         </div>
@@ -204,34 +203,34 @@
         </div>
         <div class="card">
             <div class="card-header">
-                <h6>YouTube Video Gallery</h6>
+                <h6>Video Gallery</h6>
             </div>
             <div class="card-block">
                 <div class="youtube-video-gallery">
                     <div class="my-gallery-container">
-                        <div class="item" data-order="0">
-                            <div class="demo" data-youtube="https://www.youtube.com/watch?v=3pn2SI4KGJc"></div>
+                        <div class="item embed-responsive embed-responsive-16by9" data-order="0">
+                            <div class="demo embed-responsive-item" data-youtube="https://www.youtube.com/watch?v=3pn2SI4KGJc"></div>
                         </div>
-                        <div class="item" data-order="1">
-                            <div class="demo" data-youtube="https://www.youtube.com/watch?v=6v2L2UGZJAM"></div>
+                        <div class="item embed-responsive embed-responsive-16by9" data-order="1">
+                            <div class="demo embed-responsive-item" data-youtube="https://www.youtube.com/watch?v=6v2L2UGZJAM"></div>
                         </div>
-                        <div class="item" data-order="2">
-                            <div class="demo" data-youtube="https://www.youtube.com/watch?v=ZN2SwwfeCRc"></div>
+                        <div class="item embed-responsive embed-responsive-16by9" data-order="2">
+                            <div class="demo embed-responsive-item" data-youtube="https://www.youtube.com/watch?v=ZN2SwwfeCRc"></div>
                         </div>
-                        <div class="item" data-order="3">
-                            <div class="demo" data-youtube="https://www.youtube.com/watch?v=DjxEhLTRtPY"></div>
+                        <div class="item embed-responsive embed-responsive-16by9" data-order="3">
+                            <div class="demo embed-responsive-item" data-youtube="https://www.youtube.com/watch?v=DjxEhLTRtPY"></div>
                         </div>
-                        <div class="item" data-order="4">
-                            <div class="demo" data-youtube="https://www.youtube.com/watch?v=Ce4tYw6IE70"></div>
+                        <div class="item embed-responsive embed-responsive-16by9" data-order="4">
+                            <div class="demo embed-responsive-item" data-youtube="https://www.youtube.com/watch?v=Ce4tYw6IE70"></div>
                         </div>
-                        <div class="item" data-order="5">
-                            <div class="demo" data-youtube="https://www.youtube.com/watch?v=3rHXrA80NH4"></div>
+                        <div class="item embed-responsive embed-responsive-16by9" data-order="5">
+                            <div class="demo embed-responsive-item" data-youtube="https://www.youtube.com/watch?v=3rHXrA80NH4"></div>
                         </div>
-                        <div class="item" data-order="6">
-                            <div class="demo" data-youtube="https://www.youtube.com/watch?v=ftEJIZA7z-I"></div>
+                        <div class="item embed-responsive embed-responsive-16by9" data-order="6">
+                            <div class="demo embed-responsive-item" data-youtube="https://www.youtube.com/watch?v=ftEJIZA7z-I"></div>
                         </div>
-                        <div class="item" data-order="7">
-                            <div class="demo" data-youtube="https://www.youtube.com/watch?v=k_GM1JA608Y"></div>
+                        <div class="item embed-responsive embed-responsive-16by9" data-order="7">
+                            <div class="demo embed-responsive-item" data-youtube="https://www.youtube.com/watch?v=k_GM1JA608Y"></div>
                         </div>
                     </div>
                 </div>

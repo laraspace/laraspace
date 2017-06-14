@@ -18,7 +18,7 @@ jQuery(document).ready(function () {
     var form = $("#basic-wizard-3");
     form.validate({
         errorPlacement: function errorPlacement(error, element) {
-            element.before(error);
+            element.after(error);
         },
         rules: {
             confirm: {
@@ -32,17 +32,18 @@ jQuery(document).ready(function () {
         transitionEffect: "slideLeft",
         autoFocus: true,
         onStepChanging: function (event, currentIndex, newIndex) {
-            form.validate().settings.ignore = ":disabled,:hidden";
-            return form.valid();
+             form.validate().settings.ignore = ":disabled,:hidden";
+             return form.valid();
         },
         onFinishing: function (event, currentIndex) {
-            form.validate().settings.ignore = ":disabled";
-            return form.valid();
+             form.validate().settings.ignore = ":disabled";
+             return form.valid();
         },
         onFinished: function (event, currentIndex) {
             alert("Submitted!");
         }
     });
+
     $("#basic-wizard-4").steps({
         headerTag: "h3",
         bodyTag: "section",

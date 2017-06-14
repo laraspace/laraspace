@@ -1,0 +1,36 @@
+/**
+ * BoxFish.js
+ *
+ * jQuery plugin to create dynamic resizing columnar boxes.
+ *
+ * @version: 0.1
+ * @authors: Jeremy Harris
+ * @license: MIT
+ */
+
+.boxfish-container {
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+    overflow: hidden;
+}
+.boxfish-box {
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+    display: inline-block;
+    background-color: #EEEEEE;
+    border: 1px solid #DDDDDD;
+    position: relative;
+    float: left;
+    overflow: auto;
+    margin: 3px;
+    padding: 20px;
+    max-height: 10000px;
+    -webkit-transition: width 0.2s, height 1s;
+    transition: width 0.2s, height 1s;
+ }
+ .boxfish-box img {
+    width: 100%;
+    height: auto;
+ }

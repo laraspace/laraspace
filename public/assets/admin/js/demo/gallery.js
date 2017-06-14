@@ -205,14 +205,10 @@ $(document).ready(function () {
 
     //video gallery
     $(".demo").videoBox({
-        width: '360',
-        height: '200',
         loop: false,
         autoplay: false,
         byline: true,
         color: "00adef",
-        maxheight: '',
-        maxwidth: '',
         portrait: true,
         title: '',
     });
