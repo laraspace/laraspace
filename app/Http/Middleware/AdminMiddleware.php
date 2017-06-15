@@ -2,8 +2,8 @@
 
 namespace Laraspace\Http\Middleware;
 
-use Closure;
 use Auth;
+use Closure;
 
 class AdminMiddleware
 {

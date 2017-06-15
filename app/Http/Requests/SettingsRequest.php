@@ -2,8 +2,6 @@
 
 namespace Laraspace\Http\Requests;
 
-use Laraspace\Http\Requests\Request;
-
 class SettingsRequest extends Request
 {
     /**

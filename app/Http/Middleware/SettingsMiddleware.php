@@ -15,17 +15,14 @@ class SettingsMiddleware
      */
     public function handle($request, Closure $next)
     {
-        if( get_setting('mailer') == 'mailgun')
-        {
+        if (get_setting('mailer') == 'mailgun') {
             \Config::set([
                 'mail.from.name' => get_setting('mail_mailgun_user'),
                 'mail.from.address' => get_setting('mail_mailgun_from'),
                 'services.mailgun.domain' => get_setting('mail_mailgun_domain'),
                 'services.mailgun.secret' => get_setting('mail_mailgun_secret')
             ]);
-        }
-        else if(get_setting('mailer') == 'sendgrid')
-        {
+        } else if (get_setting('mailer') == 'sendgrid') {
             \Config::set([
                 'mail.host' => get_setting('\'mail_sendgrid_host\''),
                 'mail.username' => get_setting('mail_sendgrid_username'),
@@ -33,15 +30,13 @@ class SettingsMiddleware
                 'mail.from.name' => get_setting('mail_sendgrid_user'),
                 'mail.from.address' => get_setting('mail_sendgrid_from'),
             ]);
-        }
-        else{
+        } else {
             \Config::set([
                 'mail.from.name' => get_setting('mail_sparkpost_user'),
                 'mail.from.address' => get_setting('mail_sparkpost_from'),
                 'services.sparkpost.secret' => get_setting('mail_sparkpost_secret')
             ]);
         }
-
 
 
         return $next($request);

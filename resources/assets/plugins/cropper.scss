@@ -16,15 +16,15 @@
 
   -webkit-user-select: none;
 
-     -moz-user-select: none;
+  -moz-user-select: none;
 
-      -ms-user-select: none;
+  -ms-user-select: none;
 
-          user-select: none;
+  user-select: none;
 
   direction: ltr;
   -ms-touch-action: none;
-      touch-action: none
+  touch-action: none
 }
 
 .cropper-container img {
@@ -117,7 +117,7 @@
 }
 
 .cropper-center:before,
-  .cropper-center:after {
+.cropper-center:after {
   position: absolute;
   display: block;
   content: ' ';

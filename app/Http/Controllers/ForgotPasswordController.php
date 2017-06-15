@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Password;
 use Laraspace\User;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
-use Illuminate\Support\Facades\Session;
 
 class ForgotPasswordController extends Controller
 {
@@ -14,21 +13,23 @@ class ForgotPasswordController extends Controller
     {
         $this->subject = "Laraspace password Reset";
     }
+
     public function getEmail()
     {
         return view('admin.sessions.forgot-password.index');
     }
+
     public function postEmail(Request $request)
     {
         $this->validate($request, ['email' => 'required']);
 
-        $request->session()->put('email',$request->email);
+        $request->session()->put('email', $request->email);
 
         $response = Password::sendResetLink($request->only('email'), function (Message $message) {
             $message->subject($this->getEmailSubject());
         });
 
-        switch($response) {
+        switch ($response) {
             case Password::RESET_LINK_SENT:
                 flash()->success('Password Reset link has been sent to your mail id');
                 return redirect()->back()->with('status', 'No User Is asoociated with this account');
@@ -47,15 +48,16 @@ class ForgotPasswordController extends Controller
         return view('admin.sessions.forgot-password.reset')->with('token', $token);
     }
 
-    public function postReset(Request $request){
-        $this->validate($request,[
-            'password'=>'required|confirmed|min:6|max:16',
-            'token'   => 'required',
-            'email'   => 'required|email',
-            'password_confirmation'=>'required|same:password'
+    public function postReset(Request $request)
+    {
+        $this->validate($request, [
+            'password' => 'required|confirmed|min:6|max:16',
+            'token' => 'required',
+            'email' => 'required|email',
+            'password_confirmation' => 'required|same:password'
         ]);
 
-        $user = User::where('email',\Session::get('email'))->first();
+        $user = User::where('email', \Session::get('email'))->first();
         $user->password = bcrypt($request->password);
         $user->save();
 

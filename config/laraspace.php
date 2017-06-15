@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'notification' => 'toastr' ,
+    'notification' => 'toastr',
 
 
     /*
@@ -25,7 +25,7 @@ return [
     |
     */
 
-    'skintools' => true ,
+    'skintools' => true,
 
 
     /*

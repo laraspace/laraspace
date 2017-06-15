@@ -6,11 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Setting extends Model
 {
-    public static function setSetting($key,$setting)
+    public static function setSetting($key, $setting)
     {
         $old = self::whereOption($key)->first();
 
-        if($old){
+        if ($old) {
             $old->value = $setting;
             $old->save();
             return;
@@ -20,13 +20,14 @@ class Setting extends Model
         $set->value = $setting;
         $set->save();
     }
+
     public static function getSetting($key)
     {
         $setting = static::whereOption($key)->first();
 
-        if($setting){
+        if ($setting) {
             return $setting->value;
-        }else{
+        } else {
             return null;
         }
     }

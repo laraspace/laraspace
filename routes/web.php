@@ -114,14 +114,23 @@ Route::group([
             'as' => 'admin.components.imagecropper', 'uses' => 'Demo\PagesController@imageCropper'
         ]);
 
+        Route::get('zoom', [
+            'as' => 'admin.components.zoom', 'uses' => 'Demo\PagesController@imageZoom'
+        ]);
+
         Route::get('calendar', [
             'as' => 'admin.components.calendar', 'uses' => 'Demo\PagesController@calendar'
         ]);
+
+        Route::get('ratings', [
+            'as' => 'admin.components.ratings', 'uses' => 'Demo\PagesController@ratings'
+        ]);
+
     });
 
     //Forms Routes
 
-    Route::group(['prefix' => 'forms'], function() {
+    Route::group(['prefix' => 'forms'], function () {
 
         Route::get('general', [
             'as' => 'admin.forms.general', 'uses' => 'Demo\PagesController@general'
@@ -150,7 +159,7 @@ Route::group([
     });
 
     //Gallery
-    Route::group(['prefix' => 'gallery'], function() {
+    Route::group(['prefix' => 'gallery'], function () {
 
         Route::get('grid', [
             'as' => 'admin.gallery.grid', 'uses' => 'Demo\PagesController@galleryGrid'
@@ -169,13 +178,13 @@ Route::group([
 
     //Todos
 
-    Route::resource('todos','Demo\TodosController');
+    Route::resource('todos', 'Demo\TodosController');
 
     Route::post('todos/toggleTodo/{id}', [
         'as' => 'admin.todos.toggle', 'uses' => 'Demo\TodosController@toggleTodo'
     ]);
 
-    Route::resource('users','UsersController');
+    Route::resource('users', 'UsersController');
 
     //icons
     Route::group(['prefix' => 'icons'], function () {
@@ -231,7 +240,7 @@ Route::group([
         });
 
         //Ace Editor
-        Route::group(['prefix' => 'env'], function() {
+        Route::group(['prefix' => 'env'], function () {
 
             Route::get('/', [
                 'as' => 'admin.setting.environment', 'uses' => 'SettingsController@envShow'
@@ -267,7 +276,7 @@ Route::group([
 |
 */
 
-Route::group(['middleware' => ['guest','setting']], function () {
+Route::group(['middleware' => ['guest', 'setting']], function () {
 
     Route::get('login', [
         'as' => 'login', 'uses' => 'AuthController@login'
@@ -285,16 +294,16 @@ Route::group(['middleware' => ['guest','setting']], function () {
         'as' => 'forgot-password.index', 'uses' => 'ForgotPasswordController@getEmail'
     ]);
 
-    Route::post('/forgot-password',[
-        'as'=>'send-reset-link' , 'uses'=>'ForgotPasswordController@postEmail'
+    Route::post('/forgot-password', [
+        'as' => 'send-reset-link', 'uses' => 'ForgotPasswordController@postEmail'
     ]);
 
-    Route::get('/password/reset/{token}',[
-        'as'=>'password.reset' , 'uses'=>'ForgotPasswordController@GetReset'
+    Route::get('/password/reset/{token}', [
+        'as' => 'password.reset', 'uses' => 'ForgotPasswordController@GetReset'
     ]);
 
-    Route::post('/password/reset',[
-        'as'=>'reset.password.post' , 'uses'=>'ForgotPasswordController@postReset'
+    Route::post('/password/reset', [
+        'as' => 'reset.password.post', 'uses' => 'ForgotPasswordController@postReset'
     ]);
 
     Route::get('auth/{provider}', 'AuthController@redirectToProvider');

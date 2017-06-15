@@ -24,12 +24,12 @@ class MailerRequest extends FormRequest
     public function rules()
     {
         return [
-            'host'=>'required',
-            'port'=>'required',
-            'from_user'=>'required',
-            'from'=>'required|email',
-            'username'=>'required',
-            'password'=>'required',
+            'host' => 'required',
+            'port' => 'required',
+            'from_user' => 'required',
+            'from' => 'required|email',
+            'username' => 'required',
+            'password' => 'required',
         ];
     }
 }

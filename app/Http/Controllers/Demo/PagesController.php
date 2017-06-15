@@ -83,11 +83,19 @@ class PagesController extends Controller
     {
         return view('admin.pages.components.imagecropper');
     }
-
+    public function imageZoom()
+    {
+        return view('admin.pages.components.zoom');
+    }
     public function calendar()
     {
         return view('admin.pages.components.calendar');
     }
+    public function ratings()
+    {
+        return view('admin.pages.components.ratings');
+    }
+
     // Forms
 
     public function general()
