@@ -23,7 +23,7 @@ Route::get('/', [
 
 Route::group([
     'prefix' => 'admin',
-//    'middleware' => 'admin'
+    'middleware' => 'admin'
 ], function () {
 
     //Main Dashboard
@@ -61,7 +61,6 @@ Route::group([
     });
 
     //Ui Elements
-
     Route::group(['prefix' => 'basic-ui'], function () {
 
         Route::get('buttons', [
@@ -86,6 +85,10 @@ Route::group([
 
         Route::get('modals', [
             'as' => 'admin.ui.modals', 'uses' => 'Demo\PagesController@modals'
+        ]);
+
+        Route::get('progress-bars', [
+            'as' => 'admin.ui.progress-bars', 'uses' => 'Demo\PagesController@progressBars'
         ]);
 
     });
@@ -114,6 +117,22 @@ Route::group([
             'as'=>'admin.components.nestableTree', 'uses'=>'Demo\PagesController@nestableTree'
         ]);
 
+        Route::get('image-cropper', [
+            'as' => 'admin.components.imagecropper', 'uses' => 'Demo\PagesController@imageCropper'
+        ]);
+
+        Route::get('zoom', [
+            'as' => 'admin.components.zoom', 'uses' => 'Demo\PagesController@imageZoom'
+        ]);
+
+        Route::get('calendar', [
+            'as' => 'admin.components.calendar', 'uses' => 'Demo\PagesController@calendar'
+        ]);
+
+        Route::get('ratings', [
+            'as' => 'admin.components.ratings', 'uses' => 'Demo\PagesController@ratings'
+        ]);
+
     });
 
     //Forms Routes
@@ -140,6 +159,22 @@ Route::group([
             'as' => 'admin.forms.editors', 'uses' => 'Demo\PagesController@editors'
         ]);
 
+        Route::get('wizards', [
+            'as' => 'admin.forms.wizards', 'uses' => 'Demo\PagesController@wizards'
+        ]);
+
+    });
+
+    //Gallery
+    Route::group(['prefix' => 'gallery'], function () {
+
+        Route::get('grid', [
+            'as' => 'admin.gallery.grid', 'uses' => 'Demo\PagesController@galleryGrid'
+        ]);
+
+        Route::get('masonry-grid', [
+            'as' => 'admin.gallery.masonry-grid', 'uses' => 'Demo\PagesController@galleryMasonryGrid'
+        ]);
     });
 
     //Login Options
@@ -150,24 +185,89 @@ Route::group([
 
     //Todos
 
-    Route::resource('todos','Demo\TodosController');
+    Route::resource('todos', 'Demo\TodosController');
 
     Route::post('todos/toggleTodo/{id}', [
         'as' => 'admin.todos.toggle', 'uses' => 'Demo\TodosController@toggleTodo'
     ]);
 
-    Route::resource('users','UsersController');
+    Route::resource('users', 'UsersController');
+
+    //icons
+    Route::group(['prefix' => 'icons'], function () {
+
+        Route::get('/icomoon', [
+            'as' => 'admin.icons.icomoon', 'uses' => 'Demo\PagesController@icoMoons'
+        ]);
+
+        Route::get('/evil', [
+            'as' => 'admin.icons.evil', 'uses' => 'Demo\PagesController@evilIcons'
+        ]);
+
+        Route::get('/meteo', [
+            'as' => 'admin.icons.meteo', 'uses' => 'Demo\PagesController@meteoIcons'
+        ]);
+
+        Route::get('/line', [
+            'as' => 'admin.icons.line', 'uses' => 'Demo\PagesController@lineIcons'
+        ]);
+
+        Route::get('/fps-line', [
+            'as' => 'admin.icons.fpsline', 'uses' => 'Demo\PagesController@fpsLineIcons'
+        ]);
+
+        Route::get('/fontawesome', [
+            'as' => 'admin.icons.fontawesome', 'uses' => 'Demo\PagesController@fontawesomeIcons'
+        ]);
+
+    });
 
     //Settings
     Route::group(['prefix' => 'settings'], function () {
 
-        Route::get('/', [
+        //social
+        Route::get('/social', [
             'as' => 'admin.settings.index', 'uses' => 'SettingsController@index'
         ]);
 
         Route::post('/social', [
             'as' => 'admin.settings.social', 'uses' => 'SettingsController@postSocial'
         ]);
+
+        //mailer
+        Route::group(['prefix' => 'mail'], function () {
+
+            Route::get('/', [
+                'as' => 'admin.mail.index', 'uses' => 'SettingsController@mailIndex'
+            ]);
+            Route::post('/create', [
+                'as' => 'admin.mail.create', 'uses' => 'SettingsController@mailCreate'
+            ]);
+
+        });
+
+        //Ace Editor
+        Route::group(['prefix' => 'env'], function () {
+
+            Route::get('/', [
+                'as' => 'admin.setting.environment', 'uses' => 'SettingsController@envShow'
+            ]);
+
+            Route::post('/create', [
+                'as' => 'admin.setting.environment.create', 'uses' => 'SettingsController@envCreate'
+            ]);
+
+        });
+
+        //notification
+        Route::get('/notification', [
+            'as' => 'admin.notification.index', 'uses' => 'SettingsController@notification'
+        ]);
+        Route::post('notification/create', [
+            'as' => 'admin.notification.create', 'uses' => 'SettingsController@notificationCreate'
+        ]);
+
+        //
 
     });
 
@@ -183,7 +283,7 @@ Route::group([
 |
 */
 
-Route::group(['middleware' => 'guest'], function () {
+Route::group(['middleware' => ['guest', 'setting']], function () {
 
     Route::get('login', [
         'as' => 'login', 'uses' => 'AuthController@login'
@@ -197,10 +297,31 @@ Route::group(['middleware' => 'guest'], function () {
         'as' => 'login.post', 'uses' => 'AuthController@postLogin'
     ]);
 
+    Route::get('forgot-password', [
+        'as' => 'forgot-password.index', 'uses' => 'ForgotPasswordController@getEmail'
+    ]);
+
+    Route::post('/forgot-password', [
+        'as' => 'send-reset-link', 'uses' => 'ForgotPasswordController@postEmail'
+    ]);
+
+    Route::get('/password/reset/{token}', [
+        'as' => 'password.reset', 'uses' => 'ForgotPasswordController@GetReset'
+    ]);
+
+    Route::post('/password/reset', [
+        'as' => 'reset.password.post', 'uses' => 'ForgotPasswordController@postReset'
+    ]);
+
     Route::get('auth/{provider}', 'AuthController@redirectToProvider');
     Route::get('auth/{provider}/callback', 'AuthController@handleProviderCallback');
 });
 
 Route::get('logout', [
+    'as' => 'logout', 'uses' => 'AuthController@logout'
+]);
+
+
+Route::get('install', [
     'as' => 'logout', 'uses' => 'AuthController@logout'
 ]);

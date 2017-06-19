@@ -1,0 +1,89 @@
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform:rotate(360deg);
+    transform:rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform:rotate(360deg);
+    transform:rotate(360deg);
+  }
+}
+
+.icon__cnt{
+  width:25px;
+  height: 30px;
+}
+
+.icon--icon-el-spinner .icon__spinner,
+.icon--icon-el-spinner-2 .icon__spinner {
+  -webkit-animation: spin 1s steps(12) infinite;
+  animation: spin 1s steps(12) infinite;
+}
+
+.icon--icon-el-spinner-3 .icon__spinner {
+  -webkit-animation: spin 1.5s linear infinite;
+  animation: spin 1.5s linear infinite;
+}
+
+.icon-el-sc-facebook {
+  fill: #3b5998;
+}
+
+.icon-el-sc-github {
+  fill: #333;
+}
+
+.icon-el-sc-google-plus {
+  fill: #dd4b39;
+}
+
+.icon-el-sc-instagram {
+  fill: #3f729b;
+}
+
+.icon-el-sc-linkedin {
+  fill: #0976b4;
+}
+
+.icon-el-sc-odnoklassniki {
+  fill: #ed812b;
+}
+
+.icon-el-sc-skype {
+  fill: #00aff0;
+}
+
+.icon-el-sc-soundcloud {
+  fill: #f80;
+}
+
+.icon-el-sc-tumblr {
+  fill: #35465c;
+}
+
+.icon-el-sc-twitter {
+  fill: #55acee;
+}
+
+.icon-el-sc-vimeo {
+  fill: #1ab7ea;
+}
+
+.icon-el-sc-vk {
+  fill: #45668e;
+}
+
+.icon-el-sc-youtube {
+  fill: #e52d27;
+}
+
+.icon-el-sc-pinterest {
+  fill: #bd081c;
+}
+
+.icon-el-sc-telegram {
+  fill: #0088cc;
+}

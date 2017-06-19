@@ -51,18 +51,18 @@ class LaraspaceClean extends Command
 
         $files_to_delete = config('laraspace.files_to_delete');
 
-        foreach($dirs_to_delete as $item){
+        foreach ($dirs_to_delete as $item) {
             $success = $this->files->deleteDirectory(base_path($item));
 
-            if($success){
+            if ($success) {
                 $this->info($item . ' -- Deleted');
             }
         }
 
-        foreach($files_to_delete as $item){
+        foreach ($files_to_delete as $item) {
             $success = $this->files->delete(base_path($item));
 
-            if($success){
+            if ($success) {
                 $this->info($item . ' -- Deleted');
             }
         }

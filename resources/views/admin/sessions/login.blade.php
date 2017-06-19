@@ -24,7 +24,7 @@
         </div>
       </div>
       <div class="col-6 text-right">
-        <a href="#" class="forgot-link">Forgot Password?</a>
+        <a href="{{route('forgot-password.index')}}" class="forgot-link">Forgot Password?</a>
       </div>
     </div>
     <button class="btn btn-theme btn-full">Login</button>

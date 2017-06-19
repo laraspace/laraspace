@@ -2,10 +2,9 @@
 
 namespace Laraspace\Http\Controllers;
 
-use Illuminate\Http\Request;
-use Laraspace\User;
-use Laraspace\Http\Requests;
 use Auth;
+use Laraspace\Http\Requests;
+use Laraspace\User;
 use Socialite;
 
 
@@ -18,13 +17,12 @@ class AuthController extends Controller
 
     public function postLogin(Requests\LoginRequest $request)
     {
-        if(User::login($request))
-        {
+        if (User::login($request)) {
             flash()->success('Welcome to Laraspace.');
 
-            if(Auth::user()->isAdmin()){
+            if (Auth::user()->isAdmin()) {
                 return redirect()->to('/admin');
-            }else{
+            } else {
                 return redirect()->to('/');
             }
 
@@ -75,20 +73,20 @@ class AuthController extends Controller
         return redirect()->to('/admin');
     }
 
-    private function findUserByProviderOrCreate($provider , $provider_user)
+    private function findUserByProviderOrCreate($provider, $provider_user)
     {
-        $user = User::where($provider . '_id',$provider_user->token)
-        ->orWhere('email',$provider_user->email)
-        ->first();
+        $user = User::where($provider . '_id', $provider_user->token)
+            ->orWhere('email', $provider_user->email)
+            ->first();
 
 
-        if(!$user){
-            $user =  User::create([
+        if (!$user) {
+            $user = User::create([
                 'name' => $provider_user->name,
                 'email' => $provider_user->email,
                 $provider . '_id' => $provider_user->token
             ]);
-        }else{
+        } else {
             // Update the token on each login request
             $user[$provider . '_id'] = $provider_user->token;
             $user->save();

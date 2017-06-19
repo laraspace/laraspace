@@ -30,6 +30,18 @@
 @import "../../plugins/metisMenu/metisMenu.scss";
 @import "../../plugins/nestable/nestable.scss";
 @import "../../plugins/jstree/jstree.min.scss";
+@import "../../plugins/ace-editor/twilight.scss";
+@import "../../plugins/icons/ico-moon.scss";
+@import "../../plugins/icons/evil";
+@import "../../plugins/icons/meteo";
+@import "../../plugins/icons/line";
+@import "../../plugins/icons/fps-line";
+@import "../../plugins/calendar/fullcalendar.scss";
+@import "../../plugins/form-wizard/wizard.scss";
+@import "../../plugins/imageCropper/cropper.scss";
+@import "../../plugins/gallery/image/photoswipe.scss";
+@import "../../plugins/gallery/image/default-skin.scss";
+@import "../../plugins/zoom/zoom.scss";
 
 
 // Skins
@@ -86,4 +98,5 @@
 @import 'pages/404';
 
 @import "demo";
+
 

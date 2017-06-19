@@ -2,10 +2,6 @@
 
 namespace Laraspace\Http\Controllers;
 
-use Illuminate\Http\Request;
-
-use Laraspace\Http\Requests;
-
 class DashboardController extends Controller
 {
     public function index()
@@ -14,7 +10,7 @@ class DashboardController extends Controller
     }
 
     public function basic()
-        
+
     {
         return view('admin.dashboard.basic');
     }
@@ -26,6 +22,6 @@ class DashboardController extends Controller
 
     public function finance()
     {
-      return view('admin.dashboard.finance');
+        return view('admin.dashboard.finance');
     }
 }
