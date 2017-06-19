@@ -1,5 +1,27 @@
 @extends('admin.layouts.layout-basic')
 
+@section('scripts')
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.3/vue.min.js"></script>
+    <script>
+        Vue.component('mailgun', {
+            template: '#mailgun-template'
+        });
+        Vue.component('sendgrid', {
+            template: '#sendgrid-template'
+        });
+        Vue.component('sparkpost', {
+            template: '#sparkpost-template'
+        });
+        new Vue({
+            el: "#mail-driver",
+
+            data: {
+                currentView:'mailgun',
+            },
+        });
+
+    </script>
+@stop
 
 @section('content')
     <div class="main-content">
@@ -18,6 +40,7 @@
                         <form method="post" action="{{route('admin.mail.create')}}" enctype="multipart/form-data">
                             {{csrf_field()}}
                             <div class="form-group">
+                                <label>Mail Driver</label>
                                 <select name="mailer" class="ls-select form-control" v-model="currentView">
                                     <option value="mailgun">Mailgun</option>
                                     <option value="sendgrid">SendGrid</option>
@@ -106,25 +129,4 @@
         </div>
     </template>
 @stop
-@section('scripts')
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.3/vue.min.js"></script>
-    <script>
-        Vue.component('mailgun', {
-            template: '#mailgun-template'
-        });
-        Vue.component('sendgrid', {
-            template: '#sendgrid-template'
-        });
-        Vue.component('sparkpost', {
-            template: '#sparkpost-template'
-        });
-        new Vue({
-            el: "#mail-driver",
 
-            data: {
-                currentView:'mailgun',
-            },
-        });
-
-    </script>
-@stop

@@ -56,7 +56,7 @@
 .progress {
   margin-top: 20px;
 }
-  /*********Gallery************/
+//GALLERY
 
 .my-gallery img {
   border: 5px solid #eee;
@@ -84,11 +84,14 @@
 
 //COMPONENTS
   /* Image Cropper */
+.docs-buttons,.col .docs-toggles{
+  margin-top: 10px;
+}
 .docs-buttons .btn{
   height: 40px;
 }
 .docs-buttons .btn-upload, .docs-buttons .btn-group-justified{
-  margin:0;
+  margin: 0;
 }
 .docs-set .row{
   margin-top: 20px;
@@ -102,7 +105,44 @@
 img {
   max-width: 100%; /* This rule is very important, please do not ignore this! */
 }
+@media (max-width: $large-breakpoint) {
+  .docs-buttons{
+    max-width: 100%;
+  }
+  .img-cropper-col{
+    max-width: 100%;
+    flex: 100%;
+  }
+  .docs-data .input-group{
+    max-width: 60%;
+  }
+
+}
+  /* Image Zoom */
+
+.container.demo {
+  margin: 50px;
+  text-align: justify;
+  width: 92%;
+}
+.container.demo .img-left {
+  float: left;
+  width: 20%;
+  margin:20px 20px 20px 0;
+}
+.container.demo .img-right{
+  float: right;
+  width: 20%;
+  margin:0 20px 20px 20px;
+}
+
+
   /* Calander */
+.calendar-event{
+  position: absolute;
+  right: 15px;
+  width: 14%;
+}
 .fc-state-default {
   background-color: #007dcc !important;
   background-image: none !important;
@@ -116,10 +156,24 @@ img {
   background-color: #005e99 !important;
   border-color: #00588f !important;
 }
-.fc-event,
-.fc-event-dot {
-  border: 1px solid #3a87ad;
+.fc-event{
+  border: 1px solid #acb7bf;
   background-color: #acb7bf; /* default BACKGROUND color */
+}
+.fc-event-dot{
+  background-color: #acb7bf;
+}
+.fc-event-primary-dot{
+  background-color:$ls-color-blue;
+}
+.fc-event-success-dot{
+  background-color:$ls-color-green;
+}
+.fc-event-warning-dot{
+  background-color:$ls-color-orange;
+}
+.fc-event-danger-dot{
+  background-color:$ls-color-red;
 }
 .fc-event-list{
   list-style-type: none;
@@ -127,6 +181,37 @@ img {
 }
 .fc-event-dot {
   margin-right: 20px;
+}
+@media(max-width: 1260px){
+  .calendar{
+    position: relative;
+    max-width: 100%;
+    flex: 100%;
+  }
+  .calendar-event{
+    position: relative !important;
+    max-width: 100%;
+    right: 0 !important;
+    width: 100% !important;
+  }
+  .calendar-event ol{
+    display: flex;
+  }
+  .calendar-event ol li{
+    flex: 1;
+  }
+}
+
+  /* Rating */
+#mouseover-target, #target-precision{
+  float: right;
+  background: #eee;
+  padding: 0 15px;
+  width: 90px;
+  height: 25px;
+}
+#star-score-target,#star-precision{
+  float: left;
 }
 
 // SKINS DEMO
@@ -222,5 +307,7 @@ img {
       margin-bottom: 0;
     }
   }
-
 }
+
+
+

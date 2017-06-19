@@ -14,18 +14,18 @@
             </ol>
         </div>
         <div class="row">
-            <div class="col-sm-12">
+            <div class="col-lg-12">
                 <div class="card">
                     <div class="card-block">
                         <div class="row">
-                            <div class="col-md-9">
+                            <div class="col-8 img-cropper-col">
                                 <!-- <h3>Demo:</h3> -->
                                 <div class="img-container">
                                     <img id="image" src="{{asset('assets/admin/img/avatars/avatar-lg.png')}}"
                                          alt="Picture">
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col">
                                 <!-- <h3>Preview:</h3> -->
                                 <div class="docs-preview clearfix">
                                     <div class="img-preview preview-lg"></div>
@@ -61,7 +61,7 @@
                         </div>
                         <div class="docs-set">
                             <div class="row">
-                                <div class="col-md-4 docs-buttons">
+                                <div class="col docs-buttons">
                                     <h5 class="section-semi-title">Modes:</h5>
                                     <div class="btn-group">
                                         <button type="button" class="btn btn-primary" data-method="setDragMode"
@@ -107,7 +107,7 @@
                                         </label>
                                     </div>
                                 </div>
-                                <div class="col-md-4 docs-buttons">
+                                <div class="col docs-buttons">
                                     <h5 class="section-semi-title">Transform:</h5>
                                     <div class="btn-group">
                                         <button type="button" class="btn btn-primary" data-method="move"
@@ -172,7 +172,7 @@
                                         </button>
                                     </div>
                                 </div>
-                                <div class="col-md-4 docs-buttons">
+                                <div class="col docs-buttons">
                                     <h5 class="section-semi-title">Reset Plugins:</h5>
                                     <div class="btn-group">
                                         <button type="button" class="btn btn-primary" data-method="crop" title="Crop">
@@ -222,7 +222,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-4 docs-buttons">
+                                <div class="col docs-buttons">
                                     <h5 class="section-semi-title">Get Canvas:</h5>
                                     <div class="btn-group btn-group-crop">
                                         <button type="button" class="btn btn-primary" data-method="getCroppedCanvas">
@@ -249,7 +249,7 @@
                                         </button>
                                     </div>
                                 </div>
-                                <div class="col-md-4 docs-toggles">
+                                <div class="col docs-toggles">
                                     <h5 class="section-semi-title">Aspect Ratio:</h5>
                                     <div class="btn-group btn-group-justified" data-toggle="buttons">
                                         <label class="btn btn-primary active">
@@ -290,7 +290,7 @@
                                         </label>
                                     </div>
                                 </div>
-                                <div class="col-md-4 docs-toggles">
+                                <div class="col docs-toggles">
                                     <h5 class="section-semi-title">View Modes:</h5>
                                     <div class="btn-group btn-group-justified" data-toggle="buttons">
                                         <label class="btn btn-primary active">
@@ -347,7 +347,7 @@
                             </div><!-- /.modal -->
                             <h5 class="section-semi-title">Get Data:</h5>
                             <div class="row">
-                                <div class="col-md-4 docs-buttons">
+                                <div class="col-lg-4 docs-buttons">
                                     <div class="input-group input-group-sm">
                                         <button type="button" class="btn btn-primary input-group-addon"
                                                 data-method="setData" data-target="#putData1">
@@ -366,7 +366,7 @@
                                         <input type="text" class="form-control" id="putData1" placeholder="Get data ">
                                     </div>
                                 </div>
-                                <div class="col-md-4 docs-buttons">
+                                <div class="col-lg-4 docs-buttons">
                                     <div class="input-group input-group-sm">
                                         <button type="button" class="btn btn-primary input-group-addon"
                                                 data-method="getImageData" data-option data-target="#putData2">
@@ -378,7 +378,7 @@
                                         <input type="text" class="form-control" id="putData2" placeholder="Get data ">
                                     </div>
                                 </div>
-                                <div class="col-md-4 docs-buttons">
+                                <div class="col-lg-4 docs-buttons">
                                     <div class="input-group input-group-sm">
                                         <button type="button" class="btn btn-primary input-group-addon"
                                                 data-method="getContainerData" data-option data-target="#putData3">

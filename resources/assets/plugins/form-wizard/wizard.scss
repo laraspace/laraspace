@@ -2,69 +2,131 @@
     display: flex;
 }
 
-.wizard > .steps > ul > li, .wizard > .actions > ul > li {
+.wizard > .steps > ul > li, .wizard > .steps > ul > li,
+.wizard > .actions > ul > li , .wizard > .actions > ul > li{
     flex: 1;
     display: flex;
     justify-content: center;
     position: relative;
+
+}
+.wizard > .steps > ul > li > a > .fa{
+    margin-right: 10px;
+}
+.wizard.basic-wizard > .steps{
+    margin-top: 20px;
 }
 
-.wizard > .steps > ul > li:not(:last-child):after, .wizard > .steps > ul > li:not(:first-child):before {
+.wizard.basic-wizard > .steps > ul > li > a{
+    height: 50px;
+    background: #eee;
+    padding-top: 12px;
+    width: 100%;
+    text-align: center;
+}
+.wizard.basic-wizard > .steps > ul > li.error > a{
+    background: red;
+    box-shadow: none;
+}
+.wizard.basic-wizard > .steps .current a,
+.wizard.basic-wizard > .steps .current a:active,
+.wizard.basic-wizard > .steps .done a:hover
+{
+    color: white;
+    background-color: #ffde00;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 16px 26px -10px rgba(255, 222, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12),
+    0 8px 10px -5px rgba(255, 222, 0, 0.2);
+    -moz-box-shadow: 0 16px 26px -10px rgba(255, 222, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12),
+    0 8px 10px -5px rgba(255, 222, 0, 0.2);
+    box-shadow: 0 16px 26px -10px rgba(255, 222, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12),
+    0 8px 10px -5px rgba(255, 222, 0, 0.2);
+}
+
+.wizard.basic-wizard > .steps .done a
+{
+    background: rgba(255, 222, 0, 0.3);
+    box-shadow: none;
+    color: #000000;
+}
+.wizard.basic-wizard .content{
+
+}
+.wizard.basic-wizard .content .select2-container{
+    width: 100% !important;
+}
+.wizard.basic-wizard > .content > .body ,.wizard.vertical-wizard > .content > .body{
+    float: left;
+    position: absolute;
+    width: 100%;
+    height: 95%;
+    padding: 2.5%;
+}
+.wizard.basic-wizard > .content ,.wizard.vertical-wizard > .content {
+    margin: 1em;
+    top: 50px;
+    display: block;
+    min-height: 25em;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.wizard.basic-wizard > .steps .number{
+    display: none;
+}
+.wizard > .content > .title, .tabcontrol > .content > .title {
+    display: none;
+}
+.wizard.vertical-wizard > .steps > ul > li:not(:last-child):after{
     content: '';
-    width: 50%;
-    height: 3px;
+    width: 4px;
+    height: 100%;
     top: 27px;
     background: #eee;
     position: absolute;
     z-index: 0;
+    left: 50%;
 }
-
-.wizard > .content > .title, .tabcontrol > .content > .title {
-    display: none;
-}
-
-.wizard > .steps > ul > li.done:after, .wizard > .steps > ul > li.current:before,
-.wizard > .steps > ul > li.done:before {
+.wizard.vertical-wizard > .steps > ul > li.done:after {
     background: #FFDE00 !important;
 }
 
-.wizard > .steps > ul > li.last.done.finish:before {
-    background: #FFDE00 !important;
-}
-
-.wizard > .steps > ul > li.current:after,
-.wizard > .steps > ul > li.current ~ li:after,
-.wizard > .steps > ul > li.current ~ li:before {
+.wizard.vertical-wizard > .steps > ul > li.current:after,
+.wizard.vertical-wizard > .steps > ul > li.current ~ li:after {
     background: #EEE !important;
 }
 
-.wizard > .steps > ul > li:after {
-    right: 0;
-}
-
-.wizard > .steps > ul > li:before {
-    left: 0;
-}
-
-.wizard > .steps .current a, .wizard > .steps .current a:hover, .wizard > .steps .current a:active {
-    padding-top: 65px;
+.wizard.vertical-wizard > .steps .current a,
+.wizard.vertical-wizard > .steps .current a:hover,
+.wizard.vertical-wizard > .steps .current a:active {
+    padding-top: 20px;
     background: none !important;
     color: #000000;
+    padding-left: 150px
 }
 
-.wizard > .steps .disabled a, .wizard > .steps .disabled a:hover, .wizard > .steps .disabled a:active {
-    padding-top: 65px;
+.wizard.vertical-wizard > .steps .disabled a,
+.wizard.vertical-wizard > .steps .disabled a:hover,
+.wizard.vertical-wizard > .steps .disabled a:active {
+    padding-top: 20px;
     background: none !important;
     color: #000000;
+    padding-left: 150px
 }
 
-.wizard > .steps .done a, .wizard > .steps .done a:hover, .wizard > .steps .done a:active {
+.wizard.vertical-wizard > .steps .done a,
+.wizard.vertical-wizard > .steps .done a:hover,
+.wizard.vertical-wizard > .steps .done a:active {
     background: none !important;
     color: black;
-    padding-top: 65px;
+    padding-top: 20px;
+    padding-left: 150px
 }
 
-.wizard > .steps .number {
+.wizard.vertical-wizard > .steps .number {
     font-size: 1.429em;
     position: absolute;
     background: #FFFFFF;
@@ -75,47 +137,22 @@
     line-height: 2.45;
     text-align: center;
     top: 0;
+    left: 45.2%;
     margin-left: -6px;
     z-index: 100;
 }
 
-.wizard > .actions .disabled a, .wizard > .actions .disabled a:hover, .wizard > .actions .disabled a:active {
-    background: #eee;
-    color: #aaa;
-}
-
-.wizard > .steps .current .number {
+.wizard.vertical-wizard > .steps .current .number {
     border: 2px solid #FFDE00;
 }
 
-.wizard > .steps .done .number {
+.wizard.vertical-wizard > .steps .done .number {
     background: #FFDE00 !important;
     border: 2px solid #FFDE00;
 }
 
 .wizard > .steps .current-info, .tabcontrol > .steps .current-info {
     display: none;
-}
-
-.wizard > .content > .body {
-    float: left;
-    position: absolute;
-    width: 95%;
-    height: 95%;
-    padding: 2.5%;
-}
-
-.wizard > .content {
-    top: 50px;
-    display: block;
-    margin: 0.5em;
-    min-height: 25em;
-    overflow: hidden;
-    position: relative;
-    width: auto;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
 }
 
 .wizard > .actions {
@@ -136,7 +173,7 @@
     margin: 0;
 }
 
-.wizard > .steps > ul > li, .wizard > .actions > ul > li {
+.wizard.vertical-wizard > .steps > ul > li, .wizard > .actions > ul > li {
     flex: 1;
     display: flex;
     justify-content: center;
@@ -162,38 +199,6 @@
     border-radius: 5px;
 }
 
-.wizard.icon-wizard > .steps .number {
-    display: none;
-}
-
-.wizard.icon-wizard > .steps ul > li > a > i {
-    font-size: 1.429em;
-    position: absolute;
-    background: #FFFFFF;
-    border: 2px solid #eee;
-    cursor: default;
-    width: 60px;
-    border-radius: 50%;
-    line-height: 2.45;
-    text-align: center;
-    top: 0;
-    margin-left: -6px;
-    z-index: 100;
-}
-
-.wizard.icon-wizard > .steps ul > li.current > a > i {
-    border: 2px solid #FFDE00;
-}
-
-.wizard.icon-wizard > .steps ul > li.done > a > i {
-    background: #FFDE00 !important;
-    border: 2px solid #FFDE00;
-}
-
-.wizard.icon-wizard > .steps ul > li.current.error > a > i {
-    border: 2px solid #f35a3d;
-}
-
 .wizard label.error {
     color: #f35a3d;
 }
@@ -212,10 +217,6 @@
     flex-direction: column;
 }
 
-.wizard.vertical-wizard > .steps > ul > li:not(:last-child):after,
-.wizard.vertical-wizard > .steps > ul > li:not(:first-child):before{
-    display: none;
-}
-.wizard.vertical-wizard > .steps > ul > li{
-    margin-top: 10px;
+.wizard.vertical-wizard > .steps > ul > li {
+    height: 120px;
 }

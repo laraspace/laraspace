@@ -42,7 +42,8 @@ mix.combine([
     pluginPath + 'gallery/image/photoswipe-ui-default.js',
     pluginPath + 'gallery/image/mp.mansory.js',
     pluginPath + 'gallery/video/videobox.js',
-
+    pluginPath + 'rating/jquery.raty.js',
+    pluginPath + 'zoom/zoom.js',
     pluginPath + 'calendar/moment.js',
     pluginPath + 'calendar/fullcalendar.js',
     pluginPath + 'imageCropper/cropper.js',

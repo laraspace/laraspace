@@ -155,7 +155,7 @@ return [
             'icon' => 'fa fa-eye',
             'children' => [
                 [
-                    'title' => 'IcoMoons',
+                    'title' => 'IcoMoon',
                     'link' => '/admin/icons/icomoon',
                     'active' => 'admin/icons/icomoon',
                 ],
@@ -175,12 +175,12 @@ return [
                     'active' => 'admin/icons/line',
                 ],
                 [
-                    'title' => 'FPS Line Icons',
+                    'title' => 'FPS Line',
                     'link' => '/admin/icons/fps-line',
                     'active' => 'admin/icons/fps-line',
                 ],
                 [
-                    'title' => 'Fontawesome Icons',
+                    'title' => 'Font Awesome',
                     'link' => '/admin/icons/fontawesome',
                     'active' => 'admin/icons/fontawesome',
                 ],

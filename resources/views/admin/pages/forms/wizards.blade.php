@@ -20,7 +20,7 @@
             </div>
             <div class="card-block">
                 <div class="content">
-                    <form id="basic-wizard">
+                    <form id="basic-wizard" class="basic-wizard">
                         <h3>Step 1</h3>
                         <section>
                             <div class="row">
@@ -142,7 +142,7 @@
             </div>
             <div class="card-block">
                 <div class="content">
-                    <form id="basic-wizard-2" class="icon-wizard">
+                    <form id="basic-wizard-2" class="basic-wizard icon-wizard">
                         <h3><i class="fa fa-home"></i>Step 1</h3>
                         <section>
                             <div class="row">
@@ -264,7 +264,7 @@
             </div>
             <div class="card-block">
                 <div class="content">
-                    <form id="basic-wizard-3" class="icon-wizard">
+                    <form id="basic-wizard-3" class="basic-wizard  icon-wizard">
                         <h3><i class="fa fa-home"></i>Step 1</h3>
                         <section>
                             <div class="row">
