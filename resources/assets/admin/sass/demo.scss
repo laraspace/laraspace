@@ -120,17 +120,15 @@ img {
 }
   /* Image Zoom */
 
-.container.demo {
-  margin: 50px;
+.image-zoom-demo {
   text-align: justify;
-  width: 92%;
 }
-.container.demo .img-left {
+.image-zoom-demo .img-left {
   float: left;
   width: 20%;
   margin:20px 20px 20px 0;
 }
-.container.demo .img-right{
+.image-zoom-demo .img-right{
   float: right;
   width: 20%;
   margin:0 20px 20px 20px;
@@ -212,6 +210,22 @@ img {
 }
 #star-score-target,#star-precision{
   float: left;
+}
+  /*Bar Rating*/
+.bar-rating .card-block{
+  display: flex;
+  height: 120px;
+}
+.bar-rating .br-wrapper{
+  margin: auto;
+}
+.bar-rating .br-theme-bars-reversed{
+  width: 60%;
+}
+.bar-rating .br-theme-bars-reversed .br-widget .br-current-rating{
+  margin-left: 110px;
+  float: none;
+  position: absolute;
 }
 
 // SKINS DEMO

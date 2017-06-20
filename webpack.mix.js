@@ -38,6 +38,7 @@ mix.combine([
     pluginPath + 'alertify/alertify.js',
     pluginPath + 'easypiecharts/jquery.easypiechart.js',
     pluginPath + 'metisMenu/metisMenu.js',
+    pluginPath + 'bar-rating/jquery.barrating.js',
     pluginPath + 'gallery/image/photoswipe.js',
     pluginPath + 'gallery/image/photoswipe-ui-default.js',
     pluginPath + 'gallery/image/mp.mansory.js',

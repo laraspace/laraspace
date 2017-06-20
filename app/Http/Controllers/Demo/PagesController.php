@@ -95,6 +95,10 @@ class PagesController extends Controller
     {
         return view('admin.pages.components.ratings');
     }
+    public function barRatings()
+    {
+        return view('admin.pages.components.bar-ratings');
+    }
 
     // Forms
 

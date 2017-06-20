@@ -126,6 +126,10 @@ Route::group([
             'as' => 'admin.components.ratings', 'uses' => 'Demo\PagesController@ratings'
         ]);
 
+        Route::get('bar-ratings', [
+            'as' => 'admin.components.bar-ratings', 'uses' => 'Demo\PagesController@barRatings'
+        ]);
+
     });
 
     //Forms Routes

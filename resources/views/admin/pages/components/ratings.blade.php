@@ -7,11 +7,11 @@
 @section('content')
     <div class="main-content">
         <div class="page-header">
-            <h3 class="page-title">Notifications</h3>
+            <h3 class="page-title">Star Ratings</h3>
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item"><a href="#">Notifications</a></li>
-                <li class="breadcrumb-item active">Notifications</li>
+                <li class="breadcrumb-item"><a href="#">Component</a></li>
+                <li class="breadcrumb-item active">Star Ratings</li>
             </ol>
         </div>
         <div class="row">

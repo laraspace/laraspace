@@ -142,9 +142,14 @@ return [
                     'active' => 'admin/components/calendar',
                 ],
                 [
-                    'title' => 'Ratings',
+                    'title' => 'Star Ratings',
                     'link' => '/admin/components/ratings',
                     'active' => 'admin/components/ratings',
+                ],
+                [
+                    'title' => 'Bar Ratings',
+                    'link' => '/admin/components/bar-ratings',
+                    'active' => 'admin/components/bar-ratings',
                 ],
             ]
         ],

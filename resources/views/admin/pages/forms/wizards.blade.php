@@ -360,7 +360,6 @@
                                 </div>
                             </div>
                         </section>
-
                         <h3><i class="fa fa-twitter"></i>Step 4</h3>
                         <section>
                             <div class="form-group">
@@ -387,7 +386,7 @@
             <div class="card-block">
                 <div class="content">
                     <form id="basic-wizard-4" class="vertical-wizard">
-                        <h3></i>Step 1</h3>
+                        <h3>Step 1</h3>
                         <section>
                             <div class="row">
                                 <div class="col-md-6">
@@ -426,7 +425,6 @@
                                 </div>
                             </div>
                         </section>
-
                         <h3>Step 2</h3>
                         <section>
                             <div class="row">
@@ -452,7 +450,6 @@
                                 </div>
                             </div>
                         </section>
-
                         <h3>Step 3</h3>
                         <section>
                             <div class="row">
@@ -482,7 +479,6 @@
                                 </div>
                             </div>
                         </section>
-
                         <h3>Step 4</h3>
                         <section>
                             <div class="form-group">
