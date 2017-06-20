@@ -223,6 +223,11 @@ return [
                     'active' => 'admin/forms/wizards',
                 ],
                 [
+                    'title' => 'Form Wizard with circle',
+                    'link' => '/admin/forms/wizard-with-circles',
+                    'active' => 'admin/forms/wizard-with-circles',
+                ],
+                [
                     'title' => 'Editors',
                     'link' => '/admin/forms/editors',
                     'active' => 'admin/forms/editors',

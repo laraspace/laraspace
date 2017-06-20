@@ -20,7 +20,7 @@
                                     <i class="icon-mt-compass"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-mt-compass</span>
+                                    <span>icon-mt-compass </span>
                                 </div>
                             </div>
                             <div class="demo-icon">

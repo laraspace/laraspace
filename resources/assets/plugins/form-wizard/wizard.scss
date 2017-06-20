@@ -49,20 +49,10 @@
     box-shadow: none;
     color: #000000;
 }
-.wizard.basic-wizard .content{
-
-}
 .wizard.basic-wizard .content .select2-container{
     width: 100% !important;
 }
-.wizard.basic-wizard > .content > .body ,.wizard.vertical-wizard > .content > .body{
-    float: left;
-    position: absolute;
-    width: 100%;
-    height: 95%;
-    padding: 2.5%;
-}
-.wizard.basic-wizard > .content ,.wizard.vertical-wizard > .content {
+.wizard.basic-wizard > .content ,.wizard.vw-with-c > .content {
     margin: 1em;
     top: 50px;
     display: block;
@@ -80,7 +70,7 @@
 .wizard > .content > .title, .tabcontrol > .content > .title {
     display: none;
 }
-.wizard.vertical-wizard > .steps > ul > li:not(:last-child):after{
+.wizard.vw-with-c > .steps > ul > li:not(:last-child):after{
     content: '';
     width: 4px;
     height: 100%;
@@ -90,43 +80,43 @@
     z-index: 0;
     left: 110px;
 }
-.wizard.vertical-wizard > .steps > ul > li.done:after {
+.wizard.vw-with-c > .steps > ul > li.done:after {
     background: #FFDE00 !important;
 }
 
-.wizard.vertical-wizard > .steps > ul > li.current:after,
-.wizard.vertical-wizard > .steps > ul > li.current ~ li:after {
+.wizard.vw-with-c > .steps > ul > li.current:after,
+.wizard.vw-with-c > .steps > ul > li.current ~ li:after {
     background: #EEE !important;
 }
 
-.wizard.vertical-wizard > .steps .current a,
-.wizard.vertical-wizard > .steps .current a:hover,
-.wizard.vertical-wizard > .steps .current a:active {
+.wizard.vw-with-c > .steps .current a,
+.wizard.vw-with-c > .steps .current a:hover,
+.wizard.vw-with-c > .steps .current a:active {
     padding-top: 20px;
     background: none !important;
     color: #000000;
     padding-left: 150px
 }
 
-.wizard.vertical-wizard > .steps .disabled a,
-.wizard.vertical-wizard > .steps .disabled a:hover,
-.wizard.vertical-wizard > .steps .disabled a:active {
+.wizard.vw-with-c > .steps .disabled a,
+.wizard.vw-with-c > .steps .disabled a:hover,
+.wizard.vw-with-c > .steps .disabled a:active {
     padding-top: 20px;
     background: none !important;
     color: #000000;
     padding-left: 150px
 }
 
-.wizard.vertical-wizard > .steps .done a,
-.wizard.vertical-wizard > .steps .done a:hover,
-.wizard.vertical-wizard > .steps .done a:active {
+.wizard.vw-with-c > .steps .done a,
+.wizard.vw-with-c > .steps .done a:hover,
+.wizard.vw-with-c > .steps .done a:active {
     background: none !important;
     color: black;
     padding-top: 20px;
     padding-left: 150px
 }
 
-.wizard.vertical-wizard > .steps .number {
+.wizard.vw-with-c > .steps .number {
     font-size: 1.429em;
     position: absolute;
     background: #FFFFFF;
@@ -142,11 +132,8 @@
     z-index: 100;
 }
 
-.wizard.vertical-wizard > .steps .current .number {
-    border: 2px solid #FFDE00;
-}
 
-.wizard.vertical-wizard > .steps .done .number {
+.wizard.vw-with-c > .steps .done .number {
     background: #FFDE00 !important;
     border: 2px solid #FFDE00;
 }
@@ -167,26 +154,24 @@
     text-align: right;
 }
 
-.wizard ul, .tabcontrol ul {
+.wizard.bw-with-c ul, .tabcontrol ul {
     list-style: none !important;
     padding: 0;
     margin: 0;
 }
 
-.wizard.vertical-wizard > .steps > ul > li, .wizard > .actions > ul > li {
+.wizard.vw-with-c > .steps > ul > li, .wizard > .actions > ul > li {
     flex: 1;
     display: flex;
     justify-content: center;
     position: relative;
+    margin: 0 auto;
 }
 
 .wizard > .actions > ul > li {
     margin: 0 0.5em;
 }
 
-.wizard > .steps > ul > li, .wizard > .actions > ul > li {
-    float: left;
-}
 
 .wizard > .actions a, .wizard > .actions a:hover, .wizard > .actions a:active {
     background: #2184be;
@@ -199,6 +184,178 @@
     border-radius: 5px;
 }
 
+
+.wizard.vw-with-c > .steps {
+    display: inline;
+    float: left;
+    width: 300px;
+}
+
+.wizard.vw-with-c ul {
+    flex-direction: column;
+}
+
+.wizard.vw-with-c > .steps > ul > li {
+    height: 120px;
+}
+
+//form wizard with circle
+
+.wizard ul, .tabcontrol ul {
+    display: flex;
+}
+
+.wizard > .steps > ul > li, .wizard > .actions > ul > li {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    float: left;
+}
+
+.wizard.bw-with-c > .steps > ul > li:not(:last-child):after,
+.wizard.bw-with-c > .steps > ul > li:not(:first-child):before {
+    content: '';
+    width: 50%;
+    height: 3px;
+    top: 27px;
+    background: #eee;
+    position: absolute;
+    z-index: 0;
+}
+
+.wizard.bw-with-c > .steps > ul > li.done:after, .wizard > .steps > ul > li.current:before,
+.wizard.bw-with-c > .steps > ul > li.done:before {
+    background: #FFDE00 !important;
+}
+
+.wizard.bw-with-c > .steps > ul > li.last.done.finish:before {
+    background: #FFDE00 !important;
+}
+
+.wizard.bw-with-c > .steps > ul > li.current:after,
+.wizard.bw-with-c > .steps > ul > li.current ~ li:after,
+.wizard.bw-with-c > .steps > ul > li.current ~ li:before {
+    background: #EEE !important;
+}
+
+.wizard.bw-with-c > .steps > ul > li:after {
+    right: 0;
+}
+.wizard.bw-with-c > .steps > ul > li:before {
+    left: 0;
+}
+
+.wizard.bw-with-c > .steps .current a,
+.wizard.bw-with-c > .steps .current a:hover,
+.wizard.bw-with-c > .steps .current a:active,
+.wizard.bw-with-c > .steps .disabled a,
+.wizard.bw-with-c > .steps .disabled a:hover,
+.wizard.bw-with-c > .steps .disabled a:active{
+    padding-top: 65px;
+    background: none !important;
+    color: #000000;
+}
+
+.wizard.bw-with-c > .steps .done a,
+.wizard.bw-with-c > .steps .done a:hover,
+.wizard.bw-with-c > .steps .done a:active {
+    background: none !important;
+    color: black;
+    padding-top: 65px;
+}
+
+.wizard.bw-with-c > .steps .number {
+    font-size: 1.429em;
+    position: absolute;
+    background: #FFFFFF;
+    border: 2px solid #eee;
+    cursor: default;
+    width: 60px;
+    border-radius: 50%;
+    line-height: 2.45;
+    text-align: center;
+    top: 0;
+    margin-left: -6px;
+    z-index: 100;
+}
+
+.wizard.bw-with-c > .actions .disabled a,
+.wizard.bw-with-c > .actions .disabled a:hover,
+.wizard.bw-with-c > .actions .disabled a:active {
+    background: #eee;
+    color: #aaa;
+}
+
+.wizard.bw-with-c > .steps .current .number ,
+.wizard.vw-with-c > .steps .current .number {
+    border: 2px solid #FFDE00;
+}
+
+.wizard.bw-with-c > .steps .done .number {
+    background: #FFDE00 !important;
+    border: 2px solid #FFDE00;
+}
+
+.wizard > .content > .body {
+    float: left;
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    padding: 2.5%;
+}
+
+.wizard.bw-with-c > .content {
+    top: 50px;
+    display: block;
+    margin: 0.5em;
+    min-height: 25em;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.wizard ul, .tabcontrol ul {
+    list-style: none !important;
+    padding: 0;
+    margin: 0;
+}
+
+.wizard.iw-with-c > .steps .number {
+    display: none;
+}
+
+.wizard.iw-with-c > .steps ul > li > a > i {
+    font-size: 1.429em;
+    position: absolute;
+    background: #FFFFFF;
+    border: 2px solid #eee;
+    cursor: default;
+    width: 60px;
+    border-radius: 50%;
+    line-height: 2.45;
+    text-align: center;
+    top: 0;
+    margin-left: -6px;
+    z-index: 100;
+}
+
+.wizard.iw-with-c > .steps ul > li.current > a > i {
+    border: 2px solid #FFDE00;
+}
+
+.wizard.iw-with-c > .steps ul > li.done > a > i {
+    background: #FFDE00 !important;
+    border: 2px solid #FFDE00;
+}
+
+.wizard.iw-with-c > .steps ul > li.current.error > a > i {
+    border: 2px solid #f35a3d;
+}
+
 .wizard label.error {
     color: #f35a3d;
 }
@@ -207,25 +364,11 @@
     border-color: #f35a3d;
 }
 
-.wizard.vertical-wizard > .steps {
-    display: inline;
-    float: left;
-    width: 300px;
-}
-
-.wizard.vertical-wizard ul {
-    flex-direction: column;
-}
-
-.wizard.vertical-wizard > .steps > ul > li {
-    height: 120px;
-}
-
 @media (max-width: $medium-breakpoint ) {
-    .wizard.vertical-wizard > .steps{
+    .wizard.vw-with-c > .steps{
         float: none;
     }
-    .wizard.basic-wizard > .content, .wizard.vertical-wizard > .content{
+    .wizard.basic-wizard > .content, .wizard.vw-with-c > .content{
         min-height: 500px !important;
     }
 }

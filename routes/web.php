@@ -160,6 +160,10 @@ Route::group([
             'as' => 'admin.forms.wizards', 'uses' => 'Demo\PagesController@wizards'
         ]);
 
+        Route::get('wizard-with-circles', [
+            'as' => 'admin.forms.wizard-with-circles', 'uses' => 'Demo\PagesController@wizardWithCircles'
+        ]);
+
     });
 
     //Gallery

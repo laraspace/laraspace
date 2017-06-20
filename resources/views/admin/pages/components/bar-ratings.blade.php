@@ -1,17 +1,4 @@
 @extends('admin.layouts.layout-basic')
-@section('styles')
-    <style>
-
-    </style>
-    @stop
-@section('scripts')
-    <script type="text/javascript" src="{{asset('assets/admin/js/demo/rating.js')}}"></script>
-    <script>
-
-
-    </script>
-
-@stop
 
 @section('content')
     <div class="main-content">

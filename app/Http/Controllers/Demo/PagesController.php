@@ -131,6 +131,10 @@ class PagesController extends Controller
     {
         return view('admin.pages.forms.wizards');
     }
+    public function wizardWithCircles()
+    {
+        return view('admin.pages.forms.wizard-with-circles');
+    }
 
     //Gallery
     public function galleryGrid()
