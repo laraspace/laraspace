@@ -1,5 +1,9 @@
 @extends('admin.layouts.layout-basic')
 
+@section('scripts')
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+@stop
+
 @section('content')
     <div class="main-content">
         <div class="page-header">
