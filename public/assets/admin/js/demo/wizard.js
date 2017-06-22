@@ -1,5 +1,5 @@
 
-jQuery(document).ready(function () {
+$.Deferred(function() {
 
     $("#basic-wizard").steps({
         headerTag: "h3",

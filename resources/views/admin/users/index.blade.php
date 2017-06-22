@@ -6,7 +6,6 @@
 
 @section('content')
     <div class="main-content">
-
         <div class="page-header">
             <h3 class="page-title">Users</h3>
             <ol class="breadcrumb">
