@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     @include('admin.layouts.partials.favicons')
 </head>
-<body id="app" class="login-page">
+<body id="app" class="login-page login-simple">
 <div class="login-wrapper">
     <div class="login-box">
         @include('admin.layouts.partials.laraspace-notifs')
         <div class="logo-main">
-            <a href="/"><img src="/assets/admin/img/logo-desk.png" alt="Laraspace Logo"></a>
+            <a href="/"><img src="/assets/admin/img/logo-login.png" alt="Laraspace Logo"></a>
         </div>
         @yield('content')
         <div class="page-copyright">
             <p>Powered by <a href="http://bytefury.com" target="_blank">Bytefury</a></p>
-            <p>Laraspace © 2016</p>
+            <p>Laraspace © {{ date('Y') }}</p>
         </div>
     </div>
 </div>

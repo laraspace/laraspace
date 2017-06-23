@@ -39,6 +39,8 @@ mix.combine([
     pluginPath + 'metisMenu/metisMenu.js',
     pluginPath + 'form-wizard/jquery.steps.js',
     pluginPath + 'bar-rating/jquery.barrating.js',
+    pluginPath + 'nestable/nestable.js',
+    pluginPath + 'jstree/jstree.js',
     pluginPath + 'gallery/image/photoswipe.js',
     pluginPath + 'gallery/image/photoswipe-ui-default.js',
     pluginPath + 'gallery/image/mp.mansory.js',
