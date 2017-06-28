@@ -110,23 +110,23 @@ $(document).ready(function () {
 //Bar Rating
 $(document).ready(function () {
 
-    $('#example-1to10').barrating('show', {
+    $('#br-1to10').barrating('show', {
         theme: 'bars-1to10'
     });
 
-    $('#example-movie').barrating('show', {
+    $('#br-movie').barrating('show', {
         theme: 'bars-movie'
     });
 
-    $('#example-movie').barrating('set', 'Mediocre');
+    $('#br-movie').barrating('set', 'Mediocre');
 
-    $('#example-square').barrating('show', {
+    $('#br-square').barrating('show', {
         theme: 'bars-square',
         showValues: true,
         showSelectedRating: false
     });
 
-    $('#example-pill').barrating('show', {
+    $('#br-pill').barrating('show', {
         theme: 'bars-pill',
         initialRating: 'A',
         showValues: true,
@@ -138,29 +138,29 @@ $(document).ready(function () {
         }
     });
 
-    $('#example-reversed').barrating('show', {
+    $('#br-reversed').barrating('show', {
         theme: 'bars-reversed',
         showSelectedRating: true,
         reverse: true
     });
 
-    $('#example-horizontal').barrating('show', {
+    $('#br-horizontal').barrating('show', {
         theme: 'bars-horizontal',
         reverse: true,
         hoverState: false
     });
 
-    $('#example-fontawesome').barrating({
+    $('#br-fontawesome').barrating({
         theme: 'fontawesome-stars',
         showSelectedRating: false
     });
 
-    $('#example-css').barrating({
+    $('#br-css').barrating({
         theme: 'css-stars',
         showSelectedRating: false
     });
 
-    $('#example-bootstrap').barrating({
+    $('#br-bootstrap').barrating({
         theme: 'bootstrap-stars',
         showSelectedRating: false
     });

@@ -132,6 +132,28 @@ Route::group([
 
     });
 
+    //Charts
+    Route::group(['prefix' => 'charts'], function () {
+
+        Route::get('sparklines', [
+            'as' => 'admin.charts.sparklines', 'uses' => 'Demo\PagesController@sparklineCharts'
+        ]);
+
+        Route::get('amcharts', [
+            'as' => 'admin.charts.amcharts', 'uses' => 'Demo\PagesController@amCharts'
+        ]);
+
+        Route::get('morris', [
+            'as' => 'admin.charts.morris', 'uses' => 'Demo\PagesController@morrisCharts'
+        ]);
+
+        Route::get('gauges', [
+            'as' => 'admin.charts.gauges', 'uses' => 'Demo\PagesController@gaugesCharts'
+        ]);
+
+    });
+
+
     //Forms Routes
 
     Route::group(['prefix' => 'forms'], function () {

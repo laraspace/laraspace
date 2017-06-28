@@ -358,8 +358,11 @@
 
 .wizard label.error {
     color: #f35a3d;
+    position: absolute;
 }
-
+.wizard .form-group{
+    margin-bottom: 2rem;
+}
 .wizard .form-control.error {
     border-color: #f35a3d;
 }

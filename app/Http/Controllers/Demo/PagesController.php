@@ -2,9 +2,6 @@
 
 namespace Laraspace\Http\Controllers\Demo;
 
-use Illuminate\Http\Request;
-
-use Laraspace\Http\Requests;
 use Laraspace\Http\Controllers\Controller;
 
 class PagesController extends Controller
@@ -24,7 +21,7 @@ class PagesController extends Controller
     {
         return view('admin.pages.layouts.horizontal-menu');
     }
-    
+
 
     //Basic UI
     public function buttons()
@@ -83,22 +80,49 @@ class PagesController extends Controller
     {
         return view('admin.pages.components.imagecropper');
     }
+
     public function imageZoom()
     {
         return view('admin.pages.components.zoom');
     }
+
     public function calendar()
     {
         return view('admin.pages.components.calendar');
     }
+
     public function ratings()
     {
         return view('admin.pages.components.ratings');
     }
+
     public function barRatings()
     {
         return view('admin.pages.components.bar-ratings');
     }
+
+    //Charts
+
+    public function sparklineCharts()
+    {
+        return view('admin.pages.charts.sparkline');
+    }
+
+    public function amCharts()
+    {
+        return view('admin.pages.charts.amchart');
+    }
+
+    public function morrisCharts()
+    {
+        return view('admin.pages.charts.sparkline');
+    }
+
+    public function guageCharts()
+    {
+        return view('admin.pages.charts.sparkline');
+    }
+
 
     // Forms
 
@@ -131,6 +155,7 @@ class PagesController extends Controller
     {
         return view('admin.pages.forms.wizards');
     }
+
     public function wizardWithCircles()
     {
         return view('admin.pages.forms.wizard-with-circles');
@@ -141,6 +166,7 @@ class PagesController extends Controller
     {
         return view('admin.pages.gallery.grid');
     }
+
     public function galleryMasonryGrid()
     {
         return view('admin.pages.gallery.masonry-grid');
@@ -157,22 +183,27 @@ class PagesController extends Controller
     {
         return view('admin.pages.icons.ico-moon');
     }
+
     public function evilIcons()
     {
         return view('admin.pages.icons.evil');
     }
+
     public function meteoIcons()
     {
         return view('admin.pages.icons.meteo');
     }
+
     public function lineIcons()
     {
         return view('admin.pages.icons.line');
     }
+
     public function fpsLineIcons()
     {
         return view('admin.pages.icons.fps-line');
     }
+
     public function fontawesomeIcons()
     {
         return view('admin.pages.icons.fontawesome');

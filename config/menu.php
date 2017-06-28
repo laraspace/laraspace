@@ -154,6 +154,34 @@ return [
             ]
         ],
         [
+            'title' => 'Charts',
+            'link' => '#',
+            'active' => 'admin/charts*',
+            'icon' => 'fa fa-bar-chart',
+            'children' => [
+                [
+                    'title' => 'Sparkline',
+                    'link' => '/admin/charts/sparklines',
+                    'active' => 'admin/charts/sparklines',
+                ],
+                [
+                    'title' => 'AMCharts',
+                    'link' => '/admin/charts/amcharts',
+                    'active' => 'admin/charts/amcharts',
+                ],
+                [
+                    'title' => 'Morris',
+                    'link' => '/admin/charts/morris',
+                    'active' => 'admin/charts/morris',
+                ],
+                [
+                    'title' => 'Gauges',
+                    'link' => '/admin/charts/gauges',
+                    'active' => 'admin/charts/gauges',
+                ],
+            ]
+        ],
+        [
             'title' => 'Icons',
             'link' => '#',
             'active' => 'admin/icons*',

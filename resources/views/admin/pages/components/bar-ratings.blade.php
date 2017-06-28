@@ -1,5 +1,9 @@
 @extends('admin.layouts.layout-basic')
 
+@section('scripts')
+    <script type="text/javascript" src="{{asset('assets/admin/js/demo/rating.js')}}"></script>
+@stop
+
 @section('content')
     <div class="main-content">
         <div class="page-header">
@@ -17,7 +21,7 @@
                         <h6>1/10 Rating</h6>
                     </div>
                     <div class="card-block">
-                        <select id="example-1to10" name="rating" autocomplete="off">
+                        <select id="br-1to10" name="rating" autocomplete="off">
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -38,7 +42,7 @@
                         <h6>Movie Rating</h6>
                     </div>
                     <div class="card-block">
-                        <select id="example-movie" name="rating" autocomplete="off">
+                        <select id="br-movie" name="rating" autocomplete="off">
                             <option value="Bad">Bad</option>
                             <option value="Mediocre">Mediocre</option>
                             <option value="Good" selected="selected">Good</option>
@@ -55,7 +59,7 @@
                         <h6>Square Rating</h6>
                     </div>
                     <div class="card-block">
-                        <select id="example-square" name="rating" autocomplete="off">
+                        <select id="br-square" name="rating" autocomplete="off">
                             <option value=""></option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -72,7 +76,7 @@
                         <h6>Pill Rating</h6>
                     </div>
                     <div class="card-block">
-                        <select id="example-pill" name="rating" autocomplete="off">
+                        <select id="br-pill" name="rating" autocomplete="off">
                             <option value="A">A</option>
                             <option value="B">B</option>
                             <option value="C">C</option>
@@ -91,7 +95,7 @@
                         <h6>Reversed Rating</h6>
                     </div>
                     <div class="card-block">
-                        <select id="example-reversed" name="rating" autocomplete="off">
+                        <select id="br-reversed" name="rating" autocomplete="off">
                             <option value="Strongly Agree">Strongly Agree</option>
                             <option value="Agree">Agree</option>
                             <option value="Neither Agree or Disagree" selected="selected">Neither Agree or
@@ -109,7 +113,7 @@
                         <h6>Horizontal Rating</h6>
                     </div>
                     <div class="card-block">
-                        <select id="example-horizontal" name="rating" autocomplete="off">
+                        <select id="br-horizontal" name="rating" autocomplete="off">
                             <option value="10">10</option>
                             <option value="9">9</option>
                             <option value="8">8</option>
