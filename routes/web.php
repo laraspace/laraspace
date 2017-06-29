@@ -44,7 +44,6 @@ Route::group([
     ]);
 
     // Layouts
-
     Route::group(['prefix' => 'layouts'], function () {
 
         Route::get('sidebar', [
@@ -108,6 +107,14 @@ Route::group([
 
         Route::get('datatables', [
             'as' => 'admin.components.datatables', 'uses' => 'Demo\PagesController@datatables'
+        ]);
+
+        Route::get('nestable-list',[
+            'as'=>'admin.components.nestableList', 'uses'=>'Demo\PagesController@nestableList'
+        ]);
+
+        Route::get('nestable-tree',[
+            'as'=>'admin.components.nestableTree', 'uses'=>'Demo\PagesController@nestableTree'
         ]);
 
         Route::get('image-cropper', [
@@ -341,5 +348,10 @@ Route::group(['middleware' => ['guest', 'setting']], function () {
 });
 
 Route::get('logout', [
+    'as' => 'logout', 'uses' => 'AuthController@logout'
+]);
+
+
+Route::get('install', [
     'as' => 'logout', 'uses' => 'AuthController@logout'
 ]);

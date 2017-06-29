@@ -2,11 +2,12 @@
 
 namespace Laraspace\Http\Controllers\Demo;
 
+use Laraspace\Http\Requests;
 use Laraspace\Http\Controllers\Controller;
 
 class PagesController extends Controller
 {
-    //Layouts
+    // Layouts
     public function sidebarLayout()
     {
         return view('admin.pages.layouts.sidebar');
@@ -21,7 +22,6 @@ class PagesController extends Controller
     {
         return view('admin.pages.layouts.horizontal-menu');
     }
-
 
     //Basic UI
     public function buttons()
@@ -125,7 +125,6 @@ class PagesController extends Controller
 
 
     // Forms
-
     public function general()
     {
         return view('admin.pages.forms.general');
@@ -161,7 +160,7 @@ class PagesController extends Controller
         return view('admin.pages.forms.wizard-with-circles');
     }
 
-    //Gallery
+    // Gallery
     public function galleryGrid()
     {
         return view('admin.pages.gallery.grid');
@@ -176,6 +175,16 @@ class PagesController extends Controller
     public function loginSimple()
     {
         return view('admin.sessions.login-simple');
+    }
+
+    public function nestableList()
+    {
+        return view('admin.pages.components.nestable-list');
+    }
+
+    public function nestableTree()
+    {
+        return view('admin.pages.components.nestable-tree');
     }
 
     //icons

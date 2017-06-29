@@ -27345,8 +27345,10 @@ be a descendant of the grid when it is being dragged.
 }
 
 .wizard.basic-wizard > .steps > ul > li.error > a {
-  background: red;
   box-shadow: none;
+  border: 1px solid #f35a3d;
+  background: white;
+  color: black;
 }
 
 .wizard.basic-wizard > .steps .current a,
