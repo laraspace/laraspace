@@ -63613,7 +63613,7 @@ module.exports = function(Chart) {
 
 /**
 *
-* jquery.sparkline.js
+* jquery.sparklines.js
 *
 * v2.1.2
 * (c) Splunk, Inc

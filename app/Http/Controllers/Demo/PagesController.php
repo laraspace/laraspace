@@ -115,12 +115,12 @@ class PagesController extends Controller
 
     public function morrisCharts()
     {
-        return view('admin.pages.charts.sparkline');
+        return view('admin.pages.charts.morris');
     }
 
-    public function guageCharts()
+    public function gaugeCharts()
     {
-        return view('admin.pages.charts.sparkline');
+        return view('admin.pages.charts.gauge');
     }
 
 

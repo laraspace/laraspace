@@ -1,14 +1,11 @@
 @extends('admin.layouts.layout-basic')
 @section('styles')
     <style>
-        .amcharts {
-            width: 100%;
-            height: 500px;
-        }
+
     </style>
     @stop
 @section('scripts')
-    <script src="{{asset('assets/admin/js/demo/graph.js')}}"></script>
+    <script src="{{asset('assets/admin/js/demo/charts/amcharts.js')}}"></script>
 @stop
 
 @section('content')
@@ -82,13 +79,93 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-12">
+            <div class="col-sm-6">
                 <div class="card">
                     <div class="card-header">
                         <h6>Animated Time-Line Pie Chart</h6>
                     </div>
                     <div class="card-block">
                         <div class="amcharts" id="animated-pie-chart"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h6>3D Donut Chart</h6>
+                    </div>
+                    <div class="card-block">
+                        <div class="amcharts" id="3d-donut-chart"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h6>Radar Chart</h6>
+                    </div>
+                    <div class="card-block">
+                        <div class="amcharts" id="radar-chart"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h6>Animated Time-Line Pie Chart</h6>
+                    </div>
+                    <div class="card-block">
+                        <div class="amcharts" id="polar-scatter-chart"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h6>3Animations along lines Chart</h6>
+                    </div>
+                    <div class="card-block">
+                        <div class="amcharts" id="map-chart"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h6>Capitals map</h6>
+                    </div>
+                    <div class="card-block">
+                        <div class="amcharts" id="capital-map-chart"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h6>Zoomable Bubble & XY Chart</h6>
+                    </div>
+                    <div class="card-block">
+                        <div class="amcharts" id="xy-and-bubble-chart"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h6>Multiple Data Sets Stock Chart</h6>
+                    </div>
+                    <div class="card-block">
+                        <div class="amcharts" id="multiple-data-sets-chart"></div>
                     </div>
                 </div>
             </div>

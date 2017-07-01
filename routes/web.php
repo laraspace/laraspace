@@ -155,7 +155,7 @@ Route::group([
         ]);
 
         Route::get('gauges', [
-            'as' => 'admin.charts.gauges', 'uses' => 'Demo\PagesController@gaugesCharts'
+            'as' => 'admin.charts.gauges', 'uses' => 'Demo\PagesController@gaugeCharts'
         ]);
 
     });

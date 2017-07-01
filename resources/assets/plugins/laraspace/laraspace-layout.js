@@ -14,18 +14,14 @@ var LaraspaceLayout = function () {
             e.preventDefault();
             toggleSideBar();
         });
-
     };
 
     var handleMobileOverlay = function () {
         $('.mobile-menu-overlay').on('click',function(e){
             e.preventDefault();
-
             toggleSideBar();
         });
     };
-
-
 
     var handleCustomScrollBars = function(){
 
