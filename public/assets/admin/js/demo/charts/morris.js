@@ -1,5 +1,8 @@
-$(document).ready(function () {
-    //Morris Chart
+var MorrisChart = function () {
+
+    //Handle Line Chart
+    var handleLineChart = function(){
+
         Morris.Line({
             element: 'morris-line-chart',
             data: [
@@ -50,6 +53,10 @@ $(document).ready(function () {
             hideHover: true,
             resize: true
         });
+    };
+
+    //Handle Area Chart
+    var handleAreaChart = function(){
 
         Morris.Area({
             element: 'morris-area-chart',
@@ -102,6 +109,10 @@ $(document).ready(function () {
             hideHover: true,
             resize: true
         });
+    };
+
+    //Handle Bar Chart
+    var handleBarChart = function(){
 
         Morris.Bar({
             element: 'morris-bar-chart',
@@ -153,6 +164,10 @@ $(document).ready(function () {
             hideHover: true,
             resize: true
         });
+    };
+
+    //Handle Donut Chart
+    var handleDonutChart = function(){
 
         Morris.Donut({
             element: 'morris-donut-chart',
@@ -166,5 +181,19 @@ $(document).ready(function () {
             ],
             resize: true
         });
+    };
+    return {
+        //main function to initiate the module
+        init: function () {
+            handleLineChart();
+            handleAreaChart();
+            handleBarChart();
+            handleDonutChart();
+        }
+    };
 
+}();
+
+jQuery(document).ready(function() {
+    MorrisChart.init();
 });
