@@ -1,22 +1,5 @@
 @extends('admin.layouts.layout-basic')
-@section('styles')
-    <style>
-        .gauges .col{
-            display: flex;
-            justify-content: center;
-            margin:20px auto !important;
-        }
-        .gauge-lg {
-            height: 250px;
-        }
-        .gauge-md {
-            height: 180px;
-        }
-        .gauge-sm {
-            height: 120px;
-        }
-    </style>
-@stop
+
 @section('scripts')
     <script src="{{asset('assets/admin/js/demo/charts/gauges.js')}}"></script>
 @stop
@@ -38,18 +21,24 @@
                         <h6>Basic Gauges</h6>
                     </div>
                     <div class="card-block">
-                        <div class="row gauges">
+                        <div class="row gauges-row">
                             <div class="col">
-                                <canvas class="gauge-lg basic-gauge"></canvas>
-                                <div class="gauge-text-field"></div>
+                                <div class="gauge gauge-lg">
+                                    <canvas class="basic-gauge"></canvas>
+                                    <div class="gauge-label"></div>
+                                </div>
+                            </div>
+                            <div class="col ">
+                                <div class="gauge gauge-md">
+                                    <canvas class="basic-gauge"></canvas>
+                                    <div class="gauge-label"></div>
+                                </div>
                             </div>
                             <div class="col">
-                                <canvas class="gauge-md basic-gauge"></canvas>
-                                <div class="gauge-text-field"></div>
-                            </div>
-                            <div class="col">
-                                <canvas class="gauge-sm basic-gauge"></canvas>
-                                <div class="gauge-text-field"></div>
+                                <div class="gauge gauge-sm">
+                                    <canvas class="basic-gauge"></canvas>
+                                    <div class="gauge-label"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -63,18 +52,24 @@
                         <h6>Donut</h6>
                     </div>
                     <div class="card-block">
-                        <div class="row gauges">
+                        <div class="row gauges-row">
                             <div class="col">
-                                <canvas class="gauge-lg donut-gauge" height="250" width="500" id="donut"></canvas>
-                                <div class="gauge-text-field"></div>
+                                <div class="gauge gauge-lg">
+                                    <canvas class="donut-gauge" height="250" width="500" id="donut"></canvas>
+                                    <div class="gauge-label middle-label"></div>
+                                </div>
                             </div>
                             <div class="col">
-                                <canvas class="gauge-md donut-gauge" height="250" width="500"></canvas>
-                                <div class="gauge-text-field"></div>
+                                <div class="gauge gauge-md">
+                                    <canvas class="donut-gauge" height="250" width="500"></canvas>
+                                    <div class="gauge-label middle-label"></div>
+                                </div>
                             </div>
                             <div class="col">
-                                <canvas class="gauge-sm donut-gauge" height="250" width="500"></canvas>
-                                <div class="gauge-text-field"></div>
+                                <div class="gauge gauge-sm">
+                                    <canvas class="donut-gauge" height="250" width="500"></canvas>
+                                    <div class="gauge-label middle-label"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -88,18 +83,24 @@
                         <h6>Color Gauges</h6>
                     </div>
                     <div class="card-block">
-                        <div class="row gauges">
+                        <div class="row gauges-row">
                             <div class="col">
-                                <canvas class="gauge-lg color-gauge"></canvas>
-                                <div class="gauge-text-field"></div>
+                                <div class="gauge gauge-lg">
+                                    <canvas class="color-gauge"></canvas>
+                                    <div class="gauge-label"></div>
+                                </div>
                             </div>
                             <div class="col">
-                                <canvas class="gauge-md color-gauge"></canvas>
-                                <div class="gauge-text-field"></div>
+                                <div class="gauge gauge-md">
+                                    <canvas class="color-gauge"></canvas>
+                                    <div class="gauge-label"></div>
+                                </div>
                             </div>
                             <div class="col">
-                                <canvas class="gauge-sm color-gauge"></canvas>
-                                <div class="gauge-text-field"></div>
+                                <div class="gauge gauge-sm">
+                                    <canvas class="color-gauge"></canvas>
+                                    <div class="gauge-label"></div>
+                                </div>
                             </div>
                         </div>
                     </div>

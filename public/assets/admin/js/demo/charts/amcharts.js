@@ -386,6 +386,7 @@ $(document).ready(function () {
     var stackareachart = AmCharts.makeChart("stack-area-chart", {
         "type": "serial",
         "theme": "none",
+        "path": "../../assets/admin/img/charts",
         "marginRight": 30,
         "legend": {
             "equalWidths": false,
@@ -564,6 +565,8 @@ $(document).ready(function () {
             "enabled": true
         }
     });
+
+
     var cylinderchart = AmCharts.makeChart("3d-cylinder-chart", {
         "theme": "light",
         "type": "serial",
@@ -659,31 +662,14 @@ $(document).ready(function () {
         },
         "export": {
             "enabled": true
-        },
-        "controls": [{
-            "category": "Graph",
-            "title": "Top Radius",
-            "type": "slider",
-            "min": 0,
-            "max": 1.5,
-            "property": "graphs[0].topRadius"
-        }, {
-            "category": "Chart",
-            "title": "Angle",
-            "type": "slider",
-            "min": 0,
-            "max": 89,
-            "property": "angle"
-        }, {
-            "category": "Chart",
-            "title": "Depth 3D",
-            "type": "slider",
-            "min": 1,
-            "max": 120,
-            "property": "depth3D"
-        }],
+        }
 
     }, 0);
+    jQuery(".cylinder_chart_input").off().on("input change", function () {
+        var t = jQuery(this).data("property"), a = cylinderchart;
+        cylinderchart.startDuration = 0, "topRadius" == t && (a = cylinderchart.graphs[0]), a[t] = this.value,
+            cylinderchart.validateNow()
+    });
 
     /**
      * Define data for each year
@@ -981,6 +967,13 @@ $(document).ready(function () {
         }
     });
 
+    $(".pie_donut_chart_input").off().on("input change", function () {
+        var t = $(this).data("property"), a = donutchart, l = Number(this.value);
+        donutchart.startDuration = 0, "innerRadius" == t && (l += "%"), a[t] = l, donutchart.validateNow()
+    });
+
+
+    //Radar Chart
     var radarchart = AmCharts.makeChart("radar-chart", {
         "type": "radar",
         "dataProvider": [{
@@ -1077,12 +1070,15 @@ $(document).ready(function () {
     /**
      * SVG path for target icon
      */
-    var targetSVG = "M9,0C4.029,0,0,4.029,0,9s4.029,9,9,9s9-4.029,9-9S13.971,0,9,0z M9,15.93 c-3.83,0-6.93-3.1-6.93-6.93S5.17,2.07,9,2.07s6.93,3.1,6.93,6.93S12.83,15.93,9,15.93 M12.5,9c0,1.933-1.567,3.5-3.5,3.5S5.5,10.933,5.5,9S7.067,5.5,9,5.5 S12.5,7.067,12.5,9z";
+    var targetSVG = "M9,0C4.029,0,0,4.029,0,9s4.029,9,9,9s9-4.029,9-9S13.971,0,9,0z M9," +
+        "15.93 c-3.83,0-6.93-3.1-6.93-6.93S5.17,2.07,9,2.07s6.93,3.1,6.93,6.93S12.83,15.93," +
+        "9,15.93 M12.5,9c0,1.933-1.567,3.5-3.5,3.5S5.5,10.933,5.5,9S7.067,5.5,9,5.5 S12.5,7.067,12.5,9z";
 
     /**
      * SVG path for plane icon
      */
-    var planeSVG = "m2,106h28l24,30h72l-44,-133h35l80,132h98c21,0 21,34 0,34l-98,0 -80,134h-35l43,-133h-71l-24,30h-28l15,-47";
+    var planeSVG = "m2,106h28l24,30h72l-44,-133h35l80,132h98c21,0 21,34 0,34l-98,0 -80," +
+        "134h-35l43,-133h-71l-24,30h-28l15,-47";
 
     /**
      * Create the map
@@ -2424,6 +2420,7 @@ $(document).ready(function () {
     var multipledatasetchart = AmCharts.makeChart("multiple-data-sets-chart", {
         "type": "stock",
         "theme": "light",
+        "path": "../../assets/admin/img/charts",
         "dataSets": [{
             "title": "first data set",
             "fieldMappings": [{
@@ -2470,7 +2467,6 @@ $(document).ready(function () {
             "categoryField": "date"
         }
         ],
-
         "panels": [{
             "showCategoryAxis": false,
             "title": "Value",
@@ -2546,6 +2542,7 @@ $(document).ready(function () {
     var xyandbubblechart = AmCharts.makeChart("xy-and-bubble-chart", {
         "type": "xy",
         "theme": "light",
+        "path": "../../assets/admin/img/charts",
         "marginRight": 80,
         "marginTop": 17,
         "dataProvider": [{
@@ -2641,4 +2638,7 @@ $(document).ready(function () {
             "enabled": true
         }
     });
-});
+
+
+})
+;

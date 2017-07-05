@@ -250,6 +250,63 @@ tr > td > .fc-day-grid-event{
   width: 100%;
   height: 500px;
 }
+.amcharts-export-menu{
+  display: none;
+}
+.chart-controls{
+  display: flex;
+  justify-content: center;
+}
+.chart-controls .cylinder_chart_input, .chart-controls .pie_donut_chart_input{
+  width: 100%;
+}
+
+
+  /* gauges */
+.gauges-row .col {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto !important;
+}
+.gauge-lg,
+.gauge-lg .basic-gauge,
+.gauge-lg .donut-gauge,
+.gauge-lg .color-gauge {
+  height: 250px;
+}
+.gauge-md,
+.gauge-md .basic-gauge,
+.gauge-md .donut-gauge,
+.gauge-md .color-gauge {
+  height: 180px;
+}
+.gauge-sm,
+.gauge-sm .basic-gauge,
+.gauge-sm .donut-gauge,
+.gauge-sm .color-gauge {
+  height: 120px;
+}
+.gauge-label {
+  display: inline-block;
+  position: absolute;
+  top: 60%;
+  left: 40%;
+  font-size: 28px;
+  font-weight: bold;
+}
+.gauge-label.middle-label{
+  top: 40%;
+}
+.gauge-lg .gauge-label {
+  font-size: 40px;
+}
+.gauge-sm .gauge-label {
+  font-size: 20px;
+}
+.gauge {
+  position: relative;
+}
+
 
 
 // SKINS DEMO

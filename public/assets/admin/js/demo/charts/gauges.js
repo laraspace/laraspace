@@ -22,6 +22,7 @@ $(document).ready(function () {
             gauge.setMinValue(0);  // set min value
             gauge.animationSpeed = 32; // set animation speed (32 is default value)
             gauge.set(1250); // set actual value
+            gauge.setTextField(this.nextElementSibling);
         }
     });
 
@@ -38,8 +39,6 @@ $(document).ready(function () {
         highDpiSupport: true     // High resolution support
     };
     $(".donut-gauge").each(function () {
-
-
         if (opts_donuts !== false) {
 
             var donut = new Donut(this).setOptions(opts_donuts);
@@ -47,6 +46,7 @@ $(document).ready(function () {
             donut.setMinValue(0);  // set min value
             donut.animationSpeed = 32; // set animation speed (32 is default value)
             donut.set(1250); // set actual value
+            donut.setTextField(this.nextElementSibling);
         }
     });
 
@@ -74,16 +74,16 @@ $(document).ready(function () {
             {strokeStyle: "#F03E3E", min: 2700, max: 3000}  // Red
         ],
     };
+
     $(".color-gauge").each(function () {
         if (opts_color_gauge !== false) {
-
             var colorgauge = new Gauge(this).setOptions(opts_color_gauge);
             colorgauge.maxValue = 3000; // set max gauge value
             colorgauge.setMinValue(0);  // set min value
             colorgauge.animationSpeed = 32; // set animation speed (32 is default value)
             colorgauge.set(1250); // set actual value
+            colorgauge.setTextField(this.nextElementSibling);
         }
     });
-
 
 });
