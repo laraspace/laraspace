@@ -4,9 +4,6 @@
   padding: 0;
   margin: 0;
 }
-.wizard ul{
-  display: -moz-box;
-}
 
 .wizard > .steps > ul > li, .wizard > .steps > ul > li,
 .wizard > .actions > ul > li, .wizard > .actions > ul > li {
@@ -182,7 +179,6 @@
 .wizard.vw-with-c > .steps > ul > li, .wizard > .actions > ul > li {
   flex: 1;
   display: flex;
-  display: -moz-box;
   justify-content: center;
   position: relative;
   margin: 0 auto;
@@ -208,13 +204,19 @@
   float: left;
   width: 300px;
 }
-
 .wizard.vw-with-c ul {
   flex-direction: column;
+}
+.wizard.vw-with-c .steps ul{
+  display: -moz-box;
+}
+.wizard.vw-with-c .steps ul{
+  display: -ms-inline-flexbox;
 }
 
 .wizard.vw-with-c > .steps > ul > li {
   height: 120px;
+  -ms-flex: 120px;
 }
 
 //form wizard with circle
@@ -295,9 +297,9 @@
   z-index: 100;
 }
 
-.wizard.bw-with-c > .actions .disabled a,
-.wizard.bw-with-c > .actions .disabled a:hover,
-.wizard.bw-with-c > .actions .disabled a:active {
+.wizard > .actions .disabled a,
+.wizard > .actions .disabled a:hover,
+.wizard > .actions .disabled a:active {
   background: #eee;
   color: #aaa;
 }
@@ -381,8 +383,10 @@
 @media (max-width: $medium-breakpoint) {
   .wizard.vw-with-c > .steps {
     float: none;
+    display: -ms-inline-flexbox;
+    justify-content: flex-end;
   }
-  .wizard.basic-wizard > .content, .wizard.vw-with-c > .content {
-    min-height: 500px !important;
+  .wizard > .content, .wizard > .content {
+    min-height: 35em !important;
   }
 }

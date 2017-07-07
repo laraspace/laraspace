@@ -24,7 +24,7 @@
                         <h3>Step 1</h3>
                         <section>
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-lg-6">
                                     <div class="form-group">
                                         <label>First Name</label>
                                         <input type="text" class="form-control">
@@ -43,7 +43,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-lg-6">
                                     <div class="form-group">
                                         <label>Hobbies</label>
                                         <select class="form-control ls-select2">
@@ -63,7 +63,7 @@
                         <h3>Step 2</h3>
                         <section>
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-lg-6">
                                     <div class="form-group">
                                         <label>Email</label>
                                         <input type="email" class="form-control">
@@ -73,7 +73,7 @@
                                         <input type="text" class="form-control">
                                     </div>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-lg-6">
                                     <div class="form-group">
                                         <label>Password</label>
                                         <input type="password" class="form-control">
@@ -88,7 +88,7 @@
                         <h3>Step 3</h3>
                         <section>
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-lg-6">
                                     <div class="form-group">
                                         <label>Address Line1</label>
                                         <input type="text" class="form-control">
@@ -102,7 +102,7 @@
                                         <input type="text" class="form-control">
                                     </div>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-lg-6">
                                     <div class="form-group">
                                         <label>State</label>
                                         <input type="text" class="form-control">
@@ -143,7 +143,7 @@
                         <h3><i class="fa fa-home"></i>Step 1</h3>
                         <section>
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-lg-6">
                                     <div class="form-group">
                                         <label>First Name</label>
                                         <input type="text" class="form-control">
@@ -162,7 +162,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-lg-6">
                                     <div class="form-group">
                                         <label>Hobbies</label>
                                         <select class="form-control ls-select2">
@@ -183,7 +183,7 @@
                         <h3><i class="fa fa-key"></i>Step 2</h3>
                         <section>
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-lg-6">
                                     <div class="form-group">
                                         <label>Email</label>
                                         <input type="email" class="form-control">
@@ -193,7 +193,7 @@
                                         <input type="text" class="form-control">
                                     </div>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-lg-6">
                                     <div class="form-group">
                                         <label>Password</label>
                                         <input type="password" class="form-control">
@@ -209,7 +209,7 @@
                         <h3><i class="fa  fa-map-marker"></i>Step 3</h3>
                         <section>
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-lg-6">
                                     <div class="form-group">
                                         <label>Address Line1</label>
                                         <input type="text" class="form-control">
@@ -223,7 +223,7 @@
                                         <input type="text" class="form-control">
                                     </div>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-lg-6">
                                     <div class="form-group">
                                         <label>State</label>
                                         <input type="text" class="form-control">
@@ -265,7 +265,7 @@
                         <h3><i class="fa fa-home"></i>Step 1</h3>
                         <section>
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-lg-6">
                                     <div class="form-group">
                                         <label>First Name *</label>
                                         <input type="text" id="firstname" name="firstname"
@@ -286,7 +286,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-lg-6">
                                     <div class="form-group">
                                         <label>Hobbies *</label>
                                         <select id="hobby" name="hobby" class="form-control ls-select2">
@@ -307,7 +307,7 @@
                         <h3><i class="fa fa-key"></i>Step 2</h3>
                         <section>
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-lg-6">
                                     <div class="form-group">
                                         <label>Email *</label>
                                         <input type="email" id="email" name="email" class="form-control required">
@@ -317,7 +317,7 @@
                                         <input type="text" id="phone" name="phone" class="form-control required">
                                     </div>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-lg-6">
                                     <div class="form-group">
                                         <label>Password *</label>
                                         <input type="password" id="password" name="password"
@@ -334,7 +334,7 @@
                         <h3><i class="fa  fa-map-marker"></i>Step 3</h3>
                         <section>
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-lg-6">
                                     <div class="form-group">
                                         <label>Address Line1 *</label>
                                         <input type="text" id="address_line1" name="address_line1"
@@ -349,7 +349,7 @@
                                         <input type="text" id="city" name="city" class="form-control required">
                                     </div>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-lg-6">
                                     <div class="form-group">
                                         <label>State *</label>
                                         <input type="text" id="state" name="state" class="form-control required">
