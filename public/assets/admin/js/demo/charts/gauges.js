@@ -10,8 +10,8 @@ var GaugesChart = function () {
                 strokeWidth: 0.035, // The thickness
                 color: '#8C8C8C'
             },
-            colorStart: '#ff6600',   // Colors
-            colorStop: '#ff6600',    // just experiment with them
+            colorStart: '#ffde00',   // Colors
+            colorStop: '#ffde00',    // just experiment with them
             strokeColor: '#E0E0E0'   // to see which ones work best for you
         };
 
@@ -28,6 +28,7 @@ var GaugesChart = function () {
             }
         });
     };
+
     var handleDonutGauges = function () {
         var opts_donuts = {
             angle: 0.35, // The span of the gauge arc
@@ -35,8 +36,8 @@ var GaugesChart = function () {
             radiusScale: 1, // Relative radius
             limitMax: false,     // If false, the max value of the gauge will be updated if value surpass max
             limitMin: false,     // If true, the min value of the gauge will be fixed unless you set it manually
-            colorStart: '#ff6600',   // Colors
-            colorStop: '#ff6600',    // just experiment with them
+            colorStart: '#ffde00',   // Colors
+            colorStop: '#ffde00',    // just experiment with them
             strokeColor: '#E0E0E0',  // to see which ones work best for you
             generateGradient: true,
             highDpiSupport: true     // High resolution support
@@ -53,6 +54,7 @@ var GaugesChart = function () {
             }
         });
     };
+
     var handleColorGauges = function () {
         var opts_color_gauge = {
             angle: -0.2, // The span of the gauge arc
@@ -90,7 +92,6 @@ var GaugesChart = function () {
             }
         });
     };
-
 
     return {
         //main function to initiate the module

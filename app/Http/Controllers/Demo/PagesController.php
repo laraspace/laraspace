@@ -93,12 +93,12 @@ class PagesController extends Controller
 
     public function ratings()
     {
-        return view('admin.pages.components.ratings');
+        return view('admin.pages.components.ratings.star-ratings');
     }
 
     public function barRatings()
     {
-        return view('admin.pages.components.bar-ratings');
+        return view('admin.pages.components.ratings.bar-ratings');
     }
 
     //Charts

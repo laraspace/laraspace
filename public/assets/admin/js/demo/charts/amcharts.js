@@ -3,6 +3,7 @@ var AMCharts = function () {
         var columnAndLineChart = AmCharts.makeChart("bar-line-chart", {
             "type": "serial",
             "addClassNames": true,
+            "theme":"light",
             "autoMargins": false,
             "marginLeft": 30,
             "marginRight": 8,
@@ -14,7 +15,6 @@ var AMCharts = function () {
                 "verticalPadding": 8,
                 "color": "#ffffff"
             },
-
             "dataProvider": [{
                 "year": 2009,
                 "income": 23.5,
@@ -93,6 +93,7 @@ var AMCharts = function () {
         var clusterBarChart = AmCharts.makeChart("clust-bar-chart", {
             "type": "serial",
             "categoryField": "year",
+            "theme":"light",
             "rotate": true,
             "startDuration": 1,
             "categoryAxis": {
@@ -171,6 +172,7 @@ var AMCharts = function () {
         var durationOnValueAxisChart = AmCharts.makeChart("line-area-value-axis", {
             "type": "serial",
             "theme": "none",
+            "theme":"light",
             "legend": {
                 "equalWidths": false,
                 "useGraphSettings": true,
@@ -395,6 +397,7 @@ var AMCharts = function () {
         var stackAreaChart = AmCharts.makeChart("stack-area-chart", {
             "type": "serial",
             "theme": "none",
+            "theme":"light",
             "path": "../../assets/admin/img/charts",
             "marginRight": 30,
             "legend": {
@@ -870,7 +873,6 @@ var AMCharts = function () {
                 {"sector": "Finance, real estate and business services", "size": 26.5}]
         };
 
-
         /**
          * Create the chart
          */
@@ -993,6 +995,7 @@ var AMCharts = function () {
 
         var radarchart = AmCharts.makeChart("radar-chart", {
             "type": "radar",
+            "theme":"light",
             "dataProvider": [{
                 "country": "Czech Republic",
                 "litres": 156.9
@@ -1034,7 +1037,7 @@ var AMCharts = function () {
     var handlePolarScatterChart = function () {
         var polarScatterChart = AmCharts.makeChart("polar-scatter-chart", {
             "type": "radar",
-            "theme": "none",
+            "theme": "light",
             "dataProvider": [],
             "valueAxes": [{
                 "gridType": "circles",

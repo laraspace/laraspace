@@ -63758,7 +63758,7 @@ module.exports = function(Chart) {
 *       barSpacing - Gap between bars in pixels
 *       zeroAxis - Centers the y-axis around zero if true
 *
-*   tristate - Charts values of win (>0), lose (<0) or draw (=0)
+*   tristate - charts values of win (>0), lose (<0) or draw (=0)
 *       posBarColor - Color of win values
 *       negBarColor - Color of lose values
 *       zeroBarColor - Color of draw values

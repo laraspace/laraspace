@@ -31,25 +31,16 @@
 @import "../../plugins/nestable/nestable.scss";
 @import "../../plugins/jstree/jstree.min.scss";
 @import "../../plugins/ace-editor/twilight.scss";
-@import "../../plugins/icons/ico-moon.scss";
-@import "../../plugins/icons/evil";
-@import "../../plugins/icons/meteo";
-@import "../../plugins/icons/line";
-@import "../../plugins/icons/fps-line";
+@import "../../plugins/icons/icons.scss";
 @import "../../plugins/calendar/fullcalendar.scss";
 @import "../../plugins/form-wizard/wizard.scss";
 @import "../../plugins/imageCropper/cropper.scss";
 @import "../../plugins/gallery/image/photoswipe.scss";
 @import "../../plugins/gallery/image/default-skin.scss";
 @import "../../plugins/zoom/zoom.scss";
-@import "../../plugins/bar-rating/themes/bars-1to10";
-@import "../../plugins/bar-rating/themes/bars-horizontal";
-@import "../../plugins/bar-rating/themes/bars-movie";
-@import "../../plugins/bar-rating/themes/bars-pill";
-@import "../../plugins/bar-rating/themes/bars-reversed";
-@import "../../plugins/bar-rating/themes/bars-square";
-@import "../../plugins/Chartjs/amcharts/export";
-@import "../../plugins/Chartjs/morris/morris";
+@import "../../plugins/bar-rating/bar-rating.scss";
+@import "../../plugins/charts/amcharts/export";
+@import "../../plugins/charts/morris/morris";
 
 
 // Skins
@@ -80,6 +71,7 @@
 
 @import 'partials/header';
 @import 'partials/sidebar';
+@import 'partials/submenu';
 @import 'partials/footer';
 
 

@@ -129,13 +129,18 @@ Route::group([
             'as' => 'admin.components.calendar', 'uses' => 'Demo\PagesController@calendar'
         ]);
 
-        Route::get('ratings', [
-            'as' => 'admin.components.ratings', 'uses' => 'Demo\PagesController@ratings'
-        ]);
+        Route::group(['prefix' => 'ratings'], function () {
 
-        Route::get('bar-ratings', [
-            'as' => 'admin.components.bar-ratings', 'uses' => 'Demo\PagesController@barRatings'
-        ]);
+            Route::get('star', [
+                'as' => 'admin.components.ratings.star', 'uses' => 'Demo\PagesController@ratings'
+            ]);
+
+            Route::get('bar', [
+                'as' => 'admin.components.rating.bar', 'uses' => 'Demo\PagesController@barRatings'
+            ]);
+
+        });
+
 
     });
 
@@ -159,7 +164,6 @@ Route::group([
         ]);
 
     });
-
 
     //Forms Routes
 

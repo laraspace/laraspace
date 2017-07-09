@@ -7,11 +7,11 @@
 @section('content')
     <div class="main-content">
         <div class="page-header">
-            <h3 class="page-title">Graphs</h3>
+            <h3 class="page-title">AMCharts</h3>
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="{{route('admin.dashboard')}}">Home</a></li>
                 <li class="breadcrumb-item"><a href="{{route('admin.components.graphs')}}">Components</a></li>
-                <li class="breadcrumb-item active">Graphs</li>
+                <li class="breadcrumb-item active">AMCharts</li>
             </ol>
         </div>
         <div class="row">
@@ -76,15 +76,18 @@
                             <div class="col-md-3">
                                 <label class="section-semi-title">Top Radius:</label>
                                 <input class="cylinder_chart_input" data-property="topRadius" type="range" min="0"
-                                       max="1.5" value="1" step="0.01"></div>
+                                       max="1.5" value="1" step="0.01">
+                            </div>
                             <div class="col-md-3">
                                 <label class="section-semi-title">Angle:</label>
                                 <input class="cylinder_chart_input" data-property="angle" type="range" min="0" max="89"
-                                       value="30" step="1"></div>
+                                       value="30" step="1">
+                            </div>
                             <div class="col-md-3">
                                 <label class="section-semi-title">Depth:</label>
                                 <input class="cylinder_chart_input" data-property="depth3D" type="range" min="1"
-                                       max="120" value="40" step="1"></div>
+                                       max="120" value="40" step="1">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -113,18 +116,16 @@
                     </div>
                     <div class="card-footer">
                         <div class="row chart-controls">
-                            <div class="col-md-3">
-                                <label class="section-semi-title">Top Radius:</label>
-                                <input class="pie_donut_chart_input" data-property="topRadius" type="range" min="0"
-                                       max="1.5" value="1" step="0.01"></div>
-                            <div class="col-md-3">
+                            <div class="col-md-4">
                                 <label class="section-semi-title">Angle:</label>
                                 <input class="pie_donut_chart_input" data-property="angle" type="range" min="0" max="89"
-                                       value="30" step="1"></div>
-                            <div class="col-md-3">
+                                       value="30" step="1">
+                            </div>
+                            <div class="col-md-4">
                                 <label class="section-semi-title">Depth:</label>
                                 <input class="pie_donut_chart_input" data-property="depth3D" type="range" min="1"
-                                       max="120" value="40" step="1"></div>
+                                       max="120" value="40" step="1">
+                            </div>
                         </div>
                     </div>
                 </div>

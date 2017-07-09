@@ -152,19 +152,27 @@ return [
                     'active' => 'admin/components/calendar',
                 ],
                 [
-                    'title' => 'Star Ratings',
-                    'link' => '/admin/components/ratings',
-                    'active' => 'admin/components/ratings',
-                ],
-                [
-                    'title' => 'Bar Ratings',
-                    'link' => '/admin/components/bar-ratings',
-                    'active' => 'admin/components/bar-ratings',
+                    'title' => 'Rating',
+                    'link' => '#',
+                    'active' => 'admin/components/ratings*',
+                    'icon' => 'fa fa-star',
+                    'subchildren' => [
+                        [
+                            'title' => 'Star Ratings',
+                            'link' => '/admin/components/ratings/star',
+                            'active' => 'admin/components/ratings/star',
+                        ],
+                        [
+                            'title' => 'Bar Ratings',
+                            'link' => '/admin/components/ratings/bar',
+                            'active' => 'admin/components/ratings/bar',
+                        ],
+                    ],
                 ],
             ]
         ],
         [
-            'title' => 'Charts',
+            'title' => 'charts',
             'link' => '#',
             'active' => 'admin/charts*',
             'icon' => 'fa fa-bar-chart',

@@ -28,7 +28,7 @@ var SparklineCharts = function () {
                 mousetravel = 0;
                 $('.spl-mousespeed').sparkline(mpoints, {
                     width: mpoints.length * 2, tooltipSuffix: ' pixels per second',
-                    height: '100', width: '150'
+                    height: '100', width: '100%'
                 });
             }
             lastmousetime = timenow;
@@ -41,15 +41,15 @@ var SparklineCharts = function () {
     var handlePieChrt = function () {
         $(".spl-pie-chart").sparkline('html', {
             type: 'pie',
-            width: '150',
-            height: '100'
+            width: '100%',
+            height: '150'
         });
     };
 
     var handleLineChart = function () {
         $(".spl-line-chart").sparkline([5, 6, 7, 9, 9, 5, 3, 2, 2, 4, 6, 7], {
             type: 'line',
-            width: '150',
+            width: '100%',
             height: '100'
         });
     };
@@ -58,8 +58,9 @@ var SparklineCharts = function () {
         $(".spl-bar-chart").sparkline('html', {
             type: 'bar',
             height: '100',
-            barWidth: 10,
-            barSpacing: 3
+            barWidth: 15,
+            barSpacing: 3,
+            width:'100%'
         });
     };
 
@@ -75,7 +76,7 @@ var SparklineCharts = function () {
             composite: true,
             fillColor: false,
             lineColor: 'red',
-            width: '150',
+            width: '100%',
             height: '100'
         });
     };
@@ -85,7 +86,7 @@ var SparklineCharts = function () {
             fillColor: false,
             changeRangeMin: 0,
             chartRangeMax: 10,
-            width: '150',
+            width: '100%',
             height: '100'
         });
         $('.spl-cp-inline').sparkline([4, 1, 5, 7, 9, 9, 8, 7, 6, 6, 4, 7, 8, 4, 3, 2, 2, 5, 6, 7], {
@@ -94,14 +95,14 @@ var SparklineCharts = function () {
             lineColor: 'red',
             changeRangeMin: 0,
             chartRangeMax: 10,
-            width: '150',
+            width: '100%',
             height: '100'
         });
     };
 
     var handleInlineChart = function () {
         $('.spl-inline').sparkline('html', {
-            width: '150',
+            width: '100%',
             height: '100'
         });
     };
@@ -109,7 +110,7 @@ var SparklineCharts = function () {
     var handleBarNegativeChart = function () {
         $('.spl-bar-negative').sparkline('html', {
             type: 'bar',
-            barWidth: 10,
+            barWidth: '100%',
             barSpacing: 3,
             height: '100'
         });
@@ -118,8 +119,8 @@ var SparklineCharts = function () {
     var handleDiscreateChart = function () {
         $(".spl-discreate1").sparkline('html', {
             type: 'discrete',
-            width: '150',
-            height: '100'
+            height: '100',
+            width:'200'
         });
     };
 
@@ -129,7 +130,7 @@ var SparklineCharts = function () {
             lineColor: 'blue',
             thresholdColor: 'red',
             thresholdValue: 4,
-            width: '150',
+            width: '200',
             height: '100'
         });
     };
@@ -155,7 +156,7 @@ var SparklineCharts = function () {
     var handleBoxplotChart = function () {
         $('.spl-boxplot').sparkline('html', {
             type: 'box',
-            width: '150',
+            width: '100%',
             height: '70'
         });
     };
@@ -166,7 +167,7 @@ var SparklineCharts = function () {
             raw: true,
             showOutliers: true,
             target: 6,
-            width: '150',
+            width: '100%',
             height: '70'
         });
     };
@@ -174,12 +175,11 @@ var SparklineCharts = function () {
     var handleBulletChart = function () {
         $('.spl-bullet').sparkline('html', {
             type: 'bullet',
-            width: '150',
+            width: '100%',
             height: '30'
         });
 
     };
-
 
     return {
 //main function to initiate the module
@@ -205,5 +205,6 @@ var SparklineCharts = function () {
 }();
 
 jQuery(document).ready(function () {
+
     SparklineCharts.init();
 });

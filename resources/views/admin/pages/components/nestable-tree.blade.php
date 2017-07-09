@@ -1,38 +1,7 @@
 @extends('admin.layouts.layout-basic')
 
 @section('scripts')
-    <script>
-        //js for container 1
-        $('#container').jstree();
-
-        //js for Tree With Drag & Drop
-        $('#container2').jstree({
-            "core" : { "check_callback" : true }, // so that operations work
-            "plugins" : ["dnd"]
-        });
-
-        // js for Tree With SearchBox
-        $('#container3').jstree({
-            "plugins" : ["search"]
-        });
-        $("#s").submit(function(e) {
-            e.preventDefault();
-            $("#container").jstree(true).search($("#q").val());
-        });
-
-        //js for With Icons
-        $('#container4').jstree({
-            "types" : {
-                "default" : {
-                    "icon" : "fa fa-user"
-                },
-                "demo" : {
-                    "icon" : "fa fa-users"
-                }
-            },
-            "plugins" : ["types"]
-        });
-    </script>
+    <script src="/assets/admin/js/demo/nestable/tree.js"></script>
 @stop
 
 @section('content')

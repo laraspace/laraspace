@@ -199,7 +199,7 @@ tr > td > .fc-day-grid-event{
     display: flex;
   }
   .calendar-event ol li{
-    flex: 1;
+    flex: 120px;
   }
 }
 
@@ -374,7 +374,6 @@ tr > td > .fc-day-grid-event{
   &.is-open {
     right: 0;
   }
-
 }
 
 @include media-breakpoint-down(sm) {

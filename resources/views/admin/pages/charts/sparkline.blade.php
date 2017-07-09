@@ -7,25 +7,22 @@
 @section('content')
     <div class="main-content">
         <div class="page-header">
-            <h3 class="page-title">Graphs</h3>
+            <h3 class="page-title">Sparkline Charts</h3>
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="{{route('admin.dashboard')}}">Home</a></li>
                 <li class="breadcrumb-item"><a href="{{route('admin.components.graphs')}}">Components</a></li>
-                <li class="breadcrumb-item active">Graphs</li>
+                <li class="breadcrumb-item active">Sparkline Charts</li>
             </ol>
         </div>
         <div class="row">
             <div class="col-sm-12">
                 <div class="card">
-                    <div class="card-header">
-                        <h6>Sparkline Types</h6>
-                    </div>
                     <div class="card-block">
                         <div class="sparkline-chart">
                             <div class="row">
                                 <div class="col">
                                     <h5 class="section-semi-title">Mouse Speed:</h5>
-                                    <span class="spl-chart spl-mousespeed"></span>
+                                    <span class="spl-chart spl-mousespeed" ></span>
                                 </div>
                                 <div class="col">
                                     <h5 class="section-semi-title">Line Chart:</h5>
