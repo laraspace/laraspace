@@ -1,5 +1,8 @@
 var SparklineCharts = function () {
 
+    var barWidth = $(window).width()/50;
+    var width = Math.floor(($(window).width())/4);
+
     var handledrawMouseSpeedChart = function () {
         var mrefreshinterval = 500; // update display every 500ms
         var lastmousex = -1;
@@ -42,7 +45,7 @@ var SparklineCharts = function () {
         $(".spl-pie-chart").sparkline('html', {
             type: 'pie',
             width: '100%',
-            height: '150'
+            height: '100%'
         });
     };
 
@@ -58,18 +61,19 @@ var SparklineCharts = function () {
         $(".spl-bar-chart").sparkline('html', {
             type: 'bar',
             height: '100',
-            barWidth: 15,
+            barWidth: barWidth,
             barSpacing: 3,
-            width:'100%'
         });
+
     };
 
     var handleCompositBarChart = function () {
+
         $('.spl-cp-bar-chart').sparkline('html', {
             type: 'bar',
             barColor: '#aaf',
             height: '100',
-            barWidth: 10,
+            barWidth: barWidth,
             barSpacing: 3
         });
         $('.spl-cp-bar-chart').sparkline([4, 1, 5, 7, 9, 9, 8, 7, 6, 6, 4, 7, 8, 4, 3, 2, 2, 5, 6, 7], {
@@ -89,6 +93,7 @@ var SparklineCharts = function () {
             width: '100%',
             height: '100'
         });
+
         $('.spl-cp-inline').sparkline([4, 1, 5, 7, 9, 9, 8, 7, 6, 6, 4, 7, 8, 4, 3, 2, 2, 5, 6, 7], {
             composite: true,
             fillColor: false,
@@ -120,7 +125,7 @@ var SparklineCharts = function () {
         $(".spl-discreate1").sparkline('html', {
             type: 'discrete',
             height: '100',
-            width:'200'
+            width:width
         });
     };
 
@@ -130,14 +135,15 @@ var SparklineCharts = function () {
             lineColor: 'blue',
             thresholdColor: 'red',
             thresholdValue: 4,
-            width: '200',
+            width: width,
             height: '100'
         });
     };
+
     var handleTristateChart = function () {
         $(".spl-tristate").sparkline('html', {
             type: 'tristate',
-            barWidth: 10,
+            barWidth: barWidth,
             barSpacing: 3,
             height: '100'
         });
@@ -147,7 +153,7 @@ var SparklineCharts = function () {
         $('.spl-tristate-color').sparkline('html', {
             type: 'tristate',
             colorMap: {'-2': '#fa7', '2': '#44f'},
-            barWidth: 10,
+            barWidth: barWidth,
             barSpacing: 3,
             height: '100'
         });
@@ -176,7 +182,7 @@ var SparklineCharts = function () {
         $('.spl-bullet').sparkline('html', {
             type: 'bullet',
             width: '100%',
-            height: '30'
+            height: '50'
         });
 
     };

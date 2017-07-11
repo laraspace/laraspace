@@ -1,5 +1,12 @@
 @extends('admin.layouts.layout-basic')
 
+@section('styles')
+    <style>
+        .sparkline-chart .row .col {
+            margin: 25px 40px;
+        }
+    </style>
+@stop
 @section('scripts')
     <script src="{{asset('assets/admin/js/demo/charts/sparklines.js')}}"></script>
 @stop
@@ -22,12 +29,14 @@
                             <div class="row">
                                 <div class="col">
                                     <h5 class="section-semi-title">Mouse Speed:</h5>
-                                    <span class="spl-chart spl-mousespeed" ></span>
+                                    <span class="spl-chart spl-mousespeed"></span>
                                 </div>
                                 <div class="col">
                                     <h5 class="section-semi-title">Line Chart:</h5>
                                     <span class="spl-chart spl-line-chart"></span>
                                 </div>
+                            </div>
+                            <div class="row">
                                 <div class="col">
                                     <h5 class="section-semi-title">Inline Chart:</h5>
                                     <span class="spl-inline">1,4,4,7,5,9,10</span>
@@ -46,6 +55,8 @@
                                     <h5 class="section-semi-title">Negative Bar Charts:</h5>
                                     <span class="spl-bar-chart">5,6,7,2,0,-4,-2,4,2,4,-7,3,-3,5</span>
                                 </div>
+                            </div>
+                            <div class="row">
                                 <div class="col">
                                     <h5 class="section-semi-title">Stacked Chart:</h5>
                                     <span class="spl-bar-chart">0:2,2:4,4:2,4:1,6:2,3:3,5:7,3,2:6</span>
@@ -64,6 +75,8 @@
                                     <h5 class="section-semi-title">Discrete with threshold:</h5>
                                     <span class="spl-discreate2">4,6,7,7,4,3,2,1,4,4,5,5,8,3,3</span>
                                 </div>
+                            </div>
+                            <div class="row">
                                 <div class="col">
                                     <h5 class="section-semi-title">Tristate Charts:</h5>
                                     <span class="spl-tristate">1,1,0,1,-1,-1,1,-1,0,0,1,1</span>
@@ -82,6 +95,8 @@
                                     <h5 class="section-semi-title">Pre-computed box Plot:</h5>
                                     <span class="spl-boxplotraw">1, 3, 5, 8, 10, 15, 18</span>
                                 </div>
+                            </div>
+                            <div class="row">
                                 <div class="col">
                                     <h5 class="section-semi-title">Bullet charts:</h5>
                                     <span class="spl-bullet">10,12,12,9,7</span>

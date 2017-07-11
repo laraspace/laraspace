@@ -1,6 +1,7 @@
 @extends('admin.layouts.layout-basic')
 
 @section('scripts')
+    <script src="{{asset('assets/light.js')}}"></script>
     <script src="{{asset('assets/admin/js/demo/charts/amcharts.js')}}"></script>
 @stop
 
