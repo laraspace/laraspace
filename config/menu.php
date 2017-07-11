@@ -20,7 +20,7 @@ return [
             'title' => 'Dashboard',
             'link' => '#',
             'active' => 'admin/dashboard*',
-            'icon' => 'fa fa-dashboard',
+            'icon' => 'icon-fa icon-fa-dashboard',
             'children' => [
                 [
                     'title' => 'Basic',
@@ -43,7 +43,7 @@ return [
             'title' => 'Layouts',
             'link' => '#',
             'active' => 'admin/layouts*',
-            'icon' => 'fa fa-th-large',
+            'icon' => 'icon-fa icon-fa-th-large',
             'children' => [
                 [
                     'title' => 'Sidebar',
@@ -66,7 +66,7 @@ return [
             'title' => 'Basic UI',
             'link' => '#',
             'active' => 'admin/basic-ui*',
-            'icon' => 'fa fa-star',
+            'icon' => 'icon-fa icon-fa-star',
             'children' => [
                 [
                     'title' => 'Buttons',
@@ -109,7 +109,7 @@ return [
             'title' => 'Components',
             'link' => '#',
             'active' => 'admin/components*',
-            'icon' => 'fa fa-puzzle-piece',
+            'icon' => 'icon-fa icon-fa-puzzle-piece',
             'children' => [
                 [
                     'title' => 'Datatables',
@@ -155,8 +155,8 @@ return [
                     'title' => 'Rating',
                     'link' => '#',
                     'active' => 'admin/components/ratings*',
-                    'icon' => 'fa fa-star',
-                    'subchildren' => [
+                    'icon' => 'icon-fa icon-fa-star',
+                    'children' => [
                         [
                             'title' => 'Star Ratings',
                             'link' => '/admin/components/ratings/star',
@@ -172,10 +172,10 @@ return [
             ]
         ],
         [
-            'title' => 'charts',
+            'title' => 'Charts',
             'link' => '#',
             'active' => 'admin/charts*',
-            'icon' => 'fa fa-bar-chart',
+            'icon' => 'icon-fa icon-fa-bar-chart',
             'children' => [
                 [
                     'title' => 'Sparkline',
@@ -203,7 +203,7 @@ return [
             'title' => 'Icons',
             'link' => '#',
             'active' => 'admin/icons*',
-            'icon' => 'fa fa-eye',
+            'icon' => 'icon-fa icon-fa-eye',
             'children' => [
                 [
                     'title' => 'IcoMoon',
@@ -241,7 +241,7 @@ return [
             'title' => 'Forms',
             'link' => '#',
             'active' => 'admin/forms*',
-            'icon' => 'fa fa-rocket',
+            'icon' => 'icon-fa icon-fa-rocket',
             'children' => [
                 [
                     'title' => 'General Elements',
@@ -284,7 +284,7 @@ return [
             'title' => 'Gallery',
             'link' => '#',
             'active' => 'admin/gallery*',
-            'icon' => 'fa fa-image',
+            'icon' => 'icon-fa icon-fa-image',
             'children' => [
                 [
                     'title' => 'Gallery Grid',
@@ -302,7 +302,7 @@ return [
             'title' => 'Pages',
             'link' => '#',
             'active' => 'admin/pages*',
-            'icon' => 'fa fa-file',
+            'icon' => 'icon-fa icon-fa-file',
             'children' => [
                 [
                     'title' => 'Login with BG Image',
@@ -330,7 +330,7 @@ return [
             'title' => 'Users',
             'link' => '#',
             'active' => 'admin/users*',
-            'icon' => 'fa fa-user',
+            'icon' => 'icon-fa icon-fa-user',
             'children' => [
                 [
                     'title' => 'All Users',
@@ -348,13 +348,13 @@ return [
             'title' => 'Todo App',
             'link' => '/admin/todos',
             'active' => 'admin/todos*',
-            'icon' => 'fa fa-check',
+            'icon' => 'icon-fa icon-fa-check',
         ],
         [
             'title' => 'Settings',
             'link' => '#',
             'active' => 'admin/settings*',
-            'icon' => 'fa fa-cogs',
+            'icon' => 'icon-fa icon-fa-cogs',
             'children' => [
                 [
                     'title' => 'Social',
@@ -387,7 +387,7 @@ return [
             'title' => 'Dashboard',
             'link' => '#',
             'active' => 'admin/dashboard*',
-            'icon' => 'fa fa-dashboard',
+            'icon' => 'icon-fa icon-fa-dashboard',
             'children' => [
                 [
                     'title' => 'Basic',
@@ -410,7 +410,7 @@ return [
             'title' => 'Layouts',
             'link' => '#',
             'active' => 'admin/layouts*',
-            'icon' => 'fa fa-th-large',
+            'icon' => 'icon-fa icon-fa-th-large',
             'children' => [
                 [
                     'title' => 'Sidebar',
@@ -433,7 +433,7 @@ return [
             'title' => 'Basic UI',
             'link' => '#',
             'active' => 'admin/basic-ui*',
-            'icon' => 'fa fa-star',
+            'icon' => 'icon-fa icon-fa-star',
             'children' => [
                 [
                     'title' => 'Buttons',
@@ -466,13 +466,13 @@ return [
             'title' => 'Todo App',
             'link' => '/admin/todos',
             'active' => 'admin/todos*',
-            'icon' => 'fa fa-check',
+            'icon' => 'icon-fa icon-fa-check',
         ],
         [
             'title' => 'Settings',
             'link' => '#',
             'active' => 'admin/settings*',
-            'icon' => 'fa fa-cogs',
+            'icon' => 'icon-fa icon-fa-cogs',
             'children' => [
                 [
                     'title' => 'Social',
@@ -483,13 +483,13 @@ return [
                     'title' => 'Mail',
                     'link' => 'admin/settings/mail',
                     'active' => 'admin/settings/mail*',
-                    'icon' => 'fa fa-mail',
+                    'icon' => 'icon-fa icon-fa-mail',
                 ],
                 [
                     'title' => 'Notification',
                     'link' => 'admin/settings/notification',
                     'active' => 'admin/settings/notification*',
-                    'icon' => 'fa fa-mail',
+                    'icon' => 'icon-fa icon-fa-mail',
                 ],
                 [
                     'title' => 'Environment',

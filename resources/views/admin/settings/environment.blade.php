@@ -1,13 +1,5 @@
 @extends('admin.layouts.layout-basic')
-@section('styles')
-    <style>
-        #editor {
-            width: 100%;
-            height: 500px;
-            border: 1px solid #e4eef3;
-        }
-    </style>
-@stop
+
 @section('content')
     <div class="main-content">
 
@@ -24,7 +16,7 @@
                 <div class="card">
                     <div class="card-block">
                         <pre id="editor">{{$env}}</pre>
-                        <button class="btn btn-theme btn-large" @click="saveEnvFile">
+                        <button class="btn btn-primary btn-large" @click="saveEnvFile">
                             <i class="fa fa-save"></i>Save
                         </button>
                     </div>

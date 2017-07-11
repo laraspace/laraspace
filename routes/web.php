@@ -272,10 +272,10 @@ Route::group([
         Route::group(['prefix' => 'mail'], function () {
 
             Route::get('/', [
-                'as' => 'admin.mail.index', 'uses' => 'SettingsController@mailIndex'
+                'as' => 'admin.mail.index', 'uses' => 'SettingsController@mail'
             ]);
             Route::post('/create', [
-                'as' => 'admin.mail.create', 'uses' => 'SettingsController@mailCreate'
+                'as' => 'admin.mail.create', 'uses' => 'SettingsController@postMail'
             ]);
 
         });
@@ -284,11 +284,11 @@ Route::group([
         Route::group(['prefix' => 'env'], function () {
 
             Route::get('/', [
-                'as' => 'admin.setting.environment', 'uses' => 'SettingsController@envShow'
+                'as' => 'admin.setting.environment', 'uses' => 'SettingsController@environment'
             ]);
 
             Route::post('/create', [
-                'as' => 'admin.setting.environment.create', 'uses' => 'SettingsController@envCreate'
+                'as' => 'admin.setting.environment.create', 'uses' => 'SettingsController@postEnvironment'
             ]);
 
         });
@@ -298,7 +298,7 @@ Route::group([
             'as' => 'admin.notification.index', 'uses' => 'SettingsController@notification'
         ]);
         Route::post('notification/create', [
-            'as' => 'admin.notification.create', 'uses' => 'SettingsController@notificationCreate'
+            'as' => 'admin.notification.create', 'uses' => 'SettingsController@postNotification'
         ]);
 
         //

@@ -1,7 +1,7 @@
 var SparklineCharts = function () {
 
-    var barWidth = $(window).width()/50;
-    var width = Math.floor(($(window).width())/4);
+    var barWidth = $(window).width()/70;
+    var width = Math.floor(($(window).width())/5);
 
     var handledrawMouseSpeedChart = function () {
         var mrefreshinterval = 500; // update display every 500ms
@@ -45,7 +45,7 @@ var SparklineCharts = function () {
         $(".spl-pie-chart").sparkline('html', {
             type: 'pie',
             width: '100%',
-            height: '100%'
+            height: '300'
         });
     };
 
@@ -81,7 +81,7 @@ var SparklineCharts = function () {
             fillColor: false,
             lineColor: 'red',
             width: '100%',
-            height: '100'
+            height: '100',
         });
     };
 
@@ -182,7 +182,7 @@ var SparklineCharts = function () {
         $('.spl-bullet').sparkline('html', {
             type: 'bullet',
             width: '100%',
-            height: '50'
+            height: '30'
         });
 
     };

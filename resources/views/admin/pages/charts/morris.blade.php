@@ -10,7 +10,7 @@
             <h3 class="page-title">Morris Charts</h3>
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="{{route('admin.dashboard')}}">Home</a></li>
-                <li class="breadcrumb-item"><a href="{{route('admin.components.graphs')}}">Components</a></li>
+                <li class="breadcrumb-item"><a href="{{route('admin.charts.morris')}}">Charts</a></li>
                 <li class="breadcrumb-item active">Morris Charts</li>
             </ol>
         </div>

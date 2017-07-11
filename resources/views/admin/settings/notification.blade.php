@@ -1,8 +1,7 @@
 @extends('admin.layouts.layout-basic')
 
 @section('scripts')
-    <script src="/assets/js/users/users.js"></script>
-    <script src="/assets/js/multidelete.js"></script>
+    <script src="/assets/admin/js/pages/validation.js"></script>
 @stop
 
 @section('content')
@@ -20,14 +19,14 @@
             <div class="col-sm-6">
                 <div class="card">
                     <div class="card-block">
-                        <form method="post" action="{{route('admin.notification.create')}}" enctype="multipart/form-data">
+                        <form method="post" action="{{route('admin.notification.create')}}" id="validateForm" enctype="multipart/form-data">
                             {{csrf_field()}}
                             <div class="form-group">
                                 <label>To Mail</label>
                                 <input type="text" name="notify_mail" class="form-control"
                                        value="{{ get_setting('notify_mail') }}">
                             </div>
-                            <button class="btn btn-theme btn-large"><i class="fa fa-save"></i>Save Notification Mail
+                            <button class="btn btn-primary btn-large"><i class="fa fa-save"></i>Save Notification Mail
                             </button>
                         </form>
                     </div>

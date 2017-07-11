@@ -37,15 +37,15 @@ class SettingsController extends Controller
         return redirect()->back();
     }
 
-    public function mailIndex()
+    public function mail()
     {
-        return view('admin.settings.mail.index');
+        return view('admin.settings.mail');
     }
 
-    public function mailCreate(Request $request)
+    public function postMail(Request $request)
     {
         if ($request->mailer == 'mailgun') {
-            $sets = ['mail_mailgun_user', 'mail_mailgun_from', 'mail_mailgun_domain', 'mail_mailgun_secret'];
+            $sets = ['mail_mailgun_user', 'mail_from', 'mail_mailgun_domain', 'mail_mailgun_secret'];
 
             foreach ($sets as $key) {
                 Setting::setSetting($key, $request->input($key));
@@ -53,14 +53,14 @@ class SettingsController extends Controller
 
         } else if ($request->mailer == 'sendgrid') {
             $sets = ['mail_sendgrid_host', 'mail_sendgrid_username', 'mail_sendgrid_password', 'mail_sendgrid_user',
-                'mail_sendgrid_from'];
+                'mail_from'];
 
             foreach ($sets as $key) {
                 Setting::setSetting($key, $request->input($key));
             }
 
         } else {
-            $sets = ['mail_sparkpost_user', 'mail_sparkpost_from', 'mail_sparkpost_secret'];
+            $sets = ['mail_sparkpost_user', 'mail_from', 'mail_sparkpost_secret'];
 
             foreach ($sets as $key) {
                 Setting::setSetting($key, $request->input($key));
@@ -77,7 +77,7 @@ class SettingsController extends Controller
 
     public function notification()
     {
-        return view('admin.settings.notification.index');
+        return view('admin.settings.notification');
     }
 
     public function notificationCreate(Request $request)
@@ -93,17 +93,19 @@ class SettingsController extends Controller
         return redirect()->back();
     }
 
-    public function envShow()
+    public function environment()
     {
         $env = \Storage::get('.env');
 
-        return view('admin.settings.env-file.index', compact('env'));
+        return view('admin.settings.environment', compact('env'));
     }
 
-    public function envCreate(Request $request)
+    public function postEnvironment(Request $request)
     {
 
-        \Storage::put('.env', $request->env);
+        return $request->env;
+
+       // \Storage::put('.env', $request->env);
 
         return back();
     }

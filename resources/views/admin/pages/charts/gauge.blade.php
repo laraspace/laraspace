@@ -10,7 +10,7 @@
             <h3 class="page-title">Gauge Charts</h3>
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="{{route('admin.dashboard')}}">Home</a></li>
-                <li class="breadcrumb-item"><a href="{{route('admin.components.graphs')}}">Components</a></li>
+                <li class="breadcrumb-item"><a href="{{route('admin.charts.gauges')}}">Charts</a></li>
                 <li class="breadcrumb-item active">Gauge Charts</li>
             </ol>
         </div>

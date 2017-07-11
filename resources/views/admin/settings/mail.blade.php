@@ -1,26 +1,8 @@
 @extends('admin.layouts.layout-basic')
 
 @section('scripts')
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.3/vue.min.js"></script>
-    <script>
-        Vue.component('mailgun', {
-            template: '#mailgun-template'
-        });
-        Vue.component('sendgrid', {
-            template: '#sendgrid-template'
-        });
-        Vue.component('sparkpost', {
-            template: '#sparkpost-template'
-        });
-        new Vue({
-            el: "#mail-driver",
-
-            data: {
-                currentView:'mailgun',
-            },
-        });
-
-    </script>
+    <script src="{{mix('/assets/admin/js/pages/mail.js')}}"></script>
+    <script src="/assets/admin/js/pages/validation.js"></script>
 @stop
 
 @section('content')
@@ -37,7 +19,8 @@
             <div class="col-sm-6">
                 <div class="card">
                     <div class="card-block">
-                        <form method="post" action="{{route('admin.mail.create')}}" enctype="multipart/form-data">
+                        <form method="post" action="{{route('admin.mail.create')}}" enctype="multipart/form-data"
+                              id="validateForm">
                             {{csrf_field()}}
                             <div class="form-group">
                                 <label>Mail Driver</label>
@@ -48,7 +31,7 @@
                                 </select>
                             </div>
                             <component :is="currentView"></component>
-                            <button class="btn btn-theme btn-large"><i class="fa fa-save"></i>Save
+                            <button class="btn btn-primary btn-large"><i class="fa fa-save"></i>Save
                             </button>
                         </form>
                     </div>
@@ -75,7 +58,7 @@
             </div>
             <div class="form-group">
                 <label>Mail From</label>
-                <input type="text" name="mail_mailgun_from" value="{{ get_setting('mail_mailgun_from') }}"
+                <input type="text" name="mail_from" value="{{ get_setting('mail_from') }}"
                        class="form-control">
             </div>
         </div>
@@ -104,7 +87,7 @@
             </div>
             <div class="form-group">
                 <label>Mail From</label>
-                <input type="text" name="mail_sendgrid_from" value="{{ get_setting('mail_sendgrid_from') }}"
+                <input type="text" name="mail_from" value="{{ get_setting('mail_from') }}"
                        class="form-control">
             </div>
         </div>
@@ -123,7 +106,7 @@
             </div>
             <div class="form-group">
                 <label>Mail From</label>
-                <input type="text" name="mail_sparkpost_from" value="{{ get_setting('mail_sparkpost_from') }}"
+                <input type="text" name="mail_from" value="{{ get_setting('mail_from') }}"
                        class="form-control">
             </div>
         </div>
