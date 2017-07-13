@@ -6,7 +6,7 @@
                 <div class="dropdown-menu">
                     @foreach($menu['children'] as $child)
                         <div class="@if(isset($child['children']))dropdown-submenu @endif">
-                            <a class="dropdown-item  @if(isset($child['children']))dropdown-subitem @endif" href="{{url($child['link'])}}">{{$child['title']}}</a>
+                            <a class="dropdown-item  @if(isset($child['children'])) dropdown-subitem @endif" href="{{url($child['link'])}}">{{$child['title']}}</a>
                             @if(isset($child['children']))
                                 <div class="dropdown-menu">
                                     @foreach($child['children'] as $subchild)

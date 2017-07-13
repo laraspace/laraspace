@@ -1,7 +1,7 @@
 @extends('admin.layouts.layout-basic')
 
 @section('scripts')
-    <script src="/assets/admin/js/pages/validation.js"></script>
+    <script src="{{asset('/assets/admin/js/settings/validation.js')}}"></script>
 @stop
 
 @section('content')

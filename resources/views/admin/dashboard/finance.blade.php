@@ -65,7 +65,7 @@
                 <div class="card with-tabs">
                     <div class="card-header">
                         <div class="caption">
-                            <h6><i class="fa fa-bar-chart text-success"></i> Total Expenses</h6>
+                            <h6><i class="icon-fa icon-fa-bar-chart text-success"></i> Total Expenses</h6>
                         </div>
 
                         <div class="actions tabs-simple">
@@ -110,7 +110,7 @@
                 <div class="card">
                     <div class="card-header">
                         <div class="caption">
-                            <h6><i class="fa fa-credit-card text-primary"></i> Summary</h6>
+                            <h6><i class="icon-fa icon-fa-credit-card text-primary"></i> Summary</h6>
                         </div>
                         <div class="actions">
                             <div class="btn-group" role="group">
@@ -138,7 +138,7 @@
                 <div class="card">
                     <div class="card-header">
                         <div class="caption">
-                            <h6><i class="fa fa-shopping-cart text-danger"></i> Total Revenue</h6>
+                            <h6><i class="icon-fa icon-fa-shopping-cart text-danger"></i> Total Revenue</h6>
                         </div>
                         <div class="actions">
                             <button class="btn btn-danger btn-sm"> Today</button>

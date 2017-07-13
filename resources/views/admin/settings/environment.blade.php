@@ -1,12 +1,11 @@
 @extends('admin.layouts.layout-basic')
 
 @section('scripts')
-    <script src="{{asset('assets/admin/js/pages/settings/environment.js')}}"></script>
+    <script src="{{asset('assets/admin/js/settings/environment.js')}}"></script>
 @stop
 
 @section('content')
     <div class="main-content">
-
         <div class="page-header">
             <h3 class="page-title">Environment</h3>
             <ol class="breadcrumb">

@@ -23,7 +23,7 @@
                                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                                 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                             </p>
-                            <img src="{{asset('assets/admin/img/gallery/13.jpg')}}" data-action="zoom"
+                            <img src="{{asset('assets/admin/img/demo/gallery/13.jpg')}}" data-action="zoom"
                                  class="img-left img-fluid">
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -70,7 +70,7 @@
                                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                                 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                             </p>
-                            <img src="{{asset('assets/admin/img/gallery/7.jpg')}}" data-action="zoom"
+                            <img src="{{asset('assets/admin/img/demo/gallery/7.jpg')}}" data-action="zoom"
                                  class="img-fluid img-right">
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

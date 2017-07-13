@@ -1,7 +1,7 @@
 @extends('admin.layouts.layout-basic')
 
 @section('scripts')
-    <script src="{{asset('assets/admin/js/demo/charts/sparklines.js')}}"></script>
+    <script src="{{asset('assets/admin/js/pages/charts/sparklines.js')}}"></script>
 @stop
 
 @section('content')

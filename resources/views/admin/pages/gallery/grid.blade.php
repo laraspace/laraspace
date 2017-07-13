@@ -1,7 +1,7 @@
 @extends('admin.layouts.layout-basic')
 
 @section('scripts')
-    <script src="{{asset('assets/admin/js/demo/gallery.js')}}"></script>
+    <script src="{{asset('assets/admin/js/pages/gallery.js')}}"></script>
     <script></script>
 @stop
 
@@ -23,33 +23,33 @@
                 <div class="my-gallery" itemscope>
                     <div class="row">
                         <figure class="col-lg-3 col-md-6 col-xs-12" itemprop="associatedMedia" itemscope>
-                            <a href="{{asset('assets/admin/img/gallery/1.jpg')}}" itemprop="contentUrl"
+                            <a href="{{asset('assets/admin/img/demo/gallery/1.jpg')}}" itemprop="contentUrl"
                                data-size="480x360">
-                                <img src="{{asset('assets/admin/img/gallery/1.jpg')}}"
+                                <img src="{{asset('assets/admin/img/demo/gallery/1.jpg')}}"
                                      itemprop="thumbnail" class="img-fluid" alt="Image description"/>
                             </a>
                             <figcaption itemprop="caption description">Image caption 1</figcaption>
                         </figure>
                         <figure class="col-lg-3 col-md-6 col-xs-12" itemprop="associatedMedia" itemscope>
-                            <a href="{{asset('assets/admin/img/gallery/2.jpg')}}" itemprop="contentUrl"
+                            <a href="{{asset('assets/admin/img/demo/gallery/2.jpg')}}" itemprop="contentUrl"
                                data-size="480x360">
-                                <img src="{{asset('assets/admin/img/gallery/2.jpg')}}"
+                                <img src="{{asset('assets/admin/img/demo/gallery/2.jpg')}}"
                                      itemprop="thumbnail" class="img-fluid" alt="Image description"/>
                             </a>
                             <figcaption itemprop="caption description">Image caption 2</figcaption>
                         </figure>
                         <figure class="col-lg-3 col-md-6 col-xs-12" itemprop="associatedMedia" itemscope>
-                            <a href="{{asset('assets/admin/img/gallery/3.jpg')}}" itemprop="contentUrl"
+                            <a href="{{asset('assets/admin/img/demo/gallery/3.jpg')}}" itemprop="contentUrl"
                                data-size="480x360">
-                                <img src="{{asset('assets/admin/img/gallery/3.jpg')}}"
+                                <img src="{{asset('assets/admin/img/demo/gallery/3.jpg')}}"
                                      itemprop="thumbnail" class="img-fluid" alt="Image description"/>
                             </a>
                             <figcaption itemprop="caption description">Image caption 3</figcaption>
                         </figure>
                         <figure class="col-lg-3 col-md-6 col-xs-12" itemprop="associatedMedia" itemscope>
-                            <a href="{{asset('assets/admin/img/gallery/4.jpg')}}" itemprop="contentUrl"
+                            <a href="{{asset('assets/admin/img/demo/gallery/4.jpg')}}" itemprop="contentUrl"
                                data-size="480x360">
-                                <img src="{{asset('assets/admin/img/gallery/4.jpg')}}"
+                                <img src="{{asset('assets/admin/img/demo/gallery/4.jpg')}}"
                                      itemprop="thumbnail" class="img-fluid" alt="Image description"/>
                             </a>
                             <figcaption itemprop="caption description">Image caption 4</figcaption>
@@ -57,33 +57,33 @@
                     </div>
                     <div class="row">
                         <figure class="col-lg-3 col-md-6 col-xs-12" itemprop="associatedMedia" itemscope>
-                            <a href="{{asset('assets/admin/img/gallery/5.jpg')}}" itemprop="contentUrl"
+                            <a href="{{asset('assets/admin/img/demo/gallery/5.jpg')}}" itemprop="contentUrl"
                                data-size="480x360">
-                                <img src="{{asset('assets/admin/img/gallery/5.jpg')}}"
+                                <img src="{{asset('assets/admin/img/demo/gallery/5.jpg')}}"
                                      itemprop="thumbnail" class="img-fluid" alt="Image description"/>
                             </a>
                             <figcaption itemprop="caption description">Image caption 1</figcaption>
                         </figure>
                         <figure class="col-lg-3 col-md-6 col-xs-12" itemprop="associatedMedia" itemscope>
-                            <a href="{{asset('assets/admin/img/gallery/6.jpg')}}" itemprop="contentUrl"
+                            <a href="{{asset('assets/admin/img/demo/gallery/6.jpg')}}" itemprop="contentUrl"
                                data-size="480x360">
-                                <img src="{{asset('assets/admin/img/gallery/6.jpg')}}"
+                                <img src="{{asset('assets/admin/img/demo/gallery/6.jpg')}}"
                                      itemprop="thumbnail" class="img-fluid" alt="Image description"/>
                             </a>
                             <figcaption itemprop="caption description">Image caption 2</figcaption>
                         </figure>
                         <figure class="col-lg-3 col-md-6 col-xs-12" itemprop="associatedMedia" itemscope>
-                            <a href="{{asset('assets/admin/img/gallery/7.jpg')}}" itemprop="contentUrl"
+                            <a href="{{asset('assets/admin/img/demo/gallery/7.jpg')}}" itemprop="contentUrl"
                                data-size="480x360">
-                                <img src="{{asset('assets/admin/img/gallery/7.jpg')}}"
+                                <img src="{{asset('assets/admin/img/demo/gallery/7.jpg')}}"
                                      itemprop="thumbnail" class="img-fluid" alt="Image description"/>
                             </a>
                             <figcaption itemprop="caption description">Image caption 3</figcaption>
                         </figure>
                         <figure class="col-lg-3 col-md-6 col-xs-12" itemprop="associatedMedia" itemscope>
-                            <a href="{{asset('assets/admin/img/gallery/8.jpg')}}" itemprop="contentUrl"
+                            <a href="{{asset('assets/admin/img/demo/gallery/8.jpg')}}" itemprop="contentUrl"
                                data-size="480x360">
-                                <img src="{{asset('assets/admin/img/gallery/8.jpg')}}"
+                                <img src="{{asset('assets/admin/img/demo/gallery/8.jpg')}}"
                                      itemprop="thumbnail" class="img-fluid" alt="Image description"/>
                             </a>
                             <figcaption itemprop="caption description">Image caption 4</figcaption>
@@ -91,33 +91,33 @@
                     </div>
                     <div class="row">
                         <figure class="col-lg-3 col-md-6 col-xs-12" itemprop="associatedMedia" itemscope>
-                            <a href="{{asset('assets/admin/img/gallery/9.jpg')}}" itemprop="contentUrl"
+                            <a href="{{asset('assets/admin/img/demo/gallery/9.jpg')}}" itemprop="contentUrl"
                                data-size="480x360">
-                                <img src="{{asset('assets/admin/img/gallery/9.jpg')}}"
+                                <img src="{{asset('assets/admin/img/demo/gallery/9.jpg')}}"
                                      itemprop="thumbnail" class="img-fluid" alt="Image description"/>
                             </a>
                             <figcaption itemprop="caption description">Image caption 1</figcaption>
                         </figure>
                         <figure class="col-lg-3 col-md-6 col-xs-12" itemprop="associatedMedia" itemscope>
-                            <a href="{{asset('assets/admin/img/gallery/10.jpg')}}" itemprop="contentUrl"
+                            <a href="{{asset('assets/admin/img/demo/gallery/10.jpg')}}" itemprop="contentUrl"
                                data-size="480x360">
-                                <img src="{{asset('assets/admin/img/gallery/10.jpg')}}"
+                                <img src="{{asset('assets/admin/img/demo/gallery/10.jpg')}}"
                                      itemprop="thumbnail" class="img-fluid" alt="Image description"/>
                             </a>
                             <figcaption itemprop="caption description">Image caption 2</figcaption>
                         </figure>
                         <figure class="col-lg-3 col-md-6 col-xs-12" itemprop="associatedMedia" itemscope>
-                            <a href="{{asset('assets/admin/img/gallery/11.jpg')}}" itemprop="contentUrl"
+                            <a href="{{asset('assets/admin/img/demo/gallery/11.jpg')}}" itemprop="contentUrl"
                                data-size="480x360">
-                                <img src="{{asset('assets/admin/img/gallery/11.jpg')}}"
+                                <img src="{{asset('assets/admin/img/demo/gallery/11.jpg')}}"
                                      itemprop="thumbnail" class="img-fluid" alt="Image description"/>
                             </a>
                             <figcaption itemprop="caption description">Image caption 3</figcaption>
                         </figure>
                         <figure class="col-lg-3 col-md-6 col-xs-12" itemprop="associatedMedia" itemscope>
-                            <a href="{{asset('assets/admin/img/gallery/12.jpg')}}" itemprop="contentUrl"
+                            <a href="{{asset('assets/admin/img/demo/gallery/12.jpg')}}" itemprop="contentUrl"
                                data-size="480x360">
-                                <img src="{{asset('assets/admin/img/gallery/12.jpg')}}"
+                                <img src="{{asset('assets/admin/img/demo/gallery/12.jpg')}}"
                                      itemprop="thumbnail" class="img-fluid" alt="Image description"/>
                             </a>
                             <figcaption itemprop="caption description">Image caption 4</figcaption>

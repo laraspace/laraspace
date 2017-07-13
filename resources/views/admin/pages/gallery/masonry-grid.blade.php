@@ -7,7 +7,7 @@
 @stop
 
 @section('scripts')
-    <script src="{{asset('assets/admin/js/demo/gallery.js')}}"></script>
+    <script src="{{asset('assets/admin/js/pages/gallery.js')}}"></script>
 @stop
 
 @section('content')
@@ -29,108 +29,108 @@
                     <div class="my-gallery-container">
                         <div class="item" data-order="0">
                             <figure itemprop="associatedMedia" itemscope>
-                                <a href="{{asset('assets/admin/img/gallery/1.jpg')}}"
+                                <a href="{{asset('assets/admin/img/demo/gallery/1.jpg')}}"
                                    itemprop="contentUrl" data-size="480x360">
-                                    <img src="{{asset('assets/admin/img/gallery/1.jpg')}}" itemprop="thumbnail"
+                                    <img src="{{asset('assets/admin/img/demo/gallery/1.jpg')}}" itemprop="thumbnail"
                                          class="img-fluid" alt="Image description"/>
                                 </a>
                             </figure>
                         </div>
                         <div class="item" data-order="1">
                             <figure itemprop="associatedMedia" itemscope>
-                                <a href="{{asset('assets/admin/img/gallery/14.jpg')}}" itemprop="contentUrl"
+                                <a href="{{asset('assets/admin/img/demo/gallery/14.jpg')}}" itemprop="contentUrl"
                                    data-size="480x757">
-                                    <img src="{{asset('assets/admin/img/gallery/14.jpg')}}"
+                                    <img src="{{asset('assets/admin/img/demo/gallery/14.jpg')}}"
                                          itemprop="thumbnail" class="img-fluid" alt="Image description"/>
                                 </a>
                             </figure>
                         </div>
                         <div class="item" data-order="2">
                             <figure itemprop="associatedMedia" itemscope>
-                                <a href="{{asset('assets/admin/img/gallery/2.jpg')}}" itemprop="contentUrl"
+                                <a href="{{asset('assets/admin/img/demo/gallery/2.jpg')}}" itemprop="contentUrl"
                                    data-size="480x360">
-                                    <img src="{{asset('assets/admin/img/gallery/2.jpg')}}"
+                                    <img src="{{asset('assets/admin/img/demo/gallery/2.jpg')}}"
                                          itemprop="thumbnail" class="img-fluid" alt="Image description"/>
                                 </a>
                             </figure>
                         </div>
                         <div class="item" data-order="3">
                             <figure itemprop="associatedMedia" itemscope>
-                                <a href="{{asset('assets/admin/img/gallery/17.jpg')}}" itemprop="contentUrl"
+                                <a href="{{asset('assets/admin/img/demo/gallery/17.jpg')}}" itemprop="contentUrl"
                                    data-size="480x720">
-                                    <img src="{{asset('assets/admin/img/gallery/17.jpg')}}"
+                                    <img src="{{asset('assets/admin/img/demo/gallery/17.jpg')}}"
                                          itemprop="thumbnail" class="img-fluid" alt="Image description"/>
                                 </a>
                             </figure>
                         </div>
                         <div class="item" data-order="4">
                             <figure itemprop="associatedMedia" itemscope>
-                                <a href="{{asset('assets/admin/img/gallery/15.jpg')}}" itemprop="contentUrl"
+                                <a href="{{asset('assets/admin/img/demo/gallery/15.jpg')}}" itemprop="contentUrl"
                                    data-size="480x720">
-                                    <img src="{{asset('assets/admin/img/gallery/15.jpg')}}"
+                                    <img src="{{asset('assets/admin/img/demo/gallery/15.jpg')}}"
                                          itemprop="thumbnail" class="img-fluid" alt="Image description"/>
                                 </a>
                             </figure>
                         </div>
                         <div class="item" data-order="5">
                             <figure itemprop="associatedMedia" itemscope>
-                                <a href="{{asset('assets/admin/img/gallery/6.jpg')}}" itemprop="contentUrl"
+                                <a href="{{asset('assets/admin/img/demo/gallery/6.jpg')}}" itemprop="contentUrl"
                                    data-size="480x360">
-                                    <img src="{{asset('assets/admin/img/gallery/6.jpg')}}"
+                                    <img src="{{asset('assets/admin/img/demo/gallery/6.jpg')}}"
                                          itemprop="thumbnail" class="img-fluid" alt="Image description"/>
                                 </a>
                             </figure>
                         </div>
                         <div class="item" data-order="6">
                             <figure itemprop="associatedMedia" itemscope>
-                                <a href="{{asset('assets/admin/img/gallery/16.jpg')}}" itemprop="contentUrl"
+                                <a href="{{asset('assets/admin/img/demo/gallery/16.jpg')}}" itemprop="contentUrl"
                                    data-size="480x720">
-                                    <img src="{{asset('assets/admin/img/gallery/16.jpg')}}"
+                                    <img src="{{asset('assets/admin/img/demo/gallery/16.jpg')}}"
                                          itemprop="thumbnail" class="img-fluid" alt="Image description"/>
                                 </a>
                             </figure>
                         </div>
                         <div class="item" data-order="7">
                             <figure itemprop="associatedMedia" itemscope>
-                                <a href="{{asset('assets/admin/img/gallery/18.jpg')}}" itemprop="contentUrl"
+                                <a href="{{asset('assets/admin/img/demo/gallery/18.jpg')}}" itemprop="contentUrl"
                                    data-size="480x270">
-                                    <img src="{{asset('assets/admin/img/gallery/18.jpg')}}"
+                                    <img src="{{asset('assets/admin/img/demo/gallery/18.jpg')}}"
                                          itemprop="thumbnail" class="img-fluid" alt="Image description"/>
                                 </a>
                             </figure>
                         </div>
                         <div class="item" data-order="8">
                             <figure itemprop="associatedMedia" itemscope>
-                                <a href="{{asset('assets/admin/img/gallery/9.jpg')}}" itemprop="contentUrl"
+                                <a href="{{asset('assets/admin/img/demo/gallery/9.jpg')}}" itemprop="contentUrl"
                                    data-size="480x360">
-                                    <img src="{{asset('assets/admin/img/gallery/9.jpg')}}"
+                                    <img src="{{asset('assets/admin/img/demo/gallery/9.jpg')}}"
                                          itemprop="thumbnail" class="img-fluid" alt="Image description"/>
                                 </a>
                             </figure>
                         </div>
                         <div class="item" data-order="9">
                             <figure itemprop="associatedMedia" itemscope>
-                                <a href="{{asset('assets/admin/img/gallery/13.jpg')}}" itemprop="contentUrl"
+                                <a href="{{asset('assets/admin/img/demo/gallery/13.jpg')}}" itemprop="contentUrl"
                                    data-size="480x720">
-                                    <img src="{{asset('assets/admin/img/gallery/13.jpg')}}"
+                                    <img src="{{asset('assets/admin/img/demo/gallery/13.jpg')}}"
                                          itemprop="thumbnail" class="img-fluid" alt="Image description"/>
                                 </a>
                             </figure>
                         </div>
                         <div class="item" data-order="10">
                             <figure itemprop="associatedMedia" itemscope>
-                                <a href="{{asset('assets/admin/img/gallery/10.jpg')}}" itemprop="contentUrl"
+                                <a href="{{asset('assets/admin/img/demo/gallery/10.jpg')}}" itemprop="contentUrl"
                                    data-size="480x360">
-                                    <img src="{{asset('assets/admin/img/gallery/10.jpg')}}"
+                                    <img src="{{asset('assets/admin/img/demo/gallery/10.jpg')}}"
                                          itemprop="thumbnail" class="img-fluid" alt="Image description"/>
                                 </a>
                             </figure>
                         </div>
                         <div class="item" data-order="11">
                             <figure itemprop="associatedMedia" itemscope>
-                                <a href="{{asset('assets/admin/img/gallery/12.jpg')}}" itemprop="contentUrl"
+                                <a href="{{asset('assets/admin/img/demo/gallery/12.jpg')}}" itemprop="contentUrl"
                                    data-size="480x360">
-                                    <img src="{{asset('assets/admin/img/gallery/12.jpg')}}"
+                                    <img src="{{asset('assets/admin/img/demo/gallery/12.jpg')}}"
                                          itemprop="thumbnail" class="img-fluid" alt="Image description"/>
                                 </a>
                             </figure>

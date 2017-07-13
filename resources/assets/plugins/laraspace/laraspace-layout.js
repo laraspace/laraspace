@@ -23,8 +23,18 @@ var LaraspaceLayout = function () {
         });
     };
 
-    var handleCustomScrollBars = function(){
+    var handleHorizontalSidebar = function(){
+        $(document).ready(function(){
+            $('.dropdown-submenu .dropdown-subitem').click(function(e){
+                $(this).parent().siblings('.dropdown-submenu').find('.dropdown-menu').hide();
+                $(this).next('.dropdown-menu').toggle();
+                e.stopPropagation();
+                e.preventDefault();
+            });
+        });
+    };
 
+    var handleCustomScrollBars = function(){
 
         // setTimeout(function(){
         //     $(".scroll-pane").mCustomScrollbar({theme:"minimal-dark"});
@@ -40,6 +50,7 @@ var LaraspaceLayout = function () {
             handleSideBar();
             handleMobileOverlay();
             handleCustomScrollBars();
+            handleHorizontalSidebar();
         }
     };
 

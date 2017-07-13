@@ -1,7 +1,7 @@
 @extends('admin.layouts.layout-basic')
 
 @section('scripts')
-    <script src="{{asset('assets/admin/js/demo/charts/gauges.js')}}"></script>
+    <script src="{{asset('assets/admin/js/pages/charts/gauges.js')}}"></script>
 @stop
 
 @section('content')
@@ -61,13 +61,13 @@
                             </div>
                             <div class="col">
                                 <div class="gauge gauge-md">
-                                    <canvas class="donut-gauge" height="250" width="500"></canvas>
+                                    <canvas class="donut-gauge" height="180" width="360"></canvas>
                                     <div class="gauge-label middle-label"></div>
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="gauge gauge-sm">
-                                    <canvas class="donut-gauge" height="250" width="500"></canvas>
+                                    <canvas class="donut-gauge" height="120" width="240"></canvas>
                                     <div class="gauge-label middle-label"></div>
                                 </div>
                             </div>
