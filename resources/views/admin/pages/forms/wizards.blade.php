@@ -11,7 +11,7 @@
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">Home</a></li>
                 <li class="breadcrumb-item"><a href="#">Forms</a></li>
-                <li class="breadcrumb-item active">Form Wizards</li>
+                <li class="breadcrumb-item active">Wizards</li>
             </ol>
         </div>
         <div class="card">
@@ -60,6 +60,7 @@
                                 </div>
                             </div>
                         </section>
+
                         <h3>Step 2</h3>
                         <section>
                             <div class="row">
@@ -85,6 +86,7 @@
                                 </div>
                             </div>
                         </section>
+
                         <h3>Step 3</h3>
                         <section>
                             <div class="row">
@@ -133,6 +135,7 @@
                 </div>
             </div>
         </div>
+
         <div class="card">
             <div class="card-header">
                 <h6>Form Wizard with Icon</h6>
@@ -255,6 +258,7 @@
                 </div>
             </div>
         </div>
+
         <div class="card">
             <div class="card-header">
                 <h6>Form Wizard with Validation</h6>
@@ -304,6 +308,7 @@
                                 </div>
                             </div>
                         </section>
+
                         <h3><i class="fa fa-key"></i>Step 2</h3>
                         <section>
                             <div class="row">
@@ -331,6 +336,7 @@
                                 </div>
                             </div>
                         </section>
+
                         <h3><i class="fa  fa-map-marker"></i>Step 3</h3>
                         <section>
                             <div class="row">
@@ -361,6 +367,7 @@
                                 </div>
                             </div>
                         </section>
+
                         <h3><i class="fa fa-twitter"></i>Step 4</h3>
                         <section>
                             <div class="form-group">

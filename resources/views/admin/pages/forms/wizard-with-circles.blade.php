@@ -7,11 +7,11 @@
 @section('content')
     <div class="main-content">
         <div class="page-header">
-            <h3 class="page-title">Form Wizards</h3>
+            <h3 class="page-title">Form Wizards With Circle</h3>
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">Home</a></li>
                 <li class="breadcrumb-item"><a href="#">Forms</a></li>
-                <li class="breadcrumb-item active">Form Wizards</li>
+                <li class="breadcrumb-item active">Wizards With Circle</li>
             </ol>
         </div>
         <div class="card">
@@ -136,6 +136,7 @@
                 </div>
             </div>
         </div>
+
         <div class="card">
             <div class="card-header">
                 <h6>Form Wizard with Icon</h6>
@@ -258,6 +259,7 @@
                 </div>
             </div>
         </div>
+
         <div class="card">
             <div class="card-header">
                 <h6>Form Wizard with Validation</h6>
@@ -384,6 +386,7 @@
                 </div>
             </div>
         </div>
+
         <div class="card">
             <div class="card-header">
                 <h6>Form Wizard with Vertical Steps</h6>

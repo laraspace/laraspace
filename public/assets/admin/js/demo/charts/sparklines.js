@@ -162,6 +162,7 @@ var SparklineCharts = function () {
     var handleBoxplotChart = function () {
         $('.spl-boxplot').sparkline('html', {
             type: 'box',
+            target: 6,
             width: '100%',
             height: '70'
         });

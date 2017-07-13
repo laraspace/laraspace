@@ -1,7 +1,33 @@
 @extends('admin.layouts.layout-horizontal')
+@section('styles')
+    <style>
+        .dropdown-submenu {
+            position: relative;
+        }
 
+        .dropdown-submenu .dropdown-menu {
+            top: 0;
+            left: 100%;
+            margin-top: -1px;
+        }
+        .dropdown-item:focus{
+            background: #333;
+            color: #ffffff;
+        }
+    </style>
+@stop
 @section('scripts')
     <script src="/assets/admin/js/dashboard/dashboard.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('a.dropdown-subitem').click(function(e){
+                $('.dropdown-submenu .dropdown-menu').hide();
+                $(this).next('.dropdown-submenu .dropdown-menu').show();
+                e.stopPropagation();
+                e.preventDefault();
+            });
+        });
+    </script>
 @stop
 
 @section('content')

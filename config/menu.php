@@ -426,7 +426,7 @@ return [
                     'title' => 'Horizontal Menu',
                     'link' => '/admin/layouts/horizontal-menu',
                     'active' => 'admin/layouts/horizontal-menu',
-                ]
+                ],
             ]
         ],
         [
@@ -460,6 +460,72 @@ return [
                     'link' => '/admin/basic-ui/tables',
                     'active' => 'admin/basic-ui/tables',
                 ]
+            ]
+        ],
+        [
+            'title' => 'Components',
+            'link' => '#',
+            'active' => 'admin/components*',
+            'icon' => 'icon-fa icon-fa-puzzle-piece',
+            'children' => [
+                [
+                    'title' => 'Datatables',
+                    'link' => '/admin/components/datatables',
+                    'active' => 'admin/components/datatables',
+                ],
+                [
+                    'title' => 'Notifications',
+                    'link' => '/admin/components/notifications',
+                    'active' => 'admin/components/notifications',
+                ],
+                [
+                    'title' => 'Graphs',
+                    'link' => '/admin/components/graphs',
+                    'active' => 'admin/components/graphs',
+                ],
+                [
+                    'title'=>' Nestable List',
+                    'link'=>'/admin/components/nestable-list',
+                    'active'=>'admin/components/nestable-list',
+                ],
+                [
+                    'title'=>'Nestable Tree',
+                    'link'=>'/admin/components/nestable-tree',
+                    'active'=>'admin/components/nestable-tree',
+                ],
+                [
+                    'title' => 'Image Cropper',
+                    'link' => '/admin/components/image-cropper',
+                    'active' => 'admin/components/image-cropper',
+                ],
+                [
+                    'title' => 'Image Zoom',
+                    'link' => '/admin/components/zoom',
+                    'active' => 'admin/components/zoom',
+                ],
+                [
+                    'title' => 'Calendar',
+                    'link' => '/admin/components/calendar',
+                    'active' => 'admin/components/calendar',
+                ],
+                [
+                    'title' => 'Rating',
+                    'link' => '#',
+                    'active' => 'admin/components/ratings*',
+                    'icon' => 'icon-fa icon-fa-star',
+                    'children' => [
+                        [
+                            'title' => 'Star Ratings',
+                            'link' => '/admin/components/ratings/star',
+                            'active' => 'admin/components/ratings/star',
+                        ],
+                        [
+                            'title' => 'Bar Ratings',
+                            'link' => '/admin/components/ratings/bar',
+                            'active' => 'admin/components/ratings/bar',
+                        ],
+                    ],
+                ],
             ]
         ],
         [

@@ -65,9 +65,7 @@ class SettingsController extends Controller
             foreach ($sets as $key) {
                 Setting::setSetting($key, $request->input($key));
             }
-
         }
-
         Setting::setSetting('mailer', $request->mailer);
 
         flash()->success('Settings Saved');
@@ -103,9 +101,7 @@ class SettingsController extends Controller
     public function postEnvironment(Request $request)
     {
 
-        return $request->env;
-
-       // \Storage::put('.env', $request->env);
+       \Storage::put('.env', $request->environment);
 
         return back();
     }

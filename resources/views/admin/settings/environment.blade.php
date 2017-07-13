@@ -1,5 +1,9 @@
 @extends('admin.layouts.layout-basic')
 
+@section('scripts')
+    <script src="{{asset('assets/admin/js/pages/settings/environment.js')}}"></script>
+@stop
+
 @section('content')
     <div class="main-content">
 
@@ -15,39 +19,17 @@
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-block">
-                        <pre id="editor">{{$env}}</pre>
-                        <button class="btn btn-primary btn-large" @click="saveEnvFile">
-                            <i class="fa fa-save"></i>Save
-                        </button>
+                        <form method="post" action="{{route('admin.setting.environment.create')}}">
+                            {{csrf_field()}}
+                            <textarea name="environment"></textarea>
+                            <pre id="environment">{{$env}}</pre>
+                            <button class="btn btn-primary btn-large" type="submit">
+                                <i class="fa fa-save"></i>Save
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-@stop
-@section('scripts')
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.3/vue.min.js"></script>
-    <script  type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.3/vue.js"></script>
-    <script>
-        new Vue({
-            el: "#root",
-
-            data: {
-                editor: '',
-            },
-            mounted: function () {
-                this.editor = ace.edit("editor");
-            },
-            methods: {
-                saveEnvFile: function () {
-                    var env = this.editor.getSession().getValue();
-                    axios.post('env/create', {env: env})
-                        .then(function (response) {
-                            location.reload();
-                        });
-                },
-            }
-        });
-
-    </script>
 @stop

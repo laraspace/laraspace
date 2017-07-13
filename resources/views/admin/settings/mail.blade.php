@@ -1,7 +1,7 @@
 @extends('admin.layouts.layout-basic')
 
 @section('scripts')
-    <script src="{{mix('/assets/admin/js/pages/mail.js')}}"></script>
+    <script src="{{mix('/assets/admin/js/pages/settings/mail.js')}}"></script>
     <script src="/assets/admin/js/pages/validation.js"></script>
 @stop
 

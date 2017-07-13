@@ -80,7 +80,7 @@ mix.combine([
 
     .js('resources/assets/admin/js/pages/dashboard.js', 'public/assets/admin/js/pages/')
     .js('resources/assets/admin/js/pages/todos.js', 'public/assets/admin/js/pages/')
-    .js('resources/assets/admin/js/pages/mail.js', 'public/assets/admin/js/pages/')
+    .js('resources/assets/admin/js/pages/mail.js', 'public/assets/admin/js/pages/settings/')
 
     .sass('resources/assets/admin/sass/laraspace.scss', 'public/assets/admin/css/')
 

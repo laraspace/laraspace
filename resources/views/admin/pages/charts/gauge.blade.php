@@ -18,7 +18,7 @@
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-header">
-                        <h6>Basic Gauges</h6>
+                        <h5>Basic Gauges</h5>
                     </div>
                     <div class="card-block">
                         <div class="row gauges-row">
@@ -80,7 +80,7 @@
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-header">
-                        <h6>Color Gauges</h6>
+                        <h5>Color Gauges</h5>
                     </div>
                     <div class="card-block">
                         <div class="row gauges-row">

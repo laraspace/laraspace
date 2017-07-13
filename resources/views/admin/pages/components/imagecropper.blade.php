@@ -1,8 +1,9 @@
-@extends('admin.layouts.layout-basic'
-)
+@extends('admin.layouts.layout-basic')
+
 @section('scripts')
     <script src="{{asset('assets/admin/js/pages/imagecropper.js')}}"></script>
 @stop
+
 @section('content')
     <div class="main-content">
         <div class="page-header">
@@ -19,14 +20,14 @@
                     <div class="card-block">
                         <div class="row">
                             <div class="col-8 img-cropper-col">
-                                <!-- <h3>Demo:</h3> -->
+                                <!-- Demo -->
                                 <div class="img-container">
                                     <img id="image" src="{{asset('assets/admin/img/avatars/avatar-lg.png')}}"
                                          alt="Picture">
                                 </div>
                             </div>
                             <div class="col">
-                                <!-- <h3>Preview:</h3> -->
+                                <!-- Preview -->
                                 <div class="docs-preview clearfix">
                                     <div class="img-preview preview-lg"></div>
                                     <div class="img-preview preview-md"></div>
@@ -34,7 +35,7 @@
                                     <div class="img-preview preview-xs"></div>
                                 </div>
 
-                                <!-- <h3>Data:</h3> -->
+                                <!-- Data -->
                                 <div class="docs-data">
                                     <div class="input-group input-group-sm">
                                         <label class="input-group-addon" for="dataX">X</label>

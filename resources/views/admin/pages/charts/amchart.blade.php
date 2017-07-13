@@ -19,7 +19,7 @@
             <div class="col-lg-12">
                 <div class="card">
                     <div class="card-header">
-                        <h6>Column and Line mix Chart</h6>
+                        <h6>Column and Line Chart</h6>
                     </div>
                     <div class="card-block">
                         <div class="amcharts" id="bar-line-chart"></div>
