@@ -1,153 +1,158 @@
-.login-wrapper {
-    height: 100%;
-    padding-top: 0;
-    position: relative;
+.login-page {
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    .bg-fullscreen-image &::before {
-        background-image: url('/assets/admin/img/skynight.jpg');
-        background-position: center top;
-        background-size: cover;
-        content: '';
+    .login-wrapper {
         height: 100%;
-        left: 0;
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: -1;
-    }
+        padding-top: 0;
+        position: relative;
 
-    .bg-fullscreen-image &::after {
-        background-color: $ls-login-bg-color-overlay;
-        content: '';
-        height: 100%;
-        left: 0;
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: -1;
-    }
-}
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-.login-box {
-    color: $white;
-    padding: 20px;
-    width: 100%;
-    max-width: 400px;
+        .bg-fullscreen-image &::before {
+            background-image: url('/assets/admin/img/skynight.jpg');
+            background-position: center top;
+            background-size: cover;
+            content: '';
+            height: 100%;
+            left: 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: -1;
+        }
 
-    .form-control {
-        margin-top: 20px;
-    }
-
-    .other-actions {
-        margin-bottom: 10px;
-        margin-top: 20px;
-    }
-
-    .page-copyright {
-        font-size: 14px;
-        margin-top: 50px;
-        text-align: center;
-        p {
-            margin-bottom: 10px;
+        .bg-fullscreen-image &::after {
+            background-color: $ls-login-bg-color-overlay;
+            content: '';
+            height: 100%;
+            left: 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: -1;
         }
     }
 
-    a {
-        color: $ls-color-primary;
-
-        &:hover {
-            color: darken($ls-color-primary, 5%);
-        }
-    }
-
-    .btn-login {
-        background-color: $ls-color-primary;
-        color: $ls-color-secondary;
-
-        &:hover {
-            background-color: darken($ls-color-primary, 5%);
-        }
-    }
-
-}
-
-
-.login-box .c-input {
-    color: #fff;
-
-    .c-indicator {
-        top: 2px;
-    }
-}
-
-.login-wrapper .c-input {
-
-    > input {
-
-        &:checked ~ .c-indicator {
-            background-color: #333;
-            @include box-shadow(none);
-        }
-
-        &:focus ~ .c-indicator {
-            // the mixin is not used here to make sure there is feedback
-            box-shadow: 0 0 0 .075rem #fff, 0 0 0 .2rem darken(#333, 5%);;
-        }
-
-        &:active ~ .c-indicator {
-            background-color: darken(#333, 5%);
-            @include box-shadow(none);
-        }
-    }
-
-}
-
-.login-page .logo-main {
-    margin-bottom: 40px;
-    text-align: center;
-
-
-    img {
-        height: auto;
-        width: 300px;
-    }
-
-}
-
-.other-options {
-    border-top: 1px solid #fff;
-    padding: 1rem 0;
-    padding-top: 2rem;
-
-
-
-    h6 {
-        color: #c7cbd1;
-        font-size: 15px;
-        margin-top: 12px;
-    }
-
-    a, a:hover {
+    .login-box {
         color: $white;
+        padding: 20px;
+        width: 100%;
+        max-width: 400px;
+
+        .form-control {
+            margin-top: 20px;
+        }
+
+        .other-actions {
+            margin-bottom: 10px;
+            margin-top: 20px;
+        }
+
+        .page-copyright {
+            font-size: 14px;
+            margin-top: 50px;
+            text-align: center;
+            p {
+                margin-bottom: 10px;
+            }
+        }
+
+        a {
+            color: $ls-color-primary;
+
+            &:hover {
+                color: darken($ls-color-primary, 5%);
+            }
+        }
+
+        .btn-login {
+            background-color: $ls-color-primary;
+            color: $ls-color-secondary;
+
+            &:hover {
+                background-color: darken($ls-color-primary, 5%);
+            }
+        }
+
     }
-}
 
 
-@media (max-width: $small-breakpoint){
+    .login-box .c-input {
+        color: #fff;
 
-    .other-actions{
-        font-size: 14px;
+        .c-indicator {
+            top: 2px;
+        }
     }
 
-    .login-page .logo-main {
+    .login-wrapper .c-input {
+
+        > input {
+
+            &:checked ~ .c-indicator {
+                background-color: #333;
+                @include box-shadow(none);
+            }
+
+            &:focus ~ .c-indicator {
+                // the mixin is not used here to make sure there is feedback
+                box-shadow: 0 0 0 .075rem #fff, 0 0 0 .2rem darken(#333, 5%);;
+            }
+
+            &:active ~ .c-indicator {
+                background-color: darken(#333, 5%);
+                @include box-shadow(none);
+            }
+        }
+
+    }
+
+    .logo-main {
+        margin-bottom: 40px;
+        text-align: center;
+
+
         img {
             height: auto;
-            max-width: 100%;
+            width: 300px;
+        }
+
+    }
+
+    .other-options {
+        border-top: 1px solid #fff;
+        padding: 1rem 0;
+        padding-top: 2rem;
+
+
+
+        h6 {
+            color: #c7cbd1;
+            font-size: 15px;
+            margin-top: 12px;
+        }
+
+        a, a:hover {
+            color: $white;
         }
     }
 
+    @media (max-width: $small-breakpoint){
+
+        .other-actions{
+            font-size: 14px;
+        }
+
+        .logo-main {
+            img {
+                height: auto;
+                max-width: 100%;
+            }
+        }
+
+    }
+
 }
+
+

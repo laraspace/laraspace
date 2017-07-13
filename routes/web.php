@@ -213,8 +213,12 @@ Route::group([
 
     //Login Options
 
-    Route::get('login-simple', [
-        'as' => 'admin.login.simple', 'uses' => 'Demo\PagesController@loginSimple'
+    Route::get('login-2', [
+        'as' => 'admin.login-2', 'uses' => 'Demo\PagesController@login2'
+    ]);
+
+    Route::get('login-3', [
+        'as' => 'admin.login-3', 'uses' => 'Demo\PagesController@login3'
     ]);
 
     //Todos

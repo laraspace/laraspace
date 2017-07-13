@@ -1,4 +1,5 @@
 @extends('admin.layouts.layout-basic')
+
 @section('styles')
     <style>
         #editor {
@@ -8,6 +9,7 @@
         }
     </style>
 @stop
+
 @section('content')
     <div class="main-content">
 
@@ -33,9 +35,10 @@
         </div>
     </div>
 @stop
+
 @section('scripts')
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.3/vue.min.js"></script>
-    <script  type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.3/vue.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.3/vue.js"></script>
     <script>
         new Vue({
             el: "#root",

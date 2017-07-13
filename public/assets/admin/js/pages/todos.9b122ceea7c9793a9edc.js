@@ -12158,7 +12158,7 @@ var Component = __webpack_require__("./node_modules/vue-loader/lib/component-nor
   /* cssModules */
   null
 )
-Component.options.__file = "D:\\SERVER\\laragon\\www\\laraspace\\resources\\assets\\admin\\js\\components\\Todos.vue"
+Component.options.__file = "/Users/bytefury/Project/web/laraspace/resources/assets/admin/js/components/Todos.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Todos.vue: functional components are not supported with templates, they should use render functions.")}
 

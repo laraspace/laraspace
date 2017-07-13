@@ -305,19 +305,34 @@ return [
             'icon' => 'fa fa-file',
             'children' => [
                 [
-                    'title' => 'Login with BG Image',
+                    'title' => 'Login',
                     'link'  => '/login',
                     'active' => 'login',
                 ],
                 [
-                    'title' => 'Login Simple',
-                    'link'  => '/admin/login-simple',
-                    'active' => 'admin/login-simple',
+                    'title' => 'Login 2',
+                    'link'  => '/admin/login-2',
+                    'active' => 'admin/login-2',
+                ],
+                [
+                    'title' => 'Login 3',
+                    'link'  => '/admin/login-3',
+                    'active' => 'admin/login-3',
                 ],
                 [
                     'title' => 'Register',
                     'link' => '/register',
                     'active' => 'register',
+                ],
+                [
+                    'title' => 'Register 2',
+                    'link' => '/admin/register-2',
+                    'active' => 'admin/register-2',
+                ],
+                [
+                    'title' => 'Register 3',
+                    'link' => '/admin/register-3',
+                    'active' => 'admin/register-3',
                 ],
                 [
                     'title' => '404 Page',

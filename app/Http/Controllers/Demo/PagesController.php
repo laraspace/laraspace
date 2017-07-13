@@ -172,9 +172,14 @@ class PagesController extends Controller
     }
 
     // Login
-    public function loginSimple()
+    public function login2()
     {
-        return view('admin.sessions.login-simple');
+        return view('admin.sessions.login-2');
+    }
+
+    public function login3()
+    {
+        return view('admin.sessions.login-3');
     }
 
     public function nestableList()
