@@ -150,10 +150,7 @@
     left: 100%;
     margin-top: -1px;
 }
-.dropdown-item:focus{
-    background: #333;
-    color: #ffffff;
-}
+
 .dropdown-submenu > a.dropdown-subitem::after {
     content: '';
     float: right;
@@ -162,5 +159,4 @@
     border-left: 4px dashed;
     border-top: 4px solid transparent;
     border-bottom: 4px solid transparent;
-    color: white;
 }

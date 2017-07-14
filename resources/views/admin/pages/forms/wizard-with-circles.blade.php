@@ -38,7 +38,7 @@
                                         <div class="input-group">
                                             <input type="text" class="form-control ls-datepicker" value="06/10/2017">
                                             <span class="input-group-addon">
-                                                <i class="fa fa-calendar"></i>
+                                                <i class="icon-fa icon-fa-calendar"></i>
                                             </span>
                                         </div>
                                     </div>
@@ -144,7 +144,7 @@
             <div class="card-block">
                 <div class="content">
                     <form id="basic-wizard-2" class="bw-with-c iw-with-c">
-                        <h3><i class="fa fa-home"></i>Step 1</h3>
+                        <h3><i class="icon-fa icon-fa-home"></i>Step 1</h3>
                         <section>
                             <div class="row">
                                 <div class="col-lg-6">
@@ -161,7 +161,7 @@
                                         <div class="input-group">
                                             <input type="text" class="form-control ls-datepicker" value="06/10/2017">
                                             <span class="input-group-addon">
-                                                <i class="fa fa-calendar"></i>
+                                                <i class="icon-fa icon-fa-calendar"></i>
                                             </span>
                                         </div>
                                     </div>
@@ -184,7 +184,7 @@
                             </div>
                         </section>
 
-                        <h3><i class="fa fa-key"></i>Step 2</h3>
+                        <h3><i class="icon-fa icon-fa-key"></i>Step 2</h3>
                         <section>
                             <div class="row">
                                 <div class="col-lg-6">
@@ -210,7 +210,7 @@
                             </div>
                         </section>
 
-                        <h3><i class="fa  fa-map-marker"></i>Step 3</h3>
+                        <h3><i class="icon-fa icon-fa-map-marker"></i>Step 3</h3>
                         <section>
                             <div class="row">
                                 <div class="col-lg-6">
@@ -240,7 +240,7 @@
                             </div>
                         </section>
 
-                        <h3><i class="fa fa-twitter"></i>Step 4</h3>
+                        <h3><i class="icon-fa icon-fa-twitter"></i>Step 4</h3>
                         <section>
                             <div class="form-group">
                                 <label>Facebook</label>
@@ -267,7 +267,7 @@
             <div class="card-block">
                 <div class="content">
                     <form id="basic-wizard-3" class="bw-with-c iw-with-c">
-                        <h3><i class="fa fa-home"></i>Step 1</h3>
+                        <h3><i class="icon-fa icon-fa-home"></i>Step 1</h3>
                         <section>
                             <div class="row">
                                 <div class="col-lg-6">
@@ -285,7 +285,7 @@
                                         <div class="input-group">
                                             <input type="text" class="form-control ls-datepicker" value="06/10/2017">
                                             <span class="input-group-addon">
-                                                <i class="fa fa-calendar"></i>
+                                                <i class="icon-fa icon-fa-calendar"></i>
                                             </span>
                                         </div>
                                     </div>
@@ -309,7 +309,7 @@
                             </div>
                         </section>
 
-                        <h3><i class="fa fa-key"></i>Step 2</h3>
+                        <h3><i class="icon-fa icon-fa-key"></i>Step 2</h3>
                         <section>
                             <div class="row">
                                 <div class="col-lg-6">
@@ -337,7 +337,7 @@
                             </div>
                         </section>
 
-                        <h3><i class="fa  fa-map-marker"></i>Step 3</h3>
+                        <h3><i class="icon-fa icon-fa-map-marker"></i>Step 3</h3>
                         <section>
                             <div class="row">
                                 <div class="col-lg-6">
@@ -367,7 +367,7 @@
                                 </div>
                             </div>
                         </section>
-                        <h3><i class="fa fa-twitter"></i>Step 4</h3>
+                        <h3><i class="icon-fa icon-fa-twitter"></i>Step 4</h3>
                         <section>
                             <div class="form-group">
                                 <label>Facebook *</label>
@@ -411,7 +411,7 @@
                                         <div class="input-group">
                                             <input type="text" class="form-control ls-datepicker" value="06/10/2017">
                                             <span class="input-group-addon">
-                                                <i class="fa fa-calendar"></i>
+                                                <i class="icon-fa icon-fa-calendar"></i>
                                             </span>
                                         </div>
                                     </div>
