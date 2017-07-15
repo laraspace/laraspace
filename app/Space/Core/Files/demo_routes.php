@@ -106,6 +106,21 @@ Route::group(['middleware' => ['guest','setting']], function () {
     Route::post('login', [
         'as' => 'login.post', 'uses' => 'AuthController@postLogin'
     ]);
+    Route::get('forgot-password', [
+        'as' => 'forgot-password.index', 'uses' => 'ForgotPasswordController@getEmail'
+    ]);
+
+    Route::post('/forgot-password', [
+        'as' => 'send-reset-link', 'uses' => 'ForgotPasswordController@postEmail'
+    ]);
+
+    Route::get('/password/reset/{token}', [
+        'as' => 'password.reset', 'uses' => 'ForgotPasswordController@GetReset'
+    ]);
+
+    Route::post('/password/reset', [
+        'as' => 'reset.password.post', 'uses' => 'ForgotPasswordController@postReset'
+    ]);
 
     Route::get('auth/{provider}', 'AuthController@redirectToProvider');
     Route::get('auth/{provider}/callback', 'AuthController@handleProviderCallback');

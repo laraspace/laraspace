@@ -317,7 +317,7 @@ Route::group([
 |
 */
 
-Route::group(['middleware' => ['guest', 'setting']], function () {
+Route::group(['middleware' => ['guest','setting']], function () {
 
     Route::get('login', [
         'as' => 'login', 'uses' => 'AuthController@login'

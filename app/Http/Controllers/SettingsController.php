@@ -45,7 +45,7 @@ class SettingsController extends Controller
     public function postMail(Request $request)
     {
         if ($request->mailer == 'mailgun') {
-            $sets = ['mail_mailgun_user', 'mail_from', 'mail_mailgun_domain', 'mail_mailgun_secret'];
+            $sets = ['mail_mailgun_host','mail_mailgun_user', 'mail_mailgun_domain', 'mail_mailgun_secret', 'mail_from'];
 
             foreach ($sets as $key) {
                 Setting::setSetting($key, $request->input($key));
@@ -60,7 +60,7 @@ class SettingsController extends Controller
             }
 
         } else {
-            $sets = ['mail_sparkpost_user', 'mail_from', 'mail_sparkpost_secret'];
+            $sets = ['mail_sparkpost_host','mail_sparkpost_username','mail_sparkpost_secret','mail_sparkpost_user', 'mail_from'];
 
             foreach ($sets as $key) {
                 Setting::setSetting($key, $request->input($key));

@@ -33,7 +33,7 @@
                                     <label class="col-md-2 form-control-label">Facebook Page URL</label>
                                     <div class="col-md-10">
                                         <div class="input-icon">
-                                            <i class="fa fa-facebook"></i>
+                                            <i class="icon-fa icon-fa-facebook"></i>
                                             <input type="text" class="form-control" name="facebook" value="{{get_setting('facebook')}}">
                                         </div>
                                     </div>
@@ -42,7 +42,7 @@
                                     <label class="col-md-2 form-control-label">Google Plus URL</label>
                                     <div class="col-md-10">
                                         <div class="input-icon">
-                                            <i class="fa fa-google-plus"></i>
+                                            <i class="icon-fa icon-fa-google-plus"></i>
                                             <input type="text" class="form-control" name="google" value="{{get_setting('google')}}">
                                         </div>
                                     </div>
@@ -51,7 +51,7 @@
                                     <label class="col-md-2 form-control-label">Twitter URL</label>
                                     <div class="col-md-10">
                                         <div class="input-icon">
-                                            <i class="fa fa-twitter"></i>
+                                            <i class="icon-fa icon-fa-twitter"></i>
                                             <input type="text" class="form-control" name="twitter" value="{{get_setting('twitter')}}">
                                         </div>
                                     </div>

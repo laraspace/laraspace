@@ -17,6 +17,9 @@ var FormValidation = function () {
                     required: true,
                     email: true
                 },
+                mail_mailgun_host: {
+                    required: true
+                },
                 mail_mailgun_user : {
                     required: true
                 },
@@ -52,6 +55,13 @@ var FormValidation = function () {
                 },
 
                 mail_sparkpost_from : {
+                    required: true
+                },
+                mail_sparkpost_host
+                    : {
+                    required: true
+                },
+                mail_sparkpost_username: {
                     required: true
                 },
                 notify_mail : {

@@ -26,7 +26,7 @@
                                 <input type="text" name="notify_mail" class="form-control"
                                        value="{{ get_setting('notify_mail') }}">
                             </div>
-                            <button class="btn btn-primary btn-large"><i class="fa fa-save"></i>Save Notification Mail
+                            <button class="btn btn-primary btn-large"><i class="icon-fa icon-fa-save"></i>Save Notification Mail
                             </button>
                         </form>
                     </div>

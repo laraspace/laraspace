@@ -31,7 +31,7 @@
                                 </select>
                             </div>
                             <component :is="currentView"></component>
-                            <button class="btn btn-primary btn-large"><i class="fa fa-save"></i>Save
+                            <button class="btn btn-primary btn-large"><i class="icon-fa icon-fa-save"></i>Save
                             </button>
                         </form>
                     </div>
@@ -41,6 +41,11 @@
     </div>
     <template id="mailgun-template">
         <div>
+            <div class="form-group">
+                <label>Mailgun Host</label>
+                <input type="text" name="mail_mailgun_host" value="{{ get_setting('mail_mailgun_host') }}"
+                       class="form-control">
+            </div>
             <div class="form-group">
                 <label>Mailgun Domain</label>
                 <input type="text" name="mail_mailgun_domain" value="{{ get_setting('mail_mailgun_domain') }}"
@@ -94,6 +99,16 @@
     </template>
     <template id="sparkpost-template">
         <div>
+            <div class="form-group">
+                <label>SparkPost Host</label>
+                <input type="text" name="mail_sparkpost_host" value="{{ get_setting('mail_sparkpost_host') }}"
+                       class="form-control">
+            </div>
+            <div class="form-group">
+                <label>SparkPost Username</label>
+                <input type="text" name="mail_sparkpost_username" value="{{ get_setting('mail_sparkpost_username') }}"
+                       class="form-control">
+            </div>
             <div class="form-group">
                 <label>SparkPost Secret</label>
                 <input type="text" name="mail_sparkpost_secret" value="{{ get_setting('mail_sparkpost_secret') }}"

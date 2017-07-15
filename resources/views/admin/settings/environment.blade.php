@@ -23,7 +23,7 @@
                             <textarea name="environment"></textarea>
                             <pre id="environment">{{$env}}</pre>
                             <button class="btn btn-primary btn-large" type="submit">
-                                <i class="fa fa-save"></i>Save
+                                <i class="icon-fa icon-fa-save"></i>Save
                             </button>
                         </form>
                     </div>
