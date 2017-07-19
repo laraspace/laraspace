@@ -1,7 +1,7 @@
 @extends('admin.layouts.layout-basic')
 
 @section('scripts')
-    <script type="text/javascript" src="{{asset('assets/admin/js/demo/rating.js')}}"></script>
+    <script type="text/javascript" src="{{asset('assets/admin/js/pages/rating.js')}}"></script>
 @stop
 
 @section('content')

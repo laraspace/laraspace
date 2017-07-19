@@ -19,7 +19,9 @@
   color: $ls-color-gray--very-dark;
 }
 
+
 // ICON DEMO
+
 .icon-container {
   display: flex;
   justify-content: space-between;
@@ -52,10 +54,13 @@
   background-color: #FFEB3B;
 }
 
+
 //BASIC UI
 .progress {
   margin-top: 20px;
 }
+
+
 //GALLERY
 
 .my-gallery img {
@@ -118,6 +123,8 @@ img {
   }
 
 }
+
+
   /* Image Zoom */
 
 .image-zoom-demo {
@@ -133,7 +140,6 @@ img {
   width: 20%;
   margin:0 20px 20px 20px;
 }
-
 
   /* Calander */
 .calendar-event{
@@ -238,8 +244,8 @@ tr > td > .fc-day-grid-event{
   width: auto !important;
   height: auto !important;
 }
-.sparkline-chart .row {
-  margin: 20px auto 100px auto !important;
+.sparkline-chart .row .col {
+  margin: 50px 20px !important;
 }
 .sparkline canvas {
   width: 40% !important;
@@ -293,7 +299,9 @@ tr > td > .fc-day-grid-event{
   display: inline-block;
   position: absolute;
   top: 60%;
-  left: 40%;
+  left: 0px;
+  width: 100%;
+  text-align: center;
   font-size: 28px;
   font-weight: bold;
 }

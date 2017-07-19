@@ -18,7 +18,7 @@
             <div class="col calendar-event">
                 <div class="card">
                     <div class="card-header">
-                        <h6>Events</h6>
+                        <h5>Events</h5>
                     </div>
                     <div class="card-block">
                         <ol class="fc-event-list">

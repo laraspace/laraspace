@@ -30,8 +30,52 @@ var FormValidation = function () {
                 },
                 terms : {
                     required : true
-                }
+                },
+                mail_from : {
+                    required: true,
+                    email: true
+                },
+                mail_mailgun_user : {
+                    required: true
+                },
+                mail_mailgun_secret : {
+                    required: true
+                },
+                mail_mailgun_domain : {
+                    required: true
+                },
 
+                mail_sendgrid_host : {
+                    required: true
+                },
+
+                mail_sendgrid_username : {
+                    required: true
+                },
+
+                mail_sendgrid_password : {
+                    required: true
+                },
+
+                mail_sendgrid_user : {
+                    required: true
+                },
+
+                mail_sparkpost_secret : {
+                    required: true
+                },
+
+                mail_sparkpost_user : {
+                    required: true
+                },
+
+                mail_sparkpost_from : {
+                    required: true
+                },
+                notify_mail : {
+                    required: true,
+                    email: true
+                }
             },
 
             highlight: function (element) { // hightlight error inputs

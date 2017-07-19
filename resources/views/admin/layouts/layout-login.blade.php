@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     @include('admin.layouts.partials.favicons')
 </head>
-<body id="app" class="login-page bg-fullscreen-image">
+<body id="app" class="login-page login-1">
 <div class="login-wrapper">
     <div class="login-box">
         @include('admin.layouts.partials.laraspace-notifs')

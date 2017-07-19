@@ -43,7 +43,8 @@ return [
         'resources/views/admin/pages',
         'app/Http/Controllers/Demo',
         'app/Space/Demo',
-        'public/assets/admin/js/pages'
+        'public/assets/admin/js/pages',
+        'public/assets/admin/img/demo'
     ],
 
     'files_to_delete' => [

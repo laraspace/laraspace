@@ -1,6 +1,6 @@
 <div class="skin-tools">
     <a class="skin-tools-action">
-        <i class="fa fa-cog"></i>
+        <i class="icon-fa icon-fa-cog"></i>
     </a>
     <div class="skin-tools-content">
         <h5 class="mt-2">Select Skin</h5>

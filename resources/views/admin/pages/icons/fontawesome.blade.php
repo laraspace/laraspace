@@ -18,3308 +18,3308 @@
                         <div class="icon-container">
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-adjust"></i>
+                                    <i class="icon-fa icon-fa-adjust"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- adjust</span>
+                                    <span>icon-fa- adjust</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-american-sign-language-interpreting"></i>
+                                    <i class="icon-fa icon-fa-american-sign-language-interpreting"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-american-sign-language-interpreting</span>
+                                    <span>icon-fa-american-sign-language-interpreting</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-anchor"></i>
+                                    <i class="icon-fa icon-fa-anchor"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-anchor</span>
+                                    <span>icon-fa-anchor</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-archive"></i>
+                                    <i class="icon-fa icon-fa-archive"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-archive</span>
+                                    <span>icon-fa-archive</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-area-chart"></i>
+                                    <i class="icon-fa icon-fa-area-chart"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-area-chart</span>
+                                    <span>icon-fa-area-chart</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-arrows"></i>
+                                    <i class="icon-fa icon-fa-arrows"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-arrows</span>
+                                    <span>icon-fa-arrows</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-arrows-h"></i>
+                                    <i class="icon-fa icon-fa-arrows-h"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-arrows-h</span>
+                                    <span>icon-fa-arrows-h</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-arrows-v"></i>
+                                    <i class="icon-fa icon-fa-arrows-v"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-arrows-v</span>
+                                    <span>icon-fa-arrows-v</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-asl-interpreting"></i>
+                                    <i class="icon-fa icon-fa-asl-interpreting"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-asl-interpreting</span>
+                                    <span>icon-fa-asl-interpreting</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-assistive-listening-systems"
+                                    <i class="icon-fa icon-fa-assistive-listening-systems"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-assistive-listening-systems</span>
+                                    <span>icon-fa-assistive-listening-systems</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-asterisk"></i>
+                                    <i class="icon-fa icon-fa-asterisk"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-asterisk</span>
+                                    <span>icon-fa-asterisk</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-at"
+                                    <i class="icon-fa icon-fa-at"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-at</span>
+                                    <span>icon-fa-at</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-audio-description"></i>
+                                    <i class="icon-fa icon-fa-audio-description"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-audio-description</span>
+                                    <span>icon-fa-audio-description</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-automobile"></i>
+                                    <i class="icon-fa icon-fa-automobile"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-automobile</span>
+                                    <span>icon-fa-automobile</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-balance-scale"></i>
+                                    <i class="icon-fa icon-fa-balance-scale"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-balance-scale</span>
+                                    <span>icon-fa-balance-scale</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-ban"></i>
+                                    <i class="icon-fa icon-fa-ban"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-ban</span>
+                                    <span>icon-fa-ban</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-bank"></i>
+                                    <i class="icon-fa icon-fa-bank"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-bank</span>
+                                    <span>icon-fa-bank</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-bar-chart"></i>
+                                    <i class="icon-fa icon-fa-bar-chart"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-bar-chart</span>
+                                    <span>icon-fa-bar-chart</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-bar-chart-o"></i>
+                                    <i class="icon-fa icon-fa-bar-chart-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-bar-chart-o</span>
+                                    <span>icon-fa-bar-chart-o</span>
                                 </div>
                             </div>
 
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-barcode"></i>
+                                    <i class="icon-fa icon-fa-barcode"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-barcode</span>
+                                    <span>icon-fa-barcode</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-bars"></i>
+                                    <i class="icon-fa icon-fa-bars"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-bars</span>
+                                    <span>icon-fa-bars</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
 
-                                    <i class="fa fa-battery-0"></i>
+                                    <i class="icon-fa icon-fa-battery-0"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-battery-0</span>
+                                    <span>icon-fa-battery-0</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-battery-1"></i>
+                                    <i class="icon-fa icon-fa-battery-1"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-battery-1(alias)</span>
+                                    <span>icon-fa-battery-1(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-battery-2"></i>
+                                    <i class="icon-fa icon-fa-battery-2"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-battery-2(alias)</span>
+                                    <span>icon-fa-battery-2(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-battery-3"></i>
+                                    <i class="icon-fa icon-fa-battery-3"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-battery-3(alias)</span>
+                                    <span>icon-fa-battery-3(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-battery-4"></i>
+                                    <i class="icon-fa icon-fa-battery-4"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-battery-4(alias)</span>
+                                    <span>icon-fa-battery-4(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-battery-empty"></i>
+                                    <i class="icon-fa icon-fa-battery-empty"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- battery-empty</span>
-                                </div>
-                            </div>
-
-                            <div class="demo-icon">
-                                <div class="icon-box">
-                                    <i class="fa fa-battery-full"></i>
-                                </div>
-                                <div class="icon-classname">
-                                    <span>fa-battery-full</span>
-                                </div>
-                            </div>
-                            <div class="demo-icon">
-                                <div class="icon-box">
-                                    <i class="fa fa-battery-half"></i>
-                                </div>
-                                <div class="icon-classname">
-                                    <span>fa-battery-half</span>
-                                </div>
-                            </div>
-                            <div class="demo-icon">
-                                <div class="icon-box">
-                                    <i class="fa fa-battery-quarter"></i>
-                                </div>
-                                <div class="icon-classname">
-                                    <span>fa-battery-quarter</span>
-                                </div>
-                            </div>
-                            <div class="demo-icon">
-                                <div class="icon-box">
-                                    <i class="fa fa-battery-three-quarters"></i>
-                                </div>
-                                <div class="icon-classname">
-                                    <span>fa-battery-three-quarters</span>
-                                </div>
-                            </div>
-                            <div class="demo-icon">
-                                <div class="icon-box">
-                                    <i class="fa fa-bed"></i>
-                                </div>
-                                <div class="icon-classname">
-                                    <span>fa-bed</span>
-                                </div>
-                            </div>
-                            <div class="demo-icon">
-                                <div class="icon-box">
-                                    <i class="fa fa-beer"></i>
-                                </div>
-                                <div class="icon-classname">
-                                    <span>fa-beer</span>
-                                </div>
-                            </div>
-                            <div class="demo-icon">
-                                <div class="icon-box">
-                                    <i class="fa fa-bell"></i>
-                                </div>
-                                <div class="icon-classname">
-                                    <span>fa-bell</span>
-                                </div>
-                            </div>
-                            <div class="demo-icon">
-                                <div class="icon-box">
-                                    <i class="fa fa-bell-o"></i>
-                                </div>
-                                <div class="icon-classname">
-                                    <span>fa-bell-o</span>
-                                </div>
-                            </div>
-                            <div class="demo-icon">
-                                <div class="icon-box">
-                                    <i class="fa fa-bell-slash"></i>
-                                </div>
-                                <div class="icon-classname">
-                                    <span>fa-bell-slash</span>
-                                </div>
-                            </div>
-                            <div class="demo-icon">
-                                <div class="icon-box">
-                                    <i class="fa fa-bell-slash-o"></i>
-                                </div>
-                                <div class="icon-classname">
-                                    <span>fa-bell-slash-o</span>
-                                </div>
-                            </div>
-                            <div class="demo-icon">
-                                <div class="icon-box">
-                                    <i class="fa fa-bicycle"></i>
-                                </div>
-                                <div class="icon-classname">
-                                    <span>fa-bicycle</span>
-                                </div>
-                            </div>
-                            <div class="demo-icon">
-                                <div class="icon-box">
-                                    <i class="fa fa-binoculars"></i>
-                                </div>
-                                <div class="icon-classname">
-                                    <span>fa-binoculars</span>
-                                </div>
-                            </div>
-                            <div class="demo-icon">
-                                <div class="icon-box">
-                                    <i class="fa fa-birthday-cake"></i>
-                                </div>
-                                <div class="icon-classname">
-                                    <span>fa-birthday-cake</span>
-                                </div>
-                            </div>
-                            <div class="demo-icon">
-                                <div class="icon-box">
-                                    <i class="fa fa-blind"></i>
-                                </div>
-                                <div class="icon-classname">
-                                    <span>fa-blind</span>
-                                </div>
-                            </div>
-                            <div class="demo-icon">
-                                <div class="icon-box">
-                                    <i class="fa fa-bluetooth"></i>
-                                </div>
-                                <div class="icon-classname">
-                                    <span>fa-bluetooth</span>
-                                </div>
-                            </div>
-                            <div class="demo-icon">
-                                <div class="icon-box">
-                                    <i class="fa fa-bluetooth-b"></i>
-                                </div>
-                                <div class="icon-classname">
-                                    <span>fa-bluetooth-b</span>
-                                </div>
-                            </div>
-                            <div class="demo-icon">
-                                <div class="icon-box">
-                                    <i class="fa fa-bolt"></i>
-                                </div>
-                                <div class="icon-classname">
-                                    <span>fa-bolt</span>
+                                    <span>icon-fa- battery-empty</span>
                                 </div>
                             </div>
 
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-bomb"></i>
+                                    <i class="icon-fa icon-fa-battery-full"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-bomb</span>
+                                    <span>icon-fa-battery-full</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-book"></i>
+                                    <i class="icon-fa icon-fa-battery-half"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-book</span>
+                                    <span>icon-fa-battery-half</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-bookmark"></i>
+                                    <i class="icon-fa icon-fa-battery-quarter"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-bookmark</span>
+                                    <span>icon-fa-battery-quarter</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-bookmark-o"></i>
+                                    <i class="icon-fa icon-fa-battery-three-quarters"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-bookmark-o</span>
+                                    <span>icon-fa-battery-three-quarters</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-braille"></i>
+                                    <i class="icon-fa icon-fa-bed"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-braille</span>
+                                    <span>icon-fa-bed</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-briefcase"></i>
+                                    <i class="icon-fa icon-fa-beer"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-briefcase</span>
+                                    <span>icon-fa-beer</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-bug"></i>
+                                    <i class="icon-fa icon-fa-bell"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-bug</span>
+                                    <span>icon-fa-bell</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-building"></i>
+                                    <i class="icon-fa icon-fa-bell-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-building</span>
+                                    <span>icon-fa-bell-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-building-o"></i>
+                                    <i class="icon-fa icon-fa-bell-slash"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-building-o</span>
+                                    <span>icon-fa-bell-slash</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-bullhorn"></i>
+                                    <i class="icon-fa icon-fa-bell-slash-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-bullhorn</span>
+                                    <span>icon-fa-bell-slash-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-bullseye"></i>
+                                    <i class="icon-fa icon-fa-bicycle"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-bullseye</span>
+                                    <span>icon-fa-bicycle</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-bus"></i>
+                                    <i class="icon-fa icon-fa-binoculars"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-bus</span>
+                                    <span>icon-fa-binoculars</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-cab"></i>
+                                    <i class="icon-fa icon-fa-birthday-cake"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-cab(alias)</span>
+                                    <span>icon-fa-birthday-cake</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-calculator"></i>
+                                    <i class="icon-fa icon-fa-blind"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-calculator</span>
+                                    <span>icon-fa-blind</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-calendar"></i>
+                                    <i class="icon-fa icon-fa-bluetooth"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-calendar</span>
+                                    <span>icon-fa-bluetooth</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-calendar-check-o"></i>
+                                    <i class="icon-fa icon-fa-bluetooth-b"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-calendar-check-o</span>
+                                    <span>icon-fa-bluetooth-b</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-calendar-minus-o"></i>
+                                    <i class="icon-fa icon-fa-bolt"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-calendar-minus-o</span>
+                                    <span>icon-fa-bolt</span>
+                                </div>
+                            </div>
+
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i class="icon-fa icon-fa-bomb"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-fa-bomb</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-calendar-o"></i>
+                                    <i class="icon-fa icon-fa-book"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-calendar-o</span>
+                                    <span>icon-fa-book</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-calendar-plus-o"></i>
+                                    <i class="icon-fa icon-fa-bookmark"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-calendar-plus-o</span>
+                                    <span>icon-fa-bookmark</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-calendar-times-o"></i>
+                                    <i class="icon-fa icon-fa-bookmark-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-calendar-times-o</span>
+                                    <span>icon-fa-bookmark-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-camera"></i>
+                                    <i class="icon-fa icon-fa-braille"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-camera</span>
+                                    <span>icon-fa-braille</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-camera-retro"></i>
+                                    <i class="icon-fa icon-fa-briefcase"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-camera-retro</span>
+                                    <span>icon-fa-briefcase</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-car"></i>
+                                    <i class="icon-fa icon-fa-bug"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-car</span>
+                                    <span>icon-fa-bug</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-caret-square-o-down"></i>
+                                    <i class="icon-fa icon-fa-building"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-caret-square-o-down</span>
+                                    <span>icon-fa-building</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-caret-square-o-left"></i>
+                                    <i class="icon-fa icon-fa-building-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-caret-square-o-left</span>
+                                    <span>icon-fa-building-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-caret-square-o-right"></i>
+                                    <i class="icon-fa icon-fa-bullhorn"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-caret-square-o-right</span>
+                                    <span>icon-fa-bullhorn</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-caret-square-o-up"></i>
+                                    <i class="icon-fa icon-fa-bullseye"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-caret-square-o-up</span>
+                                    <span>icon-fa-bullseye</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-cart-arrow-down"></i>
+                                    <i class="icon-fa icon-fa-bus"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-cart-arrow-down</span>
+                                    <span>icon-fa-bus</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-cart-plus"></i>
+                                    <i class="icon-fa icon-fa-cab"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-cart-plus</span>
+                                    <span>icon-fa-cab(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-cc"></i>
+                                    <i class="icon-fa icon-fa-calculator"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-cc</span>
+                                    <span>icon-fa-calculator</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-certificate"></i>
+                                    <i class="icon-fa icon-fa-calendar"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-certificate</span>
+                                    <span>icon-fa-calendar</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-check"></i>
+                                    <i class="icon-fa icon-fa-calendar-check-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-check</span>
+                                    <span>icon-fa-calendar-check-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-check-circle"></i>
+                                    <i class="icon-fa icon-fa-calendar-minus-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-check-circle</span>
+                                    <span>icon-fa-calendar-minus-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-check-circle-o"></i>
+                                    <i class="icon-fa icon-fa-calendar-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-check-circle-o</span>
+                                    <span>icon-fa-calendar-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-check-square"></i>
+                                    <i class="icon-fa icon-fa-calendar-plus-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-check-square</span>
+                                    <span>icon-fa-calendar-plus-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-check-square-o"></i>
+                                    <i class="icon-fa icon-fa-calendar-times-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-check-square-o</span>
+                                    <span>icon-fa-calendar-times-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-child"></i>
+                                    <i class="icon-fa icon-fa-camera"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-child</span>
+                                    <span>icon-fa-camera</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-circle"></i>
+                                    <i class="icon-fa icon-fa-camera-retro"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-circle</span>
+                                    <span>icon-fa-camera-retro</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-circle-o"></i>
+                                    <i class="icon-fa icon-fa-car"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-circle-o</span>
+                                    <span>icon-fa-car</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-circle-o-notch"></i>
+                                    <i class="icon-fa icon-fa-caret-square-o-down"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-circle-o-notch</span>
+                                    <span>icon-fa-caret-square-o-down</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-circle-thin"></i>
+                                    <i class="icon-fa icon-fa-caret-square-o-left"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-circle-thin</span>
+                                    <span>icon-fa-caret-square-o-left</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-clock-o"></i>
+                                    <i class="icon-fa icon-fa-caret-square-o-right"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-clock-o</span>
+                                    <span>icon-fa-caret-square-o-right</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-clone"></i>
+                                    <i class="icon-fa icon-fa-caret-square-o-up"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-clone</span>
+                                    <span>icon-fa-caret-square-o-up</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-close"></i>
+                                    <i class="icon-fa icon-fa-cart-arrow-down"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-close(alias)</span>
+                                    <span>icon-fa-cart-arrow-down</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-cloud"></i>
+                                    <i class="icon-fa icon-fa-cart-plus"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-cloud</span>
+                                    <span>icon-fa-cart-plus</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-cloud-download"></i>
+                                    <i class="icon-fa icon-fa-cc"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-cloud-download</span>
+                                    <span>icon-fa-cc</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-cloud-upload"></i>
+                                    <i class="icon-fa icon-fa-certificate"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-cloud-upload</span>
+                                    <span>icon-fa-certificate</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-code"></i>
+                                    <i class="icon-fa icon-fa-check"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-code</span>
+                                    <span>icon-fa-check</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-code-fork"></i>
+                                    <i class="icon-fa icon-fa-check-circle"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-code-fork</span>
+                                    <span>icon-fa-check-circle</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-coffee"></i>
+                                    <i class="icon-fa icon-fa-check-circle-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-coffee</span>
+                                    <span>icon-fa-check-circle-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-cog"></i>
+                                    <i class="icon-fa icon-fa-check-square"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-cog</span>
+                                    <span>icon-fa-check-square</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-cogs"></i>
+                                    <i class="icon-fa icon-fa-check-square-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-cogs</span>
+                                    <span>icon-fa-check-square-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-comment"></i>
+                                    <i class="icon-fa icon-fa-child"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-fa-child</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i class="icon-fa icon-fa-circle"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-fa-circle</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i class="icon-fa icon-fa-circle-o"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-fa-circle-o</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i class="icon-fa icon-fa-circle-o-notch"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-fa-circle-o-notch</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i class="icon-fa icon-fa-circle-thin"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-fa-circle-thin</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i class="icon-fa icon-fa-clock-o"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-fa-clock-o</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i class="icon-fa icon-fa-clone"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-fa-clone</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i class="icon-fa icon-fa-close"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-fa-close(alias)</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i class="icon-fa icon-fa-cloud"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-fa-cloud</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i class="icon-fa icon-fa-cloud-download"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-fa-cloud-download</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i class="icon-fa icon-fa-cloud-upload"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-fa-cloud-upload</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i class="icon-fa icon-fa-code"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-fa-code</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i class="icon-fa icon-fa-code-fork"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-fa-code-fork</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i class="icon-fa icon-fa-coffee"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-fa-coffee</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i class="icon-fa icon-fa-cog"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-fa-cog</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i class="icon-fa icon-fa-cogs"></i>
+                                </div>
+                                <div class="icon-classname">
+                                    <span>icon-fa-cogs</span>
+                                </div>
+                            </div>
+                            <div class="demo-icon">
+                                <div class="icon-box">
+                                    <i class="icon-fa icon-fa-comment"></i>
                                 </div>
 
                                 <div class="icon-classname">
-                                    <span>fa-comment</span>
+                                    <span>icon-fa-comment</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-comment-o"></i>
+                                    <i class="icon-fa icon-fa-comment-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-comment-o</span>
+                                    <span>icon-fa-comment-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-commenting"></i>
+                                    <i class="icon-fa icon-fa-commenting"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-commenting</span>
+                                    <span>icon-fa-commenting</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-commenting-o"></i>
+                                    <i class="icon-fa icon-fa-commenting-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-commenting-o</span>
+                                    <span>icon-fa-commenting-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-comments"></i>
+                                    <i class="icon-fa icon-fa-comments"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-comments</span>
+                                    <span>icon-fa-comments</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-comments-o"></i>
+                                    <i class="icon-fa icon-fa-comments-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-comments-o</span>
+                                    <span>icon-fa-comments-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-compass"></i>
+                                    <i class="icon-fa icon-fa-compass"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-compass</span>
+                                    <span>icon-fa-compass</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-copyright"
+                                    <i class="icon-fa icon-fa-copyright"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-copyright</span>
+                                    <span>icon-fa-copyright</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-creative-commons"
+                                    <i class="icon-fa icon-fa-creative-commons"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-creative-commons</span>
+                                    <span>icon-fa-creative-commons</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-credit-card"
+                                    <i class="icon-fa icon-fa-credit-card"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-credit-card</span>
+                                    <span>icon-fa-credit-card</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-credit-card-alt"
+                                    <i class="icon-fa icon-fa-credit-card-alt"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-credit-card-alt</span>
+                                    <span>icon-fa-credit-card-alt</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-crop"
+                                    <i class="icon-fa icon-fa-crop"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-crop</span>
+                                    <span>icon-fa-crop</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-crosshairs"
+                                    <i class="icon-fa icon-fa-crosshairs"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-crosshairs</span>
+                                    <span>icon-fa-crosshairs</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-cube"
+                                    <i class="icon-fa icon-fa-cube"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-cube</span>
+                                    <span>icon-fa-cube</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-cubes"
+                                    <i class="icon-fa icon-fa-cubes"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-cubes</span>
+                                    <span>icon-fa-cubes</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-cutlery"
+                                    <i class="icon-fa icon-fa-cutlery"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-cutlery</span>
+                                    <span>icon-fa-cutlery</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-dashboard"
+                                    <i class="icon-fa icon-fa-dashboard"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-dashboard(alias)</span>
+                                    <span>icon-fa-dashboard(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-database"
+                                    <i class="icon-fa icon-fa-database"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-database</span>
+                                    <span>icon-fa-database</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-deaf"
+                                    <i class="icon-fa icon-fa-deaf"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-deaf</span>
+                                    <span>icon-fa-deaf</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-deafness"></i>
+                                    <i class="icon-fa icon-fa-deafness"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-deafness</span>
+                                    <span>icon-fa-deafness</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-desktop"
+                                    <i class="icon-fa icon-fa-desktop"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-diamond</span>
+                                    <span>icon-fa-diamond</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-dot-circle-o"></i>
+                                    <i class="icon-fa icon-fa-dot-circle-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-dot-circle-o</span>
+                                    <span>icon-fa-dot-circle-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-edit"
+                                    <i class="icon-fa icon-fa-edit"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-edit(alias)</span>
+                                    <span>icon-fa-edit(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-ellipsis-h"
+                                    <i class="icon-fa icon-fa-ellipsis-h"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-ellipsis-h</span>
+                                    <span>icon-fa-ellipsis-h</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-ellipsis-v"
+                                    <i class="icon-fa icon-fa-ellipsis-v"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-ellipsis-v</span>
+                                    <span>icon-fa-ellipsis-v</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-envelope"
+                                    <i class="icon-fa icon-fa-envelope"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-envelope</span>
+                                    <span>icon-fa-envelope</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-envelope-o"
+                                    <i class="icon-fa icon-fa-envelope-o"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-envelope-o</span>
+                                    <span>icon-fa-envelope-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-envelope-square"
+                                    <i class="icon-fa icon-fa-envelope-square"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-envelope-square</span>
+                                    <span>icon-fa-envelope-square</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-eraser"
+                                    <i class="icon-fa icon-fa-eraser"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-eraser</span>
+                                    <span>icon-fa-eraser</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-exchange"
+                                    <i class="icon-fa icon-fa-exchange"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-exchange</span>
+                                    <span>icon-fa-exchange</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-exclamation"
+                                    <i class="icon-fa icon-fa-exclamation"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-exclamation</span>
+                                    <span>icon-fa-exclamation</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-exclamation-circle"
+                                    <i class="icon-fa icon-fa-exclamation-circle"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-exclamation-circle</span>
+                                    <span>icon-fa-exclamation-circle</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-exclamation-triangle"></i>
+                                    <i class="icon-fa icon-fa-exclamation-triangle"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-exclamation-triangle</span>
+                                    <span>icon-fa-exclamation-triangle</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-external-link"
+                                    <i class="icon-fa icon-fa-external-link"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-external-link</span>
+                                    <span>icon-fa-external-link</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-external-link-square"></i>
+                                    <i class="icon-fa icon-fa-external-link-square"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-external-link-square</span>
+                                    <span>icon-fa-external-link-square</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-eye"></i>
+                                    <i class="icon-fa icon-fa-eye"></i>
                                 </div>
                                 <div class="icon-classname">
-                        <span>fa- eye
+                        <span>icon-fa- eye
                         </span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-eye-slash"
+                                    <i class="icon-fa icon-fa-eye-slash"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-eye-slash</span>
+                                    <span>icon-fa-eye-slash</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-eyedropper"
+                                    <i class="icon-fa icon-fa-eyedropper"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-eyedropper</span>
+                                    <span>icon-fa-eyedropper</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-fax"></i>
+                                    <i class="icon-fa icon-fa-fax"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-fax</span>
+                                    <span>icon-fa-fax</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-feed"></i>
+                                    <i class="icon-fa icon-fa-feed"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-feed(alias)</span>
+                                    <span>icon-fa-feed(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">l
-                                    <i class="fa fa-female"></i>
+                                    <i class="icon-fa icon-fa-female"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-female</span>
+                                    <span>icon-fa-female</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-fighter-jet"></i>
+                                    <i class="icon-fa icon-fa-fighter-jet"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-fighter-jet</span>
+                                    <span>icon-fa-fighter-jet</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-file-archive-o"></i>
+                                    <i class="icon-fa icon-fa-file-archive-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-file-archive-o</span>
+                                    <span>icon-fa-file-archive-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-file-audio-o"></i>
+                                    <i class="icon-fa icon-fa-file-audio-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-file-audio-o</span>
+                                    <span>icon-fa-file-audio-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-file-code-o"></i>
+                                    <i class="icon-fa icon-fa-file-code-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-file-code-o</span>
+                                    <span>icon-fa-file-code-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-file-excel-o"></i>
+                                    <i class="icon-fa icon-fa-file-excel-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-file-excel-o</span>
+                                    <span>icon-fa-file-excel-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-file-image-o"></i>
+                                    <i class="icon-fa icon-fa-file-image-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-file-image-o</span>
+                                    <span>icon-fa-file-image-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-file-movie-o"></i>
+                                    <i class="icon-fa icon-fa-file-movie-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-file-movie-o(alias)</span>
+                                    <span>icon-fa-file-movie-o(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-file-pdf-o"></i>
+                                    <i class="icon-fa icon-fa-file-pdf-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-file-pdf-o</span>
+                                    <span>icon-fa-file-pdf-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-file-photo-o"></i>
+                                    <i class="icon-fa icon-fa-file-photo-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-file-photo-o(alias)</span>
+                                    <span>icon-fa-file-photo-o(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-file-picture-o"
+                                    <i class="icon-fa icon-fa-file-picture-o"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-file-picture-o(alias)</span>
+                                    <span>icon-fa-file-picture-o(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-file-powerpoint-o"
+                                    <i class="icon-fa icon-fa-file-powerpoint-o"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-file-powerpoint-o</span>
+                                    <span>icon-fa-file-powerpoint-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-file-sound-o"></i>
+                                    <i class="icon-fa icon-fa-file-sound-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-file-sound-o(alias)</span>
+                                    <span>icon-fa-file-sound-o(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-file-video-o"
+                                    <i class="icon-fa icon-fa-file-video-o"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-file-video-o</span>
+                                    <span>icon-fa-file-video-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-file-word-o"></i>
+                                    <i class="icon-fa icon-fa-file-word-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-file-word-o</span>
+                                    <span>icon-fa-file-word-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-file-zip-o"></i>
+                                    <i class="icon-fa icon-fa-file-zip-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-file-zip-o(alias)</span>
+                                    <span>icon-fa-file-zip-o(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-film"></i>
+                                    <i class="icon-fa icon-fa-film"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-film</span>
+                                    <span>icon-fa-film</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-filter"></i>
+                                    <i class="icon-fa icon-fa-filter"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-filter</span>
+                                    <span>icon-fa-filter</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-fire-extinguisher"></i>
+                                    <i class="icon-fa icon-fa-fire-extinguisher"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-fire-extinguisher</span>
+                                    <span>icon-fa-fire-extinguisher</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-flag"></i>
+                                    <i class="icon-fa icon-fa-flag"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-flag</span>
+                                    <span>icon-fa-flag</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-flag-checkered"></i>
+                                    <i class="icon-fa icon-fa-flag-checkered"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-flag-checkered</span>
+                                    <span>icon-fa-flag-checkered</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-flag-o"></i>
+                                    <i class="icon-fa icon-fa-flag-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-flag-o</span>
+                                    <span>icon-fa-flag-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-flash"></i>
+                                    <i class="icon-fa icon-fa-flash"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-flash>(alias)</span>
+                                    <span>icon-fa-flash>(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-flask"
+                                    <i class="icon-fa icon-fa-flask"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-flask</span>
+                                    <span>icon-fa-flask</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-folder"></i>
+                                    <i class="icon-fa icon-fa-folder"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-folder</span>
+                                    <span>icon-fa-folder</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-folder-o"></i>
+                                    <i class="icon-fa icon-fa-folder-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-folder-o</span>
+                                    <span>icon-fa-folder-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-folder-open"></i>
+                                    <i class="icon-fa icon-fa-folder-open"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-folder-open</span>
+                                    <span>icon-fa-folder-open</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-folder-open-o"></i>
+                                    <i class="icon-fa icon-fa-folder-open-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-folder-open-o</span>
+                                    <span>icon-fa-folder-open-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-frown-o"></i>
+                                    <i class="icon-fa icon-fa-frown-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-frown-o</span>
+                                    <span>icon-fa-frown-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-futbol-o"></i>
+                                    <i class="icon-fa icon-fa-futbol-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-futbol-o</span>
+                                    <span>icon-fa-futbol-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-gamepad"></i>
+                                    <i class="icon-fa icon-fa-gamepad"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-gamepad</span>
+                                    <span>icon-fa-gamepad</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-gavel"></i>
+                                    <i class="icon-fa icon-fa-gavel"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-gavel</span>
+                                    <span>icon-fa-gavel</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-gear"></i>
+                                    <i class="icon-fa icon-fa-gear"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-gear(alias)</span>
+                                    <span>icon-fa-gear(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-gears"
+                                    <i class="icon-fa icon-fa-gears"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-gears>(alias)</span>
+                                    <span>icon-fa-gears>(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-gift"
+                                    <i class="icon-fa icon-fa-gift"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-gift</span>
+                                    <span>icon-fa-gift</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-glass"></i>
+                                    <i class="icon-fa icon-fa-glass"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-glass</span>
+                                    <span>icon-fa-glass</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-globe"></i>
+                                    <i class="icon-fa icon-fa-globe"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-globe</span>
+                                    <span>icon-fa-globe</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-graduation-cap"></i>
+                                    <i class="icon-fa icon-fa-graduation-cap"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-graduation-cap</span>
+                                    <span>icon-fa-graduation-cap</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-group"></i>
+                                    <i class="icon-fa icon-fa-group"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-group>(alias)</span>
+                                    <span>icon-fa-group>(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-hand-grab-o"
+                                    <i class="icon-fa icon-fa-hand-grab-o"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-hand-grab-o(alias)</span>
+                                    <span>icon-fa-hand-grab-o(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-hand-lizard-o"
+                                    <i class="icon-fa icon-fa-hand-lizard-o"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-hand-lizard-o</span>
+                                    <span>icon-fa-hand-lizard-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-hand-paper-o"></i>
+                                    <i class="icon-fa icon-fa-hand-paper-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-hand-paper-o</span>
+                                    <span>icon-fa-hand-paper-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-hand-peace-o"></i>
+                                    <i class="icon-fa icon-fa-hand-peace-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-hand-peace-o</span>
+                                    <span>icon-fa-hand-peace-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-hand-pointer-o"></i>
+                                    <i class="icon-fa icon-fa-hand-pointer-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-hand-pointer-o</span>
+                                    <span>icon-fa-hand-pointer-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-hand-rock-o"></i>
+                                    <i class="icon-fa icon-fa-hand-rock-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-hand-rock-o</span>
+                                    <span>icon-fa-hand-rock-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-hand-scissors-o"></i>
+                                    <i class="icon-fa icon-fa-hand-scissors-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-hand-scissors-o</span>
+                                    <span>icon-fa-hand-scissors-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-hand-spock-o"></i>
+                                    <i class="icon-fa icon-fa-hand-spock-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-hand-spock-o</span>
+                                    <span>icon-fa-hand-spock-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-hand-stop-o"></i>
+                                    <i class="icon-fa icon-fa-hand-stop-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-hand-stop-o(alias)</span>
+                                    <span>icon-fa-hand-stop-o(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-hard-of-hearing"></i>
+                                    <i class="icon-fa icon-fa-hard-of-hearing"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-hard-of-hearing(alias)</span>
+                                    <span>icon-fa-hard-of-hearing(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-hashtag"
+                                    <i class="icon-fa icon-fa-hashtag"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-hashtag</span>
+                                    <span>icon-fa-hashtag</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-hdd-o"></i>
+                                    <i class="icon-fa icon-fa-hdd-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-hdd-o</span>
+                                    <span>icon-fa-hdd-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-headphones"></i>
+                                    <i class="icon-fa icon-fa-headphones"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-headphones</span>
+                                    <span>icon-fa-headphones</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-heart"></i>
+                                    <i class="icon-fa icon-fa-heart"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-heart</span>
+                                    <span>icon-fa-heart</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-heart-o"></i>
+                                    <i class="icon-fa icon-fa-heart-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-heart-o</span>
+                                    <span>icon-fa-heart-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-heartbeat"></i>
+                                    <i class="icon-fa icon-fa-heartbeat"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-heartbeat</span>
+                                    <span>icon-fa-heartbeat</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-history"></i>
+                                    <i class="icon-fa icon-fa-history"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-history</span>
+                                    <span>icon-fa-history</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-home"></i>
+                                    <i class="icon-fa icon-fa-home"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-home</span>
+                                    <span>icon-fa-home</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-hotel"></i>
+                                    <i class="icon-fa icon-fa-hotel"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-hotel>(alias)</span>
+                                    <span>icon-fa-hotel>(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-hourglass"
+                                    <i class="icon-fa icon-fa-hourglass"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-hourglass</span>
+                                    <span>icon-fa-hourglass</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-hourglass-1"></i>
+                                    <i class="icon-fa icon-fa-hourglass-1"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-hourglass-1(alias)</span>
+                                    <span>icon-fa-hourglass-1(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-hourglass-2"
+                                    <i class="icon-fa icon-fa-hourglass-2"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-hourglass-2(alias)</span>
+                                    <span>icon-fa-hourglass-2(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-hourglass-3"
+                                    <i class="icon-fa icon-fa-hourglass-3"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-hourglass-3(alias)</span>
+                                    <span>icon-fa-hourglass-3(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-hourglass-end"
+                                    <i class="icon-fa icon-fa-hourglass-end"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-hourglass-end</span>
+                                    <span>icon-fa-hourglass-end</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-hourglass-half"></i>
+                                    <i class="icon-fa icon-fa-hourglass-half"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-hourglass-half</span>
+                                    <span>icon-fa-hourglass-half</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-hourglass-o"></i>
+                                    <i class="icon-fa icon-fa-hourglass-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-hourglass-o</span>
+                                    <span>icon-fa-hourglass-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-hourglass-start"></i>
+                                    <i class="icon-fa icon-fa-hourglass-start"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-hourglass-start</span>
+                                    <span>icon-fa-hourglass-start</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-i-cursor"></i>
+                                    <i class="icon-fa icon-fa-i-cursor"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-i-cursor</span>
+                                    <span>icon-fa-i-cursor</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-image"></i>
+                                    <i class="icon-fa icon-fa-image"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-image(alias)</span>
+                                    <span>icon-fa-image(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-inbox"></i>
+                                    <i class="icon-fa icon-fa-inbox"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-inbox</span>
+                                    <span>icon-fa-inbox</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-industry"></i>
+                                    <i class="icon-fa icon-fa-industry"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-industry</span>
+                                    <span>icon-fa-industry</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-info"></i>
+                                    <i class="icon-fa icon-fa-info"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-info</span>
+                                    <span>icon-fa-info</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-info-circle"></i>
+                                    <i class="icon-fa icon-fa-info-circle"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-info-circle</span>
+                                    <span>icon-fa-info-circle</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-institution"></i>
+                                    <i class="icon-fa icon-fa-institution"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-institution(alias)</span>
+                                    <span>icon-fa-institution(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-key"
+                                    <i class="icon-fa icon-fa-key"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-key</span>
+                                    <span>icon-fa-key</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-keyboard-o"
+                                    <i class="icon-fa icon-fa-keyboard-o"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-keyboard-o</span>
+                                    <span>icon-fa-keyboard-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-language"></i>
+                                    <i class="icon-fa icon-fa-language"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-language</span>
+                                    <span>icon-fa-language</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-laptop"></i>
+                                    <i class="icon-fa icon-fa-laptop"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-laptop</span>
+                                    <span>icon-fa-laptop</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-leaf"></i>
+                                    <i class="icon-fa icon-fa-leaf"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-leaf</span>
+                                    <span>icon-fa-leaf</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-legal"></i>
+                                    <i class="icon-fa icon-fa-legal"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-legal(alias)</span>
+                                    <span>icon-fa-legal(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-lemon-o"
+                                    <i class="icon-fa icon-fa-lemon-o"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-lemon-o</span>
+                                    <span>icon-fa-lemon-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-level-down"></i>
+                                    <i class="icon-fa icon-fa-level-down"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-level-down</span>
+                                    <span>icon-fa-level-down</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-level-up"></i>
+                                    <i class="icon-fa icon-fa-level-up"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-level-up</span>
+                                    <span>icon-fa-level-up</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-life-bouy"></i>
+                                    <i class="icon-fa icon-fa-life-bouy"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-life-bouy(alias)</span>
+                                    <span>icon-fa-life-bouy(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-life-buoy"
+                                    <i class="icon-fa icon-fa-life-buoy"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-life-buoy(alias)</span>
+                                    <span>icon-fa-life-buoy(alias)</span>
 
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-life-ring"
+                                    <i class="icon-fa icon-fa-life-ring"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-life-ring</span>
+                                    <span>icon-fa-life-ring</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-life-saver"></i>
+                                    <i class="icon-fa icon-fa-life-saver"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-life-saver(alias)</span>
+                                    <span>icon-fa-life-saver(alias)</span>
 
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-lightbulb-o"
+                                    <i class="icon-fa icon-fa-lightbulb-o"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-lightbulb-o</span>
+                                    <span>icon-fa-lightbulb-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-line-chart"></i>
+                                    <i class="icon-fa icon-fa-line-chart"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-line-chart</span>
+                                    <span>icon-fa-line-chart</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-location-arrow"></i>
+                                    <i class="icon-fa icon-fa-location-arrow"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-location-arrow</span>
+                                    <span>icon-fa-location-arrow</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-lock"></i>
+                                    <i class="icon-fa icon-fa-lock"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-lock</span>
+                                    <span>icon-fa-lock</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-low-vision"></i>
+                                    <i class="icon-fa icon-fa-low-vision"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-low-vision</span>
+                                    <span>icon-fa-low-vision</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-magic"></i>
+                                    <i class="icon-fa icon-fa-magic"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-magic</span>
+                                    <span>icon-fa-magic</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-magnet"></i>
+                                    <i class="icon-fa icon-fa-magnet"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-magnet</span>
+                                    <span>icon-fa-magnet</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-mail-forward"></i>
+                                    <i class="icon-fa icon-fa-mail-forward"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-mail-forward(alias)</span>
+                                    <span>icon-fa-mail-forward(alias)</span>
 
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-mail-reply"></i>
+                                    <i class="icon-fa icon-fa-mail-reply"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-mail-reply(alias)</span>
+                                    <span>icon-fa-mail-reply(alias)</span>
 
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-mail-reply-all"></i>
+                                    <i class="icon-fa icon-fa-mail-reply-all"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-mail-reply-all(alias)</span>
+                                    <span>icon-fa-mail-reply-all(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-male"></i>
+                                    <i class="icon-fa icon-fa-male"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-male</span>
+                                    <span>icon-fa-male</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-map"></i>
+                                    <i class="icon-fa icon-fa-map"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-map</span>
+                                    <span>icon-fa-map</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-map-marker"></i>
+                                    <i class="icon-fa icon-fa-map-marker"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-map-marker</span>
+                                    <span>icon-fa-map-marker</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-map-o"></i>
+                                    <i class="icon-fa icon-fa-map-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-map-o</span>
+                                    <span>icon-fa-map-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-map-pin"></i>
+                                    <i class="icon-fa icon-fa-map-pin"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-map-pin</span>
+                                    <span>icon-fa-map-pin</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-map-signs"></i>
+                                    <i class="icon-fa icon-fa-map-signs"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-map-signs</span>
+                                    <span>icon-fa-map-signs</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-meh-o"></i>
+                                    <i class="icon-fa icon-fa-meh-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-meh-o</span>
+                                    <span>icon-fa-meh-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-microphone"></i>
+                                    <i class="icon-fa icon-fa-microphone"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-microphone</span>
+                                    <span>icon-fa-microphone</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-microphone-slash"></i>
+                                    <i class="icon-fa icon-fa-microphone-slash"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-microphone-slash</span>
+                                    <span>icon-fa-microphone-slash</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-minus"></i>
+                                    <i class="icon-fa icon-fa-minus"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-minus</span>
+                                    <span>icon-fa-minus</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-minus-circle"></i>
+                                    <i class="icon-fa icon-fa-minus-circle"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-minus-circle</span>
+                                    <span>icon-fa-minus-circle</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-minus-square"></i>
+                                    <i class="icon-fa icon-fa-minus-square"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-minus-square</span>
+                                    <span>icon-fa-minus-square</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-minus-square-o"></i>
+                                    <i class="icon-fa icon-fa-minus-square-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-minus-square-o</span>
+                                    <span>icon-fa-minus-square-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-mobile"></i>
+                                    <i class="icon-fa icon-fa-mobile"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-mobile</span>
+                                    <span>icon-fa-mobile</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-mobile-phone"></i>
+                                    <i class="icon-fa icon-fa-mobile-phone"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-mobile-phone>(alias)</span>
+                                    <span>icon-fa-mobile-phone>(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-money"></i>
+                                    <i class="icon-fa icon-fa-money"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-money</span>
+                                    <span>icon-fa-money</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-moon-o"></i>
+                                    <i class="icon-fa icon-fa-moon-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-moon-o</span>
+                                    <span>icon-fa-moon-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-mortar-board"></i>
+                                    <i class="icon-fa icon-fa-mortar-board"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-mortar-board(alias)</span>
+                                    <span>icon-fa-mortar-board(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-motorcycle"></i>
+                                    <i class="icon-fa icon-fa-motorcycle"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-motorcycle</span>
+                                    <span>icon-fa-motorcycle</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-mouse-pointer"></i>
+                                    <i class="icon-fa icon-fa-mouse-pointer"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-mouse-pointer</span>
+                                    <span>icon-fa-mouse-pointer</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-music"></i>
+                                    <i class="icon-fa icon-fa-music"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-music</span>
+                                    <span>icon-fa-music</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-navicon"></i>
+                                    <i class="icon-fa icon-fa-navicon"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-navicon(alias)</span>
+                                    <span>icon-fa-navicon(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-newspaper-o"></i>
+                                    <i class="icon-fa icon-fa-newspaper-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-newspaper-o</span>
+                                    <span>icon-fa-newspaper-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-object-group"></i>
+                                    <i class="icon-fa icon-fa-object-group"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-object-group</span>
+                                    <span>icon-fa-object-group</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-object-ungroup"></i>
+                                    <i class="icon-fa icon-fa-object-ungroup"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-object-ungroup</span>
+                                    <span>icon-fa-object-ungroup</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-paint-brush"></i>
+                                    <i class="icon-fa icon-fa-paint-brush"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-paint-brush</span>
+                                    <span>icon-fa-paint-brush</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-paper-plane"></i>
+                                    <i class="icon-fa icon-fa-paper-plane"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-paper-plane</span>
+                                    <span>icon-fa-paper-plane</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-paper-plane-o"></i>
+                                    <i class="icon-fa icon-fa-paper-plane-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-paper-plane-o</span>
+                                    <span>icon-fa-paper-plane-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-paw"></i>
+                                    <i class="icon-fa icon-fa-paw"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-paw</span>
+                                    <span>icon-fa-paw</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-pencil"></i>
+                                    <i class="icon-fa icon-fa-pencil"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-pencil</span>
+                                    <span>icon-fa-pencil</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-pencil-square"></i>
+                                    <i class="icon-fa icon-fa-pencil-square"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-pencil-square</span>
+                                    <span>icon-fa-pencil-square</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-pencil-square-o"></i>
+                                    <i class="icon-fa icon-fa-pencil-square-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-pencil-square-o</span>
+                                    <span>icon-fa-pencil-square-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-percent"></i>
+                                    <i class="icon-fa icon-fa-percent"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-percent</span>
+                                    <span>icon-fa-percent</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-phone"></i>
+                                    <i class="icon-fa icon-fa-phone"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-phone</span>
+                                    <span>icon-fa-phone</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-phone-square"></i>
+                                    <i class="icon-fa icon-fa-phone-square"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-phone-square</span>
+                                    <span>icon-fa-phone-square</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-photo"></i>
+                                    <i class="icon-fa icon-fa-photo"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-photo>(alias)</span>
+                                    <span>icon-fa-photo>(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-picture-o"></i>
+                                    <i class="icon-fa icon-fa-picture-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-picture-o</span>
+                                    <span>icon-fa-picture-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-pie-chart"></i>
+                                    <i class="icon-fa icon-fa-pie-chart"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-pie-chart</span>
+                                    <span>icon-fa-pie-chart</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-plane"></i>
+                                    <i class="icon-fa icon-fa-plane"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-plane</span>
+                                    <span>icon-fa-plane</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-plug"></i>
+                                    <i class="icon-fa icon-fa-plug"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-plug</span>
+                                    <span>icon-fa-plug</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-plus"></i>
+                                    <i class="icon-fa icon-fa-plus"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-plus</span>
+                                    <span>icon-fa-plus</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-plus-circle"></i>
+                                    <i class="icon-fa icon-fa-plus-circle"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-plus-circle</span>
+                                    <span>icon-fa-plus-circle</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-plus-square"></i>
+                                    <i class="icon-fa icon-fa-plus-square"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-plus-square</span>
+                                    <span>icon-fa-plus-square</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-plus-square-o"></i>
+                                    <i class="icon-fa icon-fa-plus-square-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-plus-square-o</span>
+                                    <span>icon-fa-plus-square-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-power-off"></i>
+                                    <i class="icon-fa icon-fa-power-off"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-power-off</span>
+                                    <span>icon-fa-power-off</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-print"></i>
+                                    <i class="icon-fa icon-fa-print"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-print</span>
+                                    <span>icon-fa-print</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-puzzle-piece"></i>
+                                    <i class="icon-fa icon-fa-puzzle-piece"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-puzzle-piece</span>
+                                    <span>icon-fa-puzzle-piece</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-qrcode"></i>
+                                    <i class="icon-fa icon-fa-qrcode"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-qrcode</span>
+                                    <span>icon-fa-qrcode</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-question"></i>
+                                    <i class="icon-fa icon-fa-question"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-question</span>
+                                    <span>icon-fa-question</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-question-circle"></i>
+                                    <i class="icon-fa icon-fa-question-circle"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-question-circle</span>
+                                    <span>icon-fa-question-circle</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-question-circle-o"></i>
+                                    <i class="icon-fa icon-fa-question-circle-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-question-circle-o</span>
+                                    <span>icon-fa-question-circle-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-quote-left"></i>
+                                    <i class="icon-fa icon-fa-quote-left"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-quote-left</span>
+                                    <span>icon-fa-quote-left</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-quote-right"></i>
+                                    <i class="icon-fa icon-fa-quote-right"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-quote-right</span>
+                                    <span>icon-fa-quote-right</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-random"></i>
+                                    <i class="icon-fa icon-fa-random"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-random</span>
+                                    <span>icon-fa-random</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-recycle"></i>
+                                    <i class="icon-fa icon-fa-recycle"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-recycle</span>
+                                    <span>icon-fa-recycle</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-refresh"></i>
+                                    <i class="icon-fa icon-fa-refresh"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-refresh</span>
+                                    <span>icon-fa-refresh</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-registered"></i>
+                                    <i class="icon-fa icon-fa-registered"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-registered</span>
+                                    <span>icon-fa-registered</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-remove"></i>
+                                    <i class="icon-fa icon-fa-remove"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-remove>(alias)</span>
+                                    <span>icon-fa-remove>(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-reorder"></i>
+                                    <i class="icon-fa icon-fa-reorder"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-reorder>(alias)</span>
+                                    <span>icon-fa-reorder>(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-reply"></i>
+                                    <i class="icon-fa icon-fa-reply"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-reply</span>
+                                    <span>icon-fa-reply</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-reply-all"></i>
+                                    <i class="icon-fa icon-fa-reply-all"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-reply-all</span>
+                                    <span>icon-fa-reply-all</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-retweet"></i>
+                                    <i class="icon-fa icon-fa-retweet"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-retweet</span>
+                                    <span>icon-fa-retweet</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-road"></i>
+                                    <i class="icon-fa icon-fa-road"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-road</span>
+                                    <span>icon-fa-road</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-rocket"></i>
+                                    <i class="icon-fa icon-fa-rocket"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-rocket</span>
+                                    <span>icon-fa-rocket</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-rss"></i>
+                                    <i class="icon-fa icon-fa-rss"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-rss</span>
+                                    <span>icon-fa-rss</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-rss-square"></i>
+                                    <i class="icon-fa icon-fa-rss-square"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-rss-square</span>
+                                    <span>icon-fa-rss-square</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-search"></i>
+                                    <i class="icon-fa icon-fa-search"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-search</span>
+                                    <span>icon-fa-search</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-search-minus"></i>
+                                    <i class="icon-fa icon-fa-search-minus"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-search-minus</span>
+                                    <span>icon-fa-search-minus</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-search-plus"></i>
+                                    <i class="icon-fa icon-fa-search-plus"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-search-plus</span>
+                                    <span>icon-fa-search-plus</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-send"></i>
+                                    <i class="icon-fa icon-fa-send"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-send(alias)</span>
+                                    <span>icon-fa-send(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-send-o"></i>
+                                    <i class="icon-fa icon-fa-send-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-send-o>(alias)</span>
+                                    <span>icon-fa-send-o>(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-server"></i>
+                                    <i class="icon-fa icon-fa-server"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-server</span>
+                                    <span>icon-fa-server</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-share"></i>
+                                    <i class="icon-fa icon-fa-share"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-share</span>
+                                    <span>icon-fa-share</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-share-alt"></i>
+                                    <i class="icon-fa icon-fa-share-alt"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-share-alt</span>
+                                    <span>icon-fa-share-alt</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-share-alt-square"></i>
+                                    <i class="icon-fa icon-fa-share-alt-square"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-share-alt-square</span>
+                                    <span>icon-fa-share-alt-square</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-share-square"></i>
+                                    <i class="icon-fa icon-fa-share-square"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-share-square</span>
+                                    <span>icon-fa-share-square</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-share-square-o"></i>
+                                    <i class="icon-fa icon-fa-share-square-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-share-square-o</span>
+                                    <span>icon-fa-share-square-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-shield"></i>
+                                    <i class="icon-fa icon-fa-shield"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-shield</span>
+                                    <span>icon-fa-shield</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-ship"></i>
+                                    <i class="icon-fa icon-fa-ship"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-ship</span>
+                                    <span>icon-fa-ship</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-shopping-bag"></i>
+                                    <i class="icon-fa icon-fa-shopping-bag"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-shopping-bag</span>
+                                    <span>icon-fa-shopping-bag</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-shopping-basket"></i>
+                                    <i class="icon-fa icon-fa-shopping-basket"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-shopping-basket</span>
+                                    <span>icon-fa-shopping-basket</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-shopping-cart"></i>
+                                    <i class="icon-fa icon-fa-shopping-cart"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-shopping-cart</span>
+                                    <span>icon-fa-shopping-cart</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-sign-in"></i>
+                                    <i class="icon-fa icon-fa-sign-in"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-sign-in</span>
+                                    <span>icon-fa-sign-in</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-sign-language"></i>
+                                    <i class="icon-fa icon-fa-sign-language"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-sign-language</span>
+                                    <span>icon-fa-sign-language</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-sign-out"></i>
+                                    <i class="icon-fa icon-fa-sign-out"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-sign-out</span>
+                                    <span>icon-fa-sign-out</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-signal"></i>
+                                    <i class="icon-fa icon-fa-signal"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-signal</span>
+                                    <span>icon-fa-signal</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-signing"></i>
+                                    <i class="icon-fa icon-fa-signing"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-signing>(alias)</span>
+                                    <span>icon-fa-signing>(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-sitemap"></i>
+                                    <i class="icon-fa icon-fa-sitemap"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-sitemap</span>
+                                    <span>icon-fa-sitemap</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-sliders"></i>
+                                    <i class="icon-fa icon-fa-sliders"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-sliders</span>
+                                    <span>icon-fa-sliders</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-smile-o"></i>
+                                    <i class="icon-fa icon-fa-smile-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-smile-o</span>
+                                    <span>icon-fa-smile-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-soccer-ball-o"></i>
+                                    <i class="icon-fa icon-fa-soccer-ball-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-soccer-ball-o>(alias)</span>
+                                    <span>icon-fa-soccer-ball-o>(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-sort"></i>
+                                    <i class="icon-fa icon-fa-sort"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-sort</span>
+                                    <span>icon-fa-sort</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-sort-alpha-asc"></i>
+                                    <i class="icon-fa icon-fa-sort-alpha-asc"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-sort-alpha-asc</span>
+                                    <span>icon-fa-sort-alpha-asc</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-sort-alpha-desc"></i>
+                                    <i class="icon-fa icon-fa-sort-alpha-desc"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-sort-alpha-desc</span>
+                                    <span>icon-fa-sort-alpha-desc</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-sort-amount-asc"></i>
+                                    <i class="icon-fa icon-fa-sort-amount-asc"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-sort-amount-asc</span>
+                                    <span>icon-fa-sort-amount-asc</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-sort-amount-desc"></i>
+                                    <i class="icon-fa icon-fa-sort-amount-desc"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-sort-amount-desc</span>
+                                    <span>icon-fa-sort-amount-desc</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-sort-asc"></i>
+                                    <i class="icon-fa icon-fa-sort-asc"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-sort-asc</span>
+                                    <span>icon-fa-sort-asc</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-sort-desc"></i>
+                                    <i class="icon-fa icon-fa-sort-desc"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-sort-desc</span>
+                                    <span>icon-fa-sort-desc</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-sort-down"></i>
+                                    <i class="icon-fa icon-fa-sort-down"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-sort-down>(alias)</span>
+                                    <span>icon-fa-sort-down>(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-sort-numeric-asc"></i>
+                                    <i class="icon-fa icon-fa-sort-numeric-asc"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-sort-numeric-asc</span>
+                                    <span>icon-fa-sort-numeric-asc</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-sort-numeric-desc"></i>
+                                    <i class="icon-fa icon-fa-sort-numeric-desc"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-sort-numeric-desc</span>
+                                    <span>icon-fa-sort-numeric-desc</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-sort-up"></i>
+                                    <i class="icon-fa icon-fa-sort-up"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-sort-up>(alias)</span>
+                                    <span>icon-fa-sort-up>(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-space-shuttle"></i>
+                                    <i class="icon-fa icon-fa-space-shuttle"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-space-shuttle</span>
+                                    <span>icon-fa-space-shuttle</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-spinner"></i>
+                                    <i class="icon-fa icon-fa-spinner"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-spinner</span>
+                                    <span>icon-fa-spinner</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-spoon"></i>
+                                    <i class="icon-fa icon-fa-spoon"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-spoon</span>
+                                    <span>icon-fa-spoon</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-square"></i>
+                                    <i class="icon-fa icon-fa-square"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-square</span>
+                                    <span>icon-fa-square</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-square-o"></i>
+                                    <i class="icon-fa icon-fa-square-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-square-o</span>
+                                    <span>icon-fa-square-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-star"></i>
+                                    <i class="icon-fa icon-fa-star"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-star</span>
+                                    <span>icon-fa-star</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-star-half"></i>
+                                    <i class="icon-fa icon-fa-star-half"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-star-half</span>
+                                    <span>icon-fa-star-half</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-star-half-empty"></i>
+                                    <i class="icon-fa icon-fa-star-half-empty"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-star-half-empty>(alias)</span>
+                                    <span>icon-fa-star-half-empty>(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-star-half-full"></i>
+                                    <i class="icon-fa icon-fa-star-half-full"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-star-half-full>(alias)</span>
+                                    <span>icon-fa-star-half-full>(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-star-half-o"></i>
+                                    <i class="icon-fa icon-fa-star-half-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-star-half-o</span>
+                                    <span>icon-fa-star-half-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-star-o"></i>
+                                    <i class="icon-fa icon-fa-star-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-star-o</span>
+                                    <span>icon-fa-star-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-sticky-note"></i>
+                                    <i class="icon-fa icon-fa-sticky-note"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-sticky-note</span>
+                                    <span>icon-fa-sticky-note</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-sticky-note-o"></i>
+                                    <i class="icon-fa icon-fa-sticky-note-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-sticky-note-o</span>
+                                    <span>icon-fa-sticky-note-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-street-view"></i>
+                                    <i class="icon-fa icon-fa-street-view"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-street-view</span>
+                                    <span>icon-fa-street-view</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-suitcase"></i>
+                                    <i class="icon-fa icon-fa-suitcase"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-suitcase</span>
+                                    <span>icon-fa-suitcase</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-sun-o"></i>
+                                    <i class="icon-fa icon-fa-sun-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-sun-o</span>
+                                    <span>icon-fa-sun-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-support"></i>
+                                    <i class="icon-fa icon-fa-support"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-support>(alias)</span>
+                                    <span>icon-fa-support>(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-tablet"></i>
+                                    <i class="icon-fa icon-fa-tablet"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-tablet</span>
+                                    <span>icon-fa-tablet</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-tachometer"></i>
+                                    <i class="icon-fa icon-fa-tachometer"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-tachometer</span>
+                                    <span>icon-fa-tachometer</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-tag"></i>
+                                    <i class="icon-fa icon-fa-tag"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-tag</span>
+                                    <span>icon-fa-tag</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-tags"></i>
+                                    <i class="icon-fa icon-fa-tags"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-tags</span>
+                                    <span>icon-fa-tags</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-tasks"></i>
+                                    <i class="icon-fa icon-fa-tasks"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-tasks</span>
+                                    <span>icon-fa-tasks</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-taxi"></i>
+                                    <i class="icon-fa icon-fa-taxi"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-taxi</span>
+                                    <span>icon-fa-taxi</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-television"></i>
+                                    <i class="icon-fa icon-fa-television"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-television</span>
+                                    <span>icon-fa-television</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-terminal"></i>
+                                    <i class="icon-fa icon-fa-terminal"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-terminal</span>
+                                    <span>icon-fa-terminal</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-thumb-tack"></i>
+                                    <i class="icon-fa icon-fa-thumb-tack"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-thumb-tack</span>
+                                    <span>icon-fa-thumb-tack</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-thumbs-down"></i>
+                                    <i class="icon-fa icon-fa-thumbs-down"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-thumbs-down</span>
+                                    <span>icon-fa-thumbs-down</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-thumbs-o-down"></i>
+                                    <i class="icon-fa icon-fa-thumbs-o-down"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-thumbs-o-down</span>
+                                    <span>icon-fa-thumbs-o-down</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-thumbs-o-up"></i>
+                                    <i class="icon-fa icon-fa-thumbs-o-up"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-thumbs-o-up</span>
+                                    <span>icon-fa-thumbs-o-up</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-thumbs-up"></i>
+                                    <i class="icon-fa icon-fa-thumbs-up"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-thumbs-up</span>
+                                    <span>icon-fa-thumbs-up</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-ticket"></i>
+                                    <i class="icon-fa icon-fa-ticket"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-ticket</span>
+                                    <span>icon-fa-ticket</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-times"></i>
+                                    <i class="icon-fa icon-fa-times"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-times</span>
+                                    <span>icon-fa-times</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-times-circle"></i>
+                                    <i class="icon-fa icon-fa-times-circle"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-times-circle</span>
+                                    <span>icon-fa-times-circle</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-times-circle-o"></i>
+                                    <i class="icon-fa icon-fa-times-circle-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-times-circle-o</span>
+                                    <span>icon-fa-times-circle-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-tint"></i>
+                                    <i class="icon-fa icon-fa-tint"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-tint</span>
+                                    <span>icon-fa-tint</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-toggle-down"></i>
+                                    <i class="icon-fa icon-fa-toggle-down"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-toggle-down(alias)</span>
+                                    <span>icon-fa-toggle-down(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-toggle-left"></i>
+                                    <i class="icon-fa icon-fa-toggle-left"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-toggle-left(alias)</span>
+                                    <span>icon-fa-toggle-left(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-toggle-off"></i>
+                                    <i class="icon-fa icon-fa-toggle-off"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-toggle-off</span>
+                                    <span>icon-fa-toggle-off</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-toggle-on"></i>
+                                    <i class="icon-fa icon-fa-toggle-on"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-toggle-on</span>
+                                    <span>icon-fa-toggle-on</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-toggle-right"></i>
+                                    <i class="icon-fa icon-fa-toggle-right"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-toggle-right(alias)</span>
+                                    <span>icon-fa-toggle-right(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-toggle-up"></i>
+                                    <i class="icon-fa icon-fa-toggle-up"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-toggle-up(alias)</span>
+                                    <span>icon-fa-toggle-up(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-trademark"></i>
+                                    <i class="icon-fa icon-fa-trademark"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-trademark</span>
+                                    <span>icon-fa-trademark</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-trash"></i>
+                                    <i class="icon-fa icon-fa-trash"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-trash</span>
+                                    <span>icon-fa-trash</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-trash-o"></i>
+                                    <i class="icon-fa icon-fa-trash-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-trash-o</span>
+                                    <span>icon-fa-trash-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-tree"></i>
+                                    <i class="icon-fa icon-fa-tree"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-tree</span>
+                                    <span>icon-fa-tree</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-trophy"></i>
+                                    <i class="icon-fa icon-fa-trophy"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-trophy</span>
+                                    <span>icon-fa-trophy</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-truck"></i>
+                                    <i class="icon-fa icon-fa-truck"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-truck</span>
+                                    <span>icon-fa-truck</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-tty"></i>
+                                    <i class="icon-fa icon-fa-tty"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- tty</span>
+                                    <span>icon-fa- tty</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-tv"></i>
+                                    <i class="icon-fa icon-fa-tv"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-tv(alias)</span>
+                                    <span>icon-fa-tv(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-umbrella"></i>
+                                    <i class="icon-fa icon-fa-umbrella"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-umbrella</span>
+                                    <span>icon-fa-umbrella</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-universal-access"></i>
+                                    <i class="icon-fa icon-fa-universal-access"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-universal-access</span>
+                                    <span>icon-fa-universal-access</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-university"></i>
+                                    <i class="icon-fa icon-fa-university"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-university</span>
+                                    <span>icon-fa-university</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-unlock"></i>
+                                    <i class="icon-fa icon-fa-unlock"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-unlock</span>
+                                    <span>icon-fa-unlock</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-unlock-alt"></i>
+                                    <i class="icon-fa icon-fa-unlock-alt"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-unlock-alt</span>
+                                    <span>icon-fa-unlock-alt</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-unsorted"></i>
+                                    <i class="icon-fa icon-fa-unsorted"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-unsorted(alias)</span>
+                                    <span>icon-fa-unsorted(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-upload"></i>
+                                    <i class="icon-fa icon-fa-upload"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-upload</span>
+                                    <span>icon-fa-upload</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-user"></i>
+                                    <i class="icon-fa icon-fa-user"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-user</span>
+                                    <span>icon-fa-user</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-user-circle"></i>
+                                    <i class="icon-fa icon-fa-user-circle"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-user-circle</span>
+                                    <span>icon-fa-user-circle</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-user-plus"></i>
+                                    <i class="icon-fa icon-fa-user-plus"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-user-plus</span>
+                                    <span>icon-fa-user-plus</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-user-secret"></i>
+                                    <i class="icon-fa icon-fa-user-secret"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-user-secret</span>
+                                    <span>icon-fa-user-secret</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-user-times"></i>
+                                    <i class="icon-fa icon-fa-user-times"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-user-times</span>
+                                    <span>icon-fa-user-times</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-users"></i>
+                                    <i class="icon-fa icon-fa-users"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-users</span>
+                                    <span>icon-fa-users</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-video-camera"></i>
+                                    <i class="icon-fa icon-fa-video-camera"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-video-camera</span>
+                                    <span>icon-fa-video-camera</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-volume-control-phone"></i>
+                                    <i class="icon-fa icon-fa-volume-control-phone"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-volume-control-phone</span>
+                                    <span>icon-fa-volume-control-phone</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-volume-down"></i>
+                                    <i class="icon-fa icon-fa-volume-down"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-volume-down</span>
+                                    <span>icon-fa-volume-down</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-volume-off"></i>
+                                    <i class="icon-fa icon-fa-volume-off"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-volume-off</span>
+                                    <span>icon-fa-volume-off</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-volume-up"></i>
+                                    <i class="icon-fa icon-fa-volume-up"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-volume-up</span>
+                                    <span>icon-fa-volume-up</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-warning"
+                                    <i class="icon-fa icon-fa-warning"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-warning(alias)</span>
+                                    <span>icon-fa-warning(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-wheelchair"></i>
+                                    <i class="icon-fa icon-fa-wheelchair"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- wheelchair</span>
+                                    <span>icon-fa- wheelchair</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-wheelchair-alt"></i>
+                                    <i class="icon-fa icon-fa-wheelchair-alt"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- wheelchair-alt</span>
+                                    <span>icon-fa- wheelchair-alt</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-wifi"></i>
+                                    <i class="icon-fa icon-fa-wifi"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- wifi</span>
+                                    <span>icon-fa- wifi</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-wrench"></i>
+                                    <i class="icon-fa icon-fa-wrench"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- wrench</span>
+                                    <span>icon-fa- wrench</span>
                                 </div>
                             </div>
                             <div class="demo-icon"></div>
@@ -3330,157 +3330,157 @@
                         <div class="icon-container">
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-american-sign-language-interpreting"
+                                    <i class="icon-fa icon-fa-american-sign-language-interpreting"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-american-sign-language-interpreting</span>
+                                    <span>icon-fa-american-sign-language-interpreting</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-asl-interpreting"></i>
+                                    <i class="icon-fa icon-fa-asl-interpreting"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-asl-interpreting(alias)</span>
+                                    <span>icon-fa-asl-interpreting(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-assistive-listening-systems"
+                                    <i class="icon-fa icon-fa-assistive-listening-systems"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-assistive-listening-systems</span>
+                                    <span>icon-fa-assistive-listening-systems</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-audio-description"></i>
+                                    <i class="icon-fa icon-fa-audio-description"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-audio-description</span>
+                                    <span>icon-fa-audio-description</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-blind"></i>
+                                    <i class="icon-fa icon-fa-blind"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-blind</span>
+                                    <span>icon-fa-blind</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-braille"></i>
+                                    <i class="icon-fa icon-fa-braille"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-braille</span>
+                                    <span>icon-fa-braille</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-cc"
+                                    <i class="icon-fa icon-fa-cc"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-cc</span>
+                                    <span>icon-fa-cc</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-deaf"></i>
+                                    <i class="icon-fa icon-fa-deaf"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-deaf</span>
+                                    <span>icon-fa-deaf</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-deafness"></i>
+                                    <i class="icon-fa icon-fa-deafness"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-deafness(alias)</span>
+                                    <span>icon-fa-deafness(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-hard-of-hearing"></i>
+                                    <i class="icon-fa icon-fa-hard-of-hearing"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-hard-of-hearing(alias)</span>
+                                    <span>icon-fa-hard-of-hearing(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-low-vision"></i>
+                                    <i class="icon-fa icon-fa-low-vision"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-low-vision</span>
+                                    <span>icon-fa-low-vision</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-question-circle-o"></i>
+                                    <i class="icon-fa icon-fa-question-circle-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-question-circle-o</span>
+                                    <span>icon-fa-question-circle-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-sign-language"></i>
+                                    <i class="icon-fa icon-fa-sign-language"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-sign-language</span>
+                                    <span>icon-fa-sign-language</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-signing"></i>
+                                    <i class="icon-fa icon-fa-signing"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-signing(alias)</span>
+                                    <span>icon-fa-signing(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-tty"></i>
+                                    <i class="icon-fa icon-fa-tty"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-tty</span>
+                                    <span>icon-fa-tty</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-universal-access"></i>
+                                    <i class="icon-fa icon-fa-universal-access"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-universal-access</span>
+                                    <span>icon-fa-universal-access</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-volume-control-phone"></i>
+                                    <i class="icon-fa icon-fa-volume-control-phone"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-volume-control-phone</span>
+                                    <span>icon-fa-volume-control-phone</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-wheelchair"></i>
+                                    <i class="icon-fa icon-fa-wheelchair"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-wheelchair</span>
+                                    <span>icon-fa-wheelchair</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-wheelchair-alt"></i>
+                                    <i class="icon-fa icon-fa-wheelchair-alt"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-wheelchair-alt</span>
+                                    <span>icon-fa-wheelchair-alt</span>
                                 </div>
                             </div>
                             <div class="demo-icon"></div>
@@ -3490,139 +3490,139 @@
                         <div class="icon-container">
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-hand-grab-o"></i>
+                                    <i class="icon-fa icon-fa-hand-grab-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-hand-grab-o(alias)</span>
+                                    <span>icon-fa-hand-grab-o(alias)</span>
                                 </div>
                             </div>
 
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-hand-lizard-o"></i>
+                                    <i class="icon-fa icon-fa-hand-lizard-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-hand-lizard-o</span>
+                                    <span>icon-fa-hand-lizard-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-hand-o-down"></i>
+                                    <i class="icon-fa icon-fa-hand-o-down"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-hand-o-down</span>
+                                    <span>icon-fa-hand-o-down</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-hand-o-left"></i>
+                                    <i class="icon-fa icon-fa-hand-o-left"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-hand-o-left</span>
+                                    <span>icon-fa-hand-o-left</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-hand-o-right"></i>
+                                    <i class="icon-fa icon-fa-hand-o-right"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-hand-o-right</span>
+                                    <span>icon-fa-hand-o-right</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-hand-o-up"></i>
+                                    <i class="icon-fa icon-fa-hand-o-up"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-hand-o-up</span>
+                                    <span>icon-fa-hand-o-up</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-hand-paper-o"></i>
+                                    <i class="icon-fa icon-fa-hand-paper-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-hand-paper-o</span>
+                                    <span>icon-fa-hand-paper-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-hand-peace-o"></i>
+                                    <i class="icon-fa icon-fa-hand-peace-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-hand-peace-o</span>
+                                    <span>icon-fa-hand-peace-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-hand-pointer-o"></i>
+                                    <i class="icon-fa icon-fa-hand-pointer-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-hand-pointer-o</span>
+                                    <span>icon-fa-hand-pointer-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-hand-rock-o"></i>
+                                    <i class="icon-fa icon-fa-hand-rock-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-hand-rock-o</span>
+                                    <span>icon-fa-hand-rock-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-hand-scissors-o"></i>
+                                    <i class="icon-fa icon-fa-hand-scissors-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-hand-scissors-o</span>
+                                    <span>icon-fa-hand-scissors-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-hand-spock-o"></i>
+                                    <i class="icon-fa icon-fa-hand-spock-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-hand-spock-o</span>
+                                    <span>icon-fa-hand-spock-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-hand-stop-o"></i>
+                                    <i class="icon-fa icon-fa-hand-stop-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-hand-stop-o(alias)</span>
+                                    <span>icon-fa-hand-stop-o(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-thumbs-down"></i>
+                                    <i class="icon-fa icon-fa-thumbs-down"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-thumbs-down</span>
+                                    <span>icon-fa-thumbs-down</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-thumbs-o-down"></i>
+                                    <i class="icon-fa icon-fa-thumbs-o-down"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-thumbs-o-down</span>
+                                    <span>icon-fa-thumbs-o-down</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-thumbs-o-up"></i>
+                                    <i class="icon-fa icon-fa-thumbs-o-up"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-thumbs-o-up</span>
+                                    <span>icon-fa-thumbs-o-up</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-thumbs-up"></i>
+                                    <i class="icon-fa icon-fa-thumbs-up"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-thumbs-up</span>
+                                    <span>icon-fa-thumbs-up</span>
                                 </div>
                             </div>
                         </div>
@@ -3631,146 +3631,146 @@
                         <div class="icon-container">
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-ambulance"></i>
+                                    <i class="icon-fa icon-fa-ambulance"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-ambulance</span>
+                                    <span>icon-fa-ambulance</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-automobile"></i>
+                                    <i class="icon-fa icon-fa-automobile"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-automobile(alias)</span>
+                                    <span>icon-fa-automobile(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-bicycle"></i>
+                                    <i class="icon-fa icon-fa-bicycle"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-bicycle</span>
+                                    <span>icon-fa-bicycle</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-bus"></i>
+                                    <i class="icon-fa icon-fa-bus"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-bus</span>
+                                    <span>icon-fa-bus</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-cab"></i>
+                                    <i class="icon-fa icon-fa-cab"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-cab(alias)</span>
+                                    <span>icon-fa-cab(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-car"></i>
+                                    <i class="icon-fa icon-fa-car"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-car</span>
+                                    <span>icon-fa-car</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-fighter-jet"></i>
+                                    <i class="icon-fa icon-fa-fighter-jet"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-fighter-jet</span>
+                                    <span>icon-fa-fighter-jet</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-motorcycle"></i>
+                                    <i class="icon-fa icon-fa-motorcycle"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-motorcycle</span>
+                                    <span>icon-fa-motorcycle</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-plane"></i>
+                                    <i class="icon-fa icon-fa-plane"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-plane</span>
+                                    <span>icon-fa-plane</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-rocket"></i>
+                                    <i class="icon-fa icon-fa-rocket"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-rocket</span>
+                                    <span>icon-fa-rocket</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-ship"></i>
+                                    <i class="icon-fa icon-fa-ship"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-ship</span>
+                                    <span>icon-fa-ship</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-space-shuttle"></i>
+                                    <i class="icon-fa icon-fa-space-shuttle"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-space-shuttle</span>
+                                    <span>icon-fa-space-shuttle</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-subway"></i>
+                                    <i class="icon-fa icon-fa-subway"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-subway</span>
+                                    <span>icon-fa-subway</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-taxi"></i>
+                                    <i class="icon-fa icon-fa-taxi"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-taxi</span>
+                                    <span>icon-fa-taxi</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-train"></i>
+                                    <i class="icon-fa icon-fa-train"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-train</span>
+                                    <span>icon-fa-train</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-truck"></i>
+                                    <i class="icon-fa icon-fa-truck"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-truck</span>
+                                    <span>icon-fa-truck</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-wheelchair"></i>
+                                    <i class="icon-fa icon-fa-wheelchair"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-wheelchair</span>
+                                    <span>icon-fa-wheelchair</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-wheelchair-alt"></i>
+                                    <i class="icon-fa icon-fa-wheelchair-alt"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-wheelchair-alt</span>
+                                    <span>icon-fa-wheelchair-alt</span>
                                 </div>
                             </div>
                             <div class="demo-icon"></div>
@@ -3781,114 +3781,114 @@
                         <div class="icon-container">
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-genderless"></i>
+                                    <i class="icon-fa icon-fa-genderless"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- genderless</span>
+                                    <span>icon-fa- genderless</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-intersex"></i>
+                                    <i class="icon-fa icon-fa-intersex"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- intersex(alias)</span>
+                                    <span>icon-fa- intersex(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-mars"></i>
+                                    <i class="icon-fa icon-fa-mars"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-mars</span>
+                                    <span>icon-fa-mars</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-mars-double"></i>
+                                    <i class="icon-fa icon-fa-mars-double"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-mars-double</span>
+                                    <span>icon-fa-mars-double</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-mars-stroke"></i>
+                                    <i class="icon-fa icon-fa-mars-stroke"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-mars-stroke</span>
+                                    <span>icon-fa-mars-stroke</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-mars-stroke-h"></i>
+                                    <i class="icon-fa icon-fa-mars-stroke-h"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-mars-stroke-h</span>
+                                    <span>icon-fa-mars-stroke-h</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-mars-stroke-v"></i>
+                                    <i class="icon-fa icon-fa-mars-stroke-v"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-mars-stroke-v</span>
+                                    <span>icon-fa-mars-stroke-v</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-mercury"></i>
+                                    <i class="icon-fa icon-fa-mercury"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-mercury</span>
+                                    <span>icon-fa-mercury</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-neuter"></i>
+                                    <i class="icon-fa icon-fa-neuter"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-neuter</span>
+                                    <span>icon-fa-neuter</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-transgender"></i>
+                                    <i class="icon-fa icon-fa-transgender"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-transgender</span>
+                                    <span>icon-fa-transgender</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-transgender-alt"></i>
+                                    <i class="icon-fa icon-fa-transgender-alt"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-transgender-alt</span>
+                                    <span>icon-fa-transgender-alt</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-venus"></i>
+                                    <i class="icon-fa icon-fa-venus"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-venus</span>
+                                    <span>icon-fa-venus</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-venus-double"></i>
+                                    <i class="icon-fa icon-fa-venus-double"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-venus-double</span>
+                                    <span>icon-fa-venus-double</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-venus-mars"></i>
+                                    <i class="icon-fa icon-fa-venus-mars"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-venus-mars</span>
+                                    <span>icon-fa-venus-mars</span>
                                 </div>
                             </div>
                             <div class="demo-icon"></div>
@@ -3900,146 +3900,146 @@
 
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-file"></i>
+                                    <i class="icon-fa icon-fa-file"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- file</span>
+                                    <span>icon-fa- file</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-file-archive-o"></i>
+                                    <i class="icon-fa icon-fa-file-archive-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- file-archive-o</span>
+                                    <span>icon-fa- file-archive-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-file-audio-o"></i>
+                                    <i class="icon-fa icon-fa-file-audio-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- file-audio-o</span>
+                                    <span>icon-fa- file-audio-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-file-code-o"></i>
+                                    <i class="icon-fa icon-fa-file-code-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- file-code-o</span>
+                                    <span>icon-fa- file-code-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-file-excel-o"></i>
+                                    <i class="icon-fa icon-fa-file-excel-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- file-excel-o</span>
+                                    <span>icon-fa- file-excel-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-file-image-o"></i>
+                                    <i class="icon-fa icon-fa-file-image-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- file-image-o</span>
+                                    <span>icon-fa- file-image-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-file-movie-o"></i>
+                                    <i class="icon-fa icon-fa-file-movie-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- file-movie-o(alias)</span>
+                                    <span>icon-fa- file-movie-o(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-file-o"></i>
+                                    <i class="icon-fa icon-fa-file-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-file-o</span>
+                                    <span>icon-fa-file-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-file-pdf-o"></i>
+                                    <i class="icon-fa icon-fa-file-pdf-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-file-pdf-o</span>
+                                    <span>icon-fa-file-pdf-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-file-photo-o"></i>
+                                    <i class="icon-fa icon-fa-file-photo-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-file-photo-o(alias)</span>
+                                    <span>icon-fa-file-photo-o(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-file-picture-o"></i>
+                                    <i class="icon-fa icon-fa-file-picture-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-file-picture-o(alias)</span>
+                                    <span>icon-fa-file-picture-o(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-file-powerpoint-o"></i>
+                                    <i class="icon-fa icon-fa-file-powerpoint-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-file-powerpoint-o</span>
+                                    <span>icon-fa-file-powerpoint-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-file-sound-o"></i>
+                                    <i class="icon-fa icon-fa-file-sound-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-file-sound-o(alias)</span>
+                                    <span>icon-fa-file-sound-o(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-file-text"></i>
+                                    <i class="icon-fa icon-fa-file-text"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-file-text</span>
+                                    <span>icon-fa-file-text</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-file-text-o"></i>
+                                    <i class="icon-fa icon-fa-file-text-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-file-text-o</span>
+                                    <span>icon-fa-file-text-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-file-video-o"></i>
+                                    <i class="icon-fa icon-fa-file-video-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-file-video-o</span>
+                                    <span>icon-fa-file-video-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-file-word-o"></i>
+                                    <i class="icon-fa icon-fa-file-word-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-file-word-o</span>
+                                    <span>icon-fa-file-word-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-file-zip-o"></i>
+                                    <i class="icon-fa icon-fa-file-zip-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-file-zip-o</span>
+                                    <span>icon-fa-file-zip-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon"></div>
@@ -4050,42 +4050,42 @@
                         <div class="icon-container">
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-circle-o-notch"></i>
+                                    <i class="icon-fa icon-fa-circle-o-notch"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- circle-o-notch</span>
+                                    <span>icon-fa- circle-o-notch</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-cog"></i>
+                                    <i class="icon-fa icon-fa-cog"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-cog</span>
+                                    <span>icon-fa-cog</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-gear"></i>
+                                    <i class="icon-fa icon-fa-gear"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-gear(alias)</span>
+                                    <span>icon-fa-gear(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-refresh"></i>
+                                    <i class="icon-fa icon-fa-refresh"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-refresh</span>
+                                    <span>icon-fa-refresh</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-spinner"></i>
+                                    <i class="icon-fa icon-fa-spinner"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-spinner</span>
+                                    <span>icon-fa-spinner</span>
                                 </div>
                             </div>
                         </div>
@@ -4094,90 +4094,90 @@
                         <div class="icon-container">
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-check-square"></i>
+                                    <i class="icon-fa icon-fa-check-square"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-check-square</span>
+                                    <span>icon-fa-check-square</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-check-square-o"></i>
+                                    <i class="icon-fa icon-fa-check-square-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-check-square-o</span>
+                                    <span>icon-fa-check-square-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-circle"></i>
+                                    <i class="icon-fa icon-fa-circle"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-circle</span>
+                                    <span>icon-fa-circle</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-circle-o"></i>
+                                    <i class="icon-fa icon-fa-circle-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-circle-o</span>
+                                    <span>icon-fa-circle-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-dot-circle-o"></i>
+                                    <i class="icon-fa icon-fa-dot-circle-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-dot-circle-o</span>
+                                    <span>icon-fa-dot-circle-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-minus-square"></i>
+                                    <i class="icon-fa icon-fa-minus-square"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-minus-square</span>
+                                    <span>icon-fa-minus-square</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-minus-square-o"></i>
+                                    <i class="icon-fa icon-fa-minus-square-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-minus-square-o</span>
+                                    <span>icon-fa-minus-square-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-plus-square"></i>
+                                    <i class="icon-fa icon-fa-plus-square"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-plus-square</span>
+                                    <span>icon-fa-plus-square</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-plus-square-o"></i>
+                                    <i class="icon-fa icon-fa-plus-square-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-plus-square-o</span>
+                                    <span>icon-fa-plus-square-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-square"></i>
+                                    <i class="icon-fa icon-fa-square"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-square</span>
+                                    <span>icon-fa-square</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-square-o"></i>
+                                    <i class="icon-fa icon-fa-square-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-square-o</span>
+                                    <span>icon-fa-square-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon"></div>
@@ -4187,98 +4187,98 @@
                         <div class="icon-container">
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-cc-amex"></i>
+                                    <i class="icon-fa icon-fa-cc-amex"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-cc-amex</span>
+                                    <span>icon-fa-cc-amex</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-cc-diners-club"></i>
+                                    <i class="icon-fa icon-fa-cc-diners-club"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-cc-diners-club</span>
+                                    <span>icon-fa-cc-diners-club</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-cc-discover"></i>
+                                    <i class="icon-fa icon-fa-cc-discover"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-cc-discover</span>
+                                    <span>icon-fa-cc-discover</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-cc-jcb"></i>
+                                    <i class="icon-fa icon-fa-cc-jcb"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-cc-jcb</span>
+                                    <span>icon-fa-cc-jcb</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-cc-mastercard"></i>
+                                    <i class="icon-fa icon-fa-cc-mastercard"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-cc-mastercard</span>
+                                    <span>icon-fa-cc-mastercard</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-cc-paypal"></i>
+                                    <i class="icon-fa icon-fa-cc-paypal"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-cc-paypal</span>
+                                    <span>icon-fa-cc-paypal</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-cc-stripe"></i>
+                                    <i class="icon-fa icon-fa-cc-stripe"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-cc-stripe</span>
+                                    <span>icon-fa-cc-stripe</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-cc-visa"></i>
+                                    <i class="icon-fa icon-fa-cc-visa"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-cc-visa</span>
+                                    <span>icon-fa-cc-visa</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-credit-card"></i>
+                                    <i class="icon-fa icon-fa-credit-card"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-credit-card</span>
+                                    <span>icon-fa-credit-card</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-credit-card-alt"></i>
+                                    <i class="icon-fa icon-fa-credit-card-alt"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-credit-card-alt</span>
+                                    <span>icon-fa-credit-card-alt</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-google-wallet"></i>
+                                    <i class="icon-fa icon-fa-google-wallet"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-google-wallet</span>
+                                    <span>icon-fa-google-wallet</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-paypal"></i>
+                                    <i class="icon-fa icon-fa-paypal"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-paypal</span>
+                                    <span>icon-fa-paypal</span>
                                 </div>
                             </div>
                         </div>
@@ -4287,42 +4287,42 @@
                         <div class="icon-container">
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-area-chart"></i>
+                                    <i class="icon-fa icon-fa-area-chart"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-area-chart</span>
+                                    <span>icon-fa-area-chart</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-bar-chart"></i>
+                                    <i class="icon-fa icon-fa-bar-chart"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-bar-chart</span>
+                                    <span>icon-fa-bar-chart</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-bar-chart-o"></i>
+                                    <i class="icon-fa icon-fa-bar-chart-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-bar-chart-o(alias)</span>
+                                    <span>icon-fa-bar-chart-o(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-line-chart"></i>
+                                    <i class="icon-fa icon-fa-line-chart"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-line-chart</span>
+                                    <span>icon-fa-line-chart</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-pie-chart"></i>
+                                    <i class="icon-fa icon-fa-pie-chart"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-pie-chart</span>
+                                    <span>icon-fa-pie-chart</span>
                                 </div>
                             </div>
                         </div>
@@ -4331,211 +4331,211 @@
                         <div class="icon-container">
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-bitcoin"></i>
+                                    <i class="icon-fa icon-fa-bitcoin"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-bitcoin(alias)</span>
+                                    <span>icon-fa-bitcoin(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-btc"></i>
+                                    <i class="icon-fa icon-fa-btc"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-btc</span>
+                                    <span>icon-fa-btc</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-cny"></i>
+                                    <i class="icon-fa icon-fa-cny"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-cny(alias)</span>
+                                    <span>icon-fa-cny(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-dollar"></i>
+                                    <i class="icon-fa icon-fa-dollar"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-dollar(alias)</span>
+                                    <span>icon-fa-dollar(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-eur"></i>
+                                    <i class="icon-fa icon-fa-eur"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-eur</span>
+                                    <span>icon-fa-eur</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-euro"></i>
+                                    <i class="icon-fa icon-fa-euro"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-euro(alias)</span>
+                                    <span>icon-fa-euro(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-gbp"></i>
+                                    <i class="icon-fa icon-fa-gbp"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-gbp</span>
+                                    <span>icon-fa-gbp</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-gg"
+                                    <i class="icon-fa icon-fa-gg"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-gg</span>
+                                    <span>icon-fa-gg</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-gg-circle"></i>
+                                    <i class="icon-fa icon-fa-gg-circle"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-gg-circle</span>
+                                    <span>icon-fa-gg-circle</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-ils"></i>
+                                    <i class="icon-fa icon-fa-ils"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-ils</span>
+                                    <span>icon-fa-ils</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-inr"></i>
+                                    <i class="icon-fa icon-fa-inr"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-inr</span>
+                                    <span>icon-fa-inr</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-jpy"></i>
+                                    <i class="icon-fa icon-fa-jpy"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-jpy</span>
+                                    <span>icon-fa-jpy</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-krw"></i>
+                                    <i class="icon-fa icon-fa-krw"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-krw</span>
+                                    <span>icon-fa-krw</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-money"></i>
+                                    <i class="icon-fa icon-fa-money"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-money</span>
+                                    <span>icon-fa-money</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-rmb"></i>
+                                    <i class="icon-fa icon-fa-rmb"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-rmb(alias)</span>
+                                    <span>icon-fa-rmb(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-rouble"></i>
+                                    <i class="icon-fa icon-fa-rouble"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-rouble(alias)</span>
+                                    <span>icon-fa-rouble(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-rub"></i>
+                                    <i class="icon-fa icon-fa-rub"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-rub</span>
+                                    <span>icon-fa-rub</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-ruble"></i>
+                                    <i class="icon-fa icon-fa-ruble"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-ruble(alias)</span>
+                                    <span>icon-fa-ruble(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-rupee"></i>
+                                    <i class="icon-fa icon-fa-rupee"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-rupee(alias)</span>
+                                    <span>icon-fa-rupee(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-shekel"></i>
+                                    <i class="icon-fa icon-fa-shekel"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-shekel(alias)</span>
+                                    <span>icon-fa-shekel(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-sheqel"></i>
+                                    <i class="icon-fa icon-fa-sheqel"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-sheqel(alias)</span>
+                                    <span>icon-fa-sheqel(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-try"></i>
+                                    <i class="icon-fa icon-fa-try"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-try</span>
+                                    <span>icon-fa-try</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-turkish-lira"></i>
+                                    <i class="icon-fa icon-fa-turkish-lira"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-turkish-lira(alias)</span>
+                                    <span>icon-fa-turkish-lira(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-usd"></i>
+                                    <i class="icon-fa icon-fa-usd"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-usd</span>
+                                    <span>icon-fa-usd</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-won"></i>
+                                    <i class="icon-fa icon-fa-won"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-won(alias)</span>
+                                    <span>icon-fa-won(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-yen"></i>
+                                    <i class="icon-fa icon-fa-yen"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-yen(alias)</span>
+                                    <span>icon-fa-yen(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon"></div>
@@ -4546,396 +4546,396 @@
                         <div class="icon-container">
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-align-center"></i>
+                                    <i class="icon-fa icon-fa-align-center"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-align-center</span>
+                                    <span>icon-fa-align-center</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-align-justify"></i>
+                                    <i class="icon-fa icon-fa-align-justify"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-align-justify</span>
+                                    <span>icon-fa-align-justify</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-align-left"></i>
+                                    <i class="icon-fa icon-fa-align-left"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-align-left</span>
+                                    <span>icon-fa-align-left</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-align-right"></i>
+                                    <i class="icon-fa icon-fa-align-right"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-align-right</span>
+                                    <span>icon-fa-align-right</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-bold"></i>
+                                    <i class="icon-fa icon-fa-bold"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-bold</span>
+                                    <span>icon-fa-bold</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-chain"></i>
+                                    <i class="icon-fa icon-fa-chain"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-chain(alias)</span>
+                                    <span>icon-fa-chain(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-chain-broken"></i>
+                                    <i class="icon-fa icon-fa-chain-broken"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-chain-broken</span>
+                                    <span>icon-fa-chain-broken</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-clipboard"></i>
+                                    <i class="icon-fa icon-fa-clipboard"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-clipboard</span>
+                                    <span>icon-fa-clipboard</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-columns"></i>
+                                    <i class="icon-fa icon-fa-columns"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-columns</span>
+                                    <span>icon-fa-columns</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-copy"></i>
+                                    <i class="icon-fa icon-fa-copy"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-copy(alias)</span>
+                                    <span>icon-fa-copy(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-cut"></i>
+                                    <i class="icon-fa icon-fa-cut"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-cut(alias)</span>
+                                    <span>icon-fa-cut(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-dedent"></i>
+                                    <i class="icon-fa icon-fa-dedent"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-dedent(alias)</span>
+                                    <span>icon-fa-dedent(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-eraser"></i>
+                                    <i class="icon-fa icon-fa-eraser"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-eraser</span>
+                                    <span>icon-fa-eraser</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-file"></i>
+                                    <i class="icon-fa icon-fa-file"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-file</span>
+                                    <span>icon-fa-file</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-file-o"></i>
+                                    <i class="icon-fa icon-fa-file-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-file-o</span>
+                                    <span>icon-fa-file-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-file-text"></i>
+                                    <i class="icon-fa icon-fa-file-text"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-file-text</span>
+                                    <span>icon-fa-file-text</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-file-text-o"></i>
+                                    <i class="icon-fa icon-fa-file-text-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-file-text-o</span>
+                                    <span>icon-fa-file-text-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-files-o"></i>
+                                    <i class="icon-fa icon-fa-files-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-files-o</span>
+                                    <span>icon-fa-files-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-floppy-o"></i>
+                                    <i class="icon-fa icon-fa-floppy-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-floppy-o</span>
+                                    <span>icon-fa-floppy-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-font"></i>
+                                    <i class="icon-fa icon-fa-font"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-font</span>
+                                    <span>icon-fa-font</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-header"></i>
+                                    <i class="icon-fa icon-fa-header"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-header</span>
+                                    <span>icon-fa-header</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-indent"></i>
+                                    <i class="icon-fa icon-fa-indent"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-indent</span>
+                                    <span>icon-fa-indent</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-italic"></i>
+                                    <i class="icon-fa icon-fa-italic"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-italic</span>
+                                    <span>icon-fa-italic</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-link"></i>
+                                    <i class="icon-fa icon-fa-link"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-link</span>
+                                    <span>icon-fa-link</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-list"></i>
+                                    <i class="icon-fa icon-fa-list"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-list</span>
+                                    <span>icon-fa-list</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-list-alt"></i>
+                                    <i class="icon-fa icon-fa-list-alt"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-list-alt</span>
+                                    <span>icon-fa-list-alt</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-list-ol"></i>
+                                    <i class="icon-fa icon-fa-list-ol"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-list-ol</span>
+                                    <span>icon-fa-list-ol</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-list-ul"></i>
+                                    <i class="icon-fa icon-fa-list-ul"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-list-ul</span>
+                                    <span>icon-fa-list-ul</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-outdent"></i>
+                                    <i class="icon-fa icon-fa-outdent"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-outdent</span>
+                                    <span>icon-fa-outdent</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-paperclip"></i>
+                                    <i class="icon-fa icon-fa-paperclip"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-paperclip</span>
+                                    <span>icon-fa-paperclip</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-paragraph"></i>
+                                    <i class="icon-fa icon-fa-paragraph"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-paragraph</span>
+                                    <span>icon-fa-paragraph</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-paste"></i>
+                                    <i class="icon-fa icon-fa-paste"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-paste(alias)</span>
+                                    <span>icon-fa-paste(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-repeat"></i>
+                                    <i class="icon-fa icon-fa-repeat"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-repeat</span>
+                                    <span>icon-fa-repeat</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-rotate-left"></i>
+                                    <i class="icon-fa icon-fa-rotate-left"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-rotate-left(alias)</span>
+                                    <span>icon-fa-rotate-left(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-rotate-right"></i>
+                                    <i class="icon-fa icon-fa-rotate-right"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-rotate-right(alias)</span>
+                                    <span>icon-fa-rotate-right(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-save"></i>
+                                    <i class="icon-fa icon-fa-save"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-save(alias)</span>
+                                    <span>icon-fa-save(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-scissors"></i>
+                                    <i class="icon-fa icon-fa-scissors"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-scissors</span>
+                                    <span>icon-fa-scissors</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-strikethrough"></i>
+                                    <i class="icon-fa icon-fa-strikethrough"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-strikethrough</span>
+                                    <span>icon-fa-strikethrough</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-subscript"></i>
+                                    <i class="icon-fa icon-fa-subscript"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-subscript</span>
+                                    <span>icon-fa-subscript</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-superscript"></i>
+                                    <i class="icon-fa icon-fa-superscript"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-superscript</span>
+                                    <span>icon-fa-superscript</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-table"></i>
+                                    <i class="icon-fa icon-fa-table"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-table</span>
+                                    <span>icon-fa-table</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-text-height"></i>
+                                    <i class="icon-fa icon-fa-text-height"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-text-height</span>
+                                    <span>icon-fa-text-height</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-text-width"></i>
+                                    <i class="icon-fa icon-fa-text-width"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-text-width</span>
+                                    <span>icon-fa-text-width</span>
                                 </div>
                             </div>
 
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-th"
+                                    <i class="icon-fa icon-fa-th"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-th</span>
+                                    <span>icon-fa-th</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-th-large"></i>
+                                    <i class="icon-fa icon-fa-th-large"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-th-large</span>
+                                    <span>icon-fa-th-large</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-th-list"></i>
+                                    <i class="icon-fa icon-fa-th-list"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-th-list</span>
+                                    <span>icon-fa-th-list</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-underline"></i>
+                                    <i class="icon-fa icon-fa-underline"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-underline</span>
+                                    <span>icon-fa-underline</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-undo"></i>
+                                    <i class="icon-fa icon-fa-undo"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-undo</span>
+                                    <span>icon-fa-undo</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-unlink"></i>
+                                    <i class="icon-fa icon-fa-unlink"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-unlink(alias)</span>
+                                    <span>icon-fa-unlink(alias)</span>
                                 </div>
                             </div>
                         </div>
@@ -4944,427 +4944,427 @@
                         <div class="icon-container">
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-angle-double-down"></i>
+                                    <i class="icon-fa icon-fa-angle-double-down"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-angle-double-down</span>
+                                    <span>icon-fa-angle-double-down</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-angle-double-left"></i>
+                                    <i class="icon-fa icon-fa-angle-double-left"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-angle-double-left</span>
+                                    <span>icon-fa-angle-double-left</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-angle-double-right"></i>
+                                    <i class="icon-fa icon-fa-angle-double-right"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-angle-double-right</span>
+                                    <span>icon-fa-angle-double-right</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-angle-double-up"></i>
+                                    <i class="icon-fa icon-fa-angle-double-up"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-angle-double-up</span>
+                                    <span>icon-fa-angle-double-up</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-angle-down"></i>
+                                    <i class="icon-fa icon-fa-angle-down"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-angle-down</span>
+                                    <span>icon-fa-angle-down</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-angle-left"></i>
+                                    <i class="icon-fa icon-fa-angle-left"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-angle-left</span>
+                                    <span>icon-fa-angle-left</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-angle-right"></i>
+                                    <i class="icon-fa icon-fa-angle-right"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-angle-right</span>
+                                    <span>icon-fa-angle-right</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-angle-up"></i>
+                                    <i class="icon-fa icon-fa-angle-up"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-angle-up</span>
+                                    <span>icon-fa-angle-up</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-arrow-circle-down"></i>
+                                    <i class="icon-fa icon-fa-arrow-circle-down"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-arrow-circle-down</span>
+                                    <span>icon-fa-arrow-circle-down</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-arrow-circle-left"></i>
+                                    <i class="icon-fa icon-fa-arrow-circle-left"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-arrow-circle-left</span>
+                                    <span>icon-fa-arrow-circle-left</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-arrow-circle-o-down"></i>
+                                    <i class="icon-fa icon-fa-arrow-circle-o-down"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-arrow-circle-o-down</span>
+                                    <span>icon-fa-arrow-circle-o-down</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-arrow-circle-o-left"></i>
+                                    <i class="icon-fa icon-fa-arrow-circle-o-left"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-arrow-circle-o-left</span>
+                                    <span>icon-fa-arrow-circle-o-left</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-arrow-circle-o-right"></i>
+                                    <i class="icon-fa icon-fa-arrow-circle-o-right"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- arrow-circle-o-right</span>
+                                    <span>icon-fa- arrow-circle-o-right</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-arrow-circle-o-up"></i>
+                                    <i class="icon-fa icon-fa-arrow-circle-o-up"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- arrow-circle-o-up</span>
+                                    <span>icon-fa- arrow-circle-o-up</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-arrow-circle-right"></i>
+                                    <i class="icon-fa icon-fa-arrow-circle-right"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- arrow-circle-right</span>
+                                    <span>icon-fa- arrow-circle-right</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-arrow-circle-up"></i>
+                                    <i class="icon-fa icon-fa-arrow-circle-up"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- arrow-circle-up</span>
+                                    <span>icon-fa- arrow-circle-up</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-arrow-down"></i>
+                                    <i class="icon-fa icon-fa-arrow-down"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- arrow-down</span>
+                                    <span>icon-fa- arrow-down</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-arrow-left"></i>
+                                    <i class="icon-fa icon-fa-arrow-left"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- arrow-left</span>
+                                    <span>icon-fa- arrow-left</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-arrow-right"></i>
+                                    <i class="icon-fa icon-fa-arrow-right"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- arrow-right</span>
+                                    <span>icon-fa- arrow-right</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-arrow-up"></i>
+                                    <i class="icon-fa icon-fa-arrow-up"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- arrow-up</span>
+                                    <span>icon-fa- arrow-up</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-arrows"></i>
+                                    <i class="icon-fa icon-fa-arrows"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- arrows</span>
+                                    <span>icon-fa- arrows</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-arrows-alt"></i>
+                                    <i class="icon-fa icon-fa-arrows-alt"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- arrows-alt</span>
+                                    <span>icon-fa- arrows-alt</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-arrows-h"></i>
+                                    <i class="icon-fa icon-fa-arrows-h"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- arrows-h</span>
+                                    <span>icon-fa- arrows-h</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-arrows-v"></i>
+                                    <i class="icon-fa icon-fa-arrows-v"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- arrows-v</span>
+                                    <span>icon-fa- arrows-v</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-caret-down"></i>
+                                    <i class="icon-fa icon-fa-caret-down"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- caret-down</span>
+                                    <span>icon-fa- caret-down</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-caret-left"></i>
+                                    <i class="icon-fa icon-fa-caret-left"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- caret-left</span>
+                                    <span>icon-fa- caret-left</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-caret-right"></i>
+                                    <i class="icon-fa icon-fa-caret-right"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- caret-right</span>
+                                    <span>icon-fa- caret-right</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-caret-square-o-down"></i>
+                                    <i class="icon-fa icon-fa-caret-square-o-down"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- caret-square-o-down</span>
+                                    <span>icon-fa- caret-square-o-down</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-caret-square-o-left"></i>
+                                    <i class="icon-fa icon-fa-caret-square-o-left"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- caret-square-o-left</span>
+                                    <span>icon-fa- caret-square-o-left</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-caret-square-o-right"></i>
+                                    <i class="icon-fa icon-fa-caret-square-o-right"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-caret-square-o-right</span>
+                                    <span>icon-fa-caret-square-o-right</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-caret-square-o-up"></i>
+                                    <i class="icon-fa icon-fa-caret-square-o-up"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-caret-square-o-up</span>
+                                    <span>icon-fa-caret-square-o-up</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-caret-up"></i>
+                                    <i class="icon-fa icon-fa-caret-up"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-caret-up</span>
+                                    <span>icon-fa-caret-up</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-chevron-circle-down"></i>
+                                    <i class="icon-fa icon-fa-chevron-circle-down"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-chevron-circle-down</span>
+                                    <span>icon-fa-chevron-circle-down</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-chevron-circle-left"></i>
+                                    <i class="icon-fa icon-fa-chevron-circle-left"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-chevron-circle-left</span>
+                                    <span>icon-fa-chevron-circle-left</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-chevron-circle-right"></i>
+                                    <i class="icon-fa icon-fa-chevron-circle-right"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-chevron-circle-right</span>
+                                    <span>icon-fa-chevron-circle-right</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-chevron-circle-up"></i>
+                                    <i class="icon-fa icon-fa-chevron-circle-up"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-chevron-circle-up</span>
+                                    <span>icon-fa-chevron-circle-up</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-chevron-down"></i>
+                                    <i class="icon-fa icon-fa-chevron-down"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-chevron-down</span>
+                                    <span>icon-fa-chevron-down</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-chevron-left"></i>
+                                    <i class="icon-fa icon-fa-chevron-left"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-chevron-left</span>
+                                    <span>icon-fa-chevron-left</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-chevron-right"></i>
+                                    <i class="icon-fa icon-fa-chevron-right"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-chevron-right</span>
+                                    <span>icon-fa-chevron-right</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-chevron-up"></i>
+                                    <i class="icon-fa icon-fa-chevron-up"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-chevron-up</span>
+                                    <span>icon-fa-chevron-up</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-exchange"></i>
+                                    <i class="icon-fa icon-fa-exchange"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-exchange</span>
+                                    <span>icon-fa-exchange</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-hand-o-down"></i>
+                                    <i class="icon-fa icon-fa-hand-o-down"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-hand-o-down</span>
+                                    <span>icon-fa-hand-o-down</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-hand-o-left"></i>
+                                    <i class="icon-fa icon-fa-hand-o-left"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-hand-o-left</span>
+                                    <span>icon-fa-hand-o-left</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-hand-o-right"></i>
+                                    <i class="icon-fa icon-fa-hand-o-right"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-hand-o-right</span>
+                                    <span>icon-fa-hand-o-right</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-hand-o-up"></i>
+                                    <i class="icon-fa icon-fa-hand-o-up"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-hand-o-up</span>
+                                    <span>icon-fa-hand-o-up</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-long-arrow-down"></i>
+                                    <i class="icon-fa icon-fa-long-arrow-down"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-long-arrow-down</span>
+                                    <span>icon-fa-long-arrow-down</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-long-arrow-left"></i>
+                                    <i class="icon-fa icon-fa-long-arrow-left"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-long-arrow-left</span>
+                                    <span>icon-fa-long-arrow-left</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-long-arrow-right"></i>
+                                    <i class="icon-fa icon-fa-long-arrow-right"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-long-arrow-right</span>
+                                    <span>icon-fa-long-arrow-right</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-long-arrow-up"></i>
+                                    <i class="icon-fa icon-fa-long-arrow-up"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-long-arrow-up</span>
+                                    <span>icon-fa-long-arrow-up</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-toggle-down"></i>
+                                    <i class="icon-fa icon-fa-toggle-down"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-toggle-down(alias)</span>
+                                    <span>icon-fa-toggle-down(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-toggle-left"></i>
+                                    <i class="icon-fa icon-fa-toggle-left"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-toggle-left(alias)</span>
+                                    <span>icon-fa-toggle-left(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-toggle-right"
+                                    <i class="icon-fa icon-fa-toggle-right"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-toggle-right(alias)</span>
+                                    <span>icon-fa-toggle-right(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-toggle-up"></i>
+                                    <i class="icon-fa icon-fa-toggle-up"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-toggle-up(alias)</span>
+                                    <span>icon-fa-toggle-up(alias)</span>
                                 </div>
                             </div>
                         </div>
@@ -5374,170 +5374,170 @@
 
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-arrows-alt"></i>
+                                    <i class="icon-fa icon-fa-arrows-alt"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-arrows-alt</span>
+                                    <span>icon-fa-arrows-alt</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-backward"></i>
+                                    <i class="icon-fa icon-fa-backward"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-backward</span>
+                                    <span>icon-fa-backward</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-compress"></i>
+                                    <i class="icon-fa icon-fa-compress"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-compress</span>
+                                    <span>icon-fa-compress</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-eject"></i>
+                                    <i class="icon-fa icon-fa-eject"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-eject</span>
+                                    <span>icon-fa-eject</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-expand"></i>
+                                    <i class="icon-fa icon-fa-expand"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-expand</span>
+                                    <span>icon-fa-expand</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-fast-backward"></i>
+                                    <i class="icon-fa icon-fa-fast-backward"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-fast-backward</span>
+                                    <span>icon-fa-fast-backward</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-fast-forward"></i>
+                                    <i class="icon-fa icon-fa-fast-forward"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-fast-forward</span>
+                                    <span>icon-fa-fast-forward</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-forward"></i>
+                                    <i class="icon-fa icon-fa-forward"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-forward</span>
+                                    <span>icon-fa-forward</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-pause"></i>
+                                    <i class="icon-fa icon-fa-pause"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-pause</span>
+                                    <span>icon-fa-pause</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-pause-circle"></i>
+                                    <i class="icon-fa icon-fa-pause-circle"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-pause-circle</span>
+                                    <span>icon-fa-pause-circle</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-pause-circle-o"></i>
+                                    <i class="icon-fa icon-fa-pause-circle-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-pause-circle-o</span>
+                                    <span>icon-fa-pause-circle-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-play"></i>
+                                    <i class="icon-fa icon-fa-play"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-play</span>
+                                    <span>icon-fa-play</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-play-circle"></i>
+                                    <i class="icon-fa icon-fa-play-circle"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-play-circle</span>
+                                    <span>icon-fa-play-circle</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-play-circle-o"></i>
+                                    <i class="icon-fa icon-fa-play-circle-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-play-circle-o</span>
+                                    <span>icon-fa-play-circle-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-random"></i>
+                                    <i class="icon-fa icon-fa-random"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-random</span>
+                                    <span>icon-fa-random</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-step-backward"></i>
+                                    <i class="icon-fa icon-fa-step-backward"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-step-backward</span>
+                                    <span>icon-fa-step-backward</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-step-forward"></i>
+                                    <i class="icon-fa icon-fa-step-forward"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-step-forward</span>
+                                    <span>icon-fa-step-forward</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-stop"></i>
+                                    <i class="icon-fa icon-fa-stop"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-stop</span>
+                                    <span>icon-fa-stop</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-stop-circle"></i>
+                                    <i class="icon-fa icon-fa-stop-circle"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-stop-circle</span>
+                                    <span>icon-fa-stop-circle</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-stop-circle-o"></i>
+                                    <i class="icon-fa icon-fa-stop-circle-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-stop-circle-o</span>
+                                    <span>icon-fa-stop-circle-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-youtube-play"></i>
+                                    <i class="icon-fa icon-fa-youtube-play"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-youtube-play</span>
+                                    <span>icon-fa-youtube-play</span>
                                 </div>
                             </div>
                         </div>
@@ -5546,1358 +5546,1358 @@
                         <div class="icon-container">
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-500px"></i>
+                                    <i class="icon-fa icon-fa-500px"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-500px</span>
+                                    <span>icon-fa-500px</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-adn"></i>
+                                    <i class="icon-fa icon-fa-adn"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- adn</span>
+                                    <span>icon-fa- adn</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-amazon"></i>
+                                    <i class="icon-fa icon-fa-amazon"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-amazon</span>
+                                    <span>icon-fa-amazon</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-android"></i>
+                                    <i class="icon-fa icon-fa-android"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-android</span>
+                                    <span>icon-fa-android</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-angellist"></i>
+                                    <i class="icon-fa icon-fa-angellist"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-angellist</span>
+                                    <span>icon-fa-angellist</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-apple"></i>
+                                    <i class="icon-fa icon-fa-apple"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-apple</span>
+                                    <span>icon-fa-apple</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-behance"></i>
+                                    <i class="icon-fa icon-fa-behance"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-behance</span>
+                                    <span>icon-fa-behance</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-behance-square"></i>
+                                    <i class="icon-fa icon-fa-behance-square"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-behance-square</span>
+                                    <span>icon-fa-behance-square</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-bitbucket"></i>
+                                    <i class="icon-fa icon-fa-bitbucket"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-bitbucket</span>
+                                    <span>icon-fa-bitbucket</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-bitbucket-square"></i>
+                                    <i class="icon-fa icon-fa-bitbucket-square"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-bitbucket-square</span>
+                                    <span>icon-fa-bitbucket-square</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-bitcoin"></i>
+                                    <i class="icon-fa icon-fa-bitcoin"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-bitcoin(alias)</span>
+                                    <span>icon-fa-bitcoin(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-black-tie"></i>
+                                    <i class="icon-fa icon-fa-black-tie"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-black-tie</span>
+                                    <span>icon-fa-black-tie</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-bluetooth"
+                                    <i class="icon-fa icon-fa-bluetooth"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-bluetooth</span>
+                                    <span>icon-fa-bluetooth</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-bluetooth-b"
+                                    <i class="icon-fa icon-fa-bluetooth-b"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-bluetooth-b</span>
+                                    <span>icon-fa-bluetooth-b</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-btc"></i>
+                                    <i class="icon-fa icon-fa-btc"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-btc</span>
+                                    <span>icon-fa-btc</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-buysellads"
+                                    <i class="icon-fa icon-fa-buysellads"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-buysellads</span>
+                                    <span>icon-fa-buysellads</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-cc-amex"
+                                    <i class="icon-fa icon-fa-cc-amex"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-cc-amex</span>
+                                    <span>icon-fa-cc-amex</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-cc-diners-club"
+                                    <i class="icon-fa icon-fa-cc-diners-club"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-cc-diners-club</span>
+                                    <span>icon-fa-cc-diners-club</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-cc-discover"
+                                    <i class="icon-fa icon-fa-cc-discover"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-cc-discover</span>
+                                    <span>icon-fa-cc-discover</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-cc-jcb"
+                                    <i class="icon-fa icon-fa-cc-jcb"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-cc-jcb</span>
+                                    <span>icon-fa-cc-jcb</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-cc-mastercard"
+                                    <i class="icon-fa icon-fa-cc-mastercard"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-cc-mastercard</span>
+                                    <span>icon-fa-cc-mastercard</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-cc-paypal"
+                                    <i class="icon-fa icon-fa-cc-paypal"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-cc-paypal</span>
+                                    <span>icon-fa-cc-paypal</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-cc-stripe"
+                                    <i class="icon-fa icon-fa-cc-stripe"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-cc-stripe</span>
+                                    <span>icon-fa-cc-stripe</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-cc-visa"
+                                    <i class="icon-fa icon-fa-cc-visa"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-cc-visa</span>
+                                    <span>icon-fa-cc-visa</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-chrome"
+                                    <i class="icon-fa icon-fa-chrome"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-chrome</span>
+                                    <span>icon-fa-chrome</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-codepen"
+                                    <i class="icon-fa icon-fa-codepen"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-codepen</span>
+                                    <span>icon-fa-codepen</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-codiepie"
+                                    <i class="icon-fa icon-fa-codiepie"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-codiepie</span>
+                                    <span>icon-fa-codiepie</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-connectdevelop"
+                                    <i class="icon-fa icon-fa-connectdevelop"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-connectdevelop</span>
+                                    <span>icon-fa-connectdevelop</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-contao"
+                                    <i class="icon-fa icon-fa-contao"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-contao</span>
+                                    <span>icon-fa-contao</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-css3"
+                                    <i class="icon-fa icon-fa-css3"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-css3</span>
+                                    <span>icon-fa-css3</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-dashcube"
+                                    <i class="icon-fa icon-fa-dashcube"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-dashcube</span>
+                                    <span>icon-fa-dashcube</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-delicious"></i>
+                                    <i class="icon-fa icon-fa-delicious"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-delicious</span>
+                                    <span>icon-fa-delicious</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-deviantart"></i>
+                                    <i class="icon-fa icon-fa-deviantart"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-deviantart</span>
+                                    <span>icon-fa-deviantart</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-digg"></i>
+                                    <i class="icon-fa icon-fa-digg"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-digg</span>
+                                    <span>icon-fa-digg</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-dribbble"></i>
+                                    <i class="icon-fa icon-fa-dribbble"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-dribbble</span>
+                                    <span>icon-fa-dribbble</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-dropbox"></i>
+                                    <i class="icon-fa icon-fa-dropbox"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-dropbox</span>
+                                    <span>icon-fa-dropbox</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-drupal"></i>
+                                    <i class="icon-fa icon-fa-drupal"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-drupal</span>
+                                    <span>icon-fa-drupal</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-edge"></i>
+                                    <i class="icon-fa icon-fa-edge"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-edge</span>
+                                    <span>icon-fa-edge</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-empire"></i>
+                                    <i class="icon-fa icon-fa-empire"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-empire</span>
+                                    <span>icon-fa-empire</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-envira"></i>
+                                    <i class="icon-fa icon-fa-envira"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-envira</span>
+                                    <span>icon-fa-envira</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-expeditedssl"></i>
+                                    <i class="icon-fa icon-fa-expeditedssl"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-expeditedssl</span>
+                                    <span>icon-fa-expeditedssl</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-facebook"></i>
+                                    <i class="icon-fa icon-fa-facebook"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-facebook</span>
+                                    <span>icon-fa-facebook</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-facebook-f"></i>
+                                    <i class="icon-fa icon-fa-facebook-f"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-facebook-f(alias)</span>
+                                    <span>icon-fa-facebook-f(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-facebook-official"></i>
+                                    <i class="icon-fa icon-fa-facebook-official"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-facebook-official</span>
+                                    <span>icon-fa-facebook-official</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-facebook-square"></i>
+                                    <i class="icon-fa icon-fa-facebook-square"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-facebook-square</span>
+                                    <span>icon-fa-facebook-square</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-firefox"></i>
+                                    <i class="icon-fa icon-fa-firefox"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-firefox</span>
+                                    <span>icon-fa-firefox</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-flickr"></i>
+                                    <i class="icon-fa icon-fa-flickr"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-flickr</span>
+                                    <span>icon-fa-flickr</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-fonticons"></i>
+                                    <i class="icon-fa icon-fa-fonticons"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-fonticons</span>
+                                    <span>icon-fa-fonticons</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-fort-awesome"></i>
+                                    <i class="icon-fa icon-fa-fort-awesome"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-fort-awesome</span>
+                                    <span>icon-fa-fort-awesome</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-forumbee"></i>
+                                    <i class="icon-fa icon-fa-forumbee"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-forumbee</span>
+                                    <span>icon-fa-forumbee</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-foursquare"></i>
+                                    <i class="icon-fa icon-fa-foursquare"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-foursquare</span>
+                                    <span>icon-fa-foursquare</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-ge"></i>
+                                    <i class="icon-fa icon-fa-ge"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-ge(alias)</span>
+                                    <span>icon-fa-ge(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-get-pocket"></i>
+                                    <i class="icon-fa icon-fa-get-pocket"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-get-pocket</span>
+                                    <span>icon-fa-get-pocket</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-gg"
+                                    <i class="icon-fa icon-fa-gg"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-gg</span>
+                                    <span>icon-fa-gg</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-gg-circle"></i>
+                                    <i class="icon-fa icon-fa-gg-circle"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-gg-circle</span>
+                                    <span>icon-fa-gg-circle</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-git"></i>
+                                    <i class="icon-fa icon-fa-git"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-git</span>
+                                    <span>icon-fa-git</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-git-square"></i>
+                                    <i class="icon-fa icon-fa-git-square"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-git-square</span>
+                                    <span>icon-fa-git-square</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-github"></i>
+                                    <i class="icon-fa icon-fa-github"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-github</span>
+                                    <span>icon-fa-github</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-github-alt"></i>
+                                    <i class="icon-fa icon-fa-github-alt"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-github-alt</span>
+                                    <span>icon-fa-github-alt</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-github-square"></i>
+                                    <i class="icon-fa icon-fa-github-square"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-github-square</span>
+                                    <span>icon-fa-github-square</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-gitlab"></i>
+                                    <i class="icon-fa icon-fa-gitlab"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-gitlab</span>
+                                    <span>icon-fa-gitlab</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-gittip"></i>
+                                    <i class="icon-fa icon-fa-gittip"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-gittip(alias)</span>
+                                    <span>icon-fa-gittip(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-glide"></i>
+                                    <i class="icon-fa icon-fa-glide"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-glide</span>
+                                    <span>icon-fa-glide</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-glide-g"></i>
+                                    <i class="icon-fa icon-fa-glide-g"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-glide-g</span>
+                                    <span>icon-fa-glide-g</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-google"></i>
+                                    <i class="icon-fa icon-fa-google"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-google</span>
+                                    <span>icon-fa-google</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-google-plus"></i>
+                                    <i class="icon-fa icon-fa-google-plus"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-google-plus</span>
+                                    <span>icon-fa-google-plus</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-google-plus-square"></i>
+                                    <i class="icon-fa icon-fa-google-plus-square"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- google-plus-square</span>
+                                    <span>icon-fa- google-plus-square</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-google-wallet"></i>
+                                    <i class="icon-fa icon-fa-google-wallet"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- google-wallet</span>
+                                    <span>icon-fa- google-wallet</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-gratipay"></i>
+                                    <i class="icon-fa icon-fa-gratipay"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- gratipay</span>
+                                    <span>icon-fa- gratipay</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-hacker-news"></i>
+                                    <i class="icon-fa icon-fa-hacker-news"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- hacker-news</span>
+                                    <span>icon-fa- hacker-news</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-houzz"></i>
+                                    <i class="icon-fa icon-fa-houzz"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- houzz</span>
+                                    <span>icon-fa- houzz</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-html5"></i>
+                                    <i class="icon-fa icon-fa-html5"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- html5</span>
+                                    <span>icon-fa- html5</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-instagram"></i>
+                                    <i class="icon-fa icon-fa-instagram"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- instagram</span>
+                                    <span>icon-fa- instagram</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-internet-explorer"></i>
+                                    <i class="icon-fa icon-fa-internet-explorer"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- internet-explorer</span>
+                                    <span>icon-fa- internet-explorer</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-ioxhost"></i>
+                                    <i class="icon-fa icon-fa-ioxhost"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- ioxhost</span>
+                                    <span>icon-fa- ioxhost</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-joomla"></i>
+                                    <i class="icon-fa icon-fa-joomla"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- joomla</span>
+                                    <span>icon-fa- joomla</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-jsfiddle"></i>
+                                    <i class="icon-fa icon-fa-jsfiddle"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- jsfiddle</span>
+                                    <span>icon-fa- jsfiddle</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-lastfm"></i>
+                                    <i class="icon-fa icon-fa-lastfm"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- lastfm</span>
+                                    <span>icon-fa- lastfm</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-lastfm-square"></i>
+                                    <i class="icon-fa icon-fa-lastfm-square"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- lastfm-square</span>
+                                    <span>icon-fa- lastfm-square</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-leanpub"></i>
+                                    <i class="icon-fa icon-fa-leanpub"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- leanpub</span>
+                                    <span>icon-fa- leanpub</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-linkedin"></i>
+                                    <i class="icon-fa icon-fa-linkedin"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- linkedin</span>
+                                    <span>icon-fa- linkedin</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-linkedin-square"></i>
+                                    <i class="icon-fa icon-fa-linkedin-square"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- linkedin-square</span>
+                                    <span>icon-fa- linkedin-square</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-linux"></i>
+                                    <i class="icon-fa icon-fa-linux"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- linux</span>
+                                    <span>icon-fa- linux</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-maxcdn"></i>
+                                    <i class="icon-fa icon-fa-maxcdn"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- maxcdn</span>
+                                    <span>icon-fa- maxcdn</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-meanpath"></i>
+                                    <i class="icon-fa icon-fa-meanpath"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- meanpath</span>
+                                    <span>icon-fa- meanpath</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-medium"></i>
+                                    <i class="icon-fa icon-fa-medium"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- medium</span>
+                                    <span>icon-fa- medium</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-mixcloud"></i>
+                                    <i class="icon-fa icon-fa-mixcloud"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- mixcloud</span>
+                                    <span>icon-fa- mixcloud</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-modx"></i>
+                                    <i class="icon-fa icon-fa-modx"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- modx</span>
+                                    <span>icon-fa- modx</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-odnoklassniki"></i>
+                                    <i class="icon-fa icon-fa-odnoklassniki"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- odnoklassniki</span>
+                                    <span>icon-fa- odnoklassniki</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-odnoklassniki-square"></i>
+                                    <i class="icon-fa icon-fa-odnoklassniki-square"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-odnoklassniki-square</span>
+                                    <span>icon-fa-odnoklassniki-square</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-opencart"></i>
+                                    <i class="icon-fa icon-fa-opencart"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-opencart</span>
+                                    <span>icon-fa-opencart</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-openid"></i>
+                                    <i class="icon-fa icon-fa-openid"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-openid</span>
+                                    <span>icon-fa-openid</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-opera"></i>
+                                    <i class="icon-fa icon-fa-opera"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-opera</span>
+                                    <span>icon-fa-opera</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-optin-monster"></i>
+                                    <i class="icon-fa icon-fa-optin-monster"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-optin-monster</span>
+                                    <span>icon-fa-optin-monster</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-pagelines"></i>
+                                    <i class="icon-fa icon-fa-pagelines"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-pagelines</span>
+                                    <span>icon-fa-pagelines</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-paypal"></i>
+                                    <i class="icon-fa icon-fa-paypal"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-paypal</span>
+                                    <span>icon-fa-paypal</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-pied-piper"></i>
+                                    <i class="icon-fa icon-fa-pied-piper"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-pied-piper</span>
+                                    <span>icon-fa-pied-piper</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-pied-piper-alt"></i>
+                                    <i class="icon-fa icon-fa-pied-piper-alt"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-pied-piper-alt</span>
+                                    <span>icon-fa-pied-piper-alt</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-pinterest"></i>
+                                    <i class="icon-fa icon-fa-pinterest"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-pinterest</span>
+                                    <span>icon-fa-pinterest</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-pinterest-p"></i>
+                                    <i class="icon-fa icon-fa-pinterest-p"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-pinterest-p</span>
+                                    <span>icon-fa-pinterest-p</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-pinterest-square"></i>
+                                    <i class="icon-fa icon-fa-pinterest-square"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-pinterest-square</span>
+                                    <span>icon-fa-pinterest-square</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-product-hunt"></i>
+                                    <i class="icon-fa icon-fa-product-hunt"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-product-hunt</span>
+                                    <span>icon-fa-product-hunt</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-qq"
+                                    <i class="icon-fa icon-fa-qq"
                                     ></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-qq</span>
+                                    <span>icon-fa-qq</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-ra"></i>
+                                    <i class="icon-fa icon-fa-ra"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-ra(alias)</span>
+                                    <span>icon-fa-ra(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-rebel"></i>
+                                    <i class="icon-fa icon-fa-rebel"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-rebel</span>
+                                    <span>icon-fa-rebel</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-reddit"></i>
+                                    <i class="icon-fa icon-fa-reddit"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-reddit</span>
+                                    <span>icon-fa-reddit</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-reddit-alien"></i>
+                                    <i class="icon-fa icon-fa-reddit-alien"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-reddit-alien</span>
+                                    <span>icon-fa-reddit-alien</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-reddit-square"></i>
+                                    <i class="icon-fa icon-fa-reddit-square"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-reddit-square</span>
+                                    <span>icon-fa-reddit-square</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-renren"></i>
+                                    <i class="icon-fa icon-fa-renren"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-renren</span>
+                                    <span>icon-fa-renren</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-safari"></i>
+                                    <i class="icon-fa icon-fa-safari"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-safari</span>
+                                    <span>icon-fa-safari</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-scribd"></i>
+                                    <i class="icon-fa icon-fa-scribd"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-scribd</span>
+                                    <span>icon-fa-scribd</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-sellsy"></i>
+                                    <i class="icon-fa icon-fa-sellsy"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-sellsy</span>
+                                    <span>icon-fa-sellsy</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-share-alt"></i>
+                                    <i class="icon-fa icon-fa-share-alt"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-share-alt</span>
+                                    <span>icon-fa-share-alt</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-share-alt-square"></i>
+                                    <i class="icon-fa icon-fa-share-alt-square"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-share-alt-square</span>
+                                    <span>icon-fa-share-alt-square</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-shirtsinbulk"></i>
+                                    <i class="icon-fa icon-fa-shirtsinbulk"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-shirtsinbulk</span>
+                                    <span>icon-fa-shirtsinbulk</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-simplybuilt"></i>
+                                    <i class="icon-fa icon-fa-simplybuilt"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-simplybuilt</span>
+                                    <span>icon-fa-simplybuilt</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-skyatlas"></i>
+                                    <i class="icon-fa icon-fa-skyatlas"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-skyatlas</span>
+                                    <span>icon-fa-skyatlas</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-skype"></i>
+                                    <i class="icon-fa icon-fa-skype"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-skype</span>
+                                    <span>icon-fa-skype</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-slack"></i>
+                                    <i class="icon-fa icon-fa-slack"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-slack</span>
+                                    <span>icon-fa-slack</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-slideshare"></i>
+                                    <i class="icon-fa icon-fa-slideshare"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-slideshare</span>
+                                    <span>icon-fa-slideshare</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-snapchat"></i>
+                                    <i class="icon-fa icon-fa-snapchat"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-snapchat</span>
+                                    <span>icon-fa-snapchat</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-snapchat-ghost"></i>
+                                    <i class="icon-fa icon-fa-snapchat-ghost"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-snapchat-ghost</span>
+                                    <span>icon-fa-snapchat-ghost</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-snapchat-square"></i>
+                                    <i class="icon-fa icon-fa-snapchat-square"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-snapchat-square</span>
+                                    <span>icon-fa-snapchat-square</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-soundcloud"></i>
+                                    <i class="icon-fa icon-fa-soundcloud"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-soundcloud</span>
+                                    <span>icon-fa-soundcloud</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-spotify"></i>
+                                    <i class="icon-fa icon-fa-spotify"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-spotify</span>
+                                    <span>icon-fa-spotify</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-stack-exchange"></i>
+                                    <i class="icon-fa icon-fa-stack-exchange"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-stack-exchange</span>
+                                    <span>icon-fa-stack-exchange</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-stack-overflow"></i>
+                                    <i class="icon-fa icon-fa-stack-overflow"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-stack-overflow</span>
+                                    <span>icon-fa-stack-overflow</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-steam"></i>
+                                    <i class="icon-fa icon-fa-steam"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-steam</span>
+                                    <span>icon-fa-steam</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-steam-square"></i>
+                                    <i class="icon-fa icon-fa-steam-square"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-steam-square</span>
+                                    <span>icon-fa-steam-square</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-stumbleupon"></i>
+                                    <i class="icon-fa icon-fa-stumbleupon"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-stumbleupon</span>
+                                    <span>icon-fa-stumbleupon</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-stumbleupon-circle"></i>
+                                    <i class="icon-fa icon-fa-stumbleupon-circle"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-stumbleupon-circle</span>
+                                    <span>icon-fa-stumbleupon-circle</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-tencent-weibo"></i>
+                                    <i class="icon-fa icon-fa-tencent-weibo"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-tencent-weibo</span>
+                                    <span>icon-fa-tencent-weibo</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-trello"></i>
+                                    <i class="icon-fa icon-fa-trello"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-trello</span>
+                                    <span>icon-fa-trello</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-tripadvisor"></i>
+                                    <i class="icon-fa icon-fa-tripadvisor"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-tripadvisor</span>
+                                    <span>icon-fa-tripadvisor</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-tumblr"></i>
+                                    <i class="icon-fa icon-fa-tumblr"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-tumblr</span>
+                                    <span>icon-fa-tumblr</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-tumblr-square"></i>
+                                    <i class="icon-fa icon-fa-tumblr-square"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-tumblr-square</span>
+                                    <span>icon-fa-tumblr-square</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-twitch"></i>
+                                    <i class="icon-fa icon-fa-twitch"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-twitch</span>
+                                    <span>icon-fa-twitch</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-twitter"></i>
+                                    <i class="icon-fa icon-fa-twitter"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-twitter</span>
+                                    <span>icon-fa-twitter</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-twitter-square"></i>
+                                    <i class="icon-fa icon-fa-twitter-square"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-twitter-square</span>
+                                    <span>icon-fa-twitter-square</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-usb"></i>
+                                    <i class="icon-fa icon-fa-usb"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-usb</span>
+                                    <span>icon-fa-usb</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-viacoin"></i>
+                                    <i class="icon-fa icon-fa-viacoin"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- viacoin</span>
+                                    <span>icon-fa- viacoin</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-viadeo"></i>
+                                    <i class="icon-fa icon-fa-viadeo"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- viadeo</span>
+                                    <span>icon-fa- viadeo</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-viadeo-square"></i>
+                                    <i class="icon-fa icon-fa-viadeo-square"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- viadeo-square</span>
+                                    <span>icon-fa- viadeo-square</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-vimeo"></i>
+                                    <i class="icon-fa icon-fa-vimeo"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- vimeo</span>
+                                    <span>icon-fa- vimeo</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-vimeo-square"></i>
+                                    <i class="icon-fa icon-fa-vimeo-square"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- vimeo-square</span>
+                                    <span>icon-fa- vimeo-square</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-vine"></i>
+                                    <i class="icon-fa icon-fa-vine"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- vine</span>
+                                    <span>icon-fa- vine</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-vk"></i>
+                                    <i class="icon-fa icon-fa-vk"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-vk</span>
+                                    <span>icon-fa-vk</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-wechat"></i>
+                                    <i class="icon-fa icon-fa-wechat"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- wechat(alias)</span>
+                                    <span>icon-fa- wechat(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-weibo"></i>
+                                    <i class="icon-fa icon-fa-weibo"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- weibo</span>
+                                    <span>icon-fa- weibo</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-weixin"></i>
+                                    <i class="icon-fa icon-fa-weixin"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- weixin</span>
+                                    <span>icon-fa- weixin</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-whatsapp"></i>
+                                    <i class="icon-fa icon-fa-whatsapp"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- whatsapp</span>
+                                    <span>icon-fa- whatsapp</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-wikipedia-w"></i>
+                                    <i class="icon-fa icon-fa-wikipedia-w"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- wikipedia-w</span>
+                                    <span>icon-fa- wikipedia-w</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-windows"></i>
+                                    <i class="icon-fa icon-fa-windows"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- windows</span>
+                                    <span>icon-fa- windows</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-wordpress"></i>
+                                    <i class="icon-fa icon-fa-wordpress"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- wordpress</span>
+                                    <span>icon-fa- wordpress</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-wpbeginner"></i>
+                                    <i class="icon-fa icon-fa-wpbeginner"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- wpbeginner</span>
+                                    <span>icon-fa- wpbeginner</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-wpforms"></i>
+                                    <i class="icon-fa icon-fa-wpforms"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- wpforms</span>
+                                    <span>icon-fa- wpforms</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-xing"></i>
+                                    <i class="icon-fa icon-fa-xing"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- xing</span>
+                                    <span>icon-fa- xing</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-xing-square"></i>
+                                    <i class="icon-fa icon-fa-xing-square"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- xing-square</span>
+                                    <span>icon-fa- xing-square</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-y-combinator"></i>
+                                    <i class="icon-fa icon-fa-y-combinator"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- y-combinator</span>
+                                    <span>icon-fa- y-combinator</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-y-combinator-square"></i>
+                                    <i class="icon-fa icon-fa-y-combinator-square"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- y-combinator-square(alias)</span>
+                                    <span>icon-fa- y-combinator-square(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-yahoo"></i>
+                                    <i class="icon-fa icon-fa-yahoo"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- yahoo</span>
+                                    <span>icon-fa- yahoo</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-yc"></i>
+                                    <i class="icon-fa icon-fa-yc"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-yc(alias)</span>
+                                    <span>icon-fa-yc(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-yc-square"></i>
+                                    <i class="icon-fa icon-fa-yc-square"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- yc-square(alias)</span>
+                                    <span>icon-fa- yc-square(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-yelp"></i>
+                                    <i class="icon-fa icon-fa-yelp"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- yelp</span>
+                                    <span>icon-fa- yelp</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-youtube"></i>
+                                    <i class="icon-fa icon-fa-youtube"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- youtube</span>
+                                    <span>icon-fa- youtube</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-youtube-play"></i>
+                                    <i class="icon-fa icon-fa-youtube-play"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- youtube-play</span>
+                                    <span>icon-fa- youtube-play</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-youtube-square"></i>
+                                    <i class="icon-fa icon-fa-youtube-square"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa- youtube-square</span>
+                                    <span>icon-fa- youtube-square</span>
                                 </div>
                             </div>
                             <div class="demo-icon"></div>
@@ -6907,98 +6907,98 @@
                         <div class="icon-container">
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-ambulance"></i>
+                                    <i class="icon-fa icon-fa-ambulance"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-ambulance</span>
+                                    <span>icon-fa-ambulance</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-h-square"></i>
+                                    <i class="icon-fa icon-fa-h-square"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-h-square</span>
+                                    <span>icon-fa-h-square</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-heart"></i>
+                                    <i class="icon-fa icon-fa-heart"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-heart</span>
+                                    <span>icon-fa-heart</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-heart-o"></i>
+                                    <i class="icon-fa icon-fa-heart-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-heart-o</span>
+                                    <span>icon-fa-heart-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-heartbeat"></i>
+                                    <i class="icon-fa icon-fa-heartbeat"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-heartbeat</span>
+                                    <span>icon-fa-heartbeat</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-hospital-o"></i>
+                                    <i class="icon-fa icon-fa-hospital-o"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-hospital-o</span>
+                                    <span>icon-fa-hospital-o</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-medkit"></i>
+                                    <i class="icon-fa icon-fa-medkit"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-medkit</span>
+                                    <span>icon-fa-medkit</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-plus-square"></i>
+                                    <i class="icon-fa icon-fa-plus-square"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-plus-square</span>
+                                    <span>icon-fa-plus-square</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-stethoscope"></i>
+                                    <i class="icon-fa icon-fa-stethoscope"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-stethoscope</span>
+                                    <span>icon-fa-stethoscope</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-user-md"></i>
+                                    <i class="icon-fa icon-fa-user-md"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-user-md</span>
+                                    <span>icon-fa-user-md</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-wheelchair"></i>
+                                    <i class="icon-fa icon-fa-wheelchair"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-wheelchair</span>
+                                    <span>icon-fa-wheelchair</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i class="fa fa-wheelchair-alt"></i>
+                                    <i class="icon-fa icon-fa-wheelchair-alt"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>fa-wheelchair-alt</span>
+                                    <span>icon-fa-wheelchair-alt</span>
                                 </div>
                             </div>
                         </div>

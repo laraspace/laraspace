@@ -5,10 +5,20 @@
             @if(isset($menu['children']))
                 <div class="dropdown-menu">
                     @foreach($menu['children'] as $child)
-                        <a class="dropdown-item" href="{{url($child['link'])}}">{{$child['title']}}</a>
+                        <div class="@if(isset($child['children']))dropdown-submenu @endif">
+                            <a class="dropdown-item  @if(isset($child['children'])) dropdown-subitem @endif" href="{{url($child['link'])}}">{{$child['title']}}</a>
+                            @if(isset($child['children']))
+                                <div class="dropdown-menu">
+                                    @foreach($child['children'] as $subchild)
+                                        <a class="dropdown-item" href="{{url($subchild['link'])}}">{{$subchild['title']}}</a>
+                                    @endforeach
+                                </div>
+                            @endif
+                        </div>
                     @endforeach
                 </div>
             @endif
         </li>
     @endforeach
 </ul>
+

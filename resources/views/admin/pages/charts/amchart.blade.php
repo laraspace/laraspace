@@ -1,8 +1,7 @@
 @extends('admin.layouts.layout-basic')
 
 @section('scripts')
-    <script src="{{asset('assets/light.js')}}"></script>
-    <script src="{{asset('assets/admin/js/demo/charts/amcharts.js')}}"></script>
+    <script src="{{asset('assets/admin/js/pages/charts/amcharts.js')}}"></script>
 @stop
 
 @section('content')
@@ -11,7 +10,7 @@
             <h3 class="page-title">AMCharts</h3>
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="{{route('admin.dashboard')}}">Home</a></li>
-                <li class="breadcrumb-item"><a href="{{route('admin.components.graphs')}}">Components</a></li>
+                <li class="breadcrumb-item"><a href="{{route('admin.charts.amcharts')}}">Charts</a></li>
                 <li class="breadcrumb-item active">AMCharts</li>
             </ol>
         </div>
@@ -19,7 +18,7 @@
             <div class="col-lg-12">
                 <div class="card">
                     <div class="card-header">
-                        <h6>Column and Line mix Chart</h6>
+                        <h6>Column and Line Chart</h6>
                     </div>
                     <div class="card-block">
                         <div class="amcharts" id="bar-line-chart"></div>

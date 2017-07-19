@@ -1,14 +1,7 @@
 @extends('admin.layouts.layout-basic')
 
-@section('styles')
-    <style>
-        .sparkline-chart .row .col {
-            margin: 25px 40px;
-        }
-    </style>
-@stop
 @section('scripts')
-    <script src="{{asset('assets/admin/js/demo/charts/sparklines.js')}}"></script>
+    <script src="{{asset('assets/admin/js/pages/charts/sparklines.js')}}"></script>
 @stop
 
 @section('content')
@@ -17,12 +10,12 @@
             <h3 class="page-title">Sparkline Charts</h3>
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="{{route('admin.dashboard')}}">Home</a></li>
-                <li class="breadcrumb-item"><a href="{{route('admin.components.graphs')}}">Components</a></li>
+                <li class="breadcrumb-item"><a href="{{route('admin.charts.sparklines')}}">Charts</a></li>
                 <li class="breadcrumb-item active">Sparkline Charts</li>
             </ol>
         </div>
         <div class="row">
-            <div class="col-sm-12">
+            <div class="col-lg-12">
                 <div class="card">
                     <div class="card-block">
                         <div class="sparkline-chart">
@@ -35,18 +28,16 @@
                                     <h5 class="section-semi-title">Line Chart:</h5>
                                     <span class="spl-chart spl-line-chart"></span>
                                 </div>
-                            </div>
-                            <div class="row">
                                 <div class="col">
                                     <h5 class="section-semi-title">Inline Chart:</h5>
                                     <span class="spl-inline">1,4,4,7,5,9,10</span>
                                 </div>
+                            </div>
+                            <div class="row">
                                 <div class="col">
                                     <h5 class="section-semi-title">Composite Inline Chart:</h5>
                                     <span class="spl-cp-inline">8,4,0,0,0,0,1,4,4,10,10,10,10,0,0,0,4,6,5,9,10</span>
                                 </div>
-                            </div>
-                            <div class="row">
                                 <div class="col">
                                     <h5 class="section-semi-title">Bar Charts:</h5>
                                     <span class="spl-bar-chart">6, 10, 5, 2, 0, 6, 15, 13, 1, 4, 2, 3</span>
@@ -65,18 +56,16 @@
                                     <h5 class="section-semi-title">Composite Inline Bar Chart:</h5>
                                     <span class="spl-cp-bar-chart">4,6,7,7,4,3,2,1,4</span>
                                 </div>
-                            </div>
-                            <div class="row">
                                 <div class="col">
                                     <h5 class="section-semi-title">Discrete Charts:</h5>
                                     <span class="spl-discreate1">4,6,7,7,4,3,2,1,4,4,5,5,8,3,3</span>
                                 </div>
+                            </div>
+                            <div class="row">
                                 <div class="col">
                                     <h5 class="section-semi-title">Discrete with threshold:</h5>
                                     <span class="spl-discreate2">4,6,7,7,4,3,2,1,4,4,5,5,8,3,3</span>
                                 </div>
-                            </div>
-                            <div class="row">
                                 <div class="col">
                                     <h5 class="section-semi-title">Tristate Charts:</h5>
                                     <span class="spl-tristate">1,1,0,1,-1,-1,1,-1,0,0,1,1</span>
@@ -95,12 +84,12 @@
                                     <h5 class="section-semi-title">Pre-computed box Plot:</h5>
                                     <span class="spl-boxplotraw">1, 3, 5, 8, 10, 15, 18</span>
                                 </div>
-                            </div>
-                            <div class="row">
                                 <div class="col">
                                     <h5 class="section-semi-title">Bullet charts:</h5>
                                     <span class="spl-bullet">10,12,12,9,7</span>
                                 </div>
+                            </div>
+                            <div class="row">
                                 <div class="col">
                                     <h5 class="section-semi-title">Pie Chart:</h5>
                                     <span class="spl-pie-chart">4,2,3</span>

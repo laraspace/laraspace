@@ -1,15 +1,11 @@
 @extends('admin.layouts.layout-horizontal')
 
-@section('scripts')
-    <script src="/assets/admin/js/dashboard/dashboard.js"></script>
-@stop
-
 @section('content')
     <div class="main-content">
         <div class="row">
             <div class="col-md-12 col-lg-6 col-xl-3">
                 <a class="dashbox" href="#">
-                    <i class="fa fa-envelope text-primary"></i>
+                    <i class="icon-fa icon-fa-envelope text-primary"></i>
                 <span class="title">
                   35
                 </span>
@@ -20,7 +16,7 @@
             </div>
             <div class="col-md-12 col-lg-6 col-xl-3">
                 <a class="dashbox" href="#">
-                    <i class="fa fa-ticket text-success"></i>
+                    <i class="icon-fa icon-fa-ticket text-success"></i>
                 <span class="title">
                   200
                 </span>
@@ -31,7 +27,7 @@
             </div>
             <div class="col-md-12 col-lg-6 col-xl-3">
                 <a class="dashbox" href="#">
-                    <i class="fa fa-shopping-cart text-danger"></i>
+                    <i class="icon-fa icon-fa-shopping-cart text-danger"></i>
                 <span class="title">
                   100
                 </span>
@@ -42,7 +38,7 @@
             </div>
             <div class="col-md-12 col-lg-6 col-xl-3">
                 <a class="dashbox" href="#">
-                    <i class="fa fa-comments text-info"></i>
+                    <i class="icon-fa icon-fa-comments text-info"></i>
                 <span class="title">
                   59
                 </span>
@@ -56,7 +52,7 @@
             <div class="col-lg-12 col-xl-6 m-t-2">
                 <div class="card">
                     <div class="card-header">
-                        <h6><i class="fa fa-line-chart text-primary"></i> Monthly Sales</h6>
+                        <h6><i class="icon-fa icon-fa-line-chart text-primary"></i> Monthly Sales</h6>
                     </div>
                     <div class="card-block">
                         <line-graph :labels="['Jan','Feb','Mar','June']" :values="[20,30,40,60]"></line-graph>
@@ -66,7 +62,7 @@
             <div class="col-lg-12 col-xl-6 m-t-2">
                 <div class="card">
                     <div class="card-header">
-                        <h6><i class="fa fa-bar-chart text-success"></i> Yearly Sales</h6>
+                        <h6><i class="icon-fa icon-fa-bar-chart text-success"></i> Yearly Sales</h6>
                     </div>
                     <div class="card-block">
                         <bar-graph :labels="['Jan','Feb','Mar','June']" :values="[20,30,40,60]"></bar-graph>
@@ -78,7 +74,7 @@
             <div class="col-lg-12 col-xl-6 m-t-2">
                 <div class="card">
                     <div class="card-header">
-                        <h6><i class="fa fa-shopping-cart text-danger"></i> Recent Orders</h6>
+                        <h6><i class="icon-fa icon-fa-shopping-cart text-danger"></i> Recent Orders</h6>
                     </div>
                     <div class="card-block">
                         <table class="table">
@@ -111,7 +107,7 @@
             <div class="col-lg-12 col-xl-6 m-t-2">
                 <div class="card">
                     <div class="card-header">
-                        <h6><i class="fa fa-users text-info"></i> New Customers</h6>
+                        <h6><i class="icon-fa icon-fa-users text-info"></i> New Customers</h6>
                     </div>
                     <div class="card-block">
                         <table class="table">

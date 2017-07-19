@@ -1,8 +1,9 @@
 {
-  "/assets/admin/js/pages/dashboard.js": "/assets/admin/js/pages/dashboard.2f6a0eb9ee12f77606a3.js",
-  "/assets/admin/css/laraspace.css": "/assets/admin/css/laraspace.d3288f7e111eae18aa4a.css",
-  "/assets/front/css/front.css": "/assets/front/css/front.d3288f7e111eae18aa4a.css",
-  "/assets/admin/js/pages/todos.js": "/assets/admin/js/pages/todos.9b122ceea7c9793a9edc.js",
-  "/assets/admin/js/core/plugins.js": "/assets/admin/js/core/plugins.4ed5bb36c8ad93db4ff1eaaf6d22495c.js",
-  "/assets/front/js/plugins.js": "/assets/front/js/plugins.79d9740c76f50ae5138f4d828b9c7010.js"
+    "/assets/admin/js/pages/dashboard.js": "/assets/admin/js/pages/dashboard.js?id=796e2121bfaf130331cd",
+    "/assets/front/css/front.css": "/assets/front/css/front.css?id=1c779fa890416535860b",
+    "/assets/admin/js/pages/todos.js": "/assets/admin/js/pages/todos.js?id=8efcf628f79f0dee2eb3",
+    "/assets/admin/js/settings/mail.js": "/assets/admin/js/settings/mail.js?id=57577859e73210358846",
+    "/assets/admin/js/core/plugins.js": "/assets/admin/js/core/plugins.js?id=b813af4e325ab7ac3b42",
+    "/assets/front/js/plugins.js": "/assets/front/js/plugins.js?id=79d9740c76f50ae5138f",
+    "/assets/admin/css/laraspace.css": "/assets/admin/css/laraspace.css?id=8de7e7c9781f30114dfd"
 }

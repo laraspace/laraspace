@@ -182,6 +182,17 @@ class PagesController extends Controller
         return view('admin.sessions.login-3');
     }
 
+    // Register
+    public function register2()
+    {
+        return view('admin.sessions.register-2');
+    }
+
+    public function register3()
+    {
+        return view('admin.sessions.register-3');
+    }
+
     public function nestableList()
     {
         return view('admin.pages.components.nestable-list');
@@ -192,7 +203,7 @@ class PagesController extends Controller
         return view('admin.pages.components.nestable-tree');
     }
 
-    //icons
+    // Icons
     public function icoMoons()
     {
         return view('admin.pages.icons.ico-moon');
