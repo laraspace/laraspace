@@ -11,7 +11,18 @@
             </ol>
         </div>
         <div class="row">
-            <div class="col-md-11">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-block">
+                        <pre class="language-php">
+                            <code> &#10;  // This class use to show Fontawesome Icon&#13; &#13;  &lt;i class="icon-fa icon-fa-adjust"&gt;&lt;/i&gt;</code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
                 <div class="card">
                     <div class="card-block">
                         <h4 class="page-header">Web Application Icons</h4>
@@ -1139,7 +1150,7 @@
                                 </div>
                             </div>
                             <div class="demo-icon">
-                                <div class="icon-box">l
+                                <div class="icon-box">
                                     <i class="icon-fa icon-fa-female"></i>
                                 </div>
                                 <div class="icon-classname">
@@ -2046,7 +2057,7 @@
                                     <i class="icon-fa icon-fa-mobile-phone"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-fa-mobile-phone>(alias)</span>
+                                    <span>icon-fa-mobile-phone(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
@@ -2742,7 +2753,7 @@
                                     <i class="icon-fa icon-fa-sort-up"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-fa-sort-up>(alias)</span>
+                                    <span>icon-fa-sort-up(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
@@ -2806,7 +2817,7 @@
                                     <i class="icon-fa icon-fa-star-half-empty"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-fa-star-half-empty>(alias)</span>
+                                    <span>icon-fa-star-half-empty(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
@@ -2814,7 +2825,7 @@
                                     <i class="icon-fa icon-fa-star-half-full"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-fa-star-half-full>(alias)</span>
+                                    <span>icon-fa-star-half-full(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
@@ -2878,7 +2889,7 @@
                                     <i class="icon-fa icon-fa-support"></i>
                                 </div>
                                 <div class="icon-classname">
-                                    <span>icon-fa-support>(alias)</span>
+                                    <span>icon-fa-support(alias)</span>
                                 </div>
                             </div>
                             <div class="demo-icon">
@@ -3322,8 +3333,6 @@
                                     <span>icon-fa- wrench</span>
                                 </div>
                             </div>
-                            <div class="demo-icon"></div>
-                            <div class="demo-icon"></div>
                         </div>
                         </br>
                         <h4 class="page-header">Accessibility Icons</h4>
@@ -3483,7 +3492,6 @@
                                     <span>icon-fa-wheelchair-alt</span>
                                 </div>
                             </div>
-                            <div class="demo-icon"></div>
                         </div>
                         </br>
                         <h4 class="page-header">Hand Icons</h4>
@@ -3773,8 +3781,6 @@
                                     <span>icon-fa-wheelchair-alt</span>
                                 </div>
                             </div>
-                            <div class="demo-icon"></div>
-                            <div class="demo-icon"></div>
                         </div>
                         </br>
                         <h4 class="page-header">Gender Icons</h4>
@@ -3891,8 +3897,6 @@
                                     <span>icon-fa-venus-mars</span>
                                 </div>
                             </div>
-                            <div class="demo-icon"></div>
-                            <div class="demo-icon"></div>
                         </div>
                         </br>
                         <h4 class="page-header">File Type Icons</h4>
@@ -4042,8 +4046,6 @@
                                     <span>icon-fa-file-zip-o</span>
                                 </div>
                             </div>
-                            <div class="demo-icon"></div>
-                            <div class="demo-icon"></div>
                         </div>
                         </br>
                         <h4 class="page-header">Spinner Icons</h4>
@@ -4180,7 +4182,6 @@
                                     <span>icon-fa-square-o</span>
                                 </div>
                             </div>
-                            <div class="demo-icon"></div>
                         </div>
                         </br>
                         <h4 class="page-header">Payment Icons</h4>
@@ -4538,8 +4539,6 @@
                                     <span>icon-fa-yen(alias)</span>
                                 </div>
                             </div>
-                            <div class="demo-icon"></div>
-                            <div class="demo-icon"></div>
                         </div>
                         </br>
                         <h4 class="page-header">Text Editor Icons</h4>
@@ -6900,7 +6899,6 @@
                                     <span>icon-fa- youtube-square</span>
                                 </div>
                             </div>
-                            <div class="demo-icon"></div>
                         </div>
                         </br>
                         <h4 class="page-header">Medical Icons</h4>

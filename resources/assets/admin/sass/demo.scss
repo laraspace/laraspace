@@ -22,12 +22,12 @@
 // ICON DEMO
 .icon-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 
 .icon-container .demo-icon {
-  flex: 1;
+  flex: 0.2;
   display: flex;
   flex-direction: row;
   min-width: 300px;
@@ -312,7 +312,10 @@ tr > td > .fc-day-grid-event{
   position: relative;
 }
 
-
+//PRISM CSS
+pre[class*="language-"]{
+  padding: 0;
+}
 
 // SKINS DEMO
 .skin-tools {
