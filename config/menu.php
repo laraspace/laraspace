@@ -122,11 +122,6 @@ return [
                     'active' => 'admin/components/notifications',
                 ],
                 [
-                    'title' => 'Graphs',
-                    'link' => '/admin/components/graphs',
-                    'active' => 'admin/components/graphs',
-                ],
-                [
                     'title'=>' Nestable List',
                     'link'=>'/admin/components/nestable-list',
                     'active'=>'admin/components/nestable-list',
@@ -178,12 +173,17 @@ return [
             'icon' => 'icon-fa icon-fa-bar-chart',
             'children' => [
                 [
+                    'title' => 'Chart JS',
+                    'link' => '/admin/charts/chartjs',
+                    'active' => 'admin/charts/chartjs',
+                ],
+                [
                     'title' => 'Sparkline',
                     'link' => '/admin/charts/sparklines',
                     'active' => 'admin/charts/sparklines',
                 ],
                 [
-                    'title' => 'AMCharts',
+                    'title' => 'AM Charts',
                     'link' => '/admin/charts/amcharts',
                     'active' => 'admin/charts/amcharts',
                 ],
@@ -269,9 +269,9 @@ return [
                     'active' => 'admin/forms/wizards',
                 ],
                 [
-                    'title' => 'Form Wizard with circle',
-                    'link' => '/admin/forms/wizard-with-circles',
-                    'active' => 'admin/forms/wizard-with-circles',
+                    'title' => 'Form Wizard 2',
+                    'link' => '/admin/forms/wizards-2',
+                    'active' => 'admin/forms/wizards-2',
                 ],
                 [
                     'title' => 'Editors',
@@ -492,11 +492,6 @@ return [
                     'title' => 'Notifications',
                     'link' => '/admin/components/notifications',
                     'active' => 'admin/components/notifications',
-                ],
-                [
-                    'title' => 'Graphs',
-                    'link' => '/admin/components/graphs',
-                    'active' => 'admin/components/graphs',
                 ],
                 [
                     'title'=>' Nestable List',

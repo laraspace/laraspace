@@ -108,10 +108,6 @@ Route::group([
             'as' => 'admin.components.notifications', 'uses' => 'Demo\PagesController@notifications'
         ]);
 
-        Route::get('graphs', [
-            'as' => 'admin.components.graphs', 'uses' => 'Demo\PagesController@graphs'
-        ]);
-
         Route::get('datatables', [
             'as' => 'admin.components.datatables', 'uses' => 'Demo\PagesController@datatables'
         ]);
@@ -155,6 +151,10 @@ Route::group([
     //----------------------------------
 
     Route::group(['prefix' => 'charts'], function () {
+
+        Route::get('chartjs', [
+            'as' => 'admin.charts.chartjs', 'uses' => 'Demo\PagesController@chartjs'
+        ]);
 
         Route::get('sparklines', [
             'as' => 'admin.charts.sparklines', 'uses' => 'Demo\PagesController@sparklineCharts'
@@ -203,8 +203,8 @@ Route::group([
             'as' => 'admin.forms.wizards', 'uses' => 'Demo\PagesController@wizards'
         ]);
 
-        Route::get('wizard-with-circles', [
-            'as' => 'admin.forms.wizard-with-circles', 'uses' => 'Demo\PagesController@wizardWithCircles'
+        Route::get('wizards-2', [
+            'as' => 'admin.forms.wizards2', 'uses' => 'Demo\PagesController@wizards2'
         ]);
 
     });

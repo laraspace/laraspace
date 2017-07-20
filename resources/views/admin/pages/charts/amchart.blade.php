@@ -7,11 +7,11 @@
 @section('content')
     <div class="main-content">
         <div class="page-header">
-            <h3 class="page-title">AMCharts</h3>
+            <h3 class="page-title">AM Charts</h3>
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="{{route('admin.dashboard')}}">Home</a></li>
                 <li class="breadcrumb-item"><a href="{{route('admin.charts.amcharts')}}">Charts</a></li>
-                <li class="breadcrumb-item active">AMCharts</li>
+                <li class="breadcrumb-item active">AM Charts</li>
             </ol>
         </div>
         <div class="row">

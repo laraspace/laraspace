@@ -7,11 +7,11 @@
 @section('content')
     <div class="main-content">
         <div class="page-header">
-            <h3 class="page-title">Form Wizards</h3>
+            <h3 class="page-title">Form Wizard</h3>
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">Home</a></li>
                 <li class="breadcrumb-item"><a href="#">Forms</a></li>
-                <li class="breadcrumb-item active">Wizards</li>
+                <li class="breadcrumb-item active">Form Wizard</li>
             </ol>
         </div>
         <div class="card">
@@ -265,7 +265,7 @@
             </div>
             <div class="card-block">
                 <div class="content">
-                    <form id="basic-wizard-3" class="basic-wizard  icon-wizard">
+                    <form id="basic-wizard-3" class="basic-wizard icon-wizard">
                         <h3><i class="icon-fa icon-fa-home"></i>Step 1</h3>
                         <section>
                             <div class="row">

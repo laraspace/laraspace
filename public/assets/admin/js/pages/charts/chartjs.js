@@ -1,4 +1,4 @@
-var Charts = function () {
+var ChartJS = function () {
 
     var handleLineChart = function(){
 
@@ -130,6 +130,6 @@ var Charts = function () {
 }();
 
 jQuery(document).ready(function() {
-    Charts.init();
+    ChartJS.init();
 });
 

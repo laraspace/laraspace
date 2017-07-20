@@ -103,6 +103,11 @@ class PagesController extends Controller
 
     //Charts
 
+    public function chartjs()
+    {
+        return view('admin.pages.charts.chartjs');
+    }
+
     public function sparklineCharts()
     {
         return view('admin.pages.charts.sparkline');
@@ -122,7 +127,6 @@ class PagesController extends Controller
     {
         return view('admin.pages.charts.gauge');
     }
-
 
     // Forms
     public function general()
@@ -155,9 +159,9 @@ class PagesController extends Controller
         return view('admin.pages.forms.wizards');
     }
 
-    public function wizardWithCircles()
+    public function wizards2()
     {
-        return view('admin.pages.forms.wizard-with-circles');
+        return view('admin.pages.forms.wizards2');
     }
 
     // Gallery
