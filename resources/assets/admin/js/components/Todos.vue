@@ -8,7 +8,7 @@
                     <li v-for="(todo,index) in todos">
                         <input type="checkbox" class="toggle" :id="index" v-bind:true-value="1" v-bind:false-value="0" v-model="todo.completed" v-on:change="toggleTodoComplete(todo)">
                         <label :for="index">{{todo.title}}</label>
-                        <a href="#" class="remove-link" v-on:click.prevent="removeTodo(todo)"><i class="fa fa-close"></i></a>
+                        <a href="#" class="remove-link" v-on:click.prevent="removeTodo(todo)"><i class="icon-fa icon-fa-close"></i></a>
                     </li>
                 </ul>
             </div>

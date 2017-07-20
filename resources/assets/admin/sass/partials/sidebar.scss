@@ -6,10 +6,6 @@
     li {
         display: block;
 
-        //.sub-menu {
-        //  display: none;
-        //}
-
         a {
             color: $sidebar-font-color;
             display: block;
@@ -59,6 +55,24 @@
     ul {
         background-color: $sidemenu-submenu-bg;
         padding: 0;
+    }
+
+    // Sub Menu
+    //----------------------------------
+
+    ul.submenu{
+        background: #464646;
+
+        li.has-child > a::before {
+            border-color: $sidemenu-arrow-color transparent transparent;
+            content: '\f067';
+            position: absolute;
+            right: 21px;
+            top: 50%;
+            transform: rotate(-90deg);
+            transition: all .2s ease-in-out;
+            width: 0;
+        }
     }
 
 }

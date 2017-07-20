@@ -26,7 +26,9 @@ Route::group([
 //    'middleware' => 'admin'
 ], function () {
 
-    //Main Dashboard
+    // Dashboard
+    //----------------------------------
+
     Route::get('/', [
         'as' => 'admin.dashboard', 'uses' => 'DashboardController@index'
     ]);
@@ -44,6 +46,8 @@ Route::group([
     ]);
 
     // Layouts
+    //----------------------------------
+
     Route::group(['prefix' => 'layouts'], function () {
 
         Route::get('sidebar', [
@@ -60,7 +64,9 @@ Route::group([
 
     });
 
-    //Ui Elements
+    // UI Elements
+    //----------------------------------
+
     Route::group(['prefix' => 'basic-ui'], function () {
 
         Route::get('buttons', [
@@ -93,7 +99,8 @@ Route::group([
 
     });
 
-    //Component Routes
+    // Components
+    //----------------------------------
 
     Route::group(['prefix' => 'components'], function () {
 
@@ -144,7 +151,9 @@ Route::group([
 
     });
 
-    //Charts
+    // Charts
+    //----------------------------------
+
     Route::group(['prefix' => 'charts'], function () {
 
         Route::get('sparklines', [
@@ -165,7 +174,8 @@ Route::group([
 
     });
 
-    //Forms Routes
+    // Form Components
+    //----------------------------------
 
     Route::group(['prefix' => 'forms'], function () {
 
@@ -199,7 +209,9 @@ Route::group([
 
     });
 
-    //Gallery
+    // Gallery Components
+    //----------------------------------
+
     Route::group(['prefix' => 'gallery'], function () {
 
         Route::get('grid', [
@@ -211,7 +223,8 @@ Route::group([
         ]);
     });
 
-    //Login Options
+    // Login & Register Pages
+    //----------------------------------
 
     Route::get('login-2', [
         'as' => 'admin.login-2', 'uses' => 'Demo\PagesController@login2'
@@ -229,17 +242,9 @@ Route::group([
         'as' => 'admin.register-3', 'uses' => 'Demo\PagesController@register3'
     ]);
 
-    //Todos
+    // Icon Preview Pages
+    //----------------------------------
 
-    Route::resource('todos', 'Demo\TodosController');
-
-    Route::post('todos/toggleTodo/{id}', [
-        'as' => 'admin.todos.toggle', 'uses' => 'Demo\TodosController@toggleTodo'
-    ]);
-
-    Route::resource('users', 'UsersController');
-
-    //icons
     Route::group(['prefix' => 'icons'], function () {
 
         Route::get('/icomoon', [
@@ -268,10 +273,23 @@ Route::group([
 
     });
 
-    //Settings
+    // Todos
+    //----------------------------------
+
+    Route::resource('todos', 'Demo\TodosController');
+
+    Route::post('todos/toggleTodo/{id}', [
+        'as' => 'admin.todos.toggle', 'uses' => 'Demo\TodosController@toggleTodo'
+    ]);
+
+    Route::resource('users', 'UsersController');
+
+    // Settings
+    //----------------------------------
+
     Route::group(['prefix' => 'settings'], function () {
 
-        //social
+
         Route::get('/social', [
             'as' => 'admin.settings.index', 'uses' => 'SettingsController@index'
         ]);
@@ -280,7 +298,6 @@ Route::group([
             'as' => 'admin.settings.social', 'uses' => 'SettingsController@postSocial'
         ]);
 
-        //mailer
         Route::group(['prefix' => 'mail'], function () {
 
             Route::get('/', [
@@ -292,7 +309,6 @@ Route::group([
 
         });
 
-        //Ace Editor
         Route::group(['prefix' => 'env'], function () {
 
             Route::get('/', [
@@ -305,15 +321,12 @@ Route::group([
 
         });
 
-        //notification
         Route::get('/notification', [
             'as' => 'admin.notification.index', 'uses' => 'SettingsController@notification'
         ]);
         Route::post('notification/create', [
             'as' => 'admin.notification.create', 'uses' => 'SettingsController@postNotification'
         ]);
-
-        //
 
     });
 
@@ -360,13 +373,13 @@ Route::group(['middleware' => ['guest','setting']], function () {
     ]);
 
     Route::get('auth/{provider}', 'AuthController@redirectToProvider');
+
     Route::get('auth/{provider}/callback', 'AuthController@handleProviderCallback');
 });
 
 Route::get('logout', [
     'as' => 'logout', 'uses' => 'AuthController@logout'
 ]);
-
 
 Route::get('install', [
     'as' => 'logout', 'uses' => 'AuthController@logout'

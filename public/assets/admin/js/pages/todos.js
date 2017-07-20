@@ -2226,7 +2226,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         }
       }
     }, [_c('i', {
-      staticClass: "fa fa-close"
+      staticClass: "icon-fa icon-fa-close"
     })])])
   }))])])
 },staticRenderFns: []}

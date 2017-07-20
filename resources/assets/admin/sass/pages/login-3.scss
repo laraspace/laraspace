@@ -36,6 +36,7 @@
         justify-content: center;
         align-items: center;
         max-width: 500px;
+        min-width: 450px;
 
         .box-wrapper {
             width: 100%;
@@ -89,6 +90,37 @@
 
     .logo-main img{
         width: 200px;
+    }
+
+    @include media-breakpoint-down(lg) {
+
+        .content-box h1 {
+            font-size: 2.5rem;
+        }
+
+    }
+
+    @include media-breakpoint-down(md) {
+
+        .content-box h1 {
+            font-size: 2rem;
+        }
+
+    }
+
+    @include media-breakpoint-down(sm) {
+
+        .login-box {
+            width: 100%;
+            max-width: none;
+            min-width: 0;
+            padding: 30px;
+        }
+
+        .content-box {
+            display: none;
+        }
+
     }
 
 }
