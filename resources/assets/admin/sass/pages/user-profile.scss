@@ -9,7 +9,12 @@
     margin-left: -7px;
 }
 
+.activity-list , .friends-list {
+    padding: 0;
+}
+
 .activity-list .media {
+    padding-top: 15px;
     padding-right: 20px;
     padding-bottom: 15px;
     border-bottom: 1px solid $ls-color-gray--dark;

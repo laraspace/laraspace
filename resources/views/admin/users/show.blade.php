@@ -46,7 +46,7 @@
                                             <p class="detail-row"><i class="fa fa-wrench"></i> UI Designer / Pro Model</p>
                                         </div>
                                     </div>
-                                    <div class="row m-t-2">
+                                    <div class="row mt-4">
                                         <div class="col-sm-12">
                                             <h3 class="section-semi-title">Recent Activity</h3>
                                             <ul class="media-list activity-list">
@@ -59,7 +59,7 @@
                                                     <div class="media-body">
                                                         <h4 class="media-heading">Shane White <span>just posted an update</span></h4>
                                                         <small>Today at 3.50pm</small>
-                                                        <p class="m-t-1">"Hello Everyone! Its been a fun morning!"</p>
+                                                        <p class="mt-2">"Hello Everyone! Its been a fun morning!"</p>
                                                     </div>
                                                 </li>
                                                 <li class="media">
@@ -89,7 +89,7 @@
                                             <div class="media-body">
                                                 <h4 class="media-heading">Adam David <span>sent a message</span></h4>
                                                 <small>Today at 3.50pm</small>
-                                                <p class="m-t-1">"When you have children, you always have family. They will always be your priority, your responsibility.
+                                                <p class="mt-2">"When you have children, you always have family. They will always be your priority, your responsibility.
                                                     And a man, a man provides. And he does it even when he's not appreciated or respected or even loved. He simply bears up and he does it. Because he's a man."</p>
                                             </div>
                                         </li>
@@ -102,7 +102,7 @@
                                             <div class="media-body">
                                                 <h4 class="media-heading">Shane White <span>sent a message</span></h4>
                                                 <small>Yesterday at 9pm</small>
-                                                <p class="m-t-1">
+                                                <p class="mt-2">
                                                     “Hey! How you doin?”
                                                 </p>
                                             </div>

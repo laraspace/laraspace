@@ -1,4 +1,5 @@
 var AMCharts = function () {
+
     var handleColumnAndLineChart = function () {
         var columnAndLineChart = AmCharts.makeChart("bar-line-chart", {
             "type": "serial",
