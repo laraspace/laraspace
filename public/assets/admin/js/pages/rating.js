@@ -2,6 +2,7 @@ $(document).ready(function () {
     $('#star').raty({
         path:'../../../assets/admin/img/rating/',
     });
+
     $('#star-read').raty({
         path     :'../../../assets/admin/img/rating/',
         readOnly : true,
@@ -48,6 +49,7 @@ $(document).ready(function () {
         starOn   : 'flag-on.png',
         starOff  : 'flag-off.png'
     });
+
     $('#star-icon-range').raty({
         path     :'../../../assets/admin/img/rating/',
         iconRange: [
@@ -157,11 +159,6 @@ $(document).ready(function () {
 
     $('#br-css').barrating({
         theme: 'css-stars',
-        showSelectedRating: false
-    });
-
-    $('#br-bootstrap').barrating({
-        theme: 'bootstrap-stars',
         showSelectedRating: false
     });
 

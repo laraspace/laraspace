@@ -130,5 +130,40 @@
                 </div>
             </div>
         </div>
+
+        <div class="row bar-rating">
+            <div class="col-xl-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h6>Font Awesome Stars</h6>
+                    </div>
+                    <div class="card-block">
+                        <select id="br-fontawesome" name="rating" autocomplete="off">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h6>CSS Stars</h6>
+                    </div>
+                    <div class="card-block">
+                        <select id="br-css" name="rating" autocomplete="off">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 @stop
