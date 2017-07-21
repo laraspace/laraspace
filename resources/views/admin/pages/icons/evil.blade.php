@@ -11,13 +11,24 @@
             </ol>
         </div>
         <div class="row">
-            <div class="col-md-11">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-block">
+                        <pre class="language-php">
+                            <code> &#10; // This class use to show Evil Icon&#13; &#13; &lt;i class="icon-el icon-el-archivee"&gt;&lt;/i&gt;</code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
                 <div class="card">
                     <div class="card-block">
                         <div class="icon-container">
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-archive"></i>
+                                    <i class="icon-el icon-el-archive"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-archive</span>
@@ -25,7 +36,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-arrow-down" ></i>
+                                    <i class="icon-el icon-el-arrow-down"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-arrow-down</span>
@@ -33,7 +44,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-arrow-left" ></i>
+                                    <i class="icon-el icon-el-arrow-left"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-arrow-left</span>
@@ -41,7 +52,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-arrow-right" ></i>
+                                    <i class="icon-el icon-el-arrow-right"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-arrow-right</span>
@@ -49,7 +60,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-arrow-up"></i>
+                                    <i class="icon-el icon-el-arrow-up"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-arrow-up</span>
@@ -57,7 +68,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-bell" ></i>
+                                    <i class="icon-el icon-el-bell"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-bell</span>
@@ -65,7 +76,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-calendar" ></i>
+                                    <i class="icon-el icon-el-calendar"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-calendar</span>
@@ -73,7 +84,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-camera" ></i>
+                                    <i class="icon-el icon-el-camera"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-camera</span>
@@ -81,7 +92,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-cart" ></i>
+                                    <i class="icon-el icon-el-cart"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-cart</span>
@@ -89,7 +100,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-chart" ></i>
+                                    <i class="icon-el icon-el-chart"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-chart</span>
@@ -97,7 +108,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-check" ></i>
+                                    <i class="icon-el icon-el-check"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-check</span>
@@ -105,7 +116,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-chevron-down"></i>
+                                    <i class="icon-el icon-el-chevron-down"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-chevron-down</span>
@@ -113,7 +124,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-chevron-left"></i>
+                                    <i class="icon-el icon-el-chevron-left"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-chevron-left</span>
@@ -121,7 +132,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-chevron-right"></i>
+                                    <i class="icon-el icon-el-chevron-right"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-chevron-right</span>
@@ -129,7 +140,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-chevron-up"></i>
+                                    <i class="icon-el icon-el-chevron-up"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-chevron-up</span>
@@ -137,7 +148,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-clock"></i>
+                                    <i class="icon-el icon-el-clock"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-clock</span>
@@ -145,7 +156,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-close-o"></i>
+                                    <i class="icon-el icon-el-close-o"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-close-o</span>
@@ -153,7 +164,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-close"></i>
+                                    <i class="icon-el icon-el-close"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-close</span>
@@ -161,7 +172,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-comment"></i>
+                                    <i class="icon-el icon-el-comment"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-comment</span>
@@ -169,7 +180,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-credit-card"></i>
+                                    <i class="icon-el icon-el-credit-card"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-credit-card</span>
@@ -177,7 +188,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-envelope"></i>
+                                    <i class="icon-el icon-el-envelope"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-envelope</span>
@@ -185,7 +196,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-exclamation"></i>
+                                    <i class="icon-el icon-el-exclamation"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-exclamation</span>
@@ -193,7 +204,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-external-link"></i>
+                                    <i class="icon-el icon-el-external-link"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-external-link</span>
@@ -201,7 +212,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-eye"></i>
+                                    <i class="icon-el icon-el-eye"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-eye</span>
@@ -209,7 +220,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-gear"></i>
+                                    <i class="icon-el icon-el-gear"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-gear</span>
@@ -217,7 +228,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-heart"></i>
+                                    <i class="icon-el icon-el-heart"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-heart</span>
@@ -225,7 +236,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-image"></i>
+                                    <i class="icon-el icon-el-image"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-image</span>
@@ -233,7 +244,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-like"></i>
+                                    <i class="icon-el icon-el-like"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-like</span>
@@ -241,7 +252,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-link"></i>
+                                    <i class="icon-el icon-el-link"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-link</span>
@@ -250,7 +261,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-location"></i>
+                                    <i class="icon-el icon-el-location"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-location</span>
@@ -258,7 +269,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-lock"></i>
+                                    <i class="icon-el icon-el-lock"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-lock</span>
@@ -266,7 +277,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-minus"></i>
+                                    <i class="icon-el icon-el-minus"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-minus</span>
@@ -274,7 +285,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-navicon"></i>
+                                    <i class="icon-el icon-el-navicon"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-navicon</span>
@@ -282,7 +293,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-paperclip"></i>
+                                    <i class="icon-el icon-el-paperclip"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-paperclip</span>
@@ -290,7 +301,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-pencil"></i>
+                                    <i class="icon-el icon-el-pencil"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-pencil</span>
@@ -299,7 +310,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-play"></i>
+                                    <i class="icon-el icon-el-play"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-play</span>
@@ -307,7 +318,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-plus"></i>
+                                    <i class="icon-el icon-el-plus"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-plus</span>
@@ -315,7 +326,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-pointer"></i>
+                                    <i class="icon-el icon-el-pointer"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-pointer</span>
@@ -323,7 +334,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-question"></i>
+                                    <i class="icon-el icon-el-question"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-question</span>
@@ -331,7 +342,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-redo"></i>
+                                    <i class="icon-el icon-el-redo"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-redo</span>
@@ -340,7 +351,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-refresh"></i>
+                                    <i class="icon-el icon-el-refresh"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-refresh</span>
@@ -348,7 +359,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-retweet"></i>
+                                    <i class="icon-el icon-el-retweet"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-retweet</span>
@@ -356,7 +367,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-sc-facebook"></i>
+                                    <i class="icon-el icon-el-sc-facebook"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-sc-facebook</span>
@@ -364,7 +375,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-sc-github"></i>
+                                    <i class="icon-el icon-el-sc-github"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-sc-github</span>
@@ -372,7 +383,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-sc-google-plus"></i>
+                                    <i class="icon-el icon-el-sc-google-plus"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-sc-google-plus</span>
@@ -380,7 +391,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-sc-instagram"></i>
+                                    <i class="icon-el icon-el-sc-instagram"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-sc-instagram</span>
@@ -388,7 +399,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-sc-linkedin"></i>
+                                    <i class="icon-el icon-el-sc-linkedin"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-sc-linkedin</span>
@@ -396,7 +407,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-sc-odnoklassniki"></i>
+                                    <i class="icon-el icon-el-sc-odnoklassniki"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-sc-odnoklassniki</span>
@@ -404,7 +415,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-sc-pinterest"></i>
+                                    <i class="icon-el icon-el-sc-pinterest"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-sc-pinterest</span>
@@ -412,7 +423,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-sc-skype"></i>
+                                    <i class="icon-el icon-el-sc-skype"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-sc-skype</span>
@@ -420,7 +431,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-sc-soundcloud"></i>
+                                    <i class="icon-el icon-el-sc-soundcloud"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-sc-soundcloud</span>
@@ -428,7 +439,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-sc-telegram"></i>
+                                    <i class="icon-el icon-el-sc-telegram"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-sc-telegram</span>
@@ -436,7 +447,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-sc-tumblr"></i>
+                                    <i class="icon-el icon-el-sc-tumblr"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-sc-tumblr</span>
@@ -444,7 +455,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-sc-twitter"></i>
+                                    <i class="icon-el icon-el-sc-twitter"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-sc-twitter</span>
@@ -452,7 +463,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-sc-vimeo"></i>
+                                    <i class="icon-el icon-el-sc-vimeo"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-sc-vimeo</span>
@@ -460,7 +471,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-sc-vk"></i>
+                                    <i class="icon-el icon-el-sc-vk"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-sc-vk</span>
@@ -468,7 +479,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-sc-youtube"></i>
+                                    <i class="icon-el icon-el-sc-youtube"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-sc-youtube</span>
@@ -476,7 +487,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-search"></i>
+                                    <i class="icon-el icon-el-search"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-search</span>
@@ -484,7 +495,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-share-apple"></i>
+                                    <i class="icon-el icon-el-share-apple"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-share-apple</span>
@@ -492,7 +503,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-share-google"></i>
+                                    <i class="icon-el icon-el-share-google"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-share-google</span>
@@ -500,7 +511,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-spinner-2"></i>
+                                    <i class="icon-el icon-el-spinner-2"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-spinner-2</span>
@@ -508,7 +519,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-spinner-3"></i>
+                                    <i class="icon-el icon-el-spinner-3"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-spinner-3</span>
@@ -516,7 +527,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-spinner"></i>
+                                    <i class="icon-el icon-el-spinner"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-spinner</span>
@@ -524,7 +535,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-star"></i>
+                                    <i class="icon-el icon-el-star"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-star</span>
@@ -532,7 +543,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-tag"></i>
+                                    <i class="icon-el icon-el-tag"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-tag</span>
@@ -540,7 +551,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-trash"></i>
+                                    <i class="icon-el icon-el-trash"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-trash</span>
@@ -548,7 +559,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-trophy"></i>
+                                    <i class="icon-el icon-el-trophy"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-trophy</span>
@@ -556,7 +567,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-undo"></i>
+                                    <i class="icon-el icon-el-undo"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-undo</span>
@@ -564,7 +575,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-unlock"></i>
+                                    <i class="icon-el icon-el-unlock"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-unlock</span>
@@ -572,7 +583,7 @@
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
-                                    <i data-icon="icon-el-user"></i>
+                                    <i class="icon-el icon-el-user"></i>
                                 </div>
                                 <div class="icon-classname">
                                     <span>icon-el-user</span>
