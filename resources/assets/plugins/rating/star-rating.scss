@@ -1,0 +1,24 @@
+.star-rating {
+    display: inline-block;
+    margin: 0 .5rem 0 0;
+    vertical-align: middle;
+
+    i {
+        color: #999999;
+    }
+}
+
+.color-orange {
+    color: #fb8c00 !important;
+}
+
+.color-red {
+    color: #e53935!important
+}
+
+.star-rating-hint {
+    display: inline;
+    margin-left: 10px;
+    vertical-align: sub;
+    float: right;
+}
