@@ -1,4 +1,4 @@
-  .wizard ul, .tabcontrol ul {
+.wizard ul, .tabcontrol ul {
   display: flex;
   list-style: none !important;
   padding: 0;

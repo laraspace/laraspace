@@ -29019,9 +29019,33 @@ be a descendant of the grid when it is being dragged.
   margin: 0;
 }
 
+.wizard > .content > .body {
+  float: left;
+  position: absolute;
+  width: 95%;
+  height: 95%;
+  padding: 2.5%;
+}
+
+.wizard > .content {
+  margin: 1em;
+  top: 50px;
+  display: block;
+  min-height: 25em;
+  overflow: hidden;
+  position: relative;
+  width: auto;
+  border-radius: 5px;
+}
+
+.wizard > .actions .disabled a,
+.wizard > .actions .disabled a:hover,
+.wizard > .actions .disabled a:active {
+  background: #eee;
+  color: #aaa;
+}
+
 .wizard > .steps > ul > li,
-.wizard > .steps > ul > li,
-.wizard > .actions > ul > li,
 .wizard > .actions > ul > li {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -29033,139 +29057,20 @@ be a descendant of the grid when it is being dragged.
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
+  float: left;
 }
 
 .wizard > .steps > ul > li > a > .icon-fa {
   margin-right: 10px;
 }
 
-.wizard.basic-wizard > .steps {
-  margin-top: 20px;
-}
-
-.wizard.basic-wizard > .steps > ul > li > a {
-  height: 50px;
-  background: #eee;
-  padding-top: 12px;
-  width: 100%;
-  text-align: center;
-}
-
-.wizard.basic-wizard > .steps > ul > li.error > a {
-  background: red;
-  -webkit-box-shadow: 0 16px 26px -10px rgba(255, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(255, 0, 0, 0.2);
-  box-shadow: 0 16px 26px -10px rgba(255, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(255, 0, 0, 0.2);
-}
-
-.wizard.basic-wizard > .steps .current a,
-.wizard.basic-wizard > .steps .current a:active,
-.wizard.basic-wizard > .steps .done a:hover {
-  color: white;
-  background-color: #ffde00;
-  border-radius: 4px;
-  -webkit-box-shadow: 0 16px 26px -10px rgba(255, 222, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(255, 222, 0, 0.2);
-  box-shadow: 0 16px 26px -10px rgba(255, 222, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(255, 222, 0, 0.2);
-}
-
-.wizard.basic-wizard > .steps .done a {
-  background: rgba(255, 222, 0, 0.3);
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  color: #000000;
-}
-
 .wizard .content .select2-container {
   width: 100% !important;
-}
-
-.wizard.basic-wizard > .content,
-.wizard.vw-with-c > .content {
-  margin: 1em;
-  top: 50px;
-  display: block;
-  min-height: 25em;
-  overflow: hidden;
-  position: relative;
-  width: auto;
-  border-radius: 5px;
-}
-
-.wizard.basic-wizard > .steps .number {
-  display: none;
 }
 
 .wizard > .content > .title,
 .tabcontrol > .content > .title {
   display: none;
-}
-
-.wizard.vw-with-c > .steps > ul > li:not(:last-child):after {
-  content: '';
-  width: 4px;
-  height: 100%;
-  top: 27px;
-  background: #eee;
-  position: absolute;
-  z-index: 0;
-  left: 110px;
-}
-
-.wizard.vw-with-c > .steps > ul > li.done:after {
-  background: #FFDE00 !important;
-}
-
-.wizard.vw-with-c > .steps > ul > li.current:after,
-.wizard.vw-with-c > .steps > ul > li.current ~ li:after {
-  background: #EEE !important;
-}
-
-.wizard.vw-with-c > .steps .current a,
-.wizard.vw-with-c > .steps .current a:hover,
-.wizard.vw-with-c > .steps .current a:active {
-  padding-top: 20px;
-  background: none !important;
-  color: #000000;
-  padding-left: 150px;
-}
-
-.wizard.vw-with-c > .steps .disabled a,
-.wizard.vw-with-c > .steps .disabled a:hover,
-.wizard.vw-with-c > .steps .disabled a:active {
-  padding-top: 20px;
-  background: none !important;
-  color: #000000;
-  padding-left: 150px;
-  display: -moz-box;
-}
-
-.wizard.vw-with-c > .steps .done a,
-.wizard.vw-with-c > .steps .done a:hover,
-.wizard.vw-with-c > .steps .done a:active {
-  background: none !important;
-  color: black;
-  padding-top: 20px;
-  padding-left: 150px;
-}
-
-.wizard.vw-with-c > .steps .number {
-  font-size: 1.429em;
-  position: absolute;
-  background: #FFFFFF;
-  border: 2px solid #eee;
-  cursor: default;
-  width: 60px;
-  border-radius: 50%;
-  line-height: 2.45;
-  text-align: center;
-  top: 0;
-  left: 45.2%;
-  margin-left: -6px;
-  z-index: 100;
-}
-
-.wizard.vw-with-c > .steps .done .number {
-  background: #FFDE00 !important;
-  border: 2px solid #FFDE00;
 }
 
 .wizard > .steps .current-info,
@@ -29185,28 +29090,6 @@ be a descendant of the grid when it is being dragged.
   text-align: right;
 }
 
-.wizard.bw-with-c ul,
-.tabcontrol ul {
-  list-style: none !important;
-  padding: 0;
-  margin: 0;
-}
-
-.wizard.vw-with-c > .steps > ul > li,
-.wizard > .actions > ul > li {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: relative;
-  margin: 0 auto;
-}
-
 .wizard > .actions > ul > li {
   margin: 0 0.5em;
 }
@@ -29222,184 +29105,6 @@ be a descendant of the grid when it is being dragged.
   border-radius: 5px;
 }
 
-.wizard.vw-with-c > .steps {
-  display: inline;
-  float: left;
-  width: 300px;
-}
-
-.wizard.vw-with-c ul {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.wizard.vw-with-c .steps ul {
-  display: -moz-box;
-}
-
-.wizard.vw-with-c .steps ul {
-  display: -ms-inline-flexbox;
-}
-
-.wizard.vw-with-c > .steps > ul > li {
-  height: 120px;
-  -ms-flex: 120px;
-}
-
-.wizard > .steps > ul > li,
-.wizard > .actions > ul > li {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: relative;
-  float: left;
-}
-
-.wizard.bw-with-c > .steps > ul > li:not(:last-child):after,
-.wizard.bw-with-c > .steps > ul > li:not(:first-child):before {
-  content: '';
-  width: 50%;
-  height: 3px;
-  top: 27px;
-  background: #eee;
-  position: absolute;
-  z-index: 0;
-}
-
-.wizard.bw-with-c > .steps > ul > li.done:after,
-.wizard > .steps > ul > li.current:before,
-.wizard.bw-with-c > .steps > ul > li.done:before {
-  background: #FFDE00 !important;
-}
-
-.wizard.bw-with-c > .steps > ul > li.last.done.finish:before {
-  background: #FFDE00 !important;
-}
-
-.wizard.bw-with-c > .steps > ul > li.current:after,
-.wizard.bw-with-c > .steps > ul > li.current ~ li:after,
-.wizard.bw-with-c > .steps > ul > li.current ~ li:before {
-  background: #EEE !important;
-}
-
-.wizard.bw-with-c > .steps > ul > li:after {
-  right: 0;
-}
-
-.wizard.bw-with-c > .steps > ul > li:before {
-  left: 0;
-}
-
-.wizard.bw-with-c > .steps .current a,
-.wizard.bw-with-c > .steps .current a:hover,
-.wizard.bw-with-c > .steps .current a:active,
-.wizard.bw-with-c > .steps .disabled a,
-.wizard.bw-with-c > .steps .disabled a:hover,
-.wizard.bw-with-c > .steps .disabled a:active {
-  padding-top: 65px;
-  background: none !important;
-  color: #000000;
-}
-
-.wizard.bw-with-c > .steps .done a,
-.wizard.bw-with-c > .steps .done a:hover,
-.wizard.bw-with-c > .steps .done a:active {
-  background: none !important;
-  color: black;
-  padding-top: 65px;
-}
-
-.wizard.bw-with-c > .steps .number {
-  font-size: 1.429em;
-  position: absolute;
-  background: #FFFFFF;
-  border: 2px solid #eee;
-  cursor: default;
-  width: 60px;
-  border-radius: 50%;
-  line-height: 2.45;
-  text-align: center;
-  top: 0;
-  margin-left: -6px;
-  z-index: 100;
-}
-
-.wizard > .actions .disabled a,
-.wizard > .actions .disabled a:hover,
-.wizard > .actions .disabled a:active {
-  background: #eee;
-  color: #aaa;
-}
-
-.wizard.bw-with-c > .steps .current .number,
-.wizard.vw-with-c > .steps .current .number {
-  border: 2px solid #FFDE00;
-}
-
-.wizard.bw-with-c > .steps .done .number {
-  background: #FFDE00 !important;
-  border: 2px solid #FFDE00;
-}
-
-.wizard > .content > .body {
-  float: left;
-  position: absolute;
-  width: 95%;
-  height: 95%;
-  padding: 2.5%;
-}
-
-.wizard.bw-with-c > .content {
-  top: 50px;
-  display: block;
-  margin: 0.5em;
-  min-height: 25em;
-  overflow: hidden;
-  position: relative;
-  width: auto;
-  border-radius: 5px;
-}
-
-.wizard.iw-with-c > .steps .number {
-  display: none;
-}
-
-.wizard.iw-with-c > .steps ul > li > a > i {
-  font-size: 1.429em;
-  position: absolute;
-  background: #FFFFFF;
-  border: 2px solid #eee;
-  cursor: default;
-  width: 60px;
-  border-radius: 50%;
-  line-height: 2.45;
-  text-align: center;
-  top: 0;
-  margin-left: -6px;
-  z-index: 100;
-}
-
-.wizard.iw-with-c > .steps ul > li.current > a > i {
-  border: 2px solid #FFDE00;
-}
-
-.wizard.iw-with-c > .steps ul > li.done > a > i {
-  background: #FFDE00 !important;
-  border: 2px solid #FFDE00;
-}
-
-.wizard.iw-with-c > .steps ul > li.current.error > a > i {
-  border: 2px solid #f35a3d;
-}
-
 .wizard label.error {
   color: #f35a3d;
   position: absolute;
@@ -29413,8 +29118,275 @@ be a descendant of the grid when it is being dragged.
   border-color: #f35a3d;
 }
 
+.wizard.basic-wizard .steps ul {
+  border-bottom: 1px solid #333;
+}
+
+.wizard.basic-wizard > .steps {
+  margin-top: 20px;
+}
+
+.wizard.basic-wizard > .steps > ul > li > a {
+  height: 50px;
+  background: #eee;
+  padding-top: 12px;
+  width: 100%;
+  text-align: center;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.wizard.basic-wizard > .steps > ul > li.error > a {
+  background: red;
+}
+
+.wizard.basic-wizard > .steps .current a,
+.wizard.basic-wizard > .steps .current a:active {
+  color: white;
+  background-color: #333;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.wizard.basic-wizard > .steps .done a:hover {
+  background: #3b3b3b;
+  color: #ffffff;
+}
+
+.wizard.basic-wizard > .steps .done a {
+  background: #ffde00;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #333;
+}
+
+.wizard.basic-wizard > .steps > ul > li:first-child {
+  margin-left: 0;
+}
+
+.wizard.basic-wizard > .steps > ul > li:last-child {
+  margin-right: 0;
+}
+
+.wizard.basic-wizard > .steps > ul > li,
+.wizard.basic-wizard > .actions > ul > li {
+  margin: auto 3px;
+}
+
+.wizard.basic-wizard > .steps .number {
+  display: none;
+}
+
+.wizard.basic-wizard-circle > .steps > ul > li:not(:last-child):after,
+.wizard.basic-wizard-circle > .steps > ul > li:not(:first-child):before {
+  content: '';
+  width: 50%;
+  height: 3px;
+  top: 27px;
+  background: #eee;
+  position: absolute;
+  z-index: 0;
+}
+
+.wizard.basic-wizard-circle > .steps > ul > li.done:after,
+.wizard > .steps > ul > li.current:before,
+.wizard.basic-wizard-circle > .steps > ul > li.done:before {
+  background: #FFDE00 !important;
+}
+
+.wizard.basic-wizard-circle > .steps > ul > li.last.done.finish:before {
+  background: #FFDE00 !important;
+}
+
+.wizard.basic-wizard-circle > .steps > ul > li.current:after,
+.wizard.basic-wizard-circle > .steps > ul > li.current ~ li:after,
+.wizard.basic-wizard-circle > .steps > ul > li.current ~ li:before {
+  background: #EEE !important;
+}
+
+.wizard.basic-wizard-circle > .steps > ul > li:after {
+  right: 0;
+}
+
+.wizard.basic-wizard-circle > .steps > ul > li:before {
+  left: 0;
+}
+
+.wizard.basic-wizard-circle > .steps .current a,
+.wizard.basic-wizard-circle > .steps .disabled a,
+.wizard.basic-wizard-circle > .steps .done a {
+  margin-top: 65px;
+  font-size: 0.9rem;
+  background: none !important;
+  color: #000000;
+}
+
+.wizard.basic-wizard-circle > .steps .number {
+  font-size: 1.429rem;
+  position: absolute;
+  background: #FFFFFF;
+  border: 2px solid #eee;
+  cursor: default;
+  width: 60px;
+  border-radius: 50%;
+  line-height: 2.45;
+  text-align: center;
+  top: 0;
+  margin-left: -10px;
+  z-index: 100;
+}
+
+.wizard.basic-wizard-circle > .steps .current .number,
+.wizard.verticle-wizard-circle > .steps .current .number {
+  border: 2px solid #FFDE00;
+}
+
+.wizard.basic-wizard-circle > .steps .done .number {
+  background: #FFDE00 !important;
+  border: 2px solid #FFDE00;
+}
+
+.wizard.basic-wizard-circle > .content {
+  top: 50px;
+  display: block;
+  margin: 0.5em;
+  min-height: 25em;
+  overflow: hidden;
+  position: relative;
+  width: auto;
+  border-radius: 5px;
+}
+
+.wizard.icon-wizard-2 > .steps .number {
+  display: none;
+}
+
+.wizard.icon-wizard-2 > .steps ul > li.current > a > i {
+  border: 2px solid #FFDE00;
+}
+
+.wizard.icon-wizard-2 > .steps ul > li.done > a > i {
+  background: #FFDE00 !important;
+  border: 2px solid #FFDE00;
+}
+
+.wizard.icon-wizard-2 > .steps ul > li.current.error > a > i {
+  border: 2px solid #f35a3d;
+}
+
+.wizard.verticle-wizard-circle > .steps {
+  display: inline;
+  float: left;
+  width: 300px;
+}
+
+.wizard.verticle-wizard-circle ul {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wizard.verticle-wizard-circle .steps ul {
+  display: -moz-box;
+}
+
+.wizard.verticle-wizard-circle .steps ul {
+  display: -ms-inline-flexbox;
+}
+
+.wizard.verticle-wizard-circle > .steps > ul > li {
+  height: 120px;
+  -ms-flex: 120px;
+}
+
+.wizard.verticle-wizard-circle > .steps > ul > li.done:after {
+  background: #FFDE00 !important;
+}
+
+.wizard.verticle-wizard-circle > .steps > ul > li.current:after,
+.wizard.verticle-wizard-circle > .steps > ul > li.current ~ li:after {
+  background: #EEE !important;
+}
+
+.wizard.verticle-wizard-circle > .steps .current a,
+.wizard.verticle-wizard-circle > .steps .disabled a,
+.wizard.verticle-wizard-circle > .steps .done a {
+  margin-top: 25px;
+  background: none !important;
+  font-size: 0.9rem;
+  color: #000000;
+  margin-left: 150px;
+}
+
+.wizard.verticle-wizard-circle > .steps .number,
+.wizard.icon-wizard-2 > .steps ul > li > a > i {
+  font-size: 1.429rem;
+  position: absolute;
+  background: #FFFFFF;
+  border: 2px solid #eee;
+  cursor: pointer;
+  width: 60px;
+  border-radius: 50%;
+  line-height: 2.45;
+  text-align: center;
+  top: 0;
+  left: 45.2%;
+  margin-left: -10px;
+  z-index: 100;
+}
+
+.wizard.verticle-wizard-circle > .steps .number {
+  margin-left: -5px;
+}
+
+.wizard.verticle-wizard-circle > .steps .done .number {
+  background: #FFDE00 !important;
+  border: 2px solid #FFDE00;
+}
+
+.wizard.basic-wizard-circle ul,
+.tabcontrol ul {
+  list-style: none !important;
+  padding: 0;
+  margin: 0;
+}
+
+.wizard.verticle-wizard-circle > .steps > ul > li,
+.wizard > .actions > ul > li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.wizard.verticle-wizard-circle > .steps > ul > li {
+  margin: 0 auto;
+}
+
+.wizard.verticle-wizard-circle > .steps > ul > li:not(:last-child):after {
+  content: '';
+  width: 4px;
+  height: 100%;
+  top: 27px;
+  background: #eee;
+  position: absolute;
+  z-index: 0;
+  left: 110px;
+}
+
+.wizard.verticle-wizard-circle.icon-wizard-2 > .steps ul > li > a > i {
+  left: 45%;
+}
+
 @media (max-width: 992px) {
-  .wizard.vw-with-c > .steps {
+  .wizard.verticle-wizard-circle > .steps {
     float: none;
     display: -ms-inline-flexbox;
     -webkit-box-pack: end;
@@ -35739,9 +35711,9 @@ code,
 }
 
 .icon-container .demo-icon {
-  -webkit-box-flex: 0.2;
-      -ms-flex: 0.2;
-          flex: 0.2;
+  -webkit-box-flex: 0.25;
+      -ms-flex: 0.25;
+          flex: 0.25;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
