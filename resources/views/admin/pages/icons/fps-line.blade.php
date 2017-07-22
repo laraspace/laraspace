@@ -25,7 +25,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-11">
+            <div class="col-lg-12">
                 <div class="card">
                     <div class="card-block">
                         <div class="icon-container">
@@ -1571,7 +1571,6 @@
                                 <div class="icon-classname">
                                     <span>icon-fl-arrow23</span>
                                 </div>
-                                <span class="i-code">0xe8bb</span>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
@@ -1712,7 +1711,6 @@
                                 <div class="icon-classname">
                                     <span>icon-fl-arrow39</span>
                                 </div>
-                                <span class="i-code">0xe8cc</span>
                             </div>
                             <div class="demo-icon">
                                 <div class="icon-box">
