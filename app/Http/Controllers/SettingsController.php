@@ -120,7 +120,6 @@ class SettingsController extends Controller
 
     public function postEnvironment(Request $request)
     {
-
        \Storage::put('.env', $request->environment);
 
         return back();

@@ -35415,7 +35415,7 @@ code,
   width: 200px;
 }
 
-.login-page.login-3 {
+.login-page.login-3 .site-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

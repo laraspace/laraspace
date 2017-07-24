@@ -1,5 +1,9 @@
 .login-page.login-3 {
 
+    .site-wrapper {
+        display: flex;
+    }
+
     &::before {
         background-image: url('/assets/admin/img/desk.jpg');
         background-position: center top;
@@ -23,8 +27,6 @@
         width: 100%;
         z-index: -1;
     }
-
-    display: flex;
 
     .login-box {
         color: #333;
