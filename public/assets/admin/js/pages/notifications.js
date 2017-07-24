@@ -1,6 +1,5 @@
 var Notifications = function () {
 
-
     var handleToastrNotifs = function(){
         toastr.options = {
             "closeButton": true,

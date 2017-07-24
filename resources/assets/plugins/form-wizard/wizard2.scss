@@ -34,7 +34,7 @@
 
 .wizard.basic-wizard-circle > .steps .current a,
 .wizard.basic-wizard-circle > .steps .disabled a,
-.wizard.basic-wizard-circle > .steps .done a{
+.wizard.basic-wizard-circle > .steps .done a {
     margin-top: 65px;
     font-size: 0.9rem;
     background: none !important;
@@ -83,8 +83,6 @@
     display: none;
 }
 
-
-
 .wizard.icon-wizard-2 > .steps ul > li.current > a > i {
     border: 2px solid #FFDE00;
 }
@@ -103,13 +101,16 @@
     float: left;
     width: 300px;
 }
+
 .wizard.verticle-wizard-circle ul {
     flex-direction: column;
 }
-.wizard.verticle-wizard-circle .steps ul{
+
+.wizard.verticle-wizard-circle .steps ul {
     display: -moz-box;
 }
-.wizard.verticle-wizard-circle .steps ul{
+
+.wizard.verticle-wizard-circle .steps ul {
     display: -ms-inline-flexbox;
 }
 
@@ -117,6 +118,7 @@
     height: 120px;
     -ms-flex: 120px;
 }
+
 .wizard.verticle-wizard-circle > .steps > ul > li.done:after {
     background: #FFDE00 !important;
 }
@@ -128,7 +130,7 @@
 
 .wizard.verticle-wizard-circle > .steps .current a,
 .wizard.verticle-wizard-circle > .steps .disabled a,
-.wizard.verticle-wizard-circle > .steps .done a{
+.wizard.verticle-wizard-circle > .steps .done a {
     margin-top: 25px;
     background: none !important;
     font-size: 0.9rem;
@@ -152,7 +154,8 @@
     margin-left: -10px;
     z-index: 100;
 }
-.wizard.verticle-wizard-circle > .steps .number{
+
+.wizard.verticle-wizard-circle > .steps .number {
     margin-left: -5px;
 }
 
@@ -160,7 +163,6 @@
     background: #FFDE00 !important;
     border: 2px solid #FFDE00;
 }
-
 
 .wizard.basic-wizard-circle ul, .tabcontrol ul {
     list-style: none !important;
@@ -174,6 +176,7 @@
     justify-content: center;
     position: relative;
 }
+
 .wizard.verticle-wizard-circle > .steps > ul > li {
     margin: 0 auto;
 }
@@ -188,9 +191,11 @@
     z-index: 0;
     left: 110px;
 }
-.wizard.verticle-wizard-circle.icon-wizard-2 > .steps ul > li > a > i{
+
+.wizard.verticle-wizard-circle.icon-wizard-2 > .steps ul > li > a > i {
     left: 45%;
 }
+
 @media (max-width: 992px) {
     .wizard.verticle-wizard-circle > .steps {
         float: none;

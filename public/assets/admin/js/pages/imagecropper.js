@@ -1,5 +1,3 @@
-
-
 var ImageCropper = function () {
 
     var handleImageCropper = function (){
