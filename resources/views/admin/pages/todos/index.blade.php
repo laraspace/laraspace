@@ -1,9 +1,5 @@
 @extends('admin.layouts.layout-basic')
 
-@section('scripts')
-    <script src="{{mix('/assets/admin/js/pages/todos.js')}}"></script>
-@stop
-
 @section('content')
     <div class="main-content">
         <div class="page-header">
@@ -14,10 +10,9 @@
             </ol>
         </div>
         <div class="card">
-            <div class="card-block" id="TodosApp">
+            <div class="card-block">
                 <todos your-todos="{{$todos}}"></todos>
             </div>
-            {{csrf_field()}}
         </div>
     </div>
 @stop

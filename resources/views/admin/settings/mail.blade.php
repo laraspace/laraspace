@@ -1,7 +1,6 @@
 @extends('admin.layouts.layout-basic')
 
 @section('scripts')
-    <script src="{{mix('/assets/admin/js/settings/mail.js')}}"></script>
     <script src="{{asset('/assets/admin/js/settings/validation.js')}}"></script>
 @stop
 
@@ -15,31 +14,34 @@
                 <li class="breadcrumb-item"><a href="{{route('admin.mail.index')}}">Mail</a></li>
             </ol>
         </div>
-        <div class="row" id="mail-driver">
+        <div class="row">
             <div class="col-sm-6">
                 <div class="card">
                     <div class="card-block">
-                        <form method="post" action="{{route('admin.mail.create')}}" enctype="multipart/form-data"
-                              id="validateForm">
-                            {{csrf_field()}}
-                            <div class="form-group">
-                                <label>Mail Driver</label>
-                                <select name="mailer" class="ls-select form-control" v-model="currentView">
-                                    <option value="mailgun">Mailgun</option>
-                                    <option value="sendgrid">SendGrid</option>
-                                    <option value="sparkpost">SparkPost</option>
-                                </select>
-                            </div>
-                            <component :is="currentView"></component>
-                            <button class="btn btn-primary btn-large"><i class="icon-fa icon-fa-save"></i>Save
-                            </button>
-                        </form>
+                        <mail-settings inline-template view="{{get_setting('mailer')}}">
+                            <form method="post" action="{{route('admin.mail.create')}}" enctype="multipart/form-data" id="validateForm">
+                                {{csrf_field()}}
+                                <div class="form-group">
+                                    <label>Mail Driver</label>
+                                    <select name="mailer" class="ls-select form-control" v-model="currentView">
+                                        <option value="mailgun">Mailgun</option>
+                                        <option value="sendgrid">SendGrid</option>
+                                        <option value="sparkpost">SparkPost</option>
+                                        <option value="smtp">SMTP</option>
+                                    </select>
+                                </div>
+                                <component :is="currentView"></component>
+                                <button class="btn btn-primary btn-large"><i class="icon-fa icon-fa-save"></i>Save
+                                </button>
+                            </form>
+                        </mail-settings>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <template id="mailgun-template">
+
+    <script type="text/x-template" id="mailgun-template">
         <div>
             <div class="form-group">
                 <label>Mailgun Host</label>
@@ -57,18 +59,19 @@
                        class="form-control">
             </div>
             <div class="form-group">
-                <label>Mail Username</label>
-                <input type="text" name="mail_mailgun_user" value="{{ get_setting('mail_mailgun_user') }}"
+                <label>From Name</label>
+                <input type="text" name="mail_from_name" value="{{ get_setting('mail_from_name') }}"
                        class="form-control">
             </div>
             <div class="form-group">
-                <label>Mail From</label>
-                <input type="text" name="mail_from" value="{{ get_setting('mail_from') }}"
+                <label>From Email Address</label>
+                <input type="text" name="mail_from_email" value="{{ get_setting('mail_from_email') }}"
                        class="form-control">
             </div>
         </div>
-    </template>
-    <template id="sendgrid-template">
+    </script>
+
+    <script type="text/x-template" id="sendgrid-template">
         <div>
             <div class="form-group">
                 <label>SendGrid Host</label>
@@ -86,18 +89,19 @@
                        class="form-control">
             </div>
             <div class="form-group">
-                <label>Mail Username</label>
-                <input type="text" name="mail_sendgrid_user" value="{{ get_setting('mail_sendgrid_user') }}"
+                <label>From Name</label>
+                <input type="text" name="mail_from_name" value="{{ get_setting('mail_from_name') }}"
                        class="form-control">
             </div>
             <div class="form-group">
-                <label>Mail From</label>
-                <input type="text" name="mail_from" value="{{ get_setting('mail_from') }}"
+                <label>From Email Address</label>
+                <input type="text" name="mail_from_email" value="{{ get_setting('mail_from_email') }}"
                        class="form-control">
             </div>
         </div>
-    </template>
-    <template id="sparkpost-template">
+    </script>
+
+    <script type="text/x-template" id="sparkpost-template">
         <div>
             <div class="form-group">
                 <label>SparkPost Host</label>
@@ -115,16 +119,56 @@
                        class="form-control">
             </div>
             <div class="form-group">
-                <label>Mail Username</label>
-                <input type="text" name="mail_sparkpost_user" value="{{ get_setting('mail_sparkpost_user') }}"
+                <label>From Name</label>
+                <input type="text" name="mail_from_name" value="{{ get_setting('mail_from_name') }}"
                        class="form-control">
             </div>
             <div class="form-group">
-                <label>Mail From</label>
-                <input type="text" name="mail_from" value="{{ get_setting('mail_from') }}"
+                <label>From Email Address</label>
+                <input type="text" name="mail_from_email" value="{{ get_setting('mail_from_email') }}"
                        class="form-control">
             </div>
         </div>
-    </template>
+    </script>
+
+    <script type="text/x-template" id="smtp-template">
+        <div>
+            <div class="form-group">
+                <label>SMTP Host</label>
+                <input type="text" name="mail_smtp_host" value="{{ get_setting('mail_smtp_host') }}"
+                       class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Username</label>
+                <input type="text" name="mail_smtp_username" value="{{ get_setting('mail_smtp_username') }}"
+                       class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="text" name="mail_smtp_password" value="{{ get_setting('mail_smtp_password') }}"
+                       class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Encryption</label>
+                <input type="text" name="mail_smtp_encryption" value="{{ get_setting('mail_smtp_encryption') ?: config('mail.encryption') }}"
+                       class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Port</label>
+                <input type="text" name="mail_smtp_port" value="{{ get_setting('mail_smtp_port') ?: config('mail.port') }}"
+                       class="form-control">
+            </div>
+            <div class="form-group">
+                <label>From Name</label>
+                <input type="text" name="mail_from_name" value="{{ get_setting('mail_from_name') }}"
+                       class="form-control">
+            </div>
+            <div class="form-group">
+                <label>From Email Address</label>
+                <input type="text" name="mail_from_email" value="{{ get_setting('mail_from_email') }}"
+                       class="form-control">
+            </div>
+        </div>
+    </script>
 @stop
 

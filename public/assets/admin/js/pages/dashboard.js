@@ -86,7 +86,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     props: ['labels', 'values'],
 
     mounted: function mounted() {
-
         var context = this.$refs.graph.getContext('2d');
 
         var options = {
@@ -141,7 +140,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     props: ['labels', 'values'],
 
     mounted: function mounted() {
-
         var context = this.$refs.graph.getContext('2d');
 
         var options = {
@@ -208,7 +206,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     props: ['labels', 'values', 'bgColors', 'hoverBgColors'],
 
     mounted: function mounted() {
-
         var context = this.$refs.graph.getContext('2d');
 
         var options = {

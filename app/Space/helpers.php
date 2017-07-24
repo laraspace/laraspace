@@ -21,14 +21,7 @@ function clean_slug($string)
     return \Illuminate\Support\Str::lower(preg_replace('/[^A-Za-z0-9\-]/', '', $string)); // Removes special chars.
 }
 
-function get_setting($set)
+function get_setting($key)
 {
-
-    $setting = Setting::whereOption($set)->first();
-
-    if ($setting) {
-        return $setting->value;
-    } else {
-        return null;
-    }
+    return Setting::getSetting($key);
 }

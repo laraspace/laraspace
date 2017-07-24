@@ -4,10 +4,11 @@
     <title>Laraspace - Laravel Admin</title>
     <link href="{{ mix('/assets/admin/css/laraspace.css') }}" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     @include('admin.layouts.partials.favicons')
 </head>
-<body id="app" class="login-page login-1">
-<div class="login-wrapper">
+<body class="login-page login-1">
+<div id="app" class="login-wrapper">
     <div class="login-box">
         @include('admin.layouts.partials.laraspace-notifs')
         <div class="logo-main">
@@ -21,6 +22,7 @@
     </div>
 </div>
 <script src="{{mix('/assets/admin/js/core/plugins.js')}}"></script>
+<script src="{{mix('/assets/admin/js/core/app.js')}}"></script>
 @yield('scripts')
 </body>
 </html>

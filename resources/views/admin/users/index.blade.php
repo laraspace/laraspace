@@ -14,8 +14,8 @@
                 <li class="breadcrumb-item active">Users</li>
             </ol>
             <div class="page-actions">
-                <a href="#" class="btn btn-primary"><i class="fa fa-plus"></i> New User</a>
-                <button class="btn btn-danger"><i class="fa fa-trash"></i> Delete </button>
+                <a href="#" class="btn btn-primary"><i class="icon-fa icon-fa-plus"></i> New User</a>
+                <button class="btn btn-danger"><i class="icon-fa icon-fa-trash"></i> Delete </button>
             </div>
         </div>
         <div class="row">
@@ -45,8 +45,8 @@
                                 <td>{{$user->email}}</td>
                                 <td>{{$user->role}}</td>
                                 <td>{{$user->created_at}}</td>
-                                <td><a href="{{route('users.show',$user->id)}}" class="btn btn-default btn-sm"><i class="fa fa-search"></i> View</a>
-                                    <a href="{{route('users.destroy',$user->id)}}" class="btn btn-default btn-sm" data-token="{{csrf_token()}}" data-delete data-confirmation="notie"> <i class="fa fa-trash"></i> Delete</a></td>
+                                <td><a href="{{route('users.show',$user->id)}}" class="btn btn-default btn-sm"><i class="icon-fa icon-fa-search"></i> View</a>
+                                    <a href="{{route('users.destroy',$user->id)}}" class="btn btn-default btn-sm" data-token="{{csrf_token()}}" data-delete data-confirmation="notie"> <i class="icon-fa icon-fa-trash"></i> Delete</a></td>
                             </tr>
                             @endforeach
                             <tbody>

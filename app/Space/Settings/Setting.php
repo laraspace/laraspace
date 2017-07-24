@@ -10,25 +10,36 @@ class Setting extends Model
     {
         $old = self::whereOption($key)->first();
 
+        cache()->forever($key, $setting);
+
         if ($old) {
             $old->value = $setting;
             $old->save();
             return;
         }
+
         $set = new Setting();
         $set->option = $key;
         $set->value = $setting;
+
         $set->save();
     }
 
     public static function getSetting($key)
     {
-        $setting = static::whereOption($key)->first();
+        if(cache()->has($key)) {
 
-        if ($setting) {
-            return $setting->value;
-        } else {
-            return null;
+            return cache()->get($key);
+        }else {
+            $setting = static::whereOption($key)->first();
+
+            if ($setting) {
+                cache()->forever($key, $setting->value);
+
+                return $setting->value;
+            } else {
+                return null;
+            }
         }
     }
 }

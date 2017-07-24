@@ -1,26 +1,30 @@
 <template>
-        <div class="todo-container col-lg-6 offset-lg-3">
-            <h5 class="todo-title">TODOS APP</h5>
-            <p class="text-sm-center">This Demo showcases a simple workflow with VueJS , Vue Resource and Laravel. </p>
-            <input type="text" class="form-control todo-field" v-model="newTodo.title" placeholder="New Todo" v-on:keyup.enter="addTodo">
-            <div class="todo-block scroll-pane">
-                <ul class="todo-list" v-show="todos.length">
-                    <li v-for="(todo,index) in todos">
-                        <input type="checkbox" class="toggle" :id="index" v-bind:true-value="1" v-bind:false-value="0" v-model="todo.completed" v-on:change="toggleTodoComplete(todo)">
-                        <label :for="index">{{todo.title}}</label>
-                        <a href="#" class="remove-link" v-on:click.prevent="removeTodo(todo)"><i class="icon-fa icon-fa-close"></i></a>
-                    </li>
-                </ul>
-            </div>
+    <div class="todo-container col-lg-6 offset-lg-3">
+        <h5 class="todo-title">TODOS APP</h5>
+        <p class="text-sm-center">This Demo showcases a simple workflow with VueJS , Vue Resource and Laravel. </p>
+        <input type="text" class="form-control todo-field" v-model="newTodo.title" placeholder="New Todo" v-on:keyup.enter="addTodo">
+        <div class="todo-block scroll-pane">
+            <ul class="todo-list" v-show="todos.length">
+                <li v-for="(todo,index) in todos">
+                    <input type="checkbox" class="toggle" :id="index" v-bind:true-value="1" v-bind:false-value="0" v-model="todo.completed" v-on:change="toggleTodoComplete(todo)">
+                    <label :for="index">{{todo.title}}</label>
+                    <a href="#" class="remove-link" v-on:click.prevent="removeTodo(todo)"><i class="icon-fa icon-fa-close"></i></a>
+                </li>
+            </ul>
         </div>
+    </div>
 </template>
 
 <script>
     export default {
-        mounted : function(){
+
+        mounted () {
+
             this.todos = JSON.parse(this.yourTodos);
+
         },
-        data : function(){
+
+        data () {
             return {
                 newTodo : {
                     id : '',
@@ -35,10 +39,14 @@
                 ]
             }
         },
+
         props: ['yourTodos'],
+
         methods : {
-            addTodo : function(){
-                var vm = this,url = '/admin/todos';
+
+            addTodo () {
+
+                let vm = this,url = '/admin/todos';
 
                 if(vm.newTodo.title == ''){
                     return;
@@ -64,21 +72,23 @@
                 });
 
             },
-            removeTodo : function(todo){
 
-                var url = '/admin/todos/'+ todo.id,vm = this;
+            removeTodo (todo) {
+
+                let url = '/admin/todos/'+ todo.id,vm = this;
 
                 axios.post(url, {_method : 'DELETE'}).then(function(request){
-                    var index = vm.todos.indexOf(todo)
+                    let index = vm.todos.indexOf(todo)
                     vm.todos.splice(index, 1)
                 }.bind(this), function(error){
                     console.log(error);
                 });
 
             },
-            toggleTodoComplete : function(todo){
 
-                var url = '/admin/todos/toggleTodo/' + todo.id , vm = this;
+            toggleTodoComplete (todo) {
+
+                let url = '/admin/todos/toggleTodo/' + todo.id , vm = this;
 
                 axios.post(url, {completed : todo.completed}).then(function(request){
                     console.log(request);

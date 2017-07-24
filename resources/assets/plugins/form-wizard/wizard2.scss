@@ -150,12 +150,10 @@
     line-height: 2.45;
     text-align: center;
     top: 0;
-    left: 45.2%;
-    margin-left: -10px;
     z-index: 100;
 }
-
-.wizard.verticle-wizard-circle > .steps .number {
+.wizard.verticle-wizard-circle > .steps .number{
+    left: 45.2%;
     margin-left: -5px;
 }
 

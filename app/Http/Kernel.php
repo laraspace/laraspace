@@ -20,6 +20,7 @@ class Kernel extends HttpKernel
         \Illuminate\Foundation\Http\Middleware\ValidatePostSize::class,
         \Laraspace\Http\Middleware\TrimStrings::class,
         \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
+        SettingsMiddleware::class,
     ];
 
     /**
@@ -58,6 +59,5 @@ class Kernel extends HttpKernel
         'guest' => \Laraspace\Http\Middleware\RedirectIfAuthenticated::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'admin' => AdminMiddleware::class,
-        'setting' => SettingsMiddleware::class,
     ];
 }

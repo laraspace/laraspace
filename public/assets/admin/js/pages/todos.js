@@ -1640,6 +1640,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     mounted: function mounted() {
+
         this.todos = JSON.parse(this.yourTodos);
     },
     data: function data() {
@@ -1655,9 +1656,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             }]
         };
     },
+
+
     props: ['yourTodos'],
+
     methods: {
         addTodo: function addTodo() {
+
             var vm = this,
                 url = '/admin/todos';
 

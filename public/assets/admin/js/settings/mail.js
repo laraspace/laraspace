@@ -10180,12 +10180,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('mailgun', {
     template: '#mailgun-template'
 });
+
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('sendgrid', {
     template: '#sendgrid-template'
 });
+
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('sparkpost', {
     template: '#sparkpost-template'
 });
+
 new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
     el: "#mail-driver",
 

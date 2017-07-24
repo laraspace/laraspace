@@ -41,9 +41,9 @@
                                         </div>
                                         <div class="col-sm-9">
                                             <h4>Jane Doe</h4>
-                                            <p class="detail-row"><i class="fa fa-map-marker"></i> New York , United States</p>
-                                            <p class="detail-row"><i class="fa fa-birthday-cake"></i> September 7, 1991</p>
-                                            <p class="detail-row"><i class="fa fa-wrench"></i> UI Designer / Pro Model</p>
+                                            <p class="detail-row"><i class="icon-fa icon-fa-map-marker"></i> New York , United States</p>
+                                            <p class="detail-row"><i class="icon-fa icon-fa-birthday-cake"></i> September 7, 1991</p>
+                                            <p class="detail-row"><i class="icon-fa icon-fa-wrench"></i> UI Designer / Pro Model</p>
                                         </div>
                                     </div>
                                     <div class="row mt-4">

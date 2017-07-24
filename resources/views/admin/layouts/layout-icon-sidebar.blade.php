@@ -6,23 +6,29 @@
     <script src="{{asset('/assets/admin/js/core/pace.js')}}"></script>
     <link href="{{ mix('/assets/admin/css/laraspace.css') }}" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     @include('admin.layouts.partials.favicons')
     @yield('styles')
 </head>
-<body id="app" class="layout-icon-sidebar skin-default">
-    @include('admin.layouts.partials.laraspace-notifs')
-    @include('admin.layouts.partials.header')
-    <div class="mobile-menu-overlay"></div>
-    @include('admin.layouts.partials.sidebar',['type' => 'icon'])
+<body class="layout-icon-sidebar skin-default">
 
-    @yield('content')
+    <div id="app" class="site-wrapper">
+        @include('admin.layouts.partials.laraspace-notifs')
+        @include('admin.layouts.partials.header')
+        <div class="mobile-menu-overlay"></div>
+        @include('admin.layouts.partials.sidebar',['type' => 'icon'])
 
-    @include('admin.layouts.partials.footer')
-    @if(config('laraspace.skintools'))
-        @include('admin.layouts.partials.skintools')
-    @endif
+        @yield('content')
+
+        @include('admin.layouts.partials.footer')
+        @if(config('laraspace.skintools'))
+            @include('admin.layouts.partials.skintools')
+        @endif
+    </div>
+
     <script src="{{mix('/assets/admin/js/core/plugins.js')}}"></script>
     <script src="{{asset('/assets/admin/js/demo/skintools.js')}}"></script>
+    <script src="{{mix('/assets/admin/js/core/app.js')}}"></script>
     @yield('scripts')
 </body>
 </html>

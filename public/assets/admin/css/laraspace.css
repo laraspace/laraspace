@@ -28052,7 +28052,7 @@ temporary rendered events).
 
 .fc-event,
 .fc-event-dot {
-  background-color: #3a87ad;
+  background-color: #acb7bf;
   /* default BACKGROUND color */
 }
 
@@ -29061,7 +29061,7 @@ be a descendant of the grid when it is being dragged.
 }
 
 .wizard > .steps > ul > li > a > .icon-fa {
-  margin-right: 10px;
+  margin-left: -10px;
 }
 
 .wizard .content .select2-container {
@@ -29331,12 +29331,11 @@ be a descendant of the grid when it is being dragged.
   line-height: 2.45;
   text-align: center;
   top: 0;
-  left: 45.2%;
-  margin-left: -10px;
   z-index: 100;
 }
 
 .wizard.verticle-wizard-circle > .steps .number {
+  left: 45.2%;
   margin-left: -5px;
 }
 
@@ -33807,7 +33806,8 @@ pre.line-numbers > code {
 }
 
 html,
-body {
+body,
+.site-wrapper {
   height: 100%;
 }
 
@@ -35781,26 +35781,26 @@ code,
 
 /* Image Cropper */
 
-.docs-buttons,
+.image-cropper .docs-buttons,
 .col .docs-toggles {
   margin-top: 10px;
 }
 
-.docs-buttons .btn {
+.image-cropper .docs-buttons .btn {
   height: 40px;
 }
 
-.docs-buttons .btn-upload,
+.image-cropper .docs-buttons .btn-upload,
 .docs-buttons .btn-group-justified {
   margin: 0;
 }
 
-.docs-set .row {
+.image-cropper .docs-set .row {
   margin-top: 20px;
   margin-bottom: 40px;
 }
 
-.input-group-addon {
+.image-cropper .input-group-addon {
   color: #fff;
   background-color: #007dcc;
   border-color: #007dcc;
@@ -35988,19 +35988,21 @@ tr > td > .fc-day-grid-event {
   margin: 50px 20px !important;
 }
 
-.sparkline canvas {
-  width: 40% !important;
-}
+/* amcharts,morris */
 
-/* amcharts */
-
-.amcharts {
+.amcharts,
+.morris {
   width: 100%;
   height: 500px;
 }
 
-.amcharts a {
+.amcharts a,
+.morris a {
   display: none !important;
+}
+
+.amcharts-export-menu {
+  display: none;
 }
 
 .amcharts-export-menu {

@@ -91,28 +91,24 @@
 }
 
 //COMPONENTS
-/* Image Cropper */
-.docs-buttons, .col .docs-toggles {
-    margin-top: 10px;
+  /* Image Cropper */
+.image-cropper .docs-buttons,.col .docs-toggles{
+  margin-top: 10px;
 }
-
-.docs-buttons .btn {
-    height: 40px;
+.image-cropper .docs-buttons .btn{
+  height: 40px;
 }
-
-.docs-buttons .btn-upload, .docs-buttons .btn-group-justified {
-    margin: 0;
+.image-cropper .docs-buttons .btn-upload, .docs-buttons .btn-group-justified{
+  margin: 0;
 }
-
-.docs-set .row {
-    margin-top: 20px;
-    margin-bottom: 40px;
+.image-cropper .docs-set .row{
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
-
-.input-group-addon {
-    color: #fff;
-    background-color: #007dcc;
-    border-color: #007dcc;
+.image-cropper .input-group-addon{
+  color: #fff;
+  background-color: #007dcc;
+  border-color: #007dcc;
 }
 
 img {
@@ -276,18 +272,18 @@ tr > td > .fc-day-grid-event {
     margin: 50px 20px !important;
 }
 
-.sparkline canvas {
-    width: 40% !important;
-}
 
-/* amcharts */
-.amcharts {
-    width: 100%;
-    height: 500px;
-}
 
-.amcharts a {
-    display: none !important;
+  /* amcharts,morris */
+.amcharts , .morris{
+  width: 100%;
+  height: 500px;
+}
+.amcharts  a , .morris a{
+  display: none !important;
+}
+.amcharts-export-menu{
+  display: none;
 }
 
 .amcharts-export-menu {
