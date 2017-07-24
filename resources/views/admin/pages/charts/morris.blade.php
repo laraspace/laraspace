@@ -21,7 +21,7 @@
                         <h6>Line Chart</h6>
                     </div>
                     <div class="card-block">
-                        <div class="amcharts" id="morris-line-chart"></div>
+                        <div class="morris" id="morris-line-chart"></div>
                     </div>
                 </div>
             </div>
@@ -33,7 +33,7 @@
                         <h6>Area Chart</h6>
                     </div>
                     <div class="card-block">
-                        <div class="amcharts" id="morris-area-chart"></div>
+                        <div class="morris" id="morris-area-chart"></div>
                     </div>
                 </div>
             </div>
@@ -45,7 +45,7 @@
                         <h6>Donut Chart</h6>
                     </div>
                     <div class="card-block">
-                        <div class="amcharts" id="morris-donut-chart"></div>
+                        <div class="morris" id="morris-donut-chart"></div>
                     </div>
                 </div>
             </div>
@@ -57,7 +57,7 @@
                         <h6>Bar Chart</h6>
                     </div>
                     <div class="card-block">
-                        <div class="amcharts" id="morris-bar-chart"></div>
+                        <div class="morris" id="morris-bar-chart"></div>
                     </div>
                 </div>
             </div>

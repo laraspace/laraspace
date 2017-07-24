@@ -382,7 +382,7 @@
                         <div class="input-group ls-clockpicker" data-autoclose="false">
                             <input type="text" class="form-control" value="09:30">
                             <span class="input-group-addon">
-                                <i class="fa fa-clock-o"></i>
+                                <i class="icon-fa icon-fa-clock-o"></i>
                             </span>
                         </div>
                     </div>
@@ -398,7 +398,7 @@
                              data-autoclose="true">
                             <input type="text" class="form-control" value="09:30">
                             <span class="input-group-addon">
-                                <i class="fa fa-clock-o"></i>
+                                <i class="icon-fa icon-fa-clock-o"></i>
                             </span>
                         </div>
                     </div>
@@ -419,7 +419,7 @@
 
                         <div class="input-group">
                             <span class="input-group-addon">
-                                <i class="fa fa-calendar"></i>
+                                <i class="icon-fa icon-fa-calendar"></i>
                             </span>
                             <input type="text" class="form-control ls-datepicker" value="09:30">
                         </div>
@@ -465,7 +465,7 @@
                         <div class="input-group">
                             <input type="text" class="form-control ls-timepicker" value="09:30">
                             <span class="input-group-addon">
-                                <i class="fa fa-clock-o"></i>
+                                <i class="icon-fa icon-fa-clock-o"></i>
                             </span>
                         </div>
                     </div>
@@ -477,7 +477,7 @@
                         <div class="input-group">
                             <input type="text" class="form-control ls-timepicker" value="09:30" data-duration="true">
                             <span class="input-group-addon">
-                                <i class="fa fa-clock-o"></i>
+                                <i class="icon-fa icon-fa-clock-o"></i>
                             </span>
                         </div>
                     </div>
@@ -489,7 +489,7 @@
                         <div class="input-group">
                             <input type="text" class="form-control ls-timepicker" value="09:30" data-format="H:i:s">
                             <span class="input-group-addon">
-                                <i class="fa fa-clock-o"></i>
+                                <i class="icon-fa icon-fa-clock-o"></i>
                             </span>
                         </div>
                     </div>
