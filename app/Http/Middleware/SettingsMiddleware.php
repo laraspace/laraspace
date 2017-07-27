@@ -54,8 +54,8 @@ class SettingsMiddleware
                 'mail.encryption' => get_setting('mail_smtp_encryption'),
                 'mail.from.name' => get_setting('mail_from_name'),
                 'mail.from.address' => get_setting('mail_from_email'),
-        ]);
-}
+          ]);
+        }
 
 
         return $next($request);
