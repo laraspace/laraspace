@@ -55,7 +55,7 @@
                         <h6><i class="icon-fa icon-fa-line-chart text-warning"></i> Traffic Stats</h6>
                     </div>
                     <div class="card-block">
-                        <line-graph :labels="['Jan','Feb','Mar','June']" :values="[20,30,40,60]"></line-graph>
+                        <line-chart :labels="['Jan','Feb','Mar','June']" :values="[20,30,40,60]"></line-chart>
                     </div>
                 </div>
             </div>
@@ -65,7 +65,7 @@
                         <h6><i class="icon-fa icon-fa-bar-chart text-success"></i> Sales Chart</h6>
                     </div>
                     <div class="card-block">
-                        <bar-graph :labels="['Jan','Feb','Mar','June']" :values="[20,30,40,60]"></bar-graph>
+                        <bar-chart :labels="['Jan','Feb','Mar','June']" :values="[20,30,40,60]"></bar-chart>
                     </div>
                 </div>
             </div>

@@ -15,9 +15,9 @@ window.Vue = require('vue');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('bar-graph', require('./components/BarGraph.vue'));
-Vue.component('line-graph', require('./components/LineGraph.vue'));
-Vue.component('pie-graph', require('./components/PieGraph.vue'));
+Vue.component('bar-chart', require('./components/BarChart.vue'));
+Vue.component('line-chart', require('./components/LineChart.vue'));
+Vue.component('pie-chart', require('./components/PieChart.vue'));
 Vue.component('todos', require('./components/Todos.vue'));
 Vue.component('mail-settings', require('./components/MailSettings.vue'));
 

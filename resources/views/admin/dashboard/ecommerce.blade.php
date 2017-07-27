@@ -12,7 +12,6 @@
                     <span class="title text-primary">
                       35
                     </span>
-
                     <div class="progress">
                         <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
@@ -68,7 +67,7 @@
                         <h6><i class="icon-fa icon-fa-line-chart text-primary"></i> Monthly Sales</h6>
                     </div>
                     <div class="card-block">
-                        <line-graph :labels="['Jan','Feb','Mar','June']" :values="[20,30,40,60]"></line-graph>
+                        <line-chart :labels="['Jan','Feb','Mar','June']" :values="[20,30,40,60]"></line-chart>
                     </div>
                 </div>
             </div>

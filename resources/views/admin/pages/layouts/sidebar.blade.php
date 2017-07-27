@@ -10,45 +10,45 @@
             <div class="col-md-12 col-lg-6 col-xl-3">
                 <a class="dashbox" href="#">
                     <i class="icon-fa icon-fa-envelope text-primary"></i>
-        <span class="title">
-          35
-        </span>
-        <span class="desc">
-          Mails
-        </span>
+                    <span class="title">
+                      35
+                    </span>
+                    <span class="desc">
+                      Mails
+                    </span>
                 </a>
             </div>
             <div class="col-md-12 col-lg-6 col-xl-3">
                 <a class="dashbox" href="#">
                     <i class="icon-fa icon-fa-ticket text-success"></i>
-        <span class="title">
-          200
-        </span>
-        <span class="desc">
-          Pending Tickets
-        </span>
+                    <span class="title">
+                      200
+                    </span>
+                    <span class="desc">
+                      Pending Tickets
+                    </span>
                 </a>
             </div>
             <div class="col-md-12 col-lg-6 col-xl-3">
                 <a class="dashbox" href="#">
                     <i class="icon-fa icon-fa-shopping-cart text-danger"></i>
-        <span class="title">
-          100
-        </span>
-        <span class="desc">
-          New Orders
-        </span>
+                    <span class="title">
+                      100
+                    </span>
+                    <span class="desc">
+                      New Orders
+                    </span>
                 </a>
             </div>
             <div class="col-md-12 col-lg-6 col-xl-3">
                 <a class="dashbox" href="#">
                     <i class="icon-fa icon-fa-comments text-info"></i>
-        <span class="title">
-          59
-        </span>
-        <span class="desc">
-          Comments
-        </span>
+                    <span class="title">
+                      59
+                    </span>
+                    <span class="desc">
+                      Comments
+                    </span>
                 </a>
             </div>
         </div>
@@ -59,7 +59,7 @@
                         <h6><i class="icon-fa icon-fa-line-chart text-primary"></i> Monthly Sales</h6>
                     </div>
                     <div class="card-block">
-                        <line-graph :labels="['Jan','Feb','Mar','June']" :values="[20,30,40,60]"></line-graph>
+                        <line-chart :labels="['Jan','Feb','Mar','June']" :values="[20,30,40,60]"></line-chart>
                     </div>
                 </div>
             </div>
@@ -69,7 +69,7 @@
                         <h6><i class="icon-fa icon-fa-bar-chart text-success"></i> Yearly Sales</h6>
                     </div>
                     <div class="card-block">
-                        <bar-graph :labels="['Jan','Feb','Mar','June']" :values="[20,30,40,60]"></bar-graph>
+                        <bar-chart :labels="['Jan','Feb','Mar','June']" :values="[20,30,40,60]"></bar-chart>
                     </div>
                 </div>
             </div>
