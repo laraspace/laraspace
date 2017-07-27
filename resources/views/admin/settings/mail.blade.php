@@ -38,6 +38,21 @@
                     </div>
                 </div>
             </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-block">
+                        <form method="post" action="{{route('admin.mail.send')}}" enctype="multipart/form-data" id="validateForm">
+                            {{csrf_field()}}
+                            <div class="form-group">
+                                <label>Mail To send</label>
+                                <input type="email" name="email" value="{{ get_setting('email') }}"
+                                       class="form-control">
+                            </div>
+                            <button class="btn btn-primary btn-large"><i class="icon-fa icon-fa-save"></i>Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 

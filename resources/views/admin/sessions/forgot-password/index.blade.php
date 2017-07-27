@@ -1,4 +1,4 @@
-@extends('admin.layouts.layout-login-bg-image')
+@extends('admin.layouts.layout-login')
 
 @section('scripts')
     <script src="/assets/admin/js/sessions/login.js"></script>

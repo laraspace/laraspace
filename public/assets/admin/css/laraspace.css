@@ -13864,8 +13864,8 @@ yx-axis
 .mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerRail,
 .mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_dragger_bar,
 .mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_draggerRail {
-  -webkit-transition: width .2s ease-out .2s, height .2s ease-out .2s, margin-left .2s ease-out .2s, margin-right .2s ease-out .2s, margin-top .2s ease-out .2s, margin-bottom .2s ease-out .2s, opacity .2s ease-in-out, background-color .2s ease-in-out;
-  transition: width .2s ease-out .2s, height .2s ease-out .2s, margin-left .2s ease-out .2s, margin-right .2s ease-out .2s, margin-top .2s ease-out .2s, margin-bottom .2s ease-out .2s, opacity .2s ease-in-out, background-color .2s ease-in-out;
+  -webkit-transition: width .2s ease-out .2s, height .2s ease-out .2s, margin-left .2s ease-out .2s, margin-right .2s ease-out .2s, margin-top .2s ease-out .2s, margin-bottom .2s ease-out .2s, opacity .2s ease-in-out, background-color .2s ease-in-out;
+  transition: width .2s ease-out .2s, height .2s ease-out .2s, margin-left .2s ease-out .2s, margin-right .2s ease-out .2s, margin-top .2s ease-out .2s, margin-bottom .2s ease-out .2s, opacity .2s ease-in-out, background-color .2s ease-in-out;
 }
 
 /* 
@@ -25214,7 +25214,7 @@ span.CodeMirror-selectedtext {
 @font-face {
   font-family: 'fontello';
   src: url(/fonts/fontello.eot?f16aa96c6a63dba6cc7bf750fb157d18);
-  src: url(/fonts/fontello.eot?f16aa96c6a63dba6cc7bf750fb157d18) format("embedded-opentype"), url(/fonts/fontello.woff?198b1acf984a2840854aa373a8a27a67) format("woff"), url(/fonts/fontello.ttf?993985cb285418d7f1a9f12a1ad9d9f6) format("truetype"), url(/fonts/fontello.svg?9644b2750bf7a54143f85dcf6ce520a2) format("svg");
+  src: url(/fonts/fontello.eot?f16aa96c6a63dba6cc7bf750fb157d18) format("embedded-opentype"), url(/fonts/fontello.woff?198b1acf984a2840854aa373a8a27a67) format("woff"), url(/fonts/fontello.ttf?993985cb285418d7f1a9f12a1ad9d9f6) format("truetype"), url(/fonts/fontello.svg?5e4fc23253f13ad54d27c197e8f412e4) format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -25810,7 +25810,7 @@ span.CodeMirror-selectedtext {
 @font-face {
   font-family: 'fpslineicons';
   src: url(/fonts/fpslineicons.eot?4b7e88656288c529d4568aaffcffe66f);
-  src: url(/fonts/fpslineicons.eot?4b7e88656288c529d4568aaffcffe66f) format("embedded-opentype"), url(/fonts/fpslineicons.woff?d4ffd8d867c1e8f54235a763738de7f2) format("woff"), url(/fonts/fpslineicons.ttf?a98d6230aa00aef0abfb57fcc7a93015) format("truetype"), url(/fonts/fpslineicons.svg?dff89e8a2616b00092fc47917d50d64a) format("svg");
+  src: url(/fonts/fpslineicons.eot?4b7e88656288c529d4568aaffcffe66f) format("embedded-opentype"), url(/fonts/fpslineicons.woff?d4ffd8d867c1e8f54235a763738de7f2) format("woff"), url(/fonts/fpslineicons.ttf?a98d6230aa00aef0abfb57fcc7a93015) format("truetype"), url(/fonts/fpslineicons.svg?f590d10c44ee4eae2a3c48ebf33120b9) format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -32078,7 +32078,7 @@ pre.line-numbers > code {
 }
 
 .skin-tyrell .side-nav li li.active > a {
-  background-color: transperant;
+  background-color: transparent;
 }
 
 .skin-tyrell .header-bottom {
@@ -32097,12 +32097,24 @@ pre.line-numbers > code {
 
 .skin-tyrell .header-nav li.active > a {
   color: #4fc47f;
-  background-color: transperant;
+  background-color: transparent;
 }
 
 .skin-tyrell .header-nav li.active > a:hover {
   color: #4fc47f;
-  background-color: transperant;
+  background-color: transparent;
+}
+
+.skin-tyrell .header-nav li .dropdown-item.active {
+  color: #4fc47f;
+  background-color: transparent;
+}
+
+.skin-tyrell .header-nav li .dropdown-item.active:hover,
+.skin-tyrell .header-nav li .dropdown-item.active:focus,
+.skin-tyrell .header-nav li .dropdown-item.active:active {
+  color: #4fc47f;
+  background-color: #ebebeb;
 }
 
 .skin-tyrell .tabs-default .nav-link.active {
@@ -32438,7 +32450,7 @@ pre.line-numbers > code {
 }
 
 .skin-arryn .side-nav li li.active > a {
-  background-color: transperant;
+  background-color: transparent;
 }
 
 .skin-arryn .header-bottom {
@@ -32457,12 +32469,24 @@ pre.line-numbers > code {
 
 .skin-arryn .header-nav li.active > a {
   color: #007dcc;
-  background-color: transperant;
+  background-color: transparent;
 }
 
 .skin-arryn .header-nav li.active > a:hover {
   color: #007dcc;
-  background-color: transperant;
+  background-color: transparent;
+}
+
+.skin-arryn .header-nav li .dropdown-item.active {
+  color: #007dcc;
+  background-color: transparent;
+}
+
+.skin-arryn .header-nav li .dropdown-item.active:hover,
+.skin-arryn .header-nav li .dropdown-item.active:focus,
+.skin-arryn .header-nav li .dropdown-item.active:active {
+  color: #007dcc;
+  background-color: #ebebeb;
 }
 
 .skin-arryn .tabs-default .nav-link.active {
@@ -32825,6 +32849,18 @@ pre.line-numbers > code {
   background-color: #485071;
 }
 
+.skin-targaryen .header-nav li .dropdown-item.active {
+  color: #fff;
+  background-color: #485071;
+}
+
+.skin-targaryen .header-nav li .dropdown-item.active:hover,
+.skin-targaryen .header-nav li .dropdown-item.active:focus,
+.skin-targaryen .header-nav li .dropdown-item.active:active {
+  color: #fff;
+  background-color: #485071;
+}
+
 .skin-targaryen .tabs-default .nav-link.active {
   background-color: #343A52;
   color: #fff;
@@ -33161,7 +33197,7 @@ pre.line-numbers > code {
 }
 
 .skin-lannister .side-nav li li.active > a {
-  background-color: transperant;
+  background-color: transparent;
 }
 
 .skin-lannister .header-bottom {
@@ -33180,12 +33216,24 @@ pre.line-numbers > code {
 
 .skin-lannister .header-nav li.active > a {
   color: #3B4350;
-  background-color: transperant;
+  background-color: transparent;
 }
 
 .skin-lannister .header-nav li.active > a:hover {
   color: #3B4350;
-  background-color: transperant;
+  background-color: transparent;
+}
+
+.skin-lannister .header-nav li .dropdown-item.active {
+  color: #3B4350;
+  background-color: transparent;
+}
+
+.skin-lannister .header-nav li .dropdown-item.active:hover,
+.skin-lannister .header-nav li .dropdown-item.active:focus,
+.skin-lannister .header-nav li .dropdown-item.active:active {
+  color: #3B4350;
+  background-color: #ebebeb;
 }
 
 .skin-lannister .tabs-default .nav-link.active {
@@ -33540,6 +33588,18 @@ pre.line-numbers > code {
 }
 
 .skin-stark .header-nav li.active > a:hover {
+  color: #fff;
+  background-color: #505862;
+}
+
+.skin-stark .header-nav li .dropdown-item.active {
+  color: #fff;
+  background-color: #505862;
+}
+
+.skin-stark .header-nav li .dropdown-item.active:hover,
+.skin-stark .header-nav li .dropdown-item.active:focus,
+.skin-stark .header-nav li .dropdown-item.active:active {
   color: #fff;
   background-color: #505862;
 }
@@ -34026,16 +34086,14 @@ code,
   width: 25px;
 }
 
-.header-nav li .dropdown-item.active,
-.header-nav li .dropdown-item.active:focus,
-.header-nav li .dropdown-item.active:hover {
+.header-nav li .dropdown-item.active {
   color: #ffde00;
   background-color: transparent;
 }
 
 .header-nav li .dropdown-item.active:hover,
-.header-nav li .dropdown-item.active:focus:hover,
-.header-nav li .dropdown-item.active:hover:hover {
+.header-nav li .dropdown-item.active:focus,
+.header-nav li .dropdown-item.active:active {
   background-color: #4d4c4c;
 }
 

@@ -306,6 +306,9 @@ Route::group([
             Route::post('/create', [
                 'as' => 'admin.mail.create', 'uses' => 'SettingsController@postMail'
             ]);
+            Route::post('/send', [
+                'as' => 'admin.mail.send', 'uses' => 'SettingsController@sendMail'
+            ]);
 
         });
 
