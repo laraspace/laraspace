@@ -17009,13 +17009,6 @@ button.toast-close-button {
   display: inline-block;
 }
 
-/*!
- * Bootstrap-select v1.10.0 (http://silviomoreto.github.io/bootstrap-select)
- *
- * Copyright 2013-2016 bootstrap-select
- * Licensed under MIT (https://github.com/silviomoreto/bootstrap-select/blob/master/LICENSE)
- */
-
 select.bs-select-hidden,
 select.selectpicker {
   display: none !important;
@@ -17030,6 +17023,13 @@ select.selectpicker {
   width: 100%;
   padding-right: 25px;
   z-index: 1;
+}
+
+.bootstrap-select > .dropdown-toggle.bs-placeholder,
+.bootstrap-select > .dropdown-toggle.bs-placeholder:hover,
+.bootstrap-select > .dropdown-toggle.bs-placeholder:focus,
+.bootstrap-select > .dropdown-toggle.bs-placeholder:active {
+  color: #636c72;
 }
 
 .bootstrap-select > select {
@@ -17066,7 +17066,9 @@ select.selectpicker {
 }
 
 .bootstrap-select .dropdown-toggle:focus {
-  outline: none !important;
+  outline: thin dotted #333333 !important;
+  outline: 5px auto -webkit-focus-ring-color !important;
+  outline-offset: -2px;
 }
 
 .bootstrap-select.form-control {
@@ -17081,6 +17083,10 @@ select.selectpicker {
 
 .bootstrap-select.form-control.input-group-btn {
   z-index: auto;
+}
+
+.bootstrap-select.form-control.input-group-btn:not(:first-child):not(:last-child) > .btn {
+  border-radius: 0;
 }
 
 .bootstrap-select.btn-group:not(.input-group-btn),
@@ -17107,6 +17113,14 @@ select.selectpicker {
   padding: 0;
 }
 
+.form-group-lg .bootstrap-select.btn-group.form-control .dropdown-toggle,
+.form-group-sm .bootstrap-select.btn-group.form-control .dropdown-toggle {
+  height: 100%;
+  font-size: inherit;
+  line-height: inherit;
+  border-radius: inherit;
+}
+
 .form-inline .bootstrap-select.btn-group .form-control {
   width: 100%;
 }
@@ -17123,6 +17137,8 @@ select.selectpicker {
 
 .bootstrap-select.btn-group.bs-container {
   position: absolute;
+  height: 0 !important;
+  padding: 0 !important;
 }
 
 .bootstrap-select.btn-group.bs-container .dropdown-menu {
@@ -17162,7 +17178,7 @@ select.selectpicker {
   margin: 0;
   border-radius: 0;
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
 }
 
 .bootstrap-select.btn-group .dropdown-menu li {
@@ -17180,9 +17196,9 @@ select.selectpicker {
 .bootstrap-select.btn-group .dropdown-menu li a {
   cursor: pointer;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .bootstrap-select.btn-group .dropdown-menu li a.opt {
@@ -17209,7 +17225,7 @@ select.selectpicker {
   margin: 0 2%;
   min-height: 26px;
   padding: 3px 5px;
-  background: #f5f5f5;
+  background: whitesmoke;
   border: 1px solid #e3e3e3;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
@@ -17338,8 +17354,6 @@ select.selectpicker {
   width: 100%;
   float: none;
 }
-
-
 
 /*!
  * ClockPicker v0.0.7 for Bootstrap (http://weareoutman.github.io/clockpicker/)
@@ -32254,6 +32268,8 @@ pre.line-numbers > code {
   color: #fff;
   background-color: #4fc47f;
   border-color: #4fc47f;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 
 .skin-tyrell .btn-theme:hover {
@@ -32281,6 +32297,8 @@ pre.line-numbers > code {
   background-color: #38a866;
   background-image: none;
   border-color: #36a061;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 
 .skin-tyrell .btn-theme-outline {
@@ -32614,6 +32632,8 @@ pre.line-numbers > code {
   color: #fff;
   background-color: #007dcc;
   border-color: #007dcc;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 
 .skin-arryn .btn-theme:hover {
@@ -32641,6 +32661,8 @@ pre.line-numbers > code {
   background-color: #005e99;
   background-image: none;
   border-color: #00588f;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 
 .skin-arryn .btn-theme-outline {
@@ -32974,6 +32996,8 @@ pre.line-numbers > code {
   color: #fff;
   background-color: #343A52;
   border-color: #343A52;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 
 .skin-targaryen .btn-theme:hover {
@@ -33001,6 +33025,8 @@ pre.line-numbers > code {
   background-color: #202433;
   background-image: none;
   border-color: #1c202d;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 
 .skin-targaryen .btn-theme-outline {
@@ -33333,6 +33359,8 @@ pre.line-numbers > code {
   color: #fff;
   background-color: #3B4350;
   border-color: #3B4350;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 
 .skin-lannister .btn-theme:hover {
@@ -33360,6 +33388,8 @@ pre.line-numbers > code {
   background-color: #252a33;
   background-image: none;
   border-color: #21262d;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 
 .skin-lannister .btn-theme-outline {
@@ -33689,6 +33719,8 @@ pre.line-numbers > code {
   color: #fff;
   background-color: #393F46;
   border-color: #393F46;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 
 .skin-stark .btn-theme:hover {
@@ -33716,6 +33748,8 @@ pre.line-numbers > code {
   background-color: #22262a;
   background-image: none;
   border-color: #1e2124;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 
 .skin-stark .btn-theme-outline {
@@ -34585,6 +34619,8 @@ code,
   color: #333;
   background-color: #ffde00;
   border-color: #ffde00;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 
 .btn-theme:hover {
@@ -34612,6 +34648,8 @@ code,
   background-color: #ccb200;
   background-image: none;
   border-color: #c2a900;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 
 .btn-outline-theme {
@@ -35298,6 +35336,8 @@ code,
 
 .login-page .login-wrapper .c-input > input:checked ~ .c-indicator {
   background-color: #333;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 .login-page .login-wrapper .c-input > input:focus ~ .c-indicator {
@@ -35307,6 +35347,8 @@ code,
 
 .login-page .login-wrapper .c-input > input:active ~ .c-indicator {
   background-color: #262626;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 .login-page .logo-main {
@@ -35721,6 +35763,9 @@ code,
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   min-width: 300px;
   margin-bottom: 20px;
 }
@@ -35733,10 +35778,19 @@ code,
   height: 50px;
   width: 50px;
   padding: 10px;
-  border: 2px solid #FFEB3B;
   border-radius: 3px;
   font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
+  border: 2px solid #FFEB3B;
 }
 
 .icon-container .demo-icon .icon-box:hover {
@@ -36081,10 +36135,6 @@ tr > td > .fc-day-grid-event {
 
 .gauge {
   position: relative;
-}
-
-pre[class*="language-"] {
-  padding: 0;
 }
 
 .skin-tools {

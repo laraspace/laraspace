@@ -15,12 +15,10 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header">
-                        <h6>How To Use</h6>
+                        <h6>Example Usage</h6>
                     </div>
                     <div class="card-block">
-                        <pre class="language-php">
-                            <code> &#13; &lt;i class="icon-ln icon-ln-music"&gt;&lt;/i&gt;</code>
-                        </pre>
+                        <pre class="language-php"><code>&lt;i class="icon-ln icon-ln-music"&gt;&lt;/i&gt;</code></pre>
                     </div>
                 </div>
             </div>

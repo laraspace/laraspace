@@ -31,6 +31,7 @@
     flex: 0.25;
     display: flex;
     flex-direction: row;
+    align-items: center;
     min-width: 300px;
     margin-bottom: 20px;
 }
@@ -43,10 +44,13 @@
     height: 50px;
     width: 50px;
     padding: 10px;
-    border: 2px solid #FFEB3B;
     border-radius: 3px;
     font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    border: 2px solid #FFEB3B;
 }
 
 .icon-container .demo-icon .icon-box:hover {
@@ -352,11 +356,6 @@ tr > td > .fc-day-grid-event {
 
 .gauge {
     position: relative;
-}
-
-//PRISM CSS
-pre[class*="language-"] {
-    padding: 0;
 }
 
 // SKINS DEMO
