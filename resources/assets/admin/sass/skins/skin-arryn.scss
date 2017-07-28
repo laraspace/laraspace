@@ -14,7 +14,7 @@
     $sidebar-bg-color: $white;
     $sidebar-font-color: $ls-color-black;
     $sidemenu-item-bg-color--hover: darken($ls-color-gray--light, 5%);
-    $sidemenu-item-bg-color--active: transperant;
+    $sidemenu-item-bg-color--active: transparent;
     $sidemenu-item-font-color: $ls-color-black;
     $sidemenu-item-font-color--active: $ls-color-theme;
     $sidemenu-arrow-color: $ls-color-gray--very-dark;
@@ -25,7 +25,7 @@
     $header-menu-item-font-color: $ls-color-black;
     $header-menu-item-font-color--active: $ls-color-theme;
     $header-menu-item-bg-color--hover: darken($ls-color-gray--light, 5%);
-    $header-menu-item-bg-color--active: transperant;
+    $header-menu-item-bg-color--active: transparent;
 
     //DROPDOWN
     $dropdown-bg: $white;
@@ -145,6 +145,17 @@
                 background-color: $header-menu-item-bg-color--active;
             }
         }
+
+        li .dropdown-item.active{
+            color: $header-menu-item-font-color--active;
+            background-color: $header-menu-item-bg-color--active;
+
+            &:hover, &:focus, &:active {
+                color: $header-menu-item-font-color--active;
+                background-color: $header-menu-item-bg-color--hover;
+            }
+        }
+
     }
 
     //Tabs

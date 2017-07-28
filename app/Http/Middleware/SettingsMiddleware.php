@@ -20,7 +20,7 @@ class SettingsMiddleware
         if ($mailer == 'mailgun') {
             config()->set([
                 'mail.host' => get_setting('mail_mailgun_host'),
-                'mail.driver' => $mailer,
+                'mail.driver' =>  $mailer,
                 'services.mailgun.domain' => get_setting('mail_mailgun_domain'),
                 'services.mailgun.secret' => get_setting('mail_mailgun_secret'),
                 'mail.from.name' => get_setting('mail_from_name'),
@@ -29,7 +29,7 @@ class SettingsMiddleware
         } else if ($mailer == 'sendgrid') {
             config()->set([
                 'mail.host' => get_setting('mail_sendgrid_host'),
-                'mail.driver' => $mailer,
+                'mail.driver' => 'smtp',
                 'mail.username' => get_setting('mail_sendgrid_username'),
                 'mail.password' => get_setting('mail_sendgrid_password'),
                 'mail.from.name' => get_setting('mail_from_name'),

@@ -32092,7 +32092,7 @@ pre.line-numbers > code {
 }
 
 .skin-tyrell .side-nav li li.active > a {
-  background-color: transperant;
+  background-color: transparent;
 }
 
 .skin-tyrell .header-bottom {
@@ -32111,12 +32111,24 @@ pre.line-numbers > code {
 
 .skin-tyrell .header-nav li.active > a {
   color: #4fc47f;
-  background-color: transperant;
+  background-color: transparent;
 }
 
 .skin-tyrell .header-nav li.active > a:hover {
   color: #4fc47f;
-  background-color: transperant;
+  background-color: transparent;
+}
+
+.skin-tyrell .header-nav li .dropdown-item.active {
+  color: #4fc47f;
+  background-color: transparent;
+}
+
+.skin-tyrell .header-nav li .dropdown-item.active:hover,
+.skin-tyrell .header-nav li .dropdown-item.active:focus,
+.skin-tyrell .header-nav li .dropdown-item.active:active {
+  color: #4fc47f;
+  background-color: #ebebeb;
 }
 
 .skin-tyrell .tabs-default .nav-link.active {
@@ -32456,7 +32468,7 @@ pre.line-numbers > code {
 }
 
 .skin-arryn .side-nav li li.active > a {
-  background-color: transperant;
+  background-color: transparent;
 }
 
 .skin-arryn .header-bottom {
@@ -32475,12 +32487,24 @@ pre.line-numbers > code {
 
 .skin-arryn .header-nav li.active > a {
   color: #007dcc;
-  background-color: transperant;
+  background-color: transparent;
 }
 
 .skin-arryn .header-nav li.active > a:hover {
   color: #007dcc;
-  background-color: transperant;
+  background-color: transparent;
+}
+
+.skin-arryn .header-nav li .dropdown-item.active {
+  color: #007dcc;
+  background-color: transparent;
+}
+
+.skin-arryn .header-nav li .dropdown-item.active:hover,
+.skin-arryn .header-nav li .dropdown-item.active:focus,
+.skin-arryn .header-nav li .dropdown-item.active:active {
+  color: #007dcc;
+  background-color: #ebebeb;
 }
 
 .skin-arryn .tabs-default .nav-link.active {
@@ -32847,6 +32871,18 @@ pre.line-numbers > code {
   background-color: #485071;
 }
 
+.skin-targaryen .header-nav li .dropdown-item.active {
+  color: #fff;
+  background-color: #485071;
+}
+
+.skin-targaryen .header-nav li .dropdown-item.active:hover,
+.skin-targaryen .header-nav li .dropdown-item.active:focus,
+.skin-targaryen .header-nav li .dropdown-item.active:active {
+  color: #fff;
+  background-color: #485071;
+}
+
 .skin-targaryen .tabs-default .nav-link.active {
   background-color: #343A52;
   color: #fff;
@@ -33187,7 +33223,7 @@ pre.line-numbers > code {
 }
 
 .skin-lannister .side-nav li li.active > a {
-  background-color: transperant;
+  background-color: transparent;
 }
 
 .skin-lannister .header-bottom {
@@ -33206,12 +33242,24 @@ pre.line-numbers > code {
 
 .skin-lannister .header-nav li.active > a {
   color: #3B4350;
-  background-color: transperant;
+  background-color: transparent;
 }
 
 .skin-lannister .header-nav li.active > a:hover {
   color: #3B4350;
-  background-color: transperant;
+  background-color: transparent;
+}
+
+.skin-lannister .header-nav li .dropdown-item.active {
+  color: #3B4350;
+  background-color: transparent;
+}
+
+.skin-lannister .header-nav li .dropdown-item.active:hover,
+.skin-lannister .header-nav li .dropdown-item.active:focus,
+.skin-lannister .header-nav li .dropdown-item.active:active {
+  color: #3B4350;
+  background-color: #ebebeb;
 }
 
 .skin-lannister .tabs-default .nav-link.active {
@@ -33570,6 +33618,18 @@ pre.line-numbers > code {
 }
 
 .skin-stark .header-nav li.active > a:hover {
+  color: #fff;
+  background-color: #505862;
+}
+
+.skin-stark .header-nav li .dropdown-item.active {
+  color: #fff;
+  background-color: #505862;
+}
+
+.skin-stark .header-nav li .dropdown-item.active:hover,
+.skin-stark .header-nav li .dropdown-item.active:focus,
+.skin-stark .header-nav li .dropdown-item.active:active {
   color: #fff;
   background-color: #505862;
 }
@@ -34060,16 +34120,14 @@ code,
   width: 25px;
 }
 
-.header-nav li .dropdown-item.active,
-.header-nav li .dropdown-item.active:focus,
-.header-nav li .dropdown-item.active:hover {
+.header-nav li .dropdown-item.active {
   color: #ffde00;
   background-color: transparent;
 }
 
 .header-nav li .dropdown-item.active:hover,
-.header-nav li .dropdown-item.active:focus:hover,
-.header-nav li .dropdown-item.active:hover:hover {
+.header-nav li .dropdown-item.active:focus,
+.header-nav li .dropdown-item.active:active {
   background-color: #4d4c4c;
 }
 

@@ -145,6 +145,17 @@
                 background-color: $header-menu-item-bg-color--active;
             }
         }
+
+        li .dropdown-item.active{
+            color: $header-menu-item-font-color--active;
+            background-color: $header-menu-item-bg-color--active;
+
+            &:hover, &:focus, &:active {
+                color: $header-menu-item-font-color--active;
+                background-color: $header-menu-item-bg-color--hover;
+            }
+        }
+
     }
 
     //Tabs
