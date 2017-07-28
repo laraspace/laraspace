@@ -29377,6 +29377,7 @@ be a descendant of the grid when it is being dragged.
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
+  -ms-flex: 120px;
 }
 
 .wizard.verticle-wizard-circle > .steps > ul > li {
@@ -29395,7 +29396,7 @@ be a descendant of the grid when it is being dragged.
 }
 
 .wizard.verticle-wizard-circle.icon-wizard-2 > .steps ul > li > a > i {
-  left: 45%;
+  left: 48%;
 }
 
 @media (max-width: 992px) {

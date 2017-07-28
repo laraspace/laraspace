@@ -19,7 +19,8 @@
                 <div class="card">
                     <div class="card-block">
                         <mail-settings inline-template view="{{get_setting('mailer')}}">
-                            <form method="post" action="{{route('admin.mail.create')}}" enctype="multipart/form-data" id="validateForm">
+                            <form method="post" action="{{route('admin.mail.create')}}" enctype="multipart/form-data"
+                                  id="validateForm">
                                 {{csrf_field()}}
                                 <div class="form-group">
                                     <label>Mail Driver</label>
@@ -41,12 +42,20 @@
             <div class="col-sm-6">
                 <div class="card">
                     <div class="card-block">
-                        <form method="post" action="{{route('admin.mail.send')}}" enctype="multipart/form-data" id="validateForm">
+                        <form method="post" action="{{route('admin.mail.send')}}" enctype="multipart/form-data"
+                              id="validateForm">
                             {{csrf_field()}}
                             <div class="form-group">
-                                <label>Mail To send</label>
-                                <input type="email" name="email" value="{{ get_setting('email') }}"
-                                       class="form-control">
+                                <label>Title</label>
+                                <input type="text" name="title" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Subject</label>
+                                <input type="text" name="subject" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>To</label>
+                                <input type="email" name="email" class="form-control">
                             </div>
                             <button class="btn btn-primary btn-large"><i class="icon-fa icon-fa-save"></i>Send</button>
                         </form>
@@ -165,12 +174,14 @@
             </div>
             <div class="form-group">
                 <label>Encryption</label>
-                <input type="text" name="mail_smtp_encryption" value="{{ get_setting('mail_smtp_encryption') ?: config('mail.encryption') }}"
+                <input type="text" name="mail_smtp_encryption"
+                       value="{{ get_setting('mail_smtp_encryption') ?: config('mail.encryption') }}"
                        class="form-control">
             </div>
             <div class="form-group">
                 <label>Port</label>
-                <input type="text" name="mail_smtp_port" value="{{ get_setting('mail_smtp_port') ?: config('mail.port') }}"
+                <input type="text" name="mail_smtp_port"
+                       value="{{ get_setting('mail_smtp_port') ?: config('mail.port') }}"
                        class="form-control">
             </div>
             <div class="form-group">

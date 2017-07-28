@@ -324,13 +324,6 @@ Route::group([
 
         });
 
-        Route::get('/notification', [
-            'as' => 'admin.notification.index', 'uses' => 'SettingsController@notification'
-        ]);
-        Route::post('notification/create', [
-            'as' => 'admin.notification.create', 'uses' => 'SettingsController@postNotification'
-        ]);
-
     });
 
 
