@@ -1,9 +1,8 @@
 <html>
     <head>
-        <title>example</title>
+        <title>Test Email</title>
     </head>
     <body>
-        <h1>LARASPACE</h1>
-            <p>Hello, I'm From Bytefury.</p>
+        <h1>{{$title}}</h1>
     </body>
 </html>

@@ -55,7 +55,9 @@ Route::group([
             Route::post('/create', [
                 'as' => 'admin.mail.create', 'uses' => 'SettingsController@postMail'
             ]);
-
+            Route::post('/send', [
+                'as' => 'admin.mail.send', 'uses' => 'SettingsController@sendMail'
+            ]);
         });
 
         //Ace Editor
@@ -71,14 +73,6 @@ Route::group([
 
         });
 
-        //notification
-        Route::get('/notification', [
-            'as' => 'admin.notification.index', 'uses' => 'SettingsController@notification'
-        ]);
-        Route::post('notification/create', [
-            'as' => 'admin.notification.create', 'uses' => 'SettingsController@postNotification'
-        ]);
-
     });
 
 
@@ -93,7 +87,7 @@ Route::group([
 |
 */
 
-Route::group(['middleware' => ['guest','setting']], function () {
+Route::group(['middleware' => ['setting']], function () {
 
     Route::get('login', [
         'as' => 'login', 'uses' => 'AuthController@login'

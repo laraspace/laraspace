@@ -5,12 +5,8 @@ namespace Laraspace\Http\Controllers;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Laraspace\Http\Requests;
-use Laraspace\Jobs\SendTestEmail;
-use Laraspace\Jobs\SendVerificationEmail;
 use Laraspace\Mail\OrderShipped;
-use Laraspace\Mail\TestEmail;
 use Laraspace\Space\Settings\Setting;
-use Laraspace\User;
 
 class SettingsController extends Controller
 {
@@ -100,17 +96,18 @@ class SettingsController extends Controller
 
     public function sendMail(Request $request)
     {
-        Setting::setSetting('email', $request->email);
+        $title = $request->input('title');
+        $subject = $request->input('subject');
+        $email_to= $request->input('email');
 
-        $email = new TestEmail($request->email);
-        \Mail::to($request->email)->send($email);
+        \Mail::send('emails.email', ['title' => $title], function ($message) use ($subject,$email_to)
+        {
+            $message->to($email_to);
+            $message->subject($subject);
+        });
 
         flash()->success('mail Send');
         return redirect()->back();
-    }
-    public function notification()
-    {
-        return view('admin.settings.notification');
     }
 
     public function notificationCreate(Request $request)

@@ -57,11 +57,6 @@ return [
                     'active' => 'admin/settings/mail*',
                 ],
                 [
-                    'title' => 'Notification',
-                    'link' => 'admin/settings/notification',
-                    'active' => 'admin/settings/notification*',
-                ],
-                [
                     'title' => 'Environment',
                     'link' => 'admin/settings/env',
                     'active' => 'admin/settings/env*',
