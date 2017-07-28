@@ -173,6 +173,7 @@
     display: flex;
     justify-content: center;
     position: relative;
+    -ms-flex:120px;
 }
 
 .wizard.verticle-wizard-circle > .steps > ul > li {
@@ -191,7 +192,7 @@
 }
 
 .wizard.verticle-wizard-circle.icon-wizard-2 > .steps ul > li > a > i {
-    left: 45%;
+    left: 48%;
 }
 
 @media (max-width: 992px) {
