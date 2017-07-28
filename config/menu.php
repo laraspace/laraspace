@@ -377,7 +377,7 @@ return [
                     'active' => 'admin/settings/social',
                 ],
                 [
-                    'title' => 'Mail',
+                    'title' => 'Mail Driver',
                     'link' => 'admin/settings/mail',
                     'active' => 'admin/settings/mail*',
                 ],

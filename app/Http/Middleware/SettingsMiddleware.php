@@ -37,10 +37,8 @@ class SettingsMiddleware
             ]);
         } else if ($mailer == 'sparkpost'){
             config()->set([
-                'mail.host' => get_setting('mail_sparkpost_host'),
                 'mail.driver' => $mailer,
-                'mail.username' => get_setting('mail_sparkpost_username'),
-                'mail.password' => get_setting('mail_sparkpost_secret'),
+                'services.mailgun.secret' => get_setting('mail_sparkpost_secret'),
                 'mail.from.name' => get_setting('mail_from_name'),
                 'mail.from.address' => get_setting('mail_from_email'),
             ]);

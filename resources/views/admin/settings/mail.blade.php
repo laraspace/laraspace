@@ -11,16 +11,18 @@
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="{{route('admin.dashboard')}}">Home</a></li>
                 <li class="breadcrumb-item"><a href="#">Settings</a></li>
-                <li class="breadcrumb-item"><a href="{{route('admin.mail.index')}}">Mail</a></li>
+                <li class="breadcrumb-item"><a href="{{route('admin.settings.mail.index')}}">Mail</a></li>
             </ol>
         </div>
         <div class="row">
             <div class="col-sm-6">
                 <div class="card">
+                    <div class="card-header">
+                        <h6>Set Mail Driver</h6>
+                    </div>
                     <div class="card-block">
                         <mail-settings inline-template view="{{get_setting('mailer')}}">
-                            <form method="post" action="{{route('admin.mail.create')}}" enctype="multipart/form-data"
-                                  id="validateForm">
+                            <form id="mailDriverForm" method="post" action="{{route('admin.settings.mail.post')}}" enctype="multipart/form-data">
                                 {{csrf_field()}}
                                 <div class="form-group">
                                     <label>Mail Driver</label>
@@ -41,21 +43,23 @@
             </div>
             <div class="col-sm-6">
                 <div class="card">
+                    <div class="card-header">
+                        <h6>Send Test Email</h6>
+                    </div>
                     <div class="card-block">
-                        <form method="post" action="{{route('admin.mail.send')}}" enctype="multipart/form-data"
-                              id="validateForm">
+                        <form id="testForm" method="post" action="{{route('admin.settings.mail.send')}}" enctype="multipart/form-data">
                             {{csrf_field()}}
                             <div class="form-group">
-                                <label>Title</label>
-                                <input type="text" name="title" class="form-control">
+                                <label>To</label>
+                                <input type="text" name="to" class="form-control">
                             </div>
                             <div class="form-group">
                                 <label>Subject</label>
                                 <input type="text" name="subject" class="form-control">
                             </div>
                             <div class="form-group">
-                                <label>To</label>
-                                <input type="email" name="email" class="form-control">
+                                <label>Message</label>
+                                <textarea name="message" class="form-control"></textarea>
                             </div>
                             <button class="btn btn-primary btn-large"><i class="icon-fa icon-fa-save"></i>Send</button>
                         </form>
@@ -127,16 +131,6 @@
 
     <script type="text/x-template" id="sparkpost-template">
         <div>
-            <div class="form-group">
-                <label>SparkPost Host</label>
-                <input type="text" name="mail_sparkpost_host" value="{{ get_setting('mail_sparkpost_host') }}"
-                       class="form-control">
-            </div>
-            <div class="form-group">
-                <label>SparkPost Username</label>
-                <input type="text" name="mail_sparkpost_username" value="{{ get_setting('mail_sparkpost_username') }}"
-                       class="form-control">
-            </div>
             <div class="form-group">
                 <label>SparkPost Secret</label>
                 <input type="text" name="mail_sparkpost_secret" value="{{ get_setting('mail_sparkpost_secret') }}"

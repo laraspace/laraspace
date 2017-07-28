@@ -1,11 +1,11 @@
 var FormValidation = function () {
 
     // Login form validation
-    var handleValidation = function() {
+    var handleMailDriverValidation = function() {
 
         // for more info visit the official plugin documentation:
         // http://docs.jquery.com/Plugins/Validation
-        var form = $('#validateForm');
+        var form = $('#mailDriverForm');
 
         form.validate({
             errorElement: 'span', //default input error message container
@@ -13,60 +13,108 @@ var FormValidation = function () {
             focusInvalid: false, // do not focus the last invalid input
             ignore: "",  // validate all fields including form hidden input
             rules: {
-                mail_from : {
+                mail_from: {
                     required: true,
                     email: true
                 },
                 mail_mailgun_host: {
                     required: true
                 },
-                mail_mailgun_user : {
+                mail_mailgun_user: {
                     required: true
                 },
-                mail_mailgun_secret : {
+                mail_mailgun_secret: {
                     required: true
                 },
-                mail_mailgun_domain : {
-                    required: true
-                },
-
-                mail_sendgrid_host : {
+                mail_mailgun_domain: {
                     required: true
                 },
 
-                mail_sendgrid_username : {
+                mail_sendgrid_host: {
                     required: true
                 },
 
-                mail_sendgrid_password : {
+                mail_sendgrid_username: {
                     required: true
                 },
 
-                mail_sendgrid_user : {
+                mail_sendgrid_password: {
                     required: true
                 },
 
-                mail_sparkpost_secret : {
+                mail_sendgrid_user: {
                     required: true
                 },
 
-                mail_sparkpost_user : {
+                mail_sparkpost_secret: {
                     required: true
                 },
 
-                mail_sparkpost_from : {
+                mail_sparkpost_user: {
                     required: true
                 },
-                mail_sparkpost_host
-                    : {
+
+                mail_sparkpost_from: {
+                    required: true
+                },
+                mail_sparkpost_host: {
                     required: true
                 },
                 mail_sparkpost_username: {
                     required: true
                 },
-                notify_mail : {
+                notify_mail: {
                     required: true,
                     email: true
+                }
+            },
+
+            highlight: function (element) { // hightlight error inputs
+                $(element)
+                    .closest('.form-group').addClass('has-danger'); // set danger class to the control group
+            },
+
+            unhighlight: function (element) { // revert the change done by hightlight
+                $(element)
+                    .closest('.form-group').removeClass('has-danger'); // set danger class to the control group
+            },
+            errorPlacement: function (error, element) {
+                if (element.parent('.input-group').length || element.prop('type') === 'checkbox' || element.prop('type') === 'radio') {
+                    error.insertAfter(element.parent());
+                } else {
+                    error.insertAfter(element);
+                }
+            },
+            success: function (label) {
+                label
+                    .closest('.form-group').removeClass('has-danger'); // set success class to the control group
+            },
+        });
+
+    };
+
+    // Login form validation
+    var handleTestFormValidation = function() {
+
+        // for more info visit the official plugin documentation:
+        // http://docs.jquery.com/Plugins/Validation
+        var form = $('#testForm');
+
+        form.validate({
+            errorElement: 'span', //default input error message container
+            errorClass: 'help-block help-block-error', // default input error message class
+            focusInvalid: false, // do not focus the last invalid input
+            ignore: "",  // validate all fields including form hidden input
+            rules: {
+                to: {
+                    required: true,
+                    email: true
+                },
+                subject: {
+                    required: true,
+                },
+                message: {
+                    required: true,
                 }
             },
 
@@ -98,7 +146,8 @@ var FormValidation = function () {
     return {
         //main function to initiate the module
         init: function () {
-            handleValidation();
+            handleMailDriverValidation();
+            handleTestFormValidation();
         }
     };
 

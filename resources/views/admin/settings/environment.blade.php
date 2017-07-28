@@ -11,7 +11,7 @@
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="{{route('admin.dashboard')}}">Home</a></li>
                 <li class="breadcrumb-item"><a href="#">Settings</a></li>
-                <li class="breadcrumb-item"><a href="{{route('admin.setting.environment')}}">Environment</a></li>
+                <li class="breadcrumb-item"><a href="{{route('admin.settings.environment')}}">Environment</a></li>
             </ol>
         </div>
 
@@ -19,7 +19,7 @@
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-block">
-                        <form method="post" action="{{route('admin.setting.environment.create')}}">
+                        <form method="post" action="{{route('admin.settings.environment.post')}}">
                             {{csrf_field()}}
                             <textarea name="environment"></textarea>
                             <pre id="environment">{{$env}}</pre>

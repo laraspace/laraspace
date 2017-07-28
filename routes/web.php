@@ -301,13 +301,15 @@ Route::group([
         Route::group(['prefix' => 'mail'], function () {
 
             Route::get('/', [
-                'as' => 'admin.mail.index', 'uses' => 'SettingsController@mail'
+                'as' => 'admin.settings.mail.index', 'uses' => 'SettingsController@mail'
             ]);
-            Route::post('/create', [
-                'as' => 'admin.mail.create', 'uses' => 'SettingsController@postMail'
+
+            Route::post('/', [
+                'as' => 'admin.settings.mail.post', 'uses' => 'SettingsController@postMail'
             ]);
-            Route::post('/send', [
-                'as' => 'admin.mail.send', 'uses' => 'SettingsController@sendMail'
+
+            Route::post('/send-test-email', [
+                'as' => 'admin.settings.mail.send', 'uses' => 'SettingsController@sendTestMail'
             ]);
 
         });
@@ -315,11 +317,11 @@ Route::group([
         Route::group(['prefix' => 'env'], function () {
 
             Route::get('/', [
-                'as' => 'admin.setting.environment', 'uses' => 'SettingsController@environment'
+                'as' => 'admin.settings.environment', 'uses' => 'SettingsController@environment'
             ]);
 
             Route::post('/create', [
-                'as' => 'admin.setting.environment.create', 'uses' => 'SettingsController@postEnvironment'
+                'as' => 'admin.settings.environment.post', 'uses' => 'SettingsController@postEnvironment'
             ]);
 
         });

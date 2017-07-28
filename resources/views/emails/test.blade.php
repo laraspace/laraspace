@@ -1,10 +1,10 @@
 @component('mail::message')
-# Introduction
+# Test Email
 
-This is a test email
+{{ $my_message }}
 
 @component('mail::button', ['url' => ''])
-Buy Now
+Test
 @endcomponent
 
 Thanks,<br>

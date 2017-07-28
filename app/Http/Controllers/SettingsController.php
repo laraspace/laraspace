@@ -5,8 +5,9 @@ namespace Laraspace\Http\Controllers;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Laraspace\Http\Requests;
-use Laraspace\Mail\OrderShipped;
+use Laraspace\Mail\TestMail;
 use Laraspace\Space\Settings\Setting;
+use Mail;
 
 class SettingsController extends Controller
 {
@@ -41,18 +42,6 @@ class SettingsController extends Controller
 
     public function mail()
     {
-//        $content = [
-//            'title'=> 'Test Email',
-//            'body'=> 'Thank you for the payment',
-//            'button' => 'Buy Now'
-//        ];
-//
-//        $receiverAddress = 'purvi.panjvani@gmail.com';
-//
-//        \Mail::to($receiverAddress)->send(new OrderShipped($content));
-//
-//        dd('mail send successfully');
-
         return view('admin.settings.mail');
     }
 
@@ -73,7 +62,7 @@ class SettingsController extends Controller
             }
 
         } else if ($request->mailer == 'sparkpost'){
-            $sets = ['mail_sparkpost_host','mail_sparkpost_username','mail_sparkpost_secret','mail_from_name','mail_from_email'];
+            $sets = ['mail_sparkpost_secret','mail_from_name','mail_from_email'];
 
             foreach ($sets as $key) {
                 Setting::setSetting($key, $request->input($key));
@@ -94,32 +83,17 @@ class SettingsController extends Controller
         return redirect()->back();
     }
 
-    public function sendMail(Request $request)
+    public function sendTestMail(Request $request)
     {
-        $title = $request->input('title');
-        $subject = $request->input('subject');
-        $email_to= $request->input('email');
+        $this->validate($request, [
+            'to' => 'required|email',
+            'subject' => 'required',
+            'message' => 'required'
+        ]);
 
-        \Mail::send('emails.email', ['title' => $title], function ($message) use ($subject,$email_to)
-        {
-            $message->to($email_to);
-            $message->subject($subject);
-        });
+        Mail::to($request->to)->send(new TestMail($request->subject, $request->message));
 
-        flash()->success('mail Send');
-        return redirect()->back();
-    }
-
-    public function notificationCreate(Request $request)
-    {
-        $sets = ['notify_mail'];
-
-        foreach ($sets as $key) {
-            Setting::setSetting($key, $request->input($key));
-        }
-
-        flash()->success('Settings Saved');
-
+        flash()->success('Email Sent');
         return redirect()->back();
     }
 
