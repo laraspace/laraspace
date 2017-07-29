@@ -26,7 +26,8 @@ Route::group([
 //    'middleware' => 'admin'
 ], function () {
 
-    //Main Dashboard
+    // Dashboard
+    //----------------------------------
 
     Route::get('/', [
         'as' => 'admin.dashboard', 'uses' => 'DashboardController@index'
@@ -34,10 +35,13 @@ Route::group([
 
     Route::resource('users','UsersController');
 
-    //Settings
+
+    // Settings
+    //----------------------------------
+
     Route::group(['prefix' => 'settings'], function () {
 
-        //social
+
         Route::get('/social', [
             'as' => 'admin.settings.index', 'uses' => 'SettingsController@index'
         ]);
@@ -46,35 +50,35 @@ Route::group([
             'as' => 'admin.settings.social', 'uses' => 'SettingsController@postSocial'
         ]);
 
-        //mailer
         Route::group(['prefix' => 'mail'], function () {
 
             Route::get('/', [
-                'as' => 'admin.mail.index', 'uses' => 'SettingsController@mail'
+                'as' => 'admin.settings.mail.index', 'uses' => 'SettingsController@mail'
             ]);
-            Route::post('/create', [
-                'as' => 'admin.mail.create', 'uses' => 'SettingsController@postMail'
+
+            Route::post('/', [
+                'as' => 'admin.settings.mail.post', 'uses' => 'SettingsController@postMail'
             ]);
-            Route::post('/send', [
-                'as' => 'admin.mail.send', 'uses' => 'SettingsController@sendMail'
+
+            Route::post('/send-test-email', [
+                'as' => 'admin.settings.mail.send', 'uses' => 'SettingsController@sendTestMail'
             ]);
+
         });
 
-        //Ace Editor
         Route::group(['prefix' => 'env'], function () {
 
             Route::get('/', [
-                'as' => 'admin.setting.environment', 'uses' => 'SettingsController@environment'
+                'as' => 'admin.settings.environment', 'uses' => 'SettingsController@environment'
             ]);
 
             Route::post('/create', [
-                'as' => 'admin.setting.environment.create', 'uses' => 'SettingsController@postEnvironment'
+                'as' => 'admin.settings.environment.post', 'uses' => 'SettingsController@postEnvironment'
             ]);
 
         });
 
     });
-
 
 });
 
@@ -87,7 +91,7 @@ Route::group([
 |
 */
 
-Route::group(['middleware' => ['setting']], function () {
+Route::group(['middleware' => ['guest']], function () {
 
     Route::get('login', [
         'as' => 'login', 'uses' => 'AuthController@login'
@@ -100,6 +104,7 @@ Route::group(['middleware' => ['setting']], function () {
     Route::post('login', [
         'as' => 'login.post', 'uses' => 'AuthController@postLogin'
     ]);
+
     Route::get('forgot-password', [
         'as' => 'forgot-password.index', 'uses' => 'ForgotPasswordController@getEmail'
     ]);
@@ -117,9 +122,14 @@ Route::group(['middleware' => ['setting']], function () {
     ]);
 
     Route::get('auth/{provider}', 'AuthController@redirectToProvider');
+
     Route::get('auth/{provider}/callback', 'AuthController@handleProviderCallback');
 });
 
 Route::get('logout', [
+    'as' => 'logout', 'uses' => 'AuthController@logout'
+]);
+
+Route::get('install', [
     'as' => 'logout', 'uses' => 'AuthController@logout'
 ]);
