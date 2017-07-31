@@ -271,9 +271,21 @@ tr > td > .fc-day-grid-event {
     width: auto !important;
     height: auto !important;
 }
-
-.sparkline-chart .row .col {
-    margin: 50px 20px !important;
+.sparkline-chart .row .sparkline-chart-type{
+    margin:25px 40px !important;
+    flex: 1;
+    min-width: 25%;
+}
+.sparkline-chart .row{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+@media(max-width:$small-breakpoint){
+    .sparkline-chart .row .sparkline-chart-type{
+        margin:25px 40px !important;
+        min-width: 30%;
+    }
 }
 
 
@@ -309,28 +321,24 @@ tr > td > .fc-day-grid-event {
     justify-content: center;
     margin: 20px auto !important;
 }
-
 .gauge-lg,
 .gauge-lg .basic-gauge,
 .gauge-lg .donut-gauge,
 .gauge-lg .color-gauge {
     height: 250px;
 }
-
 .gauge-md,
 .gauge-md .basic-gauge,
 .gauge-md .donut-gauge,
 .gauge-md .color-gauge {
     height: 180px;
 }
-
 .gauge-sm,
 .gauge-sm .basic-gauge,
 .gauge-sm .donut-gauge,
 .gauge-sm .color-gauge {
     height: 120px;
 }
-
 .gauge-label {
     display: inline-block;
     position: absolute;
@@ -341,22 +349,32 @@ tr > td > .fc-day-grid-event {
     font-size: 28px;
     font-weight: bold;
 }
-
 .gauge-label.middle-label {
     top: 40%;
 }
-
 .gauge-lg .gauge-label {
     font-size: 40px;
 }
-
 .gauge-sm .gauge-label {
     font-size: 20px;
 }
-
 .gauge {
     position: relative;
 }
+@media(max-width: $x-small-breakpoint){
+    .gauge-lg,
+    .gauge-lg .basic-gauge,
+    .gauge-lg .donut-gauge,
+    .gauge-lg .color-gauge {
+        height: 180px !important;
+        width: auto !important;
+    }
+    .gauge-lg .gauge-label{
+        font-size: 28px;
+    }
+
+}
+
 
 // SKINS DEMO
 .skin-tools {

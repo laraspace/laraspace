@@ -109,11 +109,18 @@
 .wizard.basic-wizard > .steps > ul > li > a {
     height: 50px;
     background: #eee;
-    padding-top: 12px;
     width: 100%;
     text-align: center;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.wizard.basic-wizard > .steps > ul > li > a > .icon-fa{
+    margin: 0;
+    width: 40px;
 }
 
 .wizard.basic-wizard > .steps > ul > li.error > a {
