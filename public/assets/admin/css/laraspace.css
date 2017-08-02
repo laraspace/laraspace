@@ -21228,7 +21228,7 @@ span.CodeMirror-selectedtext {
   border: 1px solid #ccc;
   background: #fafafa;
   background: -webkit-gradient(linear, left top, left bottom, from(#fafafa), to(#eee));
-  background: linear-gradient(top, #fafafa 0%, #eee 100%);
+  background: linear-gradient(to bottom, #fafafa 0%, #eee 100%);
   border-radius: 3px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -21261,8 +21261,8 @@ span.CodeMirror-selectedtext {
   overflow: hidden;
   border: 1px solid #aaa;
   background: #ddd;
-  background: -webkit-gradient(linear, left top, left bottom, from(top), color-stop(0%, #ddd), to(#bbb));
-  background: linear-gradient(top, #ddd 0%, #bbb 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ddd), to(#bbb));
+  background: linear-gradient(to bottom, #ddd 0%, #bbb 100%);
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
