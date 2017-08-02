@@ -2,7 +2,6 @@
 
 @section('scripts')
     <script src="{{asset('assets/admin/js/pages/gallery.js')}}"></script>
-    <script></script>
 @stop
 
 @section('content')
@@ -20,7 +19,7 @@
                 <h6>Image Gallery</h6>
             </div>
             <div class="card-block">
-                <div class="my-gallery" itemscope>
+                <div class="my-gallery image-gallery" itemscope>
                     <div class="row">
                         <figure class="col-lg-3 col-md-6 col-xs-12" itemprop="associatedMedia" itemscope>
                             <a href="{{asset('assets/admin/img/demo/gallery/1.jpg')}}" itemprop="contentUrl"
@@ -193,7 +192,7 @@
                 <h6>YouTube Video Gallery</h6>
             </div>
             <div class="card-block">
-                <div class="youtube-video-gallery">
+                <div class="my-gallery youtube-video-gallery">
                     <div class="row">
                         <div class="col-lg-3 col-md-6 ">
                             <div class="embed-responsive embed-responsive-16by9">
@@ -254,7 +253,7 @@
                 <h6>Vimeo Video Gallery</h6>
             </div>
             <div class="card-block">
-                <div class="vimeo-video-gallery">
+                <div class="my-gallery vimeo-video-gallery">
                     <div class="row">
                         <div class="col-lg-3 col-md-6">
                             <div class="embed-responsive embed-responsive-16by9">

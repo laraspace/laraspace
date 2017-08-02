@@ -3962,7 +3962,7 @@
                                     <span>icon-im-IcoMoon, <br>icon-im-icomoon</span>
                                 </div>
                             </div>
-                            <div class="demo-icon"></div>
+
                         </div>
                     </div>
                 </div>

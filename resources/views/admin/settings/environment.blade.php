@@ -1,9 +1,5 @@
 @extends('admin.layouts.layout-basic')
 
-@section('scripts')
-    <script src="{{asset('assets/admin/js/settings/environment.js')}}"></script>
-@stop
-
 @section('content')
     <div class="main-content">
         <div class="page-header">
@@ -15,18 +11,20 @@
             </ol>
         </div>
 
-        <div class="row" id="root">
+        <div class="row">
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-block">
-                        <form method="post" action="{{route('admin.settings.environment.post')}}">
-                            {{csrf_field()}}
-                            <textarea name="environment"></textarea>
-                            <pre id="environment">{{$env}}</pre>
-                            <button class="btn btn-primary btn-large" type="submit">
-                                <i class="icon-fa icon-fa-save"></i>Save
-                            </button>
-                        </form>
+                        <env-editor inline-template>
+                            <form method="post" action="{{route('admin.settings.environment.post')}}">
+                                {{csrf_field()}}
+                                <textarea v-show="false" name="environment" >@{{ textarea }}</textarea>
+                                <pre id="environment">{{$env}}</pre>
+                                <button class="btn btn-primary btn-large" type="submit">
+                                    <i class="icon-fa icon-fa-save"></i>Save
+                                </button>
+                            </form>
+                        </env-editor>
                     </div>
                 </div>
             </div>

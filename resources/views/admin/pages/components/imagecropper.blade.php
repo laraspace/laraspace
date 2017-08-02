@@ -349,7 +349,7 @@
                                 </div><!-- /.modal -->
                                 <h5 class="section-semi-title">Get Data:</h5>
                                 <div class="row">
-                                    <div class="col-lg-4 docs-buttons">
+                                    <div class="col-xl-4 docs-buttons">
                                         <div class="input-group input-group-sm">
                                             <button type="button" class="btn btn-primary input-group-addon"
                                                     data-method="setData" data-target="#putData1">
@@ -368,7 +368,7 @@
                                             <input type="text" class="form-control" id="putData1" placeholder="Get data ">
                                         </div>
                                     </div>
-                                    <div class="col-lg-4 docs-buttons">
+                                    <div class="col-xl-4 docs-buttons">
                                         <div class="input-group input-group-sm">
                                             <button type="button" class="btn btn-primary input-group-addon"
                                                     data-method="getImageData" data-option data-target="#putData2">
@@ -380,7 +380,7 @@
                                             <input type="text" class="form-control" id="putData2" placeholder="Get data ">
                                         </div>
                                     </div>
-                                    <div class="col-lg-4 docs-buttons">
+                                    <div class="col-xl-4 docs-buttons">
                                         <div class="input-group input-group-sm">
                                             <button type="button" class="btn btn-primary input-group-addon"
                                                     data-method="getContainerData" data-option data-target="#putData3">
@@ -394,7 +394,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-md-6 docs-buttons">
+                                    <div class="col-xl-6 docs-buttons">
                                         <div class="input-group input-group-sm">
                                             <button type="button" class="btn btn-primary  input-group-addon"
                                                     data-method="getCanvasData" data-option data-target="#putData4">
@@ -406,7 +406,7 @@
                                             <input type="text" class="form-control" id="putData4" placeholder="Get data ">
                                         </div>
                                     </div>
-                                    <div class="col-md-6 docs-buttons">
+                                    <div class="col-xl-6 docs-buttons">
                                         <div class="input-group input-group-sm">
                                             <button type="button" class="btn btn-primary input-group-addon"
                                                     data-method="getCropBoxData" data-option data-target="#putData5">

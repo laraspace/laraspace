@@ -1,5 +1,14 @@
 @extends('admin.layouts.layout-basic')
+@section('styles')
+    <style>
+        .icon-container:after{
+            content: "";
+            flex: auto;
+            min-width:300px;
+        }
 
+    </style>
+@stop
 @section('content')
     <div class="main-content">
         <div class="page-header">

@@ -1,11 +1,5 @@
 @extends('admin.layouts.layout-basic')
 
-@section('styles')
-    <style>
-
-    </style>
-@stop
-
 @section('scripts')
     <script src="{{asset('assets/admin/js/pages/gallery.js')}}"></script>
 @stop
@@ -25,7 +19,7 @@
                 <h6>Masonry Image Gallery</h6>
             </div>
             <div class="card-block">
-                <div class="my-gallery" itemscope>
+                <div class="my-gallery image-gallery" itemscope>
                     <div class="my-gallery-container">
                         <div class="item" data-order="0">
                             <figure itemprop="associatedMedia" itemscope>
@@ -207,7 +201,7 @@
                 <h6>Video Gallery</h6>
             </div>
             <div class="card-block">
-                <div class="youtube-video-gallery">
+                <div class="my-gallery youtube-video-gallery">
                     <div class="my-gallery-container">
                         <div class="item embed-responsive embed-responsive-16by9" data-order="0">
                             <div class="demo embed-responsive-item" data-youtube="https://www.youtube.com/watch?v=3pn2SI4KGJc"></div>
