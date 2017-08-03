@@ -13864,8 +13864,8 @@ yx-axis
 .mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerRail,
 .mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_dragger_bar,
 .mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_draggerRail {
-  -webkit-transition: width .2s ease-out .2s, height .2s ease-out .2s, margin-left .2s ease-out .2s, margin-right .2s ease-out .2s, margin-top .2s ease-out .2s, margin-bottom .2s ease-out .2s, opacity .2s ease-in-out, background-color .2s ease-in-out;
-  transition: width .2s ease-out .2s, height .2s ease-out .2s, margin-left .2s ease-out .2s, margin-right .2s ease-out .2s, margin-top .2s ease-out .2s, margin-bottom .2s ease-out .2s, opacity .2s ease-in-out, background-color .2s ease-in-out;
+  -webkit-transition: width .2s ease-out .2s, height .2s ease-out .2s, margin-left .2s ease-out .2s, margin-right .2s ease-out .2s, margin-top .2s ease-out .2s, margin-bottom .2s ease-out .2s, opacity .2s ease-in-out, background-color .2s ease-in-out;
+  transition: width .2s ease-out .2s, height .2s ease-out .2s, margin-left .2s ease-out .2s, margin-right .2s ease-out .2s, margin-top .2s ease-out .2s, margin-bottom .2s ease-out .2s, opacity .2s ease-in-out, background-color .2s ease-in-out;
 }
 
 /* 
@@ -25228,7 +25228,7 @@ span.CodeMirror-selectedtext {
 @font-face {
   font-family: 'fontello';
   src: url(/fonts/fontello.eot?f16aa96c6a63dba6cc7bf750fb157d18);
-  src: url(/fonts/fontello.eot?f16aa96c6a63dba6cc7bf750fb157d18) format("embedded-opentype"), url(/fonts/fontello.woff?198b1acf984a2840854aa373a8a27a67) format("woff"), url(/fonts/fontello.ttf?993985cb285418d7f1a9f12a1ad9d9f6) format("truetype"), url(/fonts/fontello.svg?5e4fc23253f13ad54d27c197e8f412e4) format("svg");
+  src: url(/fonts/fontello.eot?f16aa96c6a63dba6cc7bf750fb157d18) format("embedded-opentype"), url(/fonts/fontello.woff?198b1acf984a2840854aa373a8a27a67) format("woff"), url(/fonts/fontello.ttf?993985cb285418d7f1a9f12a1ad9d9f6) format("truetype"), url(/fonts/fontello.svg?9644b2750bf7a54143f85dcf6ce520a2) format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -25824,7 +25824,7 @@ span.CodeMirror-selectedtext {
 @font-face {
   font-family: 'fpslineicons';
   src: url(/fonts/fpslineicons.eot?4b7e88656288c529d4568aaffcffe66f);
-  src: url(/fonts/fpslineicons.eot?4b7e88656288c529d4568aaffcffe66f) format("embedded-opentype"), url(/fonts/fpslineicons.woff?d4ffd8d867c1e8f54235a763738de7f2) format("woff"), url(/fonts/fpslineicons.ttf?a98d6230aa00aef0abfb57fcc7a93015) format("truetype"), url(/fonts/fpslineicons.svg?f590d10c44ee4eae2a3c48ebf33120b9) format("svg");
+  src: url(/fonts/fpslineicons.eot?4b7e88656288c529d4568aaffcffe66f) format("embedded-opentype"), url(/fonts/fpslineicons.woff?d4ffd8d867c1e8f54235a763738de7f2) format("woff"), url(/fonts/fpslineicons.ttf?a98d6230aa00aef0abfb57fcc7a93015) format("truetype"), url(/fonts/fpslineicons.svg?dff89e8a2616b00092fc47917d50d64a) format("svg");
   font-weight: normal;
   font-style: normal;
 }
