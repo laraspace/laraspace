@@ -1,7 +1,7 @@
 @extends('admin.layouts.layout-basic')
 
 @section('scripts')
-    <script src="{{asset('/assets/admin/js/pages/nestable/nestable/list.js')}}"></script>
+    <script src="{{asset('/assets/admin/js/pages/nestable/list.js')}}"></script>
 @stop
 
 @section('content')
