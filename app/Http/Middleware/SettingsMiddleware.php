@@ -29,7 +29,7 @@ class SettingsMiddleware
         } else if ($mailer == 'sendgrid') {
             config()->set([
                 'mail.host' => get_setting('mail_sendgrid_host'),
-               // 'mail.driver' => $mailer,
+                'mail.driver' => 'smtp',
                 'mail.username' => get_setting('mail_sendgrid_username'),
                 'mail.password' => get_setting('mail_sendgrid_password'),
                 'mail.from.name' => get_setting('mail_from_name'),

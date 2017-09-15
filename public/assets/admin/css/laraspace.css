@@ -35904,6 +35904,10 @@ code,
           flex-direction: row;
 }
 
+.icon-container svg {
+  display: block;
+}
+
 .progress {
   margin-top: 20px;
 }
