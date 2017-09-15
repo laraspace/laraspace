@@ -33,7 +33,7 @@ Route::group([
         'as' => 'admin.dashboard', 'uses' => 'DashboardController@index'
     ]);
 
-    Route::resource('users','UsersController');
+    Route::resource('users', 'UsersController');
 
 
     // Settings
@@ -63,7 +63,6 @@ Route::group([
             Route::post('/send-test-email', [
                 'as' => 'admin.settings.mail.send', 'uses' => 'SettingsController@sendTestMail'
             ]);
-
         });
 
         Route::group(['prefix' => 'env'], function () {
@@ -75,11 +74,8 @@ Route::group([
             Route::post('/create', [
                 'as' => 'admin.settings.environment.post', 'uses' => 'SettingsController@postEnvironment'
             ]);
-
         });
-
     });
-
 });
 
 /*

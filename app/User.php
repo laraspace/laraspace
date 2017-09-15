@@ -40,6 +40,4 @@ class User extends Authenticatable
         $password = $request->password;
         return (\Auth::attempt(array('email' => $email, 'password' => $password), $remember));
     }
-
-
 }

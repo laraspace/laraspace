@@ -20,7 +20,7 @@ class TodosController extends Controller
     {
         $todos = Todo::all();
 
-        return view('admin.pages.todos.index')->with('todos',$todos);
+        return view('admin.pages.todos.index')->with('todos', $todos);
     }
 
     /**
@@ -39,7 +39,7 @@ class TodosController extends Controller
         return response()->json([
             'message' => 'Todo Added Successfully',
             'todo' => $todo
-        ],200);
+        ], 200);
     }
 
     /**
@@ -49,7 +49,7 @@ class TodosController extends Controller
      * @param Request $request
      * @return View
      */
-    public function toggleTodo($id,Request $request)
+    public function toggleTodo($id, Request $request)
     {
         $todo = Todo::findOrFail($id);
         $todo->completed = $request->completed;
@@ -57,7 +57,7 @@ class TodosController extends Controller
 
         return response()->json([
             'message' => 'Todo Marked as Complete',
-        ],200);
+        ], 200);
     }
 
     /**
@@ -75,6 +75,6 @@ class TodosController extends Controller
         return response()->json([
             'message' => 'Todo Deleted Successfully',
 
-        ],200);
+        ], 200);
     }
 }

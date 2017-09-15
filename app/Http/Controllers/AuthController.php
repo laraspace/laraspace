@@ -7,7 +7,6 @@ use Laraspace\Http\Requests;
 use Laraspace\User;
 use Socialite;
 
-
 class AuthController extends Controller
 {
     public function login()
@@ -25,7 +24,6 @@ class AuthController extends Controller
             } else {
                 return redirect()->to('/');
             }
-
         }
 
         flash()->error('Invalid Login Credentials');
@@ -94,5 +92,4 @@ class AuthController extends Controller
 
         return $user;
     }
-
 }

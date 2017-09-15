@@ -35,14 +35,14 @@ class SettingsMiddleware
                 'mail.from.name' => get_setting('mail_from_name'),
                 'mail.from.address' => get_setting('mail_from_email'),
             ]);
-        } else if ($mailer == 'sparkpost'){
+        } else if ($mailer == 'sparkpost') {
             config()->set([
                 'mail.driver' => $mailer,
                 'services.mailgun.secret' => get_setting('mail_sparkpost_secret'),
                 'mail.from.name' => get_setting('mail_from_name'),
                 'mail.from.address' => get_setting('mail_from_email'),
             ]);
-        }else if ($mailer == 'smtp'){
+        } else if ($mailer == 'smtp') {
             config()->set([
                 'mail.host' => get_setting('mail_smtp_host'),
                 'mail.driver' => $mailer,
@@ -52,7 +52,7 @@ class SettingsMiddleware
                 'mail.encryption' => get_setting('mail_smtp_encryption'),
                 'mail.from.name' => get_setting('mail_from_name'),
                 'mail.from.address' => get_setting('mail_from_email'),
-          ]);
+            ]);
         }
 
 

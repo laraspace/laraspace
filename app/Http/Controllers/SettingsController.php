@@ -53,15 +53,13 @@ class SettingsController extends Controller
             foreach ($sets as $key) {
                 Setting::setSetting($key, $request->input($key));
             }
-
         } else if ($request->mailer == 'sendgrid') {
             $sets = ['mail_sendgrid_host', 'mail_sendgrid_username', 'mail_sendgrid_password', 'mail_from_name','mail_from_email'];
 
             foreach ($sets as $key) {
                 Setting::setSetting($key, $request->input($key));
             }
-
-        } else if ($request->mailer == 'sparkpost'){
+        } else if ($request->mailer == 'sparkpost') {
             $sets = ['mail_sparkpost_secret','mail_from_name','mail_from_email'];
 
             foreach ($sets as $key) {
@@ -106,7 +104,7 @@ class SettingsController extends Controller
 
     public function postEnvironment(Request $request)
     {
-       \Storage::put('.env', $request->environment);
+        \Storage::put('.env', $request->environment);
 
         return back();
     }

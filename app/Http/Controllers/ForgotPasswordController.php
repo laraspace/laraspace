@@ -65,6 +65,5 @@ class ForgotPasswordController extends Controller
 
         flash()->success('Your Password Updated Success Fully');
         return redirect()->route('home');
-
     }
 }
