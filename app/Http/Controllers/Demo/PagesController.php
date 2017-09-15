@@ -237,5 +237,4 @@ class PagesController extends Controller
     {
         return view('admin.pages.icons.fontawesome');
     }
-
 }

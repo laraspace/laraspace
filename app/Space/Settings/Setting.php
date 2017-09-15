@@ -27,10 +27,9 @@ class Setting extends Model
 
     public static function getSetting($key)
     {
-        if(cache()->has($key)) {
-
+        if (cache()->has($key)) {
             return cache()->get($key);
-        }else {
+        } else {
             $setting = static::whereOption($key)->first();
 
             if ($setting) {
