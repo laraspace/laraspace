@@ -20,7 +20,6 @@ Vue.component('line-chart', require('./components/LineChart.vue'));
 Vue.component('pie-chart', require('./components/PieChart.vue'));
 Vue.component('todos', require('./components/Todos.vue'));
 Vue.component('mail-settings', require('./components/MailSettings.vue'));
-Vue.component('env-editor', require('./components/Environment.vue'));
 
 new Vue({
     el: '#app',

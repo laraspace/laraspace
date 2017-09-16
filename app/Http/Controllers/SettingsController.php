@@ -95,17 +95,4 @@ class SettingsController extends Controller
         return redirect()->back();
     }
 
-    public function environment()
-    {
-        $env = \Storage::get('.env');
-
-        return view('admin.settings.environment', compact('env'));
-    }
-
-    public function postEnvironment(Request $request)
-    {
-        \Storage::put('.env', $request->environment);
-
-        return back();
-    }
 }

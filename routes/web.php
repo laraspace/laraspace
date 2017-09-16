@@ -304,17 +304,6 @@ Route::group([
                 'as' => 'admin.settings.mail.send', 'uses' => 'SettingsController@sendTestMail'
             ]);
         });
-
-        Route::group(['prefix' => 'env'], function () {
-
-            Route::get('/', [
-                'as' => 'admin.settings.environment', 'uses' => 'SettingsController@environment'
-            ]);
-
-            Route::post('/create', [
-                'as' => 'admin.settings.environment.post', 'uses' => 'SettingsController@postEnvironment'
-            ]);
-        });
     });
 });
 
