@@ -75,8 +75,8 @@
 }
 
 .wizard > .actions a, .wizard > .actions a:hover, .wizard > .actions a:active {
-    background: #2184be;
-    color: #fff;
+    background: $ls-color-blue;
+    color: $white;
     display: block;
     padding: 0.5em 1em;
     text-decoration: none;
@@ -86,7 +86,7 @@
 }
 
 .wizard label.error {
-    color: #f35a3d;
+    color: $ls-color-red;
     position: absolute;
 }
 
@@ -95,72 +95,5 @@
 }
 
 .wizard .form-control.error {
-    border-color: #f35a3d;
+    border-color: $ls-color-red;
 }
-
-.wizard.basic-wizard .steps ul {
-    border-bottom: 1px solid #333;
-}
-
-.wizard.basic-wizard > .steps {
-    margin-top: 20px;
-}
-
-.wizard.basic-wizard > .steps > ul > li > a {
-    height: 50px;
-    background: #eee;
-    width: 100%;
-    text-align: center;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.wizard.basic-wizard > .steps > ul > li > a > .icon-fa{
-    margin: 0;
-    width: 40px;
-}
-
-.wizard.basic-wizard > .steps > ul > li.error > a {
-    background: red;
-}
-
-.wizard.basic-wizard > .steps .current a,
-.wizard.basic-wizard > .steps .current a:active {
-    color: white;
-    background-color: #333;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-}
-
-.wizard.basic-wizard > .steps .done a:hover {
-    background: #3b3b3b;
-    color: #ffffff;
-}
-
-.wizard.basic-wizard > .steps .done a {
-    background: #ffde00;
-    box-shadow: none;
-    color: #333;
-}
-
-.wizard.basic-wizard > .steps > ul > li:first-child {
-    margin-left: 0;
-}
-
-.wizard.basic-wizard > .steps > ul > li:last-child {
-    margin-right: 0;
-}
-
-.wizard.basic-wizard > .steps > ul > li,
-.wizard.basic-wizard > .actions > ul > li {
-    margin: auto 3px;
-}
-
-.wizard.basic-wizard > .steps .number {
-    display: none;
-}
-
-

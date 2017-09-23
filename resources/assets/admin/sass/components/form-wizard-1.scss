@@ -1,0 +1,71 @@
+.form-wizard-1 {
+
+    .steps ul {
+        border-bottom: 1px solid #333;
+    }
+
+    > .steps {
+        margin-top: 20px;
+
+        > ul > li > a {
+            height: 40px;
+            background: #eee;
+            width: 100%;
+            text-align: center;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        > ul > li > a > .icon-fa {
+            margin: 0;
+            width: 40px;
+        }
+
+        > ul > li.error > a {
+            background: $ls-color-red;
+            color: $white;
+        }
+
+        .current a,
+        .current a:active ,
+        .current a:hover {
+            color: $ls-color-black;
+            background-color: $ls-color-primary;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        .done a,
+        .done a:active,
+        .done a:hover {
+            background: lighten($ls-color-primary, 30%);
+            box-shadow: none;
+            color: $ls-color-black
+        }
+
+        > ul > li:first-child {
+            margin-left: 0;
+        }
+
+        > ul > li:last-child {
+            margin-right: 0;
+        }
+
+        > ul > li{
+            margin: auto 5px;
+        }
+
+        .number {
+            display: none;
+        }
+    }
+
+    > .actions > ul > li {
+        margin: auto 5px;
+    }
+
+}

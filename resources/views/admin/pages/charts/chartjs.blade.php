@@ -18,26 +18,26 @@
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-block">
-                        <div class="m-b-2">
+                        <div class="mb-4">
                             <h5 class="section-semi-title">
                                 Line Chart
                             </h5>
                             <canvas id="lineChart" width="400" height="400"></canvas>
                         </div>
-                        <div class="m-b-2">
+                        <div class="mb-4">
                             <h5 class="section-semi-title">
                                 Bar Chart
                             </h5>
                             <canvas id="barChart" width="400" height="400"></canvas>
                         </div>
                         <div class="row">
-                            <div class="col-md-6 m-b-2">
+                            <div class="col-md-6 mb-4">
                                 <h5 class="section-semi-title">
                                     Pie Chart
                                 </h5>
                                 <canvas id="pieChart" width="400" height="400"></canvas>
                             </div>
-                            <div class="col-md-6 m-b-2">
+                            <div class="col-md-6 mb-4">
                                 <h5 class="section-semi-title">
                                     Doughnut Chart
                                 </h5>

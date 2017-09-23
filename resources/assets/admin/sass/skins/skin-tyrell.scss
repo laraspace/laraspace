@@ -47,6 +47,7 @@
             background-color: $header-buttons-bg-color;
             color: $header-buttons-font-color;
         }
+
         .hamburger span {
             background: $header-buttons-font-color;
         }
@@ -119,7 +120,6 @@
     }
 
     //Horizontal Layout
-
     .header-bottom {
         background-color: $header-bottom-bg;
         border-bottom: 1px solid $ls-color-gray--dark;
@@ -311,7 +311,6 @@
     }
 
     //Forms
-
     .form-control:focus {
         border: 1px solid $ls-color-theme;
     }
@@ -354,12 +353,43 @@
             background-color: $header-buttons-bg-color--hover;
         }
     }
-    //DATEPICKER
 
+    //DATEPICKER
     .datepicker-dropdown {
         color: $body-color;
         background-color: $white;
         border: 1px solid rgba(0, 0, 0, .15);
+    }
+
+    //FORM WIZARDS
+    .form-wizard-1 > .steps{
+
+        .current a,
+        .current a:active ,
+        .current a:hover {
+            background-color: $ls-color-theme;
+            color: $white;
+        }
+
+        .done a,
+        .done a:active,
+        .done a:hover {
+            background: lighten($ls-color-theme, 30%);
+            color: $white;
+        }
+    }
+
+    .form-wizard-3 > .steps > ul{
+
+        .current a{
+            border-bottom: 3px solid $ls-color-theme;
+            color: $ls-color-black;
+        }
+
+        .done a{
+            border-bottom: 2px solid lighten($ls-color-theme, 30%);
+            color: $ls-color-black;
+        }
     }
 
     @include media-breakpoint-down(sm) {

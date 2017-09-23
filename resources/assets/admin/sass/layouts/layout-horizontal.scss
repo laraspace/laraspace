@@ -34,11 +34,11 @@
             width: 25px;
         }
 
-        .dropdown-item.active{
+        .dropdown-item.active {
             color: $ls-color-primary;
             background-color: transparent;
 
-            &:hover, &:focus, &:active{
+            &:hover, &:focus, &:active {
                 background-color: $sidemenu-item-bg-color--hover;
             }
         }
@@ -165,4 +165,3 @@
     }
 
 }
-

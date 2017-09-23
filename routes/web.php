@@ -200,6 +200,10 @@ Route::group([
         Route::get('wizards-2', [
             'as' => 'admin.forms.wizards2', 'uses' => 'Demo\PagesController@wizards2'
         ]);
+
+        Route::get('wizards-3', [
+            'as' => 'admin.forms.wizards3', 'uses' => 'Demo\PagesController@wizards3'
+        ]);
     });
 
     // Gallery Components

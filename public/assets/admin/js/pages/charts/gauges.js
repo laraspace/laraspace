@@ -1,6 +1,5 @@
 var GaugesChart = function () {
 
-    //Gauges
     var handleGauges = function () {
         var opts_basic = {
             angle: 0.15, /// The span of the gauge arc

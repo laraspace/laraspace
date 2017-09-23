@@ -164,6 +164,11 @@ class PagesController extends Controller
         return view('admin.pages.forms.wizards2');
     }
 
+    public function wizards3()
+    {
+        return view('admin.pages.forms.wizards3');
+    }
+
     // Gallery
     public function galleryGrid()
     {

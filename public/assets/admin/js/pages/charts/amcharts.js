@@ -991,7 +991,6 @@ var AMCharts = function () {
         });
     };
 
-    //Radar Chart
     var handleRadarChart = function () {
 
         var radarchart = AmCharts.makeChart("radar-chart", {

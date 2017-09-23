@@ -1,0 +1,172 @@
+.form-wizard-2 {
+
+    > .steps > ul {
+
+        a {
+            margin-top: 55px;
+            background: none;
+            color: $ls-color-black;
+        }
+
+        > li:after,
+        > li:before {
+            content: '';
+            width: 50%;
+            height: 3px;
+            top: 27px;
+            background: #eee;
+            position: absolute;
+            z-index: 0;
+        }
+
+        > li:after {
+            right: 0;
+        }
+
+        > li:before {
+            left: 0;
+        }
+
+        .number {
+            font-size: 18px;
+            position: absolute;
+            background: #FFFFFF;
+            border: 2px solid #eee;
+            width: 48px;
+            border-radius: 50%;
+            line-height: 2.45;
+            text-align: center;
+            top: 0;
+            margin-left: -2px;
+            z-index: 100;
+            cursor: pointer;
+        }
+
+        .current .number,
+        .done .number {
+            border: 2px solid $ls-color-primary;
+        }
+
+        .done .number {
+            background: $ls-color-primary;
+        }
+
+        .error .number {
+            border: 2px solid $ls-color-red;
+        }
+
+        .current:before,
+        .current:after,
+        .done:after,
+        .done:before {
+            background: $ls-color-primary;
+        }
+
+        .current:after,
+        .current ~ li:after,
+        .current ~ li:before {
+            background: #eee !important;
+        }
+
+        .current.last.done:after {
+            background: $ls-color-primary !important;
+        }
+
+    }
+
+    &.icon-wizard > .steps > ul {
+
+        .number {
+            display: none !important;
+        }
+
+        .current i,
+        .done i {
+            border: 2px solid $ls-color-primary;
+        }
+
+        .done i {
+            background: $ls-color-primary;
+        }
+
+        .error i {
+            border: 2px solid $ls-color-red;
+        }
+
+        i {
+            font-size: 18px;
+            position: absolute;
+            background: #FFFFFF;
+            border: 2px solid #eee;
+            width: 48px;
+            border-radius: 50%;
+            line-height: 2.45;
+            text-align: center;
+            top: 0;
+            margin-left: -2px !important;
+            z-index: 100;
+            cursor: pointer;
+        }
+
+    }
+
+    &.vertical-wizard {
+
+        display: flex;
+        flex-wrap: wrap;
+
+        .steps {
+            flex: 1;
+        }
+
+        .content {
+            flex: 5;
+            top: 40px;
+        }
+
+        .steps > ul {
+            flex-direction: column;
+            height: 100%;
+            align-items: center;
+
+            a {
+                margin-top: 0;
+                padding-left: 60px;
+            }
+
+            .number {
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            > li {
+                flex: 1;
+                position: relative;
+                align-items: center;
+            }
+
+            > li:before,
+            > li:last-child:after{
+                display: none;
+            }
+
+            > li:not(:last-child):after {
+                content: '';
+                width: 4px;
+                height: 100%;
+                top: 50%;
+                background: #eee;
+                position: absolute;
+                z-index: 0;
+                left: 20px;
+            }
+
+            .done:after {
+                background: #ffde00 !important;
+            }
+        }
+
+    }
+
+}

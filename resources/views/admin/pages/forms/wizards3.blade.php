@@ -20,7 +20,7 @@
             </div>
             <div class="card-block">
                 <div class="content">
-                    <form id="basic-wizard" class="form-wizard-1">
+                    <form id="basic-wizard" class="form-wizard-3">
                         <h3>Step 1</h3>
                         <section>
                             <div class="row">
@@ -142,7 +142,7 @@
             </div>
             <div class="card-block">
                 <div class="content">
-                    <form id="basic-wizard-2" class="form-wizard-1 icon-wizard">
+                    <form id="basic-wizard-2" class="form-wizard-3">
                         <h3><i class="icon-fa icon-fa-home"></i>Step 1</h3>
                         <section>
                             <div class="row">
@@ -177,7 +177,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Occupation</label>
-                                        <input type="text" class="form-control">
+                                        <input type="text" class="form-control" >
                                     </div>
                                 </div>
                             </div>
@@ -243,7 +243,7 @@
                         <section>
                             <div class="form-group">
                                 <label>Facebook</label>
-                                <input type="text" class="form-control">
+                                <input type="text" class="form-control" >
                             </div>
                             <div class="form-group">
                                 <label>Twitter</label>
@@ -265,7 +265,7 @@
             </div>
             <div class="card-block">
                 <div class="content">
-                    <form id="basic-wizard-3" class="form-wizard-1 icon-wizard">
+                    <form id="basic-wizard-3" class="form-wizard-3">
                         <h3><i class="icon-fa icon-fa-home"></i>Step 1</h3>
                         <section>
                             <div class="row">
@@ -280,10 +280,9 @@
                                         <input type="text" id="lastname" name="lastname" class="form-control required">
                                     </div>
                                     <div class="form-group">
-                                        <label>DOB *</label>
+                                        <label>DOB</label>
                                         <div class="input-group">
-                                            <input type="text" id="dob" name="dob"
-                                                   class="form-control required ls-datepicker" value="06/10/2017">
+                                            <input type="text" class="form-control ls-datepicker" value="06/10/2017">
                                             <span class="input-group-addon">
                                                 <i class="icon-fa icon-fa-calendar"></i>
                                             </span>
@@ -303,7 +302,7 @@
                                     <div class="form-group">
                                         <label>Occupation *</label>
                                         <input type="text" id="occupation" name="occupation"
-                                               class="form-control required">
+                                               class="form-control required" >
                                     </div>
                                 </div>
                             </div>
@@ -325,7 +324,8 @@
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label>Password *</label>
-                                        <input type="password" id="password" name="password" class="form-control required">
+                                        <input type="password" id="password" name="password"
+                                               class="form-control required">
                                     </div>
                                     <div class="form-group">
                                         <label>Password Confirmation *</label>
@@ -366,7 +366,6 @@
                                 </div>
                             </div>
                         </section>
-
                         <h3><i class="icon-fa icon-fa-twitter"></i>Step 4</h3>
                         <section>
                             <div class="form-group">

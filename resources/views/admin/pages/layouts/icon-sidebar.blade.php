@@ -1,9 +1,5 @@
 @extends('admin.layouts.layout-icon-sidebar')
 
-@section('scripts')
-    <script src="/assets/admin/js/dashboard/dashboard.js"></script>
-@stop
-
 @section('content')
     <div class="main-content">
         <div class="row">

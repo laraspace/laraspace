@@ -1,6 +1,5 @@
 var Users = function () {
 
-
     var handleTables = function(){
         $('#users-datatable').DataTable({
             responsive : true

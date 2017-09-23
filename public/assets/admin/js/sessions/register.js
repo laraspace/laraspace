@@ -1,4 +1,4 @@
-var registerForm = function () {
+var RegisterForm = function () {
 
     // Login form validation
     var handleValidation = function() {
@@ -55,5 +55,5 @@ var registerForm = function () {
 }();
 
 jQuery(document).ready(function() {
-    registerForm.init();
+    RegisterForm.init();
 });

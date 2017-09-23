@@ -13,7 +13,7 @@ return [
     |
     */
 
-    //SIDEBAR LAYOUT - MENU
+    // SIDEBAR LAYOUT - MENU
 
     'sidebar' => [
         [
@@ -274,6 +274,11 @@ return [
                     'active' => 'admin/forms/wizards-2',
                 ],
                 [
+                    'title' => 'Form Wizard 3',
+                    'link' => '/admin/forms/wizards-3',
+                    'active' => 'admin/forms/wizards-3',
+                ],
+                [
                     'title' => 'Editors',
                     'link' => '/admin/forms/editors',
                     'active' => 'admin/forms/editors',
@@ -385,7 +390,7 @@ return [
         ],
     ],
 
-    //HORIZONTAL MENU LAYOUT -  MENU
+    // HORIZONTAL MENU LAYOUT -  MENU
 
     'horizontal' => [
         [
@@ -550,11 +555,6 @@ return [
                     'link' => 'admin/settings/mail',
                     'active' => 'admin/settings/mail*',
                     'icon' => 'icon-fa icon-fa-mail',
-                ],
-                [
-                    'title' => 'Environment',
-                    'link' => 'admin/settings/environment',
-                    'active' => 'admin/settings/environment*',
                 ],
             ]
         ]

@@ -34,7 +34,6 @@
 @import "../../plugins/icons/icons.scss";
 @import "../../plugins/calendar/fullcalendar.scss";
 @import "../../plugins/form-wizard/wizard.scss";
-@import "../../plugins/form-wizard/wizard2.scss";
 @import "../../plugins/imageCropper/cropper.scss";
 @import "../../plugins/gallery/image/photoswipe.scss";
 @import "../../plugins/gallery/image/default-skin.scss";
@@ -47,6 +46,7 @@
 
 // Skins
 //----------------------------------
+
 @import 'skins/skin-tyrell';
 @import 'skins/skin-arryn';
 @import 'skins/skin-targaryen';
@@ -87,6 +87,7 @@
 @import "components/modals";
 @import 'components/hamburgers';
 @import "components/transitions";
+@import "components/form-wizards";
 
 
 // Pages

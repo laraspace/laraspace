@@ -1665,32 +1665,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/assets/admin/js/components/Environment.vue":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-    data: function data() {
-        return {
-            editor: "",
-            textarea: ""
-        };
-    },
-    mounted: function mounted() {
-        var vm = this;
-        var editor = vm.editor = ace.edit("environment");
-        vm.textarea = editor.getSession().getValue();
-        editor.getSession().setValue(vm.textarea);
-        editor.getSession().on('change', function () {
-            vm.textarea = editor.getSession().getValue();
-        });
-    }
-});
-
-/***/ }),
-
 /***/ "./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/assets/admin/js/components/LineChart.vue":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -30226,7 +30200,6 @@ Vue.component('line-chart', __webpack_require__("./resources/assets/admin/js/com
 Vue.component('pie-chart', __webpack_require__("./resources/assets/admin/js/components/PieChart.vue"));
 Vue.component('todos', __webpack_require__("./resources/assets/admin/js/components/Todos.vue"));
 Vue.component('mail-settings', __webpack_require__("./resources/assets/admin/js/components/MailSettings.vue"));
-Vue.component('env-editor', __webpack_require__("./resources/assets/admin/js/components/Environment.vue"));
 
 new Vue({
   el: '#app'
@@ -30313,46 +30286,6 @@ if (false) {(function () {
     hotAPI.createRecord("data-v-3e574cd5", Component.options)
   } else {
     hotAPI.reload("data-v-3e574cd5", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-
-/***/ "./resources/assets/admin/js/components/Environment.vue":
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-var Component = __webpack_require__("./node_modules/vue-loader/lib/component-normalizer.js")(
-  /* script */
-  __webpack_require__("./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/assets/admin/js/components/Environment.vue"),
-  /* template */
-  null,
-  /* styles */
-  null,
-  /* scopeId */
-  null,
-  /* moduleIdentifier (server only) */
-  null
-)
-Component.options.__file = "/Users/bytefury/Project/web/laraspace/resources/assets/admin/js/components/Environment.vue"
-if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-69da05b9", Component.options)
-  } else {
-    hotAPI.reload("data-v-69da05b9", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
