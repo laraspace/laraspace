@@ -32126,6 +32126,41 @@ pre.line-numbers > code {
   color: #fff;
 }
 
+.skin-tyrell .form-wizard-2 > .steps > ul .current .number,
+.skin-tyrell .form-wizard-2 > .steps > ul .done .number {
+  border: 2px solid #4fc47f;
+}
+
+.skin-tyrell .form-wizard-2 > .steps > ul .done .number {
+  background: #4fc47f;
+  color: #fff;
+}
+
+.skin-tyrell .form-wizard-2 > .steps > ul .current:before,
+.skin-tyrell .form-wizard-2 > .steps > ul .current:after,
+.skin-tyrell .form-wizard-2 > .steps > ul .done:after,
+.skin-tyrell .form-wizard-2 > .steps > ul .done:before {
+  background: #4fc47f;
+}
+
+.skin-tyrell .form-wizard-2 > .steps > ul .current.last.done:after {
+  background: #4fc47f !important;
+}
+
+.skin-tyrell .form-wizard-2.icon-wizard > .steps > ul .current i,
+.skin-tyrell .form-wizard-2.icon-wizard > .steps > ul .done i {
+  border: 2px solid #4fc47f;
+}
+
+.skin-tyrell .form-wizard-2.icon-wizard > .steps > ul .done i {
+  background: #4fc47f;
+  color: #fff;
+}
+
+.skin-tyrell .form-wizard-2.vertical-wizard .steps > ul .done:after {
+  background: #4fc47f !important;
+}
+
 .skin-tyrell .form-wizard-3 > .steps > ul .current a {
   border-bottom: 3px solid #4fc47f;
   color: #333;
@@ -32524,6 +32559,41 @@ pre.line-numbers > code {
 .skin-arryn .form-wizard-1 > .steps .done a:hover {
   background: #66c4ff;
   color: #fff;
+}
+
+.skin-arryn .form-wizard-2 > .steps > ul .current .number,
+.skin-arryn .form-wizard-2 > .steps > ul .done .number {
+  border: 2px solid #007dcc;
+}
+
+.skin-arryn .form-wizard-2 > .steps > ul .done .number {
+  background: #007dcc;
+  color: #fff;
+}
+
+.skin-arryn .form-wizard-2 > .steps > ul .current:before,
+.skin-arryn .form-wizard-2 > .steps > ul .current:after,
+.skin-arryn .form-wizard-2 > .steps > ul .done:after,
+.skin-arryn .form-wizard-2 > .steps > ul .done:before {
+  background: #007dcc;
+}
+
+.skin-arryn .form-wizard-2 > .steps > ul .current.last.done:after {
+  background: #007dcc !important;
+}
+
+.skin-arryn .form-wizard-2.icon-wizard > .steps > ul .current i,
+.skin-arryn .form-wizard-2.icon-wizard > .steps > ul .done i {
+  border: 2px solid #007dcc;
+}
+
+.skin-arryn .form-wizard-2.icon-wizard > .steps > ul .done i {
+  background: #007dcc;
+  color: #fff;
+}
+
+.skin-arryn .form-wizard-2.vertical-wizard .steps > ul .done:after {
+  background: #007dcc !important;
 }
 
 .skin-arryn .form-wizard-3 > .steps > ul .current a {
@@ -32926,6 +32996,41 @@ pre.line-numbers > code {
   color: #fff;
 }
 
+.skin-targaryen .form-wizard-2 > .steps > ul .current .number,
+.skin-targaryen .form-wizard-2 > .steps > ul .done .number {
+  border: 2px solid #343A52;
+}
+
+.skin-targaryen .form-wizard-2 > .steps > ul .done .number {
+  background: #343A52;
+  color: #fff;
+}
+
+.skin-targaryen .form-wizard-2 > .steps > ul .current:before,
+.skin-targaryen .form-wizard-2 > .steps > ul .current:after,
+.skin-targaryen .form-wizard-2 > .steps > ul .done:after,
+.skin-targaryen .form-wizard-2 > .steps > ul .done:before {
+  background: #343A52;
+}
+
+.skin-targaryen .form-wizard-2 > .steps > ul .current.last.done:after {
+  background: #343A52 !important;
+}
+
+.skin-targaryen .form-wizard-2.icon-wizard > .steps > ul .current i,
+.skin-targaryen .form-wizard-2.icon-wizard > .steps > ul .done i {
+  border: 2px solid #343A52;
+}
+
+.skin-targaryen .form-wizard-2.icon-wizard > .steps > ul .done i {
+  background: #343A52;
+  color: #fff;
+}
+
+.skin-targaryen .form-wizard-2.vertical-wizard .steps > ul .done:after {
+  background: #343A52 !important;
+}
+
 .skin-targaryen .form-wizard-3 > .steps > ul .current a {
   border-bottom: 3px solid #343A52;
   color: #333;
@@ -33325,6 +33430,41 @@ pre.line-numbers > code {
   color: #fff;
 }
 
+.skin-lannister .form-wizard-2 > .steps > ul .current .number,
+.skin-lannister .form-wizard-2 > .steps > ul .done .number {
+  border: 2px solid #3B4350;
+}
+
+.skin-lannister .form-wizard-2 > .steps > ul .done .number {
+  background: #3B4350;
+  color: #fff;
+}
+
+.skin-lannister .form-wizard-2 > .steps > ul .current:before,
+.skin-lannister .form-wizard-2 > .steps > ul .current:after,
+.skin-lannister .form-wizard-2 > .steps > ul .done:after,
+.skin-lannister .form-wizard-2 > .steps > ul .done:before {
+  background: #3B4350;
+}
+
+.skin-lannister .form-wizard-2 > .steps > ul .current.last.done:after {
+  background: #3B4350 !important;
+}
+
+.skin-lannister .form-wizard-2.icon-wizard > .steps > ul .current i,
+.skin-lannister .form-wizard-2.icon-wizard > .steps > ul .done i {
+  border: 2px solid #3B4350;
+}
+
+.skin-lannister .form-wizard-2.icon-wizard > .steps > ul .done i {
+  background: #3B4350;
+  color: #fff;
+}
+
+.skin-lannister .form-wizard-2.vertical-wizard .steps > ul .done:after {
+  background: #3B4350 !important;
+}
+
 .skin-lannister .form-wizard-3 > .steps > ul .current a {
   border-bottom: 3px solid #3B4350;
   color: #333;
@@ -33719,6 +33859,41 @@ pre.line-numbers > code {
 .skin-stark .form-wizard-1 > .steps .done a:hover {
   background: #808b98;
   color: #fff;
+}
+
+.skin-stark .form-wizard-2 > .steps > ul .current .number,
+.skin-stark .form-wizard-2 > .steps > ul .done .number {
+  border: 2px solid #393F46;
+}
+
+.skin-stark .form-wizard-2 > .steps > ul .done .number {
+  background: #393F46;
+  color: #fff;
+}
+
+.skin-stark .form-wizard-2 > .steps > ul .current:before,
+.skin-stark .form-wizard-2 > .steps > ul .current:after,
+.skin-stark .form-wizard-2 > .steps > ul .done:after,
+.skin-stark .form-wizard-2 > .steps > ul .done:before {
+  background: #393F46;
+}
+
+.skin-stark .form-wizard-2 > .steps > ul .current.last.done:after {
+  background: #393F46 !important;
+}
+
+.skin-stark .form-wizard-2.icon-wizard > .steps > ul .current i,
+.skin-stark .form-wizard-2.icon-wizard > .steps > ul .done i {
+  border: 2px solid #393F46;
+}
+
+.skin-stark .form-wizard-2.icon-wizard > .steps > ul .done i {
+  background: #393F46;
+  color: #fff;
+}
+
+.skin-stark .form-wizard-2.vertical-wizard .steps > ul .done:after {
+  background: #393F46 !important;
 }
 
 .skin-stark .form-wizard-3 > .steps > ul .current a {

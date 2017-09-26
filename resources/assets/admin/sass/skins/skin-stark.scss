@@ -375,6 +375,56 @@
         }
     }
 
+    .form-wizard-2 {
+
+        > .steps > ul {
+            .current .number,
+            .done .number {
+                border: 2px solid $ls-color-theme;
+            }
+
+            .done .number {
+                background: $ls-color-theme;
+                color: $white;
+            }
+
+            .current:before,
+            .current:after,
+            .done:after,
+            .done:before {
+                background: $ls-color-theme;
+            }
+
+            .current.last.done:after {
+                background: $ls-color-theme !important;
+            }
+        }
+
+        &.icon-wizard > .steps > ul {
+
+            .current i,
+            .done i {
+                border: 2px solid $ls-color-theme;
+            }
+
+            .done i {
+                background: $ls-color-theme;
+                color: $white;
+            }
+        }
+
+        &.vertical-wizard {
+
+            .steps > ul {
+
+                .done:after {
+                    background: $ls-color-theme !important;
+                }
+            }
+
+        }
+    }
+
     .form-wizard-3 > .steps > ul{
 
         .current a{
