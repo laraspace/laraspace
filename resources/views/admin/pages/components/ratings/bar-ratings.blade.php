@@ -21,7 +21,7 @@
                     <div class="card-header">
                         <h6>1/10 Rating</h6>
                     </div>
-                    <div class="card-block">
+                    <div class="card-body">
                         <select id="bar-number" name="rating" autocomplete="off">
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -42,7 +42,7 @@
                     <div class="card-header">
                         <h6>Movie Rating</h6>
                     </div>
-                    <div class="card-block">
+                    <div class="card-body">
                         <select id="bar-movie" name="rating" autocomplete="off">
                             <option value="Bad">Bad</option>
                             <option value="Mediocre">Mediocre</option>
@@ -59,7 +59,7 @@
                     <div class="card-header">
                         <h6>Square Rating</h6>
                     </div>
-                    <div class="card-block">
+                    <div class="card-body">
                         <select id="bar-square" name="rating" autocomplete="off">
                             <option value=""></option>
                             <option value="1">1</option>
@@ -76,7 +76,7 @@
                     <div class="card-header">
                         <h6>Pill Rating</h6>
                     </div>
-                    <div class="card-block">
+                    <div class="card-body">
                         <select id="bar-pill" name="rating" autocomplete="off">
                             <option value="A">A</option>
                             <option value="B">B</option>
@@ -95,7 +95,7 @@
                     <div class="card-header">
                         <h6>Reversed Rating</h6>
                     </div>
-                    <div class="card-block">
+                    <div class="card-body">
                         <select id="bar-reversed" name="rating" autocomplete="off">
                             <option value="Strongly Agree">Strongly Agree</option>
                             <option value="Agree">Agree</option>
@@ -113,7 +113,7 @@
                     <div class="card-header">
                         <h6>Horizontal Rating</h6>
                     </div>
-                    <div class="card-block">
+                    <div class="card-body">
                         <select id="bar-horizontal" name="rating" autocomplete="off">
                             <option value="10">10</option>
                             <option value="9">9</option>
@@ -137,7 +137,7 @@
                     <div class="card-header">
                         <h6>Font Awesome Stars</h6>
                     </div>
-                    <div class="card-block">
+                    <div class="card-body">
                         <select id="bar-fontawesome" name="rating" autocomplete="off">
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -153,7 +153,7 @@
                     <div class="card-header">
                         <h6>CSS Stars</h6>
                     </div>
-                    <div class="card-block">
+                    <div class="card-body">
                         <select id="bar-css" name="rating" autocomplete="off">
                             <option value="1">1</option>
                             <option value="2">2</option>

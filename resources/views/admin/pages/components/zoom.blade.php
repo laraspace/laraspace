@@ -13,7 +13,7 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="card">
-                    <div class="card-block">
+                    <div class="card-body">
                         <div class="image-zoom-demo">
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

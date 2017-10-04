@@ -14,7 +14,7 @@
             <div class="card-header">
                 <h6>Summernote</h6>
             </div>
-            <div class="card-block">
+            <div class="card-body">
                 <div class="ls-summernote">
                     Hello Summernote
                 </div>
@@ -24,7 +24,7 @@
             <div class="card-header">
                 <h6>Simple MDE</h6>
             </div>
-            <div class="card-block">
+            <div class="card-body">
                 <textarea class="ls-simplemde">
 # Intro
 Go ahead, play around with the editor! Be sure to check out **bold** and *italic* styling, or even [links](http://google.com). You can type the Markdown syntax, use the toolbar, or use shortcuts like `cmd-b` or `ctrl-b`.

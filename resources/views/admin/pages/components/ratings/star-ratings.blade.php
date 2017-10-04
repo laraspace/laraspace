@@ -21,7 +21,7 @@
                     <div class="card-header">
                         <h6>Default</h6>
                     </div>
-                    <div class="card-block">
+                    <div class="card-body">
                         <div id="star-default" class="star-rating"></div>
                     </div>
                 </div>
@@ -31,7 +31,7 @@
                     <div class="card-header">
                         <h6>Read Only</h6>
                     </div>
-                    <div class="card-block">
+                    <div class="card-body">
                         <div id="star-readonly" class="star-rating"></div>
                     </div>
                 </div>
@@ -41,7 +41,7 @@
                     <div class="card-header">
                         <h6>Start with Score</h6>
                     </div>
-                    <div class="card-block">
+                    <div class="card-body">
                         <div id="star-score" class="star-rating"></div>
                     </div>
                 </div>
@@ -53,7 +53,7 @@
                     <div class="card-header">
                         <h6>Number of Stars</h6>
                     </div>
-                    <div class="card-block">
+                    <div class="card-body">
                         <div id="star-number" class="star-rating"></div>
                     </div>
                 </div>
@@ -63,7 +63,7 @@
                     <div class="card-header">
                         <h6>Half Star</h6>
                     </div>
-                    <div class="card-block">
+                    <div class="card-body">
                         <div id="star-half" class="star-rating"></div>
                     </div>
                 </div>
@@ -73,7 +73,7 @@
                     <div class="card-header">
                         <h6>Cancel Button</h6>
                     </div>
-                    <div class="card-block">
+                    <div class="card-body">
                         <div id="star-cancel" class="star-rating"></div>
                     </div>
                 </div>
@@ -85,7 +85,7 @@
                     <div class="card-header">
                         <h6>Custom Icons</h6>
                     </div>
-                    <div class="card-block">
+                    <div class="card-body">
                         <div id="star-custom" class="star-rating"></div>
                     </div>
                 </div>
@@ -95,7 +95,7 @@
                     <div class="card-header">
                         <h6>With Target</h6>
                     </div>
-                    <div class="card-block">
+                    <div class="card-body">
                         <div id="star-target" class="star-rating"></div>
                         <div id="target" class="star-rating-hint"></div>
                     </div>
@@ -106,7 +106,7 @@
                     <div class="card-header">
                         <h6>With Percentage</h6>
                     </div>
-                    <div class="card-block">
+                    <div class="card-body">
                         <div id="star-percentage" class="star-rating"></div>
                         <div id="target-percentage" class="star-rating-hint"></div>
                     </div>

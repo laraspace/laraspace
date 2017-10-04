@@ -17,7 +17,7 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="card">
-                    <div class="card-block">
+                    <div class="card-body">
                         <div class="tabs tabs-default">
                             <ul class="nav nav-tabs" role="tablist">
                                 <li class="nav-item">

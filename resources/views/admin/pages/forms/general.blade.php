@@ -16,7 +16,7 @@
                     <div class="card-header">
                         <h6>Basic Inputs</h6>
                     </div>
-                    <div class="card-block">
+                    <div class="card-body">
                         <h5 class="section-semi-title">Horizontal</h5>
 
                         <form>
@@ -89,7 +89,7 @@
                         <form>
                             <div class="form-group has-success">
                                 <label class="form-control-label" for="inputSuccess1">Input with success</label>
-                                <input type="text" class="form-control form-control-success" id="inputSuccess1">
+                                <input type="text" class="form-control is-valid" id="inputSuccess1">
                             </div>
                             <div class="form-group has-warning">
                                 <label class="form-control-label" for="inputWarning1">Input with warning</label>
@@ -97,7 +97,7 @@
                             </div>
                             <div class="form-group has-danger">
                                 <label class="form-control-label" for="inputDanger1">Input with danger</label>
-                                <input type="text" class="form-control form-control-danger" id="inputDanger1">
+                                <input type="text" class="form-control is-invalid" id="inputDanger1">
                             </div>
 
                             <div class="checkbox has-success">
@@ -112,7 +112,7 @@
                                     Checkbox with warning
                                 </label>
                             </div>
-                            <div class="checkbox has-danger">
+                            <div class="checkbox is-invalid">
                                 <label>
                                     <input type="checkbox" id="checkboxDanger" value="option1">
                                     Checkbox with danger
@@ -150,7 +150,7 @@
                     <div class="card-header">
                         <h6>Checkbox & Radios</h6>
                     </div>
-                    <div class="card-block">
+                    <div class="card-body">
                         <div class="row">
                             <div class="col-sm-6">
                                 <h5 class="section-semi-title">

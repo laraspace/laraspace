@@ -17,7 +17,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="card">
-                    <div class="card-block">
+                    <div class="card-body">
                         <div class="sparkline-chart">
                             <div class="row">
                                 <div class="sparkline-chart-type">

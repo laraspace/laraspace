@@ -20,7 +20,7 @@
                     <div class="card-header">
                         <h6>Default Tree</h6>
                     </div>
-                    <div class="card-block">
+                    <div class="card-body">
                         <div id="container">
                             <ul>
                                 <li data-jstree='{"opened":true}'>Root node
@@ -39,7 +39,7 @@
                     <div class="card-header">
                         <h6>Tree With Drag & Drop</h6>
                     </div>
-                    <div class="card-block">
+                    <div class="card-body">
                         <div id="container2">
                             <ul>
                                 <li data-jstree='{"opened":true}'>Root node
@@ -60,7 +60,7 @@
                     <div class="card-header">
                         <h6>Tree With SearchBox</h6>
                     </div>
-                    <div class="card-block">
+                    <div class="card-body">
                         <form id="s">
                             <input type="search" id="q" class="form-control"/><br>
                             <button type="submit" class="btn btn-default">Search</button>
@@ -83,7 +83,7 @@
                     <div class="card-header">
                         <h6>With Icons</h6>
                     </div>
-                    <div class="card-block">
+                    <div class="card-body">
                         <div id="container4">
                             <ul>
                                 <li data-jstree='{"opened":true, "type":"demo"}'>Root node

@@ -16,7 +16,7 @@
                     <div class="card-header">
                         <h6>Headings</h6>
                     </div>
-                    <div class="card-block buttons-demo">
+                    <div class="card-body buttons-demo">
                         <div class="row">
                             <div class="col-lg-6">
                                 <h5 class="section-semi-title">Default Headings</h5>
@@ -55,7 +55,7 @@
                     <div class="card-header">
                         <h6>Other</h6>
                     </div>
-                    <div class="card-block">
+                    <div class="card-body">
                         <div class="row">
                             <div class="col-lg-6">
                                 <h5 class="section-semi-title">Paragraph</h5>

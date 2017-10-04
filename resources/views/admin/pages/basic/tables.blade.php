@@ -11,7 +11,7 @@
             </ol>
         </div>
         <div class="card">
-            <div class="card-block">
+            <div class="card-body">
                 <div class="row">
                     <div class="col-xl-6 mb-4">
                         <h5 class="section-semi-title">Default Table</h5>

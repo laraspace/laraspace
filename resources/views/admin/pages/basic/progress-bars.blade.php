@@ -14,7 +14,7 @@
             <div class="col-md-6">
                 <div class="card">
                     <div class="card-header">Basic Progress Bars</div>
-                    <div class="card-block">
+                    <div class="card-body">
                         <div class="progress">
                             <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
                                  aria-valuemax="100"></div>
@@ -44,7 +44,7 @@
             <div class="col-md-6">
                 <div class="card">
                     <div class="card-header">Progress Bars Colored</div>
-                    <div class="card-block">
+                    <div class="card-body">
                         <div class="progress">
                             <div class="progress-bar bg-success" role="progressbar" style="width: 25%"
                                  aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
@@ -67,7 +67,7 @@
         </div>
         <div class="card">
             <div class="card-header">Multiple Progress Bars</div>
-            <div class="card-block">
+            <div class="card-body">
                 <div class="progress">
                     <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                     <div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
@@ -77,7 +77,7 @@
         </div>
         <div class="card">
             <div class="card-header">Striped Progress Bars</div>
-            <div class="card-block">
+            <div class="card-body">
                 <div class="progress">
                     <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
@@ -97,7 +97,7 @@
         </div>
         <div class="card">
             <div class="card-header">Animated stripes Progress Bars</div>
-            <div class="card-block">
+            <div class="card-body">
                 <div class="progress">
                     <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>

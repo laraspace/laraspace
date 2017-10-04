@@ -19,7 +19,7 @@
                 <h6>Jquery Validate <a class="source-link" href="https://jqueryvalidation.org/" target="_blank">source</a>
                 </h6>
             </div>
-            <div class="card-block">
+            <div class="card-body">
                 <form id="validateForm">
                     <div class="form-group">
                         <label>Email address</label>

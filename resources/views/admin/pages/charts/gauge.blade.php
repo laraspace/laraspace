@@ -20,7 +20,7 @@
                     <div class="card-header">
                         <h5>Basic Gauges</h5>
                     </div>
-                    <div class="card-block">
+                    <div class="card-body">
                         <div class="row gauges-row">
                             <div class="col">
                                 <div class="gauge gauge-lg">
@@ -51,7 +51,7 @@
                     <div class="card-header">
                         <h6>Donut</h6>
                     </div>
-                    <div class="card-block">
+                    <div class="card-body">
                         <div class="row gauges-row">
                             <div class="col">
                                 <div class="gauge gauge-lg">
@@ -82,7 +82,7 @@
                     <div class="card-header">
                         <h5>Color Gauges</h5>
                     </div>
-                    <div class="card-block">
+                    <div class="card-body">
                         <div class="row gauges-row">
                             <div class="col">
                                 <div class="gauge gauge-lg">

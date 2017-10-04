@@ -10,7 +10,7 @@
             </ol>
         </div>
         <div class="card">
-            <div class="card-block">
+            <div class="card-body">
                 <todos your-todos="{{$todos}}"></todos>
             </div>
         </div>
