@@ -1,5 +1,7 @@
 {
-    "/assets/admin/js/core/app.js": "/assets/admin/js/core/app.js",
-    "/assets/admin/css/laraspace.css": "/assets/admin/css/laraspace.css",
-    "/assets/front/css/front.css": "/assets/front/css/front.css"
+    "/assets/admin/js/core/app.js": "/assets/admin/js/core/app.js?id=662cbfd2089d9976c729",
+    "/assets/admin/css/laraspace.css": "/assets/admin/css/laraspace.css?id=36c3122d62e49fc617b4",
+    "/assets/front/css/front.css": "/assets/front/css/front.css?id=8f9dec75fe42b1dbacaf",
+    "/assets/admin/js/core/plugins.js": "/assets/admin/js/core/plugins.js?id=7571e4779c2e6220a56f",
+    "/assets/front/js/plugins.js": "/assets/front/js/plugins.js?id=ca7892a8251e57352817"
 }

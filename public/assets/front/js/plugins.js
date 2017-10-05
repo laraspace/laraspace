@@ -16423,7 +16423,7 @@ var LaraspaceNotifs = function () {
     var notieAlert = function(type,message){
 
         //Change timeout value here.
-        let timeout = 5;
+        var timeout = 5;
 
         switch(type) {
             case 'success':

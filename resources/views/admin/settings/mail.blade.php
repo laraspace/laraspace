@@ -180,13 +180,11 @@
             </div>
             <div class="form-group">
                 <label>From Name</label>
-                <input type="text" name="mail_from_name" value="{{ get_setting('mail_from_name') }}"
-                       class="form-control">
+                <input type="text" name="mail_from_name" value="{{ get_setting('mail_from_name') }}" class="form-control">
             </div>
             <div class="form-group">
                 <label>From Email Address</label>
-                <input type="text" name="mail_from_email" value="{{ get_setting('mail_from_email') }}"
-                       class="form-control">
+                <input type="text" name="mail_from_email" value="{{ get_setting('mail_from_email') }}" class="form-control">
             </div>
         </div>
     </script>
