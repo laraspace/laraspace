@@ -10,6 +10,6 @@
         <div class="form-group">
             <input type="email" class="form-control form-control-danger" placeholder="Enter email" name="email">
         </div>
-        <button class="btn btn-theme btn-full">Send Resent Link</button>
+        <button class="btn btn-theme btn-full">Send Reset Link</button>
     </form>
 @stop

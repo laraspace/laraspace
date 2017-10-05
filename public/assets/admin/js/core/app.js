@@ -19549,7 +19549,7 @@ if (false) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: "todo-container col-lg-6 offset-lg-3"
+    staticClass: "todo-container mx-auto col-lg-6 "
   }, [_c('h5', {
     staticClass: "todo-title"
   }, [_vm._v("TODOS APP")]), _vm._v(" "), _c('p', {

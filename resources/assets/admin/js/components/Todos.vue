@@ -1,5 +1,5 @@
 <template>
-    <div class="todo-container col-lg-6 offset-lg-3">
+    <div class="todo-container mx-auto col-lg-6 ">
         <h5 class="todo-title">TODOS APP</h5>
         <p class="text-sm-center">This Demo showcases a simple workflow with VueJS , Vue Resource and Laravel. </p>
         <input type="text" class="form-control todo-field" v-model="newTodo.title" placeholder="New Todo" v-on:keyup.enter="addTodo">
