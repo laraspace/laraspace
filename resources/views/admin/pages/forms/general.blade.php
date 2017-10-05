@@ -88,15 +88,15 @@
 
                         <form>
                             <div class="form-group has-success">
-                                <label class="form-control-label" for="inputSuccess1">Input with success</label>
-                                <input type="text" class="form-control is-valid" id="inputSuccess1">
+                                <label class="form-control-label text-success" for="inputSuccess1">Input with success</label>
+                                <input type="text" class="form-control form-control-success is-valid" id="inputSuccess1">
                             </div>
                             <div class="form-group has-warning">
-                                <label class="form-control-label" for="inputWarning1">Input with warning</label>
-                                <input type="text" class="form-control form-control-warning" id="inputWarning1">
+                                <label class="form-control-label text-warning" for="inputWarning1">Input with warning</label>
+                                <input type="text" class="form-control border-warning" id="inputWarning1">
                             </div>
                             <div class="form-group has-danger">
-                                <label class="form-control-label" for="inputDanger1">Input with danger</label>
+                                <label class="form-control-label text-danger" for="inputDanger1">Input with danger</label>
                                 <input type="text" class="form-control is-invalid" id="inputDanger1">
                             </div>
 
