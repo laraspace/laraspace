@@ -20,7 +20,7 @@
                     <div class="card-header">
                         <h6>Set Mail Driver</h6>
                     </div>
-                    <div class="card-block">
+                    <div class="card-body">
                         <mail-settings inline-template view="{{get_setting('mailer')}}">
                             <form id="mailDriverForm" method="post" action="{{route('admin.settings.mail.post')}}" enctype="multipart/form-data">
                                 {{csrf_field()}}
@@ -46,7 +46,7 @@
                     <div class="card-header">
                         <h6>Send Test Email</h6>
                     </div>
-                    <div class="card-block">
+                    <div class="card-body">
                         <form id="testForm" method="post" action="{{route('admin.settings.mail.send')}}" enctype="multipart/form-data">
                             {{csrf_field()}}
                             <div class="form-group">

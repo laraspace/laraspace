@@ -11,7 +11,7 @@ var pluginPath = 'resources/assets/plugins/';
 mix.combine([
     // ** Required Plugins **
     pluginPath + 'jquery/jquery.js',
-    pluginPath + 'bootstrap/tether.js',
+    pluginPath + 'bootstrap/popper.js',
     pluginPath + 'bootstrap/bootstrap.js',
     pluginPath + 'customScrollBar/customScrollBar.js',
 

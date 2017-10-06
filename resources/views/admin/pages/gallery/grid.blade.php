@@ -18,7 +18,7 @@
             <div class="card-header">
                 <h6>Image Gallery</h6>
             </div>
-            <div class="card-block">
+            <div class="card-body">
                 <div class="my-gallery image-gallery" itemscope>
                     <div class="row">
                         <figure class="col-lg-3 col-md-6 col-xs-12" itemprop="associatedMedia" itemscope>
@@ -191,7 +191,7 @@
             <div class="card-header">
                 <h6>YouTube Video Gallery</h6>
             </div>
-            <div class="card-block">
+            <div class="card-body">
                 <div class="my-gallery youtube-video-gallery">
                     <div class="row">
                         <div class="col-lg-3 col-md-6 ">
@@ -252,7 +252,7 @@
             <div class="card-header">
                 <h6>Vimeo Video Gallery</h6>
             </div>
-            <div class="card-block">
+            <div class="card-body">
                 <div class="my-gallery vimeo-video-gallery">
                     <div class="row">
                         <div class="col-lg-3 col-md-6">

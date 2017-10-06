@@ -20,7 +20,7 @@
                     <div class="card-header">
                         <h6>Column and Line Chart</h6>
                     </div>
-                    <div class="card-block">
+                    <div class="card-body">
                         <div class="amcharts" id="bar-line-chart"></div>
                     </div>
                 </div>
@@ -32,7 +32,7 @@
                     <div class="card-header">
                         <h6>Clustered Bar Chart</h6>
                     </div>
-                    <div class="card-block">
+                    <div class="card-body">
                         <div class="amcharts" id="clust-bar-chart"></div>
                     </div>
                 </div>
@@ -44,7 +44,7 @@
                     <div class="card-header">
                         <h6>Duration on Value Axis Chart</h6>
                     </div>
-                    <div class="card-block">
+                    <div class="card-body">
                         <div class="amcharts" id="line-area-value-axis"></div>
                     </div>
                 </div>
@@ -56,7 +56,7 @@
                     <div class="card-header">
                         <h6>Stacked Area Chart</h6>
                     </div>
-                    <div class="card-block">
+                    <div class="card-body">
                         <div class="amcharts" id="stack-area-chart"></div>
                     </div>
                 </div>
@@ -68,7 +68,7 @@
                     <div class="card-header">
                         <h6>3D Cylinder Chart</h6>
                     </div>
-                    <div class="card-block">
+                    <div class="card-body">
                         <div class="amcharts" id="3d-cylinder-chart"></div>
                     </div>
                     <div class="card-footer">
@@ -99,7 +99,7 @@
                     <div class="card-header">
                         <h6>Animated Time-Line Pie Chart</h6>
                     </div>
-                    <div class="card-block">
+                    <div class="card-body">
                         <div class="amcharts" id="animated-pie-chart"></div>
                     </div>
                 </div>
@@ -111,7 +111,7 @@
                     <div class="card-header">
                         <h6>3D Donut Chart</h6>
                     </div>
-                    <div class="card-block">
+                    <div class="card-body">
                         <div class="amcharts" id="3d-donut-chart"></div>
                     </div>
                     <div class="card-footer">
@@ -137,7 +137,7 @@
                     <div class="card-header">
                         <h6>Radar Chart</h6>
                     </div>
-                    <div class="card-block">
+                    <div class="card-body">
                         <div class="amcharts" id="radar-chart"></div>
                     </div>
                 </div>
@@ -147,7 +147,7 @@
                     <div class="card-header">
                         <h6>Polar Scatter Chart</h6>
                     </div>
-                    <div class="card-block">
+                    <div class="card-body">
                         <div class="amcharts" id="polar-scatter-chart"></div>
                     </div>
                 </div>
@@ -159,7 +159,7 @@
                     <div class="card-header">
                         <h6>Animations along lines Map</h6>
                     </div>
-                    <div class="card-block">
+                    <div class="card-body">
                         <div class="amcharts" id="map-chart"></div>
                     </div>
                 </div>
@@ -171,7 +171,7 @@
                     <div class="card-header">
                         <h6>Capitals map</h6>
                     </div>
-                    <div class="card-block">
+                    <div class="card-body">
                         <div class="amcharts" id="capital-map-chart"></div>
                     </div>
                 </div>
@@ -183,7 +183,7 @@
                     <div class="card-header">
                         <h6>Zoomable Bubble & XY Chart</h6>
                     </div>
-                    <div class="card-block">
+                    <div class="card-body">
                         <div class="amcharts" id="xy-and-bubble-chart"></div>
                     </div>
                 </div>
@@ -195,7 +195,7 @@
                     <div class="card-header">
                         <h6>Multiple Data Sets Stock Chart</h6>
                     </div>
-                    <div class="card-block">
+                    <div class="card-body">
                         <div class="amcharts" id="multiple-data-sets-chart"></div>
                     </div>
                 </div>

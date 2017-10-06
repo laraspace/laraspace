@@ -14,7 +14,7 @@
             <div class="card-header">
                 <h6>Tabs Default</h6>
             </div>
-            <div class="card-block">
+            <div class="card-body">
                 <div class="row">
                     <div class="col-lg-6 mb-4">
                         <h5 class="section-semi-title">Basic</h5>
@@ -181,7 +181,7 @@
             <div class="card-header">
                 <h6>Tabs Simple</h6>
             </div>
-            <div class="card-block">
+            <div class="card-body">
                 <div class="row">
                     <div class="col-lg-6 mb-4">
                         <h5 class="section-semi-title">Basic</h5>

@@ -18,7 +18,7 @@
             <div class="card-header">
                 <h6>Basic Form Wizard</h6>
             </div>
-            <div class="card-block">
+            <div class="card-body">
                 <div class="content">
                     <form id="basic-wizard" class="form-wizard-3">
                         <h3>Step 1</h3>
@@ -140,7 +140,7 @@
             <div class="card-header">
                 <h6>Form Wizard with Icon</h6>
             </div>
-            <div class="card-block">
+            <div class="card-body">
                 <div class="content">
                     <form id="basic-wizard-2" class="form-wizard-3">
                         <h3><i class="icon-fa icon-fa-home"></i>Step 1</h3>
@@ -263,7 +263,7 @@
             <div class="card-header">
                 <h6>Form Wizard with Validation</h6>
             </div>
-            <div class="card-block">
+            <div class="card-body">
                 <div class="content">
                     <form id="basic-wizard-3" class="form-wizard-3">
                         <h3><i class="icon-fa icon-fa-home"></i>Step 1</h3>

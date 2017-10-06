@@ -17,7 +17,7 @@
                     <div class="card-header">
                         <h6>Example Usage</h6>
                     </div>
-                    <div class="card-block">
+                    <div class="card-body">
                         <pre class="language-php"><code>&lt;i class="icon-ln icon-ln-music"&gt;&lt;/i&gt;</code></pre>
                     </div>
                 </div>
@@ -26,7 +26,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="card">
-                    <div class="card-block">
+                    <div class="card-body">
                         <div class="icon-container">
                             <div class="demo-icon">
                                 <div class="icon-box">

@@ -4920,7 +4920,7 @@ tbody.collapse.show {
   border-radius: 0.25rem;
 }
 
-.card-block {
+.card-body {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
@@ -5084,14 +5084,14 @@ tbody.collapse.show {
 .card-inverse .card-header,
 .card-inverse .card-footer,
 .card-inverse .card-title,
-.card-inverse .card-blockquote {
+.card-inverse .card-bodyquote {
   color: #fff;
 }
 
 .card-inverse .card-link,
 .card-inverse .card-text,
 .card-inverse .card-subtitle,
-.card-inverse .card-blockquote .blockquote-footer {
+.card-inverse .card-bodyquote .blockquote-footer {
   color: rgba(255, 255, 255, 0.65);
 }
 
@@ -5100,7 +5100,7 @@ tbody.collapse.show {
   color: #fff;
 }
 
-.card-blockquote {
+.card-bodyquote {
   padding: 0;
   margin-bottom: 0;
   border-left: 0;
@@ -13864,8 +13864,14 @@ yx-axis
 .mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerRail,
 .mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_dragger_bar,
 .mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_draggerRail {
-  -webkit-transition: width .2s ease-out .2s, height .2s ease-out .2s, margin-left .2s ease-out .2s, margin-right .2s ease-out .2s, margin-top .2s ease-out .2s, margin-bottom .2s ease-out .2s, opacity .2s ease-in-out, background-color .2s ease-in-out;
-  transition: width .2s ease-out .2s, height .2s ease-out .2s, margin-left .2s ease-out .2s, margin-right .2s ease-out .2s, margin-top .2s ease-out .2s, margin-bottom .2s ease-out .2s, opacity .2s ease-in-out, background-color .2s ease-in-out;
+  -webkit-transition: width .2s ease-out .2s, height .2s ease-out .2s,
+ margin-left .2s ease-out .2s, margin-right .2s ease-out .2s,
+ margin-top .2s ease-out .2s, margin-bottom .2s ease-out .2s,
+ opacity .2s ease-in-out, background-color .2s ease-in-out;
+  transition: width .2s ease-out .2s, height .2s ease-out .2s,
+ margin-left .2s ease-out .2s, margin-right .2s ease-out .2s,
+ margin-top .2s ease-out .2s, margin-bottom .2s ease-out .2s,
+ opacity .2s ease-in-out, background-color .2s ease-in-out;
 }
 
 /* 
@@ -35106,11 +35112,11 @@ code,
   font-weight: normal;
 }
 
-.card-block .table {
+.card-body .table {
   margin-top: -10px;
 }
 
-.card-block .table th {
+.card-body .table th {
   border-top: none;
 }
 
@@ -36084,7 +36090,7 @@ tr > td > .fc-day-grid-event {
 
 /*Bar Rating*/
 
-.bar-rating .card-block {
+.bar-rating .card-body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

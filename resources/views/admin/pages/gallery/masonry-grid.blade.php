@@ -18,7 +18,7 @@
             <div class="card-header">
                 <h6>Masonry Image Gallery</h6>
             </div>
-            <div class="card-block">
+            <div class="card-body">
                 <div class="my-gallery image-gallery" itemscope>
                     <div class="my-gallery-container">
                         <div class="item" data-order="0">
@@ -200,7 +200,7 @@
             <div class="card-header">
                 <h6>Video Gallery</h6>
             </div>
-            <div class="card-block">
+            <div class="card-body">
                 <div class="my-gallery youtube-video-gallery">
                     <div class="my-gallery-container">
                         <div class="item embed-responsive embed-responsive-16by9" data-order="0">

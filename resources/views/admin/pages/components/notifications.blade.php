@@ -20,7 +20,7 @@
                     <div class="card-header">
                         <h6>Toastr</h6>
                     </div>
-                    <div class="card-block buttons-demo">
+                    <div class="card-body buttons-demo">
                         <div class="row">
                             <div class="col-sm-12">
                                 <button class="btn btn-success" data-toastr="success" data-message="Hello World"
@@ -51,7 +51,7 @@
                     <div class="card-header">
                         <h6>Notie.js</h6>
                     </div>
-                    <div class="card-block">
+                    <div class="card-body">
                         <div class="row">
                             <div class="col-sm-12">
                                 <button class="btn btn-success" data-notie="success" data-message="Hello World">
@@ -87,7 +87,7 @@
                     <div class="card-header">
                         <h6>Easy Flash Notifications</h6>
                     </div>
-                    <div class="card-block">
+                    <div class="card-body">
                         <div class="row">
                             <div class="col-sm-12">
                                 <p>Laraspace provides an easy way for your Laravel Application to handle notification alerts

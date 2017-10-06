@@ -29,7 +29,7 @@
                     </button>
                 </div>
             </div>
-            <div class="card-block">
+            <div class="card-body">
                 <div class="form-group">
                     <textarea id="nestable-output" class="form-control"></textarea>
                 </div>
@@ -43,7 +43,7 @@
             <div class="card-header">
                 <h6>Nestable Lists</h6>
             </div>
-            <div class="card-block">
+            <div class="card-body">
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="dd" id="nestable">

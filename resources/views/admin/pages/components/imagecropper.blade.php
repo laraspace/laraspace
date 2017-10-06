@@ -17,7 +17,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="card">
-                    <div class="card-block">
+                    <div class="card-body">
                         <div class="image-cropper">
                             <div class="row">
                                 <div class="col-8 img-cropper-col">

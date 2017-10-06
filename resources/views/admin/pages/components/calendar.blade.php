@@ -27,7 +27,7 @@
                         <div class="card-header">
                             <h5>Events</h5>
                         </div>
-                        <div class="card-block">
+                        <div class="card-body">
                             <ol class="fc-event-list">
                                 <li><span class="fc-event-dot"></span> Default</li>
                                 <li><span class="fc-event-dot fc-event-primary-dot"></span> Primary</li>
@@ -40,7 +40,7 @@
                 </div>
                 <div class="col-xl-10">
                     <div class="card">
-                        <div class="card-block">
+                        <div class="card-body">
                             <div id='calendar'></div>
                         </div>
                     </div>

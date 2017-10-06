@@ -28,7 +28,7 @@
 
                         </div>
                     </div>
-                    <div class="card-block">
+                    <div class="card-body">
                         <table id="users-datatable" class="table table-striped table-bordered" cellspacing="0" width="100%">
                             <thead>
                             <tr>

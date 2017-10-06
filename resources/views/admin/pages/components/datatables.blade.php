@@ -20,7 +20,7 @@
                     <div class="card-header">
                         <h6>Default</h6>
                     </div>
-                    <div class="card-block">
+                    <div class="card-body">
                         <table id="default-datatable" class="table table-striped table-bordered" cellspacing="0"
                                width="100%">
                             <thead>
@@ -508,7 +508,7 @@
                     <div class="card-header">
                         <h6>Responsive</h6>
                     </div>
-                    <div class="card-block">
+                    <div class="card-body">
                         <table id="responsive-datatable" class="table table-striped table-bordered" cellspacing="0" width="100%">
                             <thead>
                             <tr>
