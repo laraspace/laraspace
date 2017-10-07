@@ -1,6 +1,8 @@
 <header class="site-header">
   <a href="#" class="brand-main">
+
     <img src="{{asset('/assets/admin/img/logo-desk.png')}}" id="logo-desk" alt="Laraspace Logo" class="d-none d-md-inline ">
+
     <img src="{{asset('/assets/admin/img/logo-mobile.png')}}" id="logo-mobile" alt="Laraspace Logo" class="d-md-none">
   </a>
   <a href="#" class="nav-toggle">

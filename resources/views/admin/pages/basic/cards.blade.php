@@ -186,7 +186,9 @@
 
                 <div class="row">
                     <div class="col-sm-6 col-lg-3">
+
                         <div class="card text-white bg-primary text-xs-center">
+
                             <div class="card-body">
                                 <blockquote class="card-bodyquote">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
@@ -197,6 +199,7 @@
                         </div>
                     </div>
                     <div class="col-sm-6 col-lg-3">
+
                         <div class="card text-white bg-success text-xs-center">
                             <div class="card-body">
                                 <blockquote class="card-bodyquote">
@@ -209,6 +212,7 @@
 
                     </div>
                     <div class="col-sm-6 col-lg-3">
+
                         <div class="card text-white bg-info text-xs-center">
                             <div class="card-body">
                                 <blockquote class="card-bodyquote">
@@ -221,6 +225,7 @@
 
                     </div>
                     <div class="col-sm-6 col-lg-3">
+
                         <div class="card text-white bg-warning text-xs-center">
                             <div class="card-body">
                                 <blockquote class="card-bodyquote">
@@ -233,7 +238,9 @@
 
                     </div>
                     <div class="col-sm-6 col-lg-3">
+
                         <div class="card text-white bg-danger text-xs-center">
+
                             <div class="card-body">
                                 <blockquote class="card-bodyquote">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a

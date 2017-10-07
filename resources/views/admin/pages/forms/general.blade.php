@@ -86,6 +86,7 @@
                             Validation States
                         </h5>
 
+
                         <form class="was-validated">
                             <div class="form-group">
                                 <label class="form-control-label text-success" for="inputSuccess1">Input with success</label>
@@ -115,6 +116,7 @@
                                     <span class="custom-control-indicator"></span>
                                     <span class="custom-control-description">Toggle this custom radio</span>
                                 </label>
+
                                 <label class="custom-control custom-radio">
                                     <input id="radioStacked2" name="radio-stacked" type="radio" class="custom-control-input" required>
                                     <span class="custom-control-indicator"></span>
