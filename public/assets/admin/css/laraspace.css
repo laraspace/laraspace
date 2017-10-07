@@ -28379,7 +28379,6 @@ be a descendant of the grid when it is being dragged.
 
 .wizard > .content {
   margin: 1em;
-  top: 50px;
   display: block;
   min-height: 25em;
   overflow: hidden;
@@ -28397,6 +28396,7 @@ be a descendant of the grid when it is being dragged.
 
 .wizard > .steps > ul > li,
 .wizard > .actions > ul > li {
+  z-index: 1;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;

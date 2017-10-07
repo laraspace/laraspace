@@ -254,5 +254,5 @@
             </div>
         </div>
 
-    </div>t
+    </div>
 @stop
