@@ -13,7 +13,7 @@
             content: '';
             width: 50%;
             height: 3px;
-            top: 27px;
+            top: 23px;
             background: #eee;
             position: absolute;
             z-index: 0;
@@ -71,7 +71,6 @@
         .current.last.done:after {
             background: $ls-color-primary !important;
         }
-
     }
 
     &.icon-wizard > .steps > ul {
@@ -115,13 +114,8 @@
         display: flex;
         flex-wrap: wrap;
 
-        .steps {
-            flex: 1;
-        }
-
         .content {
-            flex: 5;
-            top: 40px;
+            flex: 4;
         }
 
         .steps > ul {
@@ -153,7 +147,7 @@
 
             > li:not(:last-child):after {
                 content: '';
-                width: 4px;
+                width: 3px;
                 height: 100%;
                 top: 50%;
                 background: #eee;
@@ -168,5 +162,49 @@
         }
 
     }
+}
 
+@media (max-width: $medium-breakpoint){
+    .form-wizard-2 {
+
+        .content{
+            min-height: 520px;
+        }
+    }
+}
+@media (max-width: $small-breakpoint){
+    .form-wizard-2 {
+
+        > .steps > ul {
+
+            a {
+                margin-top: 50px;
+            }
+            .number {
+                width: 40px;
+                line-height: 2.1;
+                margin-left: 2px !important;
+            }
+            > li:after,
+            > li:before {
+                top: 20px;
+            }
+        }
+        &.icon-wizard > .steps > ul {
+            i {
+                width: 40px;
+                line-height: 2.1;
+                margin-left: 2px !important;
+            }
+        }
+        &.vertical-wizard {
+
+            .steps > ul {
+
+                a {
+                    padding-left: 50px;
+                }
+            }
+        }
+    }
 }

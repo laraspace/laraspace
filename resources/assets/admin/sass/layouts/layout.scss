@@ -80,7 +80,7 @@
 
 //Layout Horizontal
 
-@media(max-width: 576px) {
+@media(max-width: $small-breakpoint-below) {
     .sidebar-left {
         left: -240px;
         transition: left .3s ease;
