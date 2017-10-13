@@ -71,7 +71,7 @@
     margin-bottom: 0;
 }
 
-@include media-breakpoint-down(md) {
+@media (max-width: $small-breakpoint) {
 
     .friends-list .media {
         width: 45%;
@@ -79,7 +79,7 @@
 
 }
 
-@include media-breakpoint-down(sm) {
+@media (max-width: $x-small-breakpoint) {
 
     .friends-list .media {
         width: 100%;

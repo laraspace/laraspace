@@ -28379,7 +28379,6 @@ be a descendant of the grid when it is being dragged.
 
 .wizard > .content {
   margin: 1em;
-  top: 50px;
   display: block;
   min-height: 25em;
   overflow: hidden;
@@ -28397,6 +28396,7 @@ be a descendant of the grid when it is being dragged.
 
 .wizard > .steps > ul > li,
 .wizard > .actions > ul > li {
+  z-index: 1;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -33376,7 +33376,7 @@ code,
   height: 100%;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 576px) {
   .sidebar-left {
     left: -240px;
     -webkit-transition: left .3s ease;
@@ -33536,7 +33536,7 @@ code,
   border-bottom: 4px solid transparent;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 576px) {
   .dropdown-submenu .dropdown-menu {
     left: 0;
   }
@@ -33679,7 +33679,7 @@ code,
   background-color: #bababa;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 576px) {
   .nav-toggle {
     display: inline-block;
     margin-left: 10px;
@@ -35275,19 +35275,19 @@ code,
   width: 200px;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 992px) {
   .login-page.login-3 .content-box h1 {
     font-size: 2.5rem;
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 768px) {
   .login-page.login-3 .content-box h1 {
     font-size: 1.5rem;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 480px) {
   .login-page.login-3 .login-box {
     width: 100%;
     max-width: none;
@@ -35373,13 +35373,13 @@ code,
   margin-bottom: 0;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 768px) {
   .friends-list .media {
     width: 45%;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 480px) {
   .friends-list .media {
     width: 100%;
   }
@@ -36019,7 +36019,7 @@ code,
   right: 0;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 480px) {
   .skin-tools {
     top: 100px;
     right: -250px;

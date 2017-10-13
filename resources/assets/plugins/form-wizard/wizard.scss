@@ -15,7 +15,7 @@
 
 .wizard > .content {
     margin: 1em;
-    top: 50px;
+    //top: 50px;
     display: block;
     min-height: 25em;
     overflow: hidden;
@@ -35,6 +35,7 @@
 
 .wizard > .steps > ul > li,
 .wizard > .actions > ul > li {
+    z-index: 1;
     flex: 1;
     display: flex;
     justify-content: center;

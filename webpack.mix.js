@@ -61,6 +61,7 @@ mix.combine([
     pluginPath + 'gallery/image/photoswipe.js',
     pluginPath + 'gallery/image/photoswipe-ui-default.js',
     pluginPath + 'gallery/image/mp.mansory.js',
+    pluginPath + 'gallery/image/gallery.js',
     pluginPath + 'gallery/video/videobox.js',
     pluginPath + 'rating/jquery.raty.js',
     pluginPath + 'zoom/transition.js',

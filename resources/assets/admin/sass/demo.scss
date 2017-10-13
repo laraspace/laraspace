@@ -600,7 +600,7 @@
     }
 }
 
-@include media-breakpoint-down(sm) {
+@media (max-width: $x-small-breakpoint) {
 
     .skin-tools {
         top: 100px;

@@ -85,39 +85,53 @@
                         <h5 class="section-semi-title mt-4">
                             Validation States
                         </h5>
-
-                        <form>
-                            <div class="form-group has-success">
+                        <form class="was-validated">
+                            <div class="form-group">
                                 <label class="form-control-label text-success" for="inputSuccess1">Input with success</label>
-                                <input type="text" class="form-control form-control-success is-valid" id="inputSuccess1">
+                                <input type="text" class="form-control is-valid" id="inputSuccess1" >
                             </div>
-                            <div class="form-group has-warning">
-                                <label class="form-control-label text-warning" for="inputWarning1">Input with warning</label>
-                                <input type="text" class="form-control border-warning" id="inputWarning1">
-                            </div>
-                            <div class="form-group has-danger">
+                            {{--<div class="form-group ">--}}
+                                {{--<label class="form-control-label " for="inputWarning1">Input with warning</label>--}}
+                                {{--<input type="text" class="form-control border-warning" id="inputWarning1"  >--}}
+                            {{--</div>--}}
+                            <div class="form-group ">
                                 <label class="form-control-label text-danger" for="inputDanger1">Input with danger</label>
-                                <input type="text" class="form-control is-invalid   " id="inputDanger1">
+                                <input type="text" class="form-control is-invalid" id="inputDanger1" required>
+                                {{--<div class="invalid-feedback">--}}
+                                   {{--This field is required--}}
+                                {{--</div>--}}
                             </div>
 
-                            <div class="checkbox has-success">
-                                <label>
-                                    <input type="checkbox" id="checkboxSuccess" value="option1">
-                                    Checkbox with success
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" required>
+                                <span class="custom-control-indicator"></span>
+                                <span class="custom-control-description">Checkbox with validation</span>
+                            </label>
+
+                            <div class="custom-controls-stacked d-block my-3">
+                                <label class="custom-control custom-radio">
+                                    <input id="radioStacked1" name="radio-stacked" type="radio" class="custom-control-input" required>
+                                    <span class="custom-control-indicator"></span>
+                                    <span class="custom-control-description">Toggle this custom radio</span>
+                                </label>
+                                <label class="custom-control custom-radio">
+                                    <input id="radioStacked2" name="radio-stacked" type="radio" class="custom-control-input" required>
+                                    <span class="custom-control-indicator"></span>
+                                    <span class="custom-control-description">Or toggle this other custom radio</span>
                                 </label>
                             </div>
-                            <div class="checkbox has-warning">
-                                <label>
-                                    <input type="checkbox" id="checkboxWarning" value="option1">
-                                    Checkbox with warning
-                                </label>
-                            </div>
-                            <div class="checkbox is-invalid">
-                                <label>
-                                    <input type="checkbox" id="checkboxDanger" value="option1">
-                                    Checkbox with danger
-                                </label>
-                            </div>
+
+                            <select class="custom-select d-block my-3" required>
+                                <option value="">Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+
+                            {{--<label class="custom-file">--}}
+                                {{--<input type="file" id="file" class="custom-file-input" required>--}}
+                                {{--<span class="custom-file-control"></span>--}}
+                            {{--</label>--}}
                         </form>
 
                         <h5 class="section-semi-title mt-4">
