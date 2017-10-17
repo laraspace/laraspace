@@ -1733,6 +1733,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
+
 var mailgunComponent = {
     template: '#mailgun-template'
 };

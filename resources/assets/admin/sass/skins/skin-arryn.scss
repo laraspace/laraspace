@@ -442,7 +442,7 @@
         }
     }
 
-    @include media-breakpoint-down(sm) {
+    @media (max-width: $x-small-breakpoint){
         .header-nav .dropdown-menu {
             border: 0 !important;
             background-color: $sidemenu-submenu-bg !important;

@@ -67,5 +67,13 @@
     > .actions > ul > li {
         margin: auto 5px;
     }
+}
+@media (max-width: $medium-breakpoint){
 
+    .form-wizard-1 {
+
+        .content {
+            min-height: 520px;
+        }
+    }
 }

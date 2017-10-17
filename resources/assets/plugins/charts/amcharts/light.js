@@ -15,7 +15,7 @@ AmCharts.themes.light = {
 	},
 
 	AmSlicedChart: {
-        colors: ["#69C5EC", "#FDE95C", "#A4CA4E", "#E76846", "#FA8535", "#F65A8B", "#A54EFF", "#84DCC6", "#A5FFD6", "#05668D", "#02C39A"],
+		colors: ["#67b7dc", "#fdd400", "#84b761", "#cc4748", "#cd82ad", "#2f4074", "#448e4d", "#b7b83f", "#b9783f", "#b93e3d", "#913167"],
 		outlineAlpha: 1,
 		outlineThickness: 2,
 		labelTickColor: "#000000",
@@ -167,6 +167,7 @@ AmCharts.themes.light = {
 	},
 
 	DataSetSelector: {
+
 		color: "#000000",
 		selectedBackgroundColor: "#b9cdf5",
 		rollOverBackgroundColor: "#a8b0e4"

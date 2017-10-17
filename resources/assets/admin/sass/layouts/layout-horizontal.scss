@@ -109,7 +109,7 @@
     border-bottom: 4px solid transparent;
 }
 
-@include media-breakpoint-down(sm) {
+@media (max-width: $small-breakpoint-below){
 
     .dropdown-submenu .dropdown-menu {
         left: 0;
@@ -144,7 +144,8 @@
 
             .dropdown-menu {
                 border: 0 !important;
-                position: relative;
+                position: relative !important;
+                transform: none !important;
                 margin: 0;
                 padding: 0;
                 width: 100%;

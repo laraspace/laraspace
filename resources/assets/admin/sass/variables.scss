@@ -19,16 +19,18 @@ $ls-color-orange:          #f0ad4e;
 // -------------------------
 
 $white: #fff;
-$brand-primary:             $ls-color-blue ;
+
+$brand-primary:             $ls-color-blue;
 $brand-secondary:           $ls-color-black;
 $brand-success:             $ls-color-green;
 $brand-info:                $ls-color-light-blue;
-$brand-warning:             $ls-color-orange ;
+$brand-warning:             $ls-color-orange;
 $brand-danger:              $ls-color-red;
 
-$btn-secondary-color:       $white ;
+$btn-secondary-color:       $white;
 $btn-secondary-bg:          $ls-color-black;
-$btn-secondary-border:      $ls-color-black ;
+$btn-secondary-border:      $ls-color-black;
+
 
 
 
@@ -122,6 +124,7 @@ $ls-login-bg-color-overlay: rgba(38 ,50 ,56,.6);
 $ls-login-3-bg-color-overlay: rgba(0, 0 , 0, .35);
 
 $headings-margin-bottom:     1.2rem;
-$card-cap-bg:              #fff !default;
+$card-cap-bg:              #fff;
 
 $pace-loader-color : darken($ls-color-primary,10%);
+

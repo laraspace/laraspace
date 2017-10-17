@@ -86,7 +86,6 @@
                                     <label for="validationDefault01">First name</label>
                                     <input type="text" class="form-control" id="validationDefault01" placeholder="First name" value="Mark" required>
                                 </div>
-
                             </div>
                             <div class="row">
                                 <div class="col-md-6 mb-3">
@@ -96,7 +95,6 @@
                                         Please provide Last name.
                                     </div>
                                 </div>
-
                             </div>
                         </form>
                         <form class="was-validated">
@@ -126,6 +124,10 @@
                                 <option value="3">Three</option>
                             </select>
 
+                            {{--<label class="custom-file">--}}
+                                {{--<input type="file" id="file" class="custom-file-input" required>--}}
+                                {{--<span class="custom-file-control"></span>--}}
+                            {{--</label>--}}
                         </form>
 
                         <h5 class="section-semi-title mt-4">

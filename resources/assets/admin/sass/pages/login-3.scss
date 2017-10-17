@@ -94,7 +94,7 @@
         width: 200px;
     }
 
-    @include media-breakpoint-down(lg) {
+    @media (max-width: $medium-breakpoint) {
 
         .content-box h1 {
             font-size: 2.5rem;
@@ -102,7 +102,7 @@
 
     }
 
-    @include media-breakpoint-down(md) {
+    @media (max-width: $small-breakpoint) {
 
         .content-box h1 {
             font-size: 1.5rem;
@@ -110,7 +110,7 @@
 
     }
 
-    @include media-breakpoint-down(sm) {
+    @media(max-width: $x-small-breakpoint) {
 
         .login-box {
             width: 100%;

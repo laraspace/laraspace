@@ -187,7 +187,9 @@
                 <div class="row">
                     <div class="col-sm-6 col-lg-3">
 
+
                         <div class="card text-white bg-primary text-xs-center">
+
 
                             <div class="card-body">
                                 <blockquote class="card-bodyquote">
@@ -199,7 +201,6 @@
                         </div>
                     </div>
                     <div class="col-sm-6 col-lg-3">
-
                         <div class="card text-white bg-success text-xs-center">
                             <div class="card-body">
                                 <blockquote class="card-bodyquote">
@@ -212,7 +213,6 @@
 
                     </div>
                     <div class="col-sm-6 col-lg-3">
-
                         <div class="card text-white bg-info text-xs-center">
                             <div class="card-body">
                                 <blockquote class="card-bodyquote">

@@ -51,3 +51,11 @@
     }
 
 }
+@media (max-width: $medium-breakpoint){
+    .form-wizard-3 {
+
+        .content {
+            min-height: 520px;
+        }
+    }
+}
