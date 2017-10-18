@@ -27,23 +27,23 @@
     })();
 
     var defaults = {
-        listNodeName    : 'ol',
-        itemNodeName    : 'li',
-        rootClass       : 'dd',
-        listClass       : 'dd-list',
-        itemClass       : 'dd-item',
-        dragClass       : 'dd-dragel',
-        handleClass     : 'dd-handle',
-        collapsedClass  : 'dd-collapsed',
-        placeClass      : 'dd-placeholder',
-        noDragClass     : 'dd-nodrag',
-        emptyClass      : 'dd-empty',
-        expandBtnHTML   : '<button data-action="expand" type="button">Expand</button>',
-        collapseBtnHTML : '<button data-action="collapse" type="button">Collapse</button>',
-        group           : 0,
-        maxDepth        : 5,
-        threshold       : 20
-    };
+            listNodeName    : 'ol',
+            itemNodeName    : 'li',
+            rootClass       : 'dd',
+            listClass       : 'dd-list',
+            itemClass       : 'dd-item',
+            dragClass       : 'dd-dragel',
+            handleClass     : 'dd-handle',
+            collapsedClass  : 'dd-collapsed',
+            placeClass      : 'dd-placeholder',
+            noDragClass     : 'dd-nodrag',
+            emptyClass      : 'dd-empty',
+            expandBtnHTML   : '<button data-action="expand" type="button">Expand</button>',
+            collapseBtnHTML : '<button data-action="collapse" type="button">Collapse</button>',
+            group           : 0,
+            maxDepth        : 5,
+            threshold       : 20
+        };
 
     function Plugin(element, options)
     {
@@ -141,22 +141,22 @@
             var data,
                 depth = 0,
                 list  = this;
-            step  = function(level, depth)
-            {
-                var array = [ ],
-                    items = level.children(list.options.itemNodeName);
-                items.each(function()
+                step  = function(level, depth)
                 {
-                    var li   = $(this),
-                        item = $.extend({}, li.data()),
-                        sub  = li.children(list.options.listNodeName);
-                    if (sub.length) {
-                        item.children = step(sub, depth + 1);
-                    }
-                    array.push(item);
-                });
-                return array;
-            };
+                    var array = [ ],
+                        items = level.children(list.options.itemNodeName);
+                    items.each(function()
+                    {
+                        var li   = $(this),
+                            item = $.extend({}, li.data()),
+                            sub  = li.children(list.options.listNodeName);
+                        if (sub.length) {
+                            item.children = step(sub, depth + 1);
+                        }
+                        array.push(item);
+                    });
+                    return array;
+                };
             data = step(list.el.find(list.options.listNodeName).first(), depth);
             return data;
         },
@@ -430,7 +430,7 @@
                     return;
                 }
                 var before = e.pageY < (this.pointEl.offset().top + this.pointEl.height() / 2);
-                parent = this.placeEl.parent();
+                    parent = this.placeEl.parent();
                 // if empty create new list to replace empty placeholder
                 if (isEmpty) {
                     list = $(document.createElement(opt.listNodeName)).addClass(opt.listClass);
