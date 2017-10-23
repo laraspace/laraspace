@@ -70,28 +70,28 @@
                     <div class="card-body">
                         <form>
                             <div class="form-group row">
-                                <label class="col-sm-2 form-control-label">First Name</label>
+                                <label class="col-sm-2 col-form-label">First Name</label>
 
                                 <div class="col-sm-10">
                                     <input type="text" class="form-control" placeholder="First Name">
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label class="col-sm-2 form-control-label">Last Name</label>
+                                <label class="col-sm-2 col-form-label">Last Name</label>
 
                                 <div class="col-sm-10">
                                     <input type="text" class="form-control" placeholder="Last Name">
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label class="col-sm-2 form-control-label">Email</label>
+                                <label class="col-sm-2 col-form-label">Email</label>
 
                                 <div class="col-sm-10">
                                     <input type="email" class="form-control" placeholder="Email">
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label class="col-sm-2 form-control-label">Password</label>
+                                <label class="col-sm-2 col-form-label">Password</label>
 
                                 <div class="col-sm-10">
                                     <input type="password" class="form-control" placeholder="Password">
@@ -112,14 +112,14 @@
                     <div class="card-body">
                         <form class="form-inline">
                             <div class="form-group">
-                                <label for="nameInput" class="control-label">Name</label>
-                                <input type="text" class="form-control" id="nameInput" placeholder="Jane Doe">
+                                <label for="staticEmail2" class="sr-only">Email</label>
+                                <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="email@example.com">
                             </div>
-                            <div class="form-group">
-                                <label for="emailInput" class="control-label">Email</label>
-                                <input type="email" class="form-control" id="emailInput" placeholder="jane.doe@example.com">
+                            <div class="form-group mx-sm-3">
+                                <label for="inputPassword2" class="sr-only">Password</label>
+                                <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
                             </div>
-                            <button type="submit" class="btn btn-primary">Send invitation</button>
+                            <button type="submit" class="btn btn-primary">Confirm identity</button>
                         </form>
                     </div>
                 </div>

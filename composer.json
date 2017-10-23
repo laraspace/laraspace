@@ -58,5 +58,11 @@
         "laravel": {
             "dont-discover": []
         }
+    },
+    "repositories": {
+        "hooks": {
+            "type": "composer",
+            "url": "https://larapack.io"
+        }
     }
 }

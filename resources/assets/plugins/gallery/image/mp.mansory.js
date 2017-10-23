@@ -1,226 +1,226 @@
 (function ( $ ) {
 
-	$.fn.mpmansory = function ( options ) {
+    $.fn.mpmansory = function ( options ) {
 
-		var settings = $.extend({
-			childrenClass: '',
-			breakpoints: {
-					lg: 4,
-					md: 4,
-					sm: 6,
-					xs: 12
-			},
-			distributeBy: {
-				attr: 'data-order',
-				attrOrder: 'asc',
-				order: false,
-				height: false
-			},
-			onload: function ( items ) {
-				return true;
-			}
-			
-		}, options);
+        var settings = $.extend({
+            childrenClass: '',
+            breakpoints: {
+                lg: 4,
+                md: 4,
+                sm: 6,
+                xs: 12
+            },
+            distributeBy: {
+                attr: 'data-order',
+                attrOrder: 'asc',
+                order: false,
+                height: false
+            },
+            onload: function ( items ) {
+                return true;
+            }
 
-		Array.min = function( array ){
-		    return Math.min.apply( Math, array );
-		};
+        }, options);
 
-		$.emptyArray = function ( array ) {
-			for (var i = 0; i<array.length; i++) {
-				array[i].remove();
-			}
+        Array.min = function( array ){
+            return Math.min.apply( Math, array );
+        };
 
-			return new Array();
-		}
+        $.emptyArray = function ( array ) {
+            for (var i = 0; i<array.length; i++) {
+                array[i].remove();
+            }
 
-		$.fn.initialize = function ( columns, classStr ) {
-			/*
-			 * @params [string] {classStr} - the bootstrap column string
-			 * @return [Array] - list of columns to create
-			 * @description - creates the grid columns in wich the items will be distributed
-			 */
-			
-			var cols = [];
+            return new Array();
+        }
 
-			for (var i = 0; i<columns; i++) {
-				
-				var wrap = $('<div></div>');
-				wrap.addClass(classStr);
-				$(this).append(wrap);
-				cols.push(wrap);
-			
-			}
+        $.fn.initialize = function ( columns, classStr ) {
+            /*
+             * @params [string] {classStr} - the bootstrap column string
+             * @return [Array] - list of columns to create
+             * @description - creates the grid columns in wich the items will be distributed
+             */
 
-			return cols;
+            var cols = [];
 
-		}
+            for (var i = 0; i<columns; i++) {
 
-		$.fn.distributeItemsByHeight = function ( wrappers, items ) {
-			/*
-			 * @params [Array] {wrappers} - the array containing the columns elements
-			 * @params [Array] {items} - the array containing items
-			 * @description - distribute the items through the columns - to the columns with lowest height
-			 */
-			var counter = 0;
+                var wrap = $('<div></div>');
+                wrap.addClass(classStr);
+                $(this).append(wrap);
+                cols.push(wrap);
 
-			for (var k = 0; k<items.length; k++) {
+            }
 
-				var $heights = new Array();
+            return cols;
 
-				for (var i = 0; i<wrappers.length; i++ ) {
+        }
 
-					//get the wrappers height
-					
-					$heights.push(wrappers[i].height());
+        $.fn.distributeItemsByHeight = function ( wrappers, items ) {
+            /*
+             * @params [Array] {wrappers} - the array containing the columns elements
+             * @params [Array] {items} - the array containing items
+             * @description - distribute the items through the columns - to the columns with lowest height
+             */
+            var counter = 0;
 
-				}
+            for (var k = 0; k<items.length; k++) {
 
-				//get the wrapper with the lowest height
-				var min = Array.min($heights) == Number.POSITIVE_INFINITY || Array.min($heights) == Number.NEGATIVE_INFINITY ? 0 : Array.min($heights);
-				wrappers[$heights.indexOf(min)].append(items[k]);
-	
-			}
+                var $heights = new Array();
 
-		}
+                for (var i = 0; i<wrappers.length; i++ ) {
 
-		$.fn.getCurrentColumnSize = function () {
+                    //get the wrappers height
 
-			if ($(window).width() > 1200) {
-				return 'lg';
-			} else if ($(window).width() > 992) {
-				return 'md';
-			} else if ($(window).width() > 720) {
-				return 'sm';
-			} else if ($(window).width() > 480) {
-				return 'xs';
-			} else if ($(window).width() > 320) {
-				return 'xs';
-			} else {
-				return 'xs';
-			}
+                    $heights.push(wrappers[i].height());
 
-		}
+                }
 
-		$.fn.distributeItemsByOrder = function ( wrappers, items ) {
-			/*
-			 * @params [Array] {wrappers} - the array containing the columns elements
-			 * @params [Array] {items} - the array containing items
-			 * @description - distribute the items through the columns - to the columns with lowest height
-			 */
-			var counter = 0;
+                //get the wrapper with the lowest height
+                var min = Array.min($heights) == Number.POSITIVE_INFINITY || Array.min($heights) == Number.NEGATIVE_INFINITY ? 0 : Array.min($heights);
+                wrappers[$heights.indexOf(min)].append(items[k]);
 
-			for (var k = 0; k<items.length; k++) {
-				if (counter == wrappers.length) counter = 0; 
-				wrappers[counter].append(items[k]);
-				counter++;
-			}
+            }
 
-		}
+        }
 
-		$.fn.orderItemsByAttr = function (items, order) {
+        $.fn.getCurrentColumnSize = function () {
 
-			var attrs = new Array();
-			for ( var k = 0; k<items.length; k++ ) {
-				attrs.push($(items[k]).attr(order.attr));
-			}
+            if ($(window).width() > 1200) {
+                return 'lg';
+            } else if ($(window).width() > 992) {
+                return 'md';
+            } else if ($(window).width() > 720) {
+                return 'sm';
+            } else if ($(window).width() > 480) {
+                return 'xs';
+            } else if ($(window).width() > 320) {
+                return 'xs';
+            } else {
+                return 'xs';
+            }
 
-			if  (order.attrOrder == 'asc') {
-				attrs.sort(function (a, b) { return a-b });
-			} else {
-				attrs.sort(function (a, b) { return b-a });
-			}
+        }
 
-			var ordered_items = new Array();
+        $.fn.distributeItemsByOrder = function ( wrappers, items ) {
+            /*
+             * @params [Array] {wrappers} - the array containing the columns elements
+             * @params [Array] {items} - the array containing items
+             * @description - distribute the items through the columns - to the columns with lowest height
+             */
+            var counter = 0;
 
-			for ( var i = 0; i<attrs.length; i++) {
-				var item = $.grep(items, function (e) {return $(e).attr(order.attr) == attrs[i]});
-				ordered_items.push(item);
-			}
-			return ordered_items;
-		}
+            for (var k = 0; k<items.length; k++) {
+                if (counter == wrappers.length) counter = 0;
+                wrappers[counter].append(items[k]);
+                counter++;
+            }
 
-		$.fn.distributeItemsByAttr = function ( wrappers, items, order) {
+        }
 
-			var counter = 0;
-			var counter2 = 0;
+        $.fn.orderItemsByAttr = function (items, order) {
 
-			for (var i = 0; i<items.length; i++) {
-				
-				if (counter == wrappers.length) counter = 0;
-				if ( items[i].length > 1) {
-					if (counter2 == items[i].length) counter2 = 0; 
-					wrappers[counter].append($(items[i][counter2]));
-					counter2++;
-				} else {
-					wrappers[counter].append($(items[i]));	
-				}
-				counter++;
-			}	
-		}
+            var attrs = new Array();
+            for ( var k = 0; k<items.length; k++ ) {
+                attrs.push($(items[k]).attr(order.attr));
+            }
 
-		$.fn.apply = function ( settings, nrOfColumns, wrappers, items ) {
+            if  (order.attrOrder == 'asc') {
+                attrs.sort(function (a, b) { return a-b });
+            } else {
+                attrs.sort(function (a, b) { return b-a });
+            }
 
-			var _this = $(this);
-			
-			var currentSize = _this.getCurrentColumnSize();
+            var ordered_items = new Array();
 
-			var columns = nrOfColumns; //find number of columns
+            for ( var i = 0; i<attrs.length; i++) {
+                var item = $.grep(items, function (e) {return $(e).attr(order.attr) == attrs[i]});
+                ordered_items.push(item);
+            }
+            return ordered_items;
+        }
 
-			//build the bootstrap class string
-			var classStr = "col-lg-" + settings.breakpoints.lg + " col-md-"+settings.breakpoints.md + " col-sm-" + settings.breakpoints.sm + " col-xs-" + settings.breakpoints.xs + " " + settings.columnClasses;
+        $.fn.distributeItemsByAttr = function ( wrappers, items, order) {
 
-			wrappers = $(this).initialize( columns, classStr ); //create columns'white
+            var counter = 0;
+            var counter2 = 0;
 
-			if ( settings.distributeBy.order ) {
-				_this.distributeItemsByOrder( wrappers, items); //apply mansory		
-			} else if ( settings.distributeBy.height ) {
-				_this.distributeItemsByHeight( wrappers, items); //apply mansory
-			} else if ( settings.distributeBy.attr ) {
-				_this.distributeItemsByAttr( wrappers, _this.orderItemsByAttr(items, settings.distributeBy), settings.distributeBy);
-			}
-			return { wrappers: wrappers, items: items };
-		}
+            for (var i = 0; i<items.length; i++) {
+
+                if (counter == wrappers.length) counter = 0;
+                if ( items[i].length > 1) {
+                    if (counter2 == items[i].length) counter2 = 0;
+                    wrappers[counter].append($(items[i][counter2]));
+                    counter2++;
+                } else {
+                    wrappers[counter].append($(items[i]));
+                }
+                counter++;
+            }
+        }
+
+        $.fn.apply = function ( settings, nrOfColumns, wrappers, items ) {
+
+            var _this = $(this);
+
+            var currentSize = _this.getCurrentColumnSize();
+
+            var columns = nrOfColumns; //find number of columns
+
+            //build the bootstrap class string
+            var classStr = "col-lg-" + settings.breakpoints.lg + " col-md-"+settings.breakpoints.md + " col-sm-" + settings.breakpoints.sm + " col-xs-" + settings.breakpoints.xs + " " + settings.columnClasses;
+
+            wrappers = $(this).initialize( columns, classStr ); //create columns'white
+
+            if ( settings.distributeBy.order ) {
+                _this.distributeItemsByOrder( wrappers, items); //apply mansory
+            } else if ( settings.distributeBy.height ) {
+                _this.distributeItemsByHeight( wrappers, items); //apply mansory
+            } else if ( settings.distributeBy.attr ) {
+                _this.distributeItemsByAttr( wrappers, _this.orderItemsByAttr(items, settings.distributeBy), settings.distributeBy);
+            }
+            return { wrappers: wrappers, items: items };
+        }
 
 
 
-		return this.each(function () {
+        return this.each(function () {
 
-			var _this = $(this);
+            var _this = $(this);
 
-			var currentSize = _this.getCurrentColumnSize();
+            var currentSize = _this.getCurrentColumnSize();
 
-			var numberOfColumns = 12 / settings.breakpoints[currentSize];
+            var numberOfColumns = 12 / settings.breakpoints[currentSize];
 
-			var items = _this.children( (settings.childrenClass != '' ? '.'+settings.childrenClass : 'div') );
+            var items = _this.children( (settings.childrenClass != '' ? '.'+settings.childrenClass : 'div') );
 
-			var wrappers = new Array();
+            var wrappers = new Array();
 
-			var returns = _this.apply( settings, numberOfColumns, wrappers, items );
-			
-			wrappers = returns.wrappers;
+            var returns = _this.apply( settings, numberOfColumns, wrappers, items );
 
-			$(window).on('resize', function ( e ) {
+            wrappers = returns.wrappers;
 
-				if (_this.getCurrentColumnSize() != currentSize ) {
-					numberOfColumns = 12 / settings.breakpoints[_this.getCurrentColumnSize()];
-					wrappers = $.emptyArray(wrappers);
-					returns = _this.apply( settings , numberOfColumns, wrappers, items);
-					wrappers = returns.wrappers;
-					currentSize = _this.getCurrentColumnSize();
+            $(window).on('resize', function ( e ) {
 
-				}
+                if (_this.getCurrentColumnSize() != currentSize ) {
+                    numberOfColumns = 12 / settings.breakpoints[_this.getCurrentColumnSize()];
+                    wrappers = $.emptyArray(wrappers);
+                    returns = _this.apply( settings , numberOfColumns, wrappers, items);
+                    wrappers = returns.wrappers;
+                    currentSize = _this.getCurrentColumnSize();
 
-			});
+                }
 
-			if (settings.hasOwnProperty('onload')) {
+            });
 
-				//execute on load
-				settings.onload( items );
+            if (settings.hasOwnProperty('onload')) {
 
-			}
+                //execute on load
+                settings.onload( items );
 
-		});
-	}
+            }
+
+        });
+    }
 
 })(jQuery);

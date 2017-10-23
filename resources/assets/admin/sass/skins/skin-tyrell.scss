@@ -303,7 +303,8 @@
 
     //Buttons
     .btn-theme {
-        @include button-variant($white, $ls-color-theme, $ls-color-theme);
+        @include button-variant($ls-color-theme, $ls-color-theme);
+        $color:$ls-color-secondary;
     }
 
     .btn-theme-outline {

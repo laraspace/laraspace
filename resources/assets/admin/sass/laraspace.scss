@@ -18,7 +18,7 @@
 @import "../../plugins/select2/select2-bootstrap.scss";
 @import "../../plugins/bootstrapSelect/bootstrap-select.scss";
 @import "../../plugins/clockpicker/clockpicker.scss";
-@import "../../plugins/datatables/datatables.scss";
+@import "../../plugins/datatables/dataTables.bootstrap4";
 @import "../../plugins/multiselect/multiselect.scss";
 @import "../../plugins/bootstrap-datepicker/bootstrap-datepicker.scss";
 @import "../../plugins/timepicker/timepicker";
@@ -38,8 +38,8 @@
 @import "../../plugins/gallery/image/photoswipe.scss";
 @import "../../plugins/gallery/image/default-skin.scss";
 @import "../../plugins/zoom/zoom.scss";
-@import "../../plugins/rating/star-rating.scss";
 @import "../../plugins/bar-rating/bar-rating.scss";
+@import "../../plugins/rating/jquery.raty.scss";
 @import "../../plugins/charts/amcharts/export.scss";
 @import "../../plugins/charts/morris/morris.scss";
 @import "../../plugins/prism/prism.scss";

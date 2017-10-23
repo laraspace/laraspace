@@ -399,7 +399,7 @@ var AMCharts = function () {
             "type": "serial",
             "theme": "none",
             "theme":"light",
-            "path": "../../assets/admin/img/charts",
+            "pathToImages": "/assets/admin/img/charts/",
             "marginRight": 30,
             "legend": {
                 "equalWidths": false,
@@ -512,7 +512,7 @@ var AMCharts = function () {
             }],
             "graphs": [{
                 "balloonText": "" +
-                "<img src='../../assets/admin/img/charts/car.png' style='vertical-align:bottom; " +
+                "<img src='/assets/admin/img/charts/car.png' style='vertical-align:bottom; " +
                 "margin-right: 10px; width:28px; height:21px;'><span style='font-size:14px; color:#000000;'>" +
                 "<b>[[value]]</b></span>",
                 "fillAlphas": 0.6,
@@ -522,7 +522,7 @@ var AMCharts = function () {
                 "valueField": "cars"
             }, {
                 "balloonText": "" +
-                "<img src='../../assets/admin/img/charts/motorcycle.png' style='vertical-align:bottom;" +
+                "<img src='/assets/admin/img/charts/motorcycle.png' style='vertical-align:bottom;" +
                 " margin-right: 10px; width:28px; height:21px;'><span style='font-size:14px; color:#000000;'>" +
                 "<b>[[value]]</b></span>",
                 "fillAlphas": 0.6,
@@ -531,7 +531,7 @@ var AMCharts = function () {
                 "valueField": "motorcycles"
             }, {
                 "balloonText": "" +
-                "<img src='../../assets/admin/img/charts/bicycle.png' style='vertical-align:bottom; " +
+                "<img src='/assets/admin/img/charts/bicycle.png' style='vertical-align:bottom; " +
                 "margin-right: 10px; width:28px; height:21px;'><span style='font-size:14px; color:#000000;'>" +
                 "<b>[[value]]</b></span>",
                 "fillAlphas": 0.6,
@@ -2398,7 +2398,7 @@ var AMCharts = function () {
         var xyandbubblechart = AmCharts.makeChart("xy-and-bubble-chart", {
             "type": "xy",
             "theme": "light",
-            "path": "../../assets/admin/img/charts",
+            "pathToImages": "/assets/admin/img/charts/",
             "marginRight": 80,
             "marginTop": 17,
             "dataProvider": [{
@@ -2551,7 +2551,7 @@ var AMCharts = function () {
         var multipleDataSetsStockChart = AmCharts.makeChart("multiple-data-sets-chart", {
             "type": "stock",
             "theme": "light",
-            "path": "../../assets/admin/img/charts",
+            "pathToImages": "/assets/admin/img/charts/",
             "dataSets": [{
                 "title": "first data set",
                 "fieldMappings": [{
