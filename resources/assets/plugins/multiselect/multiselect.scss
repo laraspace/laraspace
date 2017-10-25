@@ -1,6 +1,5 @@
 .ms-container{
-  //background: transparent url('../img/switch.png') no-repeat 50% 50%;
-  background: transparent url('/assets/admin/img/switch.png') no-repeat 50% 50%;
+  background: transparent url('../img/switch.png') no-repeat 50% 50%;
   width: 370px;
 }
 
@@ -11,6 +10,7 @@
   line-height: 0;
   font-size: 0;
   clear: both;
+
   min-height: 0;
   visibility: hidden;
 }

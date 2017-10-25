@@ -5,7 +5,9 @@ var FormWizard = function () {
             headerTag: "h3",
             bodyTag: "section",
             transitionEffect: "slideLeft",
-            autoFocus: true
+            autoFocus: true,
+            titleTemplate: '<span class=\"number\">#index#</span> #title#',
+
         });
     };
 
@@ -14,7 +16,9 @@ var FormWizard = function () {
             headerTag: "h3",
             bodyTag: "section",
             transitionEffect: "slideLeft",
-            autoFocus: true
+            autoFocus: true,
+            titleTemplate: '<span class=\"number\">#index#</span> #title#',
+
         });
     };
 
@@ -54,7 +58,9 @@ var FormWizard = function () {
             headerTag: "h3",
             bodyTag: "section",
             transitionEffect: "slideLeft",
-            autoFocus: true
+            autoFocus: true,
+            titleTemplate: '<span class=\"number\">#index#</span> #title#',
+
         });
 
     };

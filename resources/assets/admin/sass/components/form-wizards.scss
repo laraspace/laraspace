@@ -1,3 +1,105 @@
+.wizard ul, .tabcontrol ul {
+  display: flex;
+  list-style: none !important;
+  padding: 0;
+  margin: 0;
+}
+
+.wizard > .content > .body {
+  float: left;
+  position: absolute;
+  width: 95%;
+  height: 95%;
+  padding: 2.5%;
+
+}
+
+.wizard > .content {
+  margin: 1em;
+  top: 50px;
+  display: block;
+  min-height: 25em;
+  overflow: hidden;
+  position: relative;
+  width: auto;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background: none!important;
+}
+
+.wizard > .actions .disabled a,
+.wizard > .actions .disabled a:hover,
+.wizard > .actions .disabled a:active {
+  background: #eee;
+  color: #aaa;
+}
+
+.wizard > .steps > ul > li,
+.wizard > .actions > ul > li {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  float: left;
+}
+
+.wizard > .steps > ul > li > a > .icon-fa {
+  margin-left: -10px;
+}
+
+.wizard .content .select2-container {
+  width: 100% !important;
+}
+
+.wizard > .content > .title, .tabcontrol > .content > .title {
+  display: none;
+}
+
+.wizard > .steps .current-info, .tabcontrol > .steps .current-info {
+  display: none;
+}
+
+.wizard > .actions {
+  position: relative;
+  display: block;
+  text-align: right;
+  width: 100%;
+}
+
+.wizard > .actions > ul {
+  display: inline-block;
+  text-align: right;
+}
+
+.wizard > .actions > ul > li {
+  margin: 0 0.5em;
+}
+
+.wizard > .actions a, .wizard > .actions a:hover, .wizard > .actions a:active {
+  background: $ls-color-blue;
+  color: $white;
+  display: block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.wizard label.error {
+  color: $ls-color-red;
+  position: absolute;
+}
+
+.wizard .form-group {
+  margin-bottom: 2rem;
+}
+
+.wizard .form-control.error {
+  border-color: $ls-color-red;
+}
+
 @import "form-wizard-1";
 @import "form-wizard-2";
 @import "form-wizard-3";

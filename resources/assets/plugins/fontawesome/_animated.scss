@@ -11,7 +11,7 @@
           animation: fa-spin 1s infinite steps(8);
 }
 
-@-webkit-keyframes icon-fa-spin {
+@-webkit-keyframes fa-spin {
   0% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
@@ -22,7 +22,7 @@
   }
 }
 
-@keyframes icon-fa-spin {
+@keyframes fa-spin {
   0% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
