@@ -1,7 +1,5 @@
 .form-wizard-2 {
-
-    > .steps > ul {
-
+     > .steps > ul {
         a {
             //margin-top: 55px;
             background: none !important;
@@ -122,7 +120,7 @@
             flex-direction: column;
             height: 100%;
             align-items: center;
-            width:0%;
+            //width:0%;
             a {
                 margin-top: 0;
                 padding-left: 60px;

@@ -30943,6 +30943,10 @@ pre.line-numbers > code {
   color: #111;
   background-color: #4fc47f;
   border-color: #4fc47f;
+  -o-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+  -ms-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 
 .skin-tyrell .btn-theme:hover {
@@ -30969,6 +30973,10 @@ pre.line-numbers > code {
   background-color: #3bb16c;
   background-image: none;
   border-color: #38a866;
+  -o-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  -ms-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 
 .skin-tyrell .btn-theme-outline {
@@ -31373,6 +31381,10 @@ pre.line-numbers > code {
   color: #fff;
   background-color: #007dcc;
   border-color: #007dcc;
+  -o-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+  -ms-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 
 .skin-arryn .btn-theme:hover {
@@ -31399,6 +31411,10 @@ pre.line-numbers > code {
   background-color: #0066a6;
   background-image: none;
   border-color: #005e99;
+  -o-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  -ms-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 
 .skin-arryn .btn-theme-outline {
@@ -31803,6 +31819,10 @@ pre.line-numbers > code {
   color: #fff;
   background-color: #343A52;
   border-color: #343A52;
+  -o-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+  -ms-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 
 .skin-targaryen .btn-theme:hover {
@@ -31829,6 +31849,10 @@ pre.line-numbers > code {
   background-color: #25293b;
   background-image: none;
   border-color: #202433;
+  -o-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  -ms-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 
 .skin-targaryen .btn-theme-outline {
@@ -32232,6 +32256,10 @@ pre.line-numbers > code {
   color: #fff;
   background-color: #3B4350;
   border-color: #3B4350;
+  -o-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+  -ms-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 
 .skin-lannister .btn-theme:hover {
@@ -32258,6 +32286,10 @@ pre.line-numbers > code {
   background-color: #2b313a;
   background-image: none;
   border-color: #252a33;
+  -o-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  -ms-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 
 .skin-lannister .btn-theme-outline {
@@ -32658,6 +32690,10 @@ pre.line-numbers > code {
   color: #fff;
   background-color: #393F46;
   border-color: #393F46;
+  -o-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+  -ms-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 
 .skin-stark .btn-theme:hover {
@@ -32684,6 +32720,10 @@ pre.line-numbers > code {
   background-color: #282c31;
   background-image: none;
   border-color: #22262a;
+  -o-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  -ms-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 
 .skin-stark .btn-theme-outline {
@@ -33612,6 +33652,10 @@ code,
   color: #111;
   background-color: #ffde00;
   border-color: #ffde00;
+  -o-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+  -ms-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 
 .btn-theme:hover {
@@ -33638,6 +33682,10 @@ code,
   background-color: #d9bd00;
   background-image: none;
   border-color: #ccb200;
+  -o-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  -ms-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 
 .btn-outline-theme {
@@ -34280,10 +34328,16 @@ code,
 }
 
 .form-wizard-1 > .steps > ul > li > a {
+  background: #eee !important;
+}
+
+.form-wizard-1 > .steps > ul > li > a,
+.form-wizard-1 > .steps > ul > li > a:hover,
+.form-wizard-1 > .steps > ul > li > a:active {
   height: 40px;
-  background: #eee;
   width: 100%;
   text-align: center;
+  border-radius: 0px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   display: -webkit-box;
@@ -34297,6 +34351,7 @@ code,
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin: 0px 5px;
 }
 
 .form-wizard-1 > .steps > ul > li > a > .icon-fa {
@@ -34313,7 +34368,7 @@ code,
 .form-wizard-1 > .steps .current a:active,
 .form-wizard-1 > .steps .current a:hover {
   color: #333;
-  background-color: #ffde00;
+  background-color: #ffde00 !important;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
@@ -34321,7 +34376,7 @@ code,
 .form-wizard-1 > .steps .done a,
 .form-wizard-1 > .steps .done a:active,
 .form-wizard-1 > .steps .done a:hover {
-  background: #fff299;
+  background: #fff299 !important;
   -webkit-box-shadow: none;
           box-shadow: none;
   color: #333;
@@ -34473,7 +34528,6 @@ code,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 0%;
 }
 
 .form-wizard-2.vertical-wizard .steps > ul a {
@@ -34559,7 +34613,10 @@ code,
   display: flex;
 }
 
-.form-wizard-3 .steps > ul li > a {
+.form-wizard-3 .steps > ul li > a,
+.form-wizard-3 .steps > ul li > a:hover,
+.form-wizard-3 .steps > ul li > a:active {
+  border-radius: 0;
   display: block;
   width: 100%;
   text-align: center;
@@ -34571,14 +34628,18 @@ code,
   color: #aaa;
 }
 
-.form-wizard-3 .steps > ul .current > a {
+.form-wizard-3 .steps > ul .current > a,
+.form-wizard-3 .steps > ul .current > a:hover,
+.form-wizard-3 .steps > ul .current > a:active {
   border-bottom: 3px solid #ffde00;
   font-weight: bold;
   color: #333;
+  background: none !important;
 }
 
 .form-wizard-3 .steps > ul .done > a {
   color: #333;
+  background: none !important;
   font-weight: normal;
   border-bottom: 2px solid #fff299;
 }
@@ -34772,6 +34833,10 @@ code,
 
 .login-page .login-wrapper .c-input > input:checked ~ .c-indicator {
   background-color: #333;
+  -o-box-shadow: none;
+  -ms-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 .login-page .login-wrapper .c-input > input:focus ~ .c-indicator {
@@ -34781,6 +34846,10 @@ code,
 
 .login-page .login-wrapper .c-input > input:active ~ .c-indicator {
   background-color: #262626;
+  -o-box-shadow: none;
+  -ms-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 .login-page .logo-main {
@@ -35787,18 +35856,6 @@ code,
 
 .ms-container {
   background: transparent url("/assets/admin/img/switch.png") no-repeat 50% 50%;
-}
-
-.wizard > .steps .current a,
-.wizard > .steps .current a:hover,
-.wizard > .steps .current a:active {
-  background: none !important;
-}
-
-.wizard > .actions .disabled a,
-.wizard > .actions .disabled a:hover,
-.wizard > .actions .disabled a:active {
-  background: none;
 }
 
 .metismenu .icon-fa.arrow:before {

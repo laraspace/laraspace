@@ -6,24 +6,32 @@
         display: flex;
 
         li > a{
-            display: block;
-            width: 100%;
-            text-align: center;
-            padding: 10px 0;
-            border-bottom: 1px solid #d9d9d9;
-            transition: all 0.3s ease-in-out;
-            margin: 0 10px;
-            color: #aaa;
+            &,&:hover,&:active{
+                border-radius: 0;
+                display: block;
+                width: 100%;
+                text-align: center;
+                padding: 10px 0;
+                border-bottom: 1px solid #d9d9d9;
+                transition: all 0.3s ease-in-out;
+                margin: 0 10px;
+                color: #aaa;
+            }
         }
 
-        .current > a {
-            border-bottom: 3px solid $ls-color-primary;
-            font-weight: bold;
-            color: $ls-color-black;
+        .current > a{
+                    &,&:hover,&:active {
+                        border-bottom: 3px solid $ls-color-primary;
+                        font-weight: bold;
+                        color: $ls-color-black;
+                        background: none !important;
+                }
+
         }
 
         .done > a {
             color: $ls-color-black;
+            background: none!important;
             font-weight: normal;
             border-bottom: 2px solid lighten($ls-color-primary, 30%);
         }
