@@ -1,7 +1,7 @@
 .form-wizard-2 {
      > .steps > ul {
         a {
-            //margin-top: 55px;
+            margin-top: 50px!important;
             background: none !important;
             color: $ls-color-black!important;
         }
@@ -115,14 +115,18 @@
         .content {
             flex: 4;
         }
-
+        .steps{
+            flex:1;
+            width: auto;
+        }
         .steps > ul {
             flex-direction: column;
             height: 100%;
             align-items: center;
-            //width:0%;
+            width:100%;
             a {
-                margin-top: 0;
+                width:100%;
+                margin-top: 0 !important;
                 padding-left: 60px;
             }
 
@@ -135,6 +139,7 @@
             > li {
                 flex: 1;
                 position: relative;
+                min-width:160px;
                 align-items: center;
             }
 
@@ -167,6 +172,10 @@
 
         .content{
             min-height: 520px;
+        }
+        .steps> ul > li{
+            width: 100%;
+
         }
     }
 }
@@ -201,6 +210,10 @@
 
                 a {
                     padding-left: 50px;
+                }
+                >li{
+                    width: 100%;
+
                 }
             }
         }

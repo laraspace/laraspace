@@ -21,7 +21,7 @@
             //flex-wrap: wrap;
 
              &,&:hover,&:active {
-                 height: 40px;
+                 height: auto;
                  width: 100%;
                  text-align: center;
                  border-radius:0px;
@@ -31,6 +31,7 @@
                  justify-content: center;
                  align-items: center;
                  flex-wrap: wrap;
+                 padding: 0.5em 0em;
                  //
                  //display: inherit;
                  //width: 100%;
@@ -49,7 +50,7 @@
 
         > ul > li.error > a {
             background: $ls-color-red;
-            color: $white;
+            //color: $white;
         }
 
         .current a,

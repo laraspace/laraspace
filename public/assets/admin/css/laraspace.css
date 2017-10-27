@@ -34229,7 +34229,6 @@ code,
 
 .wizard > .content {
   margin: 1em;
-  top: 50px;
   display: block;
   min-height: 25em;
   overflow: hidden;
@@ -34334,7 +34333,7 @@ code,
 .form-wizard-1 > .steps > ul > li > a,
 .form-wizard-1 > .steps > ul > li > a:hover,
 .form-wizard-1 > .steps > ul > li > a:active {
-  height: 40px;
+  height: auto;
   width: 100%;
   text-align: center;
   border-radius: 0px;
@@ -34351,6 +34350,7 @@ code,
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding: 0.5em 0em;
   margin: 0px 5px;
 }
 
@@ -34361,7 +34361,6 @@ code,
 
 .form-wizard-1 > .steps > ul > li.error > a {
   background: #f35a3d;
-  color: #fff;
 }
 
 .form-wizard-1 > .steps .current a,
@@ -34405,6 +34404,7 @@ code,
 }
 
 .form-wizard-2 > .steps > ul a {
+  margin-top: 50px !important;
   background: none !important;
   color: #333 !important;
 }
@@ -34519,6 +34519,13 @@ code,
           flex: 4;
 }
 
+.form-wizard-2.vertical-wizard .steps {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: auto;
+}
+
 .form-wizard-2.vertical-wizard .steps > ul {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -34528,10 +34535,12 @@ code,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
 }
 
 .form-wizard-2.vertical-wizard .steps > ul a {
-  margin-top: 0;
+  width: 100%;
+  margin-top: 0 !important;
   padding-left: 60px;
 }
 
@@ -34547,6 +34556,7 @@ code,
       -ms-flex: 1;
           flex: 1;
   position: relative;
+  min-width: 160px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -34576,6 +34586,10 @@ code,
   .form-wizard-2 .content {
     min-height: 520px;
   }
+
+  .form-wizard-2 .steps > ul > li {
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -34602,6 +34616,10 @@ code,
 
   .form-wizard-2.vertical-wizard .steps > ul a {
     padding-left: 50px;
+  }
+
+  .form-wizard-2.vertical-wizard .steps > ul > li {
+    width: 100%;
   }
 }
 
@@ -34637,7 +34655,9 @@ code,
   background: none !important;
 }
 
-.form-wizard-3 .steps > ul .done > a {
+.form-wizard-3 .steps > ul .done > a,
+.form-wizard-3 .steps > ul .done > a:hover,
+.form-wizard-3 .steps > ul .done > a:active {
   color: #333;
   background: none !important;
   font-weight: normal;

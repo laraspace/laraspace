@@ -30,10 +30,12 @@
         }
 
         .done > a {
-            color: $ls-color-black;
-            background: none!important;
-            font-weight: normal;
-            border-bottom: 2px solid lighten($ls-color-primary, 30%);
+            &,&:hover,&:active{
+                color: $ls-color-black;
+                background: none!important;
+                font-weight: normal;
+                border-bottom: 2px solid lighten($ls-color-primary, 30%);
+            }
         }
 
         .error > a {
