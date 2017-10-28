@@ -19,7 +19,7 @@ mix.combine([
     pluginPath + 'ladda/spin.js',
     pluginPath + 'ladda/ladda.js',
     pluginPath + 'toastr/toastr.js',
-    pluginPath + 'notie/notie.js',
+    // pluginPath + 'notie/notie.js',
     pluginPath + 'jquery-validate/jquery.validate.js',
     pluginPath + 'jquery-validate/additional-methods.js',
     pluginPath + 'clockpicker/bootstrap-clockpicker.js',

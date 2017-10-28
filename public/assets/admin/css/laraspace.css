@@ -34584,11 +34584,17 @@ code,
 
 @media (max-width: 992px) {
   .form-wizard-2 .content {
+    margin: 0;
+  }
+
+  .form-wizard-2 .content .content {
     min-height: 520px;
   }
 
-  .form-wizard-2 .steps > ul > li {
+  .form-wizard-2.vertical-wizard .steps > ul > li {
+    margin: 0;
     width: 100%;
+    min-width: 120px;
   }
 }
 

@@ -170,12 +170,22 @@
 @media (max-width: $medium-breakpoint){
     .form-wizard-2 {
 
-        .content{
-            min-height: 520px;
-        }
-        .steps> ul > li{
-            width: 100%;
+        .content {
+            margin:0;
 
+            .content{
+                min-height: 520px;
+            }
+        }
+        &.vertical-wizard {
+
+            .steps > ul {
+                > li {
+                    margin:0;
+                    width: 100%;
+                    min-width:120px;
+                }
+            }
         }
     }
 }
