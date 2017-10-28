@@ -1,4 +1,4 @@
-@extends('admin.layouts.layout-basic')
+ @extends('admin.layouts.layout-basic')
 
 @section('scripts')
     <script src="{{asset('assets/admin/js/pages/imagecropper.js')}}"></script>
