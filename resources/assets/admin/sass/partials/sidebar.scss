@@ -78,6 +78,15 @@
 }
 
 
+// metis overrides
+
+.metismenu .icon-fa.arrow:before {
+    content: "\f104";
+}
+
+.metismenu .active > a > .icon-fa.arrow:before {
+    content: "\f107";
+}
 
 
 

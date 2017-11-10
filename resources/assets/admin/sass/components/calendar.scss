@@ -1,0 +1,113 @@
+// Calendar
+// -------------------------
+
+.calendar {
+
+    .calendar-event {
+        position: absolute;
+        right: 0;
+        width: 15%;
+
+        .fc-event-list {
+            list-style-type: none;
+            padding: 0;
+
+            .fc-event-dot {
+                background-color: #acb7bf;
+                margin-right: 20px;
+
+                &.fc-event-primary-dot {
+                    background-color: $ls-color-blue;
+                }
+                &.fc-event-success-dot {
+                    background-color: $ls-color-green;
+                }
+                &.fc-event-warning-dot {
+                    background-color: $ls-color-orange;
+                }
+                &.fc-event-danger-dot {
+                    background-color: $ls-color-red;
+                }
+            }
+        }
+    }
+
+    .fc-state-default {
+        background-color: #007dcc !important;
+        background-image: none !important;
+        background-repeat: no-repeat !important;
+        border-color: #007dcc !important;
+        color: #fff !important;
+        text-shadow: none !important;
+        box-shadow: none !important;
+    }
+
+    .fc-state-default:hover {
+        background-color: #005e99 !important;
+        border-color: #00588f !important;
+    }
+
+    .fc-event {
+        border: 1px solid #acb7bf;
+        background-color: #acb7bf; /* default BACKGROUND color */
+    }
+
+    .fc-view-container tr > td > .fc-day-grid-event {
+        color: $white !important;
+    }
+
+}
+
+@media(max-width: $medium-breakpoint) {
+
+    .calendar {
+
+        .fc-header-toolbar {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+            .fc-left, .fc-center, .fc-right {
+                flex: 1;
+                margin-bottom: 10px;
+            }
+        }
+
+        .calendar-event .fc-event-list:after {
+            content: "";
+            flex: auto;
+            min-width: 120px;
+        }
+
+    }
+
+}
+
+@media(max-width: $large-breakpoint) {
+
+    .calendar {
+
+        .fc-toolbar h2 {
+            font-size: 1.5rem;
+        }
+
+        .calendar-event {
+            position: relative !important;
+            max-width: 100%;
+            right: 0 !important;
+            width: 100% !important;
+        }
+
+        .calendar-event ol {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .calendar-event ol li {
+            flex: 120px;
+        }
+    }
+
+}

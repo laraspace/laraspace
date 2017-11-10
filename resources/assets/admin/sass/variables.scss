@@ -36,6 +36,16 @@ $btn-secondary-bg:          $ls-color-black;
 $btn-secondary-border:      $ls-color-black;
 
 
+$theme-colors: (
+    primary: $ls-color-blue,
+    secondary: $ls-color-black,
+    success: $ls-color-green,
+    info: $ls-color-light-blue,
+    warning: $ls-color-orange,
+    danger: $ls-color-red,
+    light: $ls-color-gray--light,
+    dark: $ls-color-gray--very-dark
+) !default;
 
 
 // Theme Colors

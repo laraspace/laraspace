@@ -1,0 +1,157 @@
+// Sparkline Chart
+// -------------------------
+
+.sparkline-chart {
+
+    .sparkline-chart-type {
+        margin: 25px 40px !important;
+        flex: 1;
+        min-width: 25%;
+    }
+
+    .row {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+}
+
+.jqstooltip {
+    width: auto !important;
+    height: auto !important;
+}
+
+@media(max-width: $small-breakpoint) {
+    .sparkline-chart {
+        .sparkline-chart-type {
+            margin: 25px 40px !important;
+            min-width: 30%;
+        }
+    }
+}
+
+// AM Charts
+// -------------------------
+
+.amcharts {
+    width: 100%;
+    height: 500px;
+
+    a {
+        display: none !important;
+    }
+
+    .amcharts-export-menu {
+
+        display: none;
+    }
+
+    .chart-controls {
+        display: flex;
+        justify-content: center;
+    }
+
+    .chart-controls {
+
+        .cylinder_chart_input, .pie_donut_chart_input {
+            width: 100%;
+        }
+
+    }
+}
+
+// Morris Charts
+// -------------------------
+
+.morris {
+    width: 100%;
+    height: 500px;
+
+    a {
+        display: none !important;
+    }
+}
+
+// Gauges
+// -------------------------
+
+.gauge {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.gauges-row .col {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto !important;
+}
+
+.gauge-lg {
+
+    .basic-gauge, .donut-gauge, .color-gauge {
+        height: 250px;
+    }
+
+    .gauge-label {
+        font-size: 40px;
+    }
+
+}
+
+.gauge-md {
+
+    .basic-gauge, .donut-gauge, .color-gauge {
+        height: 180px;
+    }
+
+}
+
+.gauge-sm {
+
+    .basic-gauge, .donut-gauge, .color-gauge {
+        height: 120px;
+    }
+
+    .gauge-label {
+        font-size: 20px;
+    }
+
+}
+
+.gauge-label {
+    display: inline-block;
+    position: absolute;
+    top: 60%;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+
+    &.middle-label {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.gauge {
+    position: relative;
+}
+
+@media(max-width: $x-small-breakpoint) {
+
+    .gauge-lg {
+
+        .basic-gauge, .donut-gauge, .color-gauge {
+            height: 180px !important;
+            width: auto !important;
+        }
+
+        .gauge-label {
+            font-size: 28px;
+        }
+
+    }
+
+}

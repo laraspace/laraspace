@@ -65,12 +65,6 @@
                                     <button class="btn btn-warning">
                                         Warning
                                     </button>
-                                    <button class="btn btn-light">
-                                        Light
-                                    </button>
-                                    <button class="btn btn-dark">
-                                        Dark
-                                    </button>
                                 </div>
                             </div>
                             <div class="col-sm-6">
@@ -82,8 +76,6 @@
                                 <button type="button" class="btn btn-outline-info">Info</button>
                                 <button type="button" class="btn btn-outline-warning">Warning</button>
                                 <button type="button" class="btn btn-outline-danger">Danger</button>
-                                <button type="button" class="btn btn-outline-light">Light</button>
-                                <button type="button" class="btn btn-outline-dark">Dark</button>
                             </div>
                         </div>
                         <div class="row mt-4">
@@ -129,12 +121,6 @@
                                     </button>
                                     <button class="btn btn-warning btn-rounded">
                                         Warning
-                                    </button>
-                                    <button class="btn btn-light btn-rounded">
-                                        Light
-                                    </button>
-                                    <button class="btn btn-dark btn-rounded">
-                                        Dark
                                     </button>
                                 </div>
                             </div>
@@ -192,13 +178,6 @@
                                     <button class="btn btn-warning btn-pressable">
                                         Warning
                                     </button>
-                                    <button class="btn btn-light btn-pressable">
-                                        Light
-                                    </button>
-                                    <button class="btn btn-dark btn-pressable">
-                                        Dark
-                                    </button>
-
                                 </div>
                             </div>
                         </div>

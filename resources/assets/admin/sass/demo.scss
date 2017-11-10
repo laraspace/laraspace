@@ -1,5 +1,111 @@
 // demo.scss - Styles for Preview pages
 
+
+// Image Zoom
+// -------------------------
+
+.image-zoom-demo {
+  text-align: justify;
+
+  .img-left {
+    float: left;
+    width: 20%;
+    margin: 20px 20px 20px 0;
+  }
+
+  .img-right {
+    float: right;
+    width: 20%;
+    margin: 0 20px 20px 20px;
+  }
+
+}
+
+
+// Icons
+// -------------------------
+
+.icon-container {
+
+  .demo-icon {
+
+    .icon-classname {
+      margin-left: 20px;
+    }
+
+    .icon-box {
+      height: 50px;
+      width: 50px;
+      padding: 10px;
+      border-radius: 3px;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      border: 2px solid #FFEB3B;
+
+      &:hover {
+        background-color: #FFEB3B;
+      }
+    }
+
+  }
+
+}
+
+@mixin n-columns($min-width, $gutter, $last-equal: false, $max-cols: 5) {
+
+  .icon-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -$gutter;
+    margin-top: -$gutter;
+
+    .demo-icon {
+      flex: 1 0 $min-width;
+      margin-left: $gutter;
+      margin-top: $gutter;
+      margin-bottom: $gutter;
+      align-items: center;
+
+      @if $last-equal {
+        @for $i from 2 through $max-cols {
+          $screen-width: ($min-width*$i)+($gutter*$i);
+          $column-width: (100%/$i);
+          @media (min-width: $screen-width) {
+            max-width: calc(#{$column-width} - #{$gutter});
+          }
+        }
+
+        $column-width: (100%/$max-cols);
+        @media (min-width: $min-width*$max-cols) {
+          min-width: calc(#{$column-width} - #{$gutter});
+        }
+      }
+    }
+  }
+
+}
+
+@include n-columns(350px, 20px, true, 5);
+
+.icon-container {
+
+  .demo-icon {
+    display: flex;
+    flex-direction: row;
+  }
+
+  svg {
+    display: block;
+  }
+
+}
+
+// Buttons
+// -------------------------
+
 .buttons-demo {
   .btn {
     margin-bottom: 10px;
@@ -19,7 +125,9 @@
   color: $ls-color-gray--very-dark;
 }
 
-//BASIC UI
+// Basic UI
+// -------------------------
+
 .progress {
   margin-top: 20px;
 }

@@ -1,0 +1,56 @@
+// Image Cropper
+// -------------------------
+
+.image-cropper {
+
+    .docs-toggles {
+        margin-top: 10px;
+    }
+
+    .docs-buttons {
+        margin-top: 10px;
+
+        .btn {
+            height: 40px;
+        }
+
+        .btn-upload, .btn-group-justified {
+            margin: 0;
+        }
+
+        .input-group-addon {
+            color: #fff;
+            background-color: #007dcc;
+            border-color: #007dcc;
+        }
+    }
+
+    .docs-set .row {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: $large-breakpoint) {
+
+    .image-cropper {
+
+        .docs-buttons {
+            max-width: 100%;
+        }
+
+        .img-cropper-col {
+            max-width: 100%;
+            flex: 100%;
+        }
+
+        .docs-data .input-group {
+            max-width: 60%;
+        }
+
+    }
+}

@@ -27,51 +27,85 @@ var Notifications = function () {
         $('[data-notie]').on('click',function(){
             var type = $(this).data('notie'),message = $(this).data('message'),title = $(this).data('title');
 
+            console.log(message)
             switch(type) {
                 case 'success':
-                    notie.alert(1, message); // Never hides unless clicked, or escape or enter is pressed
+                    notie.alert({ type: 1, text: 'Success!' })
                     break;
                 case 'warning':
-                    notie.alert(2, message);
-                    break;
-                case 'info':
-                    notie.alert(4, message);
+                    notie.alert({ type: 2, text: 'Warning!' })
                     break;
                 case 'error':
-                    notie.alert(3, message);
+                    notie.alert({ type: 3, text: 'Error!' })
+                    break;
+                case 'info':
+                    notie.alert({ type: 4, text: 'Info!' })
                     break;
                 case 'confirm':
-                    notie.confirm('Are you sure you want to do that?', 'Yes', 'Cancel', function() {
-                        notie.alert(1, 'Good choice!', 2);
-                    });
+                    notie.confirm({
+                        text: 'Are you sure you want to do that?<br><b>That\'s a bold move...</b>',
+                        cancelCallback: function () {
+                            notie.alert({ type: 3, text: 'Aw, why not? :(', time: 2 })
+                        },
+                        submitCallback: function () {
+                            notie.alert({ type: 1, text: 'Good choice! :D', time: 2 })
+                        }
+                    })
                     break;
                 case 'input':
                     notie.input({
-                        type: 'password',
-                        placeholder: 'Enter your password'
-                    }, 'Please enter your password:', 'Submit', 'Cancel', function(valueEntered) {
-                        notie.alert(1, 'You entered: ' + valueEntered, 2);
-                    }, function(valueEntered) {
-                        notie.alert(3, 'You cancelled with this value: ' + valueEntered, 2);
-                    });
+                        text: 'Please enter your email:',
+                        submitText: 'Submit',
+                        cancelText: 'Cancel',
+                        cancelCallback: function (value) {
+                            notie.alert({ type: 3, text: 'You cancelled with this value: ' + value })
+                        },
+                        submitCallback: function (value) {
+                            notie.alert({ type: 1, text: 'You entered: ' + value })
+                        },
+                        value: 'jane@doe.com',
+                        type: 'email',
+                        placeholder: 'name@example.com'
+                    })
+
                     break;
                 case 'select':
-                    notie.select('Demo item #1, owner is Jane Smith',
-                        [
-                            { title: 'Share' },
-                            { title: 'Open', color: '#57BF57' },
-                            { title: 'Edit', type: 2 },
-                            { title: 'Delete', type: 3 }
-                        ],
-                        function() {
-                            notie.alert(1, 'Share item!', 3);
-                        }, function() {
-                            notie.alert(1, 'Open item!', 3);
-                        }, function() {
-                            notie.alert(2, 'Edit item!', 3);
-                        }, function() {
-                            notie.alert(3, 'Delete item!', 3);
-                        });
+                    notie.select({
+                        text: 'Demo item #1, owner is Jane Smith',
+                        cancelText: 'Close',
+                        cancelCallback: function () {
+                            notie.alert({ type: 5, text: 'Cancel!' })
+                        },
+                        choices: [
+                            {
+                                text: 'Share',
+                                handler: function () {
+                                    notie.alert({ type: 1, text: 'Share item!' })
+                                }
+                            },
+                            {
+                                text: 'Open',
+                                handler: function () {
+                                    notie.alert({ type: 1, text: 'Open item!' })
+                                }
+                            },
+                            {
+                                type: 2,
+                                text: 'Edit',
+                                handler: function () {
+                                    notie.alert({ type: 2, text: 'Edit item!' })
+                                }
+                            },
+                            {
+                                type: 3,
+                                text: 'Delete',
+                                handler: function () {
+                                    notie.alert({ type: 3, text: 'Delete item!' })
+                                }
+                            }
+                        ]
+                    })
+
                     break;
 
                 default:

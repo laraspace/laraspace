@@ -34,7 +34,7 @@ var LaraspaceNotifs = function () {
 
     };
 
-    var notieAlert = function(type,message){
+    var notieAlert = function(type, message){
 
         //Change timeout value here.
         var timeout = 5;

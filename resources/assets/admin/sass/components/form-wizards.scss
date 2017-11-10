@@ -88,8 +88,10 @@
 }
 
 .wizard label.error {
-  color: $ls-color-red;
+  color: $ls-color-red !important;
   position: absolute;
+  font-size: 14px;
+  margin-left: 0 !important;
 }
 
 .wizard .form-group {

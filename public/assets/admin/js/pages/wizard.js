@@ -18,7 +18,6 @@ var FormWizard = function () {
             transitionEffect: "slideLeft",
             autoFocus: true,
             titleTemplate: '<span class=\"number\">#index#</span> #title#',
-
         });
     };
 

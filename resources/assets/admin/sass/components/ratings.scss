@@ -1,0 +1,65 @@
+// Star Rating
+// -------------------------
+
+#mouseover-target, #target-precision {
+    float: right;
+    background: #eee;
+    padding: 0 15px;
+    width: 90px;
+    height: 25px;
+}
+
+#star-score-target, #star-precision {
+    float: left;
+}
+
+.star-rating {
+    display: inline-block;
+    margin: 0 .5rem 0 0;
+    vertical-align: middle;
+
+    i {
+        color: #999999;
+    }
+}
+
+.color-orange {
+    color: #fb8c00 !important;
+}
+
+.color-red {
+    color: #e53935 !important
+}
+
+.star-rating-hint {
+    display: inline;
+    margin-left: 10px;
+    vertical-align: sub;
+    float: right;
+}
+
+// Bar Rating
+// -------------------------
+
+.bar-rating {
+
+    .card-body {
+        display: flex;
+        height: 120px;
+    }
+
+    .br-wrapper {
+        margin: auto;
+    }
+
+    .br-theme-bars-reversed {
+        width: 60%;
+    }
+
+    .br-theme-bars-reversed .br-widget .br-current-rating {
+        margin-left: 110px;
+        float: none;
+        position: absolute;
+    }
+
+}

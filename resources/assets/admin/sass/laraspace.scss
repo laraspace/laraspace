@@ -16,7 +16,6 @@
 @import "../../plugins/switchery/switchery.scss";
 @import "../../plugins/select2/select2.scss";
 @import "../../plugins/select2/select2-bootstrap.scss";
-@import "../../plugins/bootstrapSelect/bootstrap-select.scss";
 @import "../../plugins/clockpicker/clockpicker.scss";
 @import "../../plugins/datatables/dataTables.bootstrap4";
 @import "../../plugins/multiselect/multiselect.scss";
@@ -43,6 +42,7 @@
 @import "../../plugins/charts/amcharts/export.scss";
 @import "../../plugins/charts/morris/morris.scss";
 @import "../../plugins/prism/prism.scss";
+
 
 // Skins
 //----------------------------------
@@ -88,6 +88,10 @@
 @import 'components/hamburgers';
 @import "components/transitions";
 @import "components/form-wizards";
+@import "components/charts";
+@import "components/gallery";
+@import "components/calendar";
+@import "components/ratings";
 
 
 // Pages
@@ -104,4 +108,3 @@
 
 
 @import "demo";
-@import "plugin-overrides";

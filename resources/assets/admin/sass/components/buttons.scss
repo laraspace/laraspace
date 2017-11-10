@@ -72,3 +72,13 @@
 .ladda-button {
     overflow: visible !important;
 }
+
+
+// Color Overrides
+.btn-success,.btn-warning, .btn-info {
+    color: $white;
+
+    &:hover {
+        color: $white;
+    }
+}
