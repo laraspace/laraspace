@@ -65,16 +65,6 @@ Route::group([
             ]);
         });
 
-        Route::group(['prefix' => 'env'], function () {
-
-            Route::get('/', [
-                'as' => 'admin.settings.environment', 'uses' => 'SettingsController@environment'
-            ]);
-
-            Route::post('/create', [
-                'as' => 'admin.settings.environment.post', 'uses' => 'SettingsController@postEnvironment'
-            ]);
-        });
     });
 });
 

@@ -4,14 +4,6 @@ var LaraspaceForms = function () {
         $(".ls-select2").select2();
     };
 
-    var handleBootstrapSelect = function(){
-        $(".ls-bootstrap-select").selectpicker({
-            iconBase: 'fa',
-            tickIcon: 'fa-check',
-            container: 'body'
-        });
-    };
-
     var handleSwitchToggles = function(){
         var elems = $('.ls-switch');
 
@@ -94,7 +86,6 @@ var LaraspaceForms = function () {
         //main function to initiate the module
         init: function () {
             handleSelect2();
-            handleBootstrapSelect();
             handleSwitchToggles();
             handleTimePickers();
             handleDatePicker();
