@@ -31110,12 +31110,16 @@ pre.line-numbers > code {
   background: #4fc47f !important;
 }
 
-.skin-tyrell .form-wizard-3 > .steps > ul .current a {
+.skin-tyrell .form-wizard-3 > .steps > ul .current > a,
+.skin-tyrell .form-wizard-3 > .steps > ul .current > a:hover,
+.skin-tyrell .form-wizard-3 > .steps > ul .current > a:active {
   border-bottom: 3px solid #4fc47f;
   color: #333;
 }
 
-.skin-tyrell .form-wizard-3 > .steps > ul .done a {
+.skin-tyrell .form-wizard-3 > .steps > ul .done > a,
+.skin-tyrell .form-wizard-3 > .steps > ul .done > a:hover,
+.skin-tyrell .form-wizard-3 > .steps > ul .done > a:active {
   border-bottom: 2px solid #c2ead2;
   color: #333;
 }
@@ -31553,12 +31557,16 @@ pre.line-numbers > code {
   background: #007dcc !important;
 }
 
-.skin-arryn .form-wizard-3 > .steps > ul .current a {
+.skin-arryn .form-wizard-3 > .steps > ul .current > a,
+.skin-arryn .form-wizard-3 > .steps > ul .current > a:hover,
+.skin-arryn .form-wizard-3 > .steps > ul .current > a:active {
   border-bottom: 3px solid #007dcc;
   color: #333;
 }
 
-.skin-arryn .form-wizard-3 > .steps > ul .done a {
+.skin-arryn .form-wizard-3 > .steps > ul .done > a,
+.skin-arryn .form-wizard-3 > .steps > ul .done > a:hover,
+.skin-arryn .form-wizard-3 > .steps > ul .done > a:active {
   border-bottom: 2px solid #66c4ff;
   color: #333;
 }
@@ -31996,12 +32004,16 @@ pre.line-numbers > code {
   background: #343A52 !important;
 }
 
-.skin-targaryen .form-wizard-3 > .steps > ul .current a {
+.skin-targaryen .form-wizard-3 > .steps > ul .current > a,
+.skin-targaryen .form-wizard-3 > .steps > ul .current > a:hover,
+.skin-targaryen .form-wizard-3 > .steps > ul .current > a:active {
   border-bottom: 3px solid #343A52;
   color: #333;
 }
 
-.skin-targaryen .form-wizard-3 > .steps > ul .done a {
+.skin-targaryen .form-wizard-3 > .steps > ul .done > a,
+.skin-targaryen .form-wizard-3 > .steps > ul .done > a:hover,
+.skin-targaryen .form-wizard-3 > .steps > ul .done > a:active {
   border-bottom: 2px solid #7781a8;
   color: #333;
 }
@@ -32438,12 +32450,16 @@ pre.line-numbers > code {
   background: #3B4350 !important;
 }
 
-.skin-lannister .form-wizard-3 > .steps > ul .current a {
+.skin-lannister .form-wizard-3 > .steps > ul .current > a,
+.skin-lannister .form-wizard-3 > .steps > ul .current > a:hover,
+.skin-lannister .form-wizard-3 > .steps > ul .current > a:active {
   border-bottom: 3px solid #3B4350;
   color: #333;
 }
 
-.skin-lannister .form-wizard-3 > .steps > ul .done a {
+.skin-lannister .form-wizard-3 > .steps > ul .done > a,
+.skin-lannister .form-wizard-3 > .steps > ul .done > a:hover,
+.skin-lannister .form-wizard-3 > .steps > ul .done > a:active {
   border-bottom: 2px solid #828ea2;
   color: #333;
 }
@@ -32877,12 +32893,16 @@ pre.line-numbers > code {
   background: #393F46 !important;
 }
 
-.skin-stark .form-wizard-3 > .steps > ul .current a {
+.skin-stark .form-wizard-3 > .steps > ul .current > a,
+.skin-stark .form-wizard-3 > .steps > ul .current > a:hover,
+.skin-stark .form-wizard-3 > .steps > ul .current > a:active {
   border-bottom: 3px solid #393F46;
   color: #333;
 }
 
-.skin-stark .form-wizard-3 > .steps > ul .done a {
+.skin-stark .form-wizard-3 > .steps > ul .done > a,
+.skin-stark .form-wizard-3 > .steps > ul .done > a:hover,
+.skin-stark .form-wizard-3 > .steps > ul .done > a:active {
   border-bottom: 2px solid #808b98;
   color: #333;
 }
@@ -35123,6 +35143,28 @@ code,
   margin-left: 110px;
   float: none;
   position: absolute;
+}
+
+.note-editor .dropdown-menu h1,
+.note-editor .dropdown-menu h2,
+.note-editor .dropdown-menu h3,
+.note-editor .dropdown-menu h4,
+.note-editor .dropdown-menu h5,
+.note-editor .dropdown-menu h6,
+.note-editor .dropdown-menu pre,
+.note-editor .dropdown-menu .note-palette-title,
+.note-editor .dropdown-menu .note-dimension-display {
+  color: #fff;
+}
+
+.note-editor .dropdown-menu a:hover h1,
+.note-editor .dropdown-menu a:hover h2,
+.note-editor .dropdown-menu a:hover h3,
+.note-editor .dropdown-menu a:hover h4,
+.note-editor .dropdown-menu a:hover h5,
+.note-editor .dropdown-menu a:hover h6,
+.note-editor .dropdown-menu a:hover pre {
+  color: #000;
 }
 
 .dashbox {

@@ -1,71 +1,72 @@
 .form-wizard-3 {
 
-    .steps > ul {
-        list-style: none;
-        padding: 0;
-        display: flex;
+  .steps > ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
 
-        li > a{
-            &,&:hover,&:active{
-                border-radius: 0;
-                display: block;
-                width: 100%;
-                text-align: center;
-                padding: 10px 0;
-                border-bottom: 1px solid #d9d9d9;
-                transition: all 0.3s ease-in-out;
-                margin: 0 10px;
-                color: #aaa;
-            }
-        }
+    li > a {
+      &, &:hover, &:active {
+        border-radius: 0;
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        border-bottom: 1px solid #d9d9d9;
+        transition: all 0.3s ease-in-out;
+        margin: 0 10px;
+        color: #aaa;
+      }
+    }
 
-        .current > a{
-                    &,&:hover,&:active {
-                        border-bottom: 3px solid $ls-color-primary;
-                        font-weight: bold;
-                        color: $ls-color-black;
-                        background: none !important;
-                }
-
-        }
-
-        .done > a {
-            &,&:hover,&:active{
-                color: $ls-color-black;
-                background: none!important;
-                font-weight: normal;
-                border-bottom: 2px solid lighten($ls-color-primary, 30%);
-            }
-        }
-
-        .error > a {
-            border-bottom: 3px solid $ls-color-red;
-        }
-
-        .icon-fa {
-            padding-right : 10px;
-        }
-
-        span.number{
-            display: none
-        }
+    .current > a {
+      &, &:hover, &:active {
+        border-bottom: 3px solid $ls-color-primary;
+        font-weight: bold;
+        color: $ls-color-black;
+        background: none !important;
+      }
 
     }
 
-    > .steps > ul > li:first-child {
-        margin-left: 0;
+    .done > a {
+      &, &:hover, &:active {
+        color: $ls-color-black;
+        background: none !important;
+        font-weight: normal;
+        border-bottom: 2px solid lighten($ls-color-primary, 30%);
+      }
     }
 
-    > .steps > ul > li:last-child {
-        margin-right: 0;
+    .error > a {
+      border-bottom: 3px solid $ls-color-red;
     }
+
+    .icon-fa {
+      padding-right: 10px;
+    }
+
+    span.number {
+      display: none
+    }
+
+  }
+
+  > .steps > ul > li:first-child {
+    margin-left: 0;
+  }
+
+  > .steps > ul > li:last-child {
+    margin-right: 0;
+  }
 
 }
-@media (max-width: $medium-breakpoint){
-    .form-wizard-3 {
 
-        .content {
-            min-height: 520px;
-        }
+@media (max-width: $medium-breakpoint) {
+  .form-wizard-3 {
+
+    .content {
+      min-height: 520px;
     }
+  }
 }

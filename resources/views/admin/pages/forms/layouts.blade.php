@@ -77,31 +77,27 @@
                     <div class="card-body">
                         <form>
                             <div class="form-group row">
-                                <label class="col-sm-2 col-form-label">First Name</label>
-
+                                <label for="firstName" class="col-sm-2 col-form-label">First Name</label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" placeholder="First Name">
+                                    <input type="text" class="form-control" id="firstName" placeholder="First Name">
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label class="col-sm-2 col-form-label">Last Name</label>
-
+                                <label for="lastName" class="col-sm-2 col-form-label">Last Name</label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" placeholder="Last Name">
+                                    <input type="text" class="form-control" id="lastName" placeholder="Last Name">
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label class="col-sm-2 col-form-label">Email</label>
-
+                                <label for="email" class="col-sm-2 col-form-label">Email</label>
                                 <div class="col-sm-10">
-                                    <input type="email" class="form-control" placeholder="Email">
+                                    <input type="email" class="form-control" id="email" placeholder="Email">
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label class="col-sm-2 col-form-label">Password</label>
-
+                                <label for="password" class="col-sm-2 col-form-label">Password</label>
                                 <div class="col-sm-10">
-                                    <input type="password" class="form-control" placeholder="Password">
+                                    <input type="password" class="form-control" id="password" placeholder="Password">
                                 </div>
                             </div>
                             <button class="btn btn-success">Save</button>
@@ -127,7 +123,7 @@
                                 <label for="inputPassword2" class="sr-only">Password</label>
                                 <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
                             </div>
-                            <button type="submit" class="btn btn-primary">Confirm identity</button>
+                            <button  class="btn btn-primary">Confirm identity</button>
                         </form>
                     </div>
                 </div>

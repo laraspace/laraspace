@@ -431,14 +431,18 @@
 
     .form-wizard-3 > .steps > ul{
 
-        .current a{
-            border-bottom: 3px solid $ls-color-theme;
-            color: $ls-color-black;
+        .current > a{
+            &,&:hover,&:active {
+                border-bottom: 3px solid $ls-color-theme;
+                color: $ls-color-black;
+            }
         }
 
-        .done a{
-            border-bottom: 2px solid lighten($ls-color-theme, 30%);
-            color: $ls-color-black;
+        .done > a{
+            &,&:hover,&:active {
+                border-bottom: 2px solid lighten($ls-color-theme, 30%);
+                color: $ls-color-black;
+            }
         }
     }
 

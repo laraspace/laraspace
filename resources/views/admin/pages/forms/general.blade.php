@@ -80,18 +80,17 @@
                         <h5 class="section-semi-title mt-4">
                             Validation States
                         </h5>
-                        <form id="needs-validation" novalidate>
+                        <form id="needs-validation" class="was-validated" novalidate>
                             <div class="form-group">
-                                <label for="validationServer01">First name</label>
-                                <input type="text" class="form-control is-valid" id="validationServer01"
+                                <label for="firstName">First name</label>
+                                <input type="text" class="form-control is-valid" id="firstName"
                                        placeholder="First name" value="Mark" required>
                             </div>
                             <div class="form-group">
-                                <label for="validationServer03">Last name</label>
-                                <input type="text" class="form-control is-invalid" id="validationServer03"
-                                       placeholder="Last name" required>
+                                <label for="lastName">Last name</label>
+                                <input type="text" class="form-control is-valid" id="lastName" required>
                                 <div class="invalid-feedback">
-                                    Please provide a valid last name.
+                                    Please provide a last name.
                                 </div>
                             </div>
                         </form>
