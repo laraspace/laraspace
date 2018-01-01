@@ -35167,6 +35167,94 @@ code,
   color: #000;
 }
 
+.image-cropper .docs-toggles {
+  margin-top: 10px;
+}
+
+.image-cropper .docs-preview {
+  margin-right: -1rem;
+}
+
+.image-cropper .docs-preview .img-preview {
+  background-color: #f7f7f7;
+  width: 100%;
+  text-align: center;
+  float: left;
+  margin-right: .5rem;
+  margin-bottom: .5rem;
+  overflow: hidden;
+}
+
+.image-cropper .docs-preview .img-preview > img {
+  max-width: 100%;
+}
+
+.image-cropper .docs-preview .img-preview.preview-lg {
+  width: 16rem;
+  height: 9rem;
+}
+
+.image-cropper .docs-preview .img-preview.preview-md {
+  width: 8rem;
+  height: 4.5rem;
+}
+
+.image-cropper .docs-preview .img-preview.preview-sm {
+  width: 4rem;
+  height: 2.25rem;
+}
+
+.image-cropper .docs-preview .img-preview.preview-xs {
+  width: 2rem;
+  height: 1.125rem;
+  margin-right: 0;
+}
+
+.image-cropper .docs-buttons {
+  margin-top: 10px;
+}
+
+.image-cropper .docs-buttons .btn {
+  height: 40px;
+}
+
+.image-cropper .docs-buttons .btn-upload,
+.image-cropper .docs-buttons .btn-group-justified {
+  margin: 0;
+}
+
+.image-cropper .docs-buttons .input-group-addon {
+  color: #fff;
+  background-color: #007dcc;
+  border-color: #007dcc;
+}
+
+.image-cropper .docs-set .row {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.image-cropper img {
+  max-width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .image-cropper .docs-buttons {
+    max-width: 100%;
+  }
+
+  .image-cropper .img-cropper-col {
+    max-width: 100%;
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+  }
+
+  .image-cropper .docs-data .input-group {
+    max-width: 60%;
+  }
+}
+
 .dashbox {
   background-color: #fff;
   border: 1px solid #ddd;

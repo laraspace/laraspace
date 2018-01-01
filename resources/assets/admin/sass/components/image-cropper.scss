@@ -7,6 +7,44 @@
         margin-top: 10px;
     }
 
+    .docs-preview {
+        margin-right: -1rem;
+
+        .img-preview {
+            background-color: #f7f7f7;
+            width: 100%;
+            text-align: center;
+            float: left;
+            margin-right: .5rem;
+            margin-bottom: .5rem;
+            overflow: hidden;
+
+            & > img {
+                max-width: 100%;
+            }
+            &.preview-lg {
+                width: 16rem;
+                height: 9rem;
+            }
+
+            &.preview-md {
+                width: 8rem;
+                height: 4.5rem;
+            }
+
+            &.preview-sm {
+                width: 4rem;
+                height: 2.25rem;
+            }
+
+            &.preview-xs {
+                width: 2rem;
+                height: 1.125rem;
+                margin-right: 0;
+            }
+        }
+    }
+
     .docs-buttons {
         margin-top: 10px;
 
