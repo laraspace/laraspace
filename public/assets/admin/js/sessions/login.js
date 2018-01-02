@@ -25,17 +25,18 @@ var LoginForm = function () {
 
             highlight: function (element) { // hightlight error inputs
                 $(element)
-                    .closest('.form-group').addClass('has-danger'); // set danger class to the control group
+                    .closest('.form-group .form-control').addClass('is-invalid'); // set invalid class to the control group
             },
 
             unhighlight: function (element) { // revert the change done by hightlight
                 $(element)
-                    .closest('.form-group').removeClass('has-danger'); // set danger class to the control group
+                    .closest('.form-group .form-control').removeClass('is-invalid') // set invalid class to the control group
+                    .closest('.form-group .form-control').addClass('is-valid'); // set valid class to the control group
             },
 
             success: function (label) {
                 label
-                    .closest('.form-group').removeClass('has-danger'); // set success class to the control group
+                    .closest('.form-group .form-control').removeClass('is-invalid'); // set success class to the control group
             },
         });
 

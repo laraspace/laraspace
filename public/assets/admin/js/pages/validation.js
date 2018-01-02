@@ -80,12 +80,12 @@ var FormValidation = function () {
 
             highlight: function (element) { // hightlight error inputs
                 $(element)
-                    .closest('.form-group .form-control').addClass('is-invalid'); // set danger class to the control group
+                    .closest('.form-group .form-control').addClass('is-invalid'); // set invalid class to the control group
             },
 
             unhighlight: function (element) { // revert the change done by hightlight
                 $(element)
-                    .closest('.form-group .form-control').removeClass('is-invalid') // set danger class to the control group
+                    .closest('.form-group .form-control').removeClass('is-invalid') // set invalid class to the control group
                     .closest('.form-group .form-control').addClass('is-valid');
             },
             errorPlacement: function (error, element) {
