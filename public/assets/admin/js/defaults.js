@@ -91,5 +91,5 @@ export default {
   cropmove: null,
   cropend: null,
   crop: null,
-  zoom: null,
-};
+  zoom: null
+}
