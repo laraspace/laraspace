@@ -1626,41 +1626,52 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-
-    props: ['labels', 'values'],
-
-    mounted: function mounted() {
-        var context = this.$refs.graph.getContext('2d');
-
-        var options = {
-            responsive: true,
-            maintainAspectRatio: false,
-            legend: {
-                display: false
-            }
-        };
-
-        var data = {
-            labels: this.labels,
-            datasets: [{
-                label: "My First dataset",
-                backgroundColor: "rgba(79, 196, 127,0.2)",
-                borderColor: "rgba(79, 196, 127,1)",
-                borderWidth: 1,
-                hoverBackgroundColor: "rgba(79, 196, 127,0.4)",
-                hoverBorderColor: "rgba(79, 196, 127,1)",
-                data: this.values
-            }]
-        };
-
-        var myBarChart = new Chart(context, {
-            type: 'bar',
-            data: data,
-            options: options
-        });
+  props: {
+    labels: {
+      type: Array,
+      required: true
+    },
+    values: {
+      type: Array,
+      required: true
     }
+  },
+
+  mounted: function mounted() {
+    var context = this.$refs.graph.getContext('2d');
+
+    var options = {
+      responsive: true,
+      maintainAspectRatio: false,
+      legend: {
+        display: false
+      }
+    };
+
+    var data = {
+      labels: this.labels,
+      datasets: [{
+        label: 'My First dataset',
+        backgroundColor: 'rgba(79, 196, 127,0.2)',
+        borderColor: 'rgba(79, 196, 127,1)',
+        borderWidth: 1,
+        hoverBackgroundColor: 'rgba(79, 196, 127,0.4)',
+        hoverBorderColor: 'rgba(79, 196, 127,1)',
+        data: this.values
+      }]
+    };
+
+    var myBarChart = new Chart(context, {
+      type: 'bar',
+      data: data,
+      options: options
+    });
+  }
 });
 
 /***/ }),
@@ -1676,53 +1687,63 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-
-    props: ['labels', 'values'],
-
-    mounted: function mounted() {
-        var context = this.$refs.graph.getContext('2d');
-
-        var options = {
-            responsive: true,
-            maintainAspectRatio: false,
-            legend: {
-                display: false
-            }
-        };
-
-        var data = {
-            labels: this.labels,
-            datasets: [{
-                label: "Sales",
-                fill: false,
-                lineTension: 0.1,
-                backgroundColor: "rgba(0,125,204,0.4)",
-                borderColor: "rgba(0,125,204,1)",
-                borderCapStyle: 'butt',
-                borderDash: [],
-                borderDashOffset: 0.0,
-                borderJoinStyle: 'miter',
-                pointBorderColor: "rgba(75,192,192,1)",
-                pointBackgroundColor: "#fff",
-                pointBorderWidth: 1,
-                pointHoverRadius: 5,
-                pointHoverBackgroundColor: "rgba(75,192,192,1)",
-                pointHoverBorderColor: "rgba(220,220,220,1)",
-                pointHoverBorderWidth: 2,
-                pointRadius: 1,
-                pointHitRadius: 10,
-                data: this.values
-            }]
-        };
-
-        var myLineChart = new Chart(context, {
-            type: 'line',
-            data: data,
-            options: options
-        });
+  props: {
+    labels: {
+      type: Array,
+      required: true
+    },
+    values: {
+      type: Array,
+      required: true
     }
+  },
+
+  mounted: function mounted() {
+    var context = this.$refs.graph.getContext('2d');
+
+    var options = {
+      responsive: true,
+      maintainAspectRatio: false,
+      legend: {
+        display: false
+      }
+    };
+
+    var data = {
+      labels: this.labels,
+      datasets: [{
+        label: 'Sales',
+        fill: false,
+        lineTension: 0.1,
+        backgroundColor: 'rgba(0,125,204,0.4)',
+        borderColor: 'rgba(0,125,204,1)',
+        borderCapStyle: 'butt',
+        borderDash: [],
+        borderDashOffset: 0.0,
+        borderJoinStyle: 'miter',
+        pointBorderColor: 'rgba(75,192,192,1)',
+        pointBackgroundColor: '#fff',
+        pointBorderWidth: 1,
+        pointHoverRadius: 5,
+        pointHoverBackgroundColor: 'rgba(75,192,192,1)',
+        pointHoverBorderColor: 'rgba(220,220,220,1)',
+        pointHoverBorderWidth: 2,
+        pointRadius: 1,
+        pointHitRadius: 10,
+        data: this.values
+      }]
+    };
+
+    var myLineChart = new Chart(context, {
+      type: 'line',
+      data: data,
+      options: options
+    });
+  }
 });
 
 /***/ }),
@@ -1733,48 +1754,48 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
-
 var mailgunComponent = {
-    template: '#mailgun-template'
+  template: '#mailgun-template'
 };
 
 var sendgridComponent = {
-    template: '#sendgrid-template'
+  template: '#sendgrid-template'
 };
 
 var sparkPostComponent = {
-    template: '#sparkpost-template'
+  template: '#sparkpost-template'
 };
 
 var smtpComponent = {
-    template: '#smtp-template'
+  template: '#smtp-template'
 };
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    data: function data() {
-        return {
-            currentView: 'mailgun'
-        };
-    },
-
-
-    props: ['view'],
-
-    mounted: function mounted() {
-        var views = ['mailgun', 'sendgrid', 'sparkpost', 'smtp'];
-
-        if (this.view && views.indexOf(this.view) > -1) {
-            this.currentView = this.view;
-        }
-    },
-
-
-    components: {
-        'mailgun': mailgunComponent,
-        'sendgrid': sendgridComponent,
-        'sparkpost': sparkPostComponent,
-        'smtp': smtpComponent
+  components: {
+    mailgun: mailgunComponent,
+    sendgrid: sendgridComponent,
+    sparkpost: sparkPostComponent,
+    smtp: smtpComponent
+  },
+  props: {
+    view: {
+      type: String,
+      required: true
     }
+  },
+
+  data: function data() {
+    return {
+      currentView: 'mailgun'
+    };
+  },
+  mounted: function mounted() {
+    var views = ['mailgun', 'sendgrid', 'sparkpost', 'smtp'];
+
+    if (this.view && views.indexOf(this.view) > -1) {
+      this.currentView = this.view;
+    }
+  }
 });
 
 /***/ }),
@@ -1790,34 +1811,52 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-
-    props: ['labels', 'values', 'bgColors', 'hoverBgColors'],
-
-    mounted: function mounted() {
-        var context = this.$refs.graph.getContext('2d');
-
-        var options = {
-            responsive: true,
-            maintainAspectRatio: false
-        };
-
-        var data = {
-            labels: this.labels,
-            datasets: [{
-                data: this.values,
-                backgroundColor: this.bgColors,
-                hoverBackgroundColor: this.hoverBgColors
-            }]
-        };
-
-        var myPieChart = new Chart(context, {
-            type: 'pie',
-            data: data,
-            options: options
-        });
+  props: {
+    labels: {
+      type: Array,
+      required: true
+    },
+    values: {
+      type: Array,
+      required: true
+    },
+    bgColors: {
+      type: String,
+      required: true
+    },
+    hoverBgColors: {
+      type: String,
+      required: true
     }
+  },
+
+  mounted: function mounted() {
+    var context = this.$refs.graph.getContext('2d');
+
+    var options = {
+      responsive: true,
+      maintainAspectRatio: false
+    };
+
+    var data = {
+      labels: this.labels,
+      datasets: [{
+        data: this.values,
+        backgroundColor: this.bgColors,
+        hoverBackgroundColor: this.hoverBgColors
+      }]
+    };
+
+    var myPieChart = new Chart(context, {
+      type: 'pie',
+      data: data,
+      options: options
+    });
+  }
 });
 
 /***/ }),
@@ -1844,81 +1883,101 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    mounted: function mounted() {
-
-        this.todos = JSON.parse(this.yourTodos);
-    },
-    data: function data() {
-        return {
-            newTodo: {
-                id: '',
-                title: '',
-                completed: false
-            },
-            todos: [{
-                title: 'Install the Template',
-                completed: false
-            }]
-        };
-    },
-
-
-    props: ['yourTodos'],
-
-    methods: {
-        addTodo: function addTodo() {
-
-            var vm = this,
-                url = '/admin/todos';
-
-            if (vm.newTodo.title == '') {
-                return;
-            }
-
-            axios.post(url, vm.newTodo).then(function (request) {
-                //toastr['success'](request.data, "Success");
-
-                vm.todos.push({
-                    id: request.data.todo.id,
-                    title: request.data.todo.title,
-                    completed: false
-                });
-
-                vm.newTodo = {
-                    id: '',
-                    title: '',
-                    completed: false
-                };
-            }, function (error) {
-                alert('error');
-            });
-        },
-        removeTodo: function removeTodo(todo) {
-
-            var url = '/admin/todos/' + todo.id,
-                vm = this;
-
-            axios.post(url, { _method: 'DELETE' }).then(function (request) {
-                var index = vm.todos.indexOf(todo);
-                vm.todos.splice(index, 1);
-            }.bind(this), function (error) {
-                console.log(error);
-            });
-        },
-        toggleTodoComplete: function toggleTodoComplete(todo) {
-
-            var url = '/admin/todos/toggleTodo/' + todo.id,
-                vm = this;
-
-            axios.post(url, { completed: todo.completed }).then(function (request) {
-                console.log(request);
-            }.bind(this), function (error) {
-                console.log(error);
-            });
-        }
+  props: {
+    yourTodos: {
+      type: Array,
+      required: true
     }
+  },
+  data: function data() {
+    return {
+      newTodo: {
+        id: '',
+        title: '',
+        completed: false
+      },
+      todos: [{
+        title: 'Install the Template',
+        completed: false
+      }]
+    };
+  },
+  mounted: function mounted() {
+    this.todos = JSON.parse(this.yourTodos);
+  },
+
+
+  methods: {
+    addTodo: function addTodo() {
+      var vm = this;
+      var url = '/admin/todos';
+
+      if (vm.newTodo.title === '') {
+        return;
+      }
+
+      axios.post(url, vm.newTodo).then(function (request) {
+        // toastr['success'](request.data, "Success");
+
+        vm.todos.push({
+          id: request.data.todo.id,
+          title: request.data.todo.title,
+          completed: false
+        });
+        vm.newTodo = {
+          id: '',
+          title: '',
+          completed: false
+        };
+      }, function (error) {
+        alert(error);
+      });
+    },
+    removeTodo: function removeTodo(todo) {
+      var url = '/admin/todos/' + todo.id;
+      var vm = this;
+
+      axios.post(url, { _method: 'DELETE' }).then(function (request) {
+        var index = vm.todos.indexOf(todo);
+        vm.todos.splice(index, 1);
+      }, function (error) {
+        console.log(error);
+      });
+    },
+    toggleTodoComplete: function toggleTodoComplete(todo) {
+      var url = '/admin/todos/toggleTodo/' + todo.id;
+      var vm = this;
+
+      axios.post(url, { completed: todo.completed }).then(function (request) {
+        console.log(request);
+      }, function (error) {
+        console.log(error);
+      });
+    }
+  }
 });
 
 /***/ }),
@@ -1931,7 +1990,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "\n.graph-container {\n    height: 300px;\n}\n", ""]);
+exports.push([module.i, "\n.graph-container {\r\n  height: 300px;\n}\r\n", ""]);
 
 // exports
 
@@ -1946,7 +2005,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "\n.todo-container{\n    background-color: #FFDE00;\n    padding:50px;\n    min-height: 500px;\n}\n.todo-field:focus{\n    border:1px solid #ccc;\n}\n.todo-title{\n    font-family: \"Roboto\",sans-serif;\n    font-weight: lighter;\n    text-align: center;\n}\n.todo-block h6{\n    text-align: center;\n    text-transform: uppercase;\n    color: gray;\n}\n.remove-link {\n    color: #f35a3d;\n    position: absolute;\n    top:0;\n    line-height: 50px;\n    right:5px;\n}\n.remove-link:hover{\n    color: #f35a3d;\n}\n.todo-block{\n    background: #fff;\n    padding: 0.375rem 0.75rem;\n    margin-top:30px;\n    height: 200px;\n    overflow: auto;\n}\n.todo-list {\n    list-style: none;\n    padding:0;\n    font-size:20px;\n}\n.todo-list li{\n    border-bottom: 1px solid #d9d9d9;\n    padding:10px;\n    position:relative;\n}\n.todo-list li label{\n    padding-left:70px;\n    margin:0;\n    color : #333;\n}\n.todo-list li input[type=checkbox]{\n    outline: none;\n    text-align: center;\n    width: 40px;\n    height:40px;\n    position: absolute;\n    top: 0;\n    bottom: 0;\n    margin: auto 0;\n    border: none;\n    -webkit-appearance: none;\n    -moz-appearance: none;\n         appearance: none;\n}\n.todo-list li .toggle:after {\n    content: url('data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"40\" height=\"40\" viewBox=\"-10 -18 100 135\"><circle cx=\"50\" cy=\"50\" r=\"50\" fill=\"none\" stroke=\"#333\" stroke-width=\"3\"/></svg>');\n}\n.todo-list li .toggle:checked:after {\n    content: url('data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"40\" height=\"40\" viewBox=\"-10 -18 100 135\"><circle cx=\"50\" cy=\"50\" r=\"50\" fill=\"none\" stroke=\"#333\" stroke-width=\"3\"/><path fill=\"#4fc47f\" d=\"M72 25L42 71 27 56l-4 4 20 20 34-52z\"/></svg>');\n}\n@media (max-width: 768px) {\n.todos-container{\n        display: none;\n}\n}\n", ""]);
+exports.push([module.i, "\n.todo-container {\r\n  background-color: #ffde00;\r\n  padding: 50px;\r\n  min-height: 500px;\n}\n.todo-field:focus {\r\n  border: 1px solid #ccc;\n}\n.todo-title {\r\n  font-family: \"Roboto\", sans-serif;\r\n  font-weight: lighter;\r\n  text-align: center;\n}\n.todo-block h6 {\r\n  text-align: center;\r\n  text-transform: uppercase;\r\n  color: gray;\n}\n.remove-link {\r\n  color: #f35a3d;\r\n  position: absolute;\r\n  top: 0;\r\n  line-height: 50px;\r\n  right: 5px;\n}\n.remove-link:hover {\r\n  color: #f35a3d;\n}\n.todo-block {\r\n  background: #fff;\r\n  padding: 0.375rem 0.75rem;\r\n  margin-top: 30px;\r\n  height: 200px;\r\n  overflow: auto;\n}\n.todo-list {\r\n  list-style: none;\r\n  padding: 0;\r\n  font-size: 20px;\n}\n.todo-list li {\r\n  border-bottom: 1px solid #d9d9d9;\r\n  padding: 10px;\r\n  position: relative;\n}\n.todo-list li label {\r\n  padding-left: 70px;\r\n  margin: 0;\r\n  color: #333;\n}\n.todo-list li input[type=\"checkbox\"] {\r\n  outline: none;\r\n  text-align: center;\r\n  width: 40px;\r\n  height: 40px;\r\n  position: absolute;\r\n  top: 0;\r\n  bottom: 0;\r\n  margin: auto 0;\r\n  border: none;\r\n  -webkit-appearance: none;\r\n  -moz-appearance: none;\r\n       appearance: none;\n}\n.todo-list li .toggle:after {\r\n  content: url('data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"40\" height=\"40\" viewBox=\"-10 -18 100 135\"><circle cx=\"50\" cy=\"50\" r=\"50\" fill=\"none\" stroke=\"#333\" stroke-width=\"3\"/></svg>');\n}\n.todo-list li .toggle:checked:after {\r\n  content: url('data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"40\" height=\"40\" viewBox=\"-10 -18 100 135\"><circle cx=\"50\" cy=\"50\" r=\"50\" fill=\"none\" stroke=\"#333\" stroke-width=\"3\"/><path fill=\"#4fc47f\" d=\"M72 25L42 71 27 56l-4 4 20 20 34-52z\"/></svg>');\n}\n@media (max-width: 768px) {\n.todos-container {\r\n    display: none;\n}\n}\r\n", ""]);
 
 // exports
 
@@ -1961,7 +2020,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "\n.graph-container {\n    height: 300px;\n}\n", ""]);
+exports.push([module.i, "\n.graph-container {\r\n  height: 300px;\n}\r\n", ""]);
 
 // exports
 
@@ -1976,7 +2035,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "\n.graph-container {\n    height: 300px;\n}\n", ""]);
+exports.push([module.i, "\n.graph-container {\r\n  height: 300px;\n}\r\n", ""]);
 
 // exports
 
@@ -19794,7 +19853,7 @@ var render = function() {
       attrs: { type: "text", placeholder: "New Todo" },
       domProps: { value: _vm.newTodo.title },
       on: {
-        keyup: function($event) {
+        ":keyup": function($event) {
           if (
             !("button" in $event) &&
             _vm._k($event.keyCode, "enter", 13, $event.key)
@@ -19827,7 +19886,7 @@ var render = function() {
           staticClass: "todo-list"
         },
         _vm._l(_vm.todos, function(todo, index) {
-          return _c("li", [
+          return _c("li", { key: index }, [
             _c("input", {
               directives: [
                 {
@@ -19850,30 +19909,28 @@ var render = function() {
                   : _vm._q(todo.completed, 1)
               },
               on: {
-                change: [
-                  function($event) {
-                    var $$a = todo.completed,
-                      $$el = $event.target,
-                      $$c = $$el.checked ? 1 : 0
-                    if (Array.isArray($$a)) {
-                      var $$v = null,
-                        $$i = _vm._i($$a, $$v)
-                      if ($$el.checked) {
-                        $$i < 0 && (todo.completed = $$a.concat([$$v]))
-                      } else {
-                        $$i > -1 &&
-                          (todo.completed = $$a
-                            .slice(0, $$i)
-                            .concat($$a.slice($$i + 1)))
-                      }
+                ":change": function($event) {
+                  _vm.toggleTodoComplete(todo)
+                },
+                change: function($event) {
+                  var $$a = todo.completed,
+                    $$el = $event.target,
+                    $$c = $$el.checked ? 1 : 0
+                  if (Array.isArray($$a)) {
+                    var $$v = null,
+                      $$i = _vm._i($$a, $$v)
+                    if ($$el.checked) {
+                      $$i < 0 && (todo.completed = $$a.concat([$$v]))
                     } else {
-                      _vm.$set(todo, "completed", $$c)
+                      $$i > -1 &&
+                        (todo.completed = $$a
+                          .slice(0, $$i)
+                          .concat($$a.slice($$i + 1)))
                     }
-                  },
-                  function($event) {
-                    _vm.toggleTodoComplete(todo)
+                  } else {
+                    _vm.$set(todo, "completed", $$c)
                   }
-                ]
+                }
               }
             }),
             _vm._v(" "),
@@ -19887,7 +19944,7 @@ var render = function() {
                 staticClass: "remove-link",
                 attrs: { href: "#" },
                 on: {
-                  click: function($event) {
+                  ":click": function($event) {
                     $event.preventDefault()
                     _vm.removeTodo(todo)
                   }
@@ -31218,13 +31275,13 @@ window.Vue = __webpack_require__("./node_modules/vue/dist/vue.common.js");
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('bar-chart', __webpack_require__("./resources/assets/admin/js/components/BarChart.vue"));
-Vue.component('line-chart', __webpack_require__("./resources/assets/admin/js/components/LineChart.vue"));
-Vue.component('pie-chart', __webpack_require__("./resources/assets/admin/js/components/PieChart.vue"));
-Vue.component('todos', __webpack_require__("./resources/assets/admin/js/components/Todos.vue"));
-Vue.component('mail-settings', __webpack_require__("./resources/assets/admin/js/components/MailSettings.vue"));
+window.Vue.component('bar-chart', __webpack_require__("./resources/assets/admin/js/components/BarChart.vue"));
+window.Vue.component('line-chart', __webpack_require__("./resources/assets/admin/js/components/LineChart.vue"));
+window.Vue.component('pie-chart', __webpack_require__("./resources/assets/admin/js/components/PieChart.vue"));
+window.Vue.component('todos', __webpack_require__("./resources/assets/admin/js/components/Todos.vue"));
+window.Vue.component('mail-settings', __webpack_require__("./resources/assets/admin/js/components/MailSettings.vue"));
 
-new Vue({
+var app = new window.Vue({
   el: '#app'
 });
 
@@ -31271,7 +31328,7 @@ if (token) {
 // window.Echo = new Echo({
 //     broadcaster: 'pusher',
 //     key: 'your-pusher-key'
-// });
+// })
 
 /***/ }),
 

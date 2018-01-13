@@ -1,5 +1,4 @@
 <?php
-
 namespace Laraspace\Http\Controllers;
 
 use Illuminate\Http\Request;
@@ -22,9 +21,7 @@ class ForgotPasswordController extends Controller
     public function postEmail(Request $request)
     {
         $this->validate($request, ['email' => 'required']);
-
         $request->session()->put('email', $request->email);
-
         $response = Password::sendResetLink($request->only('email'), function (Message $message) {
             $message->subject($this->getEmailSubject());
         });
@@ -33,7 +30,7 @@ class ForgotPasswordController extends Controller
             case Password::RESET_LINK_SENT:
                 flash()->success('Password Reset link has been sent to your mail id');
                 return redirect()->back()->with('status', 'No User Is asoociated with this account');
-
+                
             case Password::INVALID_USER:
                 return redirect()->back()->withErrors(['email' => trans($response)]);
         }
@@ -56,14 +53,12 @@ class ForgotPasswordController extends Controller
             'email' => 'required|email',
             'password_confirmation' => 'required|same:password'
         ]);
-
         $user = User::where('email', \Session::get('email'))->first();
         $user->password = bcrypt($request->password);
         $user->save();
-
         \Auth::login($user, true);
-
         flash()->success('Your Password Updated Success Fully');
+        
         return redirect()->route('home');
     }
 }

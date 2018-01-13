@@ -1,5 +1,4 @@
 <?php
-
 namespace Laraspace\Http\Requests;
 
 class TodosRequest extends Request

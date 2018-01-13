@@ -1,5 +1,4 @@
 <?php
-
 namespace Laraspace\Http\Middleware;
 
 use Auth;

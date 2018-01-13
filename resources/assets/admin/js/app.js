@@ -18,9 +18,9 @@ window.Vue = require('vue')
 window.Vue.component('bar-chart', require('./components/BarChart.vue'))
 window.Vue.component('line-chart', require('./components/LineChart.vue'))
 window.Vue.component('pie-chart', require('./components/PieChart.vue'))
-window.Vue.component('todos', require('./components/Todos.vue'))
+window.Vue.component('todo-items', require('./components/TodoItems.vue'))
 window.Vue.component('mail-settings', require('./components/MailSettings.vue'))
 
-window.Vue({
+let app = new window.Vue({
   el: '#app'
 })

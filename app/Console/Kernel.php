@@ -1,5 +1,4 @@
 <?php
-
 namespace Laraspace\Console;
 
 use Illuminate\Console\Scheduling\Schedule;

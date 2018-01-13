@@ -1,5 +1,4 @@
 <?php
-
 namespace Laraspace\Http\Controllers;
 
 use Auth;
@@ -18,16 +17,14 @@ class AuthController extends Controller
     {
         if (User::login($request)) {
             flash()->success('Welcome to Laraspace.');
-
             if (Auth::user()->isAdmin()) {
                 return redirect()->to('/admin');
             } else {
                 return redirect()->to('/');
             }
         }
-
         flash()->error('Invalid Login Credentials');
-
+        
         return redirect()->back();
     }
 
@@ -61,11 +58,8 @@ class AuthController extends Controller
     public function handleProviderCallback($provider)
     {
         $provider_user = Socialite::driver($provider)->user();
-
         $user = $this->findUserByProviderOrCreate($provider, $provider_user);
-
         auth()->login($user);
-
         flash()->success('Welcome to Laraspace.');
 
         return redirect()->to('/admin');
@@ -76,8 +70,6 @@ class AuthController extends Controller
         $user = User::where($provider . '_id', $provider_user->token)
             ->orWhere('email', $provider_user->email)
             ->first();
-
-
         if (!$user) {
             $user = User::create([
                 'name' => $provider_user->name,

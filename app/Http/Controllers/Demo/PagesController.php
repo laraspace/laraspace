@@ -1,5 +1,4 @@
 <?php
-
 namespace Laraspace\Http\Controllers\Demo;
 
 use Laraspace\Http\Requests;
@@ -23,7 +22,7 @@ class PagesController extends Controller
         return view('admin.pages.layouts.horizontal-menu');
     }
 
-    //Basic UI
+    // Basic UI
     public function buttons()
     {
         return view('admin.pages.basic.buttons');
@@ -59,8 +58,7 @@ class PagesController extends Controller
         return view('admin.pages.basic.progress-bars');
     }
 
-    //Components
-
+    // Components
     public function notifications()
     {
         return view('admin.pages.components.notifications');
@@ -101,8 +99,7 @@ class PagesController extends Controller
         return view('admin.pages.components.ratings.bar-ratings');
     }
 
-    //Charts
-
+    // Charts
     public function chartjs()
     {
         return view('admin.pages.charts.chartjs');

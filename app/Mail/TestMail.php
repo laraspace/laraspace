@@ -1,5 +1,4 @@
 <?php
-
 namespace Laraspace\Mail;
 
 use Illuminate\Bus\Queueable;
@@ -10,7 +9,6 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 class TestMail extends Mailable
 {
     use Queueable, SerializesModels;
-
     public $subject;
     public $message;
 

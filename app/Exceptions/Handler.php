@@ -1,5 +1,4 @@
 <?php
-
 namespace Laraspace\Exceptions;
 
 use Exception;

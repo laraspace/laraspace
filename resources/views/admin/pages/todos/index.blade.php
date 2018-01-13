@@ -11,7 +11,7 @@
         </div>
         <div class="card">
             <div class="card-body">
-                <todos your-todos="{{$todos}}"></todos>
+                <todo-items your-todos="{{$todos}}"></todo-items>
             </div>
         </div>
     </div>

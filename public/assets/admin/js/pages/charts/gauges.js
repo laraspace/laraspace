@@ -15,7 +15,7 @@ var GaugesChart = (function () {
 
     $('.basic-gauge').each(function () {
       if (optsBasic !== false) {
-        var gauge = new Gauge(this).setOptions(opts_basic)
+        var gauge = new Gauge(this).setOptions(optsBasic)
         gauge.maxValue = 3000 // set max gauge value
         gauge.setMinValue(0)  // set min value
         gauge.animationSpeed = 32 // set animation speed (32 is default value)
@@ -43,7 +43,7 @@ var GaugesChart = (function () {
         // $('.gauge-lg .donut-gauge').attr({'width': '500', 'height': '250'})
         // $('.gauge-md .donut-gauge').attr({'width': '360', 'height': '180'})
         // $('.gauge-sm .donut-gauge').attr({'width': '240', 'height': '120'})
-        var donut = new Donut(this).setOptions(opts_donuts)
+        var donut = new Donut(this).setOptions(optsDonuts)
         donut.maxValue = 3000 // set max gauge value
         donut.setMinValue(0)  // set min value
         donut.animationSpeed = 32 // set animation speed (32 is default value)
@@ -81,7 +81,7 @@ var GaugesChart = (function () {
 
     $('.color-gauge').each(function () {
       if (optsColorGauge !== false) {
-        var colorgauge = new Gauge(this).setOptions(opts_color_gauge)
+        var colorgauge = new Gauge(this).setOptions(optsColorGauge)
         colorgauge.maxValue = 3000 // set max gauge value
         colorgauge.setMinValue(0)  // set min value
         colorgauge.animationSpeed = 32 // set animation speed (32 is default value)

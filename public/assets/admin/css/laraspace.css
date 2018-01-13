@@ -34439,7 +34439,8 @@ code,
 }
 
 .form-wizard-1 > .steps > ul > li.error > a {
-  background: #f35a3d;
+  background: #f35a3d !important;
+  color: #fff;
 }
 
 .form-wizard-1 > .steps .current a,

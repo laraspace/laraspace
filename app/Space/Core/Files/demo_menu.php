@@ -13,7 +13,7 @@ return [
     |
     */
 
-    //SIDEBAR LAYOUT - MENU
+    // SIDEBAR LAYOUT - MENU
 
     'sidebar' => [
         [
@@ -60,7 +60,7 @@ return [
         ],
     ],
 
-    //HORIZONTAL MENU LAYOUT -  MENU
+    // HORIZONTAL MENU LAYOUT -  MENU
 
     'horizontal' => [
         [

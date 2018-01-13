@@ -1,5 +1,4 @@
 <?php
-
 namespace Laraspace\Http\Controllers;
 
 use Laraspace\User;
@@ -23,9 +22,7 @@ class UsersController extends Controller
     public function destroy($id)
     {
         $user = User::findOrFail($id);
-
         $user->delete();
-
         flash()->success('User Deleted');
 
         return redirect()->back();
