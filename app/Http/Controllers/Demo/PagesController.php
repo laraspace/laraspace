@@ -94,6 +94,16 @@ class PagesController extends Controller
         return view('admin.pages.components.ratings.star-ratings');
     }
 
+    public function nestableList()
+    {
+        return view('admin.pages.components.nestable-list');
+    }
+
+    public function nestableTree()
+    {
+        return view('admin.pages.components.nestable-tree');
+    }
+
     public function barRatings()
     {
         return view('admin.pages.components.ratings.bar-ratings');
@@ -199,14 +209,10 @@ class PagesController extends Controller
         return view('admin.sessions.register-3');
     }
 
-    public function nestableList()
+    // Maintenance
+    public function maintenance()
     {
-        return view('admin.pages.components.nestable-list');
-    }
-
-    public function nestableTree()
-    {
-        return view('admin.pages.components.nestable-tree');
+        return view('maintenance.index');
     }
 
     // Icons

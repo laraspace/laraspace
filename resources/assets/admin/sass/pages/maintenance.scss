@@ -1,0 +1,55 @@
+
+.maintenance-page {
+
+    background: $ls-color-secondary;
+
+    .maintenance-box {
+        border-radius: 4px;
+        left: 50%;
+        margin: 0 auto;
+        margin-bottom: 45px;
+        padding: 20px;
+        position: absolute;
+        top: 50%;
+        color: $white;
+        transform: translate(-50%, -60%);
+        width: 800px;
+    }
+
+    .icon-fa-cogs{
+        font-size: 7rem;
+        margin-bottom:2rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+        color: $ls-color-primary;
+    }
+
+    h5 {
+        font-size: 0.9rem;
+        color: $white;
+        font-weight: lighter;
+        margin-bottom: 40px;
+    }
+    .btn{
+        margin-bottom: 2rem;
+    }
+
+    p a{
+        color:$ls-color-primary;
+        
+        &:hover{
+            color:$white;
+        }
+    }
+}
+
+.bg-yellow {
+    background-color: $ls-color-primary;
+    color: $ls-color-secondary;
+
+    &:hover {
+        background-color: darken($ls-color-primary, 5%);
+    }
+}

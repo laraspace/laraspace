@@ -220,7 +220,7 @@ Route::group([
         ]);
     });
 
-    // Login & Register Pages
+    // Login, Register & Maintenance Pages
     //----------------------------------
 
     Route::get('login-2', [
@@ -237,6 +237,10 @@ Route::group([
 
     Route::get('register-3', [
         'as' => 'admin.register-3', 'uses' => 'Demo\PagesController@register3'
+    ]);
+
+    Route::get('maintenance', [
+        'as' => 'admin.maintenance', 'uses' => 'Demo\PagesController@maintenance'
     ]);
 
     // Icon Preview Pages

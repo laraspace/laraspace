@@ -344,6 +344,11 @@ return [
                     'link' => '/admin/404',
                     'active' => 'admin/404',
                 ],
+                [
+                    'title' => 'Maintenance Page',
+                    'link' => '/admin/maintenance',
+                    'active' => 'admin/maintenance',
+                ],
             ]
         ],
         [

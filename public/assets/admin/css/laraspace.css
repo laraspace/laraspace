@@ -35811,6 +35811,62 @@ code,
   border: 1px solid #e4eef3;
 }
 
+.maintenance-page {
+  background: #333;
+}
+
+.maintenance-page .maintenance-box {
+  border-radius: 4px;
+  left: 50%;
+  margin: 0 auto;
+  margin-bottom: 45px;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  color: #fff;
+  -webkit-transform: translate(-50%, -60%);
+          transform: translate(-50%, -60%);
+  width: 800px;
+}
+
+.maintenance-page .icon-fa-cogs {
+  font-size: 7rem;
+  margin-bottom: 2rem;
+}
+
+.maintenance-page h1 {
+  font-size: 2rem;
+  color: #ffde00;
+}
+
+.maintenance-page h5 {
+  font-size: 0.9rem;
+  color: #fff;
+  font-weight: lighter;
+  margin-bottom: 40px;
+}
+
+.maintenance-page .btn {
+  margin-bottom: 2rem;
+}
+
+.maintenance-page p a {
+  color: #ffde00;
+}
+
+.maintenance-page p a:hover {
+  color: #fff;
+}
+
+.bg-yellow {
+  background-color: #ffde00;
+  color: #333;
+}
+
+.bg-yellow:hover {
+  background-color: #e6c800;
+}
+
 .image-zoom-demo {
   text-align: justify;
 }
