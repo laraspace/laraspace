@@ -89,11 +89,6 @@ class PagesController extends Controller
         return view('admin.pages.components.calendar');
     }
 
-    public function ratings()
-    {
-        return view('admin.pages.components.ratings.star-ratings');
-    }
-
     public function nestableList()
     {
         return view('admin.pages.components.nestable-list');
@@ -104,9 +99,19 @@ class PagesController extends Controller
         return view('admin.pages.components.nestable-tree');
     }
 
+    public function ratings()
+    {
+        return view('admin.pages.components.ratings.star-ratings');
+    }
+
     public function barRatings()
     {
         return view('admin.pages.components.ratings.bar-ratings');
+    }
+
+    public function contacts()
+    {
+        return view('admin.pages.components.contacts');
     }
 
     // Charts

@@ -164,6 +164,11 @@ return [
                         ],
                     ],
                 ],
+                [
+                    'title' => 'Contacts',
+                    'link' => '/admin/components/contacts',
+                    'active' => 'admin/components/contacts',
+                ],
             ]
         ],
         [

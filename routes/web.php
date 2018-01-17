@@ -140,6 +140,10 @@ Route::group([
                 'as' => 'admin.components.rating.bar', 'uses' => 'Demo\PagesController@barRatings'
             ]);
         });
+
+        Route::get('contacts', [
+            'as' => 'admin.components.contacts', 'uses' => 'Demo\PagesController@contacts'
+        ]);
     });
 
     // Charts

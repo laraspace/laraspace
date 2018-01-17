@@ -17331,6 +17331,211 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:las
   padding-right: 0;
 }
 
+table.dataTable.dtr-inline.collapsed > tbody > tr > td.child,
+table.dataTable.dtr-inline.collapsed > tbody > tr > th.child,
+table.dataTable.dtr-inline.collapsed > tbody > tr > td.dataTables_empty {
+  cursor: default !important;
+}
+
+table.dataTable.dtr-inline.collapsed > tbody > tr > td.child:before,
+table.dataTable.dtr-inline.collapsed > tbody > tr > th.child:before,
+table.dataTable.dtr-inline.collapsed > tbody > tr > td.dataTables_empty:before {
+  display: none !important;
+}
+
+table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > td:first-child,
+table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > th:first-child {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > td:first-child:before,
+table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > th:first-child:before {
+  top: 9px;
+  left: 4px;
+  height: 14px;
+  width: 14px;
+  display: block;
+  position: absolute;
+  color: white;
+  border: 2px solid white;
+  border-radius: 14px;
+  -webkit-box-shadow: 0 0 3px #444;
+          box-shadow: 0 0 3px #444;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  text-align: center;
+  text-indent: 0 !important;
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 14px;
+  content: '+';
+  background-color: #31b131;
+}
+
+table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before,
+table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child:before {
+  content: '-';
+  background-color: #d33333;
+}
+
+table.dataTable.dtr-inline.collapsed.compact > tbody > tr > td:first-child,
+table.dataTable.dtr-inline.collapsed.compact > tbody > tr > th:first-child {
+  padding-left: 27px;
+}
+
+table.dataTable.dtr-inline.collapsed.compact > tbody > tr > td:first-child:before,
+table.dataTable.dtr-inline.collapsed.compact > tbody > tr > th:first-child:before {
+  top: 5px;
+  left: 4px;
+  height: 14px;
+  width: 14px;
+  border-radius: 14px;
+  line-height: 14px;
+  text-indent: 3px;
+}
+
+table.dataTable.dtr-column > tbody > tr > td.control,
+table.dataTable.dtr-column > tbody > tr > th.control {
+  position: relative;
+  cursor: pointer;
+}
+
+table.dataTable.dtr-column > tbody > tr > td.control:before,
+table.dataTable.dtr-column > tbody > tr > th.control:before {
+  top: 50%;
+  left: 50%;
+  height: 16px;
+  width: 16px;
+  margin-top: -10px;
+  margin-left: -10px;
+  display: block;
+  position: absolute;
+  color: white;
+  border: 2px solid white;
+  border-radius: 14px;
+  -webkit-box-shadow: 0 0 3px #444;
+          box-shadow: 0 0 3px #444;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  text-align: center;
+  text-indent: 0 !important;
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 14px;
+  content: '+';
+  background-color: #31b131;
+}
+
+table.dataTable.dtr-column > tbody > tr.parent td.control:before,
+table.dataTable.dtr-column > tbody > tr.parent th.control:before {
+  content: '-';
+  background-color: #d33333;
+}
+
+table.dataTable > tbody > tr.child {
+  padding: 0.5em 1em;
+}
+
+table.dataTable > tbody > tr.child:hover {
+  background: transparent !important;
+}
+
+table.dataTable > tbody > tr.child ul.dtr-details {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+table.dataTable > tbody > tr.child ul.dtr-details > li {
+  border-bottom: 1px solid #efefef;
+  padding: 0.5em 0;
+}
+
+table.dataTable > tbody > tr.child ul.dtr-details > li:first-child {
+  padding-top: 0;
+}
+
+table.dataTable > tbody > tr.child ul.dtr-details > li:last-child {
+  border-bottom: none;
+}
+
+table.dataTable > tbody > tr.child span.dtr-title {
+  display: inline-block;
+  min-width: 75px;
+  font-weight: bold;
+}
+
+div.dtr-modal {
+  position: fixed;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  padding: 10em 1em;
+}
+
+div.dtr-modal div.dtr-modal-display {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 50%;
+  overflow: auto;
+  margin: auto;
+  z-index: 102;
+  overflow: auto;
+  background-color: #f5f5f7;
+  border: 1px solid black;
+  border-radius: 0.5em;
+  -webkit-box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+}
+
+div.dtr-modal div.dtr-modal-content {
+  position: relative;
+  padding: 1em;
+}
+
+div.dtr-modal div.dtr-modal-close {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 22px;
+  height: 22px;
+  border: 1px solid #eaeaea;
+  background-color: #f9f9f9;
+  text-align: center;
+  border-radius: 3px;
+  cursor: pointer;
+  z-index: 12;
+}
+
+div.dtr-modal div.dtr-modal-close:hover {
+  background-color: #eaeaea;
+}
+
+div.dtr-modal div.dtr-modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 101;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+@media screen and (max-width: 767px) {
+  div.dtr-modal div.dtr-modal-display {
+    width: 95%;
+  }
+}
+
 .ms-container {
   background: transparent url(/images/switch.png?d4e3b5748ead183c35509a3f2d10b542) no-repeat 50% 50%;
   width: 370px;
@@ -35253,6 +35458,156 @@ code,
 
   .image-cropper .docs-data .input-group {
     max-width: 60%;
+  }
+}
+
+.contact-page .contact-box {
+  background: #fff;
+  font-size: 0.9rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  border: 1px solid #ddd;
+}
+
+.contact-page .contact-box .contact-sidebar {
+  width: 300px;
+  border-right: 1px solid #ddd;
+  padding: 20px 0;
+}
+
+.contact-page .contact-box .contact-sidebar .total-contacts {
+  padding-bottom: 20px;
+}
+
+.contact-page .contact-box .contact-sidebar .total-contacts a {
+  display: block;
+  padding: 15px 20px;
+}
+
+.contact-page .contact-box .contact-sidebar .total-contacts a:hover {
+  background: #f8f8f8;
+}
+
+.contact-page .contact-box .contact-sidebar .total-contacts a span {
+  float: right;
+}
+
+.contact-page .contact-box .contact-sidebar .total-contacts a i {
+  margin-right: 15px;
+}
+
+.contact-page .contact-box .contact-sidebar .total-contacts::after {
+  position: relative;
+  display: block;
+  margin: 22px;
+  content: "";
+  border-bottom: 1px solid #ddd;
+}
+
+.contact-page .contact-box .contact-sidebar .contact-label h5 {
+  padding: 0 20px;
+}
+
+.contact-page .contact-box .contact-sidebar .contact-label ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact-page .contact-box .contact-sidebar .contact-label ul li {
+  padding: 15px 20px;
+  cursor: pointer;
+}
+
+.contact-page .contact-box .contact-sidebar .contact-label ul li span {
+  float: right;
+}
+
+.contact-page .contact-box .contact-sidebar .contact-label ul li:hover {
+  background: #f8f8f8;
+}
+
+.contact-page .contact-box .contact-sidebar .contact-label ul li:hover .edit-label {
+  display: block;
+}
+
+.contact-page .contact-box .contact-sidebar .contact-label ul li:hover span {
+  display: none;
+}
+
+.contact-page .contact-box .contact-sidebar .contact-label ul li .edit-label {
+  float: right;
+  display: none;
+}
+
+.contact-page .contact-box .contact-sidebar .contact-label ul li .edit-label a i {
+  margin-left: 10px;
+  font-size: 1.2rem;
+}
+
+.contact-page .contact-box .contact-sidebar .contact-label ul li .edit-label a i.icon-fa-edit:hover,
+.contact-page .contact-box .contact-sidebar .contact-label ul li .edit-label a i.icon-fa-trash:hover {
+  color: #333;
+}
+
+.contact-page .contact-box .contact-sidebar .contact-label a.add-label {
+  padding: 15px 20px;
+  display: block;
+}
+
+.contact-page .contact-box .contact-sidebar .contact-label a.add-label i {
+  margin-right: 10px;
+}
+
+.contact-page .contact-box .contact-sidebar .contact-label a.add-label:hover {
+  background: #f8f8f8;
+}
+
+.contact-page .contact-box .contact-sidebar .left-sidebar-btn {
+  display: none;
+}
+
+.contact-page .contact-box .contact-list {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 20px 0;
+  min-width: 200px;
+}
+
+@media (max-width: 1200px) {
+  .contact-page .contact-box .contact-sidebar {
+    z-index: 20;
+    position: absolute;
+    height: 100%;
+    background: #fff;
+    left: -300px;
+    -webkit-transition: left .2s linear;
+    transition: left .2s linear;
+  }
+
+  .contact-page .contact-box .contact-sidebar .left-sidebar-btn {
+    display: block;
+    position: absolute;
+    background: #fff;
+    cursor: pointer;
+    z-index: 20;
+    top: 45%;
+    padding: 15px;
+    -webkit-box-shadow: 2px 0px 2px rgba(0, 0, 0, 0.15);
+            box-shadow: 2px 0px 2px rgba(0, 0, 0, 0.15);
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    right: -37px;
+  }
+
+  .contact-page .contact-box .contact-sidebar .left-sidebar-btn i {
+    font-size: 1.2rem;
+  }
+
+  .contact-page .contact-box .contact-sidebar.pull-right-side {
+    left: 0;
   }
 }
 
