@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'fpslineicons';
-  src: url('font/fpslineicons.eot?98281823');
-  src: url('font/fpslineicons.eot?98281823#iefix') format('embedded-opentype'),
-  url('font/fpslineicons.woff?98281823') format('woff'),
-  url('font/fpslineicons.ttf?98281823') format('truetype'),
-  url('font/fpslineicons.svg?98281823#fpslineicons') format('svg');
+  src: url('/assets/plugins/icons/fonts/fpslineicons.eot?98281823');
+  src: url('/assets/plugins/icons/fonts/fpslineicons.eot?98281823#iefix') format('embedded-opentype'),
+  url('/assets/plugins/icons/fonts/fpslineicons.woff?98281823') format('woff'),
+  url('/assets/plugins/icons/fonts/fpslineicons.ttf?98281823') format('truetype'),
+  url('/assets/plugins/icons/fonts/fpslineicons.svg?98281823#fpslineicons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -14,7 +14,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fpslineicons';
-    src: url('../font/fpslineicons.svg?98281823#fpslineicons') format('svg');
+    src: url('/assets/plugins/icons/fonts/fpslineicons.svg?98281823#fpslineicons') format('svg');
   }
 }
 */
