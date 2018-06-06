@@ -11,7 +11,7 @@
         </div>
         <div class="card">
             <div class="card-body">
-                <todo-items your-todos="{{$todos}}"></todo-items>
+                <todos-app :your-todos="{{ json_encode($todos) }}"></todos-app>
             </div>
         </div>
     </div>

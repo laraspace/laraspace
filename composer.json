@@ -9,19 +9,19 @@
     "type": "project",
     "require": {
         "php": ">=7.0.0",
-        "laravel/framework": "5.5.*",
+        "laravel/framework": "5.6.*",
+        "fideloper/proxy": "^4.0",
         "laracasts/flash": "^2.0",
-        "laravel/socialite": "^2.0",
-        "fideloper/proxy": "~3.3"
+        "laravel/socialite": "^2.0"
     },
     "require-dev": {
-        "fzaninotto/faker": "~1.4",
+        "fzaninotto/faker": "^1.4",
         "mockery/mockery": "0.9.*",
-        "phpunit/phpunit": "~5.0",
+        "phpunit/phpunit": "^7.0",
         "symfony/css-selector": "3.1.*",
         "symfony/dom-crawler": "3.1.*",
         "barryvdh/laravel-ide-helper": "^2.1",
-        "filp/whoops": "~2.0"
+        "filp/whoops": "^2.0"
     },
     "autoload": {
         "classmap": [

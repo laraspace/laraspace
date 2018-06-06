@@ -1,8 +1,6 @@
 <template>
   <div class="graph-container">
-    <canvas
-      id="graph"
-      ref="graph" />
+    <canvas id="graph" ref="graph" />
   </div>
 </template>
 

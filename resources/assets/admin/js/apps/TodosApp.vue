@@ -1,20 +1,18 @@
 <template>
   <div class="todo-container mx-auto col-lg-6 ">
     <h5 class="todo-title">TODOS APP</h5>
-    <p class="text-sm-center">This Demo showcases a simple workflow with VueJS , Vue Resource and Laravel. </p>
+    <p class="text-sm-center">This Demo showcases a simple workflow with VueJS, Axios and Laravel. </p>
     <input
       type="text"
       class="form-control todo-field"
       v-model="newTodo.title"
       placeholder="New Todo"
-      @:keyup.enter="addTodo">
+      @keyup.enter="addTodo"
+    >
     <div class="todo-block scroll-pane">
-      <ul
-        class="todo-list"
-        v-show="todos.length">
+      <ul class="todo-list" v-show="todos.length">
         <li
-          v-for="(todo,index) in todos"
-          :key="index">
+          v-for="(todo,index) in todos" :key="index">
           <input
             type="checkbox"
             class="toggle"
@@ -22,12 +20,10 @@
             :true-value="1"
             :false-value="0"
             v-model="todo.completed"
-            @:change="toggleTodoComplete(todo)">
+            @:change="toggleTodoComplete(todo)"
+          >
           <label :for="index">{{ todo.title }}</label>
-          <a
-            href="#"
-            class="remove-link"
-            @:click.prevent="removeTodo(todo)">
+          <a href="#" class="remove-link" @:click.prevent="removeTodo(todo)">
             <i class="icon-fa icon-fa-close"/>
           </a>
         </li>
@@ -51,18 +47,12 @@ export default {
         title: '',
         completed: false
       },
-      todos: [
-        {
-          title: 'Install the Template',
-          completed: false
-        }
-      ]
+      todos: []
     }
   },
   mounted () {
-    this.todos = JSON.parse(this.yourTodos)
+    this.todos = this.yourTodos
   },
-
   methods: {
     addTodo () {
       let vm = this
