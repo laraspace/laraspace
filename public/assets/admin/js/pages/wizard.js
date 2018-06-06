@@ -8,6 +8,7 @@ var FormWizard = (function () {
       titleTemplate: '<span class=\'number\'>#index#</span> #title#'
     })
   }
+
   var handleBasicWizardTwo = function () {
     $('#basic-wizard-2').steps({
       headerTag: 'h3',
@@ -17,6 +18,7 @@ var FormWizard = (function () {
       titleTemplate: '<span class=\'number\'>#index#</span> #title#'
     })
   }
+
   var handleBasicWizardThree = function () {
     var form = $('#basic-wizard-3')
     form.validate({
@@ -47,6 +49,7 @@ var FormWizard = (function () {
       }
     })
   }
+
   var handleBasicWizardFour = function () {
     $('#basic-wizard-4').steps({
       headerTag: 'h3',
@@ -56,6 +59,7 @@ var FormWizard = (function () {
       titleTemplate: '<span class=\'number\'>#index#</span> #title#'
     })
   }
+
   return {
     // main function to initiate the module
     init: function () {

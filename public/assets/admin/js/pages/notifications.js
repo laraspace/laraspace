@@ -29,7 +29,6 @@ var Notifications = (function () {
       var message = $(this).data('message')
       var title = $(this).data('title')
 
-      console.log(message)
       switch (type) {
         case 'success':
           notie.alert({ type: 1, text: 'Success!' })
