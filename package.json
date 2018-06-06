@@ -11,6 +11,7 @@
     "laravel-mix": "2.1.0"
   },
   "dependencies": {
+    "babel-eslint": "^8.2.3",
     "axios": "^0.16.2",
     "chart.js": "^2.1.2",
     "cross-env": "^5.0.1",
