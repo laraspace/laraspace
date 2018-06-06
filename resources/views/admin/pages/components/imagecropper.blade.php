@@ -1,4 +1,4 @@
- @extends('admin.layouts.layout-basic')
+@extends('admin.layouts.layout-basic')
 
 @section('scripts')
     <script src="{{asset('assets/admin/js/pages/imagecropper.js')}}"></script>
@@ -39,24 +39,41 @@
                                     <!-- Data -->
                                     <div class="docs-data">
                                         <div class="input-group input-group-sm">
-                                            <label class="input-group-addon" for="dataX">X</label>
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" for="dataX">X</span>
+                                            </div>
                                             <input type="text" class="form-control" id="dataX" placeholder="x">
-                                            <span class="input-group-addon">px</span>
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">px</span>
+                                            </div>
                                         </div>
                                         <div class="input-group input-group-sm">
-                                            <label class="input-group-addon" for="dataY">Y</label>
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" for="dataY">Y</span>
+                                            </div>
                                             <input type="text" class="form-control" id="dataY" placeholder="y">
-                                            <span class="input-group-addon">px</span>
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">px</span>
+                                            </div>
                                         </div>
                                         <div class="input-group input-group-sm">
-                                            <label class="input-group-addon" for="dataWidth">Width</label>
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" for="dataWidth">Width</span>
+                                            </div>
                                             <input type="text" class="form-control" id="dataWidth" placeholder="width">
-                                            <span class="input-group-addon">px</span>
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">px</span>
+                                            </div>
                                         </div>
                                         <div class="input-group input-group-sm">
-                                            <label class="input-group-addon" for="dataHeight">Height</label>
-                                            <input type="text" class="form-control" id="dataHeight" placeholder="height">
-                                            <span class="input-group-addon">px</span>
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" for="dataHeight">Height</span>
+                                            </div>
+                                            <input type="text" class="form-control" id="dataHeight"
+                                                   placeholder="height">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">px</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -177,13 +194,15 @@
                                     <div class="col docs-buttons">
                                         <h5 class="section-semi-title">Reset Plugins:</h5>
                                         <div class="btn-group">
-                                            <button type="button" class="btn btn-primary" data-method="crop" title="Crop">
+                                            <button type="button" class="btn btn-primary" data-method="crop"
+                                                    title="Crop">
                                             <span class="docs-tooltip" data-toggle="tooltip"
                                                   title="$().cropper(&quot;crop&quot;)">
                                               <span class="icon-fa icon-fa-check"></span>
                                             </span>
                                             </button>
-                                            <button type="button" class="btn btn-primary" data-method="clear" title="Clear">
+                                            <button type="button" class="btn btn-primary" data-method="clear"
+                                                    title="Clear">
                                             <span class="docs-tooltip" data-toggle="tooltip"
                                                   title="$().cropper(&quot;clear&quot;)">
                                               <span class="icon-fa icon-fa-remove"></span>
@@ -207,7 +226,8 @@
                                             </button>
                                         </div>
                                         <div class="btn-group">
-                                            <button type="button" class="btn btn-primary" data-method="reset" title="Reset">
+                                            <button type="button" class="btn btn-primary" data-method="reset"
+                                                    title="Reset">
                                             <span class="docs-tooltip" data-toggle="tooltip"
                                                   title="$().cropper(&quot;reset&quot;)">
                                                 <span class="icon-fa icon-fa-refresh"></span>
@@ -227,7 +247,8 @@
                                     <div class="col docs-buttons">
                                         <h5 class="section-semi-title">Get Canvas:</h5>
                                         <div class="btn-group btn-group-crop">
-                                            <button type="button" class="btn btn-primary" data-method="getCroppedCanvas">
+                                            <button type="button" class="btn btn-primary"
+                                                    data-method="getCroppedCanvas">
                                             <span class="docs-tooltip" data-toggle="tooltip"
                                                   title="$().cropper(&quot;getCroppedCanvas&quot;)">
                                                   Get Cropped Canvas
@@ -265,28 +286,32 @@
                                             <label class="btn btn-primary">
                                                 <input type="radio" class="sr-only" id="aspectRatio1" name="aspectRatio"
                                                        value="1.3333333333333333">
-                                                <span class="docs-tooltip" data-toggle="tooltip" title="aspectRatio: 4 / 3">
+                                                <span class="docs-tooltip" data-toggle="tooltip"
+                                                      title="aspectRatio: 4 / 3">
                                                 4:3
                                             </span>
                                             </label>
                                             <label class="btn btn-primary">
                                                 <input type="radio" class="sr-only" id="aspectRatio2" name="aspectRatio"
                                                        value="1">
-                                                <span class="docs-tooltip" data-toggle="tooltip" title="aspectRatio: 1 / 1">
+                                                <span class="docs-tooltip" data-toggle="tooltip"
+                                                      title="aspectRatio: 1 / 1">
                                                 1:1
                                             </span>
                                             </label>
                                             <label class="btn btn-primary">
                                                 <input type="radio" class="sr-only" id="aspectRatio3" name="aspectRatio"
                                                        value="0.6666666666666666">
-                                                <span class="docs-tooltip" data-toggle="tooltip" title="aspectRatio: 2 / 3">
+                                                <span class="docs-tooltip" data-toggle="tooltip"
+                                                      title="aspectRatio: 2 / 3">
                                                 2:3
                                             </span>
                                             </label>
                                             <label class="btn btn-primary">
                                                 <input type="radio" class="sr-only" id="aspectRatio4" name="aspectRatio"
                                                        value="NaN">
-                                                <span class="docs-tooltip" data-toggle="tooltip" title="aspectRatio: NaN">
+                                                <span class="docs-tooltip" data-toggle="tooltip"
+                                                      title="aspectRatio: NaN">
                                                 Free
                                             </span>
                                             </label>
@@ -296,7 +321,8 @@
                                         <h5 class="section-semi-title">View Modes:</h5>
                                         <div class="btn-group btn-group-justified" data-toggle="buttons">
                                             <label class="btn btn-primary active">
-                                                <input type="radio" class="sr-only" id="viewMode0" name="viewMode" value="0"
+                                                <input type="radio" class="sr-only" id="viewMode0" name="viewMode"
+                                                       value="0"
                                                        checked>
                                                 <span class="docs-tooltip" data-toggle="tooltip" title="View Mode 0">
                                                 VM0
@@ -333,7 +359,8 @@
                                         <div class="modal-content">
                                             <div class="modal-header">
                                                 <h4 class="modal-title" id="getCroppedCanvasTitle">Cropped</h4>
-                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                        aria-hidden="true">
                                                     &times;
                                                 </button>
                                             </div>
@@ -351,71 +378,90 @@
                                 <div class="row">
                                     <div class="col-xl-4 docs-buttons">
                                         <div class="input-group input-group-sm">
-                                            <button type="button" class="btn btn-primary input-group-addon"
-                                                    data-method="setData" data-target="#putData1">
+                                            <div class="input-group-prepend">
+                                                <button type="button" class="btn btn-primary"
+                                                        data-method="setData" data-target="#putData1">
                                               <span class="docs-tooltip" data-toggle="tooltip"
                                                     title="$().cropper(&quot;setData&quot;, data)">
                                                 Set Data
                                               </span>
-                                            </button>
-                                            <button type="button" class="btn btn-primary input-group-addon"
-                                                    data-method="getData" data-option data-target="#putData1">
+                                                </button>
+                                            </div>
+                                            <div class="input-group-append">
+                                                <button type="button" class="btn btn-primary "
+                                                        data-method="getData" data-option data-target="#putData1">
                                             <span class="docs-tooltip" data-toggle="tooltip"
                                                   title="$().cropper(&quot;getData&quot;)">
                                                 Get Data
                                             </span>
-                                            </button>
-                                            <input type="text" class="form-control" id="putData1" placeholder="Get data ">
+                                                </button>
+                                            </div>
+                                            <input type="text" class="form-control" id="putData1"
+                                                   placeholder="Get data ">
                                         </div>
                                     </div>
                                     <div class="col-xl-4 docs-buttons">
                                         <div class="input-group input-group-sm">
-                                            <button type="button" class="btn btn-primary input-group-addon"
-                                                    data-method="getImageData" data-option data-target="#putData2">
+                                            <div class="input-group-prepend">
+                                                <button type="button" class="btn btn-primary input-group-addon"
+                                                        data-method="getImageData" data-option data-target="#putData2">
                                              <span class="docs-tooltip" data-toggle="tooltip"
                                                    title="$().cropper(&quot;getImageData&quot;)">
                                                 Get Image Data
                                             </span>
-                                            </button>
-                                            <input type="text" class="form-control" id="putData2" placeholder="Get data ">
+                                                </button>
+                                            </div>
+                                            <input type="text" class="form-control" id="putData2"
+                                                   placeholder="Get data ">
                                         </div>
                                     </div>
                                     <div class="col-xl-4 docs-buttons">
                                         <div class="input-group input-group-sm">
-                                            <button type="button" class="btn btn-primary input-group-addon"
-                                                    data-method="getContainerData" data-option data-target="#putData3">
+                                            <div class="input-group-prepend">
+                                                <button type="button" class="btn btn-primary input-group-addon"
+                                                        data-method="getContainerData" data-option
+                                                        data-target="#putData3">
                                             <span class="docs-tooltip" data-toggle="tooltip"
                                                   title="$().cropper(&quot;getContainerData&quot;)">
                                                 Get Container Data
                                             </span>
-                                            </button>
-                                            <input type="text" class="form-control" id="putData3" placeholder="Get data ">
+                                                </button>
+                                            </div>
+                                            <input type="text" class="form-control" id="putData3"
+                                                   placeholder="Get data ">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-xl-6 docs-buttons">
                                         <div class="input-group input-group-sm">
-                                            <button type="button" class="btn btn-primary  input-group-addon"
-                                                    data-method="getCanvasData" data-option data-target="#putData4">
+                                            <div class="input-group-prepend">
+                                                <button type="button" class="btn btn-primary  input-group-addon"
+                                                        data-method="getCanvasData" data-option data-target="#putData4">
                                             <span class="docs-tooltip" data-toggle="tooltip"
                                                   title="$().cropper(&quot;getCanvasData&quot;)">
                                                 Get Canvas Data
                                             </span>
-                                            </button>
-                                            <input type="text" class="form-control" id="putData4" placeholder="Get data ">
+                                                </button>
+                                            </div>
+                                            <input type="text" class="form-control" id="putData4"
+                                                   placeholder="Get data ">
                                         </div>
                                     </div>
                                     <div class="col-xl-6 docs-buttons">
                                         <div class="input-group input-group-sm">
-                                            <button type="button" class="btn btn-primary input-group-addon"
-                                                    data-method="getCropBoxData" data-option data-target="#putData5">
+                                            <div class="input-group-prepend">
+                                                <button type="button" class="btn btn-primary input-group-addon"
+                                                        data-method="getCropBoxData" data-option
+                                                        data-target="#putData5">
                                             <span class="docs-tooltip" data-toggle="tooltip"
                                                   title="$().cropper(&quot;getCropBoxData&quot;)">
                                                 Get Crop Box Data
                                             </span>
-                                            </button>
-                                            <input type="text" class="form-control" id="putData5" placeholder="Get data ">
+                                                </button>
+                                            </div>
+                                            <input type="text" class="form-control" id="putData5"
+                                                   placeholder="Get data ">
                                         </div>
                                     </div>
                                 </div>

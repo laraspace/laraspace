@@ -284,7 +284,7 @@
                         <div class="col-lg-3 col-md-6">
                             <div class="embed-responsive embed-responsive-16by9">
                                 <div class="demo embed-responsive-item"
-                                     data-vimeo="https://vimeo.com/102514372"></div>
+                                     data-vimeo="https://vimeo.com/29779008"></div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6">

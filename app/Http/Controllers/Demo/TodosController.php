@@ -1,9 +1,7 @@
 <?php
-
 namespace Laraspace\Http\Controllers\Demo;
 
 use Illuminate\Http\Request;
-
 use Illuminate\View\View;
 use Laraspace\Http\Requests;
 use Laraspace\Http\Controllers\Controller;
@@ -19,7 +17,7 @@ class TodosController extends Controller
     public function index()
     {
         $todos = Todo::all();
-
+        
         return view('admin.pages.todos.index')->with('todos', $todos);
     }
 
@@ -69,7 +67,6 @@ class TodosController extends Controller
     public function destroy($id)
     {
         $todo = Todo::findOrFail($id);
-
         $todo->delete();
 
         return response()->json([

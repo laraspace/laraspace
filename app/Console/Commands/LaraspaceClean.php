@@ -1,5 +1,4 @@
 <?php
-
 namespace Laraspace\Console\Commands;
 
 use Illuminate\Console\Command;
@@ -48,12 +47,10 @@ class LaraspaceClean extends Command
     public function handle()
     {
         $dirs_to_delete = config('laraspace.folders_to_delete');
-
         $files_to_delete = config('laraspace.files_to_delete');
 
         foreach ($dirs_to_delete as $item) {
             $success = $this->files->deleteDirectory(base_path($item));
-
             if ($success) {
                 $this->info($item . ' -- Deleted');
             }
@@ -61,13 +58,12 @@ class LaraspaceClean extends Command
 
         foreach ($files_to_delete as $item) {
             $success = $this->files->delete(base_path($item));
-
             if ($success) {
                 $this->info($item . ' -- Deleted');
             }
         }
 
-        //Replace Routes & Menu Files.
+        // Replace Routes & Menu Files.
         $this->files->copy(
             base_path('app/Space/Core/Files/demo_menu.php'),
             base_path('config/menu.php')

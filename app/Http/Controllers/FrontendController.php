@@ -1,5 +1,4 @@
 <?php
-
 namespace Laraspace\Http\Controllers;
 
 class FrontendController extends Controller

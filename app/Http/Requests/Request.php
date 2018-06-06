@@ -1,5 +1,4 @@
 <?php
-
 namespace Laraspace\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;

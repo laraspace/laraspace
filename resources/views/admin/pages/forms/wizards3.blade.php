@@ -37,9 +37,11 @@
                                         <label>DOB</label>
                                         <div class="input-group">
                                             <input type="text" class="form-control ls-datepicker" value="06/10/2017">
-                                            <span class="input-group-addon">
-                                                <i class="icon-fa icon-fa-calendar"></i>
-                                            </span>
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">
+                                                        <i class="icon-fa icon-fa-calendar"></i>
+                                                </span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -159,9 +161,11 @@
                                         <label>DOB</label>
                                         <div class="input-group">
                                             <input type="text" class="form-control ls-datepicker" value="06/10/2017">
-                                            <span class="input-group-addon">
-                                                <i class="icon-fa icon-fa-calendar"></i>
-                                            </span>
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">
+                                                        <i class="icon-fa icon-fa-calendar"></i>
+                                                </span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -283,9 +287,11 @@
                                         <label>DOB</label>
                                         <div class="input-group">
                                             <input type="text" class="form-control ls-datepicker" value="06/10/2017">
-                                            <span class="input-group-addon">
-                                                <i class="icon-fa icon-fa-calendar"></i>
-                                            </span>
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">
+                                                        <i class="icon-fa icon-fa-calendar"></i>
+                                                </span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

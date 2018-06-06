@@ -21,17 +21,17 @@
 
                         <form>
                             <div class="form-group row">
-                                <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                                <label for="email1" class="col-sm-2 col-form-label">Email</label>
 
                                 <div class="col-sm-10">
-                                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                                    <input type="email" class="form-control" id="email1" placeholder="Email">
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                                <label for="password1" class="col-sm-2 col-form-label">Password</label>
 
                                 <div class="col-sm-10">
-                                    <input type="password" class="form-control" id="inputPassword3"
+                                    <input type="password" class="form-control" id="password1"
                                            placeholder="Password">
                                 </div>
                             </div>
@@ -41,9 +41,9 @@
                         <form>
                             <div class="form-group">
                                 <label for="exampleFormControlInput1">Email address</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter Email">
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                       placeholder="name@example.com">
                             </div>
-
                             <div class="form-group">
                                 <label for="exampleFormControlSelect1">Example select</label>
                                 <select class="form-control" id="exampleFormControlSelect1">
@@ -80,53 +80,62 @@
                         <h5 class="section-semi-title mt-4">
                             Validation States
                         </h5>
-                        <form class="was-validated">
-                            <div class="row">
-                                <div class="col-md-6 mb-3">
-                                    <label for="validationDefault01">First name</label>
-                                    <input type="text" class="form-control" id="validationDefault01" placeholder="First name" value="Mark" required>
-                                </div>
+                        <form id="needs-validation" class="was-validated" novalidate>
+                            <div class="form-group">
+                                <label for="firstName">First name</label>
+                                <input type="text" class="form-control is-valid" id="firstName"
+                                       placeholder="First name" value="Mark" required>
                             </div>
-                            <div class="row">
-                                <div class="col-md-6 mb-3">
-                                    <label for="validationDefault03">Last name</label>
-                                    <input type="text" class="form-control" id="validationDefault03" placeholder="Last name" required>
-                                    <div class="invalid-feedback">
-                                        Please provide Last name.
-                                    </div>
+                            <div class="form-group">
+                                <label for="lastName">Last name</label>
+                                <input type="text" class="form-control is-valid" id="lastName" required>
+                                <div class="invalid-feedback">
+                                    Please provide a last name.
                                 </div>
                             </div>
                         </form>
+
+                        <h5 class="section-semi-title mt-4">
+                            Supported elements for Validation States
+                        </h5>
                         <form class="was-validated">
-                            <label class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" required>
-                                <span class="custom-control-indicator"></span>
-                                <span class="custom-control-description">Check this custom checkbox</span>
-                            </label>
-                            <div class="custom-controls-stacked d-block my-3">
-                                <label class="custom-control custom-radio">
-                                    <input id="radioStacked1" name="radio-stacked" type="radio" class="custom-control-input" required>
-                                    <span class="custom-control-indicator"></span>
-                                    <span class="custom-control-description">Toggle this custom radio</span>
-                                </label>
-                                <label class="custom-control custom-radio">
-                                    <input id="radioStacked2" name="radio-stacked" type="radio" class="custom-control-input" required>
-                                    <span class="custom-control-indicator"></span>
-                                    <span class="custom-control-description">Or toggle this other custom radio</span>
-                                </label>
+                            <div class="custom-control custom-checkbox mb-3">
+                                <input type="checkbox" class="custom-control-input" id="customControlValidation1"
+                                       required>
+                                <label class="custom-control-label" for="customControlValidation1">Check this custom
+                                    checkbox</label>
+                                <div class="invalid-feedback">Example invalid feedback text</div>
                             </div>
 
-                            <select class="custom-select d-block my-3" required>
-                                <option value="">Open this select menu</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" class="custom-control-input" id="customControlValidation2"
+                                       name="radio-stacked" required>
+                                <label class="custom-control-label" for="customControlValidation2">Toggle this custom
+                                    radio</label>
+                            </div>
+                            <div class="custom-control custom-radio mb-3">
+                                <input type="radio" class="custom-control-input" id="customControlValidation3"
+                                       name="radio-stacked" required>
+                                <label class="custom-control-label" for="customControlValidation3">Or toggle this other
+                                    custom radio</label>
+                                <div class="invalid-feedback">More example invalid feedback text</div>
+                            </div>
 
-                            {{--<label class="custom-file">--}}
-                                {{--<input type="file" id="file" class="custom-file-input" required>--}}
-                                {{--<span class="custom-file-control"></span>--}}
-                            {{--</label>--}}
+                            <div class="form-group">
+                                <select class="custom-select" required>
+                                    <option value="">Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                                <div class="invalid-feedback">Example invalid custom select feedback</div>
+                            </div>
+
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                                <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+                                <div class="invalid-feedback">Example invalid custom file feedback</div>
+                            </div>
                         </form>
 
                         <h5 class="section-semi-title mt-4">
@@ -167,19 +176,20 @@
                                 </h5>
 
                                 <form>
-                                    <div class="form-check">
-                                        <label class="form-check-label">
-                                            <input class="form-check-input" type="checkbox" value="">
-                                            Option one is this and that&mdash;be sure to include why it's great
-                                        </label>
+                                    <div class="form-group row">
+                                        <label for="email2" class="col-sm-2 col-form-label">Email</label>
+                                        <div class="col-sm-10">
+                                            <input type="email" class="form-control" id="email2"
+                                                   placeholder="Email">
+                                        </div>
                                     </div>
-                                    <div class="form-check disabled">
-                                        <label class="form-check-label">
-                                            <input class="form-check-input" type="checkbox" value="" disabled>
-                                            Option two is disabled
-                                        </label>
+                                    <div class="form-group row">
+                                        <label for="password2" class="col-sm-2 col-form-label">Password</label>
+                                        <div class="col-sm-10">
+                                            <input type="password" class="form-control" id="password2"
+                                                   placeholder="Password">
+                                        </div>
                                     </div>
-
                                 </form>
                             </div>
                             <div class="col-sm-6">
@@ -187,22 +197,19 @@
 
                                 <form>
                                     <div class="form-check form-check-inline">
-                                        <label class="form-check-label">
-                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
-                                                   value="option1"> 1
-                                        </label>
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                               value="option1">
+                                        <label class="form-check-label" for="inlineCheckbox1">1</label>
                                     </div>
                                     <div class="form-check form-check-inline">
-                                        <label class="form-check-label">
-                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
-                                                   value="option2"> 2
-                                        </label>
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                               value="option2">
+                                        <label class="form-check-label" for="inlineCheckbox2">2</label>
                                     </div>
-                                    <div class="form-check form-check-inline disabled">
-                                        <label class="form-check-label">
-                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3"
-                                                   value="option3" disabled> 3
-                                        </label>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3"
+                                               value="option3" disabled>
+                                        <label class="form-check-label" for="inlineCheckbox3">3 (disabled)</label>
                                     </div>
                                 </form>
                             </div>
@@ -215,24 +222,24 @@
 
                                 <form>
                                     <div class="form-check">
-                                        <label class="form-check-label">
-                                            <input class="form-check-input" type="radio" name="exampleRadios"
-                                                   id="exampleRadios1" value="option1" checked>
-                                            Option one is this and that&mdash;be sure to include why it's great
+                                        <input class="form-check-input" type="radio" name="exampleRadios"
+                                               id="exampleRadios1" value="option1" checked>
+                                        <label class="form-check-label" for="exampleRadios1">
+                                            Default radio
                                         </label>
                                     </div>
                                     <div class="form-check">
-                                        <label class="form-check-label">
-                                            <input class="form-check-input" type="radio" name="exampleRadios"
-                                                   id="exampleRadios2" value="option2">
-                                            Option two can be something else and selecting it will deselect option one
+                                        <input class="form-check-input" type="radio" name="exampleRadios"
+                                               id="exampleRadios2" value="option2">
+                                        <label class="form-check-label" for="exampleRadios2">
+                                            Second default radio
                                         </label>
                                     </div>
                                     <div class="form-check disabled">
-                                        <label class="form-check-label">
-                                            <input class="form-check-input" type="radio" name="exampleRadios"
-                                                   id="exampleRadios3" value="option3" disabled>
-                                            Option three is disabled
+                                        <input class="form-check-input" type="radio" name="exampleRadios"
+                                               id="exampleRadios3" value="option3" disabled>
+                                        <label class="form-check-label" for="exampleRadios3">
+                                            Disabled radio
                                         </label>
                                     </div>
                                 </form>
@@ -241,22 +248,19 @@
                                 <h5 class="section-semi-title mt-4">Inline Radio</h5>
                                 <form>
                                     <div class="form-check form-check-inline">
-                                        <label class="form-check-label">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                                   id="inlineRadio1" value="option1"> 1
-                                        </label>
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                               id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1">1</label>
                                     </div>
                                     <div class="form-check form-check-inline">
-                                        <label class="form-check-label">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                                   id="inlineRadio2" value="option2"> 2
-                                        </label>
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                               id="inlineRadio2" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2">2</label>
                                     </div>
-                                    <div class="form-check form-check-inline disabled">
-                                        <label class="form-check-label">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                                   id="inlineRadio3" value="option3" disabled> 3
-                                        </label>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                               id="inlineRadio3" value="option3" disabled>
+                                        <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
                                     </div>
                                 </form>
                             </div>

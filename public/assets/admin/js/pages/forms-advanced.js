@@ -1,35 +1,30 @@
-var FormsAdvanced = function () {
+var FormsAdvanced = (function () {
+  var handleSelect2 = function () {
+    $('.js-example-basic-single').select2()
 
+    $('.js-example-basic-multiple').select2()
+  }
 
-    var handleSelect2 = function(){
-        $(".js-example-basic-single").select2();
+  var handleSwitchToggles = function () {
+    var elems = $('.js-switch')
 
-        $(".js-example-basic-multiple").select2();
-    };
+    elems.each(function (index, element) {
+      var color = $(this).data('color') ? $(this).data('color') : '#ffde00'
+      var switchery = new Switchery(this, {
+        color: color
+      })
+    })
+  }
 
-    var handleSwitchToggles = function(){
-        var elems = $('.js-switch');
+  return {
+    // main function to initiate the module
+    init: function () {
+      handleSelect2()
+      handleSwitchToggles()
+    }
+  }
+})()
 
-        elems.each(function(index,element) {
-            var color = $(this).data('color') ? $(this).data('color') : '#ffde00';
-
-            var switchery = new Switchery(this, {
-                color : color
-            });
-        });
-    };
-
-    return {
-        //main function to initiate the module
-        init: function () {
-            handleSelect2();
-            handleSwitchToggles();
-        }
-    };
-
-}();
-
-jQuery(document).ready(function() {
-    FormsAdvanced.init();
-});
-
+jQuery(document).ready(function () {
+  FormsAdvanced.init()
+})

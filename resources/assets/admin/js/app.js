@@ -5,9 +5,9 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-require('./bootstrap');
+require('./bootstrap')
 
-window.Vue = require('vue');
+window.Vue = require('vue')
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -15,12 +15,12 @@ window.Vue = require('vue');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('bar-chart', require('./components/BarChart.vue'));
-Vue.component('line-chart', require('./components/LineChart.vue'));
-Vue.component('pie-chart', require('./components/PieChart.vue'));
-Vue.component('todos', require('./components/Todos.vue'));
-Vue.component('mail-settings', require('./components/MailSettings.vue'));
+window.Vue.component('bar-chart', require('./components/BarChart.vue'))
+window.Vue.component('line-chart', require('./components/LineChart.vue'))
+window.Vue.component('pie-chart', require('./components/PieChart.vue'))
+window.Vue.component('todo-items', require('./components/TodoItems.vue'))
+window.Vue.component('mail-settings', require('./components/MailSettings.vue'))
 
-new Vue({
-    el: '#app',
-});
+let app = new window.Vue({
+  el: '#app'
+})

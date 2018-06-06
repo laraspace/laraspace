@@ -272,8 +272,9 @@
         </div>
         <div class="card">
             <div class="card-header">
-                <h6>Clock Time Picker <a class="source-link" href="http://weareoutman.github.io/clockpicker/"
-                                         target="_blank">source</a></h6>
+                <h6>Clock Time Picker
+                    <a class="source-link" href="http://weareoutman.github.io/clockpicker/" target="_blank">source</a>
+                </h6>
             </div>
             <div class="card-body">
                 <div class="row">
@@ -286,9 +287,9 @@
 
                         <div class="input-group ls-clockpicker" data-autoclose="false">
                             <input type="text" class="form-control" value="09:30">
-                            <span class="input-group-addon">
-                                <i class="icon-fa icon-fa-clock-o"></i>
-                            </span>
+                            <div class="input-group-append">
+                                <span class="input-group-text"><i class="icon-fa icon-fa-clock-o"></i></span>
+                            </div>
                         </div>
                     </div>
                     <div class="col-xl-4 col-md-6 mb-4">
@@ -302,9 +303,11 @@
                         <div class="input-group ls-clockpicker" data-placement="left" data-align="top"
                              data-autoclose="true">
                             <input type="text" class="form-control" value="09:30">
-                            <span class="input-group-addon">
+                            <div class="input-group-append">
+                                <span class="input-group-text">
                                 <i class="icon-fa icon-fa-clock-o"></i>
                             </span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -323,9 +326,11 @@
                         <p class="mb-4">Just apply <code>.ls-datepicker</code> class to a input.</p>
 
                         <div class="input-group">
-                            <span class="input-group-addon">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
                                 <i class="icon-fa icon-fa-calendar"></i>
-                            </span>
+                                </span>
+                            </div>
                             <input type="text" class="form-control ls-datepicker" value="09:30">
                         </div>
                     </div>
@@ -337,7 +342,9 @@
 
                         <div class="input-group input-daterange">
                             <input type="text" class="form-control ls-datepicker">
-                            <span class="input-group-addon">to</span>
+                            <div class="input-group-prepend input-group-append">
+                                <span class="input-group-text">to</span>
+                            </div>
                             <input type="text" class="form-control ls-datepicker">
                         </div>
                     </div>
@@ -369,9 +376,11 @@
 
                         <div class="input-group">
                             <input type="text" class="form-control ls-timepicker" value="09:30">
-                            <span class="input-group-addon">
+                            <div class="input-group-append">
+                                <span class="input-group-text">
                                 <i class="icon-fa icon-fa-clock-o"></i>
                             </span>
+                            </div>
                         </div>
                     </div>
                     <div class="col-xl-4 mb-4">
@@ -381,9 +390,11 @@
 
                         <div class="input-group">
                             <input type="text" class="form-control ls-timepicker" value="09:30" data-duration="true">
-                            <span class="input-group-addon">
+                            <div class="input-group-append">
+                                <span class="input-group-text">
                                 <i class="icon-fa icon-fa-clock-o"></i>
                             </span>
+                            </div>
                         </div>
                     </div>
                     <div class="col-xl-4 mb-4">
@@ -393,9 +404,11 @@
 
                         <div class="input-group">
                             <input type="text" class="form-control ls-timepicker" value="09:30" data-format="H:i:s">
-                            <span class="input-group-addon">
+                            <div class="input-group-append">
+                                <span class="input-group-text">
                                 <i class="icon-fa icon-fa-clock-o"></i>
                             </span>
+                            </div>
                         </div>
                     </div>
                 </div>

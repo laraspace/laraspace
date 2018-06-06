@@ -1,5 +1,4 @@
 <?php
-
 /*
 |--------------------------------------------------------------------------
 | Frontend Routes
@@ -23,24 +22,20 @@ Route::get('/', [
 
 Route::group([
     'prefix' => 'admin',
-//    'middleware' => 'admin'
-], function () {
+ // 'middleware' => 'admin'
+], function(){
 
     // Dashboard
     //----------------------------------
-
     Route::get('/', [
         'as' => 'admin.dashboard', 'uses' => 'DashboardController@index'
     ]);
-
     Route::resource('users', 'UsersController');
 
 
     // Settings
     //----------------------------------
-
-    Route::group(['prefix' => 'settings'], function () {
-
+    Route::group(['prefix' => 'settings'], function(){
 
         Route::get('/social', [
             'as' => 'admin.settings.index', 'uses' => 'SettingsController@index'
@@ -50,7 +45,7 @@ Route::group([
             'as' => 'admin.settings.social', 'uses' => 'SettingsController@postSocial'
         ]);
 
-        Route::group(['prefix' => 'mail'], function () {
+        Route::group(['prefix' => 'mail'], function(){
 
             Route::get('/', [
                 'as' => 'admin.settings.mail.index', 'uses' => 'SettingsController@mail'
@@ -65,16 +60,6 @@ Route::group([
             ]);
         });
 
-        Route::group(['prefix' => 'env'], function () {
-
-            Route::get('/', [
-                'as' => 'admin.settings.environment', 'uses' => 'SettingsController@environment'
-            ]);
-
-            Route::post('/create', [
-                'as' => 'admin.settings.environment.post', 'uses' => 'SettingsController@postEnvironment'
-            ]);
-        });
     });
 });
 
@@ -87,7 +72,7 @@ Route::group([
 |
 */
 
-Route::group(['middleware' => ['guest']], function () {
+Route::group(['middleware' => ['guest']], function(){
 
     Route::get('login', [
         'as' => 'login', 'uses' => 'AuthController@login'

@@ -1,0 +1,149 @@
+.contact-page{
+
+    .contact-box{
+        background:$white;
+        font-size:0.9rem;
+        display:flex;
+        position:relative;
+        border:1px solid $ls-color-gray--dark;
+
+        .contact-sidebar{
+            width:300px;
+            border-right: 1px solid $ls-color-gray--dark;
+            padding:20px 0;
+
+            .total-contacts{
+                padding-bottom:20px;
+
+                a {
+                    display:block;
+                    padding:15px 20px;
+
+                    &:hover{
+                        background: $ls-color-gray--light;
+                    }
+                    span{
+                        float:right;
+                    }
+                    i {
+                        margin-right:15px;
+                    }
+                } 
+                &::after{
+                    position: relative;
+                    display: block;
+                    margin: 22px;
+                    content: "";
+                    border-bottom:1px solid $ls-color-gray--dark;
+                }
+            }
+            .contact-label {
+
+                h5 {
+                    padding: 0 20px;
+                }
+                ul {
+                    list-style-type: none;
+                    padding: 0;
+
+                    li {
+                        padding: 15px 20px;
+                        cursor: pointer;
+
+                        span {
+                            float: right;
+                        }
+                        &:hover{
+                            background: $ls-color-gray--light;
+
+                            .edit-label {
+                                display:block;
+                            }
+                            span {
+                                display:none;
+                            }
+                        }
+
+                        .edit-label {
+                            float:right;
+                            display:none;
+
+                            a {
+
+                                i {
+                                    margin-left:10px;
+                                    font-size:1.2rem;
+
+                                    &.icon-fa-edit:hover, &.icon-fa-trash:hover{
+                                        color: $ls-color-black;
+                                    }
+                                }
+                            }
+                        }
+                    } 
+                }
+                a {
+                    &.add-label {
+                        padding:15px 20px;
+                        display:block;
+
+                        i {
+                            margin-right:10px;
+                        }
+                        &:hover {
+                            background: $ls-color-gray--light;
+                        }
+                    }
+                }
+            }
+            .left-sidebar-btn {
+                display:none;
+            }
+        }
+        .contact-list{
+            flex:1;
+            padding:20px 0;
+            min-width:200px;
+        }
+    }
+} 
+
+// media query
+@media(max-width: $large-breakpoint) 
+{
+    .contact-page{
+
+        .contact-box{
+
+            .contact-sidebar {
+                z-index: 20;
+                position: absolute;
+                height: 100%;
+                background: $white;
+                left:-300px;
+                transition:left .2s linear; 
+
+                .left-sidebar-btn {
+                    display:block;
+                    position: absolute;
+                    background: $white;
+                    cursor: pointer;
+                    z-index: 20;
+                    top: 45%;
+                    padding: 15px;
+                    box-shadow: 2px 0px 2px rgba(0, 0, 0, 0.15);
+                    border-bottom-right-radius: 10px;
+                    border-top-right-radius: 10px;
+                    right:-37px;
+
+                    i {
+                        font-size:1.2rem;
+                    }
+                }
+                &.pull-right-side {
+                    left:0;
+                }
+            }
+        }
+    }
+}

@@ -20,7 +20,7 @@
                 </h6>
             </div>
             <div class="card-body">
-                <form id="validateForm">
+                <form id="validateForm"  novalidate>
                     <div class="form-group">
                         <label>Email address</label>
                         <input type="email" class="form-control" name="email"

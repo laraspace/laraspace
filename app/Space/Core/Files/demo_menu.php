@@ -13,7 +13,7 @@ return [
     |
     */
 
-    //SIDEBAR LAYOUT - MENU
+    // SIDEBAR LAYOUT - MENU
 
     'sidebar' => [
         [
@@ -56,16 +56,11 @@ return [
                     'link' => 'admin/settings/mail',
                     'active' => 'admin/settings/mail*',
                 ],
-                [
-                    'title' => 'Environment',
-                    'link' => 'admin/settings/env',
-                    'active' => 'admin/settings/env*',
-                ],
             ]
         ],
     ],
 
-    //HORIZONTAL MENU LAYOUT -  MENU
+    // HORIZONTAL MENU LAYOUT -  MENU
 
     'horizontal' => [
         [

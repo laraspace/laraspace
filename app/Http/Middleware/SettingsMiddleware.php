@@ -1,5 +1,4 @@
 <?php
-
 namespace Laraspace\Http\Middleware;
 
 use Closure;
@@ -26,7 +25,7 @@ class SettingsMiddleware
                 'mail.from.name' => get_setting('mail_from_name'),
                 'mail.from.address' => get_setting('mail_from_email'),
             ]);
-        } else if ($mailer == 'sendgrid') {
+        } elseif ($mailer == 'sendgrid') {
             config()->set([
                 'mail.host' => get_setting('mail_sendgrid_host'),
                 'mail.driver' => 'smtp',
@@ -35,14 +34,14 @@ class SettingsMiddleware
                 'mail.from.name' => get_setting('mail_from_name'),
                 'mail.from.address' => get_setting('mail_from_email'),
             ]);
-        } else if ($mailer == 'sparkpost') {
+        } elseif ($mailer == 'sparkpost') {
             config()->set([
                 'mail.driver' => $mailer,
                 'services.mailgun.secret' => get_setting('mail_sparkpost_secret'),
                 'mail.from.name' => get_setting('mail_from_name'),
                 'mail.from.address' => get_setting('mail_from_email'),
             ]);
-        } else if ($mailer == 'smtp') {
+        } elseif ($mailer == 'smtp') {
             config()->set([
                 'mail.host' => get_setting('mail_smtp_host'),
                 'mail.driver' => $mailer,
@@ -54,8 +53,7 @@ class SettingsMiddleware
                 'mail.from.address' => get_setting('mail_from_email'),
             ]);
         }
-
-
+        
         return $next($request);
     }
 }

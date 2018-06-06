@@ -26,7 +26,7 @@
                                 {{csrf_field()}}
                                 <div class="form-group">
                                     <label>Mail Driver</label>
-                                    <select name="mailer" class="ls-select form-control" v-model="currentView">
+                                    <select name="mailer" class="ls-select custom-select" v-model="currentView">
                                         <option value="mailgun">Mailgun</option>
                                         <option value="sendgrid">SendGrid</option>
                                         <option value="sparkpost">SparkPost</option>

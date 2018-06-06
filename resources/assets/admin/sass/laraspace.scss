@@ -18,10 +18,11 @@
 @import "../../plugins/select2/select2-bootstrap.scss";
 @import "../../plugins/clockpicker/clockpicker.scss";
 @import "../../plugins/datatables/dataTables.bootstrap4";
+@import "../../plugins/datatables/responsive.dataTables";
 @import "../../plugins/multiselect/multiselect.scss";
 @import "../../plugins/bootstrap-datepicker/bootstrap-datepicker.scss";
 @import "../../plugins/timepicker/timepicker";
-@import "../../plugins/summernote/summernote.scss";
+@import "../../plugins/summernote/summernote";
 @import "../../plugins/simplemde/simplemde.scss";
 @import "../../plugins/pace/pace.scss";
 @import "../../plugins/alertify/alertify.scss";
@@ -92,6 +93,9 @@
 @import "components/gallery";
 @import "components/calendar";
 @import "components/ratings";
+@import "components/editors";
+@import "components/image-cropper";
+@import "components/contact";
 
 
 // Pages
@@ -105,6 +109,7 @@
 @import 'pages/user-profile';
 @import 'pages/404';
 @import 'pages/settings';
+@import 'pages/maintenance';
 
 
 @import "demo";

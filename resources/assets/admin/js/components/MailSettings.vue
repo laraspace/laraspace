@@ -1,43 +1,46 @@
 <script>
+let mailgunComponent = {
+  template: '#mailgun-template'
+}
 
-    let mailgunComponent = {
-        template: '#mailgun-template'
-    };
+let sendgridComponent = {
+  template: '#sendgrid-template'
+}
 
-    let sendgridComponent = {
-        template: '#sendgrid-template'
-    };
+let sparkPostComponent = {
+  template: '#sparkpost-template'
+}
 
-    let sparkPostComponent = {
-        template: '#sparkpost-template'
-    };
+let smtpComponent = {
+  template: '#smtp-template'
+}
 
-    let smtpComponent = {
-        template: '#smtp-template'
-    };
-
-    export default {
-        data() {
-            return {
-                currentView: 'mailgun',
-            }
-        },
-
-        props: ['view'],
-
-        mounted() {
-            let views = ['mailgun', 'sendgrid', 'sparkpost', 'smtp']
-
-            if (this.view && views.indexOf(this.view) > -1) {
-                this.currentView = this.view
-            }
-        },
-
-        components: {
-            'mailgun': mailgunComponent,
-            'sendgrid': sendgridComponent,
-            'sparkpost': sparkPostComponent,
-            'smtp': smtpComponent
-        }
+export default {
+  components: {
+    mailgun: mailgunComponent,
+    sendgrid: sendgridComponent,
+    sparkpost: sparkPostComponent,
+    smtp: smtpComponent
+  },
+  props: {
+    view: {
+      type: String,
+      required: true
     }
+  },
+
+  data () {
+    return {
+      currentView: 'mailgun'
+    }
+  },
+
+  mounted () {
+    let views = ['mailgun', 'sendgrid', 'sparkpost', 'smtp']
+
+    if (this.view && views.indexOf(this.view) > -1) {
+      this.currentView = this.view
+    }
+  }
+}
 </script>

@@ -24,4 +24,4 @@ export default (
       '<span class="cropper-point point-se" data-action="se"></span>' +
     '</div>' +
   '</div>'
-);
+)
