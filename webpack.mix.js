@@ -84,7 +84,11 @@ mix.combine([
 
 .sass('resources/assets/admin/sass/laraspace.scss', 'public/assets/admin/css/')
 
-.version()
+.options({
+    processCssUrls: false
+})
+
+.version();
 
 /*
 |--------------------------------------------------------------------------
@@ -106,4 +110,8 @@ mix.combine([
 
 .sass('resources/assets/front/sass/front.scss', 'public/assets/front/css/')
 
-.version()
+.options({
+    processCssUrls: false
+})
+
+.version();
