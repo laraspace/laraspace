@@ -49,7 +49,7 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 @-ms-viewport {
@@ -5726,7 +5726,8 @@ button.close {
 }
 
 .bs-popover-top .arrow::before, .bs-popover-auto[x-placement^="top"] .arrow::before,
-.bs-popover-top .arrow::after, .bs-popover-auto[x-placement^="top"] .arrow::after {
+.bs-popover-top .arrow::after,
+.bs-popover-auto[x-placement^="top"] .arrow::after {
   border-width: 0.5rem 0.5rem 0;
 }
 
@@ -5735,7 +5736,9 @@ button.close {
   border-top-color: rgba(0, 0, 0, 0.25);
 }
 
-.bs-popover-top .arrow::after, .bs-popover-auto[x-placement^="top"] .arrow::after {
+
+.bs-popover-top .arrow::after,
+.bs-popover-auto[x-placement^="top"] .arrow::after {
   bottom: 1px;
   border-top-color: #fff;
 }
@@ -5752,7 +5755,8 @@ button.close {
 }
 
 .bs-popover-right .arrow::before, .bs-popover-auto[x-placement^="right"] .arrow::before,
-.bs-popover-right .arrow::after, .bs-popover-auto[x-placement^="right"] .arrow::after {
+.bs-popover-right .arrow::after,
+.bs-popover-auto[x-placement^="right"] .arrow::after {
   border-width: 0.5rem 0.5rem 0.5rem 0;
 }
 
@@ -5761,7 +5765,9 @@ button.close {
   border-right-color: rgba(0, 0, 0, 0.25);
 }
 
-.bs-popover-right .arrow::after, .bs-popover-auto[x-placement^="right"] .arrow::after {
+
+.bs-popover-right .arrow::after,
+.bs-popover-auto[x-placement^="right"] .arrow::after {
   left: 1px;
   border-right-color: #fff;
 }
@@ -5775,7 +5781,8 @@ button.close {
 }
 
 .bs-popover-bottom .arrow::before, .bs-popover-auto[x-placement^="bottom"] .arrow::before,
-.bs-popover-bottom .arrow::after, .bs-popover-auto[x-placement^="bottom"] .arrow::after {
+.bs-popover-bottom .arrow::after,
+.bs-popover-auto[x-placement^="bottom"] .arrow::after {
   border-width: 0 0.5rem 0.5rem 0.5rem;
 }
 
@@ -5784,7 +5791,9 @@ button.close {
   border-bottom-color: rgba(0, 0, 0, 0.25);
 }
 
-.bs-popover-bottom .arrow::after, .bs-popover-auto[x-placement^="bottom"] .arrow::after {
+
+.bs-popover-bottom .arrow::after,
+.bs-popover-auto[x-placement^="bottom"] .arrow::after {
   top: 1px;
   border-bottom-color: #fff;
 }
@@ -5812,7 +5821,8 @@ button.close {
 }
 
 .bs-popover-left .arrow::before, .bs-popover-auto[x-placement^="left"] .arrow::before,
-.bs-popover-left .arrow::after, .bs-popover-auto[x-placement^="left"] .arrow::after {
+.bs-popover-left .arrow::after,
+.bs-popover-auto[x-placement^="left"] .arrow::after {
   border-width: 0.5rem 0 0.5rem 0.5rem;
 }
 
@@ -5821,7 +5831,9 @@ button.close {
   border-left-color: rgba(0, 0, 0, 0.25);
 }
 
-.bs-popover-left .arrow::after, .bs-popover-auto[x-placement^="left"] .arrow::after {
+
+.bs-popover-left .arrow::after,
+.bs-popover-auto[x-placement^="left"] .arrow::after {
   right: 1px;
   border-left-color: #fff;
 }
@@ -12387,8 +12399,8 @@ a.text-dark:focus, a.text-dark:hover {
 .ladda-button[data-style=contract-overlay] {
   overflow: hidden;
   width: 100px;
-  -webkit-box-shadow: 0px 0px 0px 2000px transparent;
-          box-shadow: 0px 0px 0px 2000px transparent;
+  -webkit-box-shadow: 0px 0px 0px 2000px rgba(0, 0, 0, 0);
+          box-shadow: 0px 0px 0px 2000px rgba(0, 0, 0, 0);
 }
 
 .ladda-button[data-style=contract-overlay] .ladda-spinner {
@@ -15146,7 +15158,8 @@ button.toast-close-button {
 /*! Select2 Bootstrap Theme v0.1.0-beta.4 | MIT License | github.com/select2/select2-bootstrap-theme */
 .select2-container--bootstrap {
   display: block;
-  /*------------------------------------*          #COMMON STYLES
+  /*------------------------------------*\
+          #COMMON STYLES
   \*------------------------------------*/
   /**
    * Search field in the Select2 dropdown.
@@ -15170,7 +15183,8 @@ button.toast-close-button {
    * @see https://select2.github.io/examples.html#disabled
    * @see http://getbootstrap.com/css/#forms-control-disabled
    */
-  /*------------------------------------*          #DROPDOWN
+  /*------------------------------------*\
+          #DROPDOWN
   \*------------------------------------*/
   /**
    * Dropdown border color and box-shadow.
@@ -15178,9 +15192,11 @@ button.toast-close-button {
   /**
    * Limit the dropdown height.
    */
-  /*------------------------------------*          #SINGLE SELECT2
+  /*------------------------------------*\
+          #SINGLE SELECT2
   \*------------------------------------*/
-  /*------------------------------------*      #MULTIPLE SELECT2
+  /*------------------------------------*\
+      #MULTIPLE SELECT2
   \*------------------------------------*/
   /**
    * Address Bootstrap control sizing classes
@@ -15191,7 +15207,8 @@ button.toast-close-button {
    * @see http://getbootstrap.com/css/#forms-control-sizes
    */
   /* 1 */
-  /*------------------------------------*      #RTL SUPPORT
+  /*------------------------------------*\
+      #RTL SUPPORT
   \*------------------------------------*/
 }
 
@@ -15675,7 +15692,8 @@ button.toast-close-button {
   margin-right: auto;
 }
 
-/*------------------------------------*    #ADDITIONAL GOODIES
+/*------------------------------------*\
+    #ADDITIONAL GOODIES
 \*------------------------------------*/
 /**
  * Address Bootstrap's validation states
@@ -25608,7 +25626,7 @@ a.fc-more:hover {
   -ms-user-select: none;
   user-select: none;
   -webkit-touch-callout: none;
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 /*
@@ -31153,7 +31171,8 @@ a:hover, a:focus {
   outline: none;
 }
 
-mark, .mark {
+mark,
+.mark {
   background-color: #ffde00;
 }
 
@@ -32419,7 +32438,8 @@ code, .code {
   opacity: 0;
 }
 
-.wizard ul, .tabcontrol ul {
+.wizard ul,
+.tabcontrol ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -32477,11 +32497,13 @@ code, .code {
   width: 100% !important;
 }
 
-.wizard > .content > .title, .tabcontrol > .content > .title {
+.wizard > .content > .title,
+.tabcontrol > .content > .title {
   display: none;
 }
 
-.wizard > .steps .current-info, .tabcontrol > .steps .current-info {
+.wizard > .steps .current-info,
+.tabcontrol > .steps .current-info {
   display: none;
 }
 
@@ -32501,7 +32523,9 @@ code, .code {
   margin: 0 0.5em;
 }
 
-.wizard > .actions a, .wizard > .actions a:hover, .wizard > .actions a:active {
+.wizard > .actions a,
+.wizard > .actions a:hover,
+.wizard > .actions a:active {
   background: #007dcc;
   color: #fff;
   display: block;
