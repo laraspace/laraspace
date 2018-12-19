@@ -32,8 +32,8 @@ You can find the Laraspace documentation <a href="http://docs.laraspace.in" targ
 
 Laraspace comes with 3 versions
 - Default (Laravel + jQuery + VueJS)
-- Vue SPA (Laravel + VueJS + Vue-Router)[Link](http://github.com/laraspace/laraspace-vue)
-- HTML[Link](http://github.com/laraspace/laraspace-html)
+- Vue SPA (Laravel + VueJS + Vue-Router) - [Link](http://github.com/laraspace/laraspace-vue)
+- HTML - [Link](http://github.com/laraspace/laraspace-html)
 
 ## License
 
