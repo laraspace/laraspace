@@ -7,3 +7,8 @@
 Homestead.json
 Homestead.yaml
 .env
+
+# Editor directories and files
+.idea
+.vscode
+.DS_Store
