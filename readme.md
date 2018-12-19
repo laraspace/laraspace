@@ -1,4 +1,4 @@
-<p align="center"><img src="https://res.cloudinary.com/bytefury/image/upload/v1545225776/laraspace-logo_cvcsex.png"></p>
+<p align="center"><img height="100px" src="https://res.cloudinary.com/bytefury/image/upload/v1545225776/laraspace-logo_cvcsex.png"></p>
 
 Laraspace is an Admin starter template for Laravel 5.6 PHP Framework which includes all the necessary boilerplate for your next web application.
 
