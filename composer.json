@@ -1,9 +1,11 @@
 {
-    "name": "laravel/laravel",
-    "description": "The Laravel Framework.",
+    "name": "laraspace/laraspace",
+    "description": "The Laraspace admin template.",
     "keywords": [
-        "framework",
-        "laravel"
+        "laravel",
+        "laraspace",
+        "admin",
+        "template"
     ],
     "license": "MIT",
     "type": "project",
