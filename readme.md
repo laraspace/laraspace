@@ -36,7 +36,7 @@ OPTIONAL REQUIREMENTS:
 5. `php artisan migrate --seed` run this command to migrate & seed the database. ( Make sure that you're inside the app's root directory )
 6. Install NPM globally if you haven't installed that already , for more information please refer this [Link](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 7. After installing NPM globally , run `npm install` inside your webroot , it will download all the required dependencies.`
-8. Laraspace makes use of `Laravel Elixir` for compiling sass files and js files (browserify). You can use Laraspace without installing npm dependencies but it is recommended for developers to use the suggested workflow for the best performance.
+8. Laraspace makes use of `Laravel Mix` for compiling sass files and js files (webpack).
 10. You are ready to launch!
 
 ## Features
