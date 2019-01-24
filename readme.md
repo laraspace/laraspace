@@ -22,6 +22,7 @@ SERVER REQUIREMENTS:
 - Mbstring PHP Extension
 - Tokenizer PHP Extension
 - XML PHP Extension
+
 OPTIONAL REQUIREMENTS:
 - Composer
 - NPM / YARN
