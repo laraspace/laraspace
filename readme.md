@@ -16,15 +16,15 @@ Laraspace is an Admin starter template for Laravel 5.6 PHP Framework which inclu
 ## Requirements
 
 SERVER REQUIREMENTS:
-    - PHP >= 7.1.3
-    - OpenSSL PHP Extension
-    - PDO PHP Extension
-    - Mbstring PHP Extension
-    - Tokenizer PHP Extension
-    - XML PHP Extension
+- PHP >= 7.1.3
+- OpenSSL PHP Extension
+- PDO PHP Extension
+- Mbstring PHP Extension
+- Tokenizer PHP Extension
+- XML PHP Extension
 OPTIONAL REQUIREMENTS:
-    - Composer
-    - NPM / YARN
+- Composer
+- NPM / YARN
 
 ## Installation
 
