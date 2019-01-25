@@ -37,7 +37,7 @@ OPTIONAL REQUIREMENTS:
 6. Install NPM globally if you haven't installed that already , for more information please refer this [Link](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 7. After installing NPM globally , run `npm install` inside your webroot , it will download all the required dependencies.`
 8. Laraspace makes use of `Laravel Mix` for compiling sass files and js files (webpack).
-10. You are ready to launch!
+9. You are ready to launch!
 
 ## Features
 - Multiple Layouts
