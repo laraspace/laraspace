@@ -155,11 +155,11 @@ return [
         /*
          * Application Service Providers...
          */
-        Laraspace\Providers\AppServiceProvider::class,
-        Laraspace\Providers\AuthServiceProvider::class,
-        // Laraspace\Providers\BroadcastServiceProvider::class,
-        Laraspace\Providers\EventServiceProvider::class,
-        Laraspace\Providers\RouteServiceProvider::class,
+        App\Providers\AppServiceProvider::class,
+        App\Providers\AuthServiceProvider::class,
+        // App\Providers\BroadcastServiceProvider::class,
+        App\Providers\EventServiceProvider::class,
+        App\Providers\RouteServiceProvider::class,
 
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
         Laracasts\Flash\FlashServiceProvider::class,

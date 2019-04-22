@@ -1,5 +1,5 @@
 <?php
-use Laraspace\Space\Settings\Setting;
+use App\Space\Settings\Setting;
 
 function set_active($path, $active = 'active')
 {
