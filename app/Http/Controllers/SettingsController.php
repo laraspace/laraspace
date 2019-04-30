@@ -1,11 +1,11 @@
 <?php
-namespace Laraspace\Http\Controllers;
+namespace App\Http\Controllers;
 
 use Carbon\Carbon;
 use Illuminate\Http\Request;
-use Laraspace\Http\Requests;
-use Laraspace\Mail\TestMail;
-use Laraspace\Space\Settings\Setting;
+use App\Http\Requests;
+use App\Mail\TestMail;
+use App\Space\Settings\Setting;
 use Mail;
 
 class SettingsController extends Controller

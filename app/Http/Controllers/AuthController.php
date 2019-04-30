@@ -1,9 +1,9 @@
 <?php
-namespace Laraspace\Http\Controllers;
+namespace App\Http\Controllers;
 
 use Auth;
-use Laraspace\Http\Requests;
-use Laraspace\User;
+use App\Http\Requests;
+use App\User;
 use Socialite;
 
 class AuthController extends Controller

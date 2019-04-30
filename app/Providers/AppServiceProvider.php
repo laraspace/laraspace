@@ -1,5 +1,5 @@
 <?php
-namespace Laraspace\Providers;
+namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

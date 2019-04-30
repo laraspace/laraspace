@@ -1,8 +1,8 @@
 <?php
-namespace Laraspace\Http\Controllers\Demo;
+namespace App\Http\Controllers\Demo;
 
-use Laraspace\Http\Requests;
-use Laraspace\Http\Controllers\Controller;
+use App\Http\Requests;
+use App\Http\Controllers\Controller;
 
 class PagesController extends Controller
 {
