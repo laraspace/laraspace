@@ -16,14 +16,14 @@ class AuthController extends Controller
     public function postLogin(Requests\LoginRequest $request)
     {
         if (User::login($request)) {
-            flash()->success('Welcome to Laraspace.');
+            flash('Welcome to Laraspace.')->success();
             if (Auth::user()->isAdmin()) {
                 return redirect()->to('/admin');
             } else {
                 return redirect()->to('/');
             }
         }
-        flash()->error('Invalid Login Credentials');
+        flash('Invalid Login Credentials')->error();
         
         return redirect()->back();
     }
@@ -60,7 +60,7 @@ class AuthController extends Controller
         $provider_user = Socialite::driver($provider)->user();
         $user = $this->findUserByProviderOrCreate($provider, $provider_user);
         auth()->login($user);
-        flash()->success('Welcome to Laraspace.');
+        flash('Welcome to Laraspace.')->success();
 
         return redirect()->to('/admin');
     }

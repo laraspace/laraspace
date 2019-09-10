@@ -23,7 +23,7 @@ class UsersController extends Controller
     {
         $user = User::findOrFail($id);
         $user->delete();
-        flash()->success('User Deleted');
+        flash('User Deleted')->success();
 
         return redirect()->back();
     }

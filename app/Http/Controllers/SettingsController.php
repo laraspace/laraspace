@@ -31,7 +31,7 @@ class SettingsController extends Controller
         foreach ($sets as $key) {
             Setting::setSetting($key, $request->input($key));
         }
-        flash()->success('Social Settings Saved');
+        flash('Social Settings Saved')->success();
 
         return redirect()->back();
     }
@@ -89,7 +89,7 @@ class SettingsController extends Controller
             }
         }
         Setting::setSetting('mailer', $request->mailer);
-        flash()->success('Settings Saved');
+        flash('Settings Saved')->success();
 
         return redirect()->back();
     }
@@ -102,7 +102,7 @@ class SettingsController extends Controller
             'message' => 'required'
         ]);
         Mail::to($request->to)->send(new TestMail($request->subject, $request->message));
-        flash()->success('Email Sent');
+        flash('Email Sent')->success();
 
         return redirect()->back();
     }

@@ -28,7 +28,7 @@ class ForgotPasswordController extends Controller
 
         switch ($response) {
             case Password::RESET_LINK_SENT:
-                flash()->success('Password Reset link has been sent to your mail id');
+                flash('Password Reset link has been sent to your mail id')->success();
                 return redirect()->back()->with('status', 'No User Is asoociated with this account');
                 
             case Password::INVALID_USER:
@@ -57,7 +57,7 @@ class ForgotPasswordController extends Controller
         $user->password = bcrypt($request->password);
         $user->save();
         \Auth::login($user, true);
-        flash()->success('Your Password Updated Success Fully');
+        flash('Your Password Updated Success Fully')->success();
         
         return redirect()->route('home');
     }

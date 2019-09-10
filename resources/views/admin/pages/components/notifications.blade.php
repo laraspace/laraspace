@@ -94,13 +94,13 @@
                                     using any of the above plugins. Just call any of the functions mentioned below inside
                                     your controller method and you'll see the notification in the view.</p>
 
-                                <p><code>flash()->success('You've Logged in Successfully.');</code></p>
+                                <p><code>flash('You've Logged in Successfully.')->success();</code></p>
 
-                                <p><code>flash()->warning('There's something wrong.');</code></p>
+                                <p><code>flash('There's something wrong.')->warning();</code></p>
 
-                                <p><code>flash()->error('Validation Error');</code></p>
+                                <p><code>flash('Validation Error')->error();</code></p>
 
-                                <p><code>flash()->info('Laraspace is Awesome!');</code></p>
+                                <p><code>flash('Laraspace is Awesome!')->info();</code></p>
                             </div>
                         </div>
                     </div>
